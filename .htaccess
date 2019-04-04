@@ -1,0 +1,16 @@
+RewriteEngine On
+
+ErrorDocument 404 187.216.164.109/PILARES-mvc-orm/error/
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2 
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-l
+#RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
+# informacion sobre lo que se puede hacer con el archivo .htaccess
+# https://es.wikipedia.org/wiki/.htaccess
