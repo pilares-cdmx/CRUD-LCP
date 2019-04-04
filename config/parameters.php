@@ -1,5 +1,5 @@
 <?php
-define("URL", "http://187.216.164.109/RegistroDeUsuarios/");
-define("controller_default", "UsuarioController");
+define("URL", "http://localhost/Pilares/CRUD-LCP/");
+define("controller_default", "CrudController");
 define("action_default", "index");
 ?>
