@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Login</title>
+  <title>PILARES acceso</title>
 
   <!-- Custom fonts for this template-->
   <link href="<?php echo constant('URL')?>public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -23,34 +23,34 @@
 
   <div class="container">
     <div class="card card-login mx-auto mt-5">
-      <div class="card-header">Login</div>
+      <div class="card-header">Acceso</div>
       <div class="card-body">
         <form>
           <div class="form-group">
             <div class="form-label-group">
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus">
-              <label for="inputEmail">Email address</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electrónico" required="required" autofocus="autofocus">
+              <label for="inputEmail">Correo</label>
             </div>
           </div>
           <div class="form-group">
             <div class="form-label-group">
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
-              <label for="inputPassword">Password</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="required">
+              <label for="inputPassword">Contraseña</label>
             </div>
           </div>
           <div class="form-group">
             <div class="checkbox">
               <label>
                 <input type="checkbox" value="remember-me">
-                Remember Password
+                Recordar Contraseña
               </label>
             </div>
           </div>
-          <a class="btn btn-primary btn-block" href="<?php echo constant('URL')?>Crud/registroExitoso">Login</a>
+          <a class="btn btn-primary btn-block" href="<?php echo constant('URL')?>Crud/registroExitoso" name="acceso">Acceso</a>
         </form>
         <div class="text-center">
-          <a class="d-block small mt-3" href="<?php echo constant('URL')?>Crud/register">Register an Account</a>
-          <a class="d-block small" href="<?php echo constant('URL')?>Crud/forgotPassword">Forgot Password?</a>
+          <a class="d-block small mt-3" href="<?php echo constant('URL')?>Crud/register">Registrar una cuenta</a>
+          <a class="d-block small" href="<?php echo constant('URL')?>Crud/forgotPassword">¿Olvidaste tu contraseña?</a>
         </div>
       </div>
     </div>

@@ -14,7 +14,7 @@
         <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-chart-area"></i>
-            Area Chart Example</div>
+           Gráfica de ususarios registrados</div>
           <div class="card-body">
             <canvas id="myAreaChart" width="100%" height="30"></canvas>
           </div>
@@ -26,7 +26,7 @@
             <div class="card mb-3">
               <div class="card-header">
                 <i class="fas fa-chart-bar"></i>
-                Bar Chart Example</div>
+                Gráfica de barras</div>
               <div class="card-body">
                 <canvas id="myBarChart" width="100%" height="50"></canvas>
               </div>
@@ -37,7 +37,7 @@
             <div class="card mb-3">
               <div class="card-header">
                 <i class="fas fa-chart-pie"></i>
-                Pie Chart Example</div>
+                Gráfica de pastel</div>
               <div class="card-body">
                 <canvas id="myPieChart" width="100%" height="100"></canvas>
               </div>
@@ -55,14 +55,7 @@
       </div>
       <!-- /.container-fluid -->
 
-      <!-- Sticky Footer -->
-      <footer class="sticky-footer">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright © Your Website 2019</span>
-          </div>
-        </div>
-      </footer>
+      <?php require 'views/layout/footerCRUD.php'; ?>
 
     </div>
     <!-- /.content-wrapper -->

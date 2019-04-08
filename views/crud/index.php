@@ -6,7 +6,7 @@
 
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
-          
+
           <li class="breadcrumb-item active">Vista General</li>
         </ol>
 
@@ -82,7 +82,7 @@
         <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-chart-area"></i>
-            Area de gráficas Ejemplo</div>
+          Gráfica general de usuarios registrados</div>
           <div class="card-body">
             <canvas id="myAreaChart" width="100%" height="30"></canvas>
           </div>
@@ -93,13 +93,7 @@
       <!-- /.container-fluid -->
 
       <!-- Sticky Footer -->
-      <footer class="sticky-footer">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright © PILARES.gob.mx 2019</span>
-          </div>
-        </div>
-      </footer>
+    <?php require 'views/layout/footerCRUD.php'; ?>
 
     </div>
     <!-- /.content-wrapper -->
