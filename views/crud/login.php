@@ -46,7 +46,7 @@
               </label>
             </div>
           </div>
-          <a class="btn btn-primary btn-block" href="<?php echo constant('URL')?>Crud/registroExitoso" name="acceso">Acceso</a>
+          <a class="btn btn-primary btn-block" href="<?php echo constant('URL')?>Crud/ingresoExitoso" name="acceso">Acceso</a>
         </form>
         <div class="text-center">
           <a class="d-block small mt-3" href="<?php echo constant('URL')?>Crud/register">Registrar una cuenta</a>

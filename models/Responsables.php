@@ -64,9 +64,11 @@ class Responsables {
 
   }
 
-  public function validarPass($correo, $contrasena)[
+  public function validarPass($correo, $contrasena){
 
-  ]
+  }
+
+  
 
 }
 

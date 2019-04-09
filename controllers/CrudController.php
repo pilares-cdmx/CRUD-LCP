@@ -30,9 +30,10 @@ class CrudController{
     }
 
 
-      $responsableObj = new Responsables();
-      if (isset($_POST['registrarLCP']))
+    public function registrarLCP(){
+      if(isset($_POST['registrarLCP']))
       {
+        $responsableObj = new Responsables();
           //VARIABLES DEL Responsable
               $nombreLCP = $_POST['nombreLCP'];
               $paternoLCP = $_POST['paternoLCP'];
@@ -67,20 +68,8 @@ class CrudController{
 
       }
 
-      //VALIDAR CONTENIDO EN LAS VARIABLES O CAJAS DE TEXTO
-      if (isset($_POST['acceso']))
-      {
-        if (empty($correo) || empty($contrasena))
-        {
-            header("Location:".URL.'Crud/index');
-        }elseif ($responsableObj->validarPass($correo, $contrasena)) {
-            header("Location:".URL.'Crud/ingresoExitoso');
-        }else {
-            header("Location:".URL.'Crud/index');
-        }
 
-      }
-
+    }
 
 
 
