@@ -129,7 +129,7 @@ class Responsables {
   }
 
   public function insertarContrasena($contrasena){
-
+    $query="INSERT INTO Responsables (correo) VALUES ('$correo')";
   }
 
   public function validarPass($correo, $contrasena){
