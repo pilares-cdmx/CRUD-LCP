@@ -33,16 +33,21 @@ class CrudController{
     public function registrarLCP(){
       if(isset($_POST['registrarLCP']))
       {
-        $responsableObj = new Responsables();
+              $responsableObj = new Responsables();
           //VARIABLES DEL Responsable
-              $nombreLCP = $_POST['nombreLCP'];
-              $paternoLCP = $_POST['paternoLCP'];
-              $maternoLCP = $_POST['maternoLCP'];
-              $correo = $_POST['correo'];
+              $responsableObj->setNombre($_POST['nombreLCP']);
+              $responsableObj->setApellidoPaterno($_POST['paternoLCP']);
+              $responsableObj->setApellidoMaterno($_POST['maternoLCP']);
+              $responsableObj->setCorreo($_POST['correo']);
               $contrasena = $_POST['contrasena'];
               $confirmContrasena = $_POST['confirmContrasena'];
 
+              $nombreLCP = $responsableObj->getNombre();
+              $paternoLCP = $responsableObj->getApellidoPaterno();
+              $maternoLCP = $responsableObj->getApellidoMaterno();
+
               if($responsableObj->validarLCP($nombreLCP,$paternoLCP, $maternoLCP)){
+                  $correo = $responsableObj->getCorreo();
                   $responsableObj->insertarCorreo($correo);
 
                   if ($contrasena == $confirmContrasena) {

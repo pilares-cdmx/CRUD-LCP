@@ -25,7 +25,7 @@
     <div class="card card-register mx-auto mt-5">
       <div class="card-header">Registrar una cuenta</div>
       <div class="card-body">
-        <form>
+        <form action='<?php echo constant('URL');?>Crud/registrarLCP' method="POST">
           <div class="form-group">
             <div class="form-row">
               <div class="col-md-4">
@@ -42,7 +42,7 @@
               </div>
               <div class="col-md-4">
                 <div class="form-label-group">
-                  <input type="text" id="lastName" class="form-control" placeholder="Apellido Materno" name="maternoLCP"required="required">
+                  <input type="text" id="lastName2" class="form-control" placeholder="Apellido Materno" name="maternoLCP"required="required">
                   <label for="lastName">Apellido Materno</label>
                 </div>
               </div>
@@ -70,7 +70,11 @@
               </div>
             </div>
           </div>
-          <a class="btn btn-primary btn-block" href="<?php echo constant('URL')?>Crud/index" name="registrarLCP">Registrar</a>
+          <!--
+          <a class="btn btn-primary btn-block" href="<?php echo constant('URL')?>Crud/registrarLCP" name="registrarLCP">Registrar</a>
+           -->
+          	<button type="submit" class="btn btn-primary btn-block" name="registrarLCP">Registrar</button>
+
         </form>
         <div class="text-center">
           <a class="d-block small mt-3" href="<?php echo constant('URL')?>Crud/index">Página de Acceso</a>
