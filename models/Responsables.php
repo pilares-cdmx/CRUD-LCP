@@ -10,6 +10,7 @@ class Responsables {
   private $apellidoPaterno;
   private $apellidoMaterno;
   private $correo;
+  private $contrasena;
   private $Pilares_idPilares;
   private $Pilares_Direccion_idDireccion;
   private $Pilares_Direccion_Colonias_idColonia;
@@ -40,6 +41,9 @@ class Responsables {
   }
   public function getCorreo(){
       return $this->correo;
+  }
+  public function getContrasena(){
+      return $this->contrasena;
   }
   public function getIdPilares(){
       return $this->Pilares_idPilares;
@@ -78,6 +82,9 @@ class Responsables {
   }
   public function setCorreo($correo){
       $this->correo = $this->db->real_escape_string($correo);
+  }
+  public function setContrasena($contrasena){
+      $this->contrasena = $this->db->real_escape_string($contrasena);
   }
   public function setIdPilares($Pilares_idPilares){
       $this->Pilares_idPilares = $Pilares_idPilares;
@@ -123,18 +130,29 @@ class Responsables {
 
   }
 
-  public function insertarCorreo($correo){
-    $query="INSERT INTO Responsables (correo) VALUES ('$correo')";
-    $consulta = $this->db->query($query);
+  public function insertarCorreo(){
+    $query="INSERT INTO Responsables (correo) VALUES ('{$this->getCorreo()}')";
+    $save = $this->db->query($query);
+    $result = false;
+
+    if ($save) {
+        $result = true;
+    }
+    return $result;
   }
 
-  public function insertarContrasena($contrasena){
-    $query="INSERT INTO Responsables (correo) VALUES ('$correo')";
+  public function insertarContrasena(){
+    $query="INSERT INTO Responsables (contrasena) VALUES ('{$this->getContrasena()}')";
+    $save = $this->db->query($query);
+    $result = false;
+
+    if ($save) {
+        $result = true;
+    }
+    return $result;
   }
 
-  public function validarPass($correo, $contrasena){
 
-  }
 
 
 

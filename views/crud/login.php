@@ -25,16 +25,16 @@
     <div class="card card-login mx-auto mt-5">
       <div class="card-header">Acceso</div>
       <div class="card-body">
-        <form>
+        <form action='<?php echo constant('URL');?>Crud/validarAcceso' method="POST">
           <div class="form-group">
             <div class="form-label-group">
-              <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electrónico" required="required" autofocus="autofocus">
+              <input type="email" id="inputEmail" name="correoLCP"class="form-control" placeholder="Correo Electrónico" required="required" autofocus="autofocus">
               <label for="inputEmail">Correo</label>
             </div>
           </div>
           <div class="form-group">
             <div class="form-label-group">
-              <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="required">
+              <input type="password" id="inputPassword" name="contrasenaLCP"class="form-control" placeholder="Contraseña" required="required">
               <label for="inputPassword">Contraseña</label>
             </div>
           </div>
@@ -46,7 +46,10 @@
               </label>
             </div>
           </div>
+          <!--
           <a class="btn btn-primary btn-block" href="<?php echo constant('URL')?>Crud/ingresoExitoso" name="acceso">Acceso</a>
+          -->
+          	<button type="submit" class="btn btn-primary btn-block" name="acceso">Acceso</button>
         </form>
         <div class="text-center">
           <a class="d-block small mt-3" href="<?php echo constant('URL')?>Crud/register">Registrar una cuenta</a>

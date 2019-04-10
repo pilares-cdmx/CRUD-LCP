@@ -268,7 +268,7 @@ class Usuario{
     }
 
     public function validar($usuario,$pass){
-            $query="SELECT * FROM Login WHERE nombre = '$usuario' AND contrasena = '$pass'";
+      $query="SELECT * FROM Login WHERE nombre = '$usuario' AND contrasena = '$pass'";
 
 			$consulta = $this->db->query($query);
 

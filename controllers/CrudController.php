@@ -47,11 +47,12 @@ class CrudController{
               $maternoLCP = $responsableObj->getApellidoMaterno();
 
               if($responsableObj->validarLCP($nombreLCP,$paternoLCP, $maternoLCP)){
-                  $correo = $responsableObj->getCorreo();
-                  $responsableObj->insertarCorreo($correo);
+
+                  $responsableObj->insertarCorreo();
 
                   if ($contrasena == $confirmContrasena) {
-                     $responsableObj->insertarContrasena($contrasena);
+                     $responsableObj->setContrasena($contrasena);
+                     $responsableObj->insertarContrasena();
                      header("Location:".URL.'Crud/index');
                   }
                 /*
@@ -70,13 +71,32 @@ class CrudController{
                   //  header("Location:".URL.'Usuario/login');
               }
 
+      }
+    }
+    public function validarAcceso(){
+      if (isset($_POST['acceso'])) {
+        echo "Estas en el método validarAcceso";
+        $query="SELECT * FROM Login WHERE nombre = '$usuario' AND contrasena = '$pass'";
+
+        $consulta = $this->db->query($query);
+
+              //mysqli_query($conn, "SELECT * FROM Login WHERE nombre = '$usuario' AND contrasena = '$pass'");
+
+        if(!$consulta){
+          echo mysqli_error();
+          exit;
+        }
+
+        if ($usuario = mysqli_fetch_assoc($consulta)) {
+          return true;
+        }else {
+          return false;
+        }
+
 
       }
 
-
     }
-
-
 
 }
 ?>
