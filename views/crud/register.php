@@ -23,7 +23,8 @@
 
   <div class="container">
     <div class="card card-register mx-auto mt-5">
-      <div class="card-header">Registrar una cuenta</div>
+      <div class="card-header">Registrar una cuenta </div>
+      <div class="card-header">Únicamente para LCP </div>
       <div class="card-body">
         <form action='<?php echo constant('URL');?>Crud/registrarLCP' method="POST">
           <div class="form-group">

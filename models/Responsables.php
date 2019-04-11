@@ -43,6 +43,7 @@ class Responsables {
       return $this->correo;
   }
   public function getContrasena(){
+      //return password_hash($this->db->real_escape_string($contrasena), PASSWORD_BCRYPT, ['cost' => 4]);
       return $this->contrasena;
   }
   public function getIdPilares(){
@@ -86,32 +87,78 @@ class Responsables {
   public function setContrasena($contrasena){
       $this->contrasena = $this->db->real_escape_string($contrasena);
   }
-  public function setIdPilares($Pilares_idPilares){
-      $this->Pilares_idPilares = $Pilares_idPilares;
+  public function setIdPilares($idLCP){
+      //$this->Pilares_idPilares = $Pilares_idPilares;
+      $query="SELECT * FROM Responsables WHERE idResponsables = '$idLCP'";
+      $tmp = $this->db->query($query);
+      if ($row = mysqli_fetch_array($tmp)) {
+          $this->Pilares_idPilares = $row['Pilares_idPilares'];
+      }else {
+          echo "No encontré tu Pilares_idPilares";
+      }
 
   }
-  public function setPilares_idDireccion($Pilares_Direccion_idDireccion){
-      $this->Pilares_Direccion_idDireccion = $Pilares_Direccion_idDireccion;
+  public function setPilares_idDireccion($idLCP){
+      //$this->Pilares_Direccion_idDireccion = $Pilares_Direccion_idDireccion;
+      $query="SELECT * FROM Responsables WHERE idResponsables = '$idLCP'";
+      $tmp = $this->db->query($query);
+      if ($row = mysqli_fetch_array($tmp)) {
+          $this->Pilares_Direccion_idDireccion = $row['Pilares_Direccion_idDireccion'];
+      }else {
+          echo "No encontré tu Pilares_idPilares";
+      }
   }
-  public function setPilares_idColonia($Pilares_Direccion_Colonias_idColonia){
-      $this->Pilares_Direccion_Colonias_idColonia = $Pilares_Direccion_Colonias_idColonia;
+  public function setPilares_idColonia($idLCP){
+      //$this->Pilares_Direccion_Colonias_idColonia = $Pilares_Direccion_Colonias_idColonia;
+      $query="SELECT * FROM Responsables WHERE idResponsables = '$idLCP'";
+      $tmp = $this->db->query($query);
+      if ($row = mysqli_fetch_array($tmp)) {
+          $this->Pilares_Direccion_Colonias_idColonia = $row['Pilares_Direccion_Colonias_idColonia'];
+      }else {
+          echo "No encontré tu Pilares_Direccion_Colonias_idColonia";
+      }
   }
-  public function setPilares_idCodigoPostal($Pilares_Direccion_Colonias_CodigosPostales_idCodigoPostal){
-      $this->Pilares_Direccion_Colonias_CodigosPostales_idCodigoPostal = $Pilares_Direccion_Colonias_CodigosPostales_idCodigoPostal;
+  public function setPilares_idCodigoPostal($idLCP){
+      //$this->Pilares_Direccion_Colonias_CodigosPostales_idCodigoPostal = $Pilares_Direccion_Colonias_CodigosPostales_idCodigoPostal;
+      $query="SELECT * FROM Responsables WHERE idResponsables = '$idLCP'";
+      $tmp = $this->db->query($query);
+      if ($row = mysqli_fetch_array($tmp)) {
+          $this->Pilares_Direccion_Colonias_CodigosPostales_idCodigoPostal = $row['Pilares_Direccion_Colonias_CodigosPostales_idCodigoPostal'];
+      }else {
+          echo "No encontré tu Pilares_Direccion_Colonias_CodigosPostales_idCodigoPostal";
+      }
   }
-  public function setPilares_idAlcaldiasZonas($Pilares_Direccion_Colonias_Alcaldias_idAlcaldiasZonas){
-      $this->Pilares_Direccion_Colonias_Alcaldias_idAlcaldiasZonas = $Pilares_Direccion_Colonias_Alcaldias_idAlcaldiasZonas;
+  public function setPilares_idAlcaldiasZonas($idLCP){
+      //$this->Pilares_Direccion_Colonias_Alcaldias_idAlcaldiasZonas = $Pilares_Direccion_Colonias_Alcaldias_idAlcaldiasZonas;
+      $query="SELECT * FROM Responsables WHERE idResponsables = '$idLCP'";
+      $tmp = $this->db->query($query);
+      if ($row = mysqli_fetch_array($tmp)) {
+          $this->Pilares_Direccion_Colonias_Alcaldias_idAlcaldiasZonas = $row['Pilares_Direccion_Colonias_Alcaldias_idAlcaldiasZonas'];
+      }else {
+          echo "No encontré tu Pilares_Direccion_Colonias_Alcaldias_idAlcaldiasZonas";
+      }
   }
-  public function setPilares_idZonas($Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas){
-      $this->Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas = $Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas;
+  public function setPilares_idZonas($idLCP){
+      //$this->Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas = $Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas;
+      $query="SELECT * FROM Responsables WHERE idResponsables = '$idLCP'";
+      $tmp = $this->db->query($query);
+      if ($row = mysqli_fetch_array($tmp)) {
+          $this->Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas = $row['	Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas'];
+      }else {
+          echo "No encontré tu 	Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas";
+      }
   }
 
 /**
 * Otras funciones
 */
-  public function validarLCP($nombreLCP,$paternoLCP, $maternoLCP){
+  public function validarLCP(){
     //$query="SELECT * FROM Responsables WHERE nombre = '$nombreLCP' AND apellidoPaterno = '$paternoLCP' AND apellidoMaterno = '$maternoLCP'";
+    $nombreLCP = $this->nombre;
+    $paternoLCP = $this->apellidoPaterno;
+    $maternoLCP = $this->apellidoMaterno;
     $query="SELECT * FROM Responsables WHERE nombre like '%$nombreLCP%' AND apellidoPaterno like '%$paternoLCP%' AND apellidoMaterno like '%$maternoLCP%'";
+
     $consulta = $this->db->query($query);
 
     //mysqli_query($conn, "SELECT * FROM Login WHERE nombre = '$usuario' AND contrasena = '$pass'");
@@ -120,9 +167,13 @@ class Responsables {
       echo mysqli_error();
       exit;
     }
+    //$nombreLCP = mysqli_fetch_assoc($consulta)
 
-    if ($nombreLCP = mysqli_fetch_assoc($consulta)) {
+    if ($consulta && $consulta->num_rows == 1) {
       //var_dump($consulta);
+      $LCP = $consulta->fetch_object();
+    
+      $this->setIdResponsables($LCP->idResponsables);
       return true;
     }else {
       return false;
@@ -131,7 +182,10 @@ class Responsables {
   }
 
   public function insertarCorreo(){
-    $query="INSERT INTO Responsables (correo) VALUES ('{$this->getCorreo()}')";
+    //$query="INSERT INTO Responsables (correo) VALUES ('{$this->getCorreo()}')";
+    $query="UPDATE `Responsables` SET `correo` = '{$this->getCorreo()}' WHERE `Responsables`.`idResponsables` = '{$this->getIdResponsables()}' AND `Responsables`.`Pilares_idPilares` = '{$this->getIdPilares()}'
+    AND `Responsables`.`Pilares_Direccion_idDireccion` = '{$this->getPilares_idDireccion()}' AND `Responsables`.`Pilares_Direccion_Colonias_idColonia` = '{$this->getPilares_idColonia()}' AND `Responsables`.`Pilares_Direccion_Colonias_CodigosPostales_idCodigoPostal` = '{$this->getPilares_idCodigoPostal()}'
+    AND `Responsables`.`Pilares_Direccion_Colonias_Alcaldias_idAlcaldiasZonas` = '{$this->getPilares_idAlcaldiasZonas()}' AND `Responsables`.`Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas` = '{$this->getPilares_idZonas()}'";
     $save = $this->db->query($query);
     $result = false;
 
@@ -142,7 +196,10 @@ class Responsables {
   }
 
   public function insertarContrasena(){
-    $query="INSERT INTO Responsables (contrasena) VALUES ('{$this->getContrasena()}')";
+    $query="UPDATE `Responsables` SET `contrasena` = '{$this->getContrasena()}' WHERE `Responsables`.`idResponsables` = '{$this->getIdResponsables()}' AND `Responsables`.`Pilares_idPilares` = '{$this->getIdPilares()}'
+    AND `Responsables`.`Pilares_Direccion_idDireccion` = '{$this->getPilares_idDireccion()}' AND `Responsables`.`Pilares_Direccion_Colonias_idColonia` = '{$this->getPilares_idColonia()}' AND `Responsables`.`Pilares_Direccion_Colonias_CodigosPostales_idCodigoPostal` = '{$this->getPilares_idCodigoPostal()}'
+    AND `Responsables`.`Pilares_Direccion_Colonias_Alcaldias_idAlcaldiasZonas` = '{$this->getPilares_idAlcaldiasZonas()}' AND `Responsables`.`Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas` = '{$this->getPilares_idZonas()}'";
+
     $save = $this->db->query($query);
     $result = false;
 
@@ -152,9 +209,27 @@ class Responsables {
     return $result;
   }
 
+  public function validarAcceso(){
+      $result = false;
+      $correoLCP = $this->correo;
+      $contrasenaLCP = $this->contrasena;
+      $query="SELECT * FROM Responsables WHERE correo = '$correoLCP'";
 
-
-
+      $login = $this->db->query($query);
+        //mysqli_query($conn, "SELECT * FROM Login WHERE nombre = '$usuario' AND contrasena = '$pass'");
+      if($login && $login->num_rows == 1){
+        $usuario = $login->fetch_object();
+        // Verificar la contraseñarra
+        if ($contrasenaLCP == $usuario->contrasena) {
+          $verify = true;
+        }
+        //$verify = password_verify($contrasenaLCP, $usuario->contrasena);
+        if ($verify) {
+          $result = $usuario;
+        }
+      }
+    return $result;
+  }
 
 }
 

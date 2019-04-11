@@ -24,8 +24,11 @@
   <div class="container">
     <div class="card card-login mx-auto mt-5">
       <div class="card-header">Acceso</div>
+      <?php if(isset($_SESSION['error_login'])): $mensajeError = $_SESSION['error_login']?>
+          <div class="card-header"><?=$mensajeError?></div>
+      <?php endif; ?>
       <div class="card-body">
-        <form action='<?php echo constant('URL');?>Crud/validarAcceso' method="POST">
+        <form action='<?php echo constant('URL');?>Crud/login' method="POST">
           <div class="form-group">
             <div class="form-label-group">
               <input type="email" id="inputEmail" name="correoLCP"class="form-control" placeholder="Correo Electrónico" required="required" autofocus="autofocus">
@@ -49,6 +52,7 @@
           <!--
           <a class="btn btn-primary btn-block" href="<?php echo constant('URL')?>Crud/ingresoExitoso" name="acceso">Acceso</a>
           -->
+
           	<button type="submit" class="btn btn-primary btn-block" name="acceso">Acceso</button>
         </form>
         <div class="text-center">
@@ -56,6 +60,7 @@
           <a class="d-block small" href="<?php echo constant('URL')?>Crud/forgotPassword">¿Olvidaste tu contraseña?</a>
         </div>
       </div>
+
     </div>
   </div>
 

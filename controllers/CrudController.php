@@ -41,19 +41,29 @@ class CrudController{
               $responsableObj->setCorreo($_POST['correo']);
               $contrasena = $_POST['contrasena'];
               $confirmContrasena = $_POST['confirmContrasena'];
+//Benito Rodríguez Pérez
+              if($responsableObj->validarLCP()){
 
-              $nombreLCP = $responsableObj->getNombre();
-              $paternoLCP = $responsableObj->getApellidoPaterno();
-              $maternoLCP = $responsableObj->getApellidoMaterno();
+                  $idLCP = $responsableObj->getIdResponsables();
 
-              if($responsableObj->validarLCP($nombreLCP,$paternoLCP, $maternoLCP)){
+                  $responsableObj->setIdPilares($idLCP);
+                  $responsableObj->setPilares_idDireccion($idLCP);
+                  $responsableObj->setPilares_idColonia($idLCP);
+                  $responsableObj->setPilares_idCodigoPostal($idLCP);
+                  $responsableObj->setPilares_idAlcaldiasZonas($idLCP);
+                  $responsableObj->setPilares_idZonas($idLCP);
 
                   $responsableObj->insertarCorreo();
+                  var_dump($responsableObj->insertarCorreo());
 
                   if ($contrasena == $confirmContrasena) {
                      $responsableObj->setContrasena($contrasena);
-                     $responsableObj->insertarContrasena();
-                     header("Location:".URL.'Crud/index');
+                     if($responsableObj->insertarContrasena()){
+                       header("Location:".URL.'Crud/index');
+                     }else {
+                       echo "no se inserto contraseña";
+                     }
+
                   }
                 /*
                   session_start();
@@ -73,26 +83,28 @@ class CrudController{
 
       }
     }
-    public function validarAcceso(){
+
+    public function login(){
       if (isset($_POST['acceso'])) {
-        echo "Estas en el método validarAcceso";
-        $query="SELECT * FROM Login WHERE nombre = '$usuario' AND contrasena = '$pass'";
+          $responsableObj = New Responsables();
 
-        $consulta = $this->db->query($query);
+         $responsableObj->setCorreo($_POST['correoLCP']);
+         $responsableObj->setContrasena($_POST['contrasenaLCP']);
 
-              //mysqli_query($conn, "SELECT * FROM Login WHERE nombre = '$usuario' AND contrasena = '$pass'");
-
-        if(!$consulta){
-          echo mysqli_error();
-          exit;
-        }
-
-        if ($usuario = mysqli_fetch_assoc($consulta)) {
-          return true;
-        }else {
-          return false;
-        }
-
+          $identity = $responsableObj->validarAcceso();
+          //var_dump($identity);
+          if ($identity && is_object($identity)) {
+            $_SESSION['identity'] = $identity;
+            header("Location:".URL.'Crud/ingresoExitoso');
+            /*
+            if ($identity->role == 'admin') {
+              $_SESSION['admin'] = true;
+            }
+            */
+          }else {
+            $_SESSION['error_login'] = 'Identificación Fallida';
+            header("Location:".URL.'Crud/index');
+          }
 
       }
 

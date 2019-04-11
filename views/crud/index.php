@@ -6,8 +6,15 @@
 
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
-
+        <!--
           <li class="breadcrumb-item active">Vista General</li>
+        -->
+        <?php if(isset($_SESSION['identity'])): ?>
+          <div class="breadcrumb-item active">
+            <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li>
+          </div>
+
+        <?php endif; ?>
         </ol>
 
         <!-- Icon Cards-->
