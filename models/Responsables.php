@@ -69,8 +69,19 @@ class Responsables {
 /**
 * SETTERS
 */
-  public function setIdResponsables($idResponsables){
-      $this->idResponsables = $idResponsables;
+  public function setIdResponsables(){
+      //$this->idResponsables = $idResponsables;
+      $nombreLCP = $this->nombre;
+      $paternoLCP = $this->apellidoPaterno;
+      $maternoLCP = $this->apellidoMaterno;
+      $query="SELECT * FROM Responsables WHERE nombre like '%$nombreLCP%' AND apellidoPaterno like '%$paternoLCP%' AND apellidoMaterno like '%$maternoLCP%'";
+
+      $tmp = $this->db->query($query);
+      if ($row = mysqli_fetch_array($tmp)) {
+          $this->idResponsables = $row['idResponsables'];
+      }else {
+          echo "No encontré tu idResponsables";
+      }
   }
   public function setNombre($nombre){
       $this->nombre = $this->db->real_escape_string($nombre);
@@ -171,9 +182,8 @@ class Responsables {
 
     if ($consulta && $consulta->num_rows == 1) {
       //var_dump($consulta);
-      $LCP = $consulta->fetch_object();
-    
-      $this->setIdResponsables($LCP->idResponsables);
+      //$LCP = $consulta->fetch_object();
+      //$this->setIdResponsables($LCP->idResponsables);
       return true;
     }else {
       return false;
@@ -183,7 +193,8 @@ class Responsables {
 
   public function insertarCorreo(){
     //$query="INSERT INTO Responsables (correo) VALUES ('{$this->getCorreo()}')";
-    $query="UPDATE `Responsables` SET `correo` = '{$this->getCorreo()}' WHERE `Responsables`.`idResponsables` = '{$this->getIdResponsables()}' AND `Responsables`.`Pilares_idPilares` = '{$this->getIdPilares()}'
+    //$correo = $this->getCorreo();
+    $query="UPDATE Responsables SET `correo` = '{$this->getCorreo()}' WHERE `Responsables`.`idResponsables` = '{$this->getIdResponsables()}' AND `Responsables`.`Pilares_idPilares` = '{$this->getIdPilares()}'
     AND `Responsables`.`Pilares_Direccion_idDireccion` = '{$this->getPilares_idDireccion()}' AND `Responsables`.`Pilares_Direccion_Colonias_idColonia` = '{$this->getPilares_idColonia()}' AND `Responsables`.`Pilares_Direccion_Colonias_CodigosPostales_idCodigoPostal` = '{$this->getPilares_idCodigoPostal()}'
     AND `Responsables`.`Pilares_Direccion_Colonias_Alcaldias_idAlcaldiasZonas` = '{$this->getPilares_idAlcaldiasZonas()}' AND `Responsables`.`Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas` = '{$this->getPilares_idZonas()}'";
     $save = $this->db->query($query);

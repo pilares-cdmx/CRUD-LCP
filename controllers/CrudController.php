@@ -44,8 +44,8 @@ class CrudController{
 //Benito Rodríguez Pérez
               if($responsableObj->validarLCP()){
 
+                  $responsableObj->setIdResponsables();
                   $idLCP = $responsableObj->getIdResponsables();
-
                   $responsableObj->setIdPilares($idLCP);
                   $responsableObj->setPilares_idDireccion($idLCP);
                   $responsableObj->setPilares_idColonia($idLCP);
@@ -53,17 +53,20 @@ class CrudController{
                   $responsableObj->setPilares_idAlcaldiasZonas($idLCP);
                   $responsableObj->setPilares_idZonas($idLCP);
 
-                  $responsableObj->insertarCorreo();
-                  var_dump($responsableObj->insertarCorreo());
+                  if($responsableObj->insertarCorreo()){
+                  //var_dump($responsableObj->insertarCorreo());
 
-                  if ($contrasena == $confirmContrasena) {
-                     $responsableObj->setContrasena($contrasena);
-                     if($responsableObj->insertarContrasena()){
-                       header("Location:".URL.'Crud/index');
-                     }else {
-                       echo "no se inserto contraseña";
-                     }
+                    if ($contrasena == $confirmContrasena) {
+                       $responsableObj->setContrasena($contrasena);
+                         if($responsableObj->insertarContrasena()){
+                           header("Location:".URL.'Crud/index');
+                         }else {
+                           echo "no se inserto contraseña";
+                         }
+                    }
 
+                  }else{
+                    echo "No se guardo el correo";
                   }
                 /*
                   session_start();
@@ -73,9 +76,7 @@ class CrudController{
                   }
                 */
                   //$this->view->render('aviso-de-privacidad/index');
-              }
-
-              else{
+              }else{
                 echo "Transaccion no concretada";
                   //$this->view->render('formulario/login');
                   //  header("Location:".URL.'Usuario/login');
