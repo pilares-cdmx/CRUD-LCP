@@ -93,7 +93,7 @@ class CrudController{
          $responsableObj->setContrasena($_POST['contrasenaLCP']);
 
           $identity = $responsableObj->validarAcceso();
-          //var_dump($identity);
+          //var_dump($identity);die;
           if ($identity && is_object($identity)) {
             $_SESSION['identity'] = $identity;
             header("Location:".URL.'Crud/ingresoExitoso');
