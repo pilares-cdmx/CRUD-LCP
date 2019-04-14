@@ -92,13 +92,18 @@ class CrudController{
          $responsableObj->setCorreo($_POST['correoLCP']);
          $responsableObj->setContrasena($_POST['contrasenaLCP']);
 
-          $identity = $responsableObj->validarAcceso();
-          //var_dump($identity);die;
-          if ($identity && is_object($identity)) {
-            $_SESSION['identity'] = $identity;
+          $identityLCP = $responsableObj->validarAcceso();
+          //var_dump($identityLCP);die;
+          if ($identityLCP && is_object($identityLCP)) {
+             $idPilarDeLCP = $identityLCP->Pilares_idPilares;
+             //var_dump($idPilarDeLCP);die;
+             $responsableObj->setPilarAsignado($idPilarDeLCP);
+             $nombrePilarAsignado = $responsableObj->getPilarAsignado();
+            $_SESSION['identity'] = $identityLCP;
+            $_SESSION['pilarAsignado'] = $nombrePilarAsignado;
             header("Location:".URL.'Crud/ingresoExitoso');
             /*
-            if ($identity->role == 'admin') {
+            if ($identityLCP->role == 'admin') {
               $_SESSION['admin'] = true;
             }
             */
