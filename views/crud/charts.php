@@ -1,7 +1,11 @@
 <?php require 'views/layout/headerCRUD.php'; ?>
-
-    <div id="content-wrapper">
-
+<?php
+    if (isset($_SESSION['pilarAsignado'])) {
+        $nombrePilar = $_SESSION['pilarAsignado'];
+        $separador = "-";
+    }
+ ?>
+ <div id="content-wrapper">
       <div class="container-fluid">
 
         <!-- Breadcrumbs-->
@@ -18,7 +22,7 @@
           <div class="card-body">
             <canvas id="myAreaChart" width="100%" height="30"></canvas>
           </div>
-          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          <div class="card-footer small text-muted">Actualizado ayer a las 11:59 PM</div>
         </div>
 
         <div class="row">
@@ -26,22 +30,22 @@
             <div class="card mb-3">
               <div class="card-header">
                 <i class="fas fa-chart-bar"></i>
-                Gráfica de barras</div>
+                Gráfica de Usuarios registrados por zona</div>
               <div class="card-body">
                 <canvas id="myBarChart" width="100%" height="50"></canvas>
               </div>
-              <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+              <div class="card-footer small text-muted">Actualizado ayer a las 11:59 PM</div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="card mb-3">
               <div class="card-header">
                 <i class="fas fa-chart-pie"></i>
-                Gráfica de pastel</div>
+                Gráfica de usuarios registrados por tipo de actividad</div>
               <div class="card-body">
                 <canvas id="myPieChart" width="100%" height="100"></canvas>
               </div>
-              <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+              <div class="card-footer small text-muted">Actualizado ayer a las 11:59 PM</div>
             </div>
           </div>
         </div>
@@ -73,15 +77,15 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <h5 class="modal-title" id="exampleModalLabel">¿Estas seguro de querer salir?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-body">Selesciona salir si estas seguro de cerrar tu sesión.</div>
         <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="<?php echo constant('URL')?>Crud/index">Logout</a>
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+          <a class="btn btn-primary" href="<?php echo constant('URL')?>Crud/index">Salir</a>
         </div>
       </div>
     </div>

@@ -26,7 +26,7 @@
       <div class="card-header">Registrar una cuenta </div>
       <div class="card-header">Únicamente para LCP </div>
       <div class="card-body">
-        <form action='<?php echo constant('URL');?>Crud/registrarLCP' method="POST">
+        <form action='<?php echo constant('URL');?>Crud/index' method="POST">
           <div class="form-group">
             <div class="form-row">
               <div class="col-md-4">

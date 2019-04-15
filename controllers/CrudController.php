@@ -28,6 +28,12 @@ class CrudController{
     public function users(){
         require_once 'views/crud/tables.php';
     }
+    public function tablaUsuarios(){
+        $responsableObj = new Responsables();
+        $responsableObj->dataUsuarios();
+        //$idPilarLCP = $responsableObj->getIdPilares();
+
+    }
 
 
     public function registrarLCP(){
@@ -98,9 +104,10 @@ class CrudController{
              $idPilarDeLCP = $identityLCP->Pilares_idPilares;
              //var_dump($idPilarDeLCP);die;
              $responsableObj->setPilarAsignado($idPilarDeLCP);
+             $responsableObj->setIdPilares($idPilarDeLCP);
              $nombrePilarAsignado = $responsableObj->getPilarAsignado();
-            $_SESSION['identity'] = $identityLCP;
-            $_SESSION['pilarAsignado'] = $nombrePilarAsignado;
+             $_SESSION['identity'] = $identityLCP;
+             $_SESSION['pilarAsignado'] = $nombrePilarAsignado;
             header("Location:".URL.'Crud/ingresoExitoso');
             /*
             if ($identityLCP->role == 'admin') {

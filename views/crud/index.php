@@ -99,7 +99,7 @@ if (isset($_SESSION['pilarAsignado'])) {
         <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-chart-area"></i>
-          Gráfica general de usuarios registrados por <?=$nombrePilar?></div>
+          Gráfica general de usuarios registrados por día</div>
           <div class="card-body">
             <canvas id="myAreaChart" width="100%" height="30"></canvas>
           </div>
@@ -128,15 +128,15 @@ if (isset($_SESSION['pilarAsignado'])) {
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <h5 class="modal-title" id="exampleModalLabel">¿Estas seguro de querer salir?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-body">Selesciona salir si estas seguro de cerrar tu sesión.</div>
         <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="<?php echo constant('URL')?>Crud/index">Logout</a>
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+          <a class="btn btn-primary" href="<?php echo constant('URL')?>Crud/index">Salir</a>
         </div>
       </div>
     </div>
