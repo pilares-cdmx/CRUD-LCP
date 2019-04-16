@@ -40,6 +40,9 @@ error_reporting(-1);
     $dia15="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-15%'";
     $result15 = mysqli_query($con, $dia15);
 
+    $dia16="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-16%'";
+    $result16 = mysqli_query($con, $dia16);
+
     $data = array();
     foreach ($result7 as $row) {
       $data[] = $row;
@@ -68,6 +71,9 @@ error_reporting(-1);
     foreach ($result15 as $row) {
       array_push($data, $row);
     }
+    foreach ($result16 as $row) {
+      array_push($data, $row);
+    }
 
 
 
@@ -81,6 +87,7 @@ error_reporting(-1);
     $result13->close();
     $result14->close();
     $result15->close();
+    $result16->close();
 
     //close connection
     $con->close();
