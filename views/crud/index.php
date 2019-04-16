@@ -1,5 +1,10 @@
 <?php require 'views/layout/headerCRUD.php'; ?>
-
+<?php
+if (isset($_SESSION['pilarAsignado'])) {
+    $nombrePilar = $_SESSION['pilarAsignado'];
+    $separador = "-";
+}
+ ?>
     <div id="content-wrapper">
 
       <div class="container-fluid">
@@ -15,6 +20,11 @@
           </div>
 
         <?php endif; ?>
+        <?php if(isset($_SESSION['pilarAsignado'])): ?>
+
+             <li><?=$separador?><strong><?=$nombrePilar?></strong></li>
+
+        <?php endif;?>
         </ol>
 
         <!-- Icon Cards-->
@@ -23,9 +33,9 @@
             <div class="card text-white bg-primary o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
-                  <i class="fas fa-fw fa-comments"></i>
+                  <i class="fas fa-fw fa-music"></i>
                 </div>
-                <div class="mr-5">26 Nuevos Mensajes!</div>
+                <div class="mr-5">Cultura</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
                 <span class="float-left">Ver detalle</span>
@@ -41,7 +51,7 @@
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-list"></i>
                 </div>
-                <div class="mr-5">11 Nuevas Tareas!</div>
+                <div class="mr-5">Ciberescuelas</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
                 <span class="float-left">Ver detalle</span>
@@ -55,9 +65,9 @@
             <div class="card text-white bg-success o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
-                  <i class="fas fa-fw fa-shopping-cart"></i>
+                  <i class="fas fa-fw fa-running"></i>
                 </div>
-                <div class="mr-5">123 nuevas Ordenes!</div>
+                <div class="mr-5">Deporte</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
                 <span class="float-left">Ver detalle</span>
@@ -71,9 +81,9 @@
             <div class="card text-white bg-danger o-hidden h-100">
               <div class="card-body">
                 <div class="card-body-icon">
-                  <i class="fas fa-fw fa-life-ring"></i>
+                  <i class="fas fa-fw fa-hand-holding-usd"></i>
                 </div>
-                <div class="mr-5">13 Nuevos Ingresos!</div>
+                <div class="mr-5">Autonomía económica</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
                 <span class="float-left">Ver detalle</span>
@@ -89,11 +99,11 @@
         <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-chart-area"></i>
-          Gráfica general de usuarios registrados</div>
+          Gráfica general de usuarios registrados por día</div>
           <div class="card-body">
             <canvas id="myAreaChart" width="100%" height="30"></canvas>
           </div>
-          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          <div class="card-footer small text-muted">Actualizada Ayer a las 11:59 PM</div>
         </div>
 
       </div>
@@ -118,15 +128,15 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <h5 class="modal-title" id="exampleModalLabel">¿Estas seguro de querer salir?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-body">Selesciona salir si estas seguro de cerrar tu sesión.</div>
         <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="<?php echo constant('URL')?>Crud/index">Logout</a>
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+          <a class="btn btn-primary" href="<?php echo constant('URL')?>Crud/index">Salir</a>
         </div>
       </div>
     </div>

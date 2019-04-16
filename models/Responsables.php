@@ -19,6 +19,8 @@ class Responsables {
   private $Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas;
   private $db;
 
+  private $pilarAsignado;
+
   public function __construct()
   {
       $this->db = Database::connect();
@@ -63,6 +65,10 @@ class Responsables {
   }
   public function getPilares_idZonas(){
       return $this->Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas;
+  }
+
+  public function getPilarAsignado(){
+      return $this->pilarAsignado;
   }
 
 
@@ -160,6 +166,17 @@ class Responsables {
       }
   }
 
+  public function setPilarAsignado($Pilares_idPilares){
+      //$this->Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas = $Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas;
+      $query="SELECT * FROM Pilares WHERE idPilares = '$Pilares_idPilares'";
+      $tmp = $this->db->query($query);
+      if ($row = mysqli_fetch_array($tmp)) {
+          $this->pilarAsignado = $row['nombre'];
+      }else {
+          echo "No encontré tu 	nombre de pilar";
+      }
+  }
+
 /**
 * Otras funciones
 */
@@ -229,17 +246,77 @@ class Responsables {
       $login = $this->db->query($query);
         //mysqli_query($conn, "SELECT * FROM Login WHERE nombre = '$usuario' AND contrasena = '$pass'");
       if($login && $login->num_rows == 1){
-        $usuario = $login->fetch_object();
+        $lcp = $login->fetch_object();
         // Verificar la contraseñarra
-        if ($contrasenaLCP == $usuario->contrasena) {
+        if ($contrasenaLCP == $lcp->contrasena) {
           $verify = true;
         }
         //$verify = password_verify($contrasenaLCP, $usuario->contrasena);
         if ($verify) {
-          $result = $usuario;
+          $result = $lcp;
         }
       }
     return $result;
+  }
+
+  public function dataUsuarios(){
+      /*header('Content-Type: application/json');
+      $query="SELECT nombre, apellidoPaterno, apellidoMaterno, folio, correo, curp, telefonoCasa, fechaDeRegistro FROM Usuario";
+
+      $result = $this->db->query($query);
+
+      $data = array();
+      foreach ($result as $row){
+        $data[] = $row;
+      }
+      $dataJSON = json_encode($data);
+      return $dataJSON;
+      */
+      $sql="SELECT * FROM Usuario";
+      $result = $this->db->query($query);
+
+            echo "<thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <th>Apellido Paterno</th>
+                        <th>Apellido Materno</th>
+                        <th>folio</th>
+                        <th>correo</th>
+                        <th>CURP</th>
+                        <th>Telefono Casa</th>
+                        <th>Fecha Registro</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th>Nombre</th>
+                        <th>Apellido Paterno</th>
+                        <th>Apellido Materno</th>
+                        <th>folio</th>
+                        <th>correo</th>
+                        <th>CURP</th>
+                        <th>Telefono Casa</th>
+                        <th>Fecha Registro</th>
+                      </tr>
+                    </tfoot>
+                    <tbody>";
+
+        while ($row = mysqli_fetch_array($result)) {
+            //echo "<option value=" . $row['idCodigoPostal'] . ">" . $row['codigo'] . "</option>";
+            echo "<tr>
+                    <td>". $row['nombre'] . "</td>" .
+                   "<td>". $row['apellidoPaterno'] . "</td>" .
+                   "<td>". $row['apellidoMaterno'] . "</td>" .
+                   "<td>". $row['folio'] . "</td>" .
+                   "<td>". $row['correo'] . "</td>" .
+                   "<td>". $row['curp'] . "</td>" .
+                   "<td>". $row['telefonoCasa'] . "</td>" .
+                   "<td>". $row['fechaDeRegistro'] . "</td>" .
+                  "</tr>";
+        }
+
+        mysqli_close($con);
+
   }
 
 }
