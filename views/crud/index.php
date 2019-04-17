@@ -7,6 +7,10 @@
 
   mysqli_select_db($con, "pilaresDB");
   mysqli_query($con, "SET NAMES 'utf8mb4'");
+
+  /**
+  * Totales por tipo de actividad
+  */
   $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '1'";
   $totalesCultura = mysqli_query($con, $sql);
   //var_dump($totalesCultura);
@@ -26,6 +30,621 @@
   $totalesAutonomia = mysqli_query($con, $sql);
   //var_dump($totalesCultura);
   $autonomiaTotales = mysqli_fetch_array($totalesAutonomia);
+  /**
+  * FIN - Totales por tipo de actividad
+  */
+  /**
+  * Totales por tactividad Cultura
+  */
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '1'";
+  $totalesTeatro = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $teatro = mysqli_fetch_array($totalesTeatro);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '2'";
+  $totalesDanza = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $danza = mysqli_fetch_array($totalesDanza);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '4'";
+  $totalesPerformance = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $performance = mysqli_fetch_array($totalesPerformance);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '5'";
+  $totalesMusica = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $musica = mysqli_fetch_array($totalesMusica);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '8'";
+  $totalesArtesPlas = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $artesPlas = mysqli_fetch_array($totalesArtesPlas);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '9'";
+  $totalesFoto = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $fotografia = mysqli_fetch_array($totalesFoto);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '10'";
+  $totalesVideoDoc = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $videoDoc = mysqli_fetch_array($totalesVideoDoc);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '11'";
+  $totalesStopMotion = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $stopMotion = mysqli_fetch_array($totalesStopMotion);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '12'";
+  $totalesArteBiolo = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $arteBiolo = mysqli_fetch_array($totalesArteBiolo);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '15'";
+  $totalesLibroClub = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $libroClub = mysqli_fetch_array($totalesLibroClub);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '16'";
+  $totalesCineTranshu = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $CineTranshu = mysqli_fetch_array($totalesCineTranshu);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '22'";
+  $totalesDifuCienti = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $difuCienti = mysqli_fetch_array($totalesDifuCienti);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '67'";
+  $totalesBaileSocial = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $baileSocial = mysqli_fetch_array($totalesBaileSocial);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '68'";
+  $totalesDanzaNiños = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $danzaNiños = mysqli_fetch_array($totalesDanzaNiños);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '69'";
+  $totalesDanzaAdultos = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $danzaAdultos = mysqli_fetch_array($totalesDanzaAdultos);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '70'";
+  $totalesFolklorica = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $folklorica = mysqli_fetch_array($totalesFolklorica);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '71'";
+  $totalesActuacion = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $actuacion = mysqli_fetch_array($totalesActuacion);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '72'";
+  $totalesTeatroCalle = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $teatroCalle = mysqli_fetch_array($totalesTeatroCalle);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '73'";
+  $totalesDanzaContemporanea = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $contemporanea = mysqli_fetch_array($totalesDanzaContemporanea);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '74'";
+  $totalesPolinesia = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $polinesia = mysqli_fetch_array($totalesPolinesia);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '75'";
+  $totalesTeatroMascaras = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $mascaras = mysqli_fetch_array($totalesTeatroMascaras);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '76'";
+  $totalesExpresio = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $expresion = mysqli_fetch_array($totalesExpresio);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '77'";
+  $totalesTelar = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $telar = mysqli_fetch_array($totalesTelar);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '78'";
+  $totalesCArtoneria = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $cartoneria = mysqli_fetch_array($totalesCArtoneria);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '79'";
+  $totalesBordado = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $bordado = mysqli_fetch_array($totalesBordado);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '80'";
+  $totalesConstruccion = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $construccion = mysqli_fetch_array($totalesConstruccion);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '81'";
+  $totalesDiseñoJuguetes = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $diseñoJuguetes = mysqli_fetch_array($totalesDiseñoJuguetes);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '82'";
+  $totalesReciclajeAmb = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $reciclajeAmb = mysqli_fetch_array($totalesReciclajeAmb);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '83'";
+  $totalesEscritura = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $escritura = mysqli_fetch_array($totalesEscritura);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '84'";
+  $totalesPinturaArt = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $pinturaArt = mysqli_fetch_array($totalesPinturaArt);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '85'";
+  $totalesAudioVisual = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $audioVisual = mysqli_fetch_array($totalesAudioVisual);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '86'";
+  $totalesCine = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $cine = mysqli_fetch_array($totalesCine);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '87'";
+  $totalesAnimacionNiños = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $animacionNiños = mysqli_fetch_array($totalesAnimacionNiños);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '88'";
+  $totalesVideoComunitario = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $videoComunitario = mysqli_fetch_array($totalesVideoComunitario);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '89'";
+  $totalesGuitarra = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $guitarra = mysqli_fetch_array($totalesGuitarra);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '90'";
+  $totalesRap = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $rap = mysqli_fetch_array($totalesRap);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '91'";
+  $totalesPercusiones = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $percusiones = mysqli_fetch_array($totalesPercusiones);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '92'";
+  $totalesIniciacion = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $iniciacion = mysqli_fetch_array($totalesIniciacion);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '93'";
+  $totalesSonHuasteco = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $sonHuasteco = mysqli_fetch_array($totalesSonHuasteco);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '123'";
+  $totalesGrabado = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $grabado = mysqli_fetch_array($totalesGrabado);
+  /**
+  * FIN -Totales por tactividad Cultura
+  */
+  /**
+  * Totales por tactividad Deporte
+  */
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '17'";
+  $totalesFutbol = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $futbol = mysqli_fetch_array($totalesFutbol);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '18'";
+  $totalesBasquet = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $basquet = mysqli_fetch_array($totalesBasquet);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '19'";
+  $totaleVoley = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $voley = mysqli_fetch_array($totaleVoley);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '20'";
+  $totalesAcondicionamiento = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $acondicionamiento = mysqli_fetch_array($totalesAcondicionamiento);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '94'";
+  $totalesZumba = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $zumba = mysqli_fetch_array($totalesZumba);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '95'";
+  $totalesTae = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $tae = mysqli_fetch_array($totalesTae);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '96'";
+  $totalesYoga = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $yoga = mysqli_fetch_array($totalesYoga);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '97'";
+  $totalesTai = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $taiChi = mysqli_fetch_array($totalesTai);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '98'";
+  $totalesBoxeo = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $boxeo = mysqli_fetch_array($totalesBoxeo);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '99'";
+  $totalesAtletismo = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $atletismo = mysqli_fetch_array($totalesAtletismo);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '100'";
+  $totalesKarate = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $karate = mysqli_fetch_array($totalesKarate);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '101'";
+  $totalesKung = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $kung = mysqli_fetch_array($totalesKung);
+  /**
+  * FIN - Totales por tactividad Deporte
+  */
+  /**
+  * Totales por actividad Ciberescuelas
+  */
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '21'";
+  $totalesAjedrez = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $ajedrez = mysqli_fetch_array($totalesAjedrez);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '24'";
+  $totalesClubCiencia = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $clubCiencia = mysqli_fetch_array($totalesClubCiencia);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '25'";
+  $totalesRoboticaApli = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $robo = mysqli_fetch_array($totalesRoboticaApli);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '28'";
+  $totalesClubCodigo = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $clubCodigo = mysqli_fetch_array($totalesClubCodigo);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '29'";
+  $totalesAmor = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $amor = mysqli_fetch_array($totalesAmor);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '30'";
+  $totalesPrevenAdic = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $prevenAdic = mysqli_fetch_array($totalesPrevenAdic);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '31'";
+  $totalesHabilidades = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $habilidades = mysqli_fetch_array($totalesHabilidades);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '32'";
+  $totalesProyecto = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $proyecto = mysqli_fetch_array($totalesProyecto);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '33'";
+  $totalesAutoestima = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $autoestima = mysqli_fetch_array($totalesAutoestima);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '34'";
+  $totalesTanato = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $tanato = mysqli_fetch_array($totalesTanato);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '35'";
+  $totalesInteliEmo = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $inteliEmo = mysqli_fetch_array($totalesInteliEmo);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '36'";
+  $totalesArteEmo = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $arteEmo = mysqli_fetch_array($totalesArteEmo);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '102'";
+  $totalesREdaccion = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $redaccion = mysqli_fetch_array($totalesREdaccion);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '103'";
+  $totalesTalleComp = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $talleresCom = mysqli_fetch_array($totalesTalleComp);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '104'";
+  $totalesEmoMagic = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $emoMagic = mysqli_fetch_array($totalesEmoMagic);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '105'";
+  $totalesPintEmo = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $pintEmo = mysqli_fetch_array($totalesPintEmo);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '106'";
+  $totalesAlfabet = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $alfabet = mysqli_fetch_array($totalesAlfabet);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '107'";
+  $totalesPrimaRIA = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $primaria = mysqli_fetch_array($totalesPrimaRIA);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '108'";
+  $totalesSec = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $secundaria = mysqli_fetch_array($totalesSec);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '109'";
+  $totalesBadi = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $badi = mysqli_fetch_array($totalesBadi);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '110'";
+  $totalesPrepaSep = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $prepaSep = mysqli_fetch_array($totalesPrepaSep);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '114'";
+  $totalesBunam= mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $bunam = mysqli_fetch_array($totalesBunam);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '115'";
+  $totalesUnadm = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $unadm = mysqli_fetch_array($totalesUnadm);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '116'";
+  $totalesLicLinea = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $liclinea = mysqli_fetch_array($totalesLicLinea);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '117'";
+  $totalesLicCdmx = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $licCdmx = mysqli_fetch_array($totalesLicCdmx);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '118'";
+  $totalesAsePrim = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $asePrimaria = mysqli_fetch_array($totalesAsePrim);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '119'";
+  $totalesAseSec = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $aseSecundaria = mysqli_fetch_array($totalesAseSec);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '120'";
+  $totalesAsePrepa = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $asePrep = mysqli_fetch_array($totalesAsePrepa);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '121'";
+  $totalesAseLic = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $aseLic= mysqli_fetch_array($totalesAseLic);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '122'";
+  $totalesBaileCuero= mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $baileCuerpo= mysqli_fetch_array($totalesBaileCuero);
+  /**
+  * FIN - Totales por tactividad  Ciberescuelas
+  */
+  /**
+  * Totales por actividad Autonomía
+  */
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '6'";
+  $totalesEnucadernacion = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $encuadernacion = mysqli_fetch_array($totalesEnucadernacion);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '7'";
+  $totalesReciclaje = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $reciclaje = mysqli_fetch_array($totalesReciclaje);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '13'";
+  $totalesHuerto = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $huerto = mysqli_fetch_array($totalesHuerto);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '14'";
+  $totalesCeramica = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $ceramica = mysqli_fetch_array($totalesCeramica);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '23'";
+  $totalesProgramacion = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $programacion = mysqli_fetch_array($totalesProgramacion);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '27'";
+  $totalesEdicionDiseño = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $edicionDiseño = mysqli_fetch_array($totalesEdicionDiseño);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '37'";
+  $totalesCarpinteria = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $carpinteria = mysqli_fetch_array($totalesCarpinteria);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '38'";
+  $totalesPlomeria = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $plomeria = mysqli_fetch_array($totalesPlomeria);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '33'";
+  $totalesAutoestima = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $autoestima = mysqli_fetch_array($totalesAutoestima);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '39'";
+  $totalesHerreria = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $herreria = mysqli_fetch_array($totalesHerreria);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '40'";
+  $totalesElectricidad = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $electricidad= mysqli_fetch_array($totalesElectricidad);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '41'";
+  $totalesGastronomia = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $gastronomia = mysqli_fetch_array($totalesGastronomia);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '42'";
+  $totalesPanaderia = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $panaderia = mysqli_fetch_array($totalesPanaderia);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '43'";
+  $totalesJoyeria= mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $joyeria = mysqli_fetch_array($totalesJoyeria);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '44'";
+  $totalesAgricultura = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $agricultura = mysqli_fetch_array($totalesAgricultura);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '45'";
+  $totalesBicimaquinas = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $bicimaquinas = mysqli_fetch_array($totalesBicimaquinas);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '46'";
+  $totalesEstilismo = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $estilismo = mysqli_fetch_array($totalesEstilismo);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '47'";
+  $totalesDiseñoImagen = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $diseñoImagen = mysqli_fetch_array($totalesDiseñoImagen);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '48'";
+  $totalesCodMujeres = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $codMujeres = mysqli_fetch_array($totalesCodMujeres);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '49'";
+  $totalesElectronica = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $electronica = mysqli_fetch_array($totalesElectronica);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '50'";
+  $totalesCosechaAgua = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $cosechaAgua = mysqli_fetch_array($totalesCosechaAgua);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '51'";
+  $totalesInstalacion = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $instalacion = mysqli_fetch_array($totalesInstalacion);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '52'";
+  $totalesTExtiles = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $textileDiseño = mysqli_fetch_array($totalesTExtiles);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '53'";
+  $totalesBanquetes = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $banquetes = mysqli_fetch_array($totalesBanquetes);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '54'";
+  $totalesFotoProducto = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $fotoProducto = mysqli_fetch_array($totalesFotoProducto);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '55'";
+  $totalesLogos = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $logos = mysqli_fetch_array($totalesLogos);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '56'";
+  $totalesCalidad = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $calidad = mysqli_fetch_array($totalesCalidad);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '57'";
+  $totalesCooperativas = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $cooperativas = mysqli_fetch_array($totalesCooperativas);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '58'";
+  $totalesEmprende= mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $emprende= mysqli_fetch_array($totalesEmprende);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '59'";
+  $totalesMicroN= mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $microN= mysqli_fetch_array($totalesMicroN);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '60'";
+  $totalesComercioDigital = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $comercioDigital = mysqli_fetch_array($totalesComercioDigital);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '61'";
+  $totalesEstrategias = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $estrategias = mysqli_fetch_array($totalesEstrategias);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '62'";
+  $totalesComercioJusto = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $comercioJusto = mysqli_fetch_array($totalesComercioJusto);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '63'";
+  $totalesHospedaje = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $hospedaje = mysqli_fetch_array($totalesHospedaje);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '64'";
+  $totalesElectronicaDigital = mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $electroDigital = mysqli_fetch_array($totalesElectronicaDigital);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '65'";
+  $totalesDistribucion= mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $distribucion= mysqli_fetch_array($totalesDistribucion);
+
+  $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '66'";
+  $totalesDesarrollo= mysqli_query($con, $sql);
+  //var_dump($totalesCultura);
+  $desarrollo= mysqli_fetch_array($totalesDesarrollo);
 
   if (isset($_SESSION['pilarAsignado'])) {
       $nombrePilar = $_SESSION['pilarAsignado'];
@@ -80,163 +699,163 @@
                       </tr>
                       <tr>
                         <th scope="row">Teatro</th>
-                        <td>#usuarios</td>
+                        <td><?=$teatro['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Danza</th>
-                        <td>#usuarios</td>
+                        <td><?=$danza['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Perfonmance</th>
-                        <td>#usuarios</td>
+                        <td><?=$performance['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Música</th>
-                        <td>#usuarios</td>
+                        <td><?=$musica['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Artes plásticas</th>
-                        <td>#usuarios</td>
+                        <td><?=$artesPlas['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Fotografía</th>
-                        <td>#usuarios</td>
+                        <td><?=$fotografia['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Video documental</th>
-                        <td>#usuarios</td>
+                        <td><?=$videoDoc['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Stop motion</th>
-                        <td>#usuarios</td>
+                        <td><?=$stopMotion['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Arte y biología</th>
-                        <td>#usuarios</td>
+                        <td><?=$arteBiolo['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Libroclub</th>
-                        <td>#usuarios</td>
+                        <td><?=$libroClub['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Cineclub y trashuma</th>
-                        <td>#usuarios</td>
+                        <td><?=$CineTranshu['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Difusión Científica</th>
-                        <td>#usuarios</td>
+                        <td><?=$difuCienti['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Baile Social</th>
-                        <td>#usuarios</td>
+                        <td><?=$baileSocial['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Danza para niños</th>
-                        <td>#usuarios</td>
+                        <td><?=$danzaNiños['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Danza para adultos</th>
-                        <td>#usuarios</td>
+                        <td><?=$danzaAdultos['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Danza folklórica</th>
-                        <td>#usuarios</td>
+                        <td><?=$folklorica['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Actuación</th>
-                        <td>#usuarios</td>
+                        <td><?=$actuacion['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Teatro de calle</th>
-                        <td>#usuarios</td>
+                        <td><?=$teatroCalle['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Danza contemporánea</th>
-                        <td>#usuarios</td>
+                        <td><?=$contemporanea['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Danza polinesia</th>
-                        <td>#usuarios</td>
+                        <td><?=$polinesia['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Teatro de máscaras</th>
-                        <td>#usuarios</td>
+                        <td><?=$mascaras['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Expresión corporal y teatro</th>
-                        <td>#usuarios</td>
+                        <td><?=$expresion['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Telar de cintura</th>
-                        <td>#usuarios</td>
+                        <td><?=$telar['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Cartonería</th>
-                        <td>#usuarios</td>
+                        <td><?=$cartoneria['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Bordado para la vida</th>
-                        <td>#usuarios</td>
+                        <td><?=$bordado['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Construcción artesanal de instrumentos</th>
-                        <td>#usuarios</td>
+                        <td><?=$construccion['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Diseño de juguetes de madera y materiales de</th>
-                        <td>#usuarios</td>
+                        <td><?=$diseñoJuguetes['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Reciclaje y medio ambiente</th>
-                        <td>#usuarios</td>
+                        <td><?=$reciclajeAmb['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Escritura creativa</th>
-                        <td>#usuarios</td>
+                        <td><?=$escritura['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Pintura artística</th>
-                        <td>#usuarios</td>
+                        <td><?=$pinturaArt['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Medios Audiovisuales </th>
-                        <td>#usuarios</td>
+                        <td><?=$audioVisual['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Cine</th>
-                        <td>#usuarios</td>
+                        <td><?=$cine['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Animación para niños</th>
-                        <td>#usuarios</td>
+                        <td><?=$animacionNiños['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Vídeo comunitario</th>
-                        <td>#usuarios</td>
+                        <td><?=$videoComunitario['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Guitarra clásica</th>
-                        <td>#usuarios</td>
+                        <td><?=$guitarra['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Música Rap</th>
-                        <td>#usuarios</td>
+                        <td><?=$rap['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Percusiones</th>
-                        <td>#usuarios</td>
+                        <td><?=$percusiones['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Iniciación a la música</th>
-                        <td>#usuarios</td>
+                        <td><?=$iniciacion['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Son Huasteco</th>
-                        <td>#usuarios</td>
+                        <td><?=$sonHuasteco['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Dibujo y grabado</th>
-                        <td>#usuarios</td>
+                        <td><?=$grabado['userPorActividad']?></td>
                       </tr>
 
                     </tbody>
@@ -269,123 +888,123 @@
                       </tr>
                       <tr>
                         <th scope="row">Ajedrez</th>
-                        <td>#usuarios</td>
+                        <td><?=$ajedrez['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Club de Ciencias</th>
-                        <td>#usuarios</td>
+                        <td><?=$clubCiencia['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Robótica aplicada</th>
-                        <td>#usuarios</td>
+                        <td><?=$robo['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Club de Codigo</th>
-                        <td>#usuarios</td>
+                        <td><?=$clubCodigo['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Amor y sexualidad</th>
-                        <td>#usuarios</td>
+                        <td><?=$amor['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Prevención de adicc</th>
-                        <td>#usuarios</td>
+                        <td><?=$prevenAdic['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Habilidades para la</th>
-                        <td>#usuarios</td>
+                        <td><?=$habilidades['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Proyecto de vida</th>
-                        <td>#usuarios</td>
+                        <td><?=$proyecto['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Autoestima</th>
-                        <td>#usuarios</td>
+                        <td><?=$autoestima['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Tanatología o manej</th>
-                        <td>#usuarios</td>
+                        <td><?=$tanato['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Inteligencia emocio</th>
-                        <td>#usuarios</td>
+                        <td><?=$inteliEmo['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Arte y Emociones</th>
-                        <td>#usuarios</td>
+                        <td><?=$arteEmo['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Redacción y comprensión de lectura</th>
-                        <td>#usuarios</td>
+                        <td><?=$redaccion['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Talleres de cómputo</th>
-                        <td>#usuarios</td>
+                        <td><?=$talleresCom['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Emociones mágicas</th>
-                        <td>#usuarios</td>
+                        <td><?=$emoMagic['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Pintando emociones</th>
-                        <td>#usuarios</td>
+                        <td><?=$pintEmo['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Alfabetización</th>
-                        <td>#usuarios</td>
+                        <td><?=$alfabet['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Primaria</th>
-                        <td>#usuarios</td>
+                        <td><?=$primaria['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Secundaria</th>
-                        <td>#usuarios</td>
+                        <td><?=$secundaria['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">BADI</th>
-                        <td>#usuarios</td>
+                        <td><?=$badi['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Prepa en línea SEP</th>
-                        <td>#usuarios</td>
+                        <td><?=$prepaSep['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">B@UNAM</th>
-                        <td>#usuarios</td>
+                        <td><?=$bunam['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">UnADM</th>
-                        <td>#usuarios</td>
+                        <td><?=$unadm['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Licenciatura en linea</th>
-                        <td>#usuarios</td>
+                        <td><?=$liclinea['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Licenciaturas CDMX</th>
-                        <td>#usuarios</td>
+                        <td><?=$licCdmx['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Asesorias primaria</th>
-                        <td>#usuarios</td>
+                        <td><?=$asePrimaria['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Asesorias secundaria</th>
-                        <td>#usuarios</td>
+                        <td><?=$aseSecundaria['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Asesorias bachillerato</th>
-                        <td>#usuarios</td>
+                        <td><?=$asePrep['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Asesorias licenciatura</th>
-                        <td>#usuarios</td>
+                        <td><?=$aseLic['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Baile, cuerpo y emociones</th>
-                        <td>#usuarios</td>
+                        <td><?=$baileCuerpo['userPorActividad']?></td>
                       </tr>
                     </tbody>
                   </table>
@@ -417,51 +1036,51 @@
                       </tr>
                       <tr>
                         <th scope="row">Fútbol</th>
-                        <td>#usuarios</td>
+                        <td><?=$futbol['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Basquetbol</th>
-                        <td>#usuarios</td>
+                        <td><?=$basquet['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Voleibol</th>
-                        <td>#usuarios</td>
+                        <td><?=$voley['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Acondicionamiento físico</th>
-                        <td>#usuarios</td>
+                        <td><?=$acondicionamiento['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Zumba</th>
-                        <td>#usuarios</td>
+                        <td><?=$zumba['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Tae bo</th>
-                        <td>#usuarios</td>
+                        <td><?=$tae['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Yoga</th>
-                        <td>#usuarios</td>
+                        <td><?=$yoga['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Tai chi</th>
-                        <td>#usuarios</td>
+                        <td><?=$taiChi['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Boxeo</th>
-                        <td>#usuarios</td>
+                        <td><?=$boxeo['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Atletismo</th>
-                        <td>#usuarios</td>
+                        <td><?=$atletismo['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Karate do</th>
-                        <td>#usuarios</td>
+                        <td><?=$karate['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Kung fu</th>
-                        <td>#usuarios</td>
+                        <td><?=$kung['userPorActividad']?></td>
                       </tr>
                     </tbody>
                   </table>
@@ -493,151 +1112,147 @@
                       </tr>
                       <tr>
                         <th scope="row">Encuadernación</th>
-                        <td>#usuarios</td>
+                        <td><?=$encuadernacion['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Reciclaje</th>
-                        <td>#usuarios</td>
+                        <td><?=$reciclaje['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Taller de huerto</th>
-                        <td>#usuarios</td>
+                        <td><?=$huerto['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Cerámica</th>
-                        <td>#usuarios</td>
+                        <td><?=$ceramica['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Programación y Apli</th>
-                        <td>#usuarios</td>
+                        <td><?=$programacion['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Edición y Diseño </th>
-                        <td>#usuarios</td>
+                        <td><?=$edicionDiseño['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Carpintería</th>
-                        <td>#usuarios</td>
+                        <td><?=$carpinteria['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Plomería</th>
-                        <td>#usuarios</td>
+                        <td><?=$plomeria['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Herrería y Aluminer</th>
-                        <td>#usuarios</td>
+                        <td><?=$herreria['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Electricidad y dispositivos fotovoltaicos</th>
-                        <td>#usuarios</td>
+                        <td><?=$electricidad['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Gastronomía, panadería y catering</th>
-                        <td>#usuarios</td>
+                        <td><?=$gastronomia['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Panadería</th>
-                        <td>#usuarios</td>
+                        <td><?=$panaderia['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Joyería y accesorio </th>
-                        <td>#usuarios</td>
+                        <td><?=$joyeria['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Agricultura urbana</th>
-                        <td>#usuarios</td>
+                        <td><?=$agricultura['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Bicimaquinass</th>
-                        <td>#usuarios</td>
+                        <th scope="row">Bicimaquinas</th>
+                        <td><?=$bicimaquinas['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Estilismo</th>
-                        <td>#usuarios</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Actuación</th>
-                        <td>#usuarios</td>
+                        <td><?=$estilismo['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Diseño de imagen y Cosmetología orgánica</th>
-                        <td>#usuarios</td>
+                        <td><?=$diseñoImagen['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Codigo para mujeres</th>
-                        <td>#usuarios</td>
+                        <td><?=$codMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Electrónica y robótica</th>
-                        <td>#usuarios</td>
+                        <td><?=$electronica['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Cosecha de agua de</th>
-                        <td>#usuarios</td>
+                        <td><?=$cosechaAgua['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Instalación y repar</th>
-                        <td>#usuarios</td>
+                        <td><?=$instalacion['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Textiles y diseño</th>
-                        <td>#usuarios</td>
+                        <td><?=$textileDiseño['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Banquetes</th>
-                        <td>#usuarios</td>
+                        <td><?=$banquetes['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Fotografia de produ</th>
-                        <td>#usuarios</td>
+                        <td><?=$fotoProducto['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Logos e identidad d</th>
-                        <td>#usuarios</td>
+                        <td><?=$logos['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Calidad en el servi</th>
-                        <td>#usuarios</td>
+                        <td><?=$calidad['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Creación de coopera</th>
-                        <td>#usuarios</td>
+                        <td><?=$cooperativas['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Emprendedurismo</th>
-                        <td>#usuarios</td>
+                        <td><?=$emprende['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Creación de micro-n</th>
-                        <td>#usuarios</td>
+                        <td><?=$microN['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Comercio digital</th>
-                        <td>#usuarios</td>
+                        <td><?=$comercioDigital['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Estrategias de vent</th>
-                        <td>#usuarios</td>
+                        <td><?=$estrategias['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Comercio justo</th>
-                        <td>#usuarios</td>
+                        <td><?=$comercioJusto['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Hospedaje</th>
-                        <td>#usuarios</td>
+                        <td><?=$hospedaje['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Electrónica digital</th>
-                        <td>#usuarios</td>
+                        <td><?=$electroDigital['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Distribución</th>
-                        <td>#usuarios</td>
+                        <td><?=$distribucion['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Desarrollo web</th>
-                        <td>#usuarios</td>
+                        <td><?=$desarrollo['userPorActividad']?></td>
                       </tr>
                       </tbody>
                   </table>
