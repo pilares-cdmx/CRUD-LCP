@@ -37,12 +37,32 @@ if (isset($_SESSION['pilarAsignado'])) {
                 </div>
                 <div class="mr-5">Cultura</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
+              <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCultura">
                 <span class="float-left">Ver detalle</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
               </a>
+              <div class="collapse" id="collapseCultura">
+                <div class="card card-body">
+                  <table class="table table-striped ">
+                    <tbody class="bg-primary">
+                      <tr>
+                        <th scope="row">Usuarios totales</th>
+                        <td>$usersTotals</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
@@ -53,13 +73,33 @@ if (isset($_SESSION['pilarAsignado'])) {
                 </div>
                 <div class="mr-5">Ciberescuelas</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
+              <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelas">
                 <span class="float-left">Ver detalle</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
               </a>
-            </div>
+              <div class="collapse" id="collapseCiberescuelas">
+                <div class="card card-body">
+                  <table class="table table-striped ">
+                    <tbody class="bg-warning">
+                      <tr>
+                        <th scope="row">Usuarios totales</th>
+                        <td>$usersTotals</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                      </tr>
+                    </tbody>
+                  </table>
+               </div>
+             </div>
+             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-white bg-success o-hidden h-100">
@@ -69,12 +109,32 @@ if (isset($_SESSION['pilarAsignado'])) {
                 </div>
                 <div class="mr-5">Deporte</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
+              <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseDeporte">
                 <span class="float-left">Ver detalle</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
               </a>
+              <div class="collapse" id="collapseDeporte">
+                <div class="card card-body">
+                  <table class="table table-striped ">
+                    <tbody class="bg-success">
+                      <tr>
+                        <th scope="row">Usuarios totales</th>
+                        <td>$usersTotals</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                      </tr>
+                    </tbody>
+                  </table>
+               </div>
+             </div>
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
@@ -85,12 +145,32 @@ if (isset($_SESSION['pilarAsignado'])) {
                 </div>
                 <div class="mr-5">Autonomía económica</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
+              <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseAutonomia">
                 <span class="float-left">Ver detalle</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
               </a>
+              <div class="collapse" id="collapseAutonomia">
+                <div class="card card-body">
+                  <table class="table table-striped ">
+                    <tbody class="bg-danger">
+                      <tr>
+                        <th scope="row">Usuarios totales</th>
+                        <td>$usersTotals</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                      </tr>
+                    </tbody>
+                  </table>
+               </div>
+             </div>
             </div>
           </div>
         </div>

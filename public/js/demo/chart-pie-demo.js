@@ -12,7 +12,7 @@ $.ajax({
          for(var i in dataActividades) {
              usuariosPorTipoAct.push(dataActividades[i].userPorActividad);
            }
-           
+
            var ctx = document.getElementById("myPieChart");
            var myPieChart = new Chart(ctx, {
              type: 'pie',
@@ -28,10 +28,10 @@ $.ajax({
                  display: true,
                  position: "bottom"
                }
-             } 
+             }
            });
-           
-    
+
+
 })
 .fail(function() {
     console.log("error");

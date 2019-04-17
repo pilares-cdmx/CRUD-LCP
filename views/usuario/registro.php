@@ -50,7 +50,7 @@
                   }
               };
 
-              xmlhttp.open("GET", "<?=URL?>getColoniasPorAlcaldia.php?q="+str,true);
+              xmlhttp.open("GET", "<?=URL?>api/getColoniasPorAlcaldia.php?q="+str,true);
               xmlhttp.send();
           }
       }
@@ -74,7 +74,7 @@
                   }
               };
 
-              xmlhttp.open("GET", "<?=URL?>getCPporColonia.php?q="+str,true);
+              xmlhttp.open("GET", "<?=URL?>api/getCPporColonia.php?q="+str,true);
               xmlhttp.send();
           }
       }
@@ -97,7 +97,7 @@
                       document.getElementById("pilarSelect_id").innerHTML = this.responseText;
                   }
               };
-              xmlhttp.open("GET", "<?=URL?>getPilarPorAlcaldia.php?q="+str,true);
+              xmlhttp.open("GET", "<?=URL?>api/getPilarPorAlcaldia.php?q="+str,true);
               xmlhttp.send();
           }
       }
