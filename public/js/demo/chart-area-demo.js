@@ -17,7 +17,7 @@ $.ajax({
     var myLineChart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ["abril 07", "abril 08", "abril 09", "abril 10", "abril 11", "abril 12", "abril 13", "abril 14", "abril 15"],
+        labels: ["abril 07", "abril 08", "abril 09", "abril 10", "abril 11", "abril 12", "abril 13", "abril 14", "abril 15", "abril 16"],
         datasets: [{
           label: "Usuarios",
           lineTension: 0.3,
@@ -49,7 +49,7 @@ $.ajax({
           yAxes: [{
             ticks: {
               min: 0,
-              max: 1200,
+              max: 2000,
               maxTicksLimit: 5
             },
             gridLines: {
