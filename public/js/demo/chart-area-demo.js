@@ -17,7 +17,22 @@ $.ajax({
     var myLineChart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ["abril 07", "abril 08", "abril 09", "abril 10", "abril 11", "abril 12", "abril 13", "abril 14", "abril 15", "abril 16"],
+        labels: [
+            "abril 03",
+            "abril 04",
+            "abril 05",
+            "abril 06",
+            "abril 07",
+            "abril 08",
+            "abril 09",
+            "abril 10",
+            "abril 11",
+            "abril 12",
+            "abril 13",
+            "abril 14",
+            "abril 15",
+            "abril 16",
+            "abril 17"],
         datasets: [{
           label: "Usuarios",
           lineTension: 0.3,

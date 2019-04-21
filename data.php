@@ -13,6 +13,19 @@ error_reporting(-1);
 
     mysqli_select_db($con, "pilaresDB");
     mysqli_query($con, "SET NAMES 'utf8mb4'");
+
+    $dia3="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-03%'";
+    $result3 = mysqli_query($con, $dia3);
+
+    $dia4="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-%04'";
+    $result4 = mysqli_query($con, $dia4);
+
+    $dia5="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-05%'";
+    $result5 = mysqli_query($con, $dia5);
+
+    $dia6="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-06%'";
+    $result6 = mysqli_query($con, $dia6);
+
     $dia7="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-07%'";
     $result7 = mysqli_query($con, $dia7);
 
@@ -43,9 +56,24 @@ error_reporting(-1);
     $dia16="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-16%'";
     $result16 = mysqli_query($con, $dia16);
 
+    $dia17="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-17%'";
+    $result17 = mysqli_query($con, $dia17);
+
     $data = array();
-    foreach ($result7 as $row) {
+    foreach ($result3 as $row) {
       $data[] = $row;
+    }
+    foreach ($result4 as $row) {
+      array_push($data, $row);
+    }
+    foreach ($result5 as $row) {
+      array_push($data, $row);
+    }
+    foreach ($result6 as $row) {
+      array_push($data, $row);
+    }
+    foreach ($result7 as $row) {
+      array_push($data, $row);
     }
     foreach ($result8 as $row) {
       array_push($data, $row);
@@ -74,10 +102,17 @@ error_reporting(-1);
     foreach ($result16 as $row) {
       array_push($data, $row);
     }
+    foreach ($result17 as $row) {
+      array_push($data, $row);
+    }
 
 
 
     //free memory associated with result
+    $result3->close();
+    $result4->close();
+    $result5->close();
+    $result6->close();
     $result7->close();
     $result8->close();
     $result9->close();
@@ -88,6 +123,7 @@ error_reporting(-1);
     $result14->close();
     $result15->close();
     $result16->close();
+    $result17->close();
 
     //close connection
     $con->close();
