@@ -14,10 +14,16 @@ error_reporting(-1);
     mysqli_select_db($con, "pilaresDB");
     mysqli_query($con, "SET NAMES 'utf8mb4'");
 
+    $dia1="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-01%'";
+    $result1 = mysqli_query($con, $dia1);
+
+    $dia2="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-02%'";
+    $result2 = mysqli_query($con, $dia2);
+
     $dia3="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-03%'";
     $result3 = mysqli_query($con, $dia3);
 
-    $dia4="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-%04'";
+    $dia4="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-04%'";
     $result4 = mysqli_query($con, $dia4);
 
     $dia5="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-05%'";
@@ -29,7 +35,7 @@ error_reporting(-1);
     $dia7="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-07%'";
     $result7 = mysqli_query($con, $dia7);
 
-    $dia8="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-%08'";
+    $dia8="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-08%'";
     $result8 = mysqli_query($con, $dia8);
 
     $dia9="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-09%'";
@@ -59,9 +65,30 @@ error_reporting(-1);
     $dia17="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-17%'";
     $result17 = mysqli_query($con, $dia17);
 
+    $dia18="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-18%'";
+    $result18 = mysqli_query($con, $dia18);
+
+    $dia19="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-19%'";
+    $result19 = mysqli_query($con, $dia19);
+
+    $dia20="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-20%'";
+    $result20 = mysqli_query($con, $dia20);
+
+    $dia21="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-21%'";
+    $result21 = mysqli_query($con, $dia21);
+
+    $dia22="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-22%'";
+    $result22 = mysqli_query($con, $dia22);
+
     $data = array();
-    foreach ($result3 as $row) {
+    foreach ($result1 as $row) {
       $data[] = $row;
+    }
+    foreach ($result2 as $row) {
+      array_push($data, $row);
+    }
+    foreach ($result3 as $row) {
+      array_push($data, $row);
     }
     foreach ($result4 as $row) {
       array_push($data, $row);
@@ -103,6 +130,21 @@ error_reporting(-1);
       array_push($data, $row);
     }
     foreach ($result17 as $row) {
+      array_push($data, $row);
+    }
+    foreach ($result18 as $row) {
+      array_push($data, $row);
+    }
+    foreach ($result19 as $row) {
+      array_push($data, $row);
+    }
+    foreach ($result20 as $row) {
+      array_push($data, $row);
+    }
+    foreach ($result21 as $row) {
+      array_push($data, $row);
+    }
+    foreach ($result22 as $row) {
       array_push($data, $row);
     }
 

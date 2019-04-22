@@ -26,7 +26,7 @@
       <div class="card-header">Registrar una cuenta </div>
       <div class="card-header">Únicamente para LCP </div>
       <div class="card-body">
-        <form action='<?php echo constant('URL');?>Crud/index' method="POST">
+        <form action='<?php echo constant('URL');?>Crud/registrarLCP' method="POST">
           <div class="form-group">
             <div class="form-row">
               <div class="col-md-4">
@@ -44,7 +44,7 @@
               <div class="col-md-4">
                 <div class="form-label-group">
                   <input type="text" id="lastName2" class="form-control" placeholder="Apellido Materno" name="maternoLCP"required="required">
-                  <label for="lastName">Apellido Materno</label>
+                  <label for="lastName2">Apellido Materno</label>
                 </div>
               </div>
             </div>

@@ -12,7 +12,7 @@ require 'views/layout/headerCRUD.php';
 
     mysqli_select_db($con, "pilaresDB");
     mysqli_query($con, "SET NAMES 'utf8mb4'");
-    $sql="SELECT * FROM Usuario ORDER BY fechaDeRegistro";
+    $sql="SELECT * FROM Usuario";
     $result = mysqli_query($con, $sql);
     //var_dump($result);
 
@@ -23,10 +23,18 @@ require 'views/layout/headerCRUD.php';
 
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
-
-          <li class="breadcrumb-item active">Administración de Usuarios<?=$separador?><?=$nombrePilar?></li>
+          <li class="breadcrumb-item active">Administración de Usuarios<?=$separador?> <b><?=$nombrePilar?></b></li>
         </ol>
-
+        <!-- <div class="container p-4"> -->
+        <?php if(isset($_SESSION['message'])){ ?>
+        <div class="alert alert-<?=$_SESSION['message_type'];?> alert-dismissible fade show" role="alert">
+        <?= $_SESSION['message']?>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+      
+<?php session_unset(); }?>
         <!-- Base de Datos Usuarios por Pilar -->
         <div class="card mb-3">
           <div class="card-header">
@@ -44,7 +52,9 @@ require 'views/layout/headerCRUD.php';
                         <th>correo</th>
                         <th>CURP</th>
                         <th>Telefono Casa</th>
+                        <th>Telefono Cel.</th>
                         <th>Fecha Registro</th>
+                        <th>Acciones</th>
                       </tr>
                     </thead>
                     <tfoot>
@@ -56,26 +66,34 @@ require 'views/layout/headerCRUD.php';
                         <th>correo</th>
                         <th>CURP</th>
                         <th>Telefono Casa</th>
+                        <th>Telefono Cel.</th>
                         <th>Fecha Registro</th>
+                        <th>Acciones</th>
                       </tr>
                     </tfoot>
                     <tbody>
             <?php
-            while ($row = mysqli_fetch_array($result)) {
-                echo "<tr>
-                          <td>". $row['nombre'] . "</td>" .
-                         "<td>". $row['apellidoPaterno'] . "</td>" .
-                         "<td>". $row['apellidoMaterno'] . "</td>" .
-                         "<td>". $row['folio'] . "</td>" .
-                         "<td>". $row['correo'] . "</td>" .
-                         "<td>". $row['curp'] . "</td>" .
-                         "<td>". $row['telefonoCasa'] . "</td>" .
-                         "<td>". $row['fechaDeRegistro'] . "</td>" .
-                    "</tr>";
-            }
+            while ($row = mysqli_fetch_array($result)) { ?>
+                     <tr>
+                        <td><?php echo $row['nombre'] ?></td>
+                        <td><?php echo $row['apellidoPaterno'] ?></td>
+                        <td><?php echo $row['apellidoMaterno'] ?></td>
+                        <td><?php echo $row['folio'] ?></td>
+                        <td><?php echo $row['correo'] ?></td>
+                        <td><?php echo $row['curp'] ?></td>
+                        <td><?php echo $row['telefonoCasa'] ?></td>
+                        <td><?php echo $row['telefonoCelular'] ?></td>
+                        <td><?php echo $row['fechaDeRegistro'] ?></td>
+                        <td>
+                            <a href="<?=URL?>edit.php?id=<?php echo $row['idUsuarios']?>" class="btn btn-secondary">
+                                <i class="fas fa-marker"></i>
+                            </a>
+                        </td>
+                    </tr>
+            <?php  } ?>
 
-            mysqli_close($con);
-             ?>
+            <!-- mysqli_close($conn); -->
+            
                 </tbody>
               </table>
             </div>

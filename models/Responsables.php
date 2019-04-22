@@ -182,18 +182,19 @@ class Responsables {
 */
   public function validarLCP(){
     //$query="SELECT * FROM Responsables WHERE nombre = '$nombreLCP' AND apellidoPaterno = '$paternoLCP' AND apellidoMaterno = '$maternoLCP'";
+    $result = false;
     $nombreLCP = $this->nombre;
     $paternoLCP = $this->apellidoPaterno;
     $maternoLCP = $this->apellidoMaterno;
-    $query="SELECT * FROM Responsables WHERE nombre like '%$nombreLCP%' AND apellidoPaterno like '%$paternoLCP%' AND apellidoMaterno like '%$maternoLCP%'";
+    $query="SELECT * FROM Responsables WHERE nombre = '$nombreLCP' AND apellidoPaterno  = '$paternoLCP' AND apellidoMaterno = '$maternoLCP'";
 
     $consulta = $this->db->query($query);
 
     //mysqli_query($conn, "SELECT * FROM Login WHERE nombre = '$usuario' AND contrasena = '$pass'");
 
-    if(!$consulta){
-      echo mysqli_error();
-      exit;
+    if($consulta && $consulta->num_rows == 1){
+        $lcp = $consulta->fetch_object();
+      
     }
     //$nombreLCP = mysqli_fetch_assoc($consulta)
 
@@ -208,12 +209,11 @@ class Responsables {
 
   }
 
-  public function insertarCorreo(){
+  public function insertarCorreo($idLCP){
     //$query="INSERT INTO Responsables (correo) VALUES ('{$this->getCorreo()}')";
     //$correo = $this->getCorreo();
-    $query="UPDATE Responsables SET `correo` = '{$this->getCorreo()}' WHERE `Responsables`.`idResponsables` = '{$this->getIdResponsables()}' AND `Responsables`.`Pilares_idPilares` = '{$this->getIdPilares()}'
-    AND `Responsables`.`Pilares_Direccion_idDireccion` = '{$this->getPilares_idDireccion()}' AND `Responsables`.`Pilares_Direccion_Colonias_idColonia` = '{$this->getPilares_idColonia()}' AND `Responsables`.`Pilares_Direccion_Colonias_CodigosPostales_idCodigoPostal` = '{$this->getPilares_idCodigoPostal()}'
-    AND `Responsables`.`Pilares_Direccion_Colonias_Alcaldias_idAlcaldiasZonas` = '{$this->getPilares_idAlcaldiasZonas()}' AND `Responsables`.`Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas` = '{$this->getPilares_idZonas()}'";
+    $query="UPDATE Responsables set correo = '{$this->getCorreo()}'
+     WHERE idResponsables = '$idLCP'";
     $save = $this->db->query($query);
     $result = false;
 
@@ -223,11 +223,10 @@ class Responsables {
     return $result;
   }
 
-  public function insertarContrasena(){
-    $query="UPDATE `Responsables` SET `contrasena` = '{$this->getContrasena()}' WHERE `Responsables`.`idResponsables` = '{$this->getIdResponsables()}' AND `Responsables`.`Pilares_idPilares` = '{$this->getIdPilares()}'
-    AND `Responsables`.`Pilares_Direccion_idDireccion` = '{$this->getPilares_idDireccion()}' AND `Responsables`.`Pilares_Direccion_Colonias_idColonia` = '{$this->getPilares_idColonia()}' AND `Responsables`.`Pilares_Direccion_Colonias_CodigosPostales_idCodigoPostal` = '{$this->getPilares_idCodigoPostal()}'
-    AND `Responsables`.`Pilares_Direccion_Colonias_Alcaldias_idAlcaldiasZonas` = '{$this->getPilares_idAlcaldiasZonas()}' AND `Responsables`.`Pilares_Direccion_Colonias_Alcaldias_Zonas_idZonas` = '{$this->getPilares_idZonas()}'";
-
+  public function insertarContrasena($idLCP){
+    $query="UPDATE Responsables set contrasena = '{$this->getContrasena()}'
+     WHERE idResponsables = '$idLCP'";
+    
     $save = $this->db->query($query);
     $result = false;
 
@@ -259,65 +258,65 @@ class Responsables {
     return $result;
   }
 
-  public function dataUsuarios(){
-      /*header('Content-Type: application/json');
-      $query="SELECT nombre, apellidoPaterno, apellidoMaterno, folio, correo, curp, telefonoCasa, fechaDeRegistro FROM Usuario";
+//   public function dataUsuarios(){
+//       /*header('Content-Type: application/json');
+//       $query="SELECT nombre, apellidoPaterno, apellidoMaterno, folio, correo, curp, telefonoCasa, fechaDeRegistro FROM Usuario";
 
-      $result = $this->db->query($query);
+//       $result = $this->db->query($query);
 
-      $data = array();
-      foreach ($result as $row){
-        $data[] = $row;
-      }
-      $dataJSON = json_encode($data);
-      return $dataJSON;
-      */
-      $sql="SELECT * FROM Usuario";
-      $result = $this->db->query($query);
+//       $data = array();
+//       foreach ($result as $row){
+//         $data[] = $row;
+//       }
+//       $dataJSON = json_encode($data);
+//       return $dataJSON;
+//       */
+//       $sql="SELECT * FROM Usuario";
+//       $result = $this->db->query($query);
 
-            echo "<thead>
-                      <tr>
-                        <th>Nombre</th>
-                        <th>Apellido Paterno</th>
-                        <th>Apellido Materno</th>
-                        <th>folio</th>
-                        <th>correo</th>
-                        <th>CURP</th>
-                        <th>Telefono Casa</th>
-                        <th>Fecha Registro</th>
-                      </tr>
-                    </thead>
-                    <tfoot>
-                      <tr>
-                        <th>Nombre</th>
-                        <th>Apellido Paterno</th>
-                        <th>Apellido Materno</th>
-                        <th>folio</th>
-                        <th>correo</th>
-                        <th>CURP</th>
-                        <th>Telefono Casa</th>
-                        <th>Fecha Registro</th>
-                      </tr>
-                    </tfoot>
-                    <tbody>";
+//             echo "<thead>
+//                       <tr>
+//                         <th>Nombre</th>
+//                         <th>Apellido Paterno</th>
+//                         <th>Apellido Materno</th>
+//                         <th>folio</th>
+//                         <th>correo</th>
+//                         <th>CURP</th>
+//                         <th>Telefono Casa</th>
+//                         <th>Fecha Registro</th>
+//                       </tr>
+//                     </thead>
+//                     <tfoot>
+//                       <tr>
+//                         <th>Nombre</th>
+//                         <th>Apellido Paterno</th>
+//                         <th>Apellido Materno</th>
+//                         <th>folio</th>
+//                         <th>correo</th>
+//                         <th>CURP</th>
+//                         <th>Telefono Casa</th>
+//                         <th>Fecha Registro</th>
+//                       </tr>
+//                     </tfoot>
+//                     <tbody>";
 
-        while ($row = mysqli_fetch_array($result)) {
-            //echo "<option value=" . $row['idCodigoPostal'] . ">" . $row['codigo'] . "</option>";
-            echo "<tr>
-                    <td>". $row['nombre'] . "</td>" .
-                   "<td>". $row['apellidoPaterno'] . "</td>" .
-                   "<td>". $row['apellidoMaterno'] . "</td>" .
-                   "<td>". $row['folio'] . "</td>" .
-                   "<td>". $row['correo'] . "</td>" .
-                   "<td>". $row['curp'] . "</td>" .
-                   "<td>". $row['telefonoCasa'] . "</td>" .
-                   "<td>". $row['fechaDeRegistro'] . "</td>" .
-                  "</tr>";
-        }
+//         while ($row = mysqli_fetch_array($result)) {
+//             //echo "<option value=" . $row['idCodigoPostal'] . ">" . $row['codigo'] . "</option>";
+//             echo "<tr>
+//                     <td>". $row['nombre'] . "</td>" .
+//                    "<td>". $row['apellidoPaterno'] . "</td>" .
+//                    "<td>". $row['apellidoMaterno'] . "</td>" .
+//                    "<td>". $row['folio'] . "</td>" .
+//                    "<td>". $row['correo'] . "</td>" .
+//                    "<td>". $row['curp'] . "</td>" .
+//                    "<td>". $row['telefonoCasa'] . "</td>" .
+//                    "<td>". $row['fechaDeRegistro'] . "</td>" .
+//                   "</tr>";
+//         }
 
-        mysqli_close($con);
+//         mysqli_close($con);
 
-  }
+//   }
 
 }
 

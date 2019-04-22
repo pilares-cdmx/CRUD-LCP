@@ -27,6 +27,9 @@
       <?php if(isset($_SESSION['error_login'])): $mensajeError = $_SESSION['error_login']?>
           <div class="card-header"><?=$mensajeError?></div>
       <?php endif; ?>
+      <?php if(isset($_SESSION['registroLCPExitoso'])): $mensaje = $_SESSION['registroLCPExitoso']?>
+          <div class="card-header"><?=$mensaje?></div>
+      <?php endif; ?>
       <div class="card-body">
         <form action='<?php echo constant('URL');?>Crud/login' method="POST">
           <div class="form-group">

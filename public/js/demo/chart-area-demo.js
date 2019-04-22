@@ -18,6 +18,8 @@ $.ajax({
       type: 'line',
       data: {
         labels: [
+            "abril 01",
+            "abril 02",
             "abril 03",
             "abril 04",
             "abril 05",
@@ -32,7 +34,12 @@ $.ajax({
             "abril 14",
             "abril 15",
             "abril 16",
-            "abril 17"],
+            "abril 17",
+            "abril 18",
+            "abril 19",
+            "abril 20",
+            "abril 21",
+            "abril 22"],
         datasets: [{
           label: "Usuarios",
           lineTension: 0.3,

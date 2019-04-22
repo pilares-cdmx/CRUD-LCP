@@ -48,23 +48,27 @@ class CrudController{
               $contrasena = $_POST['contrasena'];
               $confirmContrasena = $_POST['confirmContrasena'];
 //Benito Rodríguez Pérez
-              if($responsableObj->validarLCP()){
+              $identityLCP = $responsableObj->validarLCP();
+              if($identityLCP && is_object($identityLCP)){
 
-                  $responsableObj->setIdResponsables();
-                  $idLCP = $responsableObj->getIdResponsables();
-                  $responsableObj->setIdPilares($idLCP);
-                  $responsableObj->setPilares_idDireccion($idLCP);
-                  $responsableObj->setPilares_idColonia($idLCP);
-                  $responsableObj->setPilares_idCodigoPostal($idLCP);
-                  $responsableObj->setPilares_idAlcaldiasZonas($idLCP);
-                  $responsableObj->setPilares_idZonas($idLCP);
+                  $idLCP = $identityLCP->idResponsables;
+                  $idPilarDeLCP = $identityLCP->Pilares_idPilares;
+                  // $responsableObj->setIdPilares($idLCP);
+                  // $responsableObj->setPilares_idDireccion($idLCP);
+                  // $responsableObj->setPilares_idColonia($idLCP);
+                  // $responsableObj->setPilares_idCodigoPostal($idLCP);
+                  // $responsableObj->setPilares_idAlcaldiasZonas($idLCP);
+                  // $responsableObj->setPilares_idZonas($idLCP);
 
-                  if($responsableObj->insertarCorreo()){
+                  if($responsableObj->insertarCorreo($idLCP)){
                   //var_dump($responsableObj->insertarCorreo());
-
+                  
                     if ($contrasena == $confirmContrasena) {
                        $responsableObj->setContrasena($contrasena);
-                         if($responsableObj->insertarContrasena()){
+                         if($responsableObj->insertarContrasena($idLCP)){
+                          
+                          $_SESSION['registroLCPExitoso'] = "Cuenta de LCP creada con éxito";
+                          $_SESSION['identity'] = $identityLCP;
                            header("Location:".URL.'Crud/index');
                          }else {
                            echo "no se inserto contraseña";
@@ -82,7 +86,7 @@ class CrudController{
                   }
                 */
                   //$this->view->render('aviso-de-privacidad/index');
-              }else{
+                }else{
                 echo "Transaccion no concretada";
                   //$this->view->render('formulario/login');
                   //  header("Location:".URL.'Usuario/login');
@@ -122,6 +126,7 @@ class CrudController{
       }
 
     }
+
 
 }
 ?>
