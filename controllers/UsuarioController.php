@@ -110,7 +110,10 @@ class UsuarioController{
            $usuario->setPilarId($_POST['pilarSelect_id']);
            $pilarId=$usuario->getPilarId();
            $usuario->setPilarNombre($pilarId);
-           $usuario->setFolio($pilarId, $curp);
+           $usuario->setIdAlcaldiaPilar($pilarId);
+
+           $IdAlcaldiaPilar = $usuario->getIdAlcaldiaPilar();
+           $usuario->setFolio($pilarId, $IdAlcaldiaPilar, $curp);
            /**Se almacena la tabla usuario**/
            $saveUsuario = $usuario->save();
 
