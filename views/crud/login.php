@@ -30,6 +30,7 @@
       <?php if(isset($_SESSION['registroLCPExitoso'])): $mensaje = $_SESSION['registroLCPExitoso']?>
           <div class="card-header"><?=$mensaje?></div>
       <?php endif; ?>
+      <?php session_unset();?>
       <div class="card-body">
         <form action='<?php echo constant('URL');?>Crud/login' method="POST">
           <div class="form-group">

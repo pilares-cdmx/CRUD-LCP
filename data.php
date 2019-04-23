@@ -2,11 +2,15 @@
 ini_set('display_startup_errors', 1);
 ini_set('display_errors', 1);
 error_reporting(-1);
+require_once 'models/Responsables.php';
+  // var_dump($_SESSION['identity']);die;
 
     //$q = intval($_GET['q']);
-
+    $responsableObj = new Responsables();
+    var_dump($responsableObj);die;
     header('Content-Type: application/json');
-    $con = mysqli_connect('localhost', 'pilaresDevSergio', '%C2MB10cl1m2t1c0%', 'pilaresDB');
+    // $con = mysqli_connect('localhost', 'pilaresDevSergio', '%C2MB10cl1m2t1c0%', 'pilaresDB');
+    $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
         if (!$con) {
             die('Could not connect: ' . mysqli_error($con));
         }
@@ -151,6 +155,8 @@ error_reporting(-1);
 
 
     //free memory associated with result
+    $result1->close();
+    $result2->close();
     $result3->close();
     $result4->close();
     $result5->close();
@@ -166,6 +172,11 @@ error_reporting(-1);
     $result15->close();
     $result16->close();
     $result17->close();
+    $result18->close();
+    $result19->close();
+    $result20->close();
+    $result21->close();
+    $result22->close();
 
     //close connection
     $con->close();

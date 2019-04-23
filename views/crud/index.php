@@ -1,6 +1,12 @@
 <?php require 'views/layout/headerCRUD.php'; ?>
 <?php
-    $con = mysqli_connect('localhost', 'pilaresDevSergio', '%C2MB10cl1m2t1c0%', 'pilaresDB');
+  if (isset($_SESSION['pilarAsignado'])) {
+    $nombrePilar = $_SESSION['pilarAsignado'];
+    $separador = "-";
+  }
+
+    // $con = mysqli_connect('localhost', 'pilaresDevSergio', '%C2MB10cl1m2t1c0%', 'pilaresDB');
+    $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
         if (!$con) {
             die('Could not connect: ' . mysqli_error($con));
         }
@@ -661,10 +667,7 @@
     //var_dump($totalesCultura);
     $señas= mysqli_fetch_array($totalesSeñas);
 
-    if (isset($_SESSION['pilarAsignado'])) {
-        $nombrePilar = $_SESSION['pilarAsignado'];
-        $separador = "-";
-    }
+    
  ?>
     <div id="content-wrapper">
 
@@ -1352,7 +1355,7 @@
   <script src="<?php echo constant('URL')?>public/js/sb-admin.min.js"></script>
 
   <!-- Demo scripts for this page-->
-  <script src="<?php echo constant('URL')?>public/js/demo/datatables-demo.js"></script>
+  <!-- <script src="<?php //echo constant('URL')?>public/js/demo/datatables-demo.js"></script> -->
   <script src="<?php echo constant('URL')?>public/js/demo/chart-area-demo.js"></script>
 
 </body>

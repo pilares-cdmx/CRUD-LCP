@@ -285,7 +285,9 @@ class Usuario{
 				return false;
 			}
 
-	}
+    }
+    
+    
 
 }
 ?>

@@ -156,7 +156,7 @@ class UsuariosPorPilar{
     }
 
 
-    Public function save(){
+    public function save(){
 
         $sql="INSERT INTO UsuariosPorPilar VALUES(
         '{$this->getPilares_idPilares()}',
@@ -170,7 +170,7 @@ class UsuariosPorPilar{
         '{$this->getUsuario_Direccion_Colonias_idColonia()}',
         '{$this->getUsuario_Direccion_Colonias_Alcaldias_idAlcaldiasZonas()}',
         '{$this->getUsuario_Direccion_Colonias_Alcaldias_Zonas_idZonas()}'
-        );";
+        );";var_dump($sql);die;
         $save = $this->db->query($sql);
 
         $result = false;
@@ -179,6 +179,8 @@ class UsuariosPorPilar{
         }
         return $result;
     }
+
+   
 
 }
 ?>

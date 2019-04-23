@@ -105,14 +105,14 @@ class Responsables {
       $this->contrasena = $this->db->real_escape_string($contrasena);
   }
   public function setIdPilares($idLCP){
-      //$this->Pilares_idPilares = $Pilares_idPilares;
-      $query="SELECT * FROM Responsables WHERE idResponsables = '$idLCP'";
-      $tmp = $this->db->query($query);
-      if ($row = mysqli_fetch_array($tmp)) {
-          $this->Pilares_idPilares = $row['Pilares_idPilares'];
-      }else {
-          echo "No encontré tu Pilares_idPilares";
-      }
+    $this->Pilares_idPilares = $idLCP;
+    //   $query="SELECT * FROM Responsables WHERE idResponsables = '$idLCP'";
+    //   $tmp = $this->db->query($query);
+    //   if ($row = mysqli_fetch_array($tmp)) {
+    //       $this->Pilares_idPilares = $row['Pilares_idPilares'];
+    //   }else {
+    //       echo "No encontré tu Pilares_idPilares";
+    //   }
 
   }
   public function setPilares_idDireccion($idLCP){
@@ -186,7 +186,7 @@ class Responsables {
     $nombreLCP = $this->nombre;
     $paternoLCP = $this->apellidoPaterno;
     $maternoLCP = $this->apellidoMaterno;
-    $query="SELECT * FROM Responsables WHERE nombre = '$nombreLCP' AND apellidoPaterno  = '$paternoLCP' AND apellidoMaterno = '$maternoLCP'";
+    $query="SELECT * FROM Responsables WHERE nombre  LIKE '%$nombreLCP%' AND apellidoPaterno LIKE '%$paternoLCP%' AND apellidoMaterno LIKE '%$maternoLCP%'";
 
     $consulta = $this->db->query($query);
 
@@ -194,19 +194,15 @@ class Responsables {
 
     if($consulta && $consulta->num_rows == 1){
         $lcp = $consulta->fetch_object();
-      
-    }
-    //$nombreLCP = mysqli_fetch_assoc($consulta)
-
-    if ($consulta && $consulta->num_rows == 1) {
+        $verify = true;
       //var_dump($consulta);
       //$LCP = $consulta->fetch_object();
       //$this->setIdResponsables($LCP->idResponsables);
-      return true;
-    }else {
-      return false;
+      if ($verify) {
+        $result = $lcp;
+      }
     }
-
+    return $result;
   }
 
   public function insertarCorreo($idLCP){
@@ -257,6 +253,187 @@ class Responsables {
       }
     return $result;
   }
+
+  public function getDataUsuariosPorPilar($lcpPilarId){
+    header('Content-Type: application/json');
+//    $var1 = $this->getApellidoMaterno;
+//    $var2 = " SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-02%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+//     var_dump($var1);
+//     return $var2;
+   // $con = mysqli_connect('localhost', 'pilaresDevSergio', '%C2MB10cl1m2t1c0%', 'pilaresDB');
+    // $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
+    //     if (!$con) {
+    //         die('Could not connect: ' . mysqli_error($con));
+    //     } 
+
+    // SELECT COUNT(*), U2.Pilares_idPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-08%' AND U2.Pilares_idPilares = '9'
+
+    // mysqli_select_db($con, "pilaresDB");
+    // mysqli_query($con, "SET NAMES 'utf8mb4'");
+
+    // $dia1="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-01%'";
+    
+    $dia1="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-01%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result1 = $this->db->query($dia1);
+
+    $dia2="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-02%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result2 = $this->db->query($dia2);
+
+    $dia3="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-03%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result3 = $this->db->query($dia3);
+
+    $dia4="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-04%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result4 = $this->db->query($dia4);
+
+    $dia5="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-05%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result5 = $this->db->query($dia5);
+
+    $dia6="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-06%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result6 = $this->db->query($dia6);
+
+    $dia7="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-07%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result7 = $this->db->query($dia7);
+
+    $dia8="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-08%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result8 = $this->db->query($dia8);
+
+    $dia9="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-09%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result9 = $this->db->query($dia9);
+
+    $dia10="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-10%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result10 = $this->db->query($dia10);
+
+    $dia11="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-11%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result11 = $this->db->query($dia11);
+
+    $dia12="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-12%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result12 = $this->db->query($dia12);
+
+    $dia13="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-13%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result13 = $this->db->query($dia13);
+
+    $dia14="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-14%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result14 = $this->db->query($dia14);
+
+    $dia15="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-15%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result15 = $this->db->query($dia15);
+
+    $dia16="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-16%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result16 = $this->db->query($dia16);
+
+    $dia17="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-17%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result17 = $this->db->query($dia17);
+
+    $dia18="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-18%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result18 = $this->db->query($dia18);
+
+    $dia19="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-19%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result19 = $this->db->query($dia19);
+
+    $dia20="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-20%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result20 = $this->db->query($dia20);
+
+    $dia21="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-21%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result21 = $this->db->query($dia21);
+
+    $dia22="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-22%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result22 = $this->db->query($dia22);
+
+    $data = array();
+    foreach ($result1 as $row) {
+    $data[] = $row;
+    }
+    foreach ($result2 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result3 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result4 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result5 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result6 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result7 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result8 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result9 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result10 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result11 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result12 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result13 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result14 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result15 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result16 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result17 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result18 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result19 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result20 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result21 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result22 as $row) {
+    array_push($data, $row);
+    }
+
+
+
+    //free memory associated with result
+    // $result3->close();
+    // $result4->close();
+    // $result5->close();
+    // $result6->close();
+    // $result7->close();
+    // $result8->close();
+    // $result9->close();
+    // $result10->close();
+    // $result11->close();
+    // $result12->close();
+    // $result13->close();
+    // $result14->close();
+    // $result15->close();
+    // $result16->close();
+    // $result17->close();
+
+    //close connection
+    // $con->close();
+
+    //now print the data
+    // print json_encode($data);
+    return json_encode($data);
+
+}
 
 //   public function dataUsuarios(){
 //       /*header('Content-Type: application/json');

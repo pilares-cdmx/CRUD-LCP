@@ -3,6 +3,7 @@ ini_set('display_startup_errors', 1);
 ini_set('display_errors', 1);
 error_reporting(-1);
 require_once 'models/Responsables.php';
+require_once 'models/Usuario.php';
 class CrudController{
     public function index(){
         //echo "Controlador usuarios, Accion index";
@@ -29,10 +30,19 @@ class CrudController{
         require_once 'views/crud/tables.php';
     }
     public function tablaUsuarios(){
-        $responsableObj = new Responsables();
-        $responsableObj->dataUsuarios();
+        // $responsableObj = new Responsables();
+        // $responsableObj->dataUsuarios();
         //$idPilarLCP = $responsableObj->getIdPilares();
 
+    }
+    public function linearPlot(){
+      // echo "hola desde linear plot";
+      // $usuarioObj = new Usuario();
+      $responsableObj = new Responsables();
+      $lcpPilarId =  $_SESSION['identity']->Pilares_idPilares;
+      // var_dump($lcpPilarId); die;
+      $result = $responsableObj->getDataUsuariosPorPilar($lcpPilarId);
+      print $result;
     }
 
 
@@ -49,11 +59,13 @@ class CrudController{
               $confirmContrasena = $_POST['confirmContrasena'];
 //Benito Rodríguez Pérez
               $identityLCP = $responsableObj->validarLCP();
+              //  var_dump($identityLCP);die;
               if($identityLCP && is_object($identityLCP)){
 
                   $idLCP = $identityLCP->idResponsables;
                   $idPilarDeLCP = $identityLCP->Pilares_idPilares;
-                  // $responsableObj->setIdPilares($idLCP);
+                  $responsableObj->setIdPilares($idLCP);
+                  
                   // $responsableObj->setPilares_idDireccion($idLCP);
                   // $responsableObj->setPilares_idColonia($idLCP);
                   // $responsableObj->setPilares_idCodigoPostal($idLCP);
@@ -106,9 +118,11 @@ class CrudController{
           //var_dump($identityLCP);die;
           if ($identityLCP && is_object($identityLCP)) {
              $idPilarDeLCP = $identityLCP->Pilares_idPilares;
-             //var_dump($idPilarDeLCP);die;
+            //  var_dump($idPilarDeLCP);
              $responsableObj->setPilarAsignado($idPilarDeLCP);
+             
              $responsableObj->setIdPilares($idPilarDeLCP);
+            // var_dump($responsableObj->getIdPilares());die;
              $nombrePilarAsignado = $responsableObj->getPilarAsignado();
              $_SESSION['identity'] = $identityLCP;
              $_SESSION['pilarAsignado'] = $nombrePilarAsignado;

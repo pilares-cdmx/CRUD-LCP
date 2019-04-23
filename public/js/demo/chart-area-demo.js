@@ -2,11 +2,14 @@
 Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#292b2c';
 $.ajax({
-    url: 'http://187.216.164.109/CRUD-LCP/data.php',
+    // url: 'http://187.216.164.109/CRUD-LCP/data.php',
+    url: 'http://localhost/pilaresDev/CRUD-LCP/Crud/linearPlot',
+    //  url: 'http://localhost/pilaresDev/CRUD-LCP/data.php',
     type: 'GET',
 })
 .done(function(data) {
-    //console.log(data);
+    //console.log("estas en linearPlot");
+    // console.log(data);
       var usuariosRegistrados = [];
 
       for(var i in data) {
