@@ -4,16 +4,18 @@ require 'views/layout/headerCRUD.php';
     if (isset($_SESSION['pilarAsignado'])) {
         $nombrePilar = $_SESSION['pilarAsignado'];
         $separador = "-";
+        $idPilarLCP = $_SESSION['identity']->Pilares_idPilares;
+        // var_dump($idPilarLCP);die;
     }
-    // $con = mysqli_connect('localhost', 'pilaresDevSergio', '%C2MB10cl1m2t1c0%', 'pilaresDB');
-    $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
+    $con = mysqli_connect('localhost', 'pilaresDevSergio', '%C2MB10cl1m2t1c0%', 'pilaresDB');
+    // $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
         if (!$con) {
             die('Could not connect: ' . mysqli_error($con));
         }
 
     mysqli_select_db($con, "pilaresDB");
     mysqli_query($con, "SET NAMES 'utf8mb4'");
-    $sql="SELECT * FROM Usuario";
+    $sql="SELECT * FROM Usuario U1, UsuariosPorPilar U2 where U1.idUsuarios = U2.Usuario_idUsuarios and U2.Pilares_idPilares = '$idPilarLCP'";
     $result = mysqli_query($con, $sql);
     //var_dump($result);
 
@@ -55,7 +57,7 @@ require 'views/layout/headerCRUD.php';
                         <th>Telefono Casa</th>
                         <th>Telefono Cel.</th>
                         <th>Fecha Registro</th>
-                        <th>Acciones</th>
+                        <th>Editar</th>
                       </tr>
                     </thead>
                     <tfoot>
@@ -69,7 +71,7 @@ require 'views/layout/headerCRUD.php';
                         <th>Telefono Casa</th>
                         <th>Telefono Cel.</th>
                         <th>Fecha Registro</th>
-                        <th>Acciones</th>
+                        <th>Editar</th>
                       </tr>
                     </tfoot>
                     <tbody>

@@ -45,6 +45,13 @@ class CrudController{
       print $result;
     }
 
+    public function actividadesPiePlot(){
+      $responsableObj = new Responsables();
+      $lcpPilarId =  $_SESSION['identity']->Pilares_idPilares;
+      // var_dump($lcpPilarId); die;
+      $result = $responsableObj->getDataActividadesPorPilar($lcpPilarId);
+      print $result;
+    }
 
     public function registrarLCP(){
       if(isset($_POST['registrarLCP']))

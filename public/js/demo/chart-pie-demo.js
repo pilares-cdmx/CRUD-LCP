@@ -2,11 +2,12 @@
 Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#292b2c';
 $.ajax({
-  url: 'http://187.216.164.109/CRUD-LCP/dataActividades.php',
+  // url: 'http://187.216.164.109/CRUD-LCP/dataActividades.php',
+    url: 'http://187.216.164.109/CRUD-LCP/Crud/actividadesPiePlot',
     type: 'GET',
 })
 .done(function(dataActividades) {
-    console.log("success");
+    // console.log("success");
     var usuariosPorTipoAct = [];
 
          for(var i in dataActividades) {

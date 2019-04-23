@@ -254,24 +254,9 @@ class Responsables {
     return $result;
   }
 
-  public function getDataUsuariosPorPilar($lcpPilarId){
+  public function getDataUsuariosPorPilar($lcpPilarId){     
     header('Content-Type: application/json');
-//    $var1 = $this->getApellidoMaterno;
-//    $var2 = " SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-02%' AND U2.Pilares_idPilares = '$lcpPilarId'";
-//     var_dump($var1);
-//     return $var2;
-   // $con = mysqli_connect('localhost', 'pilaresDevSergio', '%C2MB10cl1m2t1c0%', 'pilaresDB');
-    // $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
-    //     if (!$con) {
-    //         die('Could not connect: ' . mysqli_error($con));
-    //     } 
 
-    // SELECT COUNT(*), U2.Pilares_idPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-08%' AND U2.Pilares_idPilares = '9'
-
-    // mysqli_select_db($con, "pilaresDB");
-    // mysqli_query($con, "SET NAMES 'utf8mb4'");
-
-    // $dia1="SELECT COUNT(fechaDeRegistro) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-01%'";
     
     $dia1="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-01%' AND U2.Pilares_idPilares = '$lcpPilarId'";
     $result1 = $this->db->query($dia1);
@@ -338,6 +323,9 @@ class Responsables {
 
     $dia22="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-22%' AND U2.Pilares_idPilares = '$lcpPilarId'";
     $result22 = $this->db->query($dia22);
+
+    $dia23="SELECT COUNT(*) AS fecha  FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U1.fechaDeRegistro LIKE '%2019-04-23%' AND U2.Pilares_idPilares = '$lcpPilarId'";
+    $result23 = $this->db->query($dia23);
 
     $data = array();
     foreach ($result1 as $row) {
@@ -406,34 +394,48 @@ class Responsables {
     foreach ($result22 as $row) {
     array_push($data, $row);
     }
+    foreach ($result23 as $row) {
+    array_push($data, $row);
+    }
 
 
-
-    //free memory associated with result
-    // $result3->close();
-    // $result4->close();
-    // $result5->close();
-    // $result6->close();
-    // $result7->close();
-    // $result8->close();
-    // $result9->close();
-    // $result10->close();
-    // $result11->close();
-    // $result12->close();
-    // $result13->close();
-    // $result14->close();
-    // $result15->close();
-    // $result16->close();
-    // $result17->close();
-
-    //close connection
-    // $con->close();
-
-    //now print the data
-    // print json_encode($data);
     return json_encode($data);
 
-}
+  }
+    
+  public function getDataActividadesPorPilar($lcpPilarId){
+    header('Content-Type: application/json');
+    // select count(*) from ActividadesPorUsuario A1, UsuariosPorPilar U1 
+    // where A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '4' and U1.Pilares_idPilares = '23'; 
+    $usuariosPorTipoAct1="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '1' and U1.Pilares_idPilares = '$lcpPilarId'";
+    $resultZona1 = $this->db->query($usuariosPorTipoAct1);
+
+    $usuariosPorTipoAct2="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '2' and U1.Pilares_idPilares = '$lcpPilarId'";
+    $resultZona2 = $this->db->query($usuariosPorTipoAct2);
+
+    $usuariosPorTipoAct3="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '3' and U1.Pilares_idPilares = '$lcpPilarId'";
+    $resultZona3 = $this->db->query($usuariosPorTipoAct3);
+
+    $usuariosPorTipoAct4="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '4' and U1.Pilares_idPilares = '$lcpPilarId'";
+    $resultZona4 = $this->db->query($usuariosPorTipoAct4);
+
+    $dataActividades = array();
+        foreach ($resultZona1 as $row) {
+        $dataActividades[] = $row;
+        }
+        foreach ($resultZona3 as $row) {
+        array_push($dataActividades, $row);
+        }
+        foreach ($resultZona4 as $row) {
+        array_push($dataActividades, $row);
+        }
+        foreach ($resultZona2 as $row) {
+        array_push($dataActividades, $row);
+        }
+
+    return json_encode($dataActividades);
+
+  }
 
 //   public function dataUsuarios(){
 //       /*header('Content-Type: application/json');

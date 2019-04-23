@@ -3,7 +3,7 @@ Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSyste
 Chart.defaults.global.defaultFontColor = '#292b2c';
 $.ajax({
     // url: 'http://187.216.164.109/CRUD-LCP/data.php',
-    url: 'http://localhost/pilaresDev/CRUD-LCP/Crud/linearPlot',
+    url: 'http://187.216.164.109/CRUD-LCP/Crud/linearPlot',
     //  url: 'http://localhost/pilaresDev/CRUD-LCP/data.php',
     type: 'GET',
 })
@@ -42,7 +42,8 @@ $.ajax({
             "abril 19",
             "abril 20",
             "abril 21",
-            "abril 22"],
+            "abril 22",
+            "abril 23"],
         datasets: [{
           label: "Usuarios",
           lineTension: 0.3,
@@ -74,7 +75,7 @@ $.ajax({
           yAxes: [{
             ticks: {
               min: 0,
-              max: 1500,
+              max: 500,
               maxTicksLimit: 5
             },
             gridLines: {

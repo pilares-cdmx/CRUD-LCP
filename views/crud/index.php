@@ -3,10 +3,11 @@
   if (isset($_SESSION['pilarAsignado'])) {
     $nombrePilar = $_SESSION['pilarAsignado'];
     $separador = "-";
+    $idPilarLCP = $_SESSION['identity']->Pilares_idPilares;
   }
 
-    // $con = mysqli_connect('localhost', 'pilaresDevSergio', '%C2MB10cl1m2t1c0%', 'pilaresDB');
-    $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
+    $con = mysqli_connect('localhost', 'pilaresDevSergio', '%C2MB10cl1m2t1c0%', 'pilaresDB');
+    // $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
         if (!$con) {
             die('Could not connect: ' . mysqli_error($con));
         }
@@ -16,23 +17,24 @@
 
     /**
     * Totales por tipo de actividad
+    * SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '1' and U1.Pilares_idPilares = '$lcpPilarId'";
     */
-    $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '1'";
+    $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '1' and U1.Pilares_idPilares = '$idPilarLCP'";
     $totalesCultura = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $culturaTotales = mysqli_fetch_array($totalesCultura);
 
-    $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '4'";
+    $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '2' and U1.Pilares_idPilares = '$idPilarLCP'";
     $totalesCiberEscuelas = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $ciberEscuelaTotales = mysqli_fetch_array($totalesCiberEscuelas);
 
-    $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '2'";
+    $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '3' and U1.Pilares_idPilares = '$idPilarLCP'";
     $totalesDeporte = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $deporteTotales = mysqli_fetch_array($totalesDeporte);
 
-    $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '3'";
+    $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '4' and U1.Pilares_idPilares = '$idPilarLCP'";
     $totalesAutonomia = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $autonomiaTotales = mysqli_fetch_array($totalesAutonomia);
