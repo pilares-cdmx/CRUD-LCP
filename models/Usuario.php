@@ -28,6 +28,7 @@ class Usuario{
     private $Direccion_Colonias_Alcaldias_Zonas_idZonas;
     private $pilarSeleccionado;
     private $pilarId;
+    private $pilarIdAlaldia;
     private $db;
 
 
@@ -114,6 +115,9 @@ class Usuario{
     public function getPilarId(){
         return $this->pilarId;
     }
+    public function getIdAlcaldiaPilar(){
+        return $this->pilarIdAlaldia;
+    }
     /*
     *   SETTERS
     */
@@ -166,16 +170,15 @@ class Usuario{
     public function setTelefonoCasa($telefonoCasa){
         $this->telefonoCasa = $telefonoCasa;
     }
-    public function setFolio($folio, $curp){
+    public function setFolio($pilarId, $IdAlcaldiaPilar, $curp){
         //$this->pilarId = $this->getPilarId();
         //$idDireccion = $this->getIdDireccion();
         //$idUsusario = $this->getId();
         //$this->folio = $idPilar.$idDireccion.$idUsusario;
         //$this->folio = rand(9999, 32786);
-
-        $idDireccion=$this->getIdDireccion();
+        // $idDireccion=$this->getIdDireccion();
         $idCurp=substr($curp, 14, 4);
-        $this->folio = $folio.$idDireccion.$idCurp;
+        $this->folio = $pilarId.$IdAlcaldiaPilar.$idCurp;
     }
     public function setIdDireccion($idDireccion){
         $this->Direccion_idDireccion = $idDireccion;
@@ -222,6 +225,17 @@ class Usuario{
             echo "No encontré tu pilar";
         }
     }
+    public function setIdAlcaldiaPilar($pilarSeleccionado){
+        //$this->pilarSeleccionado = $pilarSeleccionado;
+        $query="SELECT * FROM Pilares WHERE idPilares = '$pilarSeleccionado'";
+        $tmp = $this->db->query($query);
+        if ($row = mysqli_fetch_array($tmp)) {
+            $this->pilarIdAlaldia = $row['Direccion_Colonias_Alcaldias_idAlcaldiasZonas'];
+        }else {
+            echo "No encontré tu Direccion_Alcaldias_idAlcaldiasZonas";
+        }
+    }
+
     public function setPilarId($pilarId){
 
         $this->pilarId = $pilarId;
