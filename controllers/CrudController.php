@@ -106,7 +106,7 @@ class CrudController{
                 */
                   //$this->view->render('aviso-de-privacidad/index');
                 }else{
-                echo "Transaccion no concretada";
+                echo "Transaccion no concretada valida que estes en la lista de responsables con PILARES asignado";
                   //$this->view->render('formulario/login');
                   //  header("Location:".URL.'Usuario/login');
               }
