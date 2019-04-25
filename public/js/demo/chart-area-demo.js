@@ -43,7 +43,8 @@ $.ajax({
             "abril 20",
             "abril 21",
             "abril 22",
-            "abril 23"],
+            "abril 23",
+            "abril 24"],
         datasets: [{
           label: "Usuarios",
           lineTension: 0.3,
@@ -75,7 +76,7 @@ $.ajax({
           yAxes: [{
             ticks: {
               min: 0,
-              max: 500,
+              max: 1500,
               maxTicksLimit: 5
             },
             gridLines: {

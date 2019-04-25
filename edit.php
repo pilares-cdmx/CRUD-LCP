@@ -4,6 +4,8 @@ include("db.php");
 if(isset($_GET['id'])){
     $id = $_GET['id'];
     $query = "SELECT * FROM Usuario WHERE idUsuarios = '$id'";
+
+    $queryActividades = "";
     $result = mysqli_query($conn, $query);
     if(!result){
         echo "no connection";
@@ -93,7 +95,9 @@ if(isset($_POST['update'])){
                             <input type="tel" name="telefonoCelular" value="<?php echo $telefonoCelular; ?>"
                             class="form-control" placeholder="Editar Telefono Celular">
                         </div>
-
+                        <ul>
+                            <li></li>
+                        </ul>
                         <button class="btn btn-success" name="update">
                             Actualizar Registro
                         </button>

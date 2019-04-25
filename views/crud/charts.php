@@ -63,9 +63,23 @@
             </div>
           </div>
         </div>
-<!--         
+
         <div class="row">
-          <div class="col-xl-12">
+        <div class="col-xl-6">
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fas fa-chart-pie"></i>
+                Gráfica de usuarios registrados por genero</div>
+              <div class="card-body">
+                <canvas id="myPieChartPorGenero" width="100%" height="100"></canvas>
+              </div>
+              <div class="card-footer small text-muted">Actualizado ayer a las 11:59 PM</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xl-6">
             <div class="card mb-3">
               <div class="card-header">
                 <i class="fas fa-chart-bar"></i>
@@ -113,9 +127,9 @@
              </div>
            </div>
           </div>
-   -->       
+        
           <div class="row">
-            <div class="col-xl-12">
+            <div class="col-xl-6">
               <div class="card mb-3">
                 <div class="card-header">
                   <i class="fas fa-chart-bar"></i>
@@ -126,8 +140,8 @@
                 <div class="card-footer small text-muted">Actualizado ayer a las 11:59 PM</div>
               </div>
             </div>
-
-            <!-- <div class="col-xl-6">
+ 
+             <div class="col-xl-6">
               <div class="card mb-3">
                 <div class="card-header">
                   <i class="fas fa-chart-bar"></i>
@@ -142,7 +156,7 @@
 
         <p class="small text-center text-muted my-5">
           
-        </p>  -->
+        </p>  
 
       </div>
       <!-- /.container-fluid -->
@@ -203,6 +217,7 @@
   <script src="<?php echo constant('URL')?>public/js/demo/chart-UsuariosPorPilarZonaSurPoniente.js"></script>
   <script src="<?php echo constant('URL')?>public/js/demo/chart-UsuariosPorPilarZonaSur.js"></script>
   <script src="<?php echo constant('URL')?>public/js/demo/chart-UsuariosPorPilarZonaCentroOriente.js"></script>
+  <script src="<?php echo constant('URL')?>public/js/demo/chart-pie-registrosPorGenero.js"></script>
 
 </body>
 
