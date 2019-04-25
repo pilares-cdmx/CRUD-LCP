@@ -16,6 +16,7 @@ require 'views/layout/headerCRUD.php';
     mysqli_select_db($con, "pilaresDB");
     mysqli_query($con, "SET NAMES 'utf8mb4'");
     $sql="SELECT * FROM Usuario U1, UsuariosPorPilar U2 where U1.idUsuarios = U2.Usuario_idUsuarios and U2.Pilares_idPilares = '$idPilarLCP'";
+    // $sql="SELECT * FROM Usuario";
     $result = mysqli_query($con, $sql);
     //var_dump($result);
 
@@ -26,8 +27,11 @@ require 'views/layout/headerCRUD.php';
 
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active">Administración de Usuarios<?=$separador?> <b><?=$nombrePilar?></b></li>
+          <li class="breadcrumb-item active">Administración de Usuarios</li>
+          <li><?=$separador?> <?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li>
+          <li><?=$separador?> <b><?=$nombrePilar?></b></li>
         </ol>
+       
         <!-- <div class="container p-4"> -->
         <?php if(isset($_SESSION['message'])){ ?>
         <div class="alert alert-<?=$_SESSION['message_type'];?> alert-dismissible fade show" role="alert">
@@ -56,7 +60,7 @@ require 'views/layout/headerCRUD.php';
                         <th>CURP</th>
                         <th>Telefono Casa</th>
                         <th>Telefono Cel.</th>
-                        <th>Fecha Registro</th>
+                        <!-- <th>Fecha Registro</th> -->
                         <th>Editar</th>
                       </tr>
                     </thead>
@@ -70,7 +74,7 @@ require 'views/layout/headerCRUD.php';
                         <th>CURP</th>
                         <th>Telefono Casa</th>
                         <th>Telefono Cel.</th>
-                        <th>Fecha Registro</th>
+                        <!-- <th>Fecha Registro</th> -->
                         <th>Editar</th>
                       </tr>
                     </tfoot>
@@ -86,7 +90,7 @@ require 'views/layout/headerCRUD.php';
                         <td><?php echo $row['curp'] ?></td>
                         <td><?php echo $row['telefonoCasa'] ?></td>
                         <td><?php echo $row['telefonoCelular'] ?></td>
-                        <td><?php echo $row['fechaDeRegistro'] ?></td>
+                        <!-- <td><?php //echo $row['fechaDeRegistro'] ?></td> -->
                         <td>
                             <a href="<?=URL?>edit.php?id=<?php echo $row['idUsuarios']?>" class="btn btn-secondary">
                                 <i class="fas fa-marker"></i>

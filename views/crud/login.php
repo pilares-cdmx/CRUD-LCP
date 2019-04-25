@@ -25,7 +25,7 @@
     <div class="card card-login mx-auto mt-5">
       <div class="card-header">Acceso</div>
       <?php if(isset($_SESSION['error_login'])): $mensajeError = $_SESSION['error_login']?>
-          <div class="card-header"><?=$mensajeError?></div>
+          <!-- <div class="card-header"><?=$mensajeError?></div> -->
       <?php endif; ?>
       <?php if(isset($_SESSION['registroLCPExitoso'])): $mensaje = $_SESSION['registroLCPExitoso']?>
           <div class="card-header"><?=$mensaje?></div>
