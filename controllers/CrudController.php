@@ -19,8 +19,8 @@ class CrudController{
     }
 
     public function ingresoExitoso(){
-        // require_once 'views/crud/index.php';
-        require_once 'views/crud/tables.php';
+        require_once 'views/crud/index.php';
+        // require_once 'views/crud/tables.php';
     }
 
     public function charts(){
@@ -42,7 +42,7 @@ class CrudController{
       $responsableObj = new Responsables();
       $lcpPilarId =  $_SESSION['identity']->Pilares_idPilares;
       // var_dump($lcpPilarId); die;
-      $result = $responsableObj->getDataUsuariosPorPilar();
+      $result = $responsableObj->getDataUsuariosPorPilar($lcpPilarId);
       print $result;
     }
 
@@ -50,14 +50,14 @@ class CrudController{
       $responsableObj = new Responsables();
       $lcpPilarId =  $_SESSION['identity']->Pilares_idPilares;
       // var_dump($lcpPilarId); die;
-      $result = $responsableObj->getDataActividadesPorPilar();
+      $result = $responsableObj->getDataActividadesPorPilar($lcpPilarId);
       print $result;
     }
     public function registrosPiePorGenero(){
       $responsableObj = new Responsables();
       $lcpPilarId =  $_SESSION['identity']->Pilares_idPilares;
       // var_dump($lcpPilarId); die;
-      $result = $responsableObj->getDataRegistrosPorGenero();
+      $result = $responsableObj->getDataRegistrosPorGenero($lcpPilarId);
       print $result;
     }
 

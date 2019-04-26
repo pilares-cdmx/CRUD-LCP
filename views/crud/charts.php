@@ -18,7 +18,7 @@
         <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-chart-area"></i>
-           Gráfica de ususarios registrados</div>
+           Gráfica de ususarios registrados por mes</div>
           <div class="card-body">
             <canvas id="myAreaChart" width="100%" height="30"></canvas>
           </div>
@@ -50,7 +50,7 @@
           </div>
         </div>
         
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-xl-12">
             <div class="card mb-3">
               <div class="card-header">
@@ -62,7 +62,7 @@
               <div class="card-footer small text-muted">Actualizado ayer a las 11:59 PM</div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="row">
         <div class="col-xl-6">
@@ -78,7 +78,7 @@
           </div>
         </div>
         
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-xl-6">
             <div class="card mb-3">
               <div class="card-header">
@@ -152,7 +152,7 @@
                 <div class="card-footer small text-muted">Actualizado ayer a las 11:59 PM</div>
               </div>
             </div>
-           </div>
+           </div> -->
 
         <p class="small text-center text-muted my-5">
           

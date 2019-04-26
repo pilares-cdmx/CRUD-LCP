@@ -154,7 +154,7 @@ class UsuarioController{
 
                foreach ($_POST['check'] as $key => $value) {
                    $actividadesPorUsuario->setActividades_idActividades($value);
-                   var_dump($value);
+                //    var_dump($value);
                    $actividadesPorUsuario->setIdTiposActividades($value);
                    $actividadesPorUsuario->setUsuario_idUsuarios($idUsuario);
                    $actividadesPorUsuario->setUsuario_Direccion_idDireccion($idUsuario);

@@ -7,8 +7,8 @@ require 'views/layout/headerCRUD.php';
         $idPilarLCP = $_SESSION['identity']->Pilares_idPilares;
         // var_dump($idPilarLCP);die;
     }
-    $con = mysqli_connect('localhost', 'pilaresDevSergio', '%C2MB10cl1m2t1c0%', 'pilaresDB');
-    // $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
+    // $con = mysqli_connect('localhost', 'pilaresDevSergio', '%C2MB10cl1m2t1c0%', 'pilaresDB');
+    $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
         if (!$con) {
             die('Could not connect: ' . mysqli_error($con));
         }
@@ -26,7 +26,7 @@ require 'views/layout/headerCRUD.php';
       <div class="container-fluid">
 
         <!-- Breadcrumbs-->
-        <ol class="breadcrumb">
+        <ol class="breadcrumb"> 
           <li class="breadcrumb-item active">Administración de Usuarios</li>
           <li><?=$separador?> <?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li>
           <li><?=$separador?> <b><?=$nombrePilar?></b></li>

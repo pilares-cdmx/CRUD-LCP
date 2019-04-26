@@ -21,30 +21,15 @@ $.ajax({
       type: 'line',
       data: {
         labels: [
-            "abril 01",
-            "abril 02",
-            "abril 03",
-            "abril 04",
-            "abril 05",
-            "abril 06",
-            "abril 07",
-            "abril 08",
-            "abril 09",
-            "abril 10",
-            "abril 11",
-            "abril 12",
-            "abril 13",
-            "abril 14",
-            "abril 15",
-            "abril 16",
-            "abril 17",
-            "abril 18",
-            "abril 19",
-            "abril 20",
-            "abril 21",
-            "abril 22",
-            "abril 23",
-            "abril 24"],
+            "abril",
+            "mayo",
+            "junio",
+            "julio",
+            "agosto",
+            "septiembre",
+            "octubre",
+            "noviembre",
+            "diciembre"],
         datasets: [{
           label: "Usuarios",
           lineTension: 0.3,
@@ -76,7 +61,7 @@ $.ajax({
           yAxes: [{
             ticks: {
               min: 0,
-              max: 1500,
+              max: 1000,
               maxTicksLimit: 5
             },
             gridLines: {
