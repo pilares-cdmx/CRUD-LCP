@@ -1304,7 +1304,7 @@
         <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-chart-area"></i>
-          Gráfica general de usuarios registrados por día</div>
+          Gráfica general de usuarios registrados por mes</div>
           <div class="card-body">
             <canvas id="myAreaChart" width="100%" height="30"></canvas>
           </div>
