@@ -8,7 +8,7 @@ require 'views/layout/headerCRUD.php';
         // var_dump($idPilarLCP);die;
     }
     // $con = mysqli_connect('localhost', 'pilaresDevSergio', '%C2MB10cl1m2t1c0%', 'pilaresDB');
-    $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
+    $con = mysqli_connect('localhost', 'francisco', 'tu_contrasena', 'pilaresDB');
         if (!$con) {
             die('Could not connect: ' . mysqli_error($con));
         }
