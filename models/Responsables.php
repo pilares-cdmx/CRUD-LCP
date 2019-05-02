@@ -471,6 +471,7 @@ class Responsables {
 
   public function getDataRegistrosPorZona(){
     header('Content-Type: application/json');
+
         $usuariosPorZona1="SELECT COUNT(*) AS userPorZona FROM Usuario WHERE Direccion_Colonias_Alcaldias_Zonas_idZonas = '1'";
         $resultZona1 = $this->db->query($usuariosPorZona1);
 
@@ -510,7 +511,7 @@ class Responsables {
         }
       
 
-        return print json_encode($dataZona);
+        return json_encode($dataZona);
 
   }
 //   public function dataUsuarios(){
