@@ -468,6 +468,51 @@ class Responsables {
     return json_encode($dataRegistrosPorGenero);
 
   }
+
+  public function getDataRegistrosPorZona(){
+    header('Content-Type: application/json');
+        $usuariosPorZona1="SELECT COUNT(*) AS userPorZona FROM Usuario WHERE Direccion_Colonias_Alcaldias_Zonas_idZonas = '1'";
+        $resultZona1 = $this->db->query($usuariosPorZona1);
+
+        $usuariosPorZona2="SELECT COUNT(*) AS userPorZona FROM Usuario WHERE Direccion_Colonias_Alcaldias_Zonas_idZonas = '2'";
+        $resultZona2 = $this->db->query($usuariosPorZona2);
+
+        $usuariosPorZona3="SELECT COUNT(*) AS userPorZona FROM Usuario WHERE Direccion_Colonias_Alcaldias_Zonas_idZonas = '3'";
+        $resultZona3 = $this->db->query($usuariosPorZona3);
+
+        $usuariosPorZona4="SELECT COUNT(*) AS userPorZona FROM Usuario WHERE Direccion_Colonias_Alcaldias_Zonas_idZonas = '4'";
+        $resultZona4 = $this->db->query($usuariosPorZona4);
+
+        $usuariosPorZona5="SELECT COUNT(*) AS userPorZona FROM Usuario WHERE Direccion_Colonias_Alcaldias_Zonas_idZonas = '5'";
+        $resultZona5 = $this->db->query($usuariosPorZona5);
+
+        $usuariosPorZona6="SELECT COUNT(*) AS userPorZona FROM Usuario WHERE Direccion_Colonias_Alcaldias_Zonas_idZonas = '6'";
+        $resultZona6 = $this->db->query($usuariosPorZona6);
+
+        $dataZona = array();
+        foreach ($resultZona1 as $row) {
+          $dataZona[] = $row;
+        }
+        foreach ($resultZona2 as $row) {
+          array_push($dataZona, $row);
+        }
+        foreach ($resultZona3 as $row) {
+          array_push($dataZona, $row);
+        }
+        foreach ($resultZona4 as $row) {
+          array_push($dataZona, $row);
+        }
+        foreach ($resultZona5 as $row) {
+          array_push($dataZona, $row);
+        }
+        foreach ($resultZona6 as $row) {
+          array_push($dataZona, $row);
+        }
+      
+
+        return print json_encode($dataZona);
+
+  }
 //   public function dataUsuarios(){
 //       /*header('Content-Type: application/json');
 //       $query="SELECT nombre, apellidoPaterno, apellidoMaterno, folio, correo, curp, telefonoCasa, fechaDeRegistro FROM Usuario";
