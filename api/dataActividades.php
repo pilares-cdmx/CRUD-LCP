@@ -6,7 +6,7 @@ error_reporting(-1);
     //$q = intval($_GET['q']);
 
     header('Content-Type: application/json');
-    $con = mysqli_connect('localhost', 'pilaresDevSergio', '%C2MB10cl1m2t1c0%', 'pilaresDB');
+    $con = mysqli_connect('localhost', 'root', '$2FR0s2m4r21.', 'pilaresDB');
         if (!$con) {
             die('Could not connect: ' . mysqli_error($con));
         }

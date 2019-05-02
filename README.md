@@ -1,6 +1,6 @@
-# [Start Bootstrap - SB Admin](https://startbootstrap.com/template-overviews/sb-admin/)
+# [PILARES CRUD | SECTEI | JUD estádistica y prospección](https://startbootstrap.com/template-overviews/sb-admin/)
 
-[SB Admin](http://startbootstrap.com/template-overviews/sb-admin/) is an open source, admin dashboard template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+[PILARES](http://startbootstrap.com/template-overviews/sb-admin/) is an open source, admin dashboard template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
 ## Preview
 
