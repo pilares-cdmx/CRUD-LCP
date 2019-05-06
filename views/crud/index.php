@@ -6,9 +6,11 @@
     $idPilarLCP = $_SESSION['identity']->Pilares_idPilares;
   }
 
-    $con = mysqli_connect('localhost', 'francisco', 'tu_contrasena', 'pilaresDB');
+    // $con = mysqli_connect('localhost', 'francisco', 'tu_contrasena', 'pilaresDB');
     // $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
-        if (!$con) {
+    $con = mysqli_connect('localhost', 'root', 'S2NT2m2r2d0n2...', 'pilaresDB');
+
+    if (!$con) {
             die('Could not connect: ' . mysqli_error($con));
         }
 
@@ -47,6 +49,12 @@
     */
     /**
     * Totales por tactividad Cultura
+    * QUERY PARA OBTENER DATOS DE ACTIVIDADES POR PILAR
+    * SELECT count(*) 
+    * FROM ActividadesPorUsuario A1, UsuariosPorPilar U2 
+    * WHERE A1.Actividades_idActividades = '112' 
+    * AND A1.Usuario_idUsuarios = U2.Usuario_idUsuarios 
+    * AND U2.Pilares_idPilares = '1'; 
     */
     $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '1'";
     $totalesTeatro = mysqli_query($con, $sql);
@@ -1338,7 +1346,7 @@
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Selesciona salir si estas seguro de cerrar tu sesión.</div>
+        <div class="modal-body">Selecciona salir si estas seguro de cerrar tu sesión.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
           <a class="btn btn-primary" href="<?php echo constant('URL')?>Crud/index">Salir</a>

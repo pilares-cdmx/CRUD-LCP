@@ -262,7 +262,8 @@ class Responsables {
     $result1 = $this->db->query($mesAbril);
 
     // $dia2="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-02%'";
-    // $result2 = $this->db->query($dia2);
+    $mesMayo="SELECT count(*) AS fecha FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U2.Pilares_idPilares = '$lcpPilarId' AND U1.fechaDeregistro like '%2019-05%'";
+    $result2 = $this->db->query($mesMayo);
 
     // $dia3="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-03%'";
     // $result3 = $this->db->query($dia3);
@@ -334,9 +335,9 @@ class Responsables {
     foreach ($result1 as $row) {
     $data[] = $row;
     }
-    // foreach ($result2 as $row) {
-    // array_push($data, $row);
-    // }
+    foreach ($result2 as $row) {
+    array_push($data, $row);
+    }
     // foreach ($result3 as $row) {
     // array_push($data, $row);
     // }
@@ -466,6 +467,52 @@ class Responsables {
        
 
     return json_encode($dataRegistrosPorGenero);
+
+  }
+
+  public function getDataRegistrosPorZona(){
+    header('Content-Type: application/json');
+
+        $usuariosPorZona1="SELECT COUNT(*) AS userPorZona FROM Usuario WHERE Direccion_Colonias_Alcaldias_Zonas_idZonas = '1'";
+        $resultZona1 = $this->db->query($usuariosPorZona1);
+
+        $usuariosPorZona2="SELECT COUNT(*) AS userPorZona FROM Usuario WHERE Direccion_Colonias_Alcaldias_Zonas_idZonas = '2'";
+        $resultZona2 = $this->db->query($usuariosPorZona2);
+
+        $usuariosPorZona3="SELECT COUNT(*) AS userPorZona FROM Usuario WHERE Direccion_Colonias_Alcaldias_Zonas_idZonas = '3'";
+        $resultZona3 = $this->db->query($usuariosPorZona3);
+
+        $usuariosPorZona4="SELECT COUNT(*) AS userPorZona FROM Usuario WHERE Direccion_Colonias_Alcaldias_Zonas_idZonas = '4'";
+        $resultZona4 = $this->db->query($usuariosPorZona4);
+
+        $usuariosPorZona5="SELECT COUNT(*) AS userPorZona FROM Usuario WHERE Direccion_Colonias_Alcaldias_Zonas_idZonas = '5'";
+        $resultZona5 = $this->db->query($usuariosPorZona5);
+
+        $usuariosPorZona6="SELECT COUNT(*) AS userPorZona FROM Usuario WHERE Direccion_Colonias_Alcaldias_Zonas_idZonas = '6'";
+        $resultZona6 = $this->db->query($usuariosPorZona6);
+
+        $dataZona = array();
+        foreach ($resultZona1 as $row) {
+          $dataZona[] = $row;
+        }
+        foreach ($resultZona2 as $row) {
+          array_push($dataZona, $row);
+        }
+        foreach ($resultZona3 as $row) {
+          array_push($dataZona, $row);
+        }
+        foreach ($resultZona4 as $row) {
+          array_push($dataZona, $row);
+        }
+        foreach ($resultZona5 as $row) {
+          array_push($dataZona, $row);
+        }
+        foreach ($resultZona6 as $row) {
+          array_push($dataZona, $row);
+        }
+      
+
+        return json_encode($dataZona);
 
   }
 //   public function dataUsuarios(){

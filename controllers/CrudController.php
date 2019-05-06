@@ -61,6 +61,14 @@ class CrudController{
       print $result;
     }
 
+    public function dataPorZona(){
+      $responsableObj = new Responsables();
+      // $lcpPilarId =  $_SESSION['identity']->Pilares_idPilares;
+      // var_dump($lcpPilarId); die;
+      $result = $responsableObj->getDataRegistrosPorZona();
+      print $result;
+    }
+
     public function registrarLCP(){
       if(isset($_POST['registrarLCP']))
       {
