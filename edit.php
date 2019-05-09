@@ -255,7 +255,7 @@ if(isset($_POST['update'])){
                                           <div class="col-lg-12 col-md-12 estilo-forma">
                                             <label for="correo">Correo</label><br>
                                             <input type="email" class="validate" name="correo" aria-describedby="emailHelp" size="40" 
-                                            value="<?php echo $correo; ?>" placeholder="Editar Correo" required>
+                                            value="<?php echo $correo; ?>" placeholder="Editar Correo" >
                                             <small id="emailHelp" class="form-text text-muted"></small>
                                         </div>
                                   
@@ -398,7 +398,9 @@ if(isset($_POST['update'])){
                                                 <input type="checkbox" value="96" name="check[]" id="dep7" />
                                                 <label for="dep7" class="rc_sty" value="96" name="check[]">Yoga</label><br>
                                                 <input type="checkbox" value="97" name="check[]" id="dep8" />
-                                                <label for="dep8" class="rc_sty" value="97" name="check[]">Tai chi</label>
+                                                <label for="dep8" class="rc_sty" value="97" name="check[]">Tai chi</label><br>
+                                                <input type="checkbox" value="129" name="check[]" id="dep13" />
+                                                <label for="dep13" class="rc_sty" value="129" name="check[]">Ritmos Latinos</label>
                                                 <br>
                                               </div>
                                             </div>
@@ -412,7 +414,9 @@ if(isset($_POST['update'])){
                                                 <input type="checkbox" value="100" name="check[]" id="dep11" />
                                                 <label for="dep11" class="rc_sty" value="100" name="check[]">Karate do</label><br>
                                                 <input type="checkbox" value="101" name="check[]" id="dep12" />
-                                                <label for="dep12" class="rc_sty" value="101" name="check[]">Kung fu</label>
+                                                <label for="dep12" class="rc_sty" value="101" name="check[]">Kung fu</label><br>
+                                                <input type="checkbox" value="130" name="check[]" id="dep14" />
+                                                <label for="dep14" class="rc_sty" value="130" name="check[]">Taekwondo</label>
 
                                               </div>
                                             </div>
