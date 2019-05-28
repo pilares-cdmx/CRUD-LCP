@@ -418,15 +418,15 @@ class Responsables {
     $resultZona1 = $this->db->query($usuariosPorTipoAct1);
 
     // $usuariosPorTipoAct2="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '2'";
-    $usuariosPorTipoAct2="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.Pilares_idPilares = '$lcpPilarId'";
+    $usuariosPorTipoAct2="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U1.Pilares_idPilares = '$lcpPilarId'";
     $resultZona2 = $this->db->query($usuariosPorTipoAct2);
 
     // $usuariosPorTipoAct3="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '3'";
-    $usuariosPorTipoAct3="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios AND A1.Actividades_TiposActividades_idTiposActividades = '2' AND U1.Pilares_idPilares = '$lcpPilarId'";
+    $usuariosPorTipoAct3="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.Pilares_idPilares = '$lcpPilarId'";
     $resultZona3 = $this->db->query($usuariosPorTipoAct3);
 
     // $usuariosPorTipoAct4="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '4'";
-    $usuariosPorTipoAct4="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U1.Pilares_idPilares = '$lcpPilarId'";
+    $usuariosPorTipoAct4="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios AND A1.Actividades_TiposActividades_idTiposActividades = '2' AND U1.Pilares_idPilares = '$lcpPilarId'";
     $resultZona4 = $this->db->query($usuariosPorTipoAct4);
 
     $dataActividades = array();
