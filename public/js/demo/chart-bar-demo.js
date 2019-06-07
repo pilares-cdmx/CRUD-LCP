@@ -44,7 +44,7 @@ $.ajax({
                yAxes: [{
                  ticks: {
                    min: 0,
-                   max: 3500,
+                   max: 4500,
                    maxTicksLimit: 5
                  },
                  gridLines: {
