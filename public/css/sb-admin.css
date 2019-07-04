@@ -47,6 +47,28 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.bg-cdmx {
+
+  background: #009288
+}
+.miBg {
+  background-color: rgba(137, 141, 141, 0.3);
+}
+
+.titleColor {
+  color: #00b140;
+}
+.subtitleColor {
+  color: #009288;
+}
+.cuerpoColor {
+  color: #898d8d;
+}
+
+/*custom adds**/
+.errorColor {
+  color: #ec6587;
+}
 
 html {
   font-family: sans-serif;
