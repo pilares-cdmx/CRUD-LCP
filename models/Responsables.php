@@ -274,7 +274,7 @@ class Responsables {
     $result4 = $this->db->query($mesJulio);
 
     // $dia5="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-05%'";
-    $mesAgosto="SELECT count(*) AS fecha FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U2.Pilares_idPilares = '$lcpPilarId' AND U1.fechaDeregistro like '%Aug%'";
+    $mesAgosto="SELECT count(*) AS fecha FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U2.Pilares_idPilares = '$lcpPilarId' AND U1.fechaDeregistro like '%Aug% %2019%'";
     $result5 = $this->db->query($mesAgosto);
 
     // $dia6="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-06%'";
