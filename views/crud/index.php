@@ -912,7 +912,7 @@
                         <th scope="row">Usuarios totales</th>
                         <td><b><?=$ciberEscuelaTotales['userPorActividad']?></b></td>
                       </tr>
-                      <!-- <tr>
+                      <tr>
                         <th scope="row">Ajedrez</th>
                         <td><?=$ajedrez['userPorActividad']?></td>
                       </tr>
@@ -1031,7 +1031,7 @@
                       <tr>
                         <th scope="row">Baile, cuerpo y emociones</th>
                         <td><?=$baileCuerpo['userPorActividad']?></td>
-                      </tr> -->
+                      </tr>
                     </tbody>
                   </table>
                </div>
@@ -1136,7 +1136,7 @@
                         <th scope="row">Usuarios totales</th>
                         <td><strong><?=$autonomiaTotales['userPorActividad']?></strong></td>
                       </tr>
-                      <!-- <tr>
+                      <tr>
                         <th scope="row">Encuadernación</th>
                         <td><?=$encuadernacion['userPorActividad']?></td>
                       </tr>
@@ -1291,7 +1291,7 @@
                       <tr>
                         <th scope="row">Introducción al lenguaje de señas</th>
                         <td><?=$señas['userPorActividad']?></td>
-                      </tr> -->
+                      </tr>
                       </tbody>
                   </table>
                </div>
