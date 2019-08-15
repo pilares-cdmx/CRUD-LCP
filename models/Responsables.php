@@ -411,6 +411,168 @@ class Responsables {
     return json_encode($data);
 
   }
+
+  public function getDataUsuariosInscritos(){     
+    header('Content-Type: application/json');
+
+    // select count(*) from Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U2.Pilares_idPilares = '9' AND U1.fechaDeregistro like '%2019-04-24%'
+    // $mesAbril="SELECT count(*) AS fecha FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U2.Pilares_idPilares = '$lcpPilarId' AND U1.fechaDeregistro like '%2019-04%'";
+    $mesAbril="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04%'";
+    $result1 = $this->db->query($mesAbril);
+
+    $mesMayo="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-05%'";
+    // $mesMayo="SELECT count(*) AS fecha FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U2.Pilares_idPilares = '$lcpPilarId' AND U1.fechaDeregistro like '%2019-05%'";
+    $result2 = $this->db->query($mesMayo);
+
+    // $dia3="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-03%'";
+    // $mesJunio="SELECT count(*) AS fecha FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U2.Pilares_idPilares = '$lcpPilarId' AND U1.fechaDeregistro like '%2019-06%'";
+    $mesJunio="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-06%'";
+    $result3 = $this->db->query($mesJunio);
+
+    // $dia4="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-04%'";
+    // $mesJulio="SELECT count(*) AS fecha FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U2.Pilares_idPilares = '$lcpPilarId' AND U1.fechaDeregistro like '%2019-07%'";
+    $mesJulio="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-07%'";
+    $result4 = $this->db->query($mesJulio);
+
+    // $dia5="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-05%'";
+    // $mesAgosto="SELECT count(*) AS fecha FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U2.Pilares_idPilares = '$lcpPilarId' AND U1.fechaDeregistro like '%Aug% %2019%'";
+    $mesAgosto="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%Aug%'";
+    $result5 = $this->db->query($mesAgosto);
+
+    // $dia6="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-06%'";
+    // $result6 = $this->db->query($dia6);
+
+    // $dia7="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-07%'";
+    // $result7 = $this->db->query($dia7);
+
+    // $dia8="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-08%'";
+    // $result8 = $this->db->query($dia8);
+
+    // $dia9="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-09%'";
+    // $result9 = $this->db->query($dia9);
+
+    // $dia10="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-10%'";
+    // $result10 = $this->db->query($dia10);
+
+    // $dia11="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-11%'";
+    // $result11 = $this->db->query($dia11);
+    
+    // $dia12="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-12%'";
+    // $result12 = $this->db->query($dia12);
+
+    // $dia13="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-13%'";
+    // $result13 = $this->db->query($dia13);
+
+    // $dia14="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-14%'";
+    // $result14 = $this->db->query($dia14);
+
+    // $dia15="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-15%'";
+    // $result15 = $this->db->query($dia15);
+
+    // $dia16="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-16%'";
+    // $result16 = $this->db->query($dia16);
+
+    // $dia17="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-17%'";
+    // $result17 = $this->db->query($dia17);
+
+    // $dia18="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-18%'";
+    // $result18 = $this->db->query($dia18);
+
+    // $dia19="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-19%'";
+    // $result19 = $this->db->query($dia19);
+
+    // $dia20="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-20%'";
+    // $result20 = $this->db->query($dia20);
+
+    // $dia21="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-21%'";
+    // $result21 = $this->db->query($dia21);
+
+    // $dia22="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-22%'";
+    // $result22 = $this->db->query($dia22);
+
+    // $dia23="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-23%'";
+    // $result23 = $this->db->query($dia23);
+
+    // $dia24="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-24%'";
+    // $result24 = $this->db->query($dia24);
+
+    $data = array();
+    foreach ($result1 as $row) {
+    $data[] = $row;
+    }
+    foreach ($result2 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result3 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result4 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result5 as $row) {
+    array_push($data, $row);
+    }
+    // foreach ($result6 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result7 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result8 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result9 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result10 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result11 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result12 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result13 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result14 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result15 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result16 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result17 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result18 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result19 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result20 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result21 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result22 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result23 as $row) {
+    // array_push($data, $row);
+    // }
+    // foreach ($result24 as $row) {
+    // array_push($data, $row);
+    // }
+
+    return json_encode($data);
+
+  }
     
   public function getDataActividadesPorPilar($lcpPilarId){
     header('Content-Type: application/json');

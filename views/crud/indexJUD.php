@@ -1,4 +1,4 @@
-<?php require 'views/layout/headerCRUD.php'; ?>
+<?php require 'views/layout/headerCRUD-jud.php'; ?>
 <?php
   if (isset($_SESSION['pilarAsignado'])) {
     $nombrePilar = $_SESSION['pilarAsignado'];
@@ -20,28 +20,28 @@
     * SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '1' and U1.Pilares_idPilares = '$lcpPilarId'";
     */
     // $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '1' and U1.Pilares_idPilares = '$idPilarLCP'";
-    // $sql="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '1'";
-    // $totalesCultura = mysqli_query($con, $sql);
-    // //var_dump($totalesCultura);
-    // $culturaTotales = mysqli_fetch_array($totalesCultura);
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '1'";
+    $totalesCultura = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $culturaTotales = mysqli_fetch_array($totalesCultura);
 
     // // $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '4' and U1.Pilares_idPilares = '$idPilarLCP'";
-    // // $sql="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '4'";
-    // $totalesCiberEscuelas = mysqli_query($con, $sql);
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4'";
+    $totalesCiberEscuelas = mysqli_query($con, $sql);
     // //var_dump($totalesCultura);
-    // $ciberEscuelaTotales = mysqli_fetch_array($totalesCiberEscuelas);
+    $ciberEscuelaTotales = mysqli_fetch_array($totalesCiberEscuelas);
 
     // $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '2' and U1.Pilares_idPilares = '$idPilarLCP'";
-    // // $sql="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '2'";
-    // $totalesDeporte = mysqli_query($con, $sql);
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '2'";
+    $totalesDeporte = mysqli_query($con, $sql);
     // //var_dump($totalesCultura);
-    // $deporteTotales = mysqli_fetch_array($totalesDeporte);
+    $deporteTotales = mysqli_fetch_array($totalesDeporte);
 
     // $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '3' and U1.Pilares_idPilares = '$idPilarLCP'";
-    // // $sql="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '3'";
-    // $totalesAutonomia = mysqli_query($con, $sql);
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3'";
+    $totalesAutonomia = mysqli_query($con, $sql);
     // //var_dump($totalesCultura);
-    // $autonomiaTotales = mysqli_fetch_array($totalesAutonomia);
+    $autonomiaTotales = mysqli_fetch_array($totalesAutonomia);
     /**
     * FIN - Totales por tipo de actividad
     */
@@ -686,7 +686,7 @@
         -->
           <?php if(isset($_SESSION['identity'])): ?>
             <div class="breadcrumb-item active">
-              <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li>
+              <!-- <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li> -->
               <li><b>Información general</b></li>
               <li><b>JUD estadística y prospección</b></li>
             </div>
@@ -697,7 +697,6 @@
         <div class="row">
           <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-white bg-primary o-hidden h-100">
-            <h1>hello mother fuckersssss!!!</h1>
               <div class="card-body">
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-music"></i>
@@ -719,7 +718,7 @@
                         <th scope="row">Usuarios totales</th>
                         <td><b><?=$culturaTotales['userPorActividad']?></b></td>
                       </tr>
-                      <!-- <tr>
+                      <tr>
                         <th scope="row">Teatro</th>
                         <td><?=$teatro['userPorActividad']?></td>
                       </tr>
@@ -878,7 +877,7 @@
                       <tr>
                         <th scope="row">Dibujo y grabado</th>
                         <td><?=$grabado['userPorActividad']?></td>
-                      </tr> -->
+                      </tr>
 
                     </tbody>
                   </table>
@@ -1056,7 +1055,7 @@
                         <th scope="row">Usuarios totales</th>
                         <td><b><?=$deporteTotales['userPorActividad']?></b></td>
                       </tr>
-                      <!-- <tr>
+                      <tr>
                         <th scope="row">Fútbol</th>
                         <td><?=$futbol['userPorActividad']?></td>
                       </tr>
@@ -1103,7 +1102,7 @@
                       <tr>
                         <th scope="row">Kung fu</th>
                         <td><?=$kung['userPorActividad']?></td>
-                      </tr> -->
+                      </tr>
                     </tbody>
                   </table>
                </div>
@@ -1360,7 +1359,7 @@
 
   <!-- Demo scripts for this page-->
   <!-- <script src="<?php //echo constant('URL')?>public/js/demo/datatables-demo.js"></script> -->
-  <script src="<?php echo constant('URL')?>public/js/demo/chart-area-demo.js"></script>
+  <script src="<?php echo constant('URL')?>public/js/demo/chart-area-jud.js"></script>
 
 </body>
 

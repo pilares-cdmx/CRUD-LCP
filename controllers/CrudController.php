@@ -26,12 +26,16 @@ class CrudController{
     public function ingresoJUD(){
       require_once 'views/crud/indexJUD.php';
       // require_once 'views/crud/tables.php';
-  }
+    }
 
     public function charts(){
         require_once 'views/crud/charts.php';
     }
 
+    public function chartsJUD(){
+      require_once 'views/crud/charts-jud.php';
+    }
+    
     public function users(){
         require_once 'views/crud/tables.php';
     }
@@ -48,6 +52,14 @@ class CrudController{
       $lcpPilarId =  $_SESSION['identity']->Pilares_idPilares;
       // var_dump($lcpPilarId); die;
       $result = $responsableObj->getDataUsuariosPorPilar($lcpPilarId);
+      print $result;
+    }
+
+    public function linearPlotJUD(){
+
+      $responsableObj = new Responsables();
+      // var_dump($lcpPilarId); die;
+      $result = $responsableObj->getDataUsuariosInscritos();
       print $result;
     }
 
