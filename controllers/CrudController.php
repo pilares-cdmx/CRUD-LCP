@@ -23,6 +23,11 @@ class CrudController{
         // require_once 'views/crud/tables.php';
     }
 
+    public function ingresoJUDestadistica(){
+      require_once 'views/crud/indexJUD.php';
+      // require_once 'views/crud/tables.php';
+  }
+
     public function charts(){
         require_once 'views/crud/charts.php';
     }
@@ -138,7 +143,10 @@ class CrudController{
          $responsableObj->setContrasena($_POST['contrasenaLCP']);
 
           $identityLCP = $responsableObj->validarAcceso();
-          //var_dump($identityLCP);die;
+          // var_dump($identityLCP);die;
+          if ($identityLCP && is_object($identityLCP) && $identityLCP->idResponsables = 123) {
+            # code...
+          }
           if ($identityLCP && is_object($identityLCP)) {
              $idPilarDeLCP = $identityLCP->Pilares_idPilares;
             //  var_dump($idPilarDeLCP);
