@@ -6,8 +6,8 @@
     $idPilarLCP = $_SESSION['identity']->Pilares_idPilares;
   }
 
-    $con = mysqli_connect('localhost', 'francisco', 'tu_contrasena', 'pilaresDB');
-    // $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
+    // $con = mysqli_connect('localhost', 'francisco', 'tu_contrasena', 'pilaresDB');
+    $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
         if (!$con) {
             die('Could not connect: ' . mysqli_error($con));
         }
@@ -19,29 +19,29 @@
     * Totales por tipo de actividad
     * SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '1' and U1.Pilares_idPilares = '$lcpPilarId'";
     */
-    $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '1' and U1.Pilares_idPilares = '$idPilarLCP'";
+    // $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '1' and U1.Pilares_idPilares = '$idPilarLCP'";
     // $sql="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '1'";
-    $totalesCultura = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $culturaTotales = mysqli_fetch_array($totalesCultura);
+    // $totalesCultura = mysqli_query($con, $sql);
+    // //var_dump($totalesCultura);
+    // $culturaTotales = mysqli_fetch_array($totalesCultura);
 
-    $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '4' and U1.Pilares_idPilares = '$idPilarLCP'";
-    // $sql="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '4'";
-    $totalesCiberEscuelas = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $ciberEscuelaTotales = mysqli_fetch_array($totalesCiberEscuelas);
+    // // $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '4' and U1.Pilares_idPilares = '$idPilarLCP'";
+    // // $sql="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '4'";
+    // $totalesCiberEscuelas = mysqli_query($con, $sql);
+    // //var_dump($totalesCultura);
+    // $ciberEscuelaTotales = mysqli_fetch_array($totalesCiberEscuelas);
 
-    $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '2' and U1.Pilares_idPilares = '$idPilarLCP'";
-    // $sql="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '2'";
-    $totalesDeporte = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $deporteTotales = mysqli_fetch_array($totalesDeporte);
+    // $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '2' and U1.Pilares_idPilares = '$idPilarLCP'";
+    // // $sql="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '2'";
+    // $totalesDeporte = mysqli_query($con, $sql);
+    // //var_dump($totalesCultura);
+    // $deporteTotales = mysqli_fetch_array($totalesDeporte);
 
-    $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '3' and U1.Pilares_idPilares = '$idPilarLCP'";
-    // $sql="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '3'";
-    $totalesAutonomia = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $autonomiaTotales = mysqli_fetch_array($totalesAutonomia);
+    // $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '3' and U1.Pilares_idPilares = '$idPilarLCP'";
+    // // $sql="SELECT count(*) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_TiposActividades_idTiposActividades = '3'";
+    // $totalesAutonomia = mysqli_query($con, $sql);
+    // //var_dump($totalesCultura);
+    // $autonomiaTotales = mysqli_fetch_array($totalesAutonomia);
     /**
     * FIN - Totales por tipo de actividad
     */
@@ -684,29 +684,25 @@
         <!--
           <li class="breadcrumb-item active">Vista General</li>
         -->
-        <?php if(isset($_SESSION['identity'])): ?>
-          <div class="breadcrumb-item active">
-            <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li>
-            <li><b>Información general</b></li>
-            <li><b><?=$nombrePilar?></b></li>
-          </div>
-
-        <?php endif; ?>
-        <?php if(isset($_SESSION['pilarAsignado'])): ?>
-              <!-- <li><b>Información general</b></li> -->
-             
-
-        <?php endif;?>
+          <?php if(isset($_SESSION['identity'])): ?>
+            <div class="breadcrumb-item active">
+              <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li>
+              <li><b>Información general</b></li>
+              <li><b>JUD estadística y prospección</b></li>
+            </div>
+          <?php endif; ?>
         </ol>
 
         <!-- Icon Cards-->
         <div class="row">
           <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-white bg-primary o-hidden h-100">
+            <h1>hello mother fuckersssss!!!</h1>
               <div class="card-body">
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-music"></i>
                 </div>
+                
                 <div class="mr-5"><b>Cultura <span class="float-right"><?=$culturaTotales['userPorActividad']?></span></b></div>
               </div>
               <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCultura">

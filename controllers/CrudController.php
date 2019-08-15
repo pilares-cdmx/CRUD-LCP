@@ -23,7 +23,7 @@ class CrudController{
         // require_once 'views/crud/tables.php';
     }
 
-    public function ingresoJUDestadistica(){
+    public function ingresoJUD(){
       require_once 'views/crud/indexJUD.php';
       // require_once 'views/crud/tables.php';
   }
@@ -145,18 +145,19 @@ class CrudController{
           $identityLCP = $responsableObj->validarAcceso();
           // var_dump($identityLCP);die;
           if ($identityLCP && is_object($identityLCP) && $identityLCP->idResponsables = 123) {
-            # code...
-          }
-          if ($identityLCP && is_object($identityLCP)) {
-             $idPilarDeLCP = $identityLCP->Pilares_idPilares;
+              $idPilarDeLCP = $identityLCP->Pilares_idPilares;
+              $_SESSION['identity'] = $identityLCP;
+              header("Location:".URL.'Crud/ingresoJUD');
+          }else if ($identityLCP && is_object($identityLCP)) {
+              $idPilarDeLCP = $identityLCP->Pilares_idPilares;
             //  var_dump($idPilarDeLCP);
-             $responsableObj->setPilarAsignado($idPilarDeLCP);
-             
-             $responsableObj->setIdPilares($idPilarDeLCP);
+              $responsableObj->setPilarAsignado($idPilarDeLCP);
+              
+              $responsableObj->setIdPilares($idPilarDeLCP);
             // var_dump($responsableObj->getIdPilares());die;
-             $nombrePilarAsignado = $responsableObj->getPilarAsignado();
-             $_SESSION['identity'] = $identityLCP;
-             $_SESSION['pilarAsignado'] = $nombrePilarAsignado;
+              $nombrePilarAsignado = $responsableObj->getPilarAsignado();
+              $_SESSION['identity'] = $identityLCP;
+              $_SESSION['pilarAsignado'] = $nombrePilarAsignado;
             header("Location:".URL.'Crud/ingresoExitoso');
             /*
             if ($identityLCP->role == 'admin') {
@@ -167,6 +168,7 @@ class CrudController{
             $_SESSION['error_login'] = 'Identificación Fallida';
             header("Location:".URL.'Crud/index');
           }
+          
 
       }
 
