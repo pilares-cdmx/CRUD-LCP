@@ -153,12 +153,14 @@ class CrudController{
 
          $responsableObj->setCorreo($_POST['correoLCP']);
          $responsableObj->setContrasena($_POST['contrasenaLCP']);
-
+        
+         $idJUD = '123';
           $identityLCP = $responsableObj->validarAcceso();
           // var_dump($identityLCP);die;
-          if ($identityLCP && is_object($identityLCP) && $identityLCP->idResponsables = 123) {
+          if ($identityLCP && is_object($identityLCP) && $identityLCP->idResponsables == $idJUD) {
               $idPilarDeLCP = $identityLCP->Pilares_idPilares;
               $_SESSION['identity'] = $identityLCP;
+              var_dump($_SESSION['identity']);die;
               header("Location:".URL.'Crud/ingresoJUD');
           }else if ($identityLCP && is_object($identityLCP)) {
               $idPilarDeLCP = $identityLCP->Pilares_idPilares;
