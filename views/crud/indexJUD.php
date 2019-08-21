@@ -2007,6 +2007,11 @@
     //var_dump($totalesPilares20);
     $pilaresTotales20= mysqli_fetch_array($totalesPilares20);
 
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '21'";
+    $totalesPilares47 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares21);
+    $pilaresTotales47= mysqli_fetch_array($totalesPilares47);
+
     $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '22'";
     $totalesPilares21 = mysqli_query($con, $sql);
     //var_dump($totalesPilares21);
@@ -2239,6 +2244,11 @@
     //var_dump($totalesPilaresMujeres20);
     $pilaresTotalesMujeres20= mysqli_fetch_array($totalesPilaresMujeres20);
 
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.sexo LIKE '%M%' AND U2.Pilares_idPilares = '21'";
+    $totalesPilaresMujeres47 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresMujeres47);
+    $pilaresTotalesMujeres47= mysqli_fetch_array($totalesPilaresMujeres47);
+
     $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.sexo LIKE '%M%' AND U2.Pilares_idPilares = '22'";
     $totalesPilaresMujeres21 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresMujeres21);
@@ -2470,6 +2480,11 @@
     $totalesPilaresHombres20 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresHombres20);
     $pilaresTotalesHombres20= mysqli_fetch_array($totalesPilaresHombres20);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '21'";
+    $totalesPilaresHombres47 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresHombres47);
+    $pilaresTotalesHombres47= mysqli_fetch_array($totalesPilaresHombres47);
 
     $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '22'";
     $totalesPilaresHombres21 = mysqli_query($con, $sql);
@@ -6815,6 +6830,10 @@
                           <td><?=$pilaresTotales20['userPorPilares']?></td>
                         </tr>
                         <tr>
+                          <th scope="row">Caneguín</th>
+                          <td><?=$pilaresTotales47['userPorPilares']?></td>
+                        </tr>
+                        <tr>
                           <th scope="row">San Salvador Cuauhtenco</th>
                           <td><?=$pilaresTotales21['userPorPilares']?></td>
                         </tr>
@@ -7025,6 +7044,10 @@
                           <td><?=$pilaresTotalesMujeres20['userPorPilares']?></td>
                         </tr>
                         <tr>
+                          <th scope="row">Caneguín</th>
+                          <td><?=$pilaresTotalesMujeres47['userPorPilares']?></td>
+                        </tr>
+                        <tr>
                           <th scope="row">San Salvador Cuauhtenco</th>
                           <td><?=$pilaresTotalesMujeres21['userPorPilares']?></td>
                         </tr>
@@ -7233,6 +7256,10 @@
                         <tr>
                           <th scope="row">Huayatla</th>
                           <td><?=$pilaresTotalesHombres20['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Caneguín</th>
+                          <td><?=$pilaresTotalesHombres47['userPorPilares']?></td>
                         </tr>
                         <tr>
                           <th scope="row">San Salvador Cuauhtenco</th>
