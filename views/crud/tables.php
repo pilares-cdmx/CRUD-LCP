@@ -7,8 +7,8 @@ require 'views/layout/headerCRUD.php';
         $idPilarLCP = $_SESSION['identity']->Pilares_idPilares;
         // var_dump($idPilarLCP);die;
     }
-    $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
-    // $con = mysqli_connect('localhost', 'francisco', 'tu_contrasena', 'pilaresDB');
+    // $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
+    $con = mysqli_connect('localhost', 'francisco', 'tu_contrasena', 'pilaresDB');
         if (!$con) {
             die('Could not connect: ' . mysqli_error($con));
         }
