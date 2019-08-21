@@ -2718,6 +2718,11 @@
     //var_dump($totalesPilaresAutnomia20);
     $pilaresTotalesAutnomia20= mysqli_fetch_array($totalesPilaresAutnomia20);
 
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '21'";
+    $totalesPilaresAutnomia47 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresAutnomia47);
+    $pilaresTotalesAutnomia47= mysqli_fetch_array($totalesPilaresAutnomia47);
+
     $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '22'";
     $totalesPilaresAutnomia21 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAutnomia21);
@@ -2950,6 +2955,11 @@
     //var_dump($totalesPilaresAutnomiaMujeres20);
     $pilaresTotalesAutnomiaMujeres20= mysqli_fetch_array($totalesPilaresAutnomiaMujeres20);
 
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U1.sexo LIKE '%M%' AND U2.Pilares_idPilares = '21'";
+    $totalesPilaresAutnomiaMujeres47 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresAutnomiaMujeres47);
+    $pilaresTotalesAutnomiaMujeres47= mysqli_fetch_array($totalesPilaresAutnomiaMujeres47);
+
     $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U1.sexo LIKE '%M%' AND U2.Pilares_idPilares = '22'";
     $totalesPilaresAutnomiaMujeres21 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAutnomiaMujeres21);
@@ -3181,6 +3191,11 @@
     $totalesPilaresAutnomiaHombres20 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAutnomiaHombres20);
     $pilaresTotalesAutnomiaHombres20= mysqli_fetch_array($totalesPilaresAutnomiaHombres20);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '21'";
+    $totalesPilaresAutnomiaHombres47 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresAutnomiaHombres47);
+    $pilaresTotalesAutnomiaHombres47= mysqli_fetch_array($totalesPilaresAutnomiaHombres47);
 
     $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '22'";
     $totalesPilaresAutnomiaHombres21 = mysqli_query($con, $sql);
@@ -7475,6 +7490,10 @@
                           <td><?=$pilaresTotalesAutnomia20['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
+                          <th scope="row">Caneguín</th>
+                          <td><?=$pilaresTotalesAutnomia47['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
                           <th scope="row">San Salvador Cuauhtenco</th>
                           <td><?=$pilaresTotalesAutnomia21['userPorPilaresAutonomia']?></td>
                         </tr>
@@ -7685,6 +7704,10 @@
                           <td><?=$pilaresTotalesAutnomiaMujeres20['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
+                          <th scope="row">Caneguín</th>
+                          <td><?=$pilaresTotalesAutnomiaMujeres47['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
                           <th scope="row">San Salvador Cuauhtenco</th>
                           <td><?=$pilaresTotalesAutnomiaMujeres21['userPorPilaresAutonomia']?></td>
                         </tr>
@@ -7893,6 +7916,10 @@
                         <tr>
                           <th scope="row">Huayatla</th>
                           <td><?=$pilaresTotalesAutnomiaHombres20['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Caneguín</th>
+                          <td><?=$pilaresTotalesAutnomiaHombres47['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
                           <th scope="row">San Salvador Cuauhtenco</th>
