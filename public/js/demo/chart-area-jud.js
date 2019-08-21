@@ -3,8 +3,9 @@ Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSyste
 Chart.defaults.global.defaultFontColor = '#292b2c';
 $.ajax({
     // url: 'http://187.216.164.109/CRUD-LCP/data.php',
-    // url: 'http://187.216.164.109/CRUD-LCP/Crud/linearPlot',
-     url: 'http://localhost/PILARES/CRUD-LCP/Crud/linearPlotJUD',
+    url: 'http://187.216.164.109/CRUD-LCP/Crud/linearPlotJUD',
+    //  url: 'http://localhost/PILARES/CRUD-LCP/Crud/linearPlotJUD',
+    // url: 'http://localhost/PILARES/CRUD-LCP/Crud/linearPlotJUD',
     type: 'GET',
 })
 .done(function(data) {

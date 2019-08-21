@@ -160,7 +160,7 @@ class CrudController{
           if ($identityLCP && is_object($identityLCP) && $identityLCP->idResponsables == $idJUD) {
               $idPilarDeLCP = $identityLCP->Pilares_idPilares;
               $_SESSION['identity'] = $identityLCP;
-              var_dump($_SESSION['identity']);die;
+              // var_dump($_SESSION['identity']);die;
               header("Location:".URL.'Crud/ingresoJUD');
           }else if ($identityLCP && is_object($identityLCP)) {
               $idPilarDeLCP = $identityLCP->Pilares_idPilares;

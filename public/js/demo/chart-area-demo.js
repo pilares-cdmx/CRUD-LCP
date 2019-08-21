@@ -4,7 +4,7 @@ Chart.defaults.global.defaultFontColor = '#292b2c';
 $.ajax({
     // url: 'http://187.216.164.109/CRUD-LCP/data.php',
     url: 'http://187.216.164.109/CRUD-LCP/Crud/linearPlot',
-    //  url: 'http://localhost/pilaresDev/CRUD-LCP/data.php',
+    //  url: 'http://localhost/PILARES/CRUD-LCP/Crud/linearPlot',
     type: 'GET',
 })
 .done(function(data) {

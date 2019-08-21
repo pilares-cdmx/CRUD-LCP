@@ -6,8 +6,8 @@
     $idPilarLCP = $_SESSION['identity']->Pilares_idPilares;
   }
 
-    // $con = mysqli_connect('localhost', 'francisco', 'tu_contrasena', 'pilaresDB');
-    $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
+    $con = mysqli_connect('localhost', 'francisco', 'tu_contrasena', 'pilaresDB');
+    // $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
         if (!$con) {
             die('Could not connect: ' . mysqli_error($con));
         }

@@ -3,7 +3,8 @@ Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSyste
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
 $.ajax({
-    url: 'http://localhost/PILARES/CRUD-LCP/Crud/dataPorZona',
+    // url: 'http://localhost/PILARES/CRUD-LCP/Crud/dataPorZona',
+    url: 'http://187.216.164.109/CRUD-LCP/Crud/dataPorZona',
     type: 'GET',
 
 
