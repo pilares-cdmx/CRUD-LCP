@@ -3429,6 +3429,11 @@
     //var_dump($totalesPilaresCiberescuela20);
     $pilaresTotalesCiberescuelas20= mysqli_fetch_array($totalesPilaresCiberescuela20);
 
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U2.Pilares_idPilares = '21'";
+    $totalesPilaresCiberescuela47 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescuela47);
+    $pilaresTotalesCiberescuelas47= mysqli_fetch_array($totalesPilaresCiberescuela47);
+
     $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U2.Pilares_idPilares = '22'";
     $totalesPilaresCiberescuela21 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresCiberescuela21);
@@ -3661,6 +3666,11 @@
     //var_dump($totalesPilaresCiberescelasMujeres20);
     $pilaresTotalesCiberescelasMujeres20= mysqli_fetch_array($totalesPilaresCiberescelasMujeres20);
 
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.sexo LIKE '%M%' AND U2.Pilares_idPilares = '21'";
+    $totalesPilaresCiberescelasMujeres47 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescelasMujeres47);
+    $pilaresTotalesCiberescelasMujeres47= mysqli_fetch_array($totalesPilaresCiberescelasMujeres47);
+
     $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.sexo LIKE '%M%' AND U2.Pilares_idPilares = '22'";
     $totalesPilaresCiberescelasMujeres21 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresCiberescelasMujeres21);
@@ -3892,6 +3902,11 @@
     $totalesPilaresCiberescelasHombres20 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresCiberescelasHombres20);
     $pilaresTotalesCiberescelasHombres20= mysqli_fetch_array($totalesPilaresCiberescelasHombres20);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '21'";
+    $totalesPilaresCiberescelasHombres47 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescelasHombres47);
+    $pilaresTotalesCiberescelasHombres47= mysqli_fetch_array($totalesPilaresCiberescelasHombres47);
 
     $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '22'";
     $totalesPilaresCiberescelasHombres21 = mysqli_query($con, $sql);
@@ -8135,6 +8150,10 @@
                           <td><?=$pilaresTotalesCiberescuelas20['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
+                          <th scope="row">Caneguín</th>
+                          <td><?=$pilaresTotalesCiberescuelas47['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
                           <th scope="row">San Salvador Cuauhtenco</th>
                           <td><?=$pilaresTotalesCiberescuelas21['userPorPilaresCiberescuelas']?></td>
                         </tr>
@@ -8345,6 +8364,10 @@
                           <td><?=$pilaresTotalesCiberescelasMujeres20['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
+                          <th scope="row">Caneguín</th>
+                          <td><?=$pilaresTotalesCiberescelasMujeres47['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
                           <th scope="row">San Salvador Cuauhtenco</th>
                           <td><?=$pilaresTotalesCiberescelasMujeres21['userPorPilaresCiberescuelas']?></td>
                         </tr>
@@ -8553,6 +8576,10 @@
                         <tr>
                           <th scope="row">Huayatla</th>
                           <td><?=$pilaresTotalesCiberescelasHombres20['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Caneguín</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres47['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
                           <th scope="row">San Salvador Cuauhtenco</th>
