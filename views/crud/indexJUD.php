@@ -6518,7 +6518,8 @@
           <div class="col-xl-6 col-sm-6 mb-3">
             <div class="card text-info bg-light o-hidden h-100">
                 <div class="card-body">
-                <i class="fab fa-think-peaks"></i>
+                  <div class="card-body-icon">
+                  <i class="fab fa-think-peaks"></i>
                   </div>
                   
                   <div class="mr-5"><b>Usuarios totales por Lengua Indigena <span class="float-right"></span></b></div>
