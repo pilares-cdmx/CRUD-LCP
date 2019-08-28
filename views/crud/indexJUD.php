@@ -2364,6 +2364,368 @@
     $totalesLenguaMujeres0 = mysqli_query($con, $sql);
     //var_dump($totalesLenguaMujeres0);
     $lenguaTotalesMujeres0= mysqli_fetch_array($totalesLenguaMujeres0);
+/**
+     * uSUARIOS INSCRITOS POR LENGUA INDIGENA Hombres
+     */
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '1' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres1 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres1);
+    $lenguaTotalesHombres1= mysqli_fetch_array($totalesLenguaHombres1);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '2' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres2 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres2);
+    $lenguaTotalesHombres2= mysqli_fetch_array($totalesLenguaHombres2);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '3' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres3 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres3);
+    $lenguaTotalesHombres3= mysqli_fetch_array($totalesLenguaHombres3);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '4' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres4 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres4);
+    $lenguaTotalesHombres4= mysqli_fetch_array($totalesLenguaHombres4);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '5' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres5 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres5);
+    $lenguaTotalesHombres5= mysqli_fetch_array($totalesLenguaHombres5);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '6' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres6 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres6);
+    $lenguaTotalesHombres6= mysqli_fetch_array($totalesLenguaHombres6);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '7' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres7 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres7);
+    $lenguaTotalesHombres7= mysqli_fetch_array($totalesLenguaHombres7);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '8' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres8 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres8);
+    $lenguaTotalesHombres8= mysqli_fetch_array($totalesLenguaHombres8);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '9' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres9 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres9);
+    $lenguaTotalesHombres9= mysqli_fetch_array($totalesLenguaHombres9);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '10' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres10 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres10);
+    $lenguaTotalesHombres10= mysqli_fetch_array($totalesLenguaHombres10);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '11' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres11 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres11);
+    $lenguaTotalesHombres11= mysqli_fetch_array($totalesLenguaHombres11);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '12' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres12 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres12);
+    $lenguaTotalesHombres12= mysqli_fetch_array($totalesLenguaHombres12);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '13' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres13 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres13);
+    $lenguaTotalesHombres13= mysqli_fetch_array($totalesLenguaHombres13);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '14' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres14 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres14);
+    $lenguaTotalesHombres14= mysqli_fetch_array($totalesLenguaHombres14);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '15' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres15 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres15);
+    $lenguaTotalesHombres15= mysqli_fetch_array($totalesLenguaHombres15);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '16' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres16 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres16);
+    $lenguaTotalesHombres16= mysqli_fetch_array($totalesLenguaHombres16);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '17' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres17 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres17);
+    $lenguaTotalesHombres17= mysqli_fetch_array($totalesLenguaHombres17);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '18' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres18 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres18);
+    $lenguaTotalesHombres18= mysqli_fetch_array($totalesLenguaHombres18);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '19' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres19 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres19);
+    $lenguaTotalesHombres19= mysqli_fetch_array($totalesLenguaHombres19);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '20' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres20 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres20);
+    $lenguaTotalesHombres20= mysqli_fetch_array($totalesLenguaHombres20);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '21' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres21 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres21);
+    $lenguaTotalesHombres21= mysqli_fetch_array($totalesLenguaHombres21);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '22' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres22 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres22);
+    $lenguaTotalesHombres22= mysqli_fetch_array($totalesLenguaHombres22);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '23' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres23 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres23);
+    $lenguaTotalesHombres23= mysqli_fetch_array($totalesLenguaHombres23);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '24' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres24 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres24);
+    $lenguaTotalesHombres24= mysqli_fetch_array($totalesLenguaHombres24);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '25' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres25 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres25);
+    $lenguaTotalesHombres25= mysqli_fetch_array($totalesLenguaHombres25);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '26' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres26 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres26);
+    $lenguaTotalesHombres26= mysqli_fetch_array($totalesLenguaHombres26);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '27' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres27 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres27);
+    $lenguaTotalesHombres27= mysqli_fetch_array($totalesLenguaHombres27);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '28' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres28 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres28);
+    $lenguaTotalesHombres28= mysqli_fetch_array($totalesLenguaHombres28);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '29' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres29 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres29);
+    $lenguaTotalesHombres29= mysqli_fetch_array($totalesLenguaHombres29);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '30' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres30 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres30);
+    $lenguaTotalesHombres30= mysqli_fetch_array($totalesLenguaHombres30);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '31' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres31 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres31);
+    $lenguaTotalesHombres31= mysqli_fetch_array($totalesLenguaHombres31);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '32' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres32 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres32);
+    $lenguaTotalesHombres32= mysqli_fetch_array($totalesLenguaHombres32);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '33' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres33 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres33);
+    $lenguaTotalesHombres33= mysqli_fetch_array($totalesLenguaHombres33);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '34' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres34 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres34);
+    $lenguaTotalesHombres34= mysqli_fetch_array($totalesLenguaHombres34);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '35' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres35 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres35);
+    $lenguaTotalesHombres35= mysqli_fetch_array($totalesLenguaHombres35);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '36' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres36 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres36);
+    $lenguaTotalesHombres36= mysqli_fetch_array($totalesLenguaHombres36);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '37' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres37 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres37);
+    $lenguaTotalesHombres37= mysqli_fetch_array($totalesLenguaHombres37);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '38' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres38 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres38);
+    $lenguaTotalesHombres38= mysqli_fetch_array($totalesLenguaHombres38);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '39' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres39 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres39);
+    $lenguaTotalesHombres39= mysqli_fetch_array($totalesLenguaHombres39);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '40' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres40 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres40);
+    $lenguaTotalesHombres40= mysqli_fetch_array($totalesLenguaHombres40);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '41' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres41 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres41);
+    $lenguaTotalesHombres41= mysqli_fetch_array($totalesLenguaHombres41);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '42' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres42 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres42);
+    $lenguaTotalesHombres42= mysqli_fetch_array($totalesLenguaHombres42);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '43' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres43 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres43);
+    $lenguaTotalesHombres43= mysqli_fetch_array($totalesLenguaHombres43);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '44' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres44 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres44);
+    $lenguaTotalesHombres44= mysqli_fetch_array($totalesLenguaHombres44);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '45' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres45 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres45);
+    $lenguaTotalesHombres45= mysqli_fetch_array($totalesLenguaHombres45);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '46' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres46 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres46);
+    $lenguaTotalesHombres46= mysqli_fetch_array($totalesLenguaHombres46);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '47' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres47 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres47);
+    $lenguaTotalesHombres47= mysqli_fetch_array($totalesLenguaHombres47);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '48' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres48 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres48);
+    $lenguaTotalesHombres48= mysqli_fetch_array($totalesLenguaHombres48);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '49' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres49 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres49);
+    $lenguaTotalesHombres49= mysqli_fetch_array($totalesLenguaHombres49);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '50' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres50 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres50);
+    $lenguaTotalesHombres50= mysqli_fetch_array($totalesLenguaHombres50);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '51' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres51 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres51);
+    $lenguaTotalesHombres51= mysqli_fetch_array($totalesLenguaHombres51);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '52' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres52 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres52);
+    $lenguaTotalesHombres52= mysqli_fetch_array($totalesLenguaHombres52);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '53' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres53 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres53);
+    $lenguaTotalesHombres53= mysqli_fetch_array($totalesLenguaHombres53);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '54' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres54 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres54);
+    $lenguaTotalesHombres54= mysqli_fetch_array($totalesLenguaHombres54);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '55' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres55 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres55);
+    $lenguaTotalesHombres55= mysqli_fetch_array($totalesLenguaHombres55);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '56' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres56 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres56);
+    $lenguaTotalesHombres56= mysqli_fetch_array($totalesLenguaHombres56);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '57' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres57 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres57);
+    $lenguaTotalesHombres57= mysqli_fetch_array($totalesLenguaHombres57);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '58' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres58 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres58);
+    $lenguaTotalesHombres58= mysqli_fetch_array($totalesLenguaHombres58);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '59' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres59 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres59);
+    $lenguaTotalesHombres59= mysqli_fetch_array($totalesLenguaHombres59);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '60' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres60 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres60);
+    $lenguaTotalesHombres60= mysqli_fetch_array($totalesLenguaHombres60);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '61' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres61 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres61);
+    $lenguaTotalesHombres61= mysqli_fetch_array($totalesLenguaHombres61);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '62' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres62 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres62);
+    $lenguaTotalesHombres62= mysqli_fetch_array($totalesLenguaHombres62);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '63' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres63 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres63);
+    $lenguaTotalesHombres63= mysqli_fetch_array($totalesLenguaHombres63);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '64' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres64 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres64);
+    $lenguaTotalesHombres64= mysqli_fetch_array($totalesLenguaHombres64);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '65' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres65 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres65);
+    $lenguaTotalesHombres65= mysqli_fetch_array($totalesLenguaHombres65);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '66' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres66 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres66);
+    $lenguaTotalesHombres66= mysqli_fetch_array($totalesLenguaHombres66);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '67' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres67 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres67);
+    $lenguaTotalesHombres67= mysqli_fetch_array($totalesLenguaHombres67);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '68' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres68 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres68);
+    $lenguaTotalesHombres68= mysqli_fetch_array($totalesLenguaHombres68);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '69' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres69 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres69);
+    $lenguaTotalesHombres69= mysqli_fetch_array($totalesLenguaHombres69);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '70' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres70 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres70);
+    $lenguaTotalesHombres70= mysqli_fetch_array($totalesLenguaHombres70);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '71' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres71 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres71);
+    $lenguaTotalesHombres71= mysqli_fetch_array($totalesLenguaHombres71);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '0' AND sexo LIKE '%H%'";
+    $totalesLenguaHombres0 = mysqli_query($con, $sql);
+    //var_dump($totalesLenguaHombres0);
+    $lenguaTotalesHombres0= mysqli_fetch_array($totalesLenguaHombres0);
     /**
   * Usuarios totales por Grado de EStudios Mujeres
 */
@@ -7526,291 +7888,291 @@
                       <tbody class="bg-light">
                       <tr>
                           <th scope="row">AKATEKO</th>
-                          <td><?=$lenguaTotales1['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres1['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">AMUZGO</th>
-                          <td><?=$lenguaTotales2['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres2['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">AWAKATEKO</th>
-                          <td><?=$lenguaTotales3['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres3['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">AYAPANECO</th>
-                          <td><?=$lenguaTotales4['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres4['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">COCHIMÍE</th>
-                          <td><?=$lenguaTotales5['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres5['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CORA</th>
-                          <td><?=$lenguaTotales6['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres6['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CUCAPÁ</th>
-                          <td><?=$lenguaTotales7['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres7['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CUICATECO</th>
-                          <td><?=$lenguaTotales8['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres8['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHATINO</th>
-                          <td><?=$lenguaTotales9['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres9['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHICHIMECA</th>
-                          <td><?=$lenguaTotales10['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres10['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHINANTECO</th>
-                          <td><?=$lenguaTotales11['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres11['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CH`OL</th>
-                          <td><?=$lenguaTotales12['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres12['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHOCHOLTECO</th>
-                          <td><?=$lenguaTotales13['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres13['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHONTALES DE OAXACA</th>
-                          <td><?=$lenguaTotales14['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres14['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHONTAL DE TABASCO</th>
-                          <td><?=$lenguaTotales15['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres15['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHUJ</th>
-                          <td><?=$lenguaTotales16['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres16['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">GUARIJÍO</th>
-                          <td><?=$lenguaTotales17['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres17['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">HUASTECO</th>
-                          <td><?=$lenguaTotales18['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres18['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">HUAVE</th>
-                          <td><?=$lenguaTotales19['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres19['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">HUICHOL</th>
-                          <td><?=$lenguaTotales20['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres20['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">IXCATECO</th>
-                          <td><?=$lenguaTotales21['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres21['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">IXIL</th>
-                          <td><?=$lenguaTotales22['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres22['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">JAKALTEKO</th>
-                          <td><?=$lenguaTotales23['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres23['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">KAQCHIKEL</th>
-                          <td><?=$lenguaTotales24['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres24['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">K`ICHE</th>
-                          <td><?=$lenguaTotales25['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres25['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">KU`AHLE</th>
-                          <td><?=$lenguaTotales26['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres26['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">KILIWA</th>
-                          <td><?=$lenguaTotales27['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres27['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">KIKAPÚE</th>
-                          <td><?=$lenguaTotales28['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres28['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">KUMIAI</th>
-                          <td><?=$lenguaTotales29['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres29['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">LACANDÓN</th>
-                          <td><?=$lenguaTotales30['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres30['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MAME</th>
-                          <td><?=$lenguaTotales31['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres31['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MATLATZINCA</th>
-                          <td><?=$lenguaTotales32['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres32['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MAYA</th>
-                          <td><?=$lenguaTotales33['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres33['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MAYO</th>
-                          <td><?=$lenguaTotales34['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres34['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MAZAHUA</th>
-                          <td><?=$lenguaTotales35['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres35['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MAZATECO</th>
-                          <td><?=$lenguaTotales36['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres36['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MIXE</th>
-                          <td><?=$lenguaTotales37['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres37['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MIXTECO</th>
-                          <td><?=$lenguaTotales38['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres38['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MOCHÓ</th>
-                          <td><?=$lenguaTotales39['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres39['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">NÁHUATL</th>
-                          <td><?=$lenguaTotales40['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres40['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">OLUTECO</th>
-                          <td><?=$lenguaTotales41['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres41['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">OTOMÍ</th>
-                          <td><?=$lenguaTotales42['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres42['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">PAME</th>
-                          <td><?=$lenguaTotales43['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres43['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">PAIPAI</th>
-                          <td><?=$lenguaTotales44['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres44['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">PÁPAGO</th>
-                          <td><?=$lenguaTotales45['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres45['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">PIMA</th>
-                          <td><?=$lenguaTotales46['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres46['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">POPOLOCA</th>
-                          <td><?=$lenguaTotales47['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres47['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">POPOLOCA DE LA SIERRA</th>
-                          <td><?=$lenguaTotales48['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres48['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">P`URHÉPECHA</th>
-                          <td><?=$lenguaTotales49['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres49['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Q`ANJOB`AL</th>
-                          <td><?=$lenguaTotales50['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres50['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Q`EQCHI`</th>
-                          <td><?=$lenguaTotales51['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres51['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">QATO`K</th>
-                          <td><?=$lenguaTotales52['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres52['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAYULTECO</th>
-                          <td><?=$lenguaTotales53['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres53['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SERI</th>
-                          <td><?=$lenguaTotales54['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres54['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TACUATE</th>
-                          <td><?=$lenguaTotales55['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres55['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TARAHUMARA</th>
-                          <td><?=$lenguaTotales56['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres56['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TEKO</th>
-                          <td><?=$lenguaTotales57['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres57['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TEPEHUA</th>
-                          <td><?=$lenguaTotales58['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres58['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TEPEHUANO DEL NORTE</th>
-                          <td><?=$lenguaTotales59['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres59['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TEPEHUANO DEL SUR</th>
-                          <td><?=$lenguaTotales60['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres60['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TEXISTEPEQUEÑO</th>
-                          <td><?=$lenguaTotales61['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres61['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TLAHUICA</th>
-                          <td><?=$lenguaTotales62['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres62['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TLAPANECO</th>
-                          <td><?=$lenguaTotales63['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres63['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TOJOLABAL</th>
-                          <td><?=$lenguaTotales64['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres64['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TOTONACO</th>
-                          <td><?=$lenguaTotales65['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres65['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TRIQUI</th>
-                          <td><?=$lenguaTotales66['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres66['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TSELTAL</th>
-                          <td><?=$lenguaTotales67['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres67['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TSOTSIL</th>
-                          <td><?=$lenguaTotales68['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres68['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">YAQUI</th>
-                          <td><?=$lenguaTotales69['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres69['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">ZAPOTECO</th>
-                          <td><?=$lenguaTotales70['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres70['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">ZOQUE</th>
-                          <td><?=$lenguaTotales71['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres71['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">NINGUNO</th>
-                          <td><?=$lenguaTotales0['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres0['userPorLengua']?></td>
                         </tr>
                       </tbody>
                     </table>
