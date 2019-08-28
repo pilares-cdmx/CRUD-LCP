@@ -8188,7 +8188,7 @@
             <div class="card text-info bg-light o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                  <<i class="fas fa-gopuram"></i>
+                  <i class="fas fa-gopuram"></i>
                   </div>
                   
                   <div class="mr-5"><b>Usuarios totales por Pueblos Originarios<span class="float-right"></span></b></div>
@@ -8204,293 +8204,542 @@
                     <table class="table table-striped ">
                       <tbody class="bg-light">
                         <tr>
-                          <th scope="row">AKATEKO</th>
+                          <th scope="row">AXOTLA</th>
                           <td><?=$lenguaTotales1['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">AMUZGO</th>
+                          <th scope="row">CHIMALISTAC</th>
                           <td><?=$lenguaTotales2['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">AWAKATEKO</th>
+                          <th scope="row">SAN BARTOLO AMEYALCO</th>
                           <td><?=$lenguaTotales3['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">AYAPANECO</th>
+                          <th scope="row">SANTA FÉ DE VASCO DE QUIROGA</th>
                           <td><?=$lenguaTotales4['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">COCHIMÍE</th>
+                          <th scope="row">SANTA LUCÍA XANTEPEC</th>
                           <td><?=$lenguaTotales5['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CORA</th>
+                          <th scope="row">SANTA MARÍA NONOALCO</th>
                           <td><?=$lenguaTotales6['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CUCAPÁ</th>
+                          <th scope="row">SANTA ROSA XOCHIAC</th>
                           <td><?=$lenguaTotales7['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CUICATECO</th>
+                          <th scope="row">TETELPAN</th>
                           <td><?=$lenguaTotales8['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHATINO</th>
+                          <th scope="row">TIZAPAN</th>
                           <td><?=$lenguaTotales9['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHICHIMECA</th>
+                          <th scope="row">TLACOPAC</th>
                           <td><?=$lenguaTotales10['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHINANTECO</th>
+                          <th scope="row">COLTONGO</th>
                           <td><?=$lenguaTotales11['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CH`OL</th>
+                          <th scope="row">SAN ANDRES DE LAS SALINAS</th>
                           <td><?=$lenguaTotales12['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHOCHOLTECO</th>
+                          <th scope="row">SAN ANDRÉS TETLANMAN</th>
                           <td><?=$lenguaTotales13['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHONTALES DE OAXACA</th>
+                          <th scope="row">SAN BARTOLO CAHUALTONGO</th>
                           <td><?=$lenguaTotales14['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHONTAL DE TABASCO</th>
+                          <th scope="row">SAN FRANCISCO TETECALA</th>
                           <td><?=$lenguaTotales15['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHUJ</th>
+                          <th scope="row">SAN JUAN TLILHUACA</th>
                           <td><?=$lenguaTotales16['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">GUARIJÍO</th>
+                          <th scope="row">SAN LUCAS ATENCO</th>
                           <td><?=$lenguaTotales17['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">HUASTECO</th>
+                          <th scope="row">SAN MARTIN XOCHINÁHUAC</th>
                           <td><?=$lenguaTotales18['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">HUAVE</th>
+                          <th scope="row">SAN MATEO XALTELOLCO</th>
                           <td><?=$lenguaTotales19['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">HUICHOL</th>
+                          <th scope="row">SAN MIGUEL AMANTLA</th>
                           <td><?=$lenguaTotales20['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">IXCATECO</th>
+                          <th scope="row">SAN PEDRO DE LAS SALINAS CALHUACATZINGO</th>
                           <td><?=$lenguaTotales21['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">IXIL</th>
+                          <th scope="row">SAN PEDRO XALPA</th>
                           <td><?=$lenguaTotales22['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">JAKALTEKO</th>
+                          <th scope="row">SAN SALVADOR NEXTENGO</th>
                           <td><?=$lenguaTotales23['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KAQCHIKEL</th>
+                          <th scope="row">SAN SALVADOR XOCHIMANCA</th>
                           <td><?=$lenguaTotales24['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">K`ICHE</th>
+                          <th scope="row">SAN SEBASTIÁN ATENCO</th>
                           <td><?=$lenguaTotales25['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KU`AHLE</th>
+                          <th scope="row">SAN SIMÓN POCHTLAN</th>
                           <td><?=$lenguaTotales26['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KILIWA</th>
+                          <th scope="row">SANTA APOLONIA TEZCOLCO</th>
                           <td><?=$lenguaTotales27['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KIKAPÚE</th>
+                          <th scope="row">SANTA BÁRBARA TETLANMAN, YOPICO</th>
                           <td><?=$lenguaTotales28['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KUMIAI</th>
+                          <th scope="row">SANTA CATARINA ATZACUALCO</th>
                           <td><?=$lenguaTotales29['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">LACANDÓN</th>
+                          <th scope="row">SANTA LUCIA TOMATLAN</th>
                           <td><?=$lenguaTotales30['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAME</th>
+                          <th scope="row">SANTA MARÍA MALINALCO</th>
                           <td><?=$lenguaTotales31['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MATLATZINCA</th>
+                          <th scope="row">SANTIAGO AHUIZOTLA</th>
                           <td><?=$lenguaTotales32['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAYA</th>
+                          <th scope="row">SANTO DOMINGO HUEXOTITLÁN</th>
                           <td><?=$lenguaTotales33['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAYO</th>
+                          <th scope="row">SANTO TOMÁS TLAMATZINGO</th>
                           <td><?=$lenguaTotales34['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAZAHUA</th>
+                          <th scope="row">ACTIPAN</th>
                           <td><?=$lenguaTotales35['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAZATECO</th>
+                          <th scope="row">LA PIEDAD</th>
                           <td><?=$lenguaTotales36['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MIXE</th>
+                          <th scope="row">MIXCOAC</th>
                           <td><?=$lenguaTotales37['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MIXTECO</th>
+                          <th scope="row">SAN JUAN MALINALTONGO</th>
                           <td><?=$lenguaTotales38['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MOCHÓ</th>
+                          <th scope="row">SAN SEBASTIÁN XOCO</th>
                           <td><?=$lenguaTotales39['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">NÁHUATL</th>
+                          <th scope="row">SAN SIMÓN TICUMAC</th>
                           <td><?=$lenguaTotales40['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">OLUTECO</th>
+                          <th scope="row">SANTA CRUZ ATOYAC</th>
                           <td><?=$lenguaTotales41['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">OTOMÍ</th>
+                          <th scope="row">SANTA CRUZ TLACOQUEMECATL</th>
                           <td><?=$lenguaTotales42['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PAME</th>
+                          <th scope="row">SANTA MARÍA NATIVITAS TEPETLALTZINCO</th>
                           <td><?=$lenguaTotales43['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PAIPAI</th>
+                          <th scope="row">CHURUBUSCO</th>
                           <td><?=$lenguaTotales44['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PÁPAGO</th>
+                          <th scope="row">COPILCO</th>
                           <td><?=$lenguaTotales45['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PIMA</th>
+                          <th scope="row">LA CANDELARIA</th>
                           <td><?=$lenguaTotales46['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">POPOLOCA</th>
+                          <th scope="row">LOS REYES HUEYTILAC</th>
                           <td><?=$lenguaTotales47['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">POPOLOCA DE LA SIERRA</th>
+                          <th scope="row">PUEBLO DE SAN FRANCISCO CULHUACÁN</th>
                           <td><?=$lenguaTotales48['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">P`URHÉPECHA</th>
+                          <th scope="row">SAN PABLO TEPETLAPA</th>
                           <td><?=$lenguaTotales49['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Q`ANJOB`AL</th>
+                          <th scope="row">SANTA ÚRSULA COAPA</th>
                           <td><?=$lenguaTotales50['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Q`EQCHI`</th>
+                          <th scope="row">CONTADERO</th>
                           <td><?=$lenguaTotales51['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">QATO`K</th>
+                          <th scope="row">SAN LORENZO ACOPILCO</th>
                           <td><?=$lenguaTotales52['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAYULTECO</th>
+                          <th scope="row">SAN MATEO TLALTENANGO</th>
                           <td><?=$lenguaTotales53['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SERI</th>
+                          <th scope="row">SAN PABLO CHIMALPA</th>
                           <td><?=$lenguaTotales54['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TACUATE</th>
+                          <th scope="row">SAN PEDRO CUAJIMALPA</th>
                           <td><?=$lenguaTotales55['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TARAHUMARA</th>
+                          <th scope="row">SAN SIMÓN TOLNAHUAC</th>
                           <td><?=$lenguaTotales56['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEKO</th>
+                          <th scope="row">TLATELOLCO</th>
                           <td><?=$lenguaTotales57['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEPEHUA</th>
+                          <th scope="row">CALPULTITLAN</th>
                           <td><?=$lenguaTotales58['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEPEHUANO DEL NORTE</th>
+                          <th scope="row">CUAUHTEPEC</th>
                           <td><?=$lenguaTotales59['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEPEHUANO DEL SUR</th>
+                          <th scope="row">MAGDALENA DE LAS SALINAS</th>
                           <td><?=$lenguaTotales60['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEXISTEPEQUEÑO</th>
+                          <th scope="row">SAN BARTOLO ATEPEHUACAN</th>
                           <td><?=$lenguaTotales61['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TLAHUICA</th>
+                          <th scope="row">SAN PEDRO ZACATENCO</th>
                           <td><?=$lenguaTotales62['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TLAPANECO</th>
+                          <th scope="row">SANTA ISABEL TOLA</th>
                           <td><?=$lenguaTotales63['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TOJOLABAL</th>
+                          <th scope="row">SANTIAGO ATEPETLAC</th>
                           <td><?=$lenguaTotales64['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TOTONACO</th>
+                          <th scope="row">SANTIAGO ATZACOALCO</th>
                           <td><?=$lenguaTotales65['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TRIQUI</th>
+                          <th scope="row">SANTA ANITA ZACATLALMANCO </th>
                           <td><?=$lenguaTotales66['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TSELTAL</th>
+                          <th scope="row">ACULCO</th>
                           <td><?=$lenguaTotales67['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TSOTSIL</th>
+                          <th scope="row">CULHUACAN</th>
                           <td><?=$lenguaTotales68['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">YAQUI</th>
+                          <th scope="row">LA MAGDALENA ATLAZOLPA</th>
                           <td><?=$lenguaTotales69['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">ZAPOTECO</th>
+                          <th scope="row">LOS REYES CULHUACAN</th>
                           <td><?=$lenguaTotales70['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">ZOQUE</th>
+                          <th scope="row">MEXICALTZINGO</th>
                           <td><?=$lenguaTotales71['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN ANDRÉS TETEPILCO</th>
+                          <td><?=$lenguaTotales72['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN ANDRÉS TOMATLAN</th>
+                          <td><?=$lenguaTotales73['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN JUANICO NEXTIPAC</th>
+                          <td><?=$lenguaTotales74['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN LORENZO TEZONCO</th>
+                          <td><?=$lenguaTotales75['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTA CRUZ MEYEHUALCO</th>
+                          <td><?=$lenguaTotales76['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTA MARÍA AZTAHUACAN</th>
+                          <td><?=$lenguaTotales77['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTA MARÍA TOMATLAN</th>
+                          <td><?=$lenguaTotales78['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTA MARTHA ACATITLA</th>
+                          <td><?=$lenguaTotales79['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAGDALENA CONTRERAS ATLICTIC</th>
+                          <td><?=$lenguaTotales80['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN BERNABÉ OCOTEPEC</th>
+                          <td><?=$lenguaTotales81['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN JERÓNIMO ACULCO-LIDICE</th>
+                          <td><?=$lenguaTotales82['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN NICOLÁS TOTOLAPAN</th>
+                          <td><?=$lenguaTotales83['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">POPOTLA</th>
+                          <td><?=$lenguaTotales84['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN DIEGO OCOYOACAC</th>
+                          <td><?=$lenguaTotales85['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN LORENZO TLALTENANGO</th>
+                          <td><?=$lenguaTotales86['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TACUBA</th>
+                          <td><?=$lenguaTotales87['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TACUBAYA</th>
+                          <td><?=$lenguaTotales88['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN AGUSTÍN OHTENCO</th>
+                          <td><?=$lenguaTotales89['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN ANTONIO TECOMITL</th>
+                          <td><?=$lenguaTotales90['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN BARTOLOMÉ XICOMULCO</th>
+                          <td><?=$lenguaTotales91['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN FRANCISCO TECOXPA</th>
+                          <td><?=$lenguaTotales92['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN JERÓNIMO MIACATLAN</th>
+                          <td><?=$lenguaTotales93['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN JUAN TEPENAHUAC</th>
+                          <td><?=$lenguaTotales94['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN LORENZO TLACOYUCAN</th>
+                          <td><?=$lenguaTotales95['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN PABLO OZTOTEPEC</th>
+                          <td><?=$lenguaTotales96['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN PEDRO ATOCPAN</th>
+                          <td><?=$lenguaTotales97['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN SALVADOR CUAUHTENCO</th>
+                          <td><?=$lenguaTotales98['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTA ANA TLACOTENCO</th>
+                          <td><?=$lenguaTotales99['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN ANDRÉS MIXQUIC</th>
+                          <td><?=$lenguaTotales100['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN FRANCISCO TLALTENCO</th>
+                          <td><?=$lenguaTotales101['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN JUAN IXTAYOPAN</th>
+                          <td><?=$lenguaTotales102['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN NICOLÁS TETELCO</th>
+                          <td><?=$lenguaTotales103['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN PEDRO TLAHUAC</th>
+                          <td><?=$lenguaTotales104['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTA CATARINA YECAHUIZOTL</th>
+                          <td><?=$lenguaTotales105['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTIAGO ZAPOTITLÁN</th>
+                          <td><?=$lenguaTotales106['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHIMALCOYOC (LA ASUNCIÓN)</th>
+                          <td><?=$lenguaTotales107['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAGDALENA PETLACALCO</th>
+                          <td><?=$lenguaTotales108['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PARRES EL GUARDA</th>
+                          <td><?=$lenguaTotales109['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN ANDRÉS TOTOLTEPEC</th>
+                          <td><?=$lenguaTotales110['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN LORENZO HUIPULCO</th>
+                          <td><?=$lenguaTotales111['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN MIGUEL AJUSCO</th>
+                          <td><?=$lenguaTotales112['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN MIGUEL TOPILEJO</th>
+                          <td><?=$lenguaTotales113['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN MIGUEL XICALCO</th>
+                          <td><?=$lenguaTotales114['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN PEDRO MÁRTIR</th>
+                          <td><?=$lenguaTotales115['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTA URSULA XITLA</th>
+                          <td><?=$lenguaTotales116['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTO TOMÁS AJUSCO</th>
+                          <td><?=$lenguaTotales117['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">EL PEÑÓN DE LOS BAÑOS</th>
+                          <td><?=$lenguaTotales118['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAGDALENA MIXHIUCA</th>
+                          <td><?=$lenguaTotales119['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN ANDRÉS AHUAYUCAN</th>
+                          <td><?=$lenguaTotales120['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN FRANCISCO TLALNEPANTLA</th>
+                          <td><?=$lenguaTotales121['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN GREGORIO ATLAPULCO</th>
+                          <td><?=$lenguaTotales122['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN LORENZO ATEMOAYA</th>
+                          <td><?=$lenguaTotales123['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN LUCAS XOCHIMANCA</th>
+                          <td><?=$lenguaTotales124['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN LUIS TLAXIALTEMALCO</th>
+                          <td><?=$lenguaTotales125['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAN MATEO XALPA</th>
+                          <td><?=$lenguaTotales126['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTA CECILIA TEPETLAPA</th>
+                          <td><?=$lenguaTotales127['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTA CRUZ ACALPIXCA</th>
+                          <td><?=$lenguaTotales130['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTA CRUZ XOCHITEPEC</th>
+                          <td><?=$lenguaTotales131['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTA MARÍA NATIVITAS</th>
+                          <td><?=$lenguaTotales132['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTA MARÍA TEPEPAN</th>
+                          <td><?=$lenguaTotales133['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTIAGO TEPALCATLALPAN</th>
+                          <td><?=$lenguaTotales134['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SANTIAGO TULYEHUALCO</th>
+                          <td><?=$lenguaTotales135['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">NINGUNO</th>
                           <td><?=$lenguaTotales0['userPorLengua']?></td>
                         </tr>
+                        
                       </tbody>
                     </table>
                   </div>
