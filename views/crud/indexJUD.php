@@ -8188,7 +8188,7 @@
             <div class="card text-info bg-light o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                  <i class="fab fa-think-peaks"></i>
+                  <<i class="fas fa-gopuram"></i>
                   </div>
                   
                   <div class="mr-5"><b>Usuarios totales por Pueblos Originarios<span class="float-right"></span></b></div>
