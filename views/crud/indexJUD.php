@@ -6551,7 +6551,7 @@
                           <td><?=$lenguaTotales4['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">OCHIMÍE</th>
+                          <th scope="row">COCHIMÍE</th>
                           <td><?=$lenguaTotales5['userPorLengua']?></td>
                         </tr>
                         <tr>
@@ -6865,7 +6865,7 @@
                           <td><?=$lenguaTotales4['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">OCHIMÍE</th>
+                          <th scope="row">COCHIMÍE</th>
                           <td><?=$lenguaTotales5['userPorLengua']?></td>
                         </tr>
                         <tr>
@@ -7179,7 +7179,7 @@
                           <td><?=$lenguaTotales4['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">OCHIMÍE</th>
+                          <th scope="row">COCHIMÍE</th>
                           <td><?=$lenguaTotales5['userPorLengua']?></td>
                         </tr>
                         <tr>
