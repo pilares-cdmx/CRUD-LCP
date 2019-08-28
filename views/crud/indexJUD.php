@@ -6518,7 +6518,7 @@
           <div class="col-xl-6 col-sm-6 mb-3">
             <div class="card text-info bg-light o-hidden h-100">
                 <div class="card-body">
-                  <div class="card-body-icon">
+                <i class="fab fa-think-peaks"></i>
                   <i class="fas fa-street-view"></i>
                   </div>
                   
@@ -6824,7 +6824,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por Grupo Étnico mujeres<span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios totales por Lengua indigena mujeres<span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorGrupoetMujeres1">
                   <span class="float-left">Ver detalle</span>
@@ -7126,7 +7126,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por Grupo Étnico hombres<span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios totales por Lengua indigena hombres<span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorGrupoetHombres1">
                   <span class="float-left">Ver detalle</span>
