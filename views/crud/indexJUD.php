@@ -3084,312 +3084,312 @@
     //var_dump($totalesPueblo71);
     $totalesPueblo71= mysqli_fetch_array($totalesPueblo71);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '72'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '52'";
     $totalesPueblo72 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo72);
     $totalesPueblo72= mysqli_fetch_array($totalesPueblo72);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '73'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '53'";
     $totalesPueblo73 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo73);
     $totalesPueblo73= mysqli_fetch_array($totalesPueblo73);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '74'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '54'";
     $totalesPueblo74 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo74);
     $totalesPueblo74= mysqli_fetch_array($totalesPueblo74);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '75'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '55'";
     $totalesPueblo75 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo75);
     $totalesPueblo75= mysqli_fetch_array($totalesPueblo75);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '76'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '56'";
     $totalesPueblo76 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo76);
     $totalesPueblo76= mysqli_fetch_array($totalesPueblo76);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '77'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '57'";
     $totalesPueblo77 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo77);
     $totalesPueblo77= mysqli_fetch_array($totalesPueblo77);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '78'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '58'";
     $totalesPueblo78 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo78);
     $totalesPueblo78= mysqli_fetch_array($totalesPueblo78);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '79'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '59'";
     $totalesPueblo79 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo79);
     $totalesPueblo79= mysqli_fetch_array($totalesPueblo79);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '80'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '60'";
     $totalesPueblo80 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo80);
     $totalesPueblo80= mysqli_fetch_array($totalesPueblo80);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '81'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61'";
     $totalesPueblo81 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo81);
     $totalesPueblo81= mysqli_fetch_array($totalesPueblo81);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '82'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62'";
     $totalesPueblo82 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo82);
     $totalesPueblo82= mysqli_fetch_array($totalesPueblo82);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '83'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63'";
     $totalesPueblo83 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo83);
     $totalesPueblo83= mysqli_fetch_array($totalesPueblo83);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '84'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
     $totalesPueblo84 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo84);
     $totalesPueblo84= mysqli_fetch_array($totalesPueblo84);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '85'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
     $totalesPueblo85 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo85);
     $totalesPueblo85= mysqli_fetch_array($totalesPueblo85);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '86'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
     $totalesPueblo86 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo86);
     $totalesPueblo86= mysqli_fetch_array($totalesPueblo86);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '87'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
     $totalesPueblo87 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo87);
     $totalesPueblo87= mysqli_fetch_array($totalesPueblo87);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '88'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '68'";
     $totalesPueblo88 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo88);
     $totalesPueblo88= mysqli_fetch_array($totalesPueblo88);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '89'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69'";
     $totalesPueblo89 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo89);
     $totalesPueblo89= mysqli_fetch_array($totalesPueblo89);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '90'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '70'";
     $totalesPueblo90 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo90);
     $totalesPueblo90= mysqli_fetch_array($totalesPueblo90);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '91'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61'";
     $totalesPueblo91 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo91);
     $totalesPueblo91= mysqli_fetch_array($totalesPueblo91);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '92'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62'";
     $totalesPueblo92 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo92);
     $totalesPueblo92= mysqli_fetch_array($totalesPueblo92);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '93'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63'";
     $totalesPueblo93 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo93);
     $totalesPueblo93= mysqli_fetch_array($totalesPueblo93);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '94'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
     $totalesPueblo94 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo94);
     $totalesPueblo94= mysqli_fetch_array($totalesPueblo94);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '95'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
     $totalesPueblo95 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo95);
     $totalesPueblo95= mysqli_fetch_array($totalesPueblo95);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '96'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
     $totalesPueblo96 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo96);
     $totalesPueblo96= mysqli_fetch_array($totalesPueblo96);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '97'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
     $totalesPueblo97 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo97);
     $totalesPueblo97= mysqli_fetch_array($totalesPueblo97);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '98'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '68'";
     $totalesPueblo98 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo98);
     $totalesPueblo98= mysqli_fetch_array($totalesPueblo98);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '99'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69'";
     $totalesPueblo99 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo99);
     $totalesPueblo99= mysqli_fetch_array($totalesPueblo99);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '100'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '70'";
     $totalesPueblo100 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo100);
     $totalesPueblo100= mysqli_fetch_array($totalesPueblo100);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '101'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61'";
     $totalesPueblo101 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo101);
     $totalesPueblo81= mysqli_fetch_array($totalesPueblo101);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '102'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62'";
     $totalesPueblo102 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo102);
     $totalesPueblo102= mysqli_fetch_array($totalesPueblo102);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '103'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63'";
     $totalesPueblo103 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo103);
     $totalesPueblo103= mysqli_fetch_array($totalesPueblo103);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '104'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
     $totalesPueblo104 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo104);
     $totalesPueblo104= mysqli_fetch_array($totalesPueblo104);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '105'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
     $totalesPueblo105 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo105);
     $totalesPueblo105= mysqli_fetch_array($totalesPueblo105);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '106'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
     $totalesPueblo106 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo106);
     $totalesPueblo106= mysqli_fetch_array($totalesPueblo106);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '107'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
     $totalesPueblo107 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo107);
     $totalesPueblo107= mysqli_fetch_array($totalesPueblo107);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '108'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '68'";
     $totalesPueblo108 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo108);
     $totalesPueblo108= mysqli_fetch_array($totalesPueblo108);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '109'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69'";
     $totalesPueblo109 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo109);
     $totalesPueblo109= mysqli_fetch_array($totalesPueblo109);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '110'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '70'";
     $totalesPueblo110 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo110);
     $totalesPueblo110= mysqli_fetch_array($totalesPueblo110);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '111'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61'";
     $totalesPueblo111 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo111);
     $totalesPueblo111= mysqli_fetch_array($totalesPueblo111);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '112'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62'";
     $totalesPueblo112 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo112);
     $totalesPueblo112= mysqli_fetch_array($totalesPueblo112);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '113'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63'";
     $totalesPueblo113 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo113);
     $totalesPueblo113= mysqli_fetch_array($totalesPueblo113);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '114'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
     $totalesPueblo114 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo114);
     $totalesPueblo114= mysqli_fetch_array($totalesPueblo114);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '115'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
     $totalesPueblo115 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo115);
     $totalesPueblo115= mysqli_fetch_array($totalesPueblo115);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '116'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
     $totalesPueblo116 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo116);
     $totalesPueblo116= mysqli_fetch_array($totalesPueblo116);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '117'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
     $totalesPueblo117 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo117);
     $totalesPueblo117= mysqli_fetch_array($totalesPueblo117);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '118'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '68'";
     $totalesPueblo118 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo118);
     $totalesPueblo118= mysqli_fetch_array($totalesPueblo118);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '119'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69'";
     $totalesPueblo119 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo119);
     $totalesPueblo119= mysqli_fetch_array($totalesPueblo119);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '120'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69'";
     $totalesPueblo120 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo120);
     $totalesPueblo120= mysqli_fetch_array($totalesPueblo120);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '121'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61'";
     $totalesPueblo121 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo121);
     $totalesPueblo121= mysqli_fetch_array($totalesPueblo121);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '122'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62'";
     $totalesPueblo122 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo122);
     $totalesPueblo122= mysqli_fetch_array($totalesPueblo122);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '123'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63'";
     $totalesPueblo123 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo123);
     $totalesPueblo123= mysqli_fetch_array($totalesPueblo123);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '124'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
     $totalesPueblo124 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo124);
     $totalesPueblo124= mysqli_fetch_array($totalesPueblo124);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '125'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
     $totalesPueblo125 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo125);
     $totalesPueblo125= mysqli_fetch_array($totalesPueblo125);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '126'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
     $totalesPueblo126 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo126);
     $totalesPueblo126= mysqli_fetch_array($totalesPueblo126);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '127'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
     $totalesPueblo127 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo127);
     $totalesPueblo127= mysqli_fetch_array($totalesPueblo127);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '130'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
     $totalesPueblo130 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo130);
     $totalesPueblo130= mysqli_fetch_array($totalesPueblo130);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '131'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
     $totalesPueblo131 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo131);
     $totalesPueblo131= mysqli_fetch_array($totalesPueblo131);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '132'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
     $totalesPueblo132 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo132);
     $totalesPueblo132= mysqli_fetch_array($totalesPueblo132);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '133'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
     $totalesPueblo133 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo133);
     $totalesPueblo133= mysqli_fetch_array($totalesPueblo133);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '134'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
     $totalesPueblo134 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo134);
     $totalesPueblo134= mysqli_fetch_array($totalesPueblo134);
 
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '135'";
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
     $totalesPueblo135 = mysqli_query($con, $sql);
     //var_dump($totalesPueblo135);
     $totalesPueblo135= mysqli_fetch_array($totalesPueblo135);
