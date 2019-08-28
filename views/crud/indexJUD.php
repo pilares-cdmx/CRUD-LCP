@@ -6535,280 +6535,292 @@
                     <table class="table table-striped ">
                       <tbody class="bg-light">
                         <tr>
-                          <th scope="row">AKATEKOS</th>
+                          <th scope="row">AKATEKO</th>
                           <td><?=$lenguaTotales1['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">AMUZGOS</th>
+                          <th scope="row">AMUZGO</th>
                           <td><?=$lenguaTotales2['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">AWAKATEKOS</th>
+                          <th scope="row">AWAKATEKO</th>
                           <td><?=$lenguaTotales3['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">AYAPANECOS</th>
+                          <th scope="row">AYAPANECO</th>
                           <td><?=$lenguaTotales4['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CORAS</th>
+                          <th scope="row">OCHIMÍE</th>
                           <td><?=$lenguaTotales5['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CUCAPÁS</th>
+                          <th scope="row">CORA</th>
                           <td><?=$lenguaTotales6['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CUICATECOS</th>
+                          <th scope="row">CUCAPÁ</th>
                           <td><?=$lenguaTotales7['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHATINOS</th>
+                          <th scope="row">CUICATECO</th>
                           <td><?=$lenguaTotales8['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHICHIMECAS</th>
+                          <th scope="row">CHATINO</th>
                           <td><?=$lenguaTotales9['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHINANTECOS</th>
+                          <th scope="row">CHICHIMECA</th>
                           <td><?=$lenguaTotales10['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHOLES</th>
+                          <th scope="row">CHINANTECO</th>
                           <td><?=$lenguaTotales11['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHOCHOLTECOS</th>
+                          <th scope="row">CH`OL</th>
                           <td><?=$lenguaTotales12['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHONTALES DE OAXACA</th>
+                          <th scope="row">CHOCHOLTECO</th>
                           <td><?=$lenguaTotales13['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHONTALES DE TABASCO</th>
+                          <th scope="row">CHONTALES DE OAXACA</th>
                           <td><?=$lenguaTotales14['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHUJES</th>
+                          <th scope="row">CHONTAL DE TABASCO</th>
                           <td><?=$lenguaTotales15['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">GUARIJÍOS</th>
+                          <th scope="row">CHUJ</th>
                           <td><?=$lenguaTotales16['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">HUASTECOS</th>
+                          <th scope="row">GUARIJÍO</th>
                           <td><?=$lenguaTotales17['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">HUAVES</th>
+                          <th scope="row">HUASTECO</th>
                           <td><?=$lenguaTotales18['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">HUICHOLES</th>
+                          <th scope="row">HUAVE</th>
                           <td><?=$lenguaTotales19['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">IXILES</th>
+                          <th scope="row">HUICHOL</th>
                           <td><?=$lenguaTotales20['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">JAKALTEKOS</th>
+                          <th scope="row">IXCATECO</th>
                           <td><?=$lenguaTotales21['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KAQCHIKELES</th>
+                          <th scope="row">IXIL</th>
                           <td><?=$lenguaTotales22['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">K`ICHES</th>
+                          <th scope="row">JAKALTEKO</th>
                           <td><?=$lenguaTotales23['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KU`AHLES</th>
+                          <th scope="row">KAQCHIKEL</th>
                           <td><?=$lenguaTotales24['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KILIWAS</th>
+                          <th scope="row">K`ICHE</th>
                           <td><?=$lenguaTotales25['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KIKAPÚES</th>
+                          <th scope="row">KU`AHLE</th>
                           <td><?=$lenguaTotales26['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KUMIAIS</th>
+                          <th scope="row">KILIWA</th>
                           <td><?=$lenguaTotales27['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">LACANDÓNES</th>
+                          <th scope="row">KIKAPÚE</th>
                           <td><?=$lenguaTotales28['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAMES</th>
+                          <th scope="row">KUMIAI</th>
                           <td><?=$lenguaTotales29['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MATLATZINCAS</th>
+                          <th scope="row">LACANDÓN</th>
                           <td><?=$lenguaTotales30['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAYAS</th>
+                          <th scope="row">MAME</th>
                           <td><?=$lenguaTotales31['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAYOS</th>
+                          <th scope="row">MATLATZINCA</th>
                           <td><?=$lenguaTotales32['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAZAHUAS</th>
+                          <th scope="row">MAYA</th>
                           <td><?=$lenguaTotales33['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAZATECOS</th>
+                          <th scope="row">MAYO</th>
                           <td><?=$lenguaTotales34['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MIXES</th>
+                          <th scope="row">MAZAHUA</th>
                           <td><?=$lenguaTotales35['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MIXTECOS</th>
+                          <th scope="row">MAZATECO</th>
                           <td><?=$lenguaTotales36['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">NÁHUAS</th>
+                          <th scope="row">MIXE</th>
                           <td><?=$lenguaTotales37['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">OLUTECOS</th>
+                          <th scope="row">MIXTECO</th>
                           <td><?=$lenguaTotales38['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">OTOMÍS</th>
+                          <th scope="row">MOCHÓ</th>
                           <td><?=$lenguaTotales39['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PAMES</th>
+                          <th scope="row">NÁHUATL</th>
                           <td><?=$lenguaTotales40['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PAIPAIS</th>
+                          <th scope="row">OLUTECO</th>
                           <td><?=$lenguaTotales41['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PÁPAGOS</th>
+                          <th scope="row">OTOMÍ</th>
                           <td><?=$lenguaTotales42['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PIMAS</th>
+                          <th scope="row">PAME</th>
                           <td><?=$lenguaTotales43['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">POPOLOCAS</th>
+                          <th scope="row">PAIPAI</th>
                           <td><?=$lenguaTotales44['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">POPOLUCAS DE LA SIERRA</th>
+                          <th scope="row">PÁPAGO</th>
                           <td><?=$lenguaTotales45['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Q`ANJOB`ALES</th>
+                          <th scope="row">PIMA</th>
                           <td><?=$lenguaTotales46['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Q`EQCHI`S</th>
+                          <th scope="row">POPOLOCA</th>
                           <td><?=$lenguaTotales47['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">QATO`K</th>
+                          <th scope="row">POPOLOCA DE LA SIERRA</th>
                           <td><?=$lenguaTotales48['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAYULTECOS</th>
+                          <th scope="row">P`URHÉPECHA</th>
                           <td><?=$lenguaTotales49['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SERIS</th>
+                          <th scope="row">Q`ANJOB`AL</th>
                           <td><?=$lenguaTotales50['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TACUATES</th>
+                          <th scope="row">Q`EQCHI`</th>
                           <td><?=$lenguaTotales51['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TARAHUMARAS</th>
+                          <th scope="row">QATO`K</th>
                           <td><?=$lenguaTotales52['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TARASCOS</th>
+                          <th scope="row">SAYULTECO</th>
                           <td><?=$lenguaTotales53['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEKOS</th>
+                          <th scope="row">SERI</th>
                           <td><?=$lenguaTotales54['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEPEHUAS</th>
+                          <th scope="row">TACUATE</th>
                           <td><?=$lenguaTotales55['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEPEHUANOS DEL NORTE</th>
+                          <th scope="row">TARAHUMARA</th>
                           <td><?=$lenguaTotales56['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEPEHUANOS DEL SUR</th>
+                          <th scope="row">TEKO</th>
                           <td><?=$lenguaTotales57['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEXISTEPEQUEÑOS</th>
+                          <th scope="row">TEPEHUA</th>
                           <td><?=$lenguaTotales58['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TLAHUICAS</th>
+                          <th scope="row">TEPEHUANO DEL NORTE</th>
                           <td><?=$lenguaTotales59['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TLAPANECOS</th>
+                          <th scope="row">TEPEHUANO DEL SUR</th>
                           <td><?=$lenguaTotales60['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TOJOLABALES</th>
+                          <th scope="row">TEXISTEPEQUEÑO</th>
                           <td><?=$lenguaTotales61['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TOTONACOS</th>
+                          <th scope="row">TLAHUICA</th>
                           <td><?=$lenguaTotales62['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TRIQUIS</th>
+                          <th scope="row">TLAPANECO</th>
                           <td><?=$lenguaTotales63['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TSELTALES</th>
+                          <th scope="row">TOJOLABAL</th>
                           <td><?=$lenguaTotales64['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TZOTZILES</th>
+                          <th scope="row">TOTONACO</th>
                           <td><?=$lenguaTotales65['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">YAQUIS</th>
+                          <th scope="row">TRIQUI</th>
                           <td><?=$lenguaTotales66['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">ZAPOTECOS</th>
+                          <th scope="row">TSELTAL</th>
                           <td><?=$lenguaTotales67['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">ZOQUES</th>
+                          <th scope="row">TSOTSIL</th>
                           <td><?=$lenguaTotales68['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">NINGUNO</th>
+                          <th scope="row">YAQUI</th>
                           <td><?=$lenguaTotales69['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">ZAPOTECO</th>
+                          <td><?=$lenguaTotales70['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">ZOQUE</th>
+                          <td><?=$lenguaTotales71['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">NINGUNO</th>
+                          <td><?=$lenguaTotales0['userPorLengua']?></td>
                         </tr>
                       </tbody>
                     </table>
