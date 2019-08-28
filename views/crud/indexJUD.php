@@ -2726,678 +2726,6 @@
     $totalesLenguaHombres0 = mysqli_query($con, $sql);
     //var_dump($totalesLenguaHombres0);
     $lenguaTotalesHombres0= mysqli_fetch_array($totalesLenguaHombres0);
-     /**
-     * uSUARIOS INSCRITOS POR pueblos originarios
-     */
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '1'";
-    $totalesPueblo1 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo1);
-    $puebloTotales1= mysqli_fetch_array($totalesPueblo1);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '2'";
-    $totalesPueblo2 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo2);
-    $totalesPueblo2= mysqli_fetch_array($totalesPueblo2);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '3'";
-    $totalesPueblo3 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo3);
-    $totalesPueblo3= mysqli_fetch_array($totalesPueblo3);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '4'";
-    $totalesPueblo4 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo4);
-    $totalesPueblo4= mysqli_fetch_array($totalesPueblo4);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '5'";
-    $totalesPueblo5 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo5);
-    $totalesPueblo5= mysqli_fetch_array($totalesPueblo5);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '6'";
-    $totalesPueblo6 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo6);
-    $totalesPueblo6= mysqli_fetch_array($totalesPueblo6);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '7'";
-    $totalesPueblo7 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo7);
-    $totalesPueblo7= mysqli_fetch_array($totalesPueblo7);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '8'";
-    $totalesPueblo8 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo8);
-    $totalesPueblo8= mysqli_fetch_array($totalesPueblo8);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '9'";
-    $totalesPueblo9 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo9);
-    $totalesPueblo9= mysqli_fetch_array($totalesPueblo9);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '10'";
-    $totalesPueblo10 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo10);
-    $totalesPueblo10= mysqli_fetch_array($totalesPueblo10);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '11'";
-    $totalesPueblo11 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo11);
-    $totalesPueblo11= mysqli_fetch_array($totalesPueblo11);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '12'";
-    $totalesPueblo12 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo12);
-    $totalesPueblo12= mysqli_fetch_array($totalesPueblo12);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '13'";
-    $totalesPueblo13 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo13);
-    $totalesPueblo13= mysqli_fetch_array($totalesPueblo13);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '14'";
-    $totalesPueblo14 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo14);
-    $totalesPueblo14= mysqli_fetch_array($totalesPueblo14);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '15'";
-    $totalesPueblo15 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo15);
-    $totalesPueblo15= mysqli_fetch_array($totalesPueblo15);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '16'";
-    $totalesPueblo16 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo16);
-    $totalesPueblo16= mysqli_fetch_array($totalesPueblo16);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '17'";
-    $totalesPueblo17 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo17);
-    $totalesPueblo17= mysqli_fetch_array($totalesPueblo17);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '18'";
-    $totalesPueblo18 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo18);
-    $totalesPueblo18= mysqli_fetch_array($totalesPueblo18);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '19'";
-    $totalesPueblo19 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo19);
-    $totalesPueblo19= mysqli_fetch_array($totalesPueblo19);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '20'";
-    $totalesPueblo20 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo20);
-    $totalesPueblo20= mysqli_fetch_array($totalesPueblo20);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '21'";
-    $totalesPueblo21 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo21);
-    $totalesPueblo21= mysqli_fetch_array($totalesPueblo21);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '22'";
-    $totalesPueblo22 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo22);
-    $totalesPueblo22= mysqli_fetch_array($totalesPueblo22);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '23'";
-    $totalesPueblo23 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo23);
-    $totalesPueblo23= mysqli_fetch_array($totalesPueblo23);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '24'";
-    $totalesPueblo24 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo24);
-    $totalesPueblo24= mysqli_fetch_array($totalesPueblo24);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '25'";
-    $totalesPueblo25 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo25);
-    $totalesPueblo25= mysqli_fetch_array($totalesPueblo25);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '26'";
-    $totalesPueblo26 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo26);
-    $totalesPueblo26= mysqli_fetch_array($totalesPueblo26);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '27'";
-    $totalesPueblo27 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo27);
-    $totalesPueblo27= mysqli_fetch_array($totalesPueblo27);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '28'";
-    $totalesPueblo28 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo28);
-    $totalesPueblo28= mysqli_fetch_array($totalesPueblo28);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '29'";
-    $totalesPueblo29 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo29);
-    $totalesPueblo29= mysqli_fetch_array($totalesPueblo29);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '30'";
-    $totalesPueblo30 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo30);
-    $totalesPueblo30= mysqli_fetch_array($totalesPueblo30);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '31'";
-    $totalesPueblo31 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo31);
-    $totalesPueblo31= mysqli_fetch_array($totalesPueblo31);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '32'";
-    $totalesPueblo32 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo32);
-    $totalesPueblo32= mysqli_fetch_array($totalesPueblo32);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '33'";
-    $totalesPueblo33 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo33);
-    $totalesPueblo33= mysqli_fetch_array($totalesPueblo33);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '34'";
-    $totalesPueblo34 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo34);
-    $totalesPueblo34= mysqli_fetch_array($totalesPueblo34);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '35'";
-    $totalesPueblo35 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo35);
-    $totalesPueblo35= mysqli_fetch_array($totalesPueblo35);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '36'";
-    $totalesPueblo36 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo36);
-    $totalesPueblo36= mysqli_fetch_array($totalesPueblo36);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '37'";
-    $totalesPueblo37 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo37);
-    $totalesPueblo37= mysqli_fetch_array($totalesPueblo37);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '38'";
-    $totalesPueblo38 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo38);
-    $totalesPueblo38= mysqli_fetch_array($totalesPueblo38);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '39'";
-    $totalesPueblo39 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo39);
-    $totalesPueblo39= mysqli_fetch_array($totalesPueblo39);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '40'";
-    $totalesPueblo40 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo40);
-    $totalesPueblo40= mysqli_fetch_array($totalesPueblo40);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '41'";
-    $totalesPueblo41 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo41);
-    $totalesPueblo41= mysqli_fetch_array($totalesPueblo41);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '42'";
-    $totalesPueblo42 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo42);
-    $totalesPueblo42= mysqli_fetch_array($totalesPueblo42);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '43'";
-    $totalesPueblo43 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo43);
-    $totalesPueblo43= mysqli_fetch_array($totalesPueblo43);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '44'";
-    $totalesPueblo44 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo44);
-    $totalesPueblo44= mysqli_fetch_array($totalesPueblo44);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '45'";
-    $totalesPueblo45 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo45);
-    $totalesPueblo45= mysqli_fetch_array($totalesPueblo45);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '46'";
-    $totalesPueblo46 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo46);
-    $totalesPueblo46= mysqli_fetch_array($totalesPueblo46);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '47'";
-    $totalesPueblo47 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo47);
-    $totalesPueblo47= mysqli_fetch_array($totalesPueblo47);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '48'";
-    $totalesPueblo48 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo48);
-    $totalesPueblo48= mysqli_fetch_array($totalesPueblo48);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '49'";
-    $totalesPueblo49 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo49);
-    $totalesPueblo49= mysqli_fetch_array($totalesPueblo49);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '50'";
-    $totalesPueblo50 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo50);
-    $totalesPueblo50= mysqli_fetch_array($totalesPueblo50);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '51'";
-    $totalesPueblo51 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo51);
-    $totalesPueblo51= mysqli_fetch_array($totalesPueblo51);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '52'";
-    $totalesPueblo52 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo52);
-    $totalesPueblo52= mysqli_fetch_array($totalesPueblo52);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '53'";
-    $totalesPueblo53 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo53);
-    $totalesPueblo53= mysqli_fetch_array($totalesPueblo53);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '54'";
-    $totalesPueblo54 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo54);
-    $totalesPueblo54= mysqli_fetch_array($totalesPueblo54);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '55'";
-    $totalesPueblo55 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo55);
-    $totalesPueblo55= mysqli_fetch_array($totalesPueblo55);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '56'";
-    $totalesPueblo56 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo56);
-    $totalesPueblo56= mysqli_fetch_array($totalesPueblo56);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '57'";
-    $totalesPueblo57 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo57);
-    $totalesPueblo57= mysqli_fetch_array($totalesPueblo57);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '58'";
-    $totalesPueblo58 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo58);
-    $totalesPueblo58= mysqli_fetch_array($totalesPueblo58);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '59'";
-    $totalesPueblo59 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo59);
-    $totalesPueblo59= mysqli_fetch_array($totalesPueblo59);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '60'";
-    $totalesPueblo60 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo60);
-    $totalesPueblo60= mysqli_fetch_array($totalesPueblo60);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61'";
-    $totalesPueblo61 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo61);
-    $totalesPueblo61= mysqli_fetch_array($totalesPueblo61);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62'";
-    $totalesPueblo62 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo62);
-    $totalesPueblo62= mysqli_fetch_array($totalesPueblo62);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63'";
-    $totalesPueblo63 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo63);
-    $totalesPueblo63= mysqli_fetch_array($totalesPueblo63);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
-    $totalesPueblo64 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo64);
-    $totalesPueblo64= mysqli_fetch_array($totalesPueblo64);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
-    $totalesPueblo65 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo65);
-    $totalesPueblo65= mysqli_fetch_array($totalesPueblo65);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
-    $totalesPueblo66 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo66);
-    $totalesPueblo66= mysqli_fetch_array($totalesPueblo66);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
-    $totalesPueblo67 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo67);
-    $totalesPueblo67= mysqli_fetch_array($totalesPueblo67);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '68'";
-    $totalesPueblo68 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo68);
-    $totalesPueblo68= mysqli_fetch_array($totalesPueblo68);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69'";
-    $totalesPueblo69 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo69);
-    $totalesPueblo69= mysqli_fetch_array($totalesPueblo69);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '70'";
-    $totalesPueblo70 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo70);
-    $totalesPueblo70= mysqli_fetch_array($totalesPueblo70);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '71'";
-    $totalesPueblo71 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo71);
-    $totalesPueblo71= mysqli_fetch_array($totalesPueblo71);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '52'";
-    $totalesPueblo72 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo72);
-    $totalesPueblo72= mysqli_fetch_array($totalesPueblo72);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '53'";
-    $totalesPueblo73 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo73);
-    $totalesPueblo73= mysqli_fetch_array($totalesPueblo73);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '54'";
-    $totalesPueblo74 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo74);
-    $totalesPueblo74= mysqli_fetch_array($totalesPueblo74);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '55'";
-    $totalesPueblo75 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo75);
-    $totalesPueblo75= mysqli_fetch_array($totalesPueblo75);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '56'";
-    $totalesPueblo76 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo76);
-    $totalesPueblo76= mysqli_fetch_array($totalesPueblo76);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '57'";
-    $totalesPueblo77 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo77);
-    $totalesPueblo77= mysqli_fetch_array($totalesPueblo77);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '58'";
-    $totalesPueblo78 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo78);
-    $totalesPueblo78= mysqli_fetch_array($totalesPueblo78);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '59'";
-    $totalesPueblo79 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo79);
-    $totalesPueblo79= mysqli_fetch_array($totalesPueblo79);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '60'";
-    $totalesPueblo80 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo80);
-    $totalesPueblo80= mysqli_fetch_array($totalesPueblo80);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61'";
-    $totalesPueblo81 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo81);
-    $totalesPueblo81= mysqli_fetch_array($totalesPueblo81);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62'";
-    $totalesPueblo82 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo82);
-    $totalesPueblo82= mysqli_fetch_array($totalesPueblo82);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63'";
-    $totalesPueblo83 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo83);
-    $totalesPueblo83= mysqli_fetch_array($totalesPueblo83);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
-    $totalesPueblo84 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo84);
-    $totalesPueblo84= mysqli_fetch_array($totalesPueblo84);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
-    $totalesPueblo85 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo85);
-    $totalesPueblo85= mysqli_fetch_array($totalesPueblo85);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
-    $totalesPueblo86 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo86);
-    $totalesPueblo86= mysqli_fetch_array($totalesPueblo86);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
-    $totalesPueblo87 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo87);
-    $totalesPueblo87= mysqli_fetch_array($totalesPueblo87);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '68'";
-    $totalesPueblo88 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo88);
-    $totalesPueblo88= mysqli_fetch_array($totalesPueblo88);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69'";
-    $totalesPueblo89 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo89);
-    $totalesPueblo89= mysqli_fetch_array($totalesPueblo89);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '70'";
-    $totalesPueblo90 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo90);
-    $totalesPueblo90= mysqli_fetch_array($totalesPueblo90);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61'";
-    $totalesPueblo91 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo91);
-    $totalesPueblo91= mysqli_fetch_array($totalesPueblo91);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62'";
-    $totalesPueblo92 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo92);
-    $totalesPueblo92= mysqli_fetch_array($totalesPueblo92);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63'";
-    $totalesPueblo93 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo93);
-    $totalesPueblo93= mysqli_fetch_array($totalesPueblo93);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
-    $totalesPueblo94 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo94);
-    $totalesPueblo94= mysqli_fetch_array($totalesPueblo94);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
-    $totalesPueblo95 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo95);
-    $totalesPueblo95= mysqli_fetch_array($totalesPueblo95);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
-    $totalesPueblo96 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo96);
-    $totalesPueblo96= mysqli_fetch_array($totalesPueblo96);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
-    $totalesPueblo97 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo97);
-    $totalesPueblo97= mysqli_fetch_array($totalesPueblo97);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '68'";
-    $totalesPueblo98 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo98);
-    $totalesPueblo98= mysqli_fetch_array($totalesPueblo98);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69'";
-    $totalesPueblo99 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo99);
-    $totalesPueblo99= mysqli_fetch_array($totalesPueblo99);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '70'";
-    $totalesPueblo100 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo100);
-    $totalesPueblo100= mysqli_fetch_array($totalesPueblo100);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61'";
-    $totalesPueblo101 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo101);
-    $totalesPueblo81= mysqli_fetch_array($totalesPueblo101);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62'";
-    $totalesPueblo102 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo102);
-    $totalesPueblo102= mysqli_fetch_array($totalesPueblo102);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63'";
-    $totalesPueblo103 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo103);
-    $totalesPueblo103= mysqli_fetch_array($totalesPueblo103);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
-    $totalesPueblo104 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo104);
-    $totalesPueblo104= mysqli_fetch_array($totalesPueblo104);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
-    $totalesPueblo105 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo105);
-    $totalesPueblo105= mysqli_fetch_array($totalesPueblo105);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
-    $totalesPueblo106 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo106);
-    $totalesPueblo106= mysqli_fetch_array($totalesPueblo106);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
-    $totalesPueblo107 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo107);
-    $totalesPueblo107= mysqli_fetch_array($totalesPueblo107);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '68'";
-    $totalesPueblo108 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo108);
-    $totalesPueblo108= mysqli_fetch_array($totalesPueblo108);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69'";
-    $totalesPueblo109 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo109);
-    $totalesPueblo109= mysqli_fetch_array($totalesPueblo109);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '70'";
-    $totalesPueblo110 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo110);
-    $totalesPueblo110= mysqli_fetch_array($totalesPueblo110);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61'";
-    $totalesPueblo111 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo111);
-    $totalesPueblo111= mysqli_fetch_array($totalesPueblo111);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62'";
-    $totalesPueblo112 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo112);
-    $totalesPueblo112= mysqli_fetch_array($totalesPueblo112);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63'";
-    $totalesPueblo113 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo113);
-    $totalesPueblo113= mysqli_fetch_array($totalesPueblo113);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
-    $totalesPueblo114 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo114);
-    $totalesPueblo114= mysqli_fetch_array($totalesPueblo114);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
-    $totalesPueblo115 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo115);
-    $totalesPueblo115= mysqli_fetch_array($totalesPueblo115);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
-    $totalesPueblo116 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo116);
-    $totalesPueblo116= mysqli_fetch_array($totalesPueblo116);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
-    $totalesPueblo117 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo117);
-    $totalesPueblo117= mysqli_fetch_array($totalesPueblo117);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '68'";
-    $totalesPueblo118 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo118);
-    $totalesPueblo118= mysqli_fetch_array($totalesPueblo118);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69'";
-    $totalesPueblo119 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo119);
-    $totalesPueblo119= mysqli_fetch_array($totalesPueblo119);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69'";
-    $totalesPueblo120 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo120);
-    $totalesPueblo120= mysqli_fetch_array($totalesPueblo120);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61'";
-    $totalesPueblo121 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo121);
-    $totalesPueblo121= mysqli_fetch_array($totalesPueblo121);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62'";
-    $totalesPueblo122 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo122);
-    $totalesPueblo122= mysqli_fetch_array($totalesPueblo122);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63'";
-    $totalesPueblo123 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo123);
-    $totalesPueblo123= mysqli_fetch_array($totalesPueblo123);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
-    $totalesPueblo124 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo124);
-    $totalesPueblo124= mysqli_fetch_array($totalesPueblo124);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
-    $totalesPueblo125 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo125);
-    $totalesPueblo125= mysqli_fetch_array($totalesPueblo125);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
-    $totalesPueblo126 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo126);
-    $totalesPueblo126= mysqli_fetch_array($totalesPueblo126);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
-    $totalesPueblo127 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo127);
-    $totalesPueblo127= mysqli_fetch_array($totalesPueblo127);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
-    $totalesPueblo130 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo130);
-    $totalesPueblo130= mysqli_fetch_array($totalesPueblo130);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
-    $totalesPueblo131 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo131);
-    $totalesPueblo131= mysqli_fetch_array($totalesPueblo131);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
-    $totalesPueblo132 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo132);
-    $totalesPueblo132= mysqli_fetch_array($totalesPueblo132);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
-    $totalesPueblo133 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo133);
-    $totalesPueblo133= mysqli_fetch_array($totalesPueblo133);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
-    $totalesPueblo134 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo134);
-    $totalesPueblo134= mysqli_fetch_array($totalesPueblo134);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
-    $totalesPueblo135 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo135);
-    $totalesPueblo135= mysqli_fetch_array($totalesPueblo135);
-
-    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '0'";
-    $totalesPueblo0 = mysqli_query($con, $sql);
-    //var_dump($totalesPueblo0);
-    $totalesPueblo0= mysqli_fetch_array($totalesPueblo0);
     /**
   * Usuarios totales por Grado de EStudios Mujeres
 */
@@ -8877,569 +8205,6 @@
                       <tbody class="bg-light">
                         <tr>
                           <th scope="row">AXOTLA</th>
-                          <td><?=$lenguaTotales1['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">CHIMALISTAC</th>
-                          <td><?=$lenguaTotales2['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN BARTOLO AMEYALCO</th>
-                          <td><?=$lenguaTotales3['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA FÉ DE VASCO DE QUIROGA</th>
-                          <td><?=$lenguaTotales4['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA LUCÍA XANTEPEC</th>
-                          <td><?=$lenguaTotales5['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA MARÍA NONOALCO</th>
-                          <td><?=$lenguaTotales6['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA ROSA XOCHIAC</th>
-                          <td><?=$lenguaTotales7['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">TETELPAN</th>
-                          <td><?=$lenguaTotales8['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">TIZAPAN</th>
-                          <td><?=$lenguaTotales9['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">TLACOPAC</th>
-                          <td><?=$lenguaTotales10['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">COLTONGO</th>
-                          <td><?=$lenguaTotales11['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN ANDRES DE LAS SALINAS</th>
-                          <td><?=$lenguaTotales12['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN ANDRÉS TETLANMAN</th>
-                          <td><?=$lenguaTotales13['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN BARTOLO CAHUALTONGO</th>
-                          <td><?=$lenguaTotales14['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN FRANCISCO TETECALA</th>
-                          <td><?=$lenguaTotales15['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN JUAN TLILHUACA</th>
-                          <td><?=$lenguaTotales16['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LUCAS ATENCO</th>
-                          <td><?=$lenguaTotales17['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN MARTIN XOCHINÁHUAC</th>
-                          <td><?=$lenguaTotales18['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN MATEO XALTELOLCO</th>
-                          <td><?=$lenguaTotales19['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN MIGUEL AMANTLA</th>
-                          <td><?=$lenguaTotales20['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN PEDRO DE LAS SALINAS CALHUACATZINGO</th>
-                          <td><?=$lenguaTotales21['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN PEDRO XALPA</th>
-                          <td><?=$lenguaTotales22['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN SALVADOR NEXTENGO</th>
-                          <td><?=$lenguaTotales23['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN SALVADOR XOCHIMANCA</th>
-                          <td><?=$lenguaTotales24['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN SEBASTIÁN ATENCO</th>
-                          <td><?=$lenguaTotales25['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN SIMÓN POCHTLAN</th>
-                          <td><?=$lenguaTotales26['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA APOLONIA TEZCOLCO</th>
-                          <td><?=$lenguaTotales27['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA BÁRBARA TETLANMAN, YOPICO</th>
-                          <td><?=$lenguaTotales28['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA CATARINA ATZACUALCO</th>
-                          <td><?=$lenguaTotales29['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA LUCIA TOMATLAN</th>
-                          <td><?=$lenguaTotales30['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA MARÍA MALINALCO</th>
-                          <td><?=$lenguaTotales31['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTIAGO AHUIZOTLA</th>
-                          <td><?=$lenguaTotales32['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTO DOMINGO HUEXOTITLÁN</th>
-                          <td><?=$lenguaTotales33['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTO TOMÁS TLAMATZINGO</th>
-                          <td><?=$lenguaTotales34['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">ACTIPAN</th>
-                          <td><?=$lenguaTotales35['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">LA PIEDAD</th>
-                          <td><?=$lenguaTotales36['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">MIXCOAC</th>
-                          <td><?=$lenguaTotales37['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN JUAN MALINALTONGO</th>
-                          <td><?=$lenguaTotales38['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN SEBASTIÁN XOCO</th>
-                          <td><?=$lenguaTotales39['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN SIMÓN TICUMAC</th>
-                          <td><?=$lenguaTotales40['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA CRUZ ATOYAC</th>
-                          <td><?=$lenguaTotales41['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA CRUZ TLACOQUEMECATL</th>
-                          <td><?=$lenguaTotales42['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA MARÍA NATIVITAS TEPETLALTZINCO</th>
-                          <td><?=$lenguaTotales43['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">CHURUBUSCO</th>
-                          <td><?=$lenguaTotales44['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">COPILCO</th>
-                          <td><?=$lenguaTotales45['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">LA CANDELARIA</th>
-                          <td><?=$lenguaTotales46['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">LOS REYES HUEYTILAC</th>
-                          <td><?=$lenguaTotales47['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">PUEBLO DE SAN FRANCISCO CULHUACÁN</th>
-                          <td><?=$lenguaTotales48['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN PABLO TEPETLAPA</th>
-                          <td><?=$lenguaTotales49['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA ÚRSULA COAPA</th>
-                          <td><?=$lenguaTotales50['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">CONTADERO</th>
-                          <td><?=$lenguaTotales51['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LORENZO ACOPILCO</th>
-                          <td><?=$lenguaTotales52['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN MATEO TLALTENANGO</th>
-                          <td><?=$lenguaTotales53['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN PABLO CHIMALPA</th>
-                          <td><?=$lenguaTotales54['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN PEDRO CUAJIMALPA</th>
-                          <td><?=$lenguaTotales55['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN SIMÓN TOLNAHUAC</th>
-                          <td><?=$lenguaTotales56['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">TLATELOLCO</th>
-                          <td><?=$lenguaTotales57['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">CALPULTITLAN</th>
-                          <td><?=$lenguaTotales58['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">CUAUHTEPEC</th>
-                          <td><?=$lenguaTotales59['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">MAGDALENA DE LAS SALINAS</th>
-                          <td><?=$lenguaTotales60['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN BARTOLO ATEPEHUACAN</th>
-                          <td><?=$lenguaTotales61['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN PEDRO ZACATENCO</th>
-                          <td><?=$lenguaTotales62['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA ISABEL TOLA</th>
-                          <td><?=$lenguaTotales63['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTIAGO ATEPETLAC</th>
-                          <td><?=$lenguaTotales64['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTIAGO ATZACOALCO</th>
-                          <td><?=$lenguaTotales65['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA ANITA ZACATLALMANCO </th>
-                          <td><?=$lenguaTotales66['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">ACULCO</th>
-                          <td><?=$lenguaTotales67['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">CULHUACAN</th>
-                          <td><?=$lenguaTotales68['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">LA MAGDALENA ATLAZOLPA</th>
-                          <td><?=$lenguaTotales69['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">LOS REYES CULHUACAN</th>
-                          <td><?=$lenguaTotales70['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">MEXICALTZINGO</th>
-                          <td><?=$lenguaTotales71['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN ANDRÉS TETEPILCO</th>
-                          <td><?=$lenguaTotales72['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN ANDRÉS TOMATLAN</th>
-                          <td><?=$lenguaTotales73['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN JUANICO NEXTIPAC</th>
-                          <td><?=$lenguaTotales74['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LORENZO TEZONCO</th>
-                          <td><?=$lenguaTotales75['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA CRUZ MEYEHUALCO</th>
-                          <td><?=$lenguaTotales76['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA MARÍA AZTAHUACAN</th>
-                          <td><?=$lenguaTotales77['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA MARÍA TOMATLAN</th>
-                          <td><?=$lenguaTotales78['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA MARTHA ACATITLA</th>
-                          <td><?=$lenguaTotales79['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">MAGDALENA CONTRERAS ATLICTIC</th>
-                          <td><?=$lenguaTotales80['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN BERNABÉ OCOTEPEC</th>
-                          <td><?=$lenguaTotales81['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN JERÓNIMO ACULCO-LIDICE</th>
-                          <td><?=$lenguaTotales82['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN NICOLÁS TOTOLAPAN</th>
-                          <td><?=$lenguaTotales83['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">POPOTLA</th>
-                          <td><?=$lenguaTotales84['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN DIEGO OCOYOACAC</th>
-                          <td><?=$lenguaTotales85['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LORENZO TLALTENANGO</th>
-                          <td><?=$lenguaTotales86['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">TACUBA</th>
-                          <td><?=$lenguaTotales87['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">TACUBAYA</th>
-                          <td><?=$lenguaTotales88['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN AGUSTÍN OHTENCO</th>
-                          <td><?=$lenguaTotales89['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN ANTONIO TECOMITL</th>
-                          <td><?=$lenguaTotales90['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN BARTOLOMÉ XICOMULCO</th>
-                          <td><?=$lenguaTotales91['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN FRANCISCO TECOXPA</th>
-                          <td><?=$lenguaTotales92['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN JERÓNIMO MIACATLAN</th>
-                          <td><?=$lenguaTotales93['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN JUAN TEPENAHUAC</th>
-                          <td><?=$lenguaTotales94['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LORENZO TLACOYUCAN</th>
-                          <td><?=$lenguaTotales95['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN PABLO OZTOTEPEC</th>
-                          <td><?=$lenguaTotales96['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN PEDRO ATOCPAN</th>
-                          <td><?=$lenguaTotales97['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN SALVADOR CUAUHTENCO</th>
-                          <td><?=$lenguaTotales98['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA ANA TLACOTENCO</th>
-                          <td><?=$lenguaTotales99['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN ANDRÉS MIXQUIC</th>
-                          <td><?=$lenguaTotales100['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN FRANCISCO TLALTENCO</th>
-                          <td><?=$lenguaTotales101['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN JUAN IXTAYOPAN</th>
-                          <td><?=$lenguaTotales102['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN NICOLÁS TETELCO</th>
-                          <td><?=$lenguaTotales103['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN PEDRO TLAHUAC</th>
-                          <td><?=$lenguaTotales104['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA CATARINA YECAHUIZOTL</th>
-                          <td><?=$lenguaTotales105['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTIAGO ZAPOTITLÁN</th>
-                          <td><?=$lenguaTotales106['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">CHIMALCOYOC (LA ASUNCIÓN)</th>
-                          <td><?=$lenguaTotales107['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">MAGDALENA PETLACALCO</th>
-                          <td><?=$lenguaTotales108['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">PARRES EL GUARDA</th>
-                          <td><?=$lenguaTotales109['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN ANDRÉS TOTOLTEPEC</th>
-                          <td><?=$lenguaTotales110['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LORENZO HUIPULCO</th>
-                          <td><?=$lenguaTotales111['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN MIGUEL AJUSCO</th>
-                          <td><?=$lenguaTotales112['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN MIGUEL TOPILEJO</th>
-                          <td><?=$lenguaTotales113['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN MIGUEL XICALCO</th>
-                          <td><?=$lenguaTotales114['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN PEDRO MÁRTIR</th>
-                          <td><?=$lenguaTotales115['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA URSULA XITLA</th>
-                          <td><?=$lenguaTotales116['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTO TOMÁS AJUSCO</th>
-                          <td><?=$lenguaTotales117['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">EL PEÑÓN DE LOS BAÑOS</th>
-                          <td><?=$lenguaTotales118['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">MAGDALENA MIXHIUCA</th>
-                          <td><?=$lenguaTotales119['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN ANDRÉS AHUAYUCAN</th>
-                          <td><?=$lenguaTotales120['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN FRANCISCO TLALNEPANTLA</th>
-                          <td><?=$lenguaTotales121['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN GREGORIO ATLAPULCO</th>
-                          <td><?=$lenguaTotales122['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LORENZO ATEMOAYA</th>
-                          <td><?=$lenguaTotales123['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LUCAS XOCHIMANCA</th>
-                          <td><?=$lenguaTotales124['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LUIS TLAXIALTEMALCO</th>
-                          <td><?=$lenguaTotales125['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN MATEO XALPA</th>
-                          <td><?=$lenguaTotales126['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA CECILIA TEPETLAPA</th>
-                          <td><?=$lenguaTotales127['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA CRUZ ACALPIXCA</th>
-                          <td><?=$lenguaTotales130['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA CRUZ XOCHITEPEC</th>
-                          <td><?=$lenguaTotales131['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA MARÍA NATIVITAS</th>
-                          <td><?=$lenguaTotales132['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA MARÍA TEPEPAN</th>
-                          <td><?=$lenguaTotales133['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTIAGO TEPALCATLALPAN</th>
-                          <td><?=$lenguaTotales134['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTIAGO TULYEHUALCO</th>
-                          <td><?=$lenguaTotales135['userPorPueblo']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">NINGUNO</th>
-                          <td><?=$lenguaTotales0['userPorPueblo']?></td>
-                        </tr>
-                        
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-info bg-light o-hidden h-100">
-                <div class="card-body">
-                  <div class="card-body-icon">
-                  <i class="fas fa-transgender-alt"></i>
-                  </div>
-                  
-                  <div class="mr-5"><b>Usuarios totales por Lengua indigena mujeres<span class="float-right"></span></b></div>
-                </div>
-                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPueblosMujeres">
-                  <span class="float-left">Ver detalle</span>
-                  <span class="float-right">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                </a>
-                <div class="collapse" id="collapsePorPueblosMujeres">
-                  <div class="card card-body">
-                    <table class="table table-striped ">
-                      <tbody class="bg-light">
-                      <tr>
-                          <th scope="row">AXOTLA</th>
                           <td><?=$lenguaTotales1['userPorLengua']?></td>
                         </tr>
                         <tr>
@@ -9974,6 +8739,321 @@
                           <th scope="row">NINGUNO</th>
                           <td><?=$lenguaTotales0['userPorLengua']?></td>
                         </tr>
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-info bg-light o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                  <i class="fas fa-transgender-alt"></i>
+                  </div>
+                  
+                  <div class="mr-5"><b>Usuarios totales por Lengua indigena mujeres<span class="float-right"></span></b></div>
+                </div>
+                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPueblosMujeres">
+                  <span class="float-left">Ver detalle</span>
+                  <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span>
+                </a>
+                <div class="collapse" id="collapsePorPueblosMujeres">
+                  <div class="card card-body">
+                    <table class="table table-striped ">
+                      <tbody class="bg-light">
+                      <tr>
+                          <th scope="row">AKATEKO</th>
+                          <td><?=$lenguaTotalesMujeres1['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AMUZGO</th>
+                          <td><?=$lenguaTotalesMujeres2['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AWAKATEKO</th>
+                          <td><?=$lenguaTotalesMujeres3['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AYAPANECO</th>
+                          <td><?=$lenguaTotalesMujeres4['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">COCHIMÍE</th>
+                          <td><?=$lenguaTotalesMujeres5['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CORA</th>
+                          <td><?=$lenguaTotalesMujeres6['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CUCAPÁ</th>
+                          <td><?=$lenguaTotalesMujeres7['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CUICATECO</th>
+                          <td><?=$lenguaTotalesMujeres8['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHATINO</th>
+                          <td><?=$lenguaTotalesMujeres9['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHICHIMECA</th>
+                          <td><?=$lenguaTotalesMujeres10['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHINANTECO</th>
+                          <td><?=$lenguaTotalesMujeres11['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CH`OL</th>
+                          <td><?=$lenguaTotalesMujeres12['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHOCHOLTECO</th>
+                          <td><?=$lenguaTotalesMujeres13['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHONTALES DE OAXACA</th>
+                          <td><?=$lenguaTotalesMujeres14['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHONTAL DE TABASCO</th>
+                          <td><?=$lenguaTotalesMujeres15['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHUJ</th>
+                          <td><?=$lenguaTotalesMujeres16['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">GUARIJÍO</th>
+                          <td><?=$lenguaTotalesMujeres17['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">HUASTECO</th>
+                          <td><?=$lenguaTotalesMujeres18['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">HUAVE</th>
+                          <td><?=$lenguaTotalesMujeres19['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">HUICHOL</th>
+                          <td><?=$lenguaTotalesMujeres20['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">IXCATECO</th>
+                          <td><?=$lenguaTotalesMujeres21['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">IXIL</th>
+                          <td><?=$lenguaTotalesMujeres22['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">JAKALTEKO</th>
+                          <td><?=$lenguaTotalesMujeres23['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KAQCHIKEL</th>
+                          <td><?=$lenguaTotalesMujeres24['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">K`ICHE</th>
+                          <td><?=$lenguaTotalesMujeres25['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KU`AHLE</th>
+                          <td><?=$lenguaTotalesMujeres26['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KILIWA</th>
+                          <td><?=$lenguaTotalesMujeres27['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KIKAPÚE</th>
+                          <td><?=$lenguaTotalesMujeres28['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KUMIAI</th>
+                          <td><?=$lenguaTotalesMujeres29['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">LACANDÓN</th>
+                          <td><?=$lenguaTotalesMujeres30['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAME</th>
+                          <td><?=$lenguaTotalesMujeres31['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MATLATZINCA</th>
+                          <td><?=$lenguaTotalesMujeres32['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAYA</th>
+                          <td><?=$lenguaTotalesMujeres33['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAYO</th>
+                          <td><?=$lenguaTotalesMujeres34['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAZAHUA</th>
+                          <td><?=$lenguaTotalesMujeres35['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAZATECO</th>
+                          <td><?=$lenguaTotalesMujeres36['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MIXE</th>
+                          <td><?=$lenguaTotalesMujeres37['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MIXTECO</th>
+                          <td><?=$lenguaTotalesMujeres38['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MOCHÓ</th>
+                          <td><?=$lenguaTotalesMujeres39['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">NÁHUATL</th>
+                          <td><?=$lenguaTotalesMujeres40['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">OLUTECO</th>
+                          <td><?=$lenguaTotalesMujeres41['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">OTOMÍ</th>
+                          <td><?=$lenguaTotalesMujeres42['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PAME</th>
+                          <td><?=$lenguaTotalesMujeres43['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PAIPAI</th>
+                          <td><?=$lenguaTotalesMujeres44['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PÁPAGO</th>
+                          <td><?=$lenguaTotalesMujeres45['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PIMA</th>
+                          <td><?=$lenguaTotalesMujeres46['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">POPOLOCA</th>
+                          <td><?=$lenguaTotalesMujeres47['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">POPOLOCA DE LA SIERRA</th>
+                          <td><?=$lenguaTotalesMujeres48['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">P`URHÉPECHA</th>
+                          <td><?=$lenguaTotalesMujeres49['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Q`ANJOB`AL</th>
+                          <td><?=$lenguaTotalesMujeres50['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Q`EQCHI`</th>
+                          <td><?=$lenguaTotalesMujeres51['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">QATO`K</th>
+                          <td><?=$lenguaTotalesMujeres52['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAYULTECO</th>
+                          <td><?=$lenguaTotalesMujeres53['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SERI</th>
+                          <td><?=$lenguaTotalesMujeres54['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TACUATE</th>
+                          <td><?=$lenguaTotalesMujeres55['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TARAHUMARA</th>
+                          <td><?=$lenguaTotalesMujeres56['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEKO</th>
+                          <td><?=$lenguaTotalesMujeres57['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEPEHUA</th>
+                          <td><?=$lenguaTotalesMujeres58['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEPEHUANO DEL NORTE</th>
+                          <td><?=$lenguaTotalesMujeres59['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEPEHUANO DEL SUR</th>
+                          <td><?=$lenguaTotalesMujeres60['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEXISTEPEQUEÑO</th>
+                          <td><?=$lenguaTotalesMujeres61['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TLAHUICA</th>
+                          <td><?=$lenguaTotalesMujeres62['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TLAPANECO</th>
+                          <td><?=$lenguaTotalesMujeres63['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TOJOLABAL</th>
+                          <td><?=$lenguaTotalesMujeres64['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TOTONACO</th>
+                          <td><?=$lenguaTotalesMujeres65['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TRIQUI</th>
+                          <td><?=$lenguaTotalesMujeres66['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TSELTAL</th>
+                          <td><?=$lenguaTotalesMujeres67['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TSOTSIL</th>
+                          <td><?=$lenguaTotalesMujeres68['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">YAQUI</th>
+                          <td><?=$lenguaTotalesMujeres69['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">ZAPOTECO</th>
+                          <td><?=$lenguaTotalesMujeres70['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">ZOQUE</th>
+                          <td><?=$lenguaTotalesMujeres71['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">NINGUNO</th>
+                          <td><?=$lenguaTotalesMujeres0['userPorLengua']?></td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -10001,540 +9081,292 @@
                     <table class="table table-striped ">
                       <tbody class="bg-light">
                       <tr>
-                          <th scope="row">AXOTLA</th>
-                          <td><?=$totalesPueblo1['userPorLengua']?></td>
+                          <th scope="row">AKATEKO</th>
+                          <td><?=$lenguaTotalesHombres1['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHIMALISTAC</th>
-                          <td><?=$totalesPueblo2['userPorLengua']?></td>
+                          <th scope="row">AMUZGO</th>
+                          <td><?=$lenguaTotalesHombres2['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN BARTOLO AMEYALCO</th>
-                          <td><?=$totalesPueblo3['userPorLengua']?></td>
+                          <th scope="row">AWAKATEKO</th>
+                          <td><?=$lenguaTotalesHombres3['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA FÉ DE VASCO DE QUIROGA</th>
-                          <td><?=$totalesPueblo4['userPorLengua']?></td>
+                          <th scope="row">AYAPANECO</th>
+                          <td><?=$lenguaTotalesHombres4['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA LUCÍA XANTEPEC</th>
-                          <td><?=$totalesPueblo5['userPorLengua']?></td>
+                          <th scope="row">COCHIMÍE</th>
+                          <td><?=$lenguaTotalesHombres5['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA MARÍA NONOALCO</th>
-                          <td><?=$totalesPueblo6['userPorLengua']?></td>
+                          <th scope="row">CORA</th>
+                          <td><?=$lenguaTotalesHombres6['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA ROSA XOCHIAC</th>
-                          <td><?=$totalesPueblo7['userPorLengua']?></td>
+                          <th scope="row">CUCAPÁ</th>
+                          <td><?=$lenguaTotalesHombres7['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TETELPAN</th>
-                          <td><?=$totalesPueblo8['userPorLengua']?></td>
+                          <th scope="row">CUICATECO</th>
+                          <td><?=$lenguaTotalesHombres8['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TIZAPAN</th>
-                          <td><?=$totalesPueblo9['userPorLengua']?></td>
+                          <th scope="row">CHATINO</th>
+                          <td><?=$lenguaTotalesHombres9['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TLACOPAC</th>
-                          <td><?=$totalesPueblo10['userPorLengua']?></td>
+                          <th scope="row">CHICHIMECA</th>
+                          <td><?=$lenguaTotalesHombres10['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">COLTONGO</th>
-                          <td><?=$totalesPueblo11['userPorLengua']?></td>
+                          <th scope="row">CHINANTECO</th>
+                          <td><?=$lenguaTotalesHombres11['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN ANDRES DE LAS SALINAS</th>
-                          <td><?=$totalesPueblo12['userPorLengua']?></td>
+                          <th scope="row">CH`OL</th>
+                          <td><?=$lenguaTotalesHombres12['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN ANDRÉS TETLANMAN</th>
-                          <td><?=$totalesPueblo13['userPorLengua']?></td>
+                          <th scope="row">CHOCHOLTECO</th>
+                          <td><?=$lenguaTotalesHombres13['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN BARTOLO CAHUALTONGO</th>
-                          <td><?=$totalesPueblo14['userPorLengua']?></td>
+                          <th scope="row">CHONTALES DE OAXACA</th>
+                          <td><?=$lenguaTotalesHombres14['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN FRANCISCO TETECALA</th>
-                          <td><?=$totalesPueblo15['userPorLengua']?></td>
+                          <th scope="row">CHONTAL DE TABASCO</th>
+                          <td><?=$lenguaTotalesHombres15['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN JUAN TLILHUACA</th>
-                          <td><?=$totalesPueblo16['userPorLengua']?></td>
+                          <th scope="row">CHUJ</th>
+                          <td><?=$lenguaTotalesHombres16['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN LUCAS ATENCO</th>
-                          <td><?=$totalesPueblo17['userPorLengua']?></td>
+                          <th scope="row">GUARIJÍO</th>
+                          <td><?=$lenguaTotalesHombres17['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN MARTIN XOCHINÁHUAC</th>
-                          <td><?=$totalesPueblo18['userPorLengua']?></td>
+                          <th scope="row">HUASTECO</th>
+                          <td><?=$lenguaTotalesHombres18['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN MATEO XALTELOLCO</th>
-                          <td><?=$totalesPueblo19['userPorLengua']?></td>
+                          <th scope="row">HUAVE</th>
+                          <td><?=$lenguaTotalesHombres19['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN MIGUEL AMANTLA</th>
-                          <td><?=$totalesPueblo20['userPorLengua']?></td>
+                          <th scope="row">HUICHOL</th>
+                          <td><?=$lenguaTotalesHombres20['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN PEDRO DE LAS SALINAS CALHUACATZINGO</th>
-                          <td><?=$totalesPueblo21['userPorLengua']?></td>
+                          <th scope="row">IXCATECO</th>
+                          <td><?=$lenguaTotalesHombres21['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN PEDRO XALPA</th>
-                          <td><?=$totalesPueblo22['userPorLengua']?></td>
+                          <th scope="row">IXIL</th>
+                          <td><?=$lenguaTotalesHombres22['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN SALVADOR NEXTENGO</th>
-                          <td><?=$totalesPueblo23['userPorLengua']?></td>
+                          <th scope="row">JAKALTEKO</th>
+                          <td><?=$lenguaTotalesHombres23['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN SALVADOR XOCHIMANCA</th>
-                          <td><?=$totalesPueblo24['userPorLengua']?></td>
+                          <th scope="row">KAQCHIKEL</th>
+                          <td><?=$lenguaTotalesHombres24['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN SEBASTIÁN ATENCO</th>
-                          <td><?=$totalesPueblo25['userPorLengua']?></td>
+                          <th scope="row">K`ICHE</th>
+                          <td><?=$lenguaTotalesHombres25['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN SIMÓN POCHTLAN</th>
-                          <td><?=$totalesPueblo26['userPorLengua']?></td>
+                          <th scope="row">KU`AHLE</th>
+                          <td><?=$lenguaTotalesHombres26['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA APOLONIA TEZCOLCO</th>
-                          <td><?=$totalesPueblo27['userPorLengua']?></td>
+                          <th scope="row">KILIWA</th>
+                          <td><?=$lenguaTotalesHombres27['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA BÁRBARA TETLANMAN, YOPICO</th>
-                          <td><?=$totalesPueblo28['userPorLengua']?></td>
+                          <th scope="row">KIKAPÚE</th>
+                          <td><?=$lenguaTotalesHombres28['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA CATARINA ATZACUALCO</th>
-                          <td><?=$totalesPueblo29['userPorLengua']?></td>
+                          <th scope="row">KUMIAI</th>
+                          <td><?=$lenguaTotalesHombres29['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA LUCIA TOMATLAN</th>
-                          <td><?=$totalesPueblo30['userPorLengua']?></td>
+                          <th scope="row">LACANDÓN</th>
+                          <td><?=$lenguaTotalesHombres30['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA MARÍA MALINALCO</th>
-                          <td><?=$totalesPueblo31['userPorLengua']?></td>
+                          <th scope="row">MAME</th>
+                          <td><?=$lenguaTotalesHombres31['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTIAGO AHUIZOTLA</th>
-                          <td><?=$totalesPueblo32['userPorLengua']?></td>
+                          <th scope="row">MATLATZINCA</th>
+                          <td><?=$lenguaTotalesHombres32['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTO DOMINGO HUEXOTITLÁN</th>
-                          <td><?=$totalesPueblo33['userPorLengua']?></td>
+                          <th scope="row">MAYA</th>
+                          <td><?=$lenguaTotalesHombres33['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTO TOMÁS TLAMATZINGO</th>
-                          <td><?=$totalesPueblo34['userPorLengua']?></td>
+                          <th scope="row">MAYO</th>
+                          <td><?=$lenguaTotalesHombres34['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">ACTIPAN</th>
-                          <td><?=$totalesPueblo35['userPorLengua']?></td>
+                          <th scope="row">MAZAHUA</th>
+                          <td><?=$lenguaTotalesHombres35['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">LA PIEDAD</th>
-                          <td><?=$totalesPueblo36['userPorLengua']?></td>
+                          <th scope="row">MAZATECO</th>
+                          <td><?=$lenguaTotalesHombres36['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MIXCOAC</th>
-                          <td><?=$totalesPueblo37['userPorLengua']?></td>
+                          <th scope="row">MIXE</th>
+                          <td><?=$lenguaTotalesHombres37['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN JUAN MALINALTONGO</th>
-                          <td><?=$totalesPueblo38['userPorLengua']?></td>
+                          <th scope="row">MIXTECO</th>
+                          <td><?=$lenguaTotalesHombres38['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN SEBASTIÁN XOCO</th>
-                          <td><?=$totalesPueblo39['userPorLengua']?></td>
+                          <th scope="row">MOCHÓ</th>
+                          <td><?=$lenguaTotalesHombres39['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN SIMÓN TICUMAC</th>
-                          <td><?=$totalesPueblo40['userPorLengua']?></td>
+                          <th scope="row">NÁHUATL</th>
+                          <td><?=$lenguaTotalesHombres40['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA CRUZ ATOYAC</th>
-                          <td><?=$totalesPueblo41['userPorLengua']?></td>
+                          <th scope="row">OLUTECO</th>
+                          <td><?=$lenguaTotalesHombres41['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA CRUZ TLACOQUEMECATL</th>
-                          <td><?=$totalesPueblo42['userPorLengua']?></td>
+                          <th scope="row">OTOMÍ</th>
+                          <td><?=$lenguaTotalesHombres42['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA MARÍA NATIVITAS TEPETLALTZINCO</th>
-                          <td><?=$totalesPueblo43['userPorLengua']?></td>
+                          <th scope="row">PAME</th>
+                          <td><?=$lenguaTotalesHombres43['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHURUBUSCO</th>
-                          <td><?=$totalesPueblo44['userPorLengua']?></td>
+                          <th scope="row">PAIPAI</th>
+                          <td><?=$lenguaTotalesHombres44['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">COPILCO</th>
-                          <td><?=$totalesPueblo45['userPorLengua']?></td>
+                          <th scope="row">PÁPAGO</th>
+                          <td><?=$lenguaTotalesHombres45['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">LA CANDELARIA</th>
-                          <td><?=$totalesPueblo46['userPorLengua']?></td>
+                          <th scope="row">PIMA</th>
+                          <td><?=$lenguaTotalesHombres46['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">LOS REYES HUEYTILAC</th>
-                          <td><?=$totalesPueblo47['userPorLengua']?></td>
+                          <th scope="row">POPOLOCA</th>
+                          <td><?=$lenguaTotalesHombres47['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PUEBLO DE SAN FRANCISCO CULHUACÁN</th>
-                          <td><?=$totalesPueblo48['userPorLengua']?></td>
+                          <th scope="row">POPOLOCA DE LA SIERRA</th>
+                          <td><?=$lenguaTotalesHombres48['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN PABLO TEPETLAPA</th>
-                          <td><?=$totalesPueblo49['userPorLengua']?></td>
+                          <th scope="row">P`URHÉPECHA</th>
+                          <td><?=$lenguaTotalesHombres49['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA ÚRSULA COAPA</th>
-                          <td><?=$totalesPueblo50['userPorLengua']?></td>
+                          <th scope="row">Q`ANJOB`AL</th>
+                          <td><?=$lenguaTotalesHombres50['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CONTADERO</th>
-                          <td><?=$totalesPueblo51['userPorLengua']?></td>
+                          <th scope="row">Q`EQCHI`</th>
+                          <td><?=$lenguaTotalesHombres51['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN LORENZO ACOPILCO</th>
-                          <td><?=$totalesPueblo52['userPorLengua']?></td>
+                          <th scope="row">QATO`K</th>
+                          <td><?=$lenguaTotalesHombres52['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN MATEO TLALTENANGO</th>
-                          <td><?=$totalesPueblo53['userPorLengua']?></td>
+                          <th scope="row">SAYULTECO</th>
+                          <td><?=$lenguaTotalesHombres53['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN PABLO CHIMALPA</th>
-                          <td><?=$totalesPueblo54['userPorLengua']?></td>
+                          <th scope="row">SERI</th>
+                          <td><?=$lenguaTotalesHombres54['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN PEDRO CUAJIMALPA</th>
-                          <td><?=$totalesPueblo55['userPorLengua']?></td>
+                          <th scope="row">TACUATE</th>
+                          <td><?=$lenguaTotalesHombres55['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN SIMÓN TOLNAHUAC</th>
-                          <td><?=$totalesPueblo56['userPorLengua']?></td>
+                          <th scope="row">TARAHUMARA</th>
+                          <td><?=$lenguaTotalesHombres56['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TLATELOLCO</th>
-                          <td><?=$totalesPueblo57['userPorLengua']?></td>
+                          <th scope="row">TEKO</th>
+                          <td><?=$lenguaTotalesHombres57['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CALPULTITLAN</th>
-                          <td><?=$totalesPueblo58['userPorLengua']?></td>
+                          <th scope="row">TEPEHUA</th>
+                          <td><?=$lenguaTotalesHombres58['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CUAUHTEPEC</th>
-                          <td><?=$totalesPueblo59['userPorLengua']?></td>
+                          <th scope="row">TEPEHUANO DEL NORTE</th>
+                          <td><?=$lenguaTotalesHombres59['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAGDALENA DE LAS SALINAS</th>
-                          <td><?=$totalesPueblo60['userPorLengua']?></td>
+                          <th scope="row">TEPEHUANO DEL SUR</th>
+                          <td><?=$lenguaTotalesHombres60['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN BARTOLO ATEPEHUACAN</th>
-                          <td><?=$totalesPueblo61['userPorLengua']?></td>
+                          <th scope="row">TEXISTEPEQUEÑO</th>
+                          <td><?=$lenguaTotalesHombres61['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAN PEDRO ZACATENCO</th>
-                          <td><?=$totalesPueblo62['userPorLengua']?></td>
+                          <th scope="row">TLAHUICA</th>
+                          <td><?=$lenguaTotalesHombres62['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA ISABEL TOLA</th>
-                          <td><?=$totalesPueblo63['userPorLengua']?></td>
+                          <th scope="row">TLAPANECO</th>
+                          <td><?=$lenguaTotalesHombres63['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTIAGO ATEPETLAC</th>
-                          <td><?=$totalesPueblo64['userPorLengua']?></td>
+                          <th scope="row">TOJOLABAL</th>
+                          <td><?=$lenguaTotalesHombres64['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTIAGO ATZACOALCO</th>
-                          <td><?=$totalesPueblo65['userPorLengua']?></td>
+                          <th scope="row">TOTONACO</th>
+                          <td><?=$lenguaTotalesHombres65['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SANTA ANITA ZACATLALMANCO </th>
-                          <td><?=$totalesPueblo66['userPorLengua']?></td>
+                          <th scope="row">TRIQUI</th>
+                          <td><?=$lenguaTotalesHombres66['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">ACULCO</th>
-                          <td><?=$totalesPueblo67['userPorLengua']?></td>
+                          <th scope="row">TSELTAL</th>
+                          <td><?=$lenguaTotalesHombres67['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CULHUACAN</th>
-                          <td><?=$totalesPueblo68['userPorLengua']?></td>
+                          <th scope="row">TSOTSIL</th>
+                          <td><?=$lenguaTotalesHombres68['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">LA MAGDALENA ATLAZOLPA</th>
-                          <td><?=$totalesPueblo69['userPorLengua']?></td>
+                          <th scope="row">YAQUI</th>
+                          <td><?=$lenguaTotalesHombres69['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">LOS REYES CULHUACAN</th>
-                          <td><?=$totalesPueblo70['userPorLengua']?></td>
+                          <th scope="row">ZAPOTECO</th>
+                          <td><?=$lenguaTotalesHombres70['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MEXICALTZINGO</th>
-                          <td><?=$totalesPueblo71['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN ANDRÉS TETEPILCO</th>
-                          <td><?=$totalesPueblo72['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN ANDRÉS TOMATLAN</th>
-                          <td><?=$totalesPueblo73['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN JUANICO NEXTIPAC</th>
-                          <td><?=$totalesPueblo74['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LORENZO TEZONCO</th>
-                          <td><?=$totalesPueblo75['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA CRUZ MEYEHUALCO</th>
-                          <td><?=$totalesPueblo76['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA MARÍA AZTAHUACAN</th>
-                          <td><?=$totalesPueblo77['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA MARÍA TOMATLAN</th>
-                          <td><?=$totalesPueblo78['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA MARTHA ACATITLA</th>
-                          <td><?=$totalesPueblo79['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">MAGDALENA CONTRERAS ATLICTIC</th>
-                          <td><?=$totalesPueblo80['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN BERNABÉ OCOTEPEC</th>
-                          <td><?=$totalesPueblo81['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN JERÓNIMO ACULCO-LIDICE</th>
-                          <td><?=$totalesPueblo82['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN NICOLÁS TOTOLAPAN</th>
-                          <td><?=$totalesPueblo83['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">POPOTLA</th>
-                          <td><?=$totalesPueblo84['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN DIEGO OCOYOACAC</th>
-                          <td><?=$totalesPueblo85['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LORENZO TLALTENANGO</th>
-                          <td><?=$totalesPueblo86['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">TACUBA</th>
-                          <td><?=$totalesPueblo87['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">TACUBAYA</th>
-                          <td><?=$totalesPueblo88['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN AGUSTÍN OHTENCO</th>
-                          <td><?=$totalesPueblo89['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN ANTONIO TECOMITL</th>
-                          <td><?=$totalesPueblo90['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN BARTOLOMÉ XICOMULCO</th>
-                          <td><?=$totalesPueblo91['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN FRANCISCO TECOXPA</th>
-                          <td><?=$totalesPueblo92['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN JERÓNIMO MIACATLAN</th>
-                          <td><?=$totalesPueblo93['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN JUAN TEPENAHUAC</th>
-                          <td><?=$totalesPueblo94['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LORENZO TLACOYUCAN</th>
-                          <td><?=$totalesPueblo95['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN PABLO OZTOTEPEC</th>
-                          <td><?=$totalesPueblo96['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN PEDRO ATOCPAN</th>
-                          <td><?=$totalesPueblo97['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN SALVADOR CUAUHTENCO</th>
-                          <td><?=$totalesPueblo98['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA ANA TLACOTENCO</th>
-                          <td><?=$totalesPueblo99['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN ANDRÉS MIXQUIC</th>
-                          <td><?=$totalesPueblo100['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN FRANCISCO TLALTENCO</th>
-                          <td><?=$totalesPueblo101['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN JUAN IXTAYOPAN</th>
-                          <td><?=$totalesPueblo102['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN NICOLÁS TETELCO</th>
-                          <td><?=$totalesPueblo103['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN PEDRO TLAHUAC</th>
-                          <td><?=$totalesPueblo104['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA CATARINA YECAHUIZOTL</th>
-                          <td><?=$totalesPueblo105['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTIAGO ZAPOTITLÁN</th>
-                          <td><?=$totalesPueblo106['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">CHIMALCOYOC (LA ASUNCIÓN)</th>
-                          <td><?=$totalesPueblo107['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">MAGDALENA PETLACALCO</th>
-                          <td><?=$totalesPueblo108['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">PARRES EL GUARDA</th>
-                          <td><?=$totalesPueblo109['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN ANDRÉS TOTOLTEPEC</th>
-                          <td><?=$totalesPueblo110['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LORENZO HUIPULCO</th>
-                          <td><?=$totalesPueblo111['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN MIGUEL AJUSCO</th>
-                          <td><?=$totalesPueblo112['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN MIGUEL TOPILEJO</th>
-                          <td><?=$totalesPueblo113['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN MIGUEL XICALCO</th>
-                          <td><?=$totalesPueblo114['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN PEDRO MÁRTIR</th>
-                          <td><?=$totalesPueblo115['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA URSULA XITLA</th>
-                          <td><?=$totalesPueblo116['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTO TOMÁS AJUSCO</th>
-                          <td><?=$totalesPueblo117['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">EL PEÑÓN DE LOS BAÑOS</th>
-                          <td><?=$totalesPueblo118['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">MAGDALENA MIXHIUCA</th>
-                          <td><?=$totalesPueblo119['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN ANDRÉS AHUAYUCAN</th>
-                          <td><?=$totalesPueblo120['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN FRANCISCO TLALNEPANTLA</th>
-                          <td><?=$totalesPueblo121['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN GREGORIO ATLAPULCO</th>
-                          <td><?=$totalesPueblo122['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LORENZO ATEMOAYA</th>
-                          <td><?=$totalesPueblo123['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LUCAS XOCHIMANCA</th>
-                          <td><?=$totalesPueblo124['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN LUIS TLAXIALTEMALCO</th>
-                          <td><?=$totalesPueblo125['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SAN MATEO XALPA</th>
-                          <td><?=$totalesPueblo126['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA CECILIA TEPETLAPA</th>
-                          <td><?=$totalesPueblo127['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA CRUZ ACALPIXCA</th>
-                          <td><?=$totalesPueblo130['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA CRUZ XOCHITEPEC</th>
-                          <td><?=$totalesPueblo131['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA MARÍA NATIVITAS</th>
-                          <td><?=$totalesPueblo132['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTA MARÍA TEPEPAN</th>
-                          <td><?=$totalesPueblo133['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTIAGO TEPALCATLALPAN</th>
-                          <td><?=$totalesPueblo134['userPorLengua']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">SANTIAGO TULYEHUALCO</th>
-                          <td><?=$totalesPueblo135['userPorLengua']?></td>
+                          <th scope="row">ZOQUE</th>
+                          <td><?=$lenguaTotalesHombres71['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">NINGUNO</th>
-                          <td><?=$totalesPueblo0['userPorLengua']?></td>
+                          <td><?=$lenguaTotalesHombres0['userPorLengua']?></td>
                         </tr>
                       </tbody>
                     </table>
