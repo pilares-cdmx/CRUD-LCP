@@ -1640,6 +1640,368 @@
     $totalesGradoEstudios26 = mysqli_query($con, $sql);
     //var_dump($totalesGradoEstudios26);
     $gradoEstudiosTotales26= mysqli_fetch_array($totalesGradoEstudios26);
+  /**
+     * uSUARIOS INSCRITOS POR LENGUA INDIGENA
+     */
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '1'";
+    $totalesLengua1 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua1);
+    $lenguaTotales1= mysqli_fetch_array($totalesLengua1);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '2'";
+    $totalesLengua2 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua2);
+    $lenguaTotales2= mysqli_fetch_array($totalesLengua2);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '3'";
+    $totalesLengua3 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua3);
+    $lenguaTotales3= mysqli_fetch_array($totalesLengua3);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '4'";
+    $totalesLengua4 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua4);
+    $lenguaTotales4= mysqli_fetch_array($totalesLengua4);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '5'";
+    $totalesLengua5 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua5);
+    $lenguaTotales5= mysqli_fetch_array($totalesLengua5);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '6'";
+    $totalesLengua6 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua6);
+    $lenguaTotales6= mysqli_fetch_array($totalesLengua6);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '7'";
+    $totalesLengua7 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua7);
+    $lenguaTotales7= mysqli_fetch_array($totalesLengua7);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '8'";
+    $totalesLengua8 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua8);
+    $lenguaTotales8= mysqli_fetch_array($totalesLengua8);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '9'";
+    $totalesLengua9 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua9);
+    $lenguaTotales9= mysqli_fetch_array($totalesLengua9);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '10'";
+    $totalesLengua10 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua10);
+    $lenguaTotales10= mysqli_fetch_array($totalesLengua10);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '11'";
+    $totalesLengua11 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua11);
+    $lenguaTotales11= mysqli_fetch_array($totalesLengua11);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '12'";
+    $totalesLengua12 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua12);
+    $lenguaTotales12= mysqli_fetch_array($totalesLengua12);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '13'";
+    $totalesLengua13 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua13);
+    $lenguaTotales13= mysqli_fetch_array($totalesLengua13);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '14'";
+    $totalesLengua14 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua14);
+    $lenguaTotales14= mysqli_fetch_array($totalesLengua14);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '15'";
+    $totalesLengua15 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua15);
+    $lenguaTotales15= mysqli_fetch_array($totalesLengua15);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '16'";
+    $totalesLengua16 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua16);
+    $lenguaTotales16= mysqli_fetch_array($totalesLengua16);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '17'";
+    $totalesLengua17 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua17);
+    $lenguaTotales17= mysqli_fetch_array($totalesLengua17);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '18'";
+    $totalesLengua18 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua18);
+    $lenguaTotales18= mysqli_fetch_array($totalesLengua18);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '19'";
+    $totalesLengua19 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua19);
+    $lenguaTotales19= mysqli_fetch_array($totalesLengua19);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '20'";
+    $totalesLengua20 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua20);
+    $lenguaTotales20= mysqli_fetch_array($totalesLengua20);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '21'";
+    $totalesLengua21 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua21);
+    $lenguaTotales21= mysqli_fetch_array($totalesLengua21);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '22'";
+    $totalesLengua22 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua22);
+    $lenguaTotales22= mysqli_fetch_array($totalesLengua22);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '23'";
+    $totalesLengua23 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua23);
+    $lenguaTotales23= mysqli_fetch_array($totalesLengua23);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '24'";
+    $totalesLengua24 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua24);
+    $lenguaTotales24= mysqli_fetch_array($totalesLengua24);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '25'";
+    $totalesLengua25 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua25);
+    $lenguaTotales25= mysqli_fetch_array($totalesLengua25);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '26'";
+    $totalesLengua26 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua26);
+    $lenguaTotales26= mysqli_fetch_array($totalesLengua26);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '27'";
+    $totalesLengua27 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua27);
+    $lenguaTotales27= mysqli_fetch_array($totalesLengua27);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '28'";
+    $totalesLengua28 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua28);
+    $lenguaTotales28= mysqli_fetch_array($totalesLengua28);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '29'";
+    $totalesLengua29 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua29);
+    $lenguaTotales29= mysqli_fetch_array($totalesLengua29);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '30'";
+    $totalesLengua30 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua30);
+    $lenguaTotales30= mysqli_fetch_array($totalesLengua30);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '31'";
+    $totalesLengua31 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua31);
+    $lenguaTotales31= mysqli_fetch_array($totalesLengua31);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '32'";
+    $totalesLengua32 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua32);
+    $lenguaTotales32= mysqli_fetch_array($totalesLengua32);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '33'";
+    $totalesLengua33 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua33);
+    $lenguaTotales33= mysqli_fetch_array($totalesLengua33);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '34'";
+    $totalesLengua34 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua34);
+    $lenguaTotales34= mysqli_fetch_array($totalesLengua34);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '35'";
+    $totalesLengua35 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua35);
+    $lenguaTotales35= mysqli_fetch_array($totalesLengua35);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '36'";
+    $totalesLengua36 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua36);
+    $lenguaTotales36= mysqli_fetch_array($totalesLengua36);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '37'";
+    $totalesLengua37 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua37);
+    $lenguaTotales37= mysqli_fetch_array($totalesLengua37);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '38'";
+    $totalesLengua38 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua38);
+    $lenguaTotales38= mysqli_fetch_array($totalesLengua38);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '39'";
+    $totalesLengua39 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua39);
+    $lenguaTotales39= mysqli_fetch_array($totalesLengua39);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '40'";
+    $totalesLengua40 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua40);
+    $lenguaTotales40= mysqli_fetch_array($totalesLengua40);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '41'";
+    $totalesLengua41 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua41);
+    $lenguaTotales41= mysqli_fetch_array($totalesLengua41);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '42'";
+    $totalesLengua42 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua42);
+    $lenguaTotales42= mysqli_fetch_array($totalesLengua42);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '43'";
+    $totalesLengua43 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua43);
+    $lenguaTotales43= mysqli_fetch_array($totalesLengua43);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '44'";
+    $totalesLengua44 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua44);
+    $lenguaTotales44= mysqli_fetch_array($totalesLengua44);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '45'";
+    $totalesLengua45 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua45);
+    $lenguaTotales45= mysqli_fetch_array($totalesLengua45);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '46'";
+    $totalesLengua46 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua46);
+    $lenguaTotales46= mysqli_fetch_array($totalesLengua46);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '47'";
+    $totalesLengua47 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua47);
+    $lenguaTotales47= mysqli_fetch_array($totalesLengua47);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '48'";
+    $totalesLengua48 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua48);
+    $lenguaTotales48= mysqli_fetch_array($totalesLengua48);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '49'";
+    $totalesLengua49 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua49);
+    $lenguaTotales49= mysqli_fetch_array($totalesLengua49);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '50'";
+    $totalesLengua50 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua50);
+    $lenguaTotales50= mysqli_fetch_array($totalesLengua50);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '51'";
+    $totalesLengua51 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua51);
+    $lenguaTotales51= mysqli_fetch_array($totalesLengua51);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '52'";
+    $totalesLengua52 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua52);
+    $lenguaTotales52= mysqli_fetch_array($totalesLengua52);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '53'";
+    $totalesLengua53 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua53);
+    $lenguaTotales53= mysqli_fetch_array($totalesLengua53);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '54'";
+    $totalesLengua54 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua54);
+    $lenguaTotales54= mysqli_fetch_array($totalesLengua54);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '55'";
+    $totalesLengua55 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua55);
+    $lenguaTotales55= mysqli_fetch_array($totalesLengua55);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '56'";
+    $totalesLengua56 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua56);
+    $lenguaTotales56= mysqli_fetch_array($totalesLengua56);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '57'";
+    $totalesLengua57 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua57);
+    $lenguaTotales57= mysqli_fetch_array($totalesLengua57);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '58'";
+    $totalesLengua58 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua58);
+    $lenguaTotales58= mysqli_fetch_array($totalesLengua58);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '59'";
+    $totalesLengua59 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua59);
+    $lenguaTotales59= mysqli_fetch_array($totalesLengua59);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '60'";
+    $totalesLengua60 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua60);
+    $lenguaTotales60= mysqli_fetch_array($totalesLengua60);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '61'";
+    $totalesLengua61 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua61);
+    $lenguaTotales61= mysqli_fetch_array($totalesLengua61);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '62'";
+    $totalesLengua62 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua62);
+    $lenguaTotales62= mysqli_fetch_array($totalesLengua62);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '63'";
+    $totalesLengua63 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua63);
+    $lenguaTotales63= mysqli_fetch_array($totalesLengua63);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '64'";
+    $totalesLengua64 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua64);
+    $lenguaTotales64= mysqli_fetch_array($totalesLengua64);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '65'";
+    $totalesLengua65 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua65);
+    $lenguaTotales65= mysqli_fetch_array($totalesLengua65);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '66'";
+    $totalesLengua66 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua66);
+    $lenguaTotales66= mysqli_fetch_array($totalesLengua66);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '67'";
+    $totalesLengua67 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua67);
+    $lenguaTotales67= mysqli_fetch_array($totalesLengua67);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '68'";
+    $totalesLengua68 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua68);
+    $lenguaTotales68= mysqli_fetch_array($totalesLengua68);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '69'";
+    $totalesLengua69 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua69);
+    $lenguaTotales69= mysqli_fetch_array($totalesLengua69);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '70'";
+    $totalesLengua70 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua70);
+    $lenguaTotales70= mysqli_fetch_array($totalesLengua70);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '71'";
+    $totalesLengua71 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua71);
+    $lenguaTotales71= mysqli_fetch_array($totalesLengua71);
+
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '0'";
+    $totalesLengua0 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua0);
+    $lenguaTotales0= mysqli_fetch_array($totalesLengua0);
     /**
   * Usuarios totales por Grado de EStudios Mujeres
 */
@@ -5538,6 +5900,915 @@
                         <tr>
                           <th scope="row">NINGUNO</th>
                           <td><?=$grupoEtnicoTotales69['userPorGrupoEtnico']?></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-info bg-light o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                  <i class="fas fa-transgender-alt"></i>
+                  </div>
+                  
+                  <div class="mr-5"><b>Usuarios totales por Grupo Étnico mujeres<span class="float-right"></span></b></div>
+                </div>
+                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorGrupoetMujeres">
+                  <span class="float-left">Ver detalle</span>
+                  <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span>
+                </a>
+                <div class="collapse" id="collapsePorGrupoetMujeres">
+                  <div class="card card-body">
+                    <table class="table table-striped ">
+                      <tbody class="bg-light">
+                      <tr>
+                          <th scope="row">AKATEKOS</th>
+                          <td><?=$grupoEtnicoMujeres1['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AMUZGOS</th>
+                          <td><?=$grupoEtnicoMujeres2['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AWAKATEKOS</th>
+                          <td><?=$grupoEtnicoMujeres3['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AYAPANECOS</th>
+                          <td><?=$grupoEtnicoMujeres4['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CORAS</th>
+                          <td><?=$grupoEtnicoMujeres5['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CUCAPÁS</th>
+                          <td><?=$grupoEtnicoMujeres6['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CUICATECOS</th>
+                          <td><?=$grupoEtnicoMujeres7['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHATINOS</th>
+                          <td><?=$grupoEtnicoMujeres8['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHICHIMECAS</th>
+                          <td><?=$grupoEtnicoMujeres9['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHINANTECOS</th>
+                          <td><?=$grupoEtnicoMujeres10['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHOLES</th>
+                          <td><?=$grupoEtnicoMujeres11['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHOCHOLTECOS</th>
+                          <td><?=$grupoEtnicoMujeres12['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHONTALES DE OAXACA</th>
+                          <td><?=$grupoEtnicoMujeres13['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHONTALES DE TABASCO</th>
+                          <td><?=$grupoEtnicoMujeres14['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHUJES</th>
+                          <td><?=$grupoEtnicoMujeres15['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">GUARIJÍOS</th>
+                          <td><?=$grupoEtnicoMujeres16['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">HUASTECOS</th>
+                          <td><?=$grupoEtnicoMujeres17['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">HUAVES</th>
+                          <td><?=$grupoEtnicoMujeres18['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">HUICHOLES</th>
+                          <td><?=$grupoEtnicoMujeres19['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">IXILES</th>
+                          <td><?=$grupoEtnicoMujeres20['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">JAKALTEKOS</th>
+                          <td><?=$grupoEtnicoMujeres21['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KAQCHIKELES</th>
+                          <td><?=$grupoEtnicoMujeres22['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">K`ICHES</th>
+                          <td><?=$grupoEtnicoMujeres23['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KU`AHLES</th>
+                          <td><?=$grupoEtnicoMujeres24['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KILIWAS</th>
+                          <td><?=$grupoEtnicoMujeres25['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KIKAPÚES</th>
+                          <td><?=$grupoEtnicoMujeres26['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KUMIAIS</th>
+                          <td><?=$grupoEtnicoMujeres27['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">LACANDÓNES</th>
+                          <td><?=$grupoEtnicoMujeres28['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAMES</th>
+                          <td><?=$grupoEtnicoMujeres29['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MATLATZINCAS</th>
+                          <td><?=$grupoEtnicoMujeres30['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAYAS</th>
+                          <td><?=$grupoEtnicoMujeres31['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAYOS</th>
+                          <td><?=$grupoEtnicoMujeres32['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAZAHUAS</th>
+                          <td><?=$grupoEtnicoMujeres33['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAZATECOS</th>
+                          <td><?=$grupoEtnicoMujeres34['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MIXES</th>
+                          <td><?=$grupoEtnicoMujeres35['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MIXTECOS</th>
+                          <td><?=$grupoEtnicoMujeres36['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">NÁHUAS</th>
+                          <td><?=$grupoEtnicoMujeres37['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">OLUTECOS</th>
+                          <td><?=$grupoEtnicoMujeres38['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">OTOMÍS</th>
+                          <td><?=$grupoEtnicoMujeres39['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PAMES</th>
+                          <td><?=$grupoEtnicoMujeres40['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PAIPAIS</th>
+                          <td><?=$grupoEtnicoMujeres41['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PÁPAGOS</th>
+                          <td><?=$grupoEtnicoMujeres42['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PIMAS</th>
+                          <td><?=$grupoEtnicoMujeres43['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">POPOLOCAS</th>
+                          <td><?=$grupoEtnicoMujeres44['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">POPOLUCAS DE LA SIERRA</th>
+                          <td><?=$grupoEtnicoMujeres45['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Q`ANJOB`ALES</th>
+                          <td><?=$grupoEtnicoMujeres46['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Q`EQCHI`S</th>
+                          <td><?=$grupoEtnicoMujeres47['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">QATO`K</th>
+                          <td><?=$grupoEtnicoMujeres48['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAYULTECOS</th>
+                          <td><?=$grupoEtnicoMujeres49['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SERIS</th>
+                          <td><?=$grupoEtnicoMujeres50['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TACUATES</th>
+                          <td><?=$grupoEtnicoMujeres51['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TARAHUMARAS</th>
+                          <td><?=$grupoEtnicoMujeres52['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TARASCOS</th>
+                          <td><?=$grupoEtnicoMujeres53['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEKOS</th>
+                          <td><?=$grupoEtnicoMujeres54['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEPEHUAS</th>
+                          <td><?=$grupoEtnicoMujeres55['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEPEHUANOS DEL NORTE</th>
+                          <td><?=$grupoEtnicoMujeres56['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEPEHUANOS DEL SUR</th>
+                          <td><?=$grupoEtnicoMujeres57['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEXISTEPEQUEÑOS</th>
+                          <td><?=$grupoEtnicoMujeres58['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TLAHUICAS</th>
+                          <td><?=$grupoEtnicoMujeres59['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TLAPANECOS</th>
+                          <td><?=$grupoEtnicoMujeres60['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TOJOLABALES</th>
+                          <td><?=$grupoEtnicoMujeres61['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TOTONACOS</th>
+                          <td><?=$grupoEtnicoMujeres62['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TRIQUIS</th>
+                          <td><?=$grupoEtnicoMujeres63['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TSELTALES</th>
+                          <td><?=$grupoEtnicoMujeres64['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TZOTZILES</th>
+                          <td><?=$grupoEtnicoMujeres65['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">YAQUIS</th>
+                          <td><?=$grupoEtnicoMujeres66['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">ZAPOTECOS</th>
+                          <td><?=$grupoEtnicoMujeres67['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">ZOQUES</th>
+                          <td><?=$grupoEtnicoMujeres68['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">NINGUNO</th>
+                          <td><?=$grupoEtnicoMujeres69['userPorGrupoEtnico']?></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-info bg-light o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                  <i class="fas fa-transgender-alt"></i>
+                  </div>
+                  
+                  <div class="mr-5"><b>Usuarios totales por Grupo Étnico hombres<span class="float-right"></span></b></div>
+                </div>
+                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorGrupoetHombres">
+                  <span class="float-left">Ver detalle</span>
+                  <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span>
+                </a>
+                <div class="collapse" id="collapsePorGrupoetHombres">
+                  <div class="card card-body">
+                    <table class="table table-striped ">
+                      <tbody class="bg-light">
+                      <tr>
+                          <th scope="row">AKATEKOS</th>
+                          <td><?=$grupoEtnicoHombres1['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AMUZGOS</th>
+                          <td><?=$grupoEtnicoHombres2['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AWAKATEKOS</th>
+                          <td><?=$grupoEtnicoHombres3['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AYAPANECOS</th>
+                          <td><?=$grupoEtnicoHombres4['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CORAS</th>
+                          <td><?=$grupoEtnicoHombres5['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CUCAPÁS</th>
+                          <td><?=$grupoEtnicoHombres6['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CUICATECOS</th>
+                          <td><?=$grupoEtnicoHombres7['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHATINOS</th>
+                          <td><?=$grupoEtnicoHombres8['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHICHIMECAS</th>
+                          <td><?=$grupoEtnicoHombres9['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHINANTECOS</th>
+                          <td><?=$grupoEtnicoHombres10['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHOLES</th>
+                          <td><?=$grupoEtnicoHombres11['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHOCHOLTECOS</th>
+                          <td><?=$grupoEtnicoHombres12['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHONTALES DE OAXACA</th>
+                          <td><?=$grupoEtnicoHombres13['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHONTALES DE TABASCO</th>
+                          <td><?=$grupoEtnicoHombres14['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHUJES</th>
+                          <td><?=$grupoEtnicoHombres15['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">GUARIJÍOS</th>
+                          <td><?=$grupoEtnicoHombres16['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">HUASTECOS</th>
+                          <td><?=$grupoEtnicoHombres17['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">HUAVES</th>
+                          <td><?=$grupoEtnicoHombres18['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">HUICHOLES</th>
+                          <td><?=$grupoEtnicoHombres19['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">IXILES</th>
+                          <td><?=$grupoEtnicoHombres20['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">JAKALTEKOS</th>
+                          <td><?=$grupoEtnicoHombres21['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KAQCHIKELES</th>
+                          <td><?=$grupoEtnicoHombres22['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">K`ICHES</th>
+                          <td><?=$grupoEtnicoHombres23['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KU`AHLES</th>
+                          <td><?=$grupoEtnicoHombres24['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KILIWAS</th>
+                          <td><?=$grupoEtnicoHombres25['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KIKAPÚES</th>
+                          <td><?=$grupoEtnicoHombres26['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KUMIAIS</th>
+                          <td><?=$grupoEtnicoHombres27['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">LACANDÓNES</th>
+                          <td><?=$grupoEtnicoHombres28['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAMES</th>
+                          <td><?=$grupoEtnicoHombres29['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MATLATZINCAS</th>
+                          <td><?=$grupoEtnicoHombres30['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAYAS</th>
+                          <td><?=$grupoEtnicoHombres31['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAYOS</th>
+                          <td><?=$grupoEtnicoHombres32['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAZAHUAS</th>
+                          <td><?=$grupoEtnicoHombres33['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAZATECOS</th>
+                          <td><?=$grupoEtnicoHombres34['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MIXES</th>
+                          <td><?=$grupoEtnicoHombres35['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MIXTECOS</th>
+                          <td><?=$grupoEtnicoHombres36['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">NÁHUAS</th>
+                          <td><?=$grupoEtnicoHombres37['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">OLUTECOS</th>
+                          <td><?=$grupoEtnicoHombres38['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">OTOMÍS</th>
+                          <td><?=$grupoEtnicoHombres39['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PAMES</th>
+                          <td><?=$grupoEtnicoHombres40['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PAIPAIS</th>
+                          <td><?=$grupoEtnicoHombres41['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PÁPAGOS</th>
+                          <td><?=$grupoEtnicoHombres42['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PIMAS</th>
+                          <td><?=$grupoEtnicoHombres43['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">POPOLOCAS</th>
+                          <td><?=$grupoEtnicoHombres44['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">POPOLUCAS DE LA SIERRA</th>
+                          <td><?=$grupoEtnicoHombres45['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Q`ANJOB`ALES</th>
+                          <td><?=$grupoEtnicoHombres46['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Q`EQCHI`S</th>
+                          <td><?=$grupoEtnicoHombres47['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">QATO`K</th>
+                          <td><?=$grupoEtnicoHombres48['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAYULTECOS</th>
+                          <td><?=$grupoEtnicoHombres49['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SERIS</th>
+                          <td><?=$grupoEtnicoHombres50['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TACUATES</th>
+                          <td><?=$grupoEtnicoHombres51['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TARAHUMARAS</th>
+                          <td><?=$grupoEtnicoHombres52['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TARASCOS</th>
+                          <td><?=$grupoEtnicoHombres53['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEKOS</th>
+                          <td><?=$grupoEtnicoHombres54['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEPEHUAS</th>
+                          <td><?=$grupoEtnicoHombres55['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEPEHUANOS DEL NORTE</th>
+                          <td><?=$grupoEtnicoHombres56['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEPEHUANOS DEL SUR</th>
+                          <td><?=$grupoEtnicoHombres57['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEXISTEPEQUEÑOS</th>
+                          <td><?=$grupoEtnicoHombres58['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TLAHUICAS</th>
+                          <td><?=$grupoEtnicoHombres59['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TLAPANECOS</th>
+                          <td><?=$grupoEtnicoHombres60['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TOJOLABALES</th>
+                          <td><?=$grupoEtnicoHombres61['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TOTONACOS</th>
+                          <td><?=$grupoEtnicoHombres62['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TRIQUIS</th>
+                          <td><?=$grupoEtnicoHombres63['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TSELTALES</th>
+                          <td><?=$grupoEtnicoHombres64['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TZOTZILES</th>
+                          <td><?=$grupoEtnicoHombres65['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">YAQUIS</th>
+                          <td><?=$grupoEtnicoHombres66['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">ZAPOTECOS</th>
+                          <td><?=$grupoEtnicoHombres67['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">ZOQUES</th>
+                          <td><?=$grupoEtnicoHombres68['userPorGrupoEtnico']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">NINGUNO</th>
+                          <td><?=$grupoEtnicoHombres69['userPorGrupoEtnico']?></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Usuarios totales por Lengua propia -->
+        <div class="row">
+          <div class="col-xl-6 col-sm-6 mb-3">
+            <div class="card text-info bg-light o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                  <i class="fas fa-street-view"></i>
+                  </div>
+                  
+                  <div class="mr-5"><b>Usuarios totales por Lengua Indigena <span class="float-right"></span></b></div>
+                </div>
+                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorGrupoet">
+                  <span class="float-left">Ver detalle</span>
+                  <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span>
+                </a>
+                <div class="collapse" id="collapsePorGrupoet">
+                  <div class="card card-body">
+                    <table class="table table-striped ">
+                      <tbody class="bg-light">
+                        <tr>
+                          <th scope="row">AKATEKOS</th>
+                          <td><?=$lenguaTotales1['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AMUZGOS</th>
+                          <td><?=$lenguaTotales2['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AWAKATEKOS</th>
+                          <td><?=$lenguaTotales3['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AYAPANECOS</th>
+                          <td><?=$lenguaTotales4['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CORAS</th>
+                          <td><?=$lenguaTotales5['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CUCAPÁS</th>
+                          <td><?=$lenguaTotales6['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CUICATECOS</th>
+                          <td><?=$lenguaTotales7['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHATINOS</th>
+                          <td><?=$lenguaTotales8['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHICHIMECAS</th>
+                          <td><?=$lenguaTotales9['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHINANTECOS</th>
+                          <td><?=$lenguaTotales10['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHOLES</th>
+                          <td><?=$lenguaTotales11['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHOCHOLTECOS</th>
+                          <td><?=$lenguaTotales12['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHONTALES DE OAXACA</th>
+                          <td><?=$lenguaTotales13['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHONTALES DE TABASCO</th>
+                          <td><?=$lenguaTotales14['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHUJES</th>
+                          <td><?=$lenguaTotales15['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">GUARIJÍOS</th>
+                          <td><?=$lenguaTotales16['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">HUASTECOS</th>
+                          <td><?=$lenguaTotales17['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">HUAVES</th>
+                          <td><?=$lenguaTotales18['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">HUICHOLES</th>
+                          <td><?=$lenguaTotales19['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">IXILES</th>
+                          <td><?=$lenguaTotales20['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">JAKALTEKOS</th>
+                          <td><?=$lenguaTotales21['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KAQCHIKELES</th>
+                          <td><?=$lenguaTotales22['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">K`ICHES</th>
+                          <td><?=$lenguaTotales23['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KU`AHLES</th>
+                          <td><?=$lenguaTotales24['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KILIWAS</th>
+                          <td><?=$lenguaTotales25['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KIKAPÚES</th>
+                          <td><?=$lenguaTotales26['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">KUMIAIS</th>
+                          <td><?=$lenguaTotales27['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">LACANDÓNES</th>
+                          <td><?=$lenguaTotales28['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAMES</th>
+                          <td><?=$lenguaTotales29['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MATLATZINCAS</th>
+                          <td><?=$lenguaTotales30['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAYAS</th>
+                          <td><?=$lenguaTotales31['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAYOS</th>
+                          <td><?=$lenguaTotales32['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAZAHUAS</th>
+                          <td><?=$lenguaTotales33['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MAZATECOS</th>
+                          <td><?=$lenguaTotales34['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MIXES</th>
+                          <td><?=$lenguaTotales35['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MIXTECOS</th>
+                          <td><?=$lenguaTotales36['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">NÁHUAS</th>
+                          <td><?=$lenguaTotales37['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">OLUTECOS</th>
+                          <td><?=$lenguaTotales38['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">OTOMÍS</th>
+                          <td><?=$lenguaTotales39['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PAMES</th>
+                          <td><?=$lenguaTotales40['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PAIPAIS</th>
+                          <td><?=$lenguaTotales41['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PÁPAGOS</th>
+                          <td><?=$lenguaTotales42['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PIMAS</th>
+                          <td><?=$lenguaTotales43['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">POPOLOCAS</th>
+                          <td><?=$lenguaTotales44['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">POPOLUCAS DE LA SIERRA</th>
+                          <td><?=$lenguaTotales45['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Q`ANJOB`ALES</th>
+                          <td><?=$lenguaTotales46['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Q`EQCHI`S</th>
+                          <td><?=$lenguaTotales47['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">QATO`K</th>
+                          <td><?=$lenguaTotales48['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SAYULTECOS</th>
+                          <td><?=$lenguaTotales49['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SERIS</th>
+                          <td><?=$lenguaTotales50['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TACUATES</th>
+                          <td><?=$lenguaTotales51['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TARAHUMARAS</th>
+                          <td><?=$lenguaTotales52['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TARASCOS</th>
+                          <td><?=$lenguaTotales53['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEKOS</th>
+                          <td><?=$lenguaTotales54['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEPEHUAS</th>
+                          <td><?=$lenguaTotales55['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEPEHUANOS DEL NORTE</th>
+                          <td><?=$lenguaTotales56['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEPEHUANOS DEL SUR</th>
+                          <td><?=$lenguaTotales57['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TEXISTEPEQUEÑOS</th>
+                          <td><?=$lenguaTotales58['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TLAHUICAS</th>
+                          <td><?=$lenguaTotales59['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TLAPANECOS</th>
+                          <td><?=$lenguaTotales60['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TOJOLABALES</th>
+                          <td><?=$lenguaTotales61['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TOTONACOS</th>
+                          <td><?=$lenguaTotales62['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TRIQUIS</th>
+                          <td><?=$lenguaTotales63['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TSELTALES</th>
+                          <td><?=$lenguaTotales64['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TZOTZILES</th>
+                          <td><?=$lenguaTotales65['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">YAQUIS</th>
+                          <td><?=$lenguaTotales66['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">ZAPOTECOS</th>
+                          <td><?=$lenguaTotales67['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">ZOQUES</th>
+                          <td><?=$lenguaTotales68['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">NINGUNO</th>
+                          <td><?=$lenguaTotales69['userPorLengua']?></td>
                         </tr>
                       </tbody>
                     </table>
