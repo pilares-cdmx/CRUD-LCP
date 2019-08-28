@@ -2360,7 +2360,7 @@
     //var_dump($totalesLenguaMujeres71);
     $lenguaTotalesMujeres71= mysqli_fetch_array($totalesLenguaMujeres71);
 
-    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '0' AND sexo LIKE '%M%'";
+    $sql="SELECT count(*) AS userPorLengua FROM Usuario WHERE lenguaIndigena = '0' AND sexo LIKE '%H%'";
     $totalesLenguaMujeres0 = mysqli_query($con, $sql);
     //var_dump($totalesLenguaMujeres0);
     $lenguaTotalesMujeres0= mysqli_fetch_array($totalesLenguaMujeres0);
