@@ -8185,7 +8185,7 @@
         <!-- Usuarios totales por Lengua propia -->
         <div class="row">
           <div class="col-xl-6 col-sm-6 mb-3">
-            <div class="card text-info bg-light o-hidden h-100">
+            <div class="card text-info bg-secondary o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
                   <i class="fas fa-gopuram"></i>
@@ -8202,7 +8202,7 @@
                 <div class="collapse" id="collapsePorPueblos">
                   <div class="card card-body">
                     <table class="table table-striped ">
-                      <tbody class="bg-light">
+                      <tbody class="bg-secondary">
                         <tr>
                           <th scope="row">AXOTLA</th>
                           <td><?=$lenguaTotales1['userPorLengua']?></td>
@@ -8748,7 +8748,7 @@
           </div>
 
           <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-info bg-light o-hidden h-100">
+            <div class="card text-info bg-secondary o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
                   <i class="fas fa-transgender-alt"></i>
@@ -8765,7 +8765,7 @@
                 <div class="collapse" id="collapsePorPueblosMujeres">
                   <div class="card card-body">
                     <table class="table table-striped ">
-                      <tbody class="bg-light">
+                      <tbody class="bg-secondary">
                       <tr>
                           <th scope="row">AKATEKO</th>
                           <td><?=$lenguaTotalesMujeres1['userPorLengua']?></td>
@@ -9062,7 +9062,7 @@
           </div>
 
           <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-info bg-light o-hidden h-100">
+            <div class="card text-info bg-secondary o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
                   <i class="fas fa-transgender-alt"></i>
@@ -9079,7 +9079,7 @@
                 <div class="collapse" id="collapsePorPueblosHombres">
                   <div class="card card-body">
                     <table class="table table-striped ">
-                      <tbody class="bg-light">
+                      <tbody class="bg-secondary">
                       <tr>
                           <th scope="row">AKATEKO</th>
                           <td><?=$lenguaTotalesHombres1['userPorLengua']?></td>
