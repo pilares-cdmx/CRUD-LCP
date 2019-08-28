@@ -6849,280 +6849,292 @@
                     <table class="table table-striped ">
                       <tbody class="bg-light">
                       <tr>
-                          <th scope="row">AKATEKOS</th>
-                          <td><?=$grupoEtnicoMujeres1['userPorGrupoEtnico']?></td>
+                          <th scope="row">AKATEKO</th>
+                          <td><?=$lenguaTotales1['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">AMUZGOS</th>
-                          <td><?=$grupoEtnicoMujeres2['userPorGrupoEtnico']?></td>
+                          <th scope="row">AMUZGO</th>
+                          <td><?=$lenguaTotales2['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">AWAKATEKOS</th>
-                          <td><?=$grupoEtnicoMujeres3['userPorGrupoEtnico']?></td>
+                          <th scope="row">AWAKATEKO</th>
+                          <td><?=$lenguaTotales3['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">AYAPANECOS</th>
-                          <td><?=$grupoEtnicoMujeres4['userPorGrupoEtnico']?></td>
+                          <th scope="row">AYAPANECO</th>
+                          <td><?=$lenguaTotales4['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CORAS</th>
-                          <td><?=$grupoEtnicoMujeres5['userPorGrupoEtnico']?></td>
+                          <th scope="row">OCHIMÍE</th>
+                          <td><?=$lenguaTotales5['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CUCAPÁS</th>
-                          <td><?=$grupoEtnicoMujeres6['userPorGrupoEtnico']?></td>
+                          <th scope="row">CORA</th>
+                          <td><?=$lenguaTotales6['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CUICATECOS</th>
-                          <td><?=$grupoEtnicoMujeres7['userPorGrupoEtnico']?></td>
+                          <th scope="row">CUCAPÁ</th>
+                          <td><?=$lenguaTotales7['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHATINOS</th>
-                          <td><?=$grupoEtnicoMujeres8['userPorGrupoEtnico']?></td>
+                          <th scope="row">CUICATECO</th>
+                          <td><?=$lenguaTotales8['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHICHIMECAS</th>
-                          <td><?=$grupoEtnicoMujeres9['userPorGrupoEtnico']?></td>
+                          <th scope="row">CHATINO</th>
+                          <td><?=$lenguaTotales9['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHINANTECOS</th>
-                          <td><?=$grupoEtnicoMujeres10['userPorGrupoEtnico']?></td>
+                          <th scope="row">CHICHIMECA</th>
+                          <td><?=$lenguaTotales10['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHOLES</th>
-                          <td><?=$grupoEtnicoMujeres11['userPorGrupoEtnico']?></td>
+                          <th scope="row">CHINANTECO</th>
+                          <td><?=$lenguaTotales11['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHOCHOLTECOS</th>
-                          <td><?=$grupoEtnicoMujeres12['userPorGrupoEtnico']?></td>
+                          <th scope="row">CH`OL</th>
+                          <td><?=$lenguaTotales12['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHOCHOLTECO</th>
+                          <td><?=$lenguaTotales13['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHONTALES DE OAXACA</th>
-                          <td><?=$grupoEtnicoMujeres13['userPorGrupoEtnico']?></td>
+                          <td><?=$lenguaTotales14['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHONTALES DE TABASCO</th>
-                          <td><?=$grupoEtnicoMujeres14['userPorGrupoEtnico']?></td>
+                          <th scope="row">CHONTAL DE TABASCO</th>
+                          <td><?=$lenguaTotales15['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHUJES</th>
-                          <td><?=$grupoEtnicoMujeres15['userPorGrupoEtnico']?></td>
+                          <th scope="row">CHUJ</th>
+                          <td><?=$lenguaTotales16['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">GUARIJÍOS</th>
-                          <td><?=$grupoEtnicoMujeres16['userPorGrupoEtnico']?></td>
+                          <th scope="row">GUARIJÍO</th>
+                          <td><?=$lenguaTotales17['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">HUASTECOS</th>
-                          <td><?=$grupoEtnicoMujeres17['userPorGrupoEtnico']?></td>
+                          <th scope="row">HUASTECO</th>
+                          <td><?=$lenguaTotales18['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">HUAVES</th>
-                          <td><?=$grupoEtnicoMujeres18['userPorGrupoEtnico']?></td>
+                          <th scope="row">HUAVE</th>
+                          <td><?=$lenguaTotales19['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">HUICHOLES</th>
-                          <td><?=$grupoEtnicoMujeres19['userPorGrupoEtnico']?></td>
+                          <th scope="row">HUICHOL</th>
+                          <td><?=$lenguaTotales20['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">IXILES</th>
-                          <td><?=$grupoEtnicoMujeres20['userPorGrupoEtnico']?></td>
+                          <th scope="row">IXCATECO</th>
+                          <td><?=$lenguaTotales21['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">JAKALTEKOS</th>
-                          <td><?=$grupoEtnicoMujeres21['userPorGrupoEtnico']?></td>
+                          <th scope="row">IXIL</th>
+                          <td><?=$lenguaTotales22['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KAQCHIKELES</th>
-                          <td><?=$grupoEtnicoMujeres22['userPorGrupoEtnico']?></td>
+                          <th scope="row">JAKALTEKO</th>
+                          <td><?=$lenguaTotales23['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">K`ICHES</th>
-                          <td><?=$grupoEtnicoMujeres23['userPorGrupoEtnico']?></td>
+                          <th scope="row">KAQCHIKEL</th>
+                          <td><?=$lenguaTotales24['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KU`AHLES</th>
-                          <td><?=$grupoEtnicoMujeres24['userPorGrupoEtnico']?></td>
+                          <th scope="row">K`ICHE</th>
+                          <td><?=$lenguaTotales25['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KILIWAS</th>
-                          <td><?=$grupoEtnicoMujeres25['userPorGrupoEtnico']?></td>
+                          <th scope="row">KU`AHLE</th>
+                          <td><?=$lenguaTotales26['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KIKAPÚES</th>
-                          <td><?=$grupoEtnicoMujeres26['userPorGrupoEtnico']?></td>
+                          <th scope="row">KILIWA</th>
+                          <td><?=$lenguaTotales27['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KUMIAIS</th>
-                          <td><?=$grupoEtnicoMujeres27['userPorGrupoEtnico']?></td>
+                          <th scope="row">KIKAPÚE</th>
+                          <td><?=$lenguaTotales28['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">LACANDÓNES</th>
-                          <td><?=$grupoEtnicoMujeres28['userPorGrupoEtnico']?></td>
+                          <th scope="row">KUMIAI</th>
+                          <td><?=$lenguaTotales29['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAMES</th>
-                          <td><?=$grupoEtnicoMujeres29['userPorGrupoEtnico']?></td>
+                          <th scope="row">LACANDÓN</th>
+                          <td><?=$lenguaTotales30['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MATLATZINCAS</th>
-                          <td><?=$grupoEtnicoMujeres30['userPorGrupoEtnico']?></td>
+                          <th scope="row">MAME</th>
+                          <td><?=$lenguaTotales31['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAYAS</th>
-                          <td><?=$grupoEtnicoMujeres31['userPorGrupoEtnico']?></td>
+                          <th scope="row">MATLATZINCA</th>
+                          <td><?=$lenguaTotales32['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAYOS</th>
-                          <td><?=$grupoEtnicoMujeres32['userPorGrupoEtnico']?></td>
+                          <th scope="row">MAYA</th>
+                          <td><?=$lenguaTotales33['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAZAHUAS</th>
-                          <td><?=$grupoEtnicoMujeres33['userPorGrupoEtnico']?></td>
+                          <th scope="row">MAYO</th>
+                          <td><?=$lenguaTotales34['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAZATECOS</th>
-                          <td><?=$grupoEtnicoMujeres34['userPorGrupoEtnico']?></td>
+                          <th scope="row">MAZAHUA</th>
+                          <td><?=$lenguaTotales35['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MIXES</th>
-                          <td><?=$grupoEtnicoMujeres35['userPorGrupoEtnico']?></td>
+                          <th scope="row">MAZATECO</th>
+                          <td><?=$lenguaTotales36['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MIXTECOS</th>
-                          <td><?=$grupoEtnicoMujeres36['userPorGrupoEtnico']?></td>
+                          <th scope="row">MIXE</th>
+                          <td><?=$lenguaTotales37['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">NÁHUAS</th>
-                          <td><?=$grupoEtnicoMujeres37['userPorGrupoEtnico']?></td>
+                          <th scope="row">MIXTECO</th>
+                          <td><?=$lenguaTotales38['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">OLUTECOS</th>
-                          <td><?=$grupoEtnicoMujeres38['userPorGrupoEtnico']?></td>
+                          <th scope="row">MOCHÓ</th>
+                          <td><?=$lenguaTotales39['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">OTOMÍS</th>
-                          <td><?=$grupoEtnicoMujeres39['userPorGrupoEtnico']?></td>
+                          <th scope="row">NÁHUATL</th>
+                          <td><?=$lenguaTotales40['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PAMES</th>
-                          <td><?=$grupoEtnicoMujeres40['userPorGrupoEtnico']?></td>
+                          <th scope="row">OLUTECO</th>
+                          <td><?=$lenguaTotales41['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PAIPAIS</th>
-                          <td><?=$grupoEtnicoMujeres41['userPorGrupoEtnico']?></td>
+                          <th scope="row">OTOMÍ</th>
+                          <td><?=$lenguaTotales42['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PÁPAGOS</th>
-                          <td><?=$grupoEtnicoMujeres42['userPorGrupoEtnico']?></td>
+                          <th scope="row">PAME</th>
+                          <td><?=$lenguaTotales43['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PIMAS</th>
-                          <td><?=$grupoEtnicoMujeres43['userPorGrupoEtnico']?></td>
+                          <th scope="row">PAIPAI</th>
+                          <td><?=$lenguaTotales44['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">POPOLOCAS</th>
-                          <td><?=$grupoEtnicoMujeres44['userPorGrupoEtnico']?></td>
+                          <th scope="row">PÁPAGO</th>
+                          <td><?=$lenguaTotales45['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">POPOLUCAS DE LA SIERRA</th>
-                          <td><?=$grupoEtnicoMujeres45['userPorGrupoEtnico']?></td>
+                          <th scope="row">PIMA</th>
+                          <td><?=$lenguaTotales46['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Q`ANJOB`ALES</th>
-                          <td><?=$grupoEtnicoMujeres46['userPorGrupoEtnico']?></td>
+                          <th scope="row">POPOLOCA</th>
+                          <td><?=$lenguaTotales47['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Q`EQCHI`S</th>
-                          <td><?=$grupoEtnicoMujeres47['userPorGrupoEtnico']?></td>
+                          <th scope="row">POPOLOCA DE LA SIERRA</th>
+                          <td><?=$lenguaTotales48['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">P`URHÉPECHA</th>
+                          <td><?=$lenguaTotales49['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Q`ANJOB`AL</th>
+                          <td><?=$lenguaTotales50['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Q`EQCHI`</th>
+                          <td><?=$lenguaTotales51['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">QATO`K</th>
-                          <td><?=$grupoEtnicoMujeres48['userPorGrupoEtnico']?></td>
+                          <td><?=$lenguaTotales52['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAYULTECOS</th>
-                          <td><?=$grupoEtnicoMujeres49['userPorGrupoEtnico']?></td>
+                          <th scope="row">SAYULTECO</th>
+                          <td><?=$lenguaTotales53['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SERIS</th>
-                          <td><?=$grupoEtnicoMujeres50['userPorGrupoEtnico']?></td>
+                          <th scope="row">SERI</th>
+                          <td><?=$lenguaTotales54['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TACUATES</th>
-                          <td><?=$grupoEtnicoMujeres51['userPorGrupoEtnico']?></td>
+                          <th scope="row">TACUATE</th>
+                          <td><?=$lenguaTotales55['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TARAHUMARAS</th>
-                          <td><?=$grupoEtnicoMujeres52['userPorGrupoEtnico']?></td>
+                          <th scope="row">TARAHUMARA</th>
+                          <td><?=$lenguaTotales56['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TARASCOS</th>
-                          <td><?=$grupoEtnicoMujeres53['userPorGrupoEtnico']?></td>
+                          <th scope="row">TEKO</th>
+                          <td><?=$lenguaTotales57['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEKOS</th>
-                          <td><?=$grupoEtnicoMujeres54['userPorGrupoEtnico']?></td>
+                          <th scope="row">TEPEHUA</th>
+                          <td><?=$lenguaTotales58['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEPEHUAS</th>
-                          <td><?=$grupoEtnicoMujeres55['userPorGrupoEtnico']?></td>
+                          <th scope="row">TEPEHUANO DEL NORTE</th>
+                          <td><?=$lenguaTotales59['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEPEHUANOS DEL NORTE</th>
-                          <td><?=$grupoEtnicoMujeres56['userPorGrupoEtnico']?></td>
+                          <th scope="row">TEPEHUANO DEL SUR</th>
+                          <td><?=$lenguaTotales60['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEPEHUANOS DEL SUR</th>
-                          <td><?=$grupoEtnicoMujeres57['userPorGrupoEtnico']?></td>
+                          <th scope="row">TEXISTEPEQUEÑO</th>
+                          <td><?=$lenguaTotales61['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEXISTEPEQUEÑOS</th>
-                          <td><?=$grupoEtnicoMujeres58['userPorGrupoEtnico']?></td>
+                          <th scope="row">TLAHUICA</th>
+                          <td><?=$lenguaTotales62['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TLAHUICAS</th>
-                          <td><?=$grupoEtnicoMujeres59['userPorGrupoEtnico']?></td>
+                          <th scope="row">TLAPANECO</th>
+                          <td><?=$lenguaTotales63['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TLAPANECOS</th>
-                          <td><?=$grupoEtnicoMujeres60['userPorGrupoEtnico']?></td>
+                          <th scope="row">TOJOLABAL</th>
+                          <td><?=$lenguaTotales64['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TOJOLABALES</th>
-                          <td><?=$grupoEtnicoMujeres61['userPorGrupoEtnico']?></td>
+                          <th scope="row">TOTONACO</th>
+                          <td><?=$lenguaTotales65['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TOTONACOS</th>
-                          <td><?=$grupoEtnicoMujeres62['userPorGrupoEtnico']?></td>
+                          <th scope="row">TRIQUI</th>
+                          <td><?=$lenguaTotales66['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TRIQUIS</th>
-                          <td><?=$grupoEtnicoMujeres63['userPorGrupoEtnico']?></td>
+                          <th scope="row">TSELTAL</th>
+                          <td><?=$lenguaTotales67['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TSELTALES</th>
-                          <td><?=$grupoEtnicoMujeres64['userPorGrupoEtnico']?></td>
+                          <th scope="row">TSOTSIL</th>
+                          <td><?=$lenguaTotales68['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TZOTZILES</th>
-                          <td><?=$grupoEtnicoMujeres65['userPorGrupoEtnico']?></td>
+                          <th scope="row">YAQUI</th>
+                          <td><?=$lenguaTotales69['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">YAQUIS</th>
-                          <td><?=$grupoEtnicoMujeres66['userPorGrupoEtnico']?></td>
+                          <th scope="row">ZAPOTECO</th>
+                          <td><?=$lenguaTotales70['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">ZAPOTECOS</th>
-                          <td><?=$grupoEtnicoMujeres67['userPorGrupoEtnico']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">ZOQUES</th>
-                          <td><?=$grupoEtnicoMujeres68['userPorGrupoEtnico']?></td>
+                          <th scope="row">ZOQUE</th>
+                          <td><?=$lenguaTotales71['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">NINGUNO</th>
-                          <td><?=$grupoEtnicoMujeres69['userPorGrupoEtnico']?></td>
+                          <td><?=$lenguaTotales0['userPorLengua']?></td>
                         </tr>
                       </tbody>
                     </table>
@@ -7151,280 +7163,292 @@
                     <table class="table table-striped ">
                       <tbody class="bg-light">
                       <tr>
-                          <th scope="row">AKATEKOS</th>
-                          <td><?=$grupoEtnicoHombres1['userPorGrupoEtnico']?></td>
+                          <th scope="row">AKATEKO</th>
+                          <td><?=$lenguaTotales1['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">AMUZGOS</th>
-                          <td><?=$grupoEtnicoHombres2['userPorGrupoEtnico']?></td>
+                          <th scope="row">AMUZGO</th>
+                          <td><?=$lenguaTotales2['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">AWAKATEKOS</th>
-                          <td><?=$grupoEtnicoHombres3['userPorGrupoEtnico']?></td>
+                          <th scope="row">AWAKATEKO</th>
+                          <td><?=$lenguaTotales3['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">AYAPANECOS</th>
-                          <td><?=$grupoEtnicoHombres4['userPorGrupoEtnico']?></td>
+                          <th scope="row">AYAPANECO</th>
+                          <td><?=$lenguaTotales4['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CORAS</th>
-                          <td><?=$grupoEtnicoHombres5['userPorGrupoEtnico']?></td>
+                          <th scope="row">OCHIMÍE</th>
+                          <td><?=$lenguaTotales5['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CUCAPÁS</th>
-                          <td><?=$grupoEtnicoHombres6['userPorGrupoEtnico']?></td>
+                          <th scope="row">CORA</th>
+                          <td><?=$lenguaTotales6['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CUICATECOS</th>
-                          <td><?=$grupoEtnicoHombres7['userPorGrupoEtnico']?></td>
+                          <th scope="row">CUCAPÁ</th>
+                          <td><?=$lenguaTotales7['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHATINOS</th>
-                          <td><?=$grupoEtnicoHombres8['userPorGrupoEtnico']?></td>
+                          <th scope="row">CUICATECO</th>
+                          <td><?=$lenguaTotales8['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHICHIMECAS</th>
-                          <td><?=$grupoEtnicoHombres9['userPorGrupoEtnico']?></td>
+                          <th scope="row">CHATINO</th>
+                          <td><?=$lenguaTotales9['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHINANTECOS</th>
-                          <td><?=$grupoEtnicoHombres10['userPorGrupoEtnico']?></td>
+                          <th scope="row">CHICHIMECA</th>
+                          <td><?=$lenguaTotales10['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHOLES</th>
-                          <td><?=$grupoEtnicoHombres11['userPorGrupoEtnico']?></td>
+                          <th scope="row">CHINANTECO</th>
+                          <td><?=$lenguaTotales11['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHOCHOLTECOS</th>
-                          <td><?=$grupoEtnicoHombres12['userPorGrupoEtnico']?></td>
+                          <th scope="row">CH`OL</th>
+                          <td><?=$lenguaTotales12['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CHOCHOLTECO</th>
+                          <td><?=$lenguaTotales13['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHONTALES DE OAXACA</th>
-                          <td><?=$grupoEtnicoHombres13['userPorGrupoEtnico']?></td>
+                          <td><?=$lenguaTotales14['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHONTALES DE TABASCO</th>
-                          <td><?=$grupoEtnicoHombres14['userPorGrupoEtnico']?></td>
+                          <th scope="row">CHONTAL DE TABASCO</th>
+                          <td><?=$lenguaTotales15['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">CHUJES</th>
-                          <td><?=$grupoEtnicoHombres15['userPorGrupoEtnico']?></td>
+                          <th scope="row">CHUJ</th>
+                          <td><?=$lenguaTotales16['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">GUARIJÍOS</th>
-                          <td><?=$grupoEtnicoHombres16['userPorGrupoEtnico']?></td>
+                          <th scope="row">GUARIJÍO</th>
+                          <td><?=$lenguaTotales17['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">HUASTECOS</th>
-                          <td><?=$grupoEtnicoHombres17['userPorGrupoEtnico']?></td>
+                          <th scope="row">HUASTECO</th>
+                          <td><?=$lenguaTotales18['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">HUAVES</th>
-                          <td><?=$grupoEtnicoHombres18['userPorGrupoEtnico']?></td>
+                          <th scope="row">HUAVE</th>
+                          <td><?=$lenguaTotales19['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">HUICHOLES</th>
-                          <td><?=$grupoEtnicoHombres19['userPorGrupoEtnico']?></td>
+                          <th scope="row">HUICHOL</th>
+                          <td><?=$lenguaTotales20['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">IXILES</th>
-                          <td><?=$grupoEtnicoHombres20['userPorGrupoEtnico']?></td>
+                          <th scope="row">IXCATECO</th>
+                          <td><?=$lenguaTotales21['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">JAKALTEKOS</th>
-                          <td><?=$grupoEtnicoHombres21['userPorGrupoEtnico']?></td>
+                          <th scope="row">IXIL</th>
+                          <td><?=$lenguaTotales22['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KAQCHIKELES</th>
-                          <td><?=$grupoEtnicoHombres22['userPorGrupoEtnico']?></td>
+                          <th scope="row">JAKALTEKO</th>
+                          <td><?=$lenguaTotales23['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">K`ICHES</th>
-                          <td><?=$grupoEtnicoHombres23['userPorGrupoEtnico']?></td>
+                          <th scope="row">KAQCHIKEL</th>
+                          <td><?=$lenguaTotales24['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KU`AHLES</th>
-                          <td><?=$grupoEtnicoHombres24['userPorGrupoEtnico']?></td>
+                          <th scope="row">K`ICHE</th>
+                          <td><?=$lenguaTotales25['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KILIWAS</th>
-                          <td><?=$grupoEtnicoHombres25['userPorGrupoEtnico']?></td>
+                          <th scope="row">KU`AHLE</th>
+                          <td><?=$lenguaTotales26['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KIKAPÚES</th>
-                          <td><?=$grupoEtnicoHombres26['userPorGrupoEtnico']?></td>
+                          <th scope="row">KILIWA</th>
+                          <td><?=$lenguaTotales27['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">KUMIAIS</th>
-                          <td><?=$grupoEtnicoHombres27['userPorGrupoEtnico']?></td>
+                          <th scope="row">KIKAPÚE</th>
+                          <td><?=$lenguaTotales28['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">LACANDÓNES</th>
-                          <td><?=$grupoEtnicoHombres28['userPorGrupoEtnico']?></td>
+                          <th scope="row">KUMIAI</th>
+                          <td><?=$lenguaTotales29['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAMES</th>
-                          <td><?=$grupoEtnicoHombres29['userPorGrupoEtnico']?></td>
+                          <th scope="row">LACANDÓN</th>
+                          <td><?=$lenguaTotales30['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MATLATZINCAS</th>
-                          <td><?=$grupoEtnicoHombres30['userPorGrupoEtnico']?></td>
+                          <th scope="row">MAME</th>
+                          <td><?=$lenguaTotales31['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAYAS</th>
-                          <td><?=$grupoEtnicoHombres31['userPorGrupoEtnico']?></td>
+                          <th scope="row">MATLATZINCA</th>
+                          <td><?=$lenguaTotales32['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAYOS</th>
-                          <td><?=$grupoEtnicoHombres32['userPorGrupoEtnico']?></td>
+                          <th scope="row">MAYA</th>
+                          <td><?=$lenguaTotales33['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAZAHUAS</th>
-                          <td><?=$grupoEtnicoHombres33['userPorGrupoEtnico']?></td>
+                          <th scope="row">MAYO</th>
+                          <td><?=$lenguaTotales34['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MAZATECOS</th>
-                          <td><?=$grupoEtnicoHombres34['userPorGrupoEtnico']?></td>
+                          <th scope="row">MAZAHUA</th>
+                          <td><?=$lenguaTotales35['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MIXES</th>
-                          <td><?=$grupoEtnicoHombres35['userPorGrupoEtnico']?></td>
+                          <th scope="row">MAZATECO</th>
+                          <td><?=$lenguaTotales36['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">MIXTECOS</th>
-                          <td><?=$grupoEtnicoHombres36['userPorGrupoEtnico']?></td>
+                          <th scope="row">MIXE</th>
+                          <td><?=$lenguaTotales37['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">NÁHUAS</th>
-                          <td><?=$grupoEtnicoHombres37['userPorGrupoEtnico']?></td>
+                          <th scope="row">MIXTECO</th>
+                          <td><?=$lenguaTotales38['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">OLUTECOS</th>
-                          <td><?=$grupoEtnicoHombres38['userPorGrupoEtnico']?></td>
+                          <th scope="row">MOCHÓ</th>
+                          <td><?=$lenguaTotales39['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">OTOMÍS</th>
-                          <td><?=$grupoEtnicoHombres39['userPorGrupoEtnico']?></td>
+                          <th scope="row">NÁHUATL</th>
+                          <td><?=$lenguaTotales40['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PAMES</th>
-                          <td><?=$grupoEtnicoHombres40['userPorGrupoEtnico']?></td>
+                          <th scope="row">OLUTECO</th>
+                          <td><?=$lenguaTotales41['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PAIPAIS</th>
-                          <td><?=$grupoEtnicoHombres41['userPorGrupoEtnico']?></td>
+                          <th scope="row">OTOMÍ</th>
+                          <td><?=$lenguaTotales42['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PÁPAGOS</th>
-                          <td><?=$grupoEtnicoHombres42['userPorGrupoEtnico']?></td>
+                          <th scope="row">PAME</th>
+                          <td><?=$lenguaTotales43['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">PIMAS</th>
-                          <td><?=$grupoEtnicoHombres43['userPorGrupoEtnico']?></td>
+                          <th scope="row">PAIPAI</th>
+                          <td><?=$lenguaTotales44['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">POPOLOCAS</th>
-                          <td><?=$grupoEtnicoHombres44['userPorGrupoEtnico']?></td>
+                          <th scope="row">PÁPAGO</th>
+                          <td><?=$lenguaTotales45['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">POPOLUCAS DE LA SIERRA</th>
-                          <td><?=$grupoEtnicoHombres45['userPorGrupoEtnico']?></td>
+                          <th scope="row">PIMA</th>
+                          <td><?=$lenguaTotales46['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Q`ANJOB`ALES</th>
-                          <td><?=$grupoEtnicoHombres46['userPorGrupoEtnico']?></td>
+                          <th scope="row">POPOLOCA</th>
+                          <td><?=$lenguaTotales47['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Q`EQCHI`S</th>
-                          <td><?=$grupoEtnicoHombres47['userPorGrupoEtnico']?></td>
+                          <th scope="row">POPOLOCA DE LA SIERRA</th>
+                          <td><?=$lenguaTotales48['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">P`URHÉPECHA</th>
+                          <td><?=$lenguaTotales49['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Q`ANJOB`AL</th>
+                          <td><?=$lenguaTotales50['userPorLengua']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Q`EQCHI`</th>
+                          <td><?=$lenguaTotales51['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">QATO`K</th>
-                          <td><?=$grupoEtnicoHombres48['userPorGrupoEtnico']?></td>
+                          <td><?=$lenguaTotales52['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SAYULTECOS</th>
-                          <td><?=$grupoEtnicoHombres49['userPorGrupoEtnico']?></td>
+                          <th scope="row">SAYULTECO</th>
+                          <td><?=$lenguaTotales53['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">SERIS</th>
-                          <td><?=$grupoEtnicoHombres50['userPorGrupoEtnico']?></td>
+                          <th scope="row">SERI</th>
+                          <td><?=$lenguaTotales54['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TACUATES</th>
-                          <td><?=$grupoEtnicoHombres51['userPorGrupoEtnico']?></td>
+                          <th scope="row">TACUATE</th>
+                          <td><?=$lenguaTotales55['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TARAHUMARAS</th>
-                          <td><?=$grupoEtnicoHombres52['userPorGrupoEtnico']?></td>
+                          <th scope="row">TARAHUMARA</th>
+                          <td><?=$lenguaTotales56['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TARASCOS</th>
-                          <td><?=$grupoEtnicoHombres53['userPorGrupoEtnico']?></td>
+                          <th scope="row">TEKO</th>
+                          <td><?=$lenguaTotales57['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEKOS</th>
-                          <td><?=$grupoEtnicoHombres54['userPorGrupoEtnico']?></td>
+                          <th scope="row">TEPEHUA</th>
+                          <td><?=$lenguaTotales58['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEPEHUAS</th>
-                          <td><?=$grupoEtnicoHombres55['userPorGrupoEtnico']?></td>
+                          <th scope="row">TEPEHUANO DEL NORTE</th>
+                          <td><?=$lenguaTotales59['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEPEHUANOS DEL NORTE</th>
-                          <td><?=$grupoEtnicoHombres56['userPorGrupoEtnico']?></td>
+                          <th scope="row">TEPEHUANO DEL SUR</th>
+                          <td><?=$lenguaTotales60['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEPEHUANOS DEL SUR</th>
-                          <td><?=$grupoEtnicoHombres57['userPorGrupoEtnico']?></td>
+                          <th scope="row">TEXISTEPEQUEÑO</th>
+                          <td><?=$lenguaTotales61['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TEXISTEPEQUEÑOS</th>
-                          <td><?=$grupoEtnicoHombres58['userPorGrupoEtnico']?></td>
+                          <th scope="row">TLAHUICA</th>
+                          <td><?=$lenguaTotales62['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TLAHUICAS</th>
-                          <td><?=$grupoEtnicoHombres59['userPorGrupoEtnico']?></td>
+                          <th scope="row">TLAPANECO</th>
+                          <td><?=$lenguaTotales63['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TLAPANECOS</th>
-                          <td><?=$grupoEtnicoHombres60['userPorGrupoEtnico']?></td>
+                          <th scope="row">TOJOLABAL</th>
+                          <td><?=$lenguaTotales64['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TOJOLABALES</th>
-                          <td><?=$grupoEtnicoHombres61['userPorGrupoEtnico']?></td>
+                          <th scope="row">TOTONACO</th>
+                          <td><?=$lenguaTotales65['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TOTONACOS</th>
-                          <td><?=$grupoEtnicoHombres62['userPorGrupoEtnico']?></td>
+                          <th scope="row">TRIQUI</th>
+                          <td><?=$lenguaTotales66['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TRIQUIS</th>
-                          <td><?=$grupoEtnicoHombres63['userPorGrupoEtnico']?></td>
+                          <th scope="row">TSELTAL</th>
+                          <td><?=$lenguaTotales67['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TSELTALES</th>
-                          <td><?=$grupoEtnicoHombres64['userPorGrupoEtnico']?></td>
+                          <th scope="row">TSOTSIL</th>
+                          <td><?=$lenguaTotales68['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">TZOTZILES</th>
-                          <td><?=$grupoEtnicoHombres65['userPorGrupoEtnico']?></td>
+                          <th scope="row">YAQUI</th>
+                          <td><?=$lenguaTotales69['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">YAQUIS</th>
-                          <td><?=$grupoEtnicoHombres66['userPorGrupoEtnico']?></td>
+                          <th scope="row">ZAPOTECO</th>
+                          <td><?=$lenguaTotales70['userPorLengua']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">ZAPOTECOS</th>
-                          <td><?=$grupoEtnicoHombres67['userPorGrupoEtnico']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">ZOQUES</th>
-                          <td><?=$grupoEtnicoHombres68['userPorGrupoEtnico']?></td>
+                          <th scope="row">ZOQUE</th>
+                          <td><?=$lenguaTotales71['userPorLengua']?></td>
                         </tr>
                         <tr>
                           <th scope="row">NINGUNO</th>
-                          <td><?=$grupoEtnicoHombres69['userPorGrupoEtnico']?></td>
+                          <td><?=$lenguaTotales0['userPorLengua']?></td>
                         </tr>
                       </tbody>
                     </table>
