@@ -6524,13 +6524,13 @@
                   
                   <div class="mr-5"><b>Usuarios totales por Lengua Indigena <span class="float-right"></span></b></div>
                 </div>
-                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorGrupoet">
+                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorLengua">
                   <span class="float-left">Ver detalle</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
                   </span>
                 </a>
-                <div class="collapse" id="collapsePorGrupoet">
+                <div class="collapse" id="collapsePorLengua">
                   <div class="card card-body">
                     <table class="table table-striped ">
                       <tbody class="bg-light">
@@ -6826,13 +6826,13 @@
                   
                   <div class="mr-5"><b>Usuarios totales por Grupo Étnico mujeres<span class="float-right"></span></b></div>
                 </div>
-                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorGrupoetMujeres">
+                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorGrupoetMujeres1">
                   <span class="float-left">Ver detalle</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
                   </span>
                 </a>
-                <div class="collapse" id="collapsePorGrupoetMujeres">
+                <div class="collapse" id="collapsePorGrupoetMujeres1">
                   <div class="card card-body">
                     <table class="table table-striped ">
                       <tbody class="bg-light">
@@ -7128,13 +7128,13 @@
                   
                   <div class="mr-5"><b>Usuarios totales por Grupo Étnico hombres<span class="float-right"></span></b></div>
                 </div>
-                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorGrupoetHombres">
+                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorGrupoetHombres1">
                   <span class="float-left">Ver detalle</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
                   </span>
                 </a>
-                <div class="collapse" id="collapsePorGrupoetHombres">
+                <div class="collapse" id="collapsePorGrupoetHombres1">
                   <div class="card card-body">
                     <table class="table table-striped ">
                       <tbody class="bg-light">
