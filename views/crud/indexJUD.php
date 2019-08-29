@@ -13094,7 +13094,7 @@
                   <i class="fas fa-fw fa-music"></i>
                 </div>
                 
-                <div class="mr-5"><b>Usuarios insccritos en Cultura <span class="float-right">Total <?=$culturaTotales['userPorActividad']?></span></b></div>
+                <div class="mr-5"><b>Usuarios inscritos en Cultura <span class="float-right">Total <?=$culturaTotales['userPorActividad']?></span></b></div>
               </div>
               <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCultura">
                 <span class="float-left">Ver detalle</span>
@@ -13283,7 +13283,7 @@
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-list"></i>
                 </div>
-                <div class="mr-5"><b>Ciberescuelas <span class="float-right"><?=$ciberEscuelaTotales['userPorActividad']?></span></b></div>
+                <div class="mr-5"><b>Usuarios inscritos en Ciberescuelas <span class="float-right">Total <?=$ciberEscuelaTotales['userPorActividad']?></span></b></div>
               </div>
               <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelas">
                 <span class="float-left">Ver detalle</span>
@@ -13431,7 +13431,7 @@
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-running"></i>
                 </div>
-                <div class="mr-5"><b>Deporte <span class="float-right"><?=$deporteTotales['userPorActividad']?></span></b></div>
+                <div class="mr-5"><b>Usuarios inscritos en Deporte <span class="float-right">Total <?=$deporteTotales['userPorActividad']?></span></b></div>
               </div>
               <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseDeporte">
                 <span class="float-left">Ver detalle</span>
@@ -13507,7 +13507,7 @@
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-hand-holding-usd"></i>
                 </div>
-                <div class="mr-5"><b>Autonomía Económica <span class="float-right"><?=$autonomiaTotales['userPorActividad']?></span></b></div>
+                <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica <span class="float-right">Total <?=$autonomiaTotales['userPorActividad']?></span></b></div>
               </div>
               <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseAutonomia">
                 <span class="float-left">Ver detalle</span>
