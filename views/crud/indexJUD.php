@@ -15882,7 +15882,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por PILARES en Ciberescuela mujeres <span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Cultura mujeres <span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCulturaMujeres">
                   <span class="float-left">Ver detalle</span>
@@ -16067,7 +16067,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por PILARES en Ciberescuela hombres<span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Cultura hombres<span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCulturaHombres">
                   <span class="float-left">Ver detalle</span>
@@ -16403,7 +16403,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por PILARES en Ciberescuela mujeres <span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Ciberescuela mujeres <span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelasMujeres">
                   <span class="float-left">Ver detalle</span>
@@ -16548,7 +16548,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por PILARES en Ciberescuela hombres<span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Ciberescuela hombres<span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelasHombres">
                   <span class="float-left">Ver detalle</span>
@@ -16772,7 +16772,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por PILARES en Ciberescuela mujeres <span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Deport mujeres <span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseDeporteMujeres">
                   <span class="float-left">Ver detalle</span>
@@ -16845,7 +16845,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por PILARES en Ciberescuela hombres<span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Deporte hombres<span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseDeporteHombres">
                   <span class="float-left">Ver detalle</span>
@@ -17105,7 +17105,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por PILARES en Ciberescuela mujeres <span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica mujeres <span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseAutonomiaMujeres">
                   <span class="float-left">Ver detalle</span>
@@ -17286,7 +17286,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por PILARES en Ciberescuela hombres<span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica hombres<span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseAutonomiaHombres">
                   <span class="float-left">Ver detalle</span>
