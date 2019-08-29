@@ -7787,62 +7787,62 @@
     /**
     * Totales por actividad Deporte
     */
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '17'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '17'";
     $totalesFutbol = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $futbol = mysqli_fetch_array($totalesFutbol);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '18'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '18'";
     $totalesBasquet = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $basquet = mysqli_fetch_array($totalesBasquet);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '19'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '19'";
     $totaleVoley = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $voley = mysqli_fetch_array($totaleVoley);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '20'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '20'";
     $totalesAcondicionamiento = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $acondicionamiento = mysqli_fetch_array($totalesAcondicionamiento);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '94'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '94'";
     $totalesZumba = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $zumba = mysqli_fetch_array($totalesZumba);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '95'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '95'";
     $totalesTae = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $tae = mysqli_fetch_array($totalesTae);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '96'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '96'";
     $totalesYoga = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $yoga = mysqli_fetch_array($totalesYoga);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '97'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '97'";
     $totalesTai = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $taiChi = mysqli_fetch_array($totalesTai);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '98'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '98'";
     $totalesBoxeo = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $boxeo = mysqli_fetch_array($totalesBoxeo);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '99'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '99'";
     $totalesAtletismo = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $atletismo = mysqli_fetch_array($totalesAtletismo);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '100'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '100'";
     $totalesKarate = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $karate = mysqli_fetch_array($totalesKarate);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '101'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '101'";
     $totalesKung = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $kung = mysqli_fetch_array($totalesKung);
@@ -7852,62 +7852,62 @@
      /**
     * Totales por actividad Deporte Mujeres
     */
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '17'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '17'";
     $totalesFutbolMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaMujeres);
     $futbolMujeres = mysqli_fetch_array($totalesFutbolMujeres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '18'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '18'";
     $totalesBasquetMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaMujeres);
     $basquetMujeres = mysqli_fetch_array($totalesBasquetMujeres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '19'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '19'";
     $totalesVoleyMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaMujeres);
     $voleyMujeres = mysqli_fetch_array($totalesVoleyMujeres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '20'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '20'";
     $totalesAcondicionamientoMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaMujeres);
     $acondicionamientoMujeres = mysqli_fetch_array($totalesAcondicionamientoMujeres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '94'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '94'";
     $totalesZumbaMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaMujeres);
     $zumbaMujeres = mysqli_fetch_array($totalesZumbaMujeres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '95'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '95'";
     $totalesTaeMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaMujeres);
     $taeMujeres = mysqli_fetch_array($totalesTaeMujeres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '96'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '96'";
     $totalesYogaMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaMujeres);
     $yogaMujeres = mysqli_fetch_array($totalesYogaMujeres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '97'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '97'";
     $totalesTaiMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaMujeres);
     $taiChiMujeres = mysqli_fetch_array($totalesTaiMujeres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '98'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '98'";
     $totalesBoxeoMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaMujeres);
     $boxeoMujeres = mysqli_fetch_array($totalesBoxeoMujeres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '99'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '99'";
     $totalesAtletismoMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaMujeres);
     $atletismoMujeres = mysqli_fetch_array($totalesAtletismoMujeres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '100'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '100'";
     $totalesKarateMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaMujeres);
     $karateMujeres = mysqli_fetch_array($totalesKarateMujeres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '101'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '101'";
     $totalesKungMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaMujeres);
     $kungMujeres = mysqli_fetch_array($totalesKungMujeres);
@@ -7917,62 +7917,62 @@
      /**
     * Totales por actividad Deporte Hombres
     */
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '17'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '17'";
     $totalesFutbolHombres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaHombres);
     $futbolHombres = mysqli_fetch_array($totalesFutbolHombres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '18'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '18'";
     $totalesBasquetHombres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaHombres);
     $basquetHombres = mysqli_fetch_array($totalesBasquetHombres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '19'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '19'";
     $totalesVoleyHombres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaHombres);
     $voleyHombres = mysqli_fetch_array($totalesVoleyHombres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '20'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '20'";
     $totalesAcondicionamientoHombres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaHombres);
     $acondicionamientoHombres = mysqli_fetch_array($totalesAcondicionamientoHombres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '94'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '94'";
     $totalesZumbaHombres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaHombres);
     $zumbaHombres = mysqli_fetch_array($totalesZumbaHombres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '95'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '95'";
     $totalesTaeHombres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaHombres);
     $taeHombres = mysqli_fetch_array($totalesTaeHombres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '96'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '96'";
     $totalesYogaHombres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaHombres);
     $yogaHombres = mysqli_fetch_array($totalesYogaHombres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '97'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '97'";
     $totalesTaiHombres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaHombres);
     $taiChiHombres = mysqli_fetch_array($totalesTaiHombres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '98'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '98'";
     $totalesBoxeoHombres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaHombres);
     $boxeoHombres = mysqli_fetch_array($totalesBoxeoHombres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '99'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '99'";
     $totalesAtletismoHombres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaHombres);
     $atletismoHombres = mysqli_fetch_array($totalesAtletismoHombres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '100'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '100'";
     $totalesKarateHombres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaHombres);
     $karateHombres = mysqli_fetch_array($totalesKarateHombres);
 
-    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '101'";
+    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '101'";
     $totalesKungHombres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaHombres);
     $kungHombres = mysqli_fetch_array($totalesKungHombres);
