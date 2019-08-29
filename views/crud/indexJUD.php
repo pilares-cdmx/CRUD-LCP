@@ -2730,674 +2730,1346 @@
      * uSUARIOS INSCRITOS POR PUEBLOS ORIGINARIOS
      */
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '1'";
-    $totalesLengua1 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua1);
-    $pueblosTotales1= mysqli_fetch_array($totalesLengua1);
+    $totalesPueblos1 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos1);
+    $pueblosTotales1= mysqli_fetch_array($totalesPueblos1);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '2'";
-    $totalesLengua2 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua2);
-    $pueblosTotales2= mysqli_fetch_array($totalesLengua2);
+    $totalesPueblos2 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos2);
+    $pueblosTotales2= mysqli_fetch_array($totalesPueblos2);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '3'";
-    $totalesLengua3 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua3);
-    $pueblosTotales3= mysqli_fetch_array($totalesLengua3);
+    $totalesPueblos3 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos3);
+    $pueblosTotales3= mysqli_fetch_array($totalesPueblos3);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '4'";
-    $totalesLengua4 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua4);
-    $pueblosTotales4= mysqli_fetch_array($totalesLengua4);
+    $totalesPueblos4 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos4);
+    $pueblosTotales4= mysqli_fetch_array($totalesPueblos4);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '5'";
-    $totalesLengua5 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua5);
-    $pueblosTotales5= mysqli_fetch_array($totalesLengua5);
+    $totalesPueblos5 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos5);
+    $pueblosTotales5= mysqli_fetch_array($totalesPueblos5);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '6'";
-    $totalesLengua6 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua6);
-    $pueblosTotales6= mysqli_fetch_array($totalesLengua6);
+    $totalesPueblos6 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos6);
+    $pueblosTotales6= mysqli_fetch_array($totalesPueblos6);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '7'";
-    $totalesLengua7 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua7);
-    $pueblosTotales7= mysqli_fetch_array($totalesLengua7);
+    $totalesPueblos7 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos7);
+    $pueblosTotales7= mysqli_fetch_array($totalesPueblos7);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '8'";
-    $totalesLengua8 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua8);
-    $pueblosTotales8= mysqli_fetch_array($totalesLengua8);
+    $totalesPueblos8 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos8);
+    $pueblosTotales8= mysqli_fetch_array($totalesPueblos8);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '9'";
-    $totalesLengua9 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua9);
-    $pueblosTotales9= mysqli_fetch_array($totalesLengua9);
+    $totalesPueblos9 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos9);
+    $pueblosTotales9= mysqli_fetch_array($totalesPueblos9);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '10'";
-    $totalesLengua10 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua10);
-    $pueblosTotales10= mysqli_fetch_array($totalesLengua10);
+    $totalesPueblos10 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos10);
+    $pueblosTotales10= mysqli_fetch_array($totalesPueblos10);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '11'";
-    $totalesLengua11 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua11);
-    $pueblosTotales11= mysqli_fetch_array($totalesLengua11);
+    $totalesPueblos11 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos11);
+    $pueblosTotales11= mysqli_fetch_array($totalesPueblos11);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '12'";
-    $totalesLengua12 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua12);
-    $pueblosTotales12= mysqli_fetch_array($totalesLengua12);
+    $totalesPueblos12 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos12);
+    $pueblosTotales12= mysqli_fetch_array($totalesPueblos12);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '13'";
-    $totalesLengua13 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua13);
-    $pueblosTotales13= mysqli_fetch_array($totalesLengua13);
+    $totalesPueblos13 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos13);
+    $pueblosTotales13= mysqli_fetch_array($totalesPueblos13);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '14'";
-    $totalesLengua14 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua14);
-    $pueblosTotales14= mysqli_fetch_array($totalesLengua14);
+    $totalesPueblos14 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos14);
+    $pueblosTotales14= mysqli_fetch_array($totalesPueblos14);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '15'";
-    $totalesLengua15 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua15);
-    $pueblosTotales15= mysqli_fetch_array($totalesLengua15);
+    $totalesPueblos15 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos15);
+    $pueblosTotales15= mysqli_fetch_array($totalesPueblos15);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '16'";
-    $totalesLengua16 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua16);
-    $pueblosTotales16= mysqli_fetch_array($totalesLengua16);
+    $totalesPueblos16 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos16);
+    $pueblosTotales16= mysqli_fetch_array($totalesPueblos16);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '17'";
-    $totalesLengua17 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua17);
-    $pueblosTotales17= mysqli_fetch_array($totalesLengua17);
+    $totalesPueblos17 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos17);
+    $pueblosTotales17= mysqli_fetch_array($totalesPueblos17);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '18'";
-    $totalesLengua18 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua18);
-    $pueblosTotales18= mysqli_fetch_array($totalesLengua18);
+    $totalesPueblos18 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos18);
+    $pueblosTotales18= mysqli_fetch_array($totalesPueblos18);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '19'";
-    $totalesLengua19 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua19);
-    $pueblosTotales19= mysqli_fetch_array($totalesLengua19);
+    $totalesPueblos19 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos19);
+    $pueblosTotales19= mysqli_fetch_array($totalesPueblos19);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '20'";
-    $totalesLengua20 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua20);
-    $pueblosTotales20= mysqli_fetch_array($totalesLengua20);
+    $totalesPueblos20 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos20);
+    $pueblosTotales20= mysqli_fetch_array($totalesPueblos20);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '21'";
-    $totalesLengua21 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua21);
-    $pueblosTotales21= mysqli_fetch_array($totalesLengua21);
+    $totalesPueblos21 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos21);
+    $pueblosTotales21= mysqli_fetch_array($totalesPueblos21);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '22'";
-    $totalesLengua22 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua22);
-    $pueblosTotales22= mysqli_fetch_array($totalesLengua22);
+    $totalesPueblos22 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos22);
+    $pueblosTotales22= mysqli_fetch_array($totalesPueblos22);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '23'";
-    $totalesLengua23 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua23);
-    $pueblosTotales23= mysqli_fetch_array($totalesLengua23);
+    $totalesPueblos23 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos23);
+    $pueblosTotales23= mysqli_fetch_array($totalesPueblos23);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '24'";
-    $totalesLengua24 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua24);
-    $pueblosTotales24= mysqli_fetch_array($totalesLengua24);
+    $totalesPueblos24 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos24);
+    $pueblosTotales24= mysqli_fetch_array($totalesPueblos24);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '25'";
-    $totalesLengua25 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua25);
-    $pueblosTotales25= mysqli_fetch_array($totalesLengua25);
+    $totalesPueblos25 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos25);
+    $pueblosTotales25= mysqli_fetch_array($totalesPueblos25);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '26'";
-    $totalesLengua26 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua26);
-    $pueblosTotales26= mysqli_fetch_array($totalesLengua26);
+    $totalesPueblos26 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos26);
+    $pueblosTotales26= mysqli_fetch_array($totalesPueblos26);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '27'";
-    $totalesLengua27 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua27);
-    $pueblosTotales27= mysqli_fetch_array($totalesLengua27);
+    $totalesPueblos27 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos27);
+    $pueblosTotales27= mysqli_fetch_array($totalesPueblos27);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '28'";
-    $totalesLengua28 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua28);
-    $pueblosTotales28= mysqli_fetch_array($totalesLengua28);
+    $totalesPueblos28 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos28);
+    $pueblosTotales28= mysqli_fetch_array($totalesPueblos28);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '29'";
-    $totalesLengua29 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua29);
-    $pueblosTotales29= mysqli_fetch_array($totalesLengua29);
+    $totalesPueblos29 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos29);
+    $pueblosTotales29= mysqli_fetch_array($totalesPueblos29);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '30'";
-    $totalesLengua30 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua30);
-    $pueblosTotales30= mysqli_fetch_array($totalesLengua30);
+    $totalesPueblos30 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos30);
+    $pueblosTotales30= mysqli_fetch_array($totalesPueblos30);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '31'";
-    $totalesLengua31 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua31);
-    $pueblosTotales31= mysqli_fetch_array($totalesLengua31);
+    $totalesPueblos31 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos31);
+    $pueblosTotales31= mysqli_fetch_array($totalesPueblos31);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '32'";
-    $totalesLengua32 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua32);
-    $pueblosTotales32= mysqli_fetch_array($totalesLengua32);
+    $totalesPueblos32 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos32);
+    $pueblosTotales32= mysqli_fetch_array($totalesPueblos32);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '33'";
-    $totalesLengua33 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua33);
-    $pueblosTotales33= mysqli_fetch_array($totalesLengua33);
+    $totalesPueblos33 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos33);
+    $pueblosTotales33= mysqli_fetch_array($totalesPueblos33);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '34'";
-    $totalesLengua34 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua34);
-    $pueblosTotales34= mysqli_fetch_array($totalesLengua34);
+    $totalesPueblos34 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos34);
+    $pueblosTotales34= mysqli_fetch_array($totalesPueblos34);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '35'";
-    $totalesLengua35 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua35);
-    $pueblosTotales35= mysqli_fetch_array($totalesLengua35);
+    $totalesPueblos35 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos35);
+    $pueblosTotales35= mysqli_fetch_array($totalesPueblos35);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '36'";
-    $totalesLengua36 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua36);
-    $pueblosTotales36= mysqli_fetch_array($totalesLengua36);
+    $totalesPueblos36 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos36);
+    $pueblosTotales36= mysqli_fetch_array($totalesPueblos36);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '37'";
-    $totalesLengua37 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua37);
-    $pueblosTotales37= mysqli_fetch_array($totalesLengua37);
+    $totalesPueblos37 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos37);
+    $pueblosTotales37= mysqli_fetch_array($totalesPueblos37);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '38'";
-    $totalesLengua38 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua38);
-    $pueblosTotales38= mysqli_fetch_array($totalesLengua38);
+    $totalesPueblos38 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos38);
+    $pueblosTotales38= mysqli_fetch_array($totalesPueblos38);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '39'";
-    $totalesLengua39 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua39);
-    $pueblosTotales39= mysqli_fetch_array($totalesLengua39);
+    $totalesPueblos39 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos39);
+    $pueblosTotales39= mysqli_fetch_array($totalesPueblos39);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '40'";
-    $totalesLengua40 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua40);
-    $pueblosTotales40= mysqli_fetch_array($totalesLengua40);
+    $totalesPueblos40 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos40);
+    $pueblosTotales40= mysqli_fetch_array($totalesPueblos40);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '41'";
-    $totalesLengua41 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua41);
-    $pueblosTotales41= mysqli_fetch_array($totalesLengua41);
+    $totalesPueblos41 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos41);
+    $pueblosTotales41= mysqli_fetch_array($totalesPueblos41);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '42'";
-    $totalesLengua42 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua42);
-    $pueblosTotales42= mysqli_fetch_array($totalesLengua42);
+    $totalesPueblos42 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos42);
+    $pueblosTotales42= mysqli_fetch_array($totalesPueblos42);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '43'";
-    $totalesLengua43 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua43);
-    $pueblosTotales43= mysqli_fetch_array($totalesLengua43);
+    $totalesPueblos43 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos43);
+    $pueblosTotales43= mysqli_fetch_array($totalesPueblos43);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '44'";
-    $totalesLengua44 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua44);
-    $pueblosTotales44= mysqli_fetch_array($totalesLengua44);
+    $totalesPueblos44 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos44);
+    $pueblosTotales44= mysqli_fetch_array($totalesPueblos44);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '45'";
-    $totalesLengua45 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua45);
-    $pueblosTotales45= mysqli_fetch_array($totalesLengua45);
+    $totalesPueblos45 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos45);
+    $pueblosTotales45= mysqli_fetch_array($totalesPueblos45);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '46'";
-    $totalesLengua46 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua46);
-    $pueblosTotales46= mysqli_fetch_array($totalesLengua46);
+    $totalesPueblos46 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos46);
+    $pueblosTotales46= mysqli_fetch_array($totalesPueblos46);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '47'";
-    $totalesLengua47 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua47);
-    $pueblosTotales47= mysqli_fetch_array($totalesLengua47);
+    $totalesPueblos47 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos47);
+    $pueblosTotales47= mysqli_fetch_array($totalesPueblos47);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '48'";
-    $totalesLengua48 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua48);
-    $pueblosTotales48= mysqli_fetch_array($totalesLengua48);
+    $totalesPueblos48 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos48);
+    $pueblosTotales48= mysqli_fetch_array($totalesPueblos48);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '49'";
-    $totalesLengua49 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua49);
-    $pueblosTotales49= mysqli_fetch_array($totalesLengua49);
+    $totalesPueblos49 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos49);
+    $pueblosTotales49= mysqli_fetch_array($totalesPueblos49);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '50'";
-    $totalesLengua50 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua50);
-    $pueblosTotales50= mysqli_fetch_array($totalesLengua50);
+    $totalesPueblos50 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos50);
+    $pueblosTotales50= mysqli_fetch_array($totalesPueblos50);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '51'";
-    $totalesLengua51 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua51);
-    $pueblosTotales51= mysqli_fetch_array($totalesLengua51);
+    $totalesPueblos51 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos51);
+    $pueblosTotales51= mysqli_fetch_array($totalesPueblos51);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '52'";
-    $totalesLengua52 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua52);
-    $pueblosTotales52= mysqli_fetch_array($totalesLengua52);
+    $totalesPueblos52 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos52);
+    $pueblosTotales52= mysqli_fetch_array($totalesPueblos52);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '53'";
-    $totalesLengua53 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua53);
-    $pueblosTotales53= mysqli_fetch_array($totalesLengua53);
+    $totalesPueblos53 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos53);
+    $pueblosTotales53= mysqli_fetch_array($totalesPueblos53);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '54'";
-    $totalesLengua54 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua54);
-    $pueblosTotales54= mysqli_fetch_array($totalesLengua54);
+    $totalesPueblos54 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos54);
+    $pueblosTotales54= mysqli_fetch_array($totalesPueblos54);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '55'";
-    $totalesLengua55 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua55);
-    $pueblosTotales55= mysqli_fetch_array($totalesLengua55);
+    $totalesPueblos55 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos55);
+    $pueblosTotales55= mysqli_fetch_array($totalesPueblos55);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '56'";
-    $totalesLengua56 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua56);
-    $pueblosTotales56= mysqli_fetch_array($totalesLengua56);
+    $totalesPueblos56 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos56);
+    $pueblosTotales56= mysqli_fetch_array($totalesPueblos56);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '57'";
-    $totalesLengua57 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua57);
-    $pueblosTotales57= mysqli_fetch_array($totalesLengua57);
+    $totalesPueblos57 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos57);
+    $pueblosTotales57= mysqli_fetch_array($totalesPueblos57);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '58'";
-    $totalesLengua58 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua58);
-    $pueblosTotales58= mysqli_fetch_array($totalesLengua58);
+    $totalesPueblos58 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos58);
+    $pueblosTotales58= mysqli_fetch_array($totalesPueblos58);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '59'";
-    $totalesLengua59 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua59);
-    $pueblosTotales59= mysqli_fetch_array($totalesLengua59);
+    $totalesPueblos59 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos59);
+    $pueblosTotales59= mysqli_fetch_array($totalesPueblos59);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '60'";
-    $totalesLengua60 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua60);
-    $pueblosTotales60= mysqli_fetch_array($totalesLengua60);
+    $totalesPueblos60 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos60);
+    $pueblosTotales60= mysqli_fetch_array($totalesPueblos60);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61'";
-    $totalesLengua61 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua61);
-    $pueblosTotales61= mysqli_fetch_array($totalesLengua61);
+    $totalesPueblos61 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos61);
+    $pueblosTotales61= mysqli_fetch_array($totalesPueblos61);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62'";
-    $totalesLengua62 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua62);
-    $pueblosTotales62= mysqli_fetch_array($totalesLengua62);
+    $totalesPueblos62 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos62);
+    $pueblosTotales62= mysqli_fetch_array($totalesPueblos62);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63'";
-    $totalesLengua63 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua63);
-    $pueblosTotales63= mysqli_fetch_array($totalesLengua63);
+    $totalesPueblos63 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos63);
+    $pueblosTotales63= mysqli_fetch_array($totalesPueblos63);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
-    $totalesLengua64 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua64);
-    $pueblosTotales64= mysqli_fetch_array($totalesLengua64);
+    $totalesPueblos64 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos64);
+    $pueblosTotales64= mysqli_fetch_array($totalesPueblos64);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
-    $totalesLengua65 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua65);
-    $pueblosTotales65= mysqli_fetch_array($totalesLengua65);
+    $totalesPueblos65 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos65);
+    $pueblosTotales65= mysqli_fetch_array($totalesPueblos65);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
-    $totalesLengua66 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua66);
-    $pueblosTotales66= mysqli_fetch_array($totalesLengua66);
+    $totalesPueblos66 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos66);
+    $pueblosTotales66= mysqli_fetch_array($totalesPueblos66);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
-    $totalesLengua67 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua67);
-    $pueblosTotales67= mysqli_fetch_array($totalesLengua67);
+    $totalesPueblos67 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos67);
+    $pueblosTotales67= mysqli_fetch_array($totalesPueblos67);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '68'";
-    $totalesLengua68 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua68);
-    $pueblosTotales68= mysqli_fetch_array($totalesLengua68);
+    $totalesPueblos68 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos68);
+    $pueblosTotales68= mysqli_fetch_array($totalesPueblos68);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69'";
-    $totalesLengua69 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua69);
-    $pueblosTotales69= mysqli_fetch_array($totalesLengua69);
+    $totalesPueblos69 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos69);
+    $pueblosTotales69= mysqli_fetch_array($totalesPueblos69);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '70'";
-    $totalesLengua70 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua70);
-    $pueblosTotales70= mysqli_fetch_array($totalesLengua70);
+    $totalesPueblos70 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos70);
+    $pueblosTotales70= mysqli_fetch_array($totalesPueblos70);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '71'";
-    $totalesLengua71 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua71);
-    $pueblosTotales71= mysqli_fetch_array($totalesLengua71);
+    $totalesPueblos71 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos71);
+    $pueblosTotales71= mysqli_fetch_array($totalesPueblos71);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '72'";
-    $totalesLengua72 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua72);
-    $pueblosTotales72= mysqli_fetch_array($totalesLengua72);
+    $totalesPueblos72 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos72);
+    $pueblosTotales72= mysqli_fetch_array($totalesPueblos72);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '73'";
-    $totalesLengua73 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua73);
-    $pueblosTotales73= mysqli_fetch_array($totalesLengua73);
+    $totalesPueblos73 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos73);
+    $pueblosTotales73= mysqli_fetch_array($totalesPueblos73);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '74'";
-    $totalesLengua74 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua74);
-    $pueblosTotales74= mysqli_fetch_array($totalesLengua74);
+    $totalesPueblos74 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos74);
+    $pueblosTotales74= mysqli_fetch_array($totalesPueblos74);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '75'";
-    $totalesLengua75 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua75);
-    $pueblosTotales75= mysqli_fetch_array($totalesLengua75);
+    $totalesPueblos75 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos75);
+    $pueblosTotales75= mysqli_fetch_array($totalesPueblos75);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '76'";
-    $totalesLengua76 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua76);
-    $pueblosTotales76= mysqli_fetch_array($totalesLengua76);
+    $totalesPueblos76 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos76);
+    $pueblosTotales76= mysqli_fetch_array($totalesPueblos76);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '77'";
-    $totalesLengua77 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua77);
-    $pueblosTotales77= mysqli_fetch_array($totalesLengua77);
+    $totalesPueblos77 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos77);
+    $pueblosTotales77= mysqli_fetch_array($totalesPueblos77);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '78'";
-    $totalesLengua78 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua78);
-    $pueblosTotales78= mysqli_fetch_array($totalesLengua78);
+    $totalesPueblos78 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos78);
+    $pueblosTotales78= mysqli_fetch_array($totalesPueblos78);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '79'";
-    $totalesLengua79 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua79);
-    $pueblosTotales79= mysqli_fetch_array($totalesLengua79);
+    $totalesPueblos79 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos79);
+    $pueblosTotales79= mysqli_fetch_array($totalesPueblos79);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '80'";
-    $totalesLengua80 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua80);
-    $pueblosTotales80= mysqli_fetch_array($totalesLengua80);
+    $totalesPueblos80 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos80);
+    $pueblosTotales80= mysqli_fetch_array($totalesPueblos80);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '81'";
-    $totalesLengua81 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua81);
-    $pueblosTotales81= mysqli_fetch_array($totalesLengua81);
+    $totalesPueblos81 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos81);
+    $pueblosTotales81= mysqli_fetch_array($totalesPueblos81);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '82'";
-    $totalesLengua82 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua82);
-    $pueblosTotales82= mysqli_fetch_array($totalesLengua82);
+    $totalesPueblos82 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos82);
+    $pueblosTotales82= mysqli_fetch_array($totalesPueblos82);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '83'";
-    $totalesLengua83 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua83);
-    $pueblosTotales83= mysqli_fetch_array($totalesLengua83);
+    $totalesPueblos83 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos83);
+    $pueblosTotales83= mysqli_fetch_array($totalesPueblos83);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '84'";
-    $totalesLengua84 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua84);
-    $pueblosTotales84= mysqli_fetch_array($totalesLengua84);
+    $totalesPueblos84 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos84);
+    $pueblosTotales84= mysqli_fetch_array($totalesPueblos84);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '85'";
-    $totalesLengua85 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua85);
-    $pueblosTotales85= mysqli_fetch_array($totalesLengua85);
+    $totalesPueblos85 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos85);
+    $pueblosTotales85= mysqli_fetch_array($totalesPueblos85);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '86'";
-    $totalesLengua86 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua86);
-    $pueblosTotales86= mysqli_fetch_array($totalesLengua86);
+    $totalesPueblos86 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos86);
+    $pueblosTotales86= mysqli_fetch_array($totalesPueblos86);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '87'";
-    $totalesLengua87 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua87);
-    $pueblosTotales87= mysqli_fetch_array($totalesLengua87);
+    $totalesPueblos87 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos87);
+    $pueblosTotales87= mysqli_fetch_array($totalesPueblos87);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '88'";
-    $totalesLengua88 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua88);
-    $pueblosTotales88= mysqli_fetch_array($totalesLengua88);
+    $totalesPueblos88 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos88);
+    $pueblosTotales88= mysqli_fetch_array($totalesPueblos88);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '89'";
-    $totalesLengua89 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua89);
-    $pueblosTotales89= mysqli_fetch_array($totalesLengua89);
+    $totalesPueblos89 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos89);
+    $pueblosTotales89= mysqli_fetch_array($totalesPueblos89);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '90'";
-    $totalesLengua90 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua90);
-    $pueblosTotales90= mysqli_fetch_array($totalesLengua90);
+    $totalesPueblos90 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos90);
+    $pueblosTotales90= mysqli_fetch_array($totalesPueblos90);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '91'";
-    $totalesLengua91 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua91);
-    $pueblosTotales91= mysqli_fetch_array($totalesLengua91);
+    $totalesPueblos91 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos91);
+    $pueblosTotales91= mysqli_fetch_array($totalesPueblos91);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '92'";
-    $totalesLengua92 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua92);
-    $pueblosTotales92= mysqli_fetch_array($totalesLengua92);
+    $totalesPueblos92 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos92);
+    $pueblosTotales92= mysqli_fetch_array($totalesPueblos92);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '93'";
-    $totalesLengua93 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua93);
-    $pueblosTotales93= mysqli_fetch_array($totalesLengua93);
+    $totalesPueblos93 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos93);
+    $pueblosTotales93= mysqli_fetch_array($totalesPueblos93);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '94'";
-    $totalesLengua94 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua94);
-    $pueblosTotales94= mysqli_fetch_array($totalesLengua94);
+    $totalesPueblos94 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos94);
+    $pueblosTotales94= mysqli_fetch_array($totalesPueblos94);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '95'";
-    $totalesLengua95 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua95);
-    $pueblosTotales95= mysqli_fetch_array($totalesLengua95);
+    $totalesPueblos95 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos95);
+    $pueblosTotales95= mysqli_fetch_array($totalesPueblos95);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '96'";
-    $totalesLengua96 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua96);
-    $pueblosTotales96= mysqli_fetch_array($totalesLengua96);
+    $totalesPueblos96 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos96);
+    $pueblosTotales96= mysqli_fetch_array($totalesPueblos96);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '97'";
-    $totalesLengua97 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua97);
-    $pueblosTotales97= mysqli_fetch_array($totalesLengua97);
+    $totalesPueblos97 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos97);
+    $pueblosTotales97= mysqli_fetch_array($totalesPueblos97);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '98'";
-    $totalesLengua98 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua98);
-    $pueblosTotales98= mysqli_fetch_array($totalesLengua98);
+    $totalesPueblos98 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos98);
+    $pueblosTotales98= mysqli_fetch_array($totalesPueblos98);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '99'";
-    $totalesLengua99 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua99);
-    $pueblosTotales99= mysqli_fetch_array($totalesLengua99);
+    $totalesPueblos99 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos99);
+    $pueblosTotales99= mysqli_fetch_array($totalesPueblos99);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '100'";
-    $totalesLengua100 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua100);
-    $pueblosTotales100= mysqli_fetch_array($totalesLengua100);
+    $totalesPueblos100 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos100);
+    $pueblosTotales100= mysqli_fetch_array($totalesPueblos100);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '101'";
-    $totalesLengua101 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua101);
-    $pueblosTotales101= mysqli_fetch_array($totalesLengua101);
+    $totalesPueblos101 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos101);
+    $pueblosTotales101= mysqli_fetch_array($totalesPueblos101);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '102'";
-    $totalesLengua102 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua102);
-    $pueblosTotales102= mysqli_fetch_array($totalesLengua102);
+    $totalesPueblos102 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos102);
+    $pueblosTotales102= mysqli_fetch_array($totalesPueblos102);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '103'";
-    $totalesLengua103 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua103);
-    $pueblosTotales103= mysqli_fetch_array($totalesLengua103);
+    $totalesPueblos103 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos103);
+    $pueblosTotales103= mysqli_fetch_array($totalesPueblos103);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '104'";
-    $totalesLengua104 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua104);
-    $pueblosTotales104= mysqli_fetch_array($totalesLengua104);
+    $totalesPueblos104 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos104);
+    $pueblosTotales104= mysqli_fetch_array($totalesPueblos104);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '105'";
-    $totalesLengua105 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua105);
-    $pueblosTotales105= mysqli_fetch_array($totalesLengua105);
+    $totalesPueblos105 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos105);
+    $pueblosTotales105= mysqli_fetch_array($totalesPueblos105);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '106'";
-    $totalesLengua106 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua106);
-    $pueblosTotales106= mysqli_fetch_array($totalesLengua106);
+    $totalesPueblos106 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos106);
+    $pueblosTotales106= mysqli_fetch_array($totalesPueblos106);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '107'";
-    $totalesLengua107 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua107);
-    $pueblosTotales107= mysqli_fetch_array($totalesLengua107);
+    $totalesPueblos107 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos107);
+    $pueblosTotales107= mysqli_fetch_array($totalesPueblos107);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '108'";
-    $totalesLengua108 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua108);
-    $pueblosTotales108= mysqli_fetch_array($totalesLengua108);
+    $totalesPueblos108 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos108);
+    $pueblosTotales108= mysqli_fetch_array($totalesPueblos108);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '109'";
-    $totalesLengua109 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua109);
-    $pueblosTotales109= mysqli_fetch_array($totalesLengua109);
+    $totalesPueblos109 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos109);
+    $pueblosTotales109= mysqli_fetch_array($totalesPueblos109);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '110'";
-    $totalesLengua110 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua110);
-    $pueblosTotales110= mysqli_fetch_array($totalesLengua110);
+    $totalesPueblos110 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos110);
+    $pueblosTotales110= mysqli_fetch_array($totalesPueblos110);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '111'";
-    $totalesLengua111 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua111);
-    $pueblosTotales111= mysqli_fetch_array($totalesLengua111);
+    $totalesPueblos111 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos111);
+    $pueblosTotales111= mysqli_fetch_array($totalesPueblos111);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '112'";
-    $totalesLengua112 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua112);
-    $pueblosTotales112= mysqli_fetch_array($totalesLengua112);
+    $totalesPueblos112 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos112);
+    $pueblosTotales112= mysqli_fetch_array($totalesPueblos112);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '113'";
-    $totalesLengua113 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua113);
-    $pueblosTotales113= mysqli_fetch_array($totalesLengua113);
+    $totalesPueblos113 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos113);
+    $pueblosTotales113= mysqli_fetch_array($totalesPueblos113);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '114'";
-    $totalesLengua114 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua114);
-    $pueblosTotales114= mysqli_fetch_array($totalesLengua114);
+    $totalesPueblos114 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos114);
+    $pueblosTotales114= mysqli_fetch_array($totalesPueblos114);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '115'";
-    $totalesLengua115 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua115);
-    $pueblosTotales115= mysqli_fetch_array($totalesLengua115);
+    $totalesPueblos115 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos115);
+    $pueblosTotales115= mysqli_fetch_array($totalesPueblos115);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '116'";
-    $totalesLengua116 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua116);
-    $pueblosTotales116= mysqli_fetch_array($totalesLengua116);
+    $totalesPueblos116 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos116);
+    $pueblosTotales116= mysqli_fetch_array($totalesPueblos116);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '117'";
-    $totalesLengua117 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua117);
-    $pueblosTotales117= mysqli_fetch_array($totalesLengua117);
+    $totalesPueblos117 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos117);
+    $pueblosTotales117= mysqli_fetch_array($totalesPueblos117);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '118'";
-    $totalesLengua118 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua118);
-    $pueblosTotales118= mysqli_fetch_array($totalesLengua118);
+    $totalesPueblos118 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos118);
+    $pueblosTotales118= mysqli_fetch_array($totalesPueblos118);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '119'";
-    $totalesLengua119 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua119);
-    $pueblosTotales119= mysqli_fetch_array($totalesLengua119);
+    $totalesPueblos119 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos119);
+    $pueblosTotales119= mysqli_fetch_array($totalesPueblos119);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '120'";
-    $totalesLengua120 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua120);
-    $pueblosTotales120= mysqli_fetch_array($totalesLengua120);
+    $totalesPueblos120 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos120);
+    $pueblosTotales120= mysqli_fetch_array($totalesPueblos120);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '121'";
-    $totalesLengua121 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua121);
-    $pueblosTotales121= mysqli_fetch_array($totalesLengua121);
+    $totalesPueblos121 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos121);
+    $pueblosTotales121= mysqli_fetch_array($totalesPueblos121);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '122'";
-    $totalesLengua122 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua122);
-    $pueblosTotales122= mysqli_fetch_array($totalesLengua122);
+    $totalesPueblos122 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos122);
+    $pueblosTotales122= mysqli_fetch_array($totalesPueblos122);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '123'";
-    $totalesLengua123 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua123);
-    $pueblosTotales123= mysqli_fetch_array($totalesLengua123);
+    $totalesPueblos123 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos123);
+    $pueblosTotales123= mysqli_fetch_array($totalesPueblos123);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '124'";
-    $totalesLengua124 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua124);
-    $pueblosTotales124= mysqli_fetch_array($totalesLengua124);
+    $totalesPueblos124 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos124);
+    $pueblosTotales124= mysqli_fetch_array($totalesPueblos124);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '125'";
-    $totalesLengua125 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua125);
-    $pueblosTotales125= mysqli_fetch_array($totalesLengua125);
+    $totalesPueblos125 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos125);
+    $pueblosTotales125= mysqli_fetch_array($totalesPueblos125);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '126'";
-    $totalesLengua126 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua126);
-    $pueblosTotales126= mysqli_fetch_array($totalesLengua126);
+    $totalesPueblos126 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos126);
+    $pueblosTotales126= mysqli_fetch_array($totalesPueblos126);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '127'";
-    $totalesLengua127 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua127);
-    $pueblosTotales127= mysqli_fetch_array($totalesLengua127);
+    $totalesPueblos127 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos127);
+    $pueblosTotales127= mysqli_fetch_array($totalesPueblos127);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '130'";
-    $totalesLengua130 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua130);
-    $pueblosTotales130= mysqli_fetch_array($totalesLengua130);
+    $totalesPueblos130 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos130);
+    $pueblosTotales130= mysqli_fetch_array($totalesPueblos130);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '131'";
-    $totalesLengua131 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua131);
-    $pueblosTotales131= mysqli_fetch_array($totalesLengua131);
+    $totalesPueblos131 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos131);
+    $pueblosTotales131= mysqli_fetch_array($totalesPueblos131);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '132'";
-    $totalesLengua132 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua132);
-    $pueblosTotales132= mysqli_fetch_array($totalesLengua132);
+    $totalesPueblos132 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos132);
+    $pueblosTotales132= mysqli_fetch_array($totalesPueblos132);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '133'";
-    $totalesLengua133 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua133);
-    $pueblosTotales133= mysqli_fetch_array($totalesLengua133);
+    $totalesPueblos133 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos133);
+    $pueblosTotales133= mysqli_fetch_array($totalesPueblos133);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '134'";
-    $totalesLengua134 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua134);
-    $pueblosTotales134= mysqli_fetch_array($totalesLengua134);
+    $totalesPueblos134 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos134);
+    $pueblosTotales134= mysqli_fetch_array($totalesPueblos134);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '135'";
-    $totalesLengua135 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua135);
-    $pueblosTotales135= mysqli_fetch_array($totalesLengua135);
+    $totalesPueblos135 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos135);
+    $pueblosTotales135= mysqli_fetch_array($totalesPueblos135);
 
     $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '0'";
-    $totalesLengua0 = mysqli_query($con, $sql);
-    //var_dump($totalesLengua0);
-    $pueblosTotales0= mysqli_fetch_array($totalesLengua0);    
+    $totalesPueblos0 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblos0);
+    $pueblosTotales0= mysqli_fetch_array($totalesPueblos0);    
+/**
+     * uSUARIOS INSCRITOS POR PUEBLOS ORIGINARIOS Mujeres
+     */
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '1' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres1 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres1);
+    $pueblosTotalesMujeres1= mysqli_fetch_array($totalesPueblosMujeres1);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '2' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres2 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres2);
+    $pueblosTotalesMujeres2= mysqli_fetch_array($totalesPueblosMujeres2);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '3' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres3 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres3);
+    $pueblosTotalesMujeres3= mysqli_fetch_array($totalesPueblosMujeres3);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '4' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres4 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres4);
+    $pueblosTotalesMujeres4= mysqli_fetch_array($totalesPueblosMujeres4);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '5' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres5 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres5);
+    $pueblosTotalesMujeres5= mysqli_fetch_array($totalesPueblosMujeres5);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '6' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres6 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres6);
+    $pueblosTotalesMujeres6= mysqli_fetch_array($totalesPueblosMujeres6);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '7' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres7 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres7);
+    $pueblosTotalesMujeres7= mysqli_fetch_array($totalesPueblosMujeres7);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '8' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres8 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres8);
+    $pueblosTotalesMujeres8= mysqli_fetch_array($totalesPueblosMujeres8);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '9' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres9 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres9);
+    $pueblosTotalesMujeres9= mysqli_fetch_array($totalesPueblosMujeres9);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '10' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres10 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres10);
+    $pueblosTotalesMujeres10= mysqli_fetch_array($totalesPueblosMujeres10);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '11' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres11 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres11);
+    $pueblosTotalesMujeres11= mysqli_fetch_array($totalesPueblosMujeres11);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '12' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres12 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres12);
+    $pueblosTotalesMujeres12= mysqli_fetch_array($totalesPueblosMujeres12);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '13' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres13 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres13);
+    $pueblosTotalesMujeres13= mysqli_fetch_array($totalesPueblosMujeres13);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '14' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres14 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres14);
+    $pueblosTotalesMujeres14= mysqli_fetch_array($totalesPueblosMujeres14);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '15' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres15 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres15);
+    $pueblosTotalesMujeres15= mysqli_fetch_array($totalesPueblosMujeres15);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '16' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres16 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres16);
+    $pueblosTotalesMujeres16= mysqli_fetch_array($totalesPueblosMujeres16);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '17' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres17 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres17);
+    $pueblosTotalesMujeres17= mysqli_fetch_array($totalesPueblosMujeres17);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '18' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres18 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres18);
+    $pueblosTotalesMujeres18= mysqli_fetch_array($totalesPueblosMujeres18);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '19' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres19 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres19);
+    $pueblosTotalesMujeres19= mysqli_fetch_array($totalesPueblosMujeres19);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '20' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres20 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres20);
+    $pueblosTotalesMujeres20= mysqli_fetch_array($totalesPueblosMujeres20);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '21' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres21 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres21);
+    $pueblosTotalesMujeres21= mysqli_fetch_array($totalesPueblosMujeres21);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '22' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres22 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres22);
+    $pueblosTotalesMujeres22= mysqli_fetch_array($totalesPueblosMujeres22);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '23' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres23 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres23);
+    $pueblosTotalesMujeres23= mysqli_fetch_array($totalesPueblosMujeres23);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '24' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres24 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres24);
+    $pueblosTotalesMujeres24= mysqli_fetch_array($totalesPueblosMujeres24);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '25' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres25 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres25);
+    $pueblosTotalesMujeres25= mysqli_fetch_array($totalesPueblosMujeres25);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '26' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres26 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres26);
+    $pueblosTotalesMujeres26= mysqli_fetch_array($totalesPueblosMujeres26);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '27' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres27 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres27);
+    $pueblosTotalesMujeres27= mysqli_fetch_array($totalesPueblosMujeres27);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '28' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres28 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres28);
+    $pueblosTotalesMujeres28= mysqli_fetch_array($totalesPueblosMujeres28);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '29' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres29 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres29);
+    $pueblosTotalesMujeres29= mysqli_fetch_array($totalesPueblosMujeres29);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '30' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres30 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres30);
+    $pueblosTotalesMujeres30= mysqli_fetch_array($totalesPueblosMujeres30);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '31' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres31 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres31);
+    $pueblosTotalesMujeres31= mysqli_fetch_array($totalesPueblosMujeres31);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '32' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres32 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres32);
+    $pueblosTotalesMujeres32= mysqli_fetch_array($totalesPueblosMujeres32);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '33' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres33 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres33);
+    $pueblosTotalesMujeres33= mysqli_fetch_array($totalesPueblosMujeres33);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '34' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres34 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres34);
+    $pueblosTotalesMujeres34= mysqli_fetch_array($totalesPueblosMujeres34);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '35' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres35 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres35);
+    $pueblosTotalesMujeres35= mysqli_fetch_array($totalesPueblosMujeres35);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '36' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres36 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres36);
+    $pueblosTotalesMujeres36= mysqli_fetch_array($totalesPueblosMujeres36);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '37' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres37 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres37);
+    $pueblosTotalesMujeres37= mysqli_fetch_array($totalesPueblosMujeres37);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '38' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres38 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres38);
+    $pueblosTotalesMujeres38= mysqli_fetch_array($totalesPueblosMujeres38);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '39' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres39 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres39);
+    $pueblosTotalesMujeres39= mysqli_fetch_array($totalesPueblosMujeres39);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '40' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres40 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres40);
+    $pueblosTotalesMujeres40= mysqli_fetch_array($totalesPueblosMujeres40);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '41' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres41 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres41);
+    $pueblosTotalesMujeres41= mysqli_fetch_array($totalesPueblosMujeres41);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '42' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres42 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres42);
+    $pueblosTotalesMujeres42= mysqli_fetch_array($totalesPueblosMujeres42);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '43' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres43 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres43);
+    $pueblosTotalesMujeres43= mysqli_fetch_array($totalesPueblosMujeres43);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '44' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres44 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres44);
+    $pueblosTotalesMujeres44= mysqli_fetch_array($totalesPueblosMujeres44);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '45' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres45 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres45);
+    $pueblosTotalesMujeres45= mysqli_fetch_array($totalesPueblosMujeres45);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '46' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres46 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres46);
+    $pueblosTotalesMujeres46= mysqli_fetch_array($totalesPueblosMujeres46);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '47' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres47 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres47);
+    $pueblosTotalesMujeres47= mysqli_fetch_array($totalesPueblosMujeres47);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '48' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres48 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres48);
+    $pueblosTotalesMujeres48= mysqli_fetch_array($totalesPueblosMujeres48);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '49' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres49 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres49);
+    $pueblosTotalesMujeres49= mysqli_fetch_array($totalesPueblosMujeres49);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '50' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres50 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres50);
+    $pueblosTotalesMujeres50= mysqli_fetch_array($totalesPueblosMujeres50);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '51' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres51 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres51);
+    $pueblosTotalesMujeres51= mysqli_fetch_array($totalesPueblosMujeres51);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '52' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres52 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres52);
+    $pueblosTotalesMujeres52= mysqli_fetch_array($totalesPueblosMujeres52);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '53' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres53 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres53);
+    $pueblosTotalesMujeres53= mysqli_fetch_array($totalesPueblosMujeres53);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '54' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres54 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres54);
+    $pueblosTotalesMujeres54= mysqli_fetch_array($totalesPueblosMujeres54);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '55' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres55 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres55);
+    $pueblosTotalesMujeres55= mysqli_fetch_array($totalesPueblosMujeres55);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '56' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres56 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres56);
+    $pueblosTotalesMujeres56= mysqli_fetch_array($totalesPueblosMujeres56);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '57' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres57 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres57);
+    $pueblosTotalesMujeres57= mysqli_fetch_array($totalesPueblosMujeres57);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '58' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres58 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres58);
+    $pueblosTotalesMujeres58= mysqli_fetch_array($totalesPueblosMujeres58);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '59' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres59 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres59);
+    $pueblosTotalesMujeres59= mysqli_fetch_array($totalesPueblosMujeres59);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '60' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres60 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres60);
+    $pueblosTotalesMujeres60= mysqli_fetch_array($totalesPueblosMujeres60);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres61 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres61);
+    $pueblosTotalesMujeres61= mysqli_fetch_array($totalesPueblosMujeres61);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres62 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres62);
+    $pueblosTotalesMujeres62= mysqli_fetch_array($totalesPueblosMujeres62);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres63 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres63);
+    $pueblosTotalesMujeres63= mysqli_fetch_array($totalesPueblosMujeres63);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres64 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres64);
+    $pueblosTotalesMujeres64= mysqli_fetch_array($totalesPueblosMujeres64);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres65 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres65);
+    $pueblosTotalesMujeres65= mysqli_fetch_array($totalesPueblosMujeres65);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres66 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres66);
+    $pueblosTotalesMujeres66= mysqli_fetch_array($totalesPueblosMujeres66);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres67 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres67);
+    $pueblosTotalesMujeres67= mysqli_fetch_array($totalesPueblosMujeres67);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '68' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres68 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres68);
+    $pueblosTotalesMujeres68= mysqli_fetch_array($totalesPueblosMujeres68);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres69 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres69);
+    $pueblosTotalesMujeres69= mysqli_fetch_array($totalesPueblosMujeres69);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '70' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres70 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres70);
+    $pueblosTotalesMujeres70= mysqli_fetch_array($totalesPueblosMujeres70);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '71' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres71 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres71);
+    $pueblosTotalesMujeres71= mysqli_fetch_array($totalesPueblosMujeres71);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '72' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres72 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres72);
+    $pueblosTotalesMujeres72= mysqli_fetch_array($totalesPueblosMujeres72);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '73' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres73 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres73);
+    $pueblosTotalesMujeres73= mysqli_fetch_array($totalesPueblosMujeres73);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '74' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres74 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres74);
+    $pueblosTotalesMujeres74= mysqli_fetch_array($totalesPueblosMujeres74);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '75' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres75 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres75);
+    $pueblosTotalesMujeres75= mysqli_fetch_array($totalesPueblosMujeres75);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '76' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres76 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres76);
+    $pueblosTotalesMujeres76= mysqli_fetch_array($totalesPueblosMujeres76);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '77' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres77 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres77);
+    $pueblosTotalesMujeres77= mysqli_fetch_array($totalesPueblosMujeres77);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '78' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres78 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres78);
+    $pueblosTotalesMujeres78= mysqli_fetch_array($totalesPueblosMujeres78);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '79' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres79 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres79);
+    $pueblosTotalesMujeres79= mysqli_fetch_array($totalesPueblosMujeres79);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '80' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres80 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres80);
+    $pueblosTotalesMujeres80= mysqli_fetch_array($totalesPueblosMujeres80);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '81' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres81 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres81);
+    $pueblosTotalesMujeres81= mysqli_fetch_array($totalesPueblosMujeres81);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '82' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres82 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres82);
+    $pueblosTotalesMujeres82= mysqli_fetch_array($totalesPueblosMujeres82);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '83' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres83 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres83);
+    $pueblosTotalesMujeres83= mysqli_fetch_array($totalesPueblosMujeres83);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '84' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres84 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres84);
+    $pueblosTotalesMujeres84= mysqli_fetch_array($totalesPueblosMujeres84);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '85' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres85 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres85);
+    $pueblosTotalesMujeres85= mysqli_fetch_array($totalesPueblosMujeres85);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '86' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres86 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres86);
+    $pueblosTotalesMujeres86= mysqli_fetch_array($totalesPueblosMujeres86);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '87' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres87 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres87);
+    $pueblosTotalesMujeres87= mysqli_fetch_array($totalesPueblosMujeres87);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '88' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres88 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres88);
+    $pueblosTotalesMujeres88= mysqli_fetch_array($totalesPueblosMujeres88);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '89' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres89 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres89);
+    $pueblosTotalesMujeres89= mysqli_fetch_array($totalesPueblosMujeres89);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '90' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres90 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres90);
+    $pueblosTotalesMujeres90= mysqli_fetch_array($totalesPueblosMujeres90);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '91' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres91 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres91);
+    $pueblosTotalesMujeres91= mysqli_fetch_array($totalesPueblosMujeres91);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '92' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres92 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres92);
+    $pueblosTotalesMujeres92= mysqli_fetch_array($totalesPueblosMujeres92);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '93' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres93 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres93);
+    $pueblosTotalesMujeres93= mysqli_fetch_array($totalesPueblosMujeres93);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '94' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres94 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres94);
+    $pueblosTotalesMujeres94= mysqli_fetch_array($totalesPueblosMujeres94);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '95' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres95 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres95);
+    $pueblosTotalesMujeres95= mysqli_fetch_array($totalesPueblosMujeres95);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '96' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres96 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres96);
+    $pueblosTotalesMujeres96= mysqli_fetch_array($totalesPueblosMujeres96);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '97' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres97 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres97);
+    $pueblosTotalesMujeres97= mysqli_fetch_array($totalesPueblosMujeres97);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '98' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres98 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres98);
+    $pueblosTotalesMujeres98= mysqli_fetch_array($totalesPueblosMujeres98);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '99' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres99 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres99);
+    $pueblosTotalesMujeres99= mysqli_fetch_array($totalesPueblosMujeres99);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '100' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres100 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres100);
+    $pueblosTotalesMujeres100= mysqli_fetch_array($totalesPueblosMujeres100);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '101' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres101 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres101);
+    $pueblosTotalesMujeres101= mysqli_fetch_array($totalesPueblosMujeres101);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '102' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres102 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres102);
+    $pueblosTotalesMujeres102= mysqli_fetch_array($totalesPueblosMujeres102);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '103' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres103 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres103);
+    $pueblosTotalesMujeres103= mysqli_fetch_array($totalesPueblosMujeres103);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '104' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres104 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres104);
+    $pueblosTotalesMujeres104= mysqli_fetch_array($totalesPueblosMujeres104);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '105' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres105 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres105);
+    $pueblosTotalesMujeres105= mysqli_fetch_array($totalesPueblosMujeres105);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '106' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres106 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres106);
+    $pueblosTotalesMujeres106= mysqli_fetch_array($totalesPueblosMujeres106);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '107' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres107 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres107);
+    $pueblosTotalesMujeres107= mysqli_fetch_array($totalesPueblosMujeres107);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '108' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres108 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres108);
+    $pueblosTotalesMujeres108= mysqli_fetch_array($totalesPueblosMujeres108);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '109' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres109 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres109);
+    $pueblosTotalesMujeres109= mysqli_fetch_array($totalesPueblosMujeres109);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '110' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres110 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres110);
+    $pueblosTotalesMujeres110= mysqli_fetch_array($totalesPueblosMujeres110);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '111' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres111 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres111);
+    $pueblosTotalesMujeres111= mysqli_fetch_array($totalesPueblosMujeres111);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '112' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres112 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres112);
+    $pueblosTotalesMujeres112= mysqli_fetch_array($totalesPueblosMujeres112);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '113' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres113 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres113);
+    $pueblosTotalesMujeres113= mysqli_fetch_array($totalesPueblosMujeres113);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '114' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres114 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres114);
+    $pueblosTotalesMujeres114= mysqli_fetch_array($totalesPueblosMujeres114);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '115' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres115 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres115);
+    $pueblosTotalesMujeres115= mysqli_fetch_array($totalesPueblosMujeres115);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '116' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres116 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres116);
+    $pueblosTotalesMujeres116= mysqli_fetch_array($totalesPueblosMujeres116);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '117' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres117 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres117);
+    $pueblosTotalesMujeres117= mysqli_fetch_array($totalesPueblosMujeres117);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '118' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres118 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres118);
+    $pueblosTotalesMujeres118= mysqli_fetch_array($totalesPueblosMujeres118);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '119' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres119 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres119);
+    $pueblosTotalesMujeres119= mysqli_fetch_array($totalesPueblosMujeres119);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '120' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres120 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres120);
+    $pueblosTotalesMujeres120= mysqli_fetch_array($totalesPueblosMujeres120);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '121' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres121 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres121);
+    $pueblosTotalesMujeres121= mysqli_fetch_array($totalesPueblosMujeres121);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '122' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres122 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres122);
+    $pueblosTotalesMujeres122= mysqli_fetch_array($totalesPueblosMujeres122);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '123' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres123 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres123);
+    $pueblosTotalesMujeres123= mysqli_fetch_array($totalesPueblosMujeres123);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '124' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres124 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres124);
+    $pueblosTotalesMujeres124= mysqli_fetch_array($totalesPueblosMujeres124);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '125' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres125 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres125);
+    $pueblosTotalesMujeres125= mysqli_fetch_array($totalesPueblosMujeres125);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '126' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres126 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres126);
+    $pueblosTotalesMujeres126= mysqli_fetch_array($totalesPueblosMujeres126);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '127' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres127 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres127);
+    $pueblosTotalesMujeres127= mysqli_fetch_array($totalesPueblosMujeres127);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '130' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres130 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres130);
+    $pueblosTotalesMujeres130= mysqli_fetch_array($totalesPueblosMujeres130);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '131' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres131 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres131);
+    $pueblosTotalesMujeres131= mysqli_fetch_array($totalesPueblosMujeres131);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '132' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres132 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres132);
+    $pueblosTotalesMujeres132= mysqli_fetch_array($totalesPueblosMujeres132);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '133' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres133 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres133);
+    $pueblosTotalesMujeres133= mysqli_fetch_array($totalesPueblosMujeres133);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '134' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres134 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres134);
+    $pueblosTotalesMujeres134= mysqli_fetch_array($totalesPueblosMujeres134);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '135' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres135 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres135);
+    $pueblosTotalesMujeres135= mysqli_fetch_array($totalesPueblosMujeres135);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '0' AND sexo LIKE '%M%'";
+    $totalesPueblosMujeres0 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosMujeres0);
+    $pueblosTotalesMujeres0= mysqli_fetch_array($totalesPueblosMujeres0);   
     /**
   * Usuarios totales por Grado de EStudios Mujeres
 */
@@ -9440,539 +10112,539 @@
                       <tbody class="bg-light">
                       <tr>
                           <th scope="row">AXOTLA</th>
-                          <td><?=$pueblosTotales1['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres1['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHIMALISTAC</th>
-                          <td><?=$pueblosTotales2['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres2['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN BARTOLO AMEYALCO</th>
-                          <td><?=$pueblosTotales3['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres3['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA FÉ DE VASCO DE QUIROGA</th>
-                          <td><?=$pueblosTotales4['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres4['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA LUCÍA XANTEPEC</th>
-                          <td><?=$pueblosTotales5['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres5['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARÍA NONOALCO</th>
-                          <td><?=$pueblosTotales6['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres6['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA ROSA XOCHIAC</th>
-                          <td><?=$pueblosTotales7['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres7['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TETELPAN</th>
-                          <td><?=$pueblosTotales8['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres8['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TIZAPAN</th>
-                          <td><?=$pueblosTotales9['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres9['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TLACOPAC</th>
-                          <td><?=$pueblosTotales10['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres10['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">COLTONGO</th>
-                          <td><?=$pueblosTotales11['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres11['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANDRES DE LAS SALINAS</th>
-                          <td><?=$pueblosTotales12['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres12['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANDRÉS TETLANMAN</th>
-                          <td><?=$pueblosTotales13['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres13['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN BARTOLO CAHUALTONGO</th>
-                          <td><?=$pueblosTotales14['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres14['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN FRANCISCO TETECALA</th>
-                          <td><?=$pueblosTotales15['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres15['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN JUAN TLILHUACA</th>
-                          <td><?=$pueblosTotales16['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres16['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LUCAS ATENCO</th>
-                          <td><?=$pueblosTotales17['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres17['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MARTIN XOCHINÁHUAC</th>
-                          <td><?=$pueblosTotales18['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres18['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MATEO XALTELOLCO</th>
-                          <td><?=$pueblosTotales19['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres19['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MIGUEL AMANTLA</th>
-                          <td><?=$pueblosTotales20['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres20['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PEDRO DE LAS SALINAS CALHUACATZINGO</th>
-                          <td><?=$pueblosTotales21['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres21['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PEDRO XALPA</th>
-                          <td><?=$pueblosTotales22['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres22['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SALVADOR NEXTENGO</th>
-                          <td><?=$pueblosTotales23['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres23['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SALVADOR XOCHIMANCA</th>
-                          <td><?=$pueblosTotales24['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres24['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SEBASTIÁN ATENCO</th>
-                          <td><?=$pueblosTotales25['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres25['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SIMÓN POCHTLAN</th>
-                          <td><?=$pueblosTotales26['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres26['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA APOLONIA TEZCOLCO</th>
-                          <td><?=$pueblosTotales27['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres27['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA BÁRBARA TETLANMAN, YOPICO</th>
-                          <td><?=$pueblosTotales28['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres28['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CATARINA ATZACUALCO</th>
-                          <td><?=$pueblosTotales29['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres29['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA LUCIA TOMATLAN</th>
-                          <td><?=$pueblosTotales30['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres30['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARÍA MALINALCO</th>
-                          <td><?=$pueblosTotales31['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres31['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTIAGO AHUIZOTLA</th>
-                          <td><?=$pueblosTotales32['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres32['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTO DOMINGO HUEXOTITLÁN</th>
-                          <td><?=$pueblosTotales33['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres33['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTO TOMÁS TLAMATZINGO</th>
-                          <td><?=$pueblosTotales34['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres34['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">ACTIPAN</th>
-                          <td><?=$pueblosTotales35['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres35['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">LA PIEDAD</th>
-                          <td><?=$pueblosTotales36['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres36['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MIXCOAC</th>
-                          <td><?=$pueblosTotales37['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres37['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN JUAN MALINALTONGO</th>
-                          <td><?=$pueblosTotales38['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres38['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SEBASTIÁN XOCO</th>
-                          <td><?=$pueblosTotales39['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres39['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SIMÓN TICUMAC</th>
-                          <td><?=$pueblosTotales40['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres40['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CRUZ ATOYAC</th>
-                          <td><?=$pueblosTotales41['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres41['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CRUZ TLACOQUEMECATL</th>
-                          <td><?=$pueblosTotales42['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres42['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARÍA NATIVITAS TEPETLALTZINCO</th>
-                          <td><?=$pueblosTotales43['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres43['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHURUBUSCO</th>
-                          <td><?=$pueblosTotales44['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres44['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">COPILCO</th>
-                          <td><?=$pueblosTotales45['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres45['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">LA CANDELARIA</th>
-                          <td><?=$pueblosTotales46['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres46['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">LOS REYES HUEYTILAC</th>
-                          <td><?=$pueblosTotales47['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres47['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">PUEBLO DE SAN FRANCISCO CULHUACÁN</th>
-                          <td><?=$pueblosTotales48['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres48['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PABLO TEPETLAPA</th>
-                          <td><?=$pueblosTotales49['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres49['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA ÚRSULA COAPA</th>
-                          <td><?=$pueblosTotales50['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres50['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CONTADERO</th>
-                          <td><?=$pueblosTotales51['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres51['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LORENZO ACOPILCO</th>
-                          <td><?=$pueblosTotales52['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres52['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MATEO TLALTENANGO</th>
-                          <td><?=$pueblosTotales53['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres53['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PABLO CHIMALPA</th>
-                          <td><?=$pueblosTotales54['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres54['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PEDRO CUAJIMALPA</th>
-                          <td><?=$pueblosTotales55['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres55['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SIMÓN TOLNAHUAC</th>
-                          <td><?=$pueblosTotales56['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres56['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TLATELOLCO</th>
-                          <td><?=$pueblosTotales57['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres57['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CALPULTITLAN</th>
-                          <td><?=$pueblosTotales58['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres58['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CUAUHTEPEC</th>
-                          <td><?=$pueblosTotales59['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres59['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MAGDALENA DE LAS SALINAS</th>
-                          <td><?=$pueblosTotales60['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres60['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN BARTOLO ATEPEHUACAN</th>
-                          <td><?=$pueblosTotales61['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres61['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PEDRO ZACATENCO</th>
-                          <td><?=$pueblosTotales62['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres62['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA ISABEL TOLA</th>
-                          <td><?=$pueblosTotales63['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres63['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTIAGO ATEPETLAC</th>
-                          <td><?=$pueblosTotales64['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres64['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTIAGO ATZACOALCO</th>
-                          <td><?=$pueblosTotales65['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres65['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA ANITA ZACATLALMANCO </th>
-                          <td><?=$pueblosTotales66['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres66['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">ACULCO</th>
-                          <td><?=$pueblosTotales67['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres67['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CULHUACAN</th>
-                          <td><?=$pueblosTotales68['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres68['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">LA MAGDALENA ATLAZOLPA</th>
-                          <td><?=$pueblosTotales69['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres69['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">LOS REYES CULHUACAN</th>
-                          <td><?=$pueblosTotales70['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres70['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MEXICALTZINGO</th>
-                          <td><?=$pueblosTotales71['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres71['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANDRÉS TETEPILCO</th>
-                          <td><?=$pueblosTotales72['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres72['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANDRÉS TOMATLAN</th>
-                          <td><?=$pueblosTotales73['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres73['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN JUANICO NEXTIPAC</th>
-                          <td><?=$pueblosTotales74['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres74['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LORENZO TEZONCO</th>
-                          <td><?=$pueblosTotales75['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres75['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CRUZ MEYEHUALCO</th>
-                          <td><?=$pueblosTotales76['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres76['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARÍA AZTAHUACAN</th>
-                          <td><?=$pueblosTotales77['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres77['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARÍA TOMATLAN</th>
-                          <td><?=$pueblosTotales78['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres78['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARTHA ACATITLA</th>
-                          <td><?=$pueblosTotales79['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres79['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MAGDALENA CONTRERAS ATLICTIC</th>
-                          <td><?=$pueblosTotales80['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres80['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN BERNABÉ OCOTEPEC</th>
-                          <td><?=$pueblosTotales81['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres81['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN JERÓNIMO ACULCO-LIDICE</th>
-                          <td><?=$pueblosTotales82['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres82['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN NICOLÁS TOTOLAPAN</th>
-                          <td><?=$pueblosTotales83['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres83['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">POPOTLA</th>
-                          <td><?=$pueblosTotales84['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres84['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN DIEGO OCOYOACAC</th>
-                          <td><?=$pueblosTotales85['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres85['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LORENZO TLALTENANGO</th>
-                          <td><?=$pueblosTotales86['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres86['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TACUBA</th>
-                          <td><?=$pueblosTotales87['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres87['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TACUBAYA</th>
-                          <td><?=$pueblosTotales88['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres88['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN AGUSTÍN OHTENCO</th>
-                          <td><?=$pueblosTotales89['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres89['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANTONIO TECOMITL</th>
-                          <td><?=$pueblosTotales90['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres90['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN BARTOLOMÉ XICOMULCO</th>
-                          <td><?=$pueblosTotales91['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres91['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN FRANCISCO TECOXPA</th>
-                          <td><?=$pueblosTotales92['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres92['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN JERÓNIMO MIACATLAN</th>
-                          <td><?=$pueblosTotales93['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres93['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN JUAN TEPENAHUAC</th>
-                          <td><?=$pueblosTotales94['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres94['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LORENZO TLACOYUCAN</th>
-                          <td><?=$pueblosTotales95['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres95['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PABLO OZTOTEPEC</th>
-                          <td><?=$pueblosTotales96['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres96['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PEDRO ATOCPAN</th>
-                          <td><?=$pueblosTotales97['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres97['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SALVADOR CUAUHTENCO</th>
-                          <td><?=$pueblosTotales98['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres98['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA ANA TLACOTENCO</th>
-                          <td><?=$pueblosTotales99['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres99['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANDRÉS MIXQUIC</th>
-                          <td><?=$pueblosTotales100['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres100['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN FRANCISCO TLALTENCO</th>
-                          <td><?=$pueblosTotales101['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres101['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN JUAN IXTAYOPAN</th>
-                          <td><?=$pueblosTotales102['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres102['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN NICOLÁS TETELCO</th>
-                          <td><?=$pueblosTotales103['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres103['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PEDRO TLAHUAC</th>
-                          <td><?=$pueblosTotales104['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres104['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CATARINA YECAHUIZOTL</th>
-                          <td><?=$pueblosTotales105['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres105['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTIAGO ZAPOTITLÁN</th>
-                          <td><?=$pueblosTotales106['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres106['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHIMALCOYOC (LA ASUNCIÓN)</th>
-                          <td><?=$pueblosTotales107['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres107['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MAGDALENA PETLACALCO</th>
-                          <td><?=$pueblosTotales108['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres108['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">PARRES EL GUARDA</th>
-                          <td><?=$pueblosTotales109['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres109['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANDRÉS TOTOLTEPEC</th>
-                          <td><?=$pueblosTotales110['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres110['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LORENZO HUIPULCO</th>
-                          <td><?=$pueblosTotales111['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres111['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MIGUEL AJUSCO</th>
-                          <td><?=$pueblosTotales112['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres112['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MIGUEL TOPILEJO</th>
-                          <td><?=$pueblosTotales113['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres113['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MIGUEL XICALCO</th>
-                          <td><?=$pueblosTotales114['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres114['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PEDRO MÁRTIR</th>
-                          <td><?=$pueblosTotales115['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres115['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA URSULA XITLA</th>
-                          <td><?=$pueblosTotales116['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres116['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTO TOMÁS AJUSCO</th>
-                          <td><?=$pueblosTotales117['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres117['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">EL PEÑÓN DE LOS BAÑOS</th>
-                          <td><?=$pueblosTotales118['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres118['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MAGDALENA MIXHIUCA</th>
-                          <td><?=$pueblosTotales119['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres119['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANDRÉS AHUAYUCAN</th>
-                          <td><?=$pueblosTotales120['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres120['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN FRANCISCO TLALNEPANTLA</th>
-                          <td><?=$pueblosTotales121['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres121['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN GREGORIO ATLAPULCO</th>
-                          <td><?=$pueblosTotales122['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres122['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LORENZO ATEMOAYA</th>
-                          <td><?=$pueblosTotales123['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres123['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LUCAS XOCHIMANCA</th>
-                          <td><?=$pueblosTotales124['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres124['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LUIS TLAXIALTEMALCO</th>
-                          <td><?=$pueblosTotales125['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres125['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MATEO XALPA</th>
-                          <td><?=$pueblosTotales126['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres126['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CECILIA TEPETLAPA</th>
-                          <td><?=$pueblosTotales127['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres127['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CRUZ ACALPIXCA</th>
-                          <td><?=$pueblosTotales130['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres130['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CRUZ XOCHITEPEC</th>
-                          <td><?=$pueblosTotales131['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres131['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARÍA NATIVITAS</th>
-                          <td><?=$pueblosTotales132['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres132['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARÍA TEPEPAN</th>
-                          <td><?=$pueblosTotales133['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres133['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTIAGO TEPALCATLALPAN</th>
-                          <td><?=$pueblosTotales134['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres134['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTIAGO TULYEHUALCO</th>
-                          <td><?=$pueblosTotales135['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres135['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">NINGUNO</th>
-                          <td><?=$pueblosTotales0['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesMujeres0['userPorPueblo']?></td>
                         </tr>
                       </tbody>
                     </table>
