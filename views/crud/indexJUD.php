@@ -16145,51 +16145,51 @@
                       <tbody class="bg-success">
                       <tr>
                         <th scope="row">Fútbol</th>
-                        <td><?=$futbol['userPorActividad']?></td>
+                        <td><?=$futbolHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Basquetbol</th>
-                        <td><?=$basquet['userPorActividad']?></td>
+                        <td><?=$basquetHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Voleibol</th>
-                        <td><?=$voley['userPorActividad']?></td>
+                        <td><?=$voleyHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Acondicionamiento físico</th>
-                        <td><?=$acondicionamiento['userPorActividad']?></td>
+                        <td><?=$acondicionamientoHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Zumba</th>
-                        <td><?=$zumba['userPorActividad']?></td>
+                        <td><?=$zumbaHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Tae bo</th>
-                        <td><?=$tae['userPorActividad']?></td>
+                        <td><?=$taeHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Yoga</th>
-                        <td><?=$yoga['userPorActividad']?></td>
+                        <td><?=$yogaHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Tai chi</th>
-                        <td><?=$taiChi['userPorActividad']?></td>
+                        <td><?=$taiChiHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Boxeo</th>
-                        <td><?=$boxeo['userPorActividad']?></td>
+                        <td><?=$boxeoHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Atletismo</th>
-                        <td><?=$atletismo['userPorActividad']?></td>
+                        <td><?=$atletismoHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Karate do</th>
-                        <td><?=$karate['userPorActividad']?></td>
+                        <td><?=$karateHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Kung fu</th>
-                        <td><?=$kung['userPorActividad']?></td>
+                        <td><?=$kungHombres['userPorActividad']?></td>
                       </tr>
                       </tbody>
                     </table>
