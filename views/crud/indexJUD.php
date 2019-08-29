@@ -15012,10 +15012,10 @@
                 <div class="card card-body">
                   <table class="table table-striped ">
                     <tbody class="bg-warning">
-                      <tr>
+                      <!-- <tr>
                         <th scope="row">Usuarios totales</th>
                         <td><b><?=$ciberEscuelaTotales['userPorActividad']?></b></td>
-                      </tr>
+                      </tr> -->
                       <tr>
                         <th scope="row">Ajedrez</th>
                         <td><?=$ajedrez['userPorActividad']?></td>
@@ -15162,193 +15162,125 @@
                     <table class="table table-striped ">
                       <tbody class="bg-warning">
                       <tr>
-                          <th scope="row">La Araña </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres1['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">El Capulín</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres2['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Jalalpa </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres3['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Xalli</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres4['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cantera</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres5['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Emiliano Zapata</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres6['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Chimalpa</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres7['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Simón Tolnáhuac </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres8['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Frida Kahlo </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres9['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Atlampa</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres10['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Richard Wagner </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres11['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Benita Galeana </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres12['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tlalpexco</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres13['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">José Martí </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres14['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Agrícola Pantitlán </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres15['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Central de Abasto</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres16['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cooperemos Pueblo </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres17['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Acahualtepec</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres18['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Gabriela Mistral </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres19['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Huayatla</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres20['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Caneguín</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres47['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Salvador Cuauhtenco</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres21['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zapotitla</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres22['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Rosario Castellanos</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres23['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tulyehualco</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres24['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Francisco </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres25['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Belén de las flores</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres26['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Margarita Maza de Juárez </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres27['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Atlapulco </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres28['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Cecilia </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres29['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tepalcatlalpan</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres30['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cerro de la estrella </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres31['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Facundo Cabral</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres32['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San lucas xochimanca </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres33['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zapata Vela </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres34['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Insurgentes</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres35['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Amantla</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres36['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Cuesta </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres37['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tizimín</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres38['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Ecoguardas</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres39['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Árbol del conocimiento</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres40['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Fe</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres41['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Era</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres42['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Isidro Fabela</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres43['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Villa Panamericana</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres44['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Úrsula</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres45['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Paulo Freire</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres46['userPorPilaresCiberescuelas']?></td>
-                        </tr>
+                        <th scope="row">Ajedrez</th>
+                        <td><?=$ajedrez['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Club de Ciencias</th>
+                        <td><?=$clubCiencia['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Robótica aplicada</th>
+                        <td><?=$robo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Club de Codigo</th>
+                        <td><?=$clubCodigo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Amor y sexualidad</th>
+                        <td><?=$amor['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Prevención de adicc</th>
+                        <td><?=$prevenAdic['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Habilidades para la</th>
+                        <td><?=$habilidades['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Proyecto de vida</th>
+                        <td><?=$proyecto['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Autoestima</th>
+                        <td><?=$autoestima['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tanatología o manej</th>
+                        <td><?=$tanato['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Inteligencia emocio</th>
+                        <td><?=$inteliEmo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Arte y Emociones</th>
+                        <td><?=$arteEmo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Redacción y comprensión de lectura</th>
+                        <td><?=$redaccion['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Talleres de cómputo</th>
+                        <td><?=$talleresCom['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Emociones mágicas</th>
+                        <td><?=$emoMagic['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pintando emociones</th>
+                        <td><?=$pintEmo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Alfabetización</th>
+                        <td><?=$alfabet['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Primaria</th>
+                        <td><?=$primaria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Secundaria</th>
+                        <td><?=$secundaria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">BADI</th>
+                        <td><?=$badi['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Prepa en línea SEP</th>
+                        <td><?=$prepaSep['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">B@UNAM</th>
+                        <td><?=$bunam['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">UnADM</th>
+                        <td><?=$unadm['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Licenciatura en linea</th>
+                        <td><?=$liclinea['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Licenciaturas CDMX</th>
+                        <td><?=$licCdmx['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Asesorias primaria</th>
+                        <td><?=$asePrimaria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Asesorias secundaria</th>
+                        <td><?=$aseSecundaria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Asesorias bachillerato</th>
+                        <td><?=$asePrep['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Asesorias licenciatura</th>
+                        <td><?=$aseLic['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Baile, cuerpo y emociones</th>
+                        <td><?=$baileCuerpo['userPorActividad']?></td>
+                      </tr>
                       </tbody>
                     </table>
                   </div>
@@ -15375,193 +15307,125 @@
                     <table class="table table-striped ">
                       <tbody class="bg-warning">
                       <tr>
-                          <th scope="row">La Araña </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres1['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">El Capulín</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres2['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Jalalpa </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres3['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Xalli</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres4['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cantera</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres5['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Emiliano Zapata</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres6['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Chimalpa</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres7['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Simón Tolnáhuac </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres8['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Frida Kahlo </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres9['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Atlampa</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres10['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Richard Wagner </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres11['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Benita Galeana </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres12['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tlalpexco</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres13['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">José Martí </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres14['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Agrícola Pantitlán </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres15['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Central de Abasto</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres16['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cooperemos Pueblo </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres17['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Acahualtepec</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres18['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Gabriela Mistral </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres19['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Huayatla</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres20['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Caneguín</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres47['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Salvador Cuauhtenco</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres21['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zapotitla</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres22['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Rosario Castellanos</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres23['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tulyehualco</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres24['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Francisco </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres25['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Belén de las flores</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres26['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Margarita Maza de Juárez </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres27['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Atlapulco </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres28['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Cecilia </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres29['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tepalcatlalpan</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres30['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cerro de la estrella </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres31['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Facundo Cabral</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres32['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San lucas xochimanca </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres33['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zapata Vela </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres34['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Insurgentes</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres35['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Amantla</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres36['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Cuesta </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres37['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tizimín</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres38['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Ecoguardas</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres39['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Árbol del conocimiento</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres40['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Fe</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres41['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Era</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres42['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Isidro Fabela</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres43['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Villa Panamericana</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres44['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Úrsula</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres45['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Paulo Freire</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres46['userPorPilaresCiberescuelas']?></td>
-                        </tr>
+                        <th scope="row">Ajedrez</th>
+                        <td><?=$ajedrez['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Club de Ciencias</th>
+                        <td><?=$clubCiencia['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Robótica aplicada</th>
+                        <td><?=$robo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Club de Codigo</th>
+                        <td><?=$clubCodigo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Amor y sexualidad</th>
+                        <td><?=$amor['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Prevención de adicc</th>
+                        <td><?=$prevenAdic['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Habilidades para la</th>
+                        <td><?=$habilidades['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Proyecto de vida</th>
+                        <td><?=$proyecto['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Autoestima</th>
+                        <td><?=$autoestima['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tanatología o manej</th>
+                        <td><?=$tanato['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Inteligencia emocio</th>
+                        <td><?=$inteliEmo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Arte y Emociones</th>
+                        <td><?=$arteEmo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Redacción y comprensión de lectura</th>
+                        <td><?=$redaccion['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Talleres de cómputo</th>
+                        <td><?=$talleresCom['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Emociones mágicas</th>
+                        <td><?=$emoMagic['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pintando emociones</th>
+                        <td><?=$pintEmo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Alfabetización</th>
+                        <td><?=$alfabet['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Primaria</th>
+                        <td><?=$primaria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Secundaria</th>
+                        <td><?=$secundaria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">BADI</th>
+                        <td><?=$badi['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Prepa en línea SEP</th>
+                        <td><?=$prepaSep['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">B@UNAM</th>
+                        <td><?=$bunam['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">UnADM</th>
+                        <td><?=$unadm['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Licenciatura en linea</th>
+                        <td><?=$liclinea['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Licenciaturas CDMX</th>
+                        <td><?=$licCdmx['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Asesorias primaria</th>
+                        <td><?=$asePrimaria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Asesorias secundaria</th>
+                        <td><?=$aseSecundaria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Asesorias bachillerato</th>
+                        <td><?=$asePrep['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Asesorias licenciatura</th>
+                        <td><?=$aseLic['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Baile, cuerpo y emociones</th>
+                        <td><?=$baileCuerpo['userPorActividad']?></td>
+                      </tr>
                       </tbody>
                     </table>
                   </div>
@@ -15589,10 +15453,10 @@
                 <div class="card card-body">
                   <table class="table table-striped ">
                     <tbody class="bg-success">
-                      <tr>
+                      <!-- <tr>
                         <th scope="row">Usuarios totales</th>
                         <td><b><?=$deporteTotales['userPorActividad']?></b></td>
-                      </tr>
+                      </tr> -->
                       <tr>
                         <th scope="row">Fútbol</th>
                         <td><?=$futbol['userPorActividad']?></td>
@@ -15667,193 +15531,53 @@
                     <table class="table table-striped ">
                       <tbody class="bg-success">
                       <tr>
-                          <th scope="row">La Araña </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres1['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">El Capulín</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres2['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Jalalpa </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres3['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Xalli</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres4['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cantera</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres5['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Emiliano Zapata</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres6['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Chimalpa</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres7['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Simón Tolnáhuac </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres8['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Frida Kahlo </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres9['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Atlampa</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres10['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Richard Wagner </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres11['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Benita Galeana </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres12['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tlalpexco</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres13['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">José Martí </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres14['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Agrícola Pantitlán </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres15['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Central de Abasto</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres16['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cooperemos Pueblo </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres17['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Acahualtepec</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres18['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Gabriela Mistral </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres19['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Huayatla</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres20['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Caneguín</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres47['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Salvador Cuauhtenco</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres21['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zapotitla</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres22['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Rosario Castellanos</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres23['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tulyehualco</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres24['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Francisco </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres25['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Belén de las flores</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres26['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Margarita Maza de Juárez </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres27['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Atlapulco </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres28['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Cecilia </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres29['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tepalcatlalpan</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres30['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cerro de la estrella </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres31['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Facundo Cabral</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres32['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San lucas xochimanca </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres33['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zapata Vela </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres34['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Insurgentes</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres35['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Amantla</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres36['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Cuesta </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres37['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tizimín</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres38['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Ecoguardas</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres39['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Árbol del conocimiento</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres40['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Fe</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres41['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Era</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres42['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Isidro Fabela</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres43['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Villa Panamericana</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres44['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Úrsula</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres45['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Paulo Freire</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres46['userPorPilaresCiberescuelas']?></td>
-                        </tr>
+                        <th scope="row">Fútbol</th>
+                        <td><?=$futbol['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Basquetbol</th>
+                        <td><?=$basquet['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Voleibol</th>
+                        <td><?=$voley['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Acondicionamiento físico</th>
+                        <td><?=$acondicionamiento['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Zumba</th>
+                        <td><?=$zumba['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tae bo</th>
+                        <td><?=$tae['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Yoga</th>
+                        <td><?=$yoga['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tai chi</th>
+                        <td><?=$taiChi['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Boxeo</th>
+                        <td><?=$boxeo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Atletismo</th>
+                        <td><?=$atletismo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Karate do</th>
+                        <td><?=$karate['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Kung fu</th>
+                        <td><?=$kung['userPorActividad']?></td>
+                      </tr>
                       </tbody>
                     </table>
                   </div>
@@ -15880,193 +15604,53 @@
                     <table class="table table-striped ">
                       <tbody class="bg-success">
                       <tr>
-                          <th scope="row">La Araña </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres1['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">El Capulín</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres2['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Jalalpa </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres3['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Xalli</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres4['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cantera</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres5['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Emiliano Zapata</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres6['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Chimalpa</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres7['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Simón Tolnáhuac </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres8['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Frida Kahlo </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres9['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Atlampa</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres10['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Richard Wagner </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres11['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Benita Galeana </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres12['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tlalpexco</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres13['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">José Martí </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres14['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Agrícola Pantitlán </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres15['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Central de Abasto</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres16['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cooperemos Pueblo </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres17['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Acahualtepec</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres18['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Gabriela Mistral </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres19['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Huayatla</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres20['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Caneguín</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres47['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Salvador Cuauhtenco</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres21['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zapotitla</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres22['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Rosario Castellanos</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres23['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tulyehualco</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres24['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Francisco </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres25['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Belén de las flores</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres26['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Margarita Maza de Juárez </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres27['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Atlapulco </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres28['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Cecilia </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres29['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tepalcatlalpan</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres30['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cerro de la estrella </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres31['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Facundo Cabral</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres32['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San lucas xochimanca </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres33['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zapata Vela </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres34['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Insurgentes</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres35['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Amantla</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres36['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Cuesta </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres37['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tizimín</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres38['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Ecoguardas</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres39['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Árbol del conocimiento</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres40['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Fe</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres41['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Era</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres42['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Isidro Fabela</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres43['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Villa Panamericana</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres44['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Úrsula</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres45['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Paulo Freire</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres46['userPorPilaresCiberescuelas']?></td>
-                        </tr>
+                        <th scope="row">Fútbol</th>
+                        <td><?=$futbol['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Basquetbol</th>
+                        <td><?=$basquet['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Voleibol</th>
+                        <td><?=$voley['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Acondicionamiento físico</th>
+                        <td><?=$acondicionamiento['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Zumba</th>
+                        <td><?=$zumba['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tae bo</th>
+                        <td><?=$tae['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Yoga</th>
+                        <td><?=$yoga['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tai chi</th>
+                        <td><?=$taiChi['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Boxeo</th>
+                        <td><?=$boxeo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Atletismo</th>
+                        <td><?=$atletismo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Karate do</th>
+                        <td><?=$karate['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Kung fu</th>
+                        <td><?=$kung['userPorActividad']?></td>
+                      </tr>
                       </tbody>
                     </table>
                   </div>
@@ -16094,10 +15678,10 @@
                 <div class="card card-body">
                   <table class="table table-striped ">
                     <tbody class="bg-danger">
-                      <tr>
+                      <!-- <tr>
                         <th scope="row">Usuarios totales</th>
                         <td><strong><?=$autonomiaTotales['userPorActividad']?></strong></td>
-                      </tr>
+                      </tr> -->
                       <tr>
                         <th scope="row">Encuadernación</th>
                         <td><?=$encuadernacion['userPorActividad']?></td>
@@ -16280,193 +15864,161 @@
                     <table class="table table-striped ">
                       <tbody class="bg-danger">
                       <tr>
-                          <th scope="row">La Araña </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres1['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">El Capulín</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres2['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Jalalpa </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres3['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Xalli</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres4['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cantera</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres5['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Emiliano Zapata</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres6['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Chimalpa</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres7['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Simón Tolnáhuac </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres8['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Frida Kahlo </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres9['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Atlampa</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres10['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Richard Wagner </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres11['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Benita Galeana </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres12['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tlalpexco</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres13['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">José Martí </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres14['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Agrícola Pantitlán </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres15['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Central de Abasto</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres16['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cooperemos Pueblo </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres17['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Acahualtepec</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres18['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Gabriela Mistral </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres19['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Huayatla</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres20['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Caneguín</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres47['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Salvador Cuauhtenco</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres21['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zapotitla</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres22['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Rosario Castellanos</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres23['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tulyehualco</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres24['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Francisco </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres25['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Belén de las flores</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres26['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Margarita Maza de Juárez </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres27['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Atlapulco </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres28['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Cecilia </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres29['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tepalcatlalpan</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres30['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cerro de la estrella </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres31['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Facundo Cabral</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres32['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San lucas xochimanca </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres33['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zapata Vela </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres34['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Insurgentes</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres35['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Amantla</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres36['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Cuesta </th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres37['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tizimín</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres38['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Ecoguardas</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres39['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Árbol del conocimiento</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres40['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Fe</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres41['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Era</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres42['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Isidro Fabela</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres43['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Villa Panamericana</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres44['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Úrsula</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres45['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Paulo Freire</th>
-                          <td><?=$pilaresTotalesCiberescelasMujeres46['userPorPilaresCiberescuelas']?></td>
-                        </tr>
+                        <th scope="row">Encuadernación</th>
+                        <td><?=$encuadernacion['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Reciclaje</th>
+                        <td><?=$reciclaje['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Taller de huerto</th>
+                        <td><?=$huerto['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cerámica</th>
+                        <td><?=$ceramica['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Programación y Apli</th>
+                        <td><?=$programacion['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Edición y Diseño </th>
+                        <td><?=$edicionDiseño['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Carpintería</th>
+                        <td><?=$carpinteria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Plomería</th>
+                        <td><?=$plomeria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Herrería y Aluminer</th>
+                        <td><?=$herreria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Electricidad y dispositivos fotovoltaicos</th>
+                        <td><?=$electricidad['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gastronomía, panadería y catering</th>
+                        <td><?=$gastronomia['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Panadería</th>
+                        <td><?=$panaderia['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Joyería y accesorio </th>
+                        <td><?=$joyeria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Agricultura urbana</th>
+                        <td><?=$agricultura['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Bicimaquinas</th>
+                        <td><?=$bicimaquinas['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Estilismo</th>
+                        <td><?=$estilismo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Diseño de imagen y Cosmetología orgánica</th>
+                        <td><?=$diseñoImagen['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Codigo para mujeres</th>
+                        <td><?=$codMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Electrónica y robótica</th>
+                        <td><?=$electronica['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cosecha de agua de</th>
+                        <td><?=$cosechaAgua['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Instalación y repar</th>
+                        <td><?=$instalacion['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Textiles y diseño</th>
+                        <td><?=$textileDiseño['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Banquetes</th>
+                        <td><?=$banquetes['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Fotografia de produ</th>
+                        <td><?=$fotoProducto['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Logos e identidad d</th>
+                        <td><?=$logos['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Calidad en el servi</th>
+                        <td><?=$calidad['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Creación de coopera</th>
+                        <td><?=$cooperativas['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Emprendedurismo</th>
+                        <td><?=$emprende['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Creación de micro-n</th>
+                        <td><?=$microN['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Comercio digital</th>
+                        <td><?=$comercioDigital['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Estrategias de vent</th>
+                        <td><?=$estrategias['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Comercio justo</th>
+                        <td><?=$comercioJusto['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hospedaje</th>
+                        <td><?=$hospedaje['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Electrónica digital</th>
+                        <td><?=$electroDigital['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Distribución</th>
+                        <td><?=$distribucion['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Desarrollo web</th>
+                        <td><?=$desarrollo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Braile</th>
+                        <td><?=$braile['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Computación asistida</th>
+                        <td><?=$computacionAsistida['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Introducción al lenguaje de señas</th>
+                        <td><?=$señas['userPorActividad']?></td>
+                      </tr>
                       </tbody>
                     </table>
                   </div>
@@ -16493,193 +16045,161 @@
                     <table class="table table-striped ">
                       <tbody class="bg-danger">
                       <tr>
-                          <th scope="row">La Araña </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres1['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">El Capulín</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres2['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Jalalpa </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres3['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Xalli</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres4['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cantera</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres5['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Emiliano Zapata</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres6['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Chimalpa</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres7['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Simón Tolnáhuac </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres8['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Frida Kahlo </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres9['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Atlampa</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres10['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Richard Wagner </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres11['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Benita Galeana </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres12['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tlalpexco</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres13['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">José Martí </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres14['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Agrícola Pantitlán </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres15['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Central de Abasto</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres16['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cooperemos Pueblo </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres17['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Acahualtepec</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres18['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Gabriela Mistral </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres19['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Huayatla</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres20['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Caneguín</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres47['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Salvador Cuauhtenco</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres21['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zapotitla</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres22['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Rosario Castellanos</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres23['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tulyehualco</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres24['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Francisco </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres25['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Belén de las flores</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres26['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Margarita Maza de Juárez </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres27['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Atlapulco </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres28['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Cecilia </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres29['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tepalcatlalpan</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres30['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cerro de la estrella </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres31['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Facundo Cabral</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres32['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San lucas xochimanca </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres33['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zapata Vela </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres34['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Insurgentes</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres35['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Amantla</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres36['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Cuesta </th>
-                          <td><?=$pilaresTotalesCiberescelasHombres37['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tizimín</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres38['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Ecoguardas</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres39['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Árbol del conocimiento</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres40['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Fe</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres41['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Era</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres42['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Isidro Fabela</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres43['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Villa Panamericana</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres44['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Úrsula</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres45['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Paulo Freire</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres46['userPorPilaresCiberescuelas']?></td>
-                        </tr>
+                        <th scope="row">Encuadernación</th>
+                        <td><?=$encuadernacion['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Reciclaje</th>
+                        <td><?=$reciclaje['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Taller de huerto</th>
+                        <td><?=$huerto['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cerámica</th>
+                        <td><?=$ceramica['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Programación y Apli</th>
+                        <td><?=$programacion['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Edición y Diseño </th>
+                        <td><?=$edicionDiseño['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Carpintería</th>
+                        <td><?=$carpinteria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Plomería</th>
+                        <td><?=$plomeria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Herrería y Aluminer</th>
+                        <td><?=$herreria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Electricidad y dispositivos fotovoltaicos</th>
+                        <td><?=$electricidad['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gastronomía, panadería y catering</th>
+                        <td><?=$gastronomia['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Panadería</th>
+                        <td><?=$panaderia['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Joyería y accesorio </th>
+                        <td><?=$joyeria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Agricultura urbana</th>
+                        <td><?=$agricultura['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Bicimaquinas</th>
+                        <td><?=$bicimaquinas['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Estilismo</th>
+                        <td><?=$estilismo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Diseño de imagen y Cosmetología orgánica</th>
+                        <td><?=$diseñoImagen['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Codigo para mujeres</th>
+                        <td><?=$codMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Electrónica y robótica</th>
+                        <td><?=$electronica['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cosecha de agua de</th>
+                        <td><?=$cosechaAgua['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Instalación y repar</th>
+                        <td><?=$instalacion['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Textiles y diseño</th>
+                        <td><?=$textileDiseño['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Banquetes</th>
+                        <td><?=$banquetes['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Fotografia de produ</th>
+                        <td><?=$fotoProducto['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Logos e identidad d</th>
+                        <td><?=$logos['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Calidad en el servi</th>
+                        <td><?=$calidad['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Creación de coopera</th>
+                        <td><?=$cooperativas['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Emprendedurismo</th>
+                        <td><?=$emprende['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Creación de micro-n</th>
+                        <td><?=$microN['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Comercio digital</th>
+                        <td><?=$comercioDigital['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Estrategias de vent</th>
+                        <td><?=$estrategias['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Comercio justo</th>
+                        <td><?=$comercioJusto['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hospedaje</th>
+                        <td><?=$hospedaje['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Electrónica digital</th>
+                        <td><?=$electroDigital['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Distribución</th>
+                        <td><?=$distribucion['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Desarrollo web</th>
+                        <td><?=$desarrollo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Braile</th>
+                        <td><?=$braile['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Computación asistida</th>
+                        <td><?=$computacionAsistida['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Introducción al lenguaje de señas</th>
+                        <td><?=$señas['userPorActividad']?></td>
+                      </tr>
                       </tbody>
                     </table>
                   </div>
