@@ -1340,68 +1340,68 @@
     /**
      * Usuarios por Ocupación
     */
-    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '1'";
-    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '1' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'"; 
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '1'";
+    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '1' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'"; 
     $ocupacionTotales1 = mysqli_query($con, $sql);
     //var_dump($ocupacionTotales1);
     $totalesOcupacion1= mysqli_fetch_array($ocupacionTotales1);
 
-    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '21'";
-    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '21' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '21'";
+    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '21' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
     $ocupacionTotales2 = mysqli_query($con, $sql);
     //var_dump($ocupacionTotales2);
     $totalesOcupacion2= mysqli_fetch_array($ocupacionTotales2);
 
-    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '22'";
-    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '22' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '22'";
+    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '22' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
     $ocupacionTotales3 = mysqli_query($con, $sql);
     //var_dump($ocupacionTotales3);
     $totalesOcupacion3= mysqli_fetch_array($ocupacionTotales3);
 
-    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '15'";
-    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '15' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '15'";
+    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '15' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
     $ocupacionTotales4 = mysqli_query($con, $sql);
     //var_dump($ocupacionTotales4);
     $totalesOcupacion4= mysqli_fetch_array($ocupacionTotales4);
 
-    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '24'";
-    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '24' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '24'";
+    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '24' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
     $ocupacionTotales5 = mysqli_query($con, $sql);
     //var_dump($ocupacionTotales5);
     $totalesOcupacion5= mysqli_fetch_array($ocupacionTotales5);
 
-    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '23'";
-    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '23' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '23'";
+    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '23' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
     $ocupacionTotales6 = mysqli_query($con, $sql);
     //var_dump($ocupacionTotales6);
     $totalesOcupacion6= mysqli_fetch_array($ocupacionTotales6);
 
-    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '7'";
-    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '7' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '7'";
+    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '7' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
     $ocupacionTotales7 = mysqli_query($con, $sql);
     //var_dump($ocupacionTotales7);
     $totalesOcupacion7= mysqli_fetch_array($ocupacionTotales7);
 
-    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '19'";
-    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '19' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '19'";
+    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '19' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
     $ocupacionTotales8 = mysqli_query($con, $sql);
     //var_dump($ocupacionTotales8);
     $totalesOcupacion8= mysqli_fetch_array($ocupacionTotales8);
 
-    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '14'";
-    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '14' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '14'";
+    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '14' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
     $ocupacionTotales9 = mysqli_query($con, $sql);
     //var_dump($ocupacionTotales9);
     $totalesOcupacion9= mysqli_fetch_array($ocupacionTotales9);
 
-    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '6'";
-    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '6' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '6'";
+    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '6' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
     $ocupacionTotales10 = mysqli_query($con, $sql);
     //var_dump($ocupacionTotales10);
     $totalesOcupacion10= mysqli_fetch_array($ocupacionTotales10);
 
-    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '20'";
-    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '20' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '20'";
+    // $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '20' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
     $ocupacionTotales11 = mysqli_query($con, $sql);
     //var_dump($ocupacionTotales11);
     $totalesOcupacion11= mysqli_fetch_array($ocupacionTotales11);
