@@ -13094,7 +13094,7 @@
                   <i class="fas fa-fw fa-music"></i>
                 </div>
                 
-                <div class="mr-5"><b>Cultura <span class="float-right"><?=$culturaTotales['userPorActividad']?></span></b></div>
+                <div class="mr-5"><b>Usuarios insccritos en Cultura <span class="float-right">Total <?=$culturaTotales['userPorActividad']?></span></b></div>
               </div>
               <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCultura">
                 <span class="float-left">Ver detalle</span>
