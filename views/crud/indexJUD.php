@@ -7785,7 +7785,7 @@
     * FIN -Totales por tactividad Cultura Hombres
     */
     /**
-    * Totales por tactividad Deporte
+    * Totales por actividad Deporte
     */
     $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '17'";
     $totalesFutbol = mysqli_query($con, $sql);
@@ -7846,6 +7846,71 @@
     $totalesKung = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $kung = mysqli_fetch_array($totalesKung);
+    /**
+    * FIN - Totales por tactividad Deporte
+    */
+     /**
+    * Totales por actividad Deporte Mujeres
+    */
+    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '17'";
+    $totalesFutbolMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $futbolMujeres = mysqli_fetch_array($totalesFutbolMujeres);
+
+    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '18'";
+    $totalesBasquetMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $basquetMujeres = mysqli_fetch_array($totalesBasquetMujeres);
+
+    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '19'";
+    $totalesVoleyMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $voleyMujeres = mysqli_fetch_array($totalesVoleyMujeres);
+
+    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '20'";
+    $totalesAcondicionamientoMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $acondicionamientoMujeres = mysqli_fetch_array($totalesAcondicionamientoMujeres);
+
+    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '94'";
+    $totalesZumbaMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $zumbaMujeres = mysqli_fetch_array($totalesZumbaMujeres);
+
+    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '95'";
+    $totalesTaeMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $taeMujeres = mysqli_fetch_array($totalesTaeMujeres);
+
+    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '96'";
+    $totalesYogaMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $yogaMujeres = mysqli_fetch_array($totalesYogaMujeres);
+
+    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '97'";
+    $totalesTaiMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $taiChiMujeres = mysqli_fetch_array($totalesTaiMujeres);
+
+    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '98'";
+    $totalesBoxeoMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $boxeoMujeres = mysqli_fetch_array($totalesBoxeoMujeres);
+
+    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '99'";
+    $totalesAtletismoMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $atletismoMujeres = mysqli_fetch_array($totalesAtletismoMujeres);
+
+    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '100'";
+    $totalesKarateMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $karateMujeres = mysqli_fetch_array($totalesKarateMujeres);
+
+    $sql="SELECT COUNT(Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_idActividades = '101'";
+    $totalesKungMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $kungMujeres = mysqli_fetch_array($totalesKungMujeres);
     /**
     * FIN - Totales por tactividad Deporte
     */
@@ -15942,51 +16007,51 @@
                       <tbody class="bg-success">
                       <tr>
                         <th scope="row">Fútbol</th>
-                        <td><?=$futbol['userPorActividad']?></td>
+                        <td><?=$futbolMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Basquetbol</th>
-                        <td><?=$basquet['userPorActividad']?></td>
+                        <td><?=$basquetMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Voleibol</th>
-                        <td><?=$voley['userPorActividad']?></td>
+                        <td><?=$voleyMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Acondicionamiento físico</th>
-                        <td><?=$acondicionamiento['userPorActividad']?></td>
+                        <td><?=$acondicionamientoMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Zumba</th>
-                        <td><?=$zumba['userPorActividad']?></td>
+                        <td><?=$zumbaMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Tae bo</th>
-                        <td><?=$tae['userPorActividad']?></td>
+                        <td><?=$taeMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Yoga</th>
-                        <td><?=$yoga['userPorActividad']?></td>
+                        <td><?=$yogaMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Tai chi</th>
-                        <td><?=$taiChi['userPorActividad']?></td>
+                        <td><?=$taiChiMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Boxeo</th>
-                        <td><?=$boxeo['userPorActividad']?></td>
+                        <td><?=$boxeoMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Atletismo</th>
-                        <td><?=$atletismo['userPorActividad']?></td>
+                        <td><?=$atletismoMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Karate do</th>
-                        <td><?=$karate['userPorActividad']?></td>
+                        <td><?=$karateMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Kung fu</th>
-                        <td><?=$kung['userPorActividad']?></td>
+                        <td><?=$kungMujeres['userPorActividad']?></td>
                       </tr>
                       </tbody>
                     </table>
