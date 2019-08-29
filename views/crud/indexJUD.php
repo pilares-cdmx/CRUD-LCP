@@ -7374,6 +7374,211 @@
     /**
     * FIN -Totales por tactividad Cultura
     */
+     /**
+    * Totales por actividad Cultura Mujeres    select count(DISTINCT U1.idUsuarios) from Usuario U1, ActividadesPorUsuario A1 where U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Actividades_idActividades = '3';
+    */
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM  Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '1'";
+    $totalesTeatroMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $teatroMujeres = mysqli_fetch_array($totalesTeatroMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '2'";
+    $totalesDanzaMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $danzaMujeres = mysqli_fetch_array($totalesDanzaMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '4'";
+    $totalesPerformanceMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $performanceMujeres = mysqli_fetch_array($totalesPerformanceMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '5'";
+    $totalesMusicaMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $musicaMujeres = mysqli_fetch_array($totalesMusicaMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '8'";
+    $totalesArtesPlasMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $artesPlasMujeres = mysqli_fetch_array($totalesArtesPlasMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '9'";
+    $totalesFotoMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $fotografiaMujeres = mysqli_fetch_array($totalesFotoMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '10'";
+    $totalesVideoDocMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $videoDocMujeres = mysqli_fetch_array($totalesVideoDocMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '11'";
+    $totalesStopMotionMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $stopMotionMujeres = mysqli_fetch_array($totalesStopMotionMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '12'";
+    $totalesArteBioloMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $arteBioloMujeres = mysqli_fetch_array($totalesArteBioloMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '15'";
+    $totalesLibroClubMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $libroClubMujeres = mysqli_fetch_array($totalesLibroClubMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '16'";
+    $totalesCineTranshuMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $CineTranshuMujeres = mysqli_fetch_array($totalesCineTranshuMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '22'";
+    $totalesDifuCientiMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $difuCientiMujeres = mysqli_fetch_array($totalesDifuCientiMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '67'";
+    $totalesBaileSocialMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $baileSocialMujeres = mysqli_fetch_array($totalesBaileSocialMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '68'";
+    $totalesDanzaNiñosMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $danzaNiñosMujeres = mysqli_fetch_array($totalesDanzaNiñosMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '69'";
+    $totalesDanzaAdultosMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $danzaAdultosMujeres = mysqli_fetch_array($totalesDanzaAdultosMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '70'";
+    $totalesFolkloricaMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $folkloricaMujeres = mysqli_fetch_array($totalesFolkloricaMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '71'";
+    $totalesActuacionMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $actuacionMujeres = mysqli_fetch_array($totalesActuacionMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '72'";
+    $totalesTeatroCalleMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $teatroCalleMujeres = mysqli_fetch_array($totalesTeatroCalleMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '73'";
+    $totalesDanzaContemporaneaMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $contemporaneaMujeres = mysqli_fetch_array($totalesDanzaContemporaneaMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '74'";
+    $totalesPolinesiaMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $polinesiaMujeres = mysqli_fetch_array($totalesPolinesiaMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '75'";
+    $totalesTeatroMascarasMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $mascarasMujeres = mysqli_fetch_array($totalesTeatroMascarasMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '76'";
+    $totalesExpresioMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $expresionMujeres = mysqli_fetch_array($totalesExpresioMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '77'";
+    $totalesTelarMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $telarMujeres = mysqli_fetch_array($totalesTelarMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '78'";
+    $totalesCArtoneriaMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $cartoneriaMujeres = mysqli_fetch_array($totalesCArtoneriaMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '79'";
+    $totalesBordadoMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $bordadoMujeres = mysqli_fetch_array($totalesBordadoMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '80'";
+    $totalesConstruccionMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $construccionMujeres = mysqli_fetch_array($totalesConstruccionMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '81'";
+    $totalesDiseñoJuguetesMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $diseñoJuguetesMujeres = mysqli_fetch_array($totalesDiseñoJuguetesMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '82'";
+    $totalesReciclajeAmbMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $reciclajeAmbMujeres = mysqli_fetch_array($totalesReciclajeAmbMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '83'";
+    $totalesEscrituraMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $escrituraMujeres = mysqli_fetch_array($totalesEscrituraMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '84'";
+    $totalesPinturaArtMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $pinturaArtMujeres = mysqli_fetch_array($totalesPinturaArtMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '85'";
+    $totalesAudioVisualMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $audioVisualMujeres = mysqli_fetch_array($totalesAudioVisualMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '86'";
+    $totalesCineMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $cineMujeres = mysqli_fetch_array($totalesCineMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '87'";
+    $totalesAnimacionNiñosMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $animacionNiñosMujeres = mysqli_fetch_array($totalesAnimacionNiñosMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '88'";
+    $totalesVideoComunitarioMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $videoComunitarioMujeres = mysqli_fetch_array($totalesVideoComunitarioMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '89'";
+    $totalesGuitarraMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $guitarraMujeres = mysqli_fetch_array($totalesGuitarraMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '90'";
+    $totalesRapMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $rapMujeres = mysqli_fetch_array($totalesRapMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '91'";
+    $totalesPercusionesMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $percusionesMujeres = mysqli_fetch_array($totalesPercusionesMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '92'";
+    $totalesIniciacionMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $iniciacionMujeres = mysqli_fetch_array($totalesIniciacionMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '93'";
+    $totalesSonHuastecoMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $sonHuastecoMujeres = mysqli_fetch_array($totalesSonHuastecoMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '123'";
+    $totalesGrabadoMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $grabadoMujeres = mysqli_fetch_array($totalesGrabadoMujeres);
+    /**
+    * FIN -Totales por tactividad Cultura
+    */
     /**
     * Totales por tactividad Deporte
     */
@@ -14642,163 +14847,163 @@
                       <tbody class="bg-primary">
                       <tr>
                         <th scope="row">Teatro</th>
-                        <td><?=$teatro['userPorActividad']?></td>
+                        <td><?=$teatroMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Danza</th>
-                        <td><?=$danza['userPorActividad']?></td>
+                        <td><?=$danzaMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Perfonmance</th>
-                        <td><?=$performance['userPorActividad']?></td>
+                        <td><?=$performanceMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Música</th>
-                        <td><?=$musica['userPorActividad']?></td>
+                        <td><?=$musicaMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Artes plásticas</th>
-                        <td><?=$artesPlas['userPorActividad']?></td>
+                        <td><?=$artesPlasMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Fotografía</th>
-                        <td><?=$fotografia['userPorActividad']?></td>
+                        <td><?=$fotografiaMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Video documental</th>
-                        <td><?=$videoDoc['userPorActividad']?></td>
+                        <td><?=$videoDocMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Stop motion</th>
-                        <td><?=$stopMotion['userPorActividad']?></td>
+                        <td><?=$stopMotionMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Arte y biología</th>
-                        <td><?=$arteBiolo['userPorActividad']?></td>
+                        <td><?=$arteBioloMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Libroclub</th>
-                        <td><?=$libroClub['userPorActividad']?></td>
+                        <td><?=$libroClubMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Cineclub y trashuma</th>
-                        <td><?=$CineTranshu['userPorActividad']?></td>
+                        <td><?=$CineTranshuMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Difusión Científica</th>
-                        <td><?=$difuCienti['userPorActividad']?></td>
+                        <td><?=$difuCientiMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Baile Social</th>
-                        <td><?=$baileSocial['userPorActividad']?></td>
+                        <td><?=$baileSocialMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Danza para niños</th>
-                        <td><?=$danzaNiños['userPorActividad']?></td>
+                        <td><?=$danzaNiñosMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Danza para adultos</th>
-                        <td><?=$danzaAdultos['userPorActividad']?></td>
+                        <td><?=$danzaAdultosMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Danza folklórica</th>
-                        <td><?=$folklorica['userPorActividad']?></td>
+                        <td><?=$folkloricaMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Actuación</th>
-                        <td><?=$actuacion['userPorActividad']?></td>
+                        <td><?=$actuacionMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Teatro de calle</th>
-                        <td><?=$teatroCalle['userPorActividad']?></td>
+                        <td><?=$teatroCalleMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Danza contemporánea</th>
-                        <td><?=$contemporanea['userPorActividad']?></td>
+                        <td><?=$contemporaneaMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Danza polinesia</th>
-                        <td><?=$polinesia['userPorActividad']?></td>
+                        <td><?=$polinesiaMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Teatro de máscaras</th>
-                        <td><?=$mascaras['userPorActividad']?></td>
+                        <td><?=$mascarasMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Expresión corporal y teatro</th>
-                        <td><?=$expresion['userPorActividad']?></td>
+                        <td><?=$expresionMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Telar de cintura</th>
-                        <td><?=$telar['userPorActividad']?></td>
+                        <td><?=$telarMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Cartonería</th>
-                        <td><?=$cartoneria['userPorActividad']?></td>
+                        <td><?=$cartoneriaMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Bordado para la vida</th>
-                        <td><?=$bordado['userPorActividad']?></td>
+                        <td><?=$bordadoMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Construcción artesanal de instrumentos</th>
-                        <td><?=$construccion['userPorActividad']?></td>
+                        <td><?=$construccionMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Diseño de juguetes de madera y materiales de</th>
-                        <td><?=$diseñoJuguetes['userPorActividad']?></td>
+                        <td><?=$diseñoJuguetesMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Reciclaje y medio ambiente</th>
-                        <td><?=$reciclajeAmb['userPorActividad']?></td>
+                        <td><?=$reciclajeAmbMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Escritura creativa</th>
-                        <td><?=$escritura['userPorActividad']?></td>
+                        <td><?=$escrituraMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Pintura artística</th>
-                        <td><?=$pinturaArt['userPorActividad']?></td>
+                        <td><?=$pinturaArtMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Medios Audiovisuales </th>
-                        <td><?=$audioVisual['userPorActividad']?></td>
+                        <td><?=$audioVisualMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Cine</th>
-                        <td><?=$cine['userPorActividad']?></td>
+                        <td><?=$cineMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Animación para niños</th>
-                        <td><?=$animacionNiños['userPorActividad']?></td>
+                        <td><?=$animacionNiñosMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Vídeo comunitario</th>
-                        <td><?=$videoComunitario['userPorActividad']?></td>
+                        <td><?=$videoComunitarioMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Guitarra clásica</th>
-                        <td><?=$guitarra['userPorActividad']?></td>
+                        <td><?=$guitarraMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Música Rap</th>
-                        <td><?=$rap['userPorActividad']?></td>
+                        <td><?=$rapMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Percusiones</th>
-                        <td><?=$percusiones['userPorActividad']?></td>
+                        <td><?=$percusionesMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Iniciación a la música</th>
-                        <td><?=$iniciacion['userPorActividad']?></td>
+                        <td><?=$iniciacionMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Son Huasteco</th>
-                        <td><?=$sonHuasteco['userPorActividad']?></td>
+                        <td><?=$sonHuastecoMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Dibujo y grabado</th>
-                        <td><?=$grabado['userPorActividad']?></td>
+                        <td><?=$grabadoMujeres['userPorActividad']?></td>
                       </tr>
                       </tbody>
                     </table>
