@@ -17368,7 +17368,7 @@
                       </tr>
                       <tr>
                         <th scope="row">Codigo para mujeres</th>
-                        <td><?=$codMujeresHombres['userPorActividad']?></td>
+                        <td><?=$codHombresHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Electrónica y robótica</th>
