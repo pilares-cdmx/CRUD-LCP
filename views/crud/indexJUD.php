@@ -2726,6 +2726,678 @@
     $totalesLenguaHombres0 = mysqli_query($con, $sql);
     //var_dump($totalesLenguaHombres0);
     $lenguaTotalesHombres0= mysqli_fetch_array($totalesLenguaHombres0);
+/**
+     * uSUARIOS INSCRITOS POR PUEBLOS ORIGINARIOS
+     */
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '1'";
+    $totalesLengua1 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua1);
+    $pueblosTotales1= mysqli_fetch_array($totalesLengua1);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '2'";
+    $totalesLengua2 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua2);
+    $pueblosTotales2= mysqli_fetch_array($totalesLengua2);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '3'";
+    $totalesLengua3 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua3);
+    $pueblosTotales3= mysqli_fetch_array($totalesLengua3);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '4'";
+    $totalesLengua4 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua4);
+    $pueblosTotales4= mysqli_fetch_array($totalesLengua4);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '5'";
+    $totalesLengua5 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua5);
+    $pueblosTotales5= mysqli_fetch_array($totalesLengua5);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '6'";
+    $totalesLengua6 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua6);
+    $pueblosTotales6= mysqli_fetch_array($totalesLengua6);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '7'";
+    $totalesLengua7 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua7);
+    $pueblosTotales7= mysqli_fetch_array($totalesLengua7);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '8'";
+    $totalesLengua8 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua8);
+    $pueblosTotales8= mysqli_fetch_array($totalesLengua8);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '9'";
+    $totalesLengua9 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua9);
+    $pueblosTotales9= mysqli_fetch_array($totalesLengua9);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '10'";
+    $totalesLengua10 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua10);
+    $pueblosTotales10= mysqli_fetch_array($totalesLengua10);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '11'";
+    $totalesLengua11 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua11);
+    $pueblosTotales11= mysqli_fetch_array($totalesLengua11);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '12'";
+    $totalesLengua12 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua12);
+    $pueblosTotales12= mysqli_fetch_array($totalesLengua12);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '13'";
+    $totalesLengua13 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua13);
+    $pueblosTotales13= mysqli_fetch_array($totalesLengua13);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '14'";
+    $totalesLengua14 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua14);
+    $pueblosTotales14= mysqli_fetch_array($totalesLengua14);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '15'";
+    $totalesLengua15 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua15);
+    $pueblosTotales15= mysqli_fetch_array($totalesLengua15);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '16'";
+    $totalesLengua16 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua16);
+    $pueblosTotales16= mysqli_fetch_array($totalesLengua16);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '17'";
+    $totalesLengua17 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua17);
+    $pueblosTotales17= mysqli_fetch_array($totalesLengua17);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '18'";
+    $totalesLengua18 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua18);
+    $pueblosTotales18= mysqli_fetch_array($totalesLengua18);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '19'";
+    $totalesLengua19 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua19);
+    $pueblosTotales19= mysqli_fetch_array($totalesLengua19);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '20'";
+    $totalesLengua20 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua20);
+    $pueblosTotales20= mysqli_fetch_array($totalesLengua20);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '21'";
+    $totalesLengua21 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua21);
+    $pueblosTotales21= mysqli_fetch_array($totalesLengua21);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '22'";
+    $totalesLengua22 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua22);
+    $pueblosTotales22= mysqli_fetch_array($totalesLengua22);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '23'";
+    $totalesLengua23 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua23);
+    $pueblosTotales23= mysqli_fetch_array($totalesLengua23);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '24'";
+    $totalesLengua24 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua24);
+    $pueblosTotales24= mysqli_fetch_array($totalesLengua24);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '25'";
+    $totalesLengua25 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua25);
+    $pueblosTotales25= mysqli_fetch_array($totalesLengua25);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '26'";
+    $totalesLengua26 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua26);
+    $pueblosTotales26= mysqli_fetch_array($totalesLengua26);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '27'";
+    $totalesLengua27 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua27);
+    $pueblosTotales27= mysqli_fetch_array($totalesLengua27);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '28'";
+    $totalesLengua28 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua28);
+    $pueblosTotales28= mysqli_fetch_array($totalesLengua28);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '29'";
+    $totalesLengua29 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua29);
+    $pueblosTotales29= mysqli_fetch_array($totalesLengua29);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '30'";
+    $totalesLengua30 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua30);
+    $pueblosTotales30= mysqli_fetch_array($totalesLengua30);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '31'";
+    $totalesLengua31 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua31);
+    $pueblosTotales31= mysqli_fetch_array($totalesLengua31);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '32'";
+    $totalesLengua32 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua32);
+    $pueblosTotales32= mysqli_fetch_array($totalesLengua32);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '33'";
+    $totalesLengua33 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua33);
+    $pueblosTotales33= mysqli_fetch_array($totalesLengua33);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '34'";
+    $totalesLengua34 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua34);
+    $pueblosTotales34= mysqli_fetch_array($totalesLengua34);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '35'";
+    $totalesLengua35 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua35);
+    $pueblosTotales35= mysqli_fetch_array($totalesLengua35);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '36'";
+    $totalesLengua36 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua36);
+    $pueblosTotales36= mysqli_fetch_array($totalesLengua36);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '37'";
+    $totalesLengua37 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua37);
+    $pueblosTotales37= mysqli_fetch_array($totalesLengua37);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '38'";
+    $totalesLengua38 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua38);
+    $pueblosTotales38= mysqli_fetch_array($totalesLengua38);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '39'";
+    $totalesLengua39 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua39);
+    $pueblosTotales39= mysqli_fetch_array($totalesLengua39);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '40'";
+    $totalesLengua40 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua40);
+    $pueblosTotales40= mysqli_fetch_array($totalesLengua40);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '41'";
+    $totalesLengua41 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua41);
+    $pueblosTotales41= mysqli_fetch_array($totalesLengua41);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '42'";
+    $totalesLengua42 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua42);
+    $pueblosTotales42= mysqli_fetch_array($totalesLengua42);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '43'";
+    $totalesLengua43 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua43);
+    $pueblosTotales43= mysqli_fetch_array($totalesLengua43);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '44'";
+    $totalesLengua44 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua44);
+    $pueblosTotales44= mysqli_fetch_array($totalesLengua44);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '45'";
+    $totalesLengua45 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua45);
+    $pueblosTotales45= mysqli_fetch_array($totalesLengua45);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '46'";
+    $totalesLengua46 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua46);
+    $pueblosTotales46= mysqli_fetch_array($totalesLengua46);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '47'";
+    $totalesLengua47 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua47);
+    $pueblosTotales47= mysqli_fetch_array($totalesLengua47);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '48'";
+    $totalesLengua48 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua48);
+    $pueblosTotales48= mysqli_fetch_array($totalesLengua48);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '49'";
+    $totalesLengua49 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua49);
+    $pueblosTotales49= mysqli_fetch_array($totalesLengua49);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '50'";
+    $totalesLengua50 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua50);
+    $pueblosTotales50= mysqli_fetch_array($totalesLengua50);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '51'";
+    $totalesLengua51 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua51);
+    $pueblosTotales51= mysqli_fetch_array($totalesLengua51);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '52'";
+    $totalesLengua52 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua52);
+    $pueblosTotales52= mysqli_fetch_array($totalesLengua52);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '53'";
+    $totalesLengua53 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua53);
+    $pueblosTotales53= mysqli_fetch_array($totalesLengua53);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '54'";
+    $totalesLengua54 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua54);
+    $pueblosTotales54= mysqli_fetch_array($totalesLengua54);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '55'";
+    $totalesLengua55 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua55);
+    $pueblosTotales55= mysqli_fetch_array($totalesLengua55);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '56'";
+    $totalesLengua56 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua56);
+    $pueblosTotales56= mysqli_fetch_array($totalesLengua56);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '57'";
+    $totalesLengua57 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua57);
+    $pueblosTotales57= mysqli_fetch_array($totalesLengua57);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '58'";
+    $totalesLengua58 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua58);
+    $pueblosTotales58= mysqli_fetch_array($totalesLengua58);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '59'";
+    $totalesLengua59 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua59);
+    $pueblosTotales59= mysqli_fetch_array($totalesLengua59);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '60'";
+    $totalesLengua60 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua60);
+    $pueblosTotales60= mysqli_fetch_array($totalesLengua60);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61'";
+    $totalesLengua61 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua61);
+    $pueblosTotales61= mysqli_fetch_array($totalesLengua61);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62'";
+    $totalesLengua62 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua62);
+    $pueblosTotales62= mysqli_fetch_array($totalesLengua62);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63'";
+    $totalesLengua63 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua63);
+    $pueblosTotales63= mysqli_fetch_array($totalesLengua63);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64'";
+    $totalesLengua64 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua64);
+    $pueblosTotales64= mysqli_fetch_array($totalesLengua64);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65'";
+    $totalesLengua65 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua65);
+    $pueblosTotales65= mysqli_fetch_array($totalesLengua65);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66'";
+    $totalesLengua66 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua66);
+    $pueblosTotales66= mysqli_fetch_array($totalesLengua66);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67'";
+    $totalesLengua67 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua67);
+    $pueblosTotales67= mysqli_fetch_array($totalesLengua67);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '68'";
+    $totalesLengua68 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua68);
+    $pueblosTotales68= mysqli_fetch_array($totalesLengua68);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69'";
+    $totalesLengua69 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua69);
+    $pueblosTotales69= mysqli_fetch_array($totalesLengua69);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '70'";
+    $totalesLengua70 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua70);
+    $pueblosTotales70= mysqli_fetch_array($totalesLengua70);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '71'";
+    $totalesLengua71 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua71);
+    $pueblosTotales71= mysqli_fetch_array($totalesLengua71);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '72'";
+    $totalesLengua72 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua72);
+    $pueblosTotales72= mysqli_fetch_array($totalesLengua72);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '73'";
+    $totalesLengua73 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua73);
+    $pueblosTotales73= mysqli_fetch_array($totalesLengua73);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '74'";
+    $totalesLengua74 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua74);
+    $pueblosTotales74= mysqli_fetch_array($totalesLengua74);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '75'";
+    $totalesLengua75 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua75);
+    $pueblosTotales75= mysqli_fetch_array($totalesLengua75);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '76'";
+    $totalesLengua76 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua76);
+    $pueblosTotales76= mysqli_fetch_array($totalesLengua76);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '77'";
+    $totalesLengua77 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua77);
+    $pueblosTotales77= mysqli_fetch_array($totalesLengua77);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '78'";
+    $totalesLengua78 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua78);
+    $pueblosTotales78= mysqli_fetch_array($totalesLengua78);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '79'";
+    $totalesLengua79 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua79);
+    $pueblosTotales79= mysqli_fetch_array($totalesLengua79);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '80'";
+    $totalesLengua80 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua80);
+    $pueblosTotales80= mysqli_fetch_array($totalesLengua80);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '81'";
+    $totalesLengua81 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua81);
+    $pueblosTotales81= mysqli_fetch_array($totalesLengua81);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '82'";
+    $totalesLengua82 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua82);
+    $pueblosTotales82= mysqli_fetch_array($totalesLengua82);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '83'";
+    $totalesLengua83 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua83);
+    $pueblosTotales83= mysqli_fetch_array($totalesLengua83);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '84'";
+    $totalesLengua84 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua84);
+    $pueblosTotales84= mysqli_fetch_array($totalesLengua84);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '85'";
+    $totalesLengua85 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua85);
+    $pueblosTotales85= mysqli_fetch_array($totalesLengua85);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '86'";
+    $totalesLengua86 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua86);
+    $pueblosTotales86= mysqli_fetch_array($totalesLengua86);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '87'";
+    $totalesLengua87 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua87);
+    $pueblosTotales87= mysqli_fetch_array($totalesLengua87);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '88'";
+    $totalesLengua88 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua88);
+    $pueblosTotales88= mysqli_fetch_array($totalesLengua88);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '89'";
+    $totalesLengua89 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua89);
+    $pueblosTotales89= mysqli_fetch_array($totalesLengua89);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '90'";
+    $totalesLengua90 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua90);
+    $pueblosTotales90= mysqli_fetch_array($totalesLengua90);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '91'";
+    $totalesLengua91 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua91);
+    $pueblosTotales91= mysqli_fetch_array($totalesLengua91);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '92'";
+    $totalesLengua92 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua92);
+    $pueblosTotales92= mysqli_fetch_array($totalesLengua92);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '93'";
+    $totalesLengua93 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua93);
+    $pueblosTotales93= mysqli_fetch_array($totalesLengua93);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '94'";
+    $totalesLengua94 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua94);
+    $pueblosTotales94= mysqli_fetch_array($totalesLengua94);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '95'";
+    $totalesLengua95 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua95);
+    $pueblosTotales95= mysqli_fetch_array($totalesLengua95);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '96'";
+    $totalesLengua96 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua96);
+    $pueblosTotales96= mysqli_fetch_array($totalesLengua96);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '97'";
+    $totalesLengua97 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua97);
+    $pueblosTotales97= mysqli_fetch_array($totalesLengua97);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '98'";
+    $totalesLengua98 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua98);
+    $pueblosTotales98= mysqli_fetch_array($totalesLengua98);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '99'";
+    $totalesLengua99 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua99);
+    $pueblosTotales99= mysqli_fetch_array($totalesLengua99);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '100'";
+    $totalesLengua100 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua100);
+    $pueblosTotales100= mysqli_fetch_array($totalesLengua100);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '101'";
+    $totalesLengua101 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua101);
+    $pueblosTotales101= mysqli_fetch_array($totalesLengua101);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '102'";
+    $totalesLengua102 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua102);
+    $pueblosTotales102= mysqli_fetch_array($totalesLengua102);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '103'";
+    $totalesLengua103 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua103);
+    $pueblosTotales103= mysqli_fetch_array($totalesLengua103);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '104'";
+    $totalesLengua104 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua104);
+    $pueblosTotales104= mysqli_fetch_array($totalesLengua104);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '105'";
+    $totalesLengua105 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua105);
+    $pueblosTotales105= mysqli_fetch_array($totalesLengua105);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '106'";
+    $totalesLengua106 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua106);
+    $pueblosTotales106= mysqli_fetch_array($totalesLengua106);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '107'";
+    $totalesLengua107 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua107);
+    $pueblosTotales107= mysqli_fetch_array($totalesLengua107);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '108'";
+    $totalesLengua108 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua108);
+    $pueblosTotales108= mysqli_fetch_array($totalesLengua108);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '109'";
+    $totalesLengua109 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua109);
+    $pueblosTotales109= mysqli_fetch_array($totalesLengua109);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '110'";
+    $totalesLengua110 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua110);
+    $pueblosTotales110= mysqli_fetch_array($totalesLengua110);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '111'";
+    $totalesLengua111 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua111);
+    $pueblosTotales111= mysqli_fetch_array($totalesLengua111);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '112'";
+    $totalesLengua112 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua112);
+    $pueblosTotales112= mysqli_fetch_array($totalesLengua112);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '113'";
+    $totalesLengua113 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua113);
+    $pueblosTotales113= mysqli_fetch_array($totalesLengua113);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '114'";
+    $totalesLengua114 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua114);
+    $pueblosTotales114= mysqli_fetch_array($totalesLengua114);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '115'";
+    $totalesLengua115 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua115);
+    $pueblosTotales115= mysqli_fetch_array($totalesLengua115);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '116'";
+    $totalesLengua116 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua116);
+    $pueblosTotales116= mysqli_fetch_array($totalesLengua116);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '117'";
+    $totalesLengua117 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua117);
+    $pueblosTotales117= mysqli_fetch_array($totalesLengua117);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '118'";
+    $totalesLengua118 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua118);
+    $pueblosTotales118= mysqli_fetch_array($totalesLengua118);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '119'";
+    $totalesLengua119 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua119);
+    $pueblosTotales119= mysqli_fetch_array($totalesLengua119);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '120'";
+    $totalesLengua120 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua120);
+    $pueblosTotales120= mysqli_fetch_array($totalesLengua120);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '121'";
+    $totalesLengua121 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua121);
+    $pueblosTotales121= mysqli_fetch_array($totalesLengua121);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '122'";
+    $totalesLengua122 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua122);
+    $pueblosTotales122= mysqli_fetch_array($totalesLengua122);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '123'";
+    $totalesLengua123 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua123);
+    $pueblosTotales123= mysqli_fetch_array($totalesLengua123);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '124'";
+    $totalesLengua124 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua124);
+    $pueblosTotales124= mysqli_fetch_array($totalesLengua124);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '125'";
+    $totalesLengua125 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua125);
+    $pueblosTotales125= mysqli_fetch_array($totalesLengua125);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '126'";
+    $totalesLengua126 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua126);
+    $pueblosTotales126= mysqli_fetch_array($totalesLengua126);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '127'";
+    $totalesLengua127 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua127);
+    $pueblosTotales127= mysqli_fetch_array($totalesLengua127);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '130'";
+    $totalesLengua130 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua130);
+    $pueblosTotales130= mysqli_fetch_array($totalesLengua130);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '131'";
+    $totalesLengua131 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua131);
+    $pueblosTotales131= mysqli_fetch_array($totalesLengua131);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '132'";
+    $totalesLengua132 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua132);
+    $pueblosTotales132= mysqli_fetch_array($totalesLengua132);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '133'";
+    $totalesLengua133 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua133);
+    $pueblosTotales133= mysqli_fetch_array($totalesLengua133);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '134'";
+    $totalesLengua134 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua134);
+    $pueblosTotales134= mysqli_fetch_array($totalesLengua134);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '135'";
+    $totalesLengua135 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua135);
+    $pueblosTotales135= mysqli_fetch_array($totalesLengua135);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '0'";
+    $totalesLengua0 = mysqli_query($con, $sql);
+    //var_dump($totalesLengua0);
+    $pueblosTotales0= mysqli_fetch_array($totalesLengua0);    
     /**
   * Usuarios totales por Grado de EStudios Mujeres
 */
