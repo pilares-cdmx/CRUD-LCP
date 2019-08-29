@@ -7149,6 +7149,11 @@
     //var_dump($totalesCultura);
     $culturaTotales = mysqli_fetch_array($totalesCultura);
 
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_TiposActividades_idTiposActividades = '1'";
+    $totalesCulturaMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaMujeres);
+    $culturaTotalesMujeres = mysqli_fetch_array($totalesCulturaMujeres);
+
     // // $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '4' and U1.Pilares_idPilares = '$idPilarLCP'";
     $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4'";
     $totalesCiberEscuelas = mysqli_query($con, $sql);
@@ -15882,7 +15887,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios inscritos en Cultura mujeres <span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Cultura mujeres <span class="float-right"> Total <?=$culturaTotalesMujeres['userPorActividad']?></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCulturaMujeres">
                   <span class="float-left">Ver detalle</span>
@@ -16772,7 +16777,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios inscritos en Deport mujeres <span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Deporte mujeres <span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseDeporteMujeres">
                   <span class="float-left">Ver detalle</span>
