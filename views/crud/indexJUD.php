@@ -4070,6 +4070,678 @@
     $totalesPueblosMujeres0 = mysqli_query($con, $sql);
     //var_dump($totalesPueblosMujeres0);
     $pueblosTotalesMujeres0= mysqli_fetch_array($totalesPueblosMujeres0);   
+/**
+     * uSUARIOS INSCRITOS POR PUEBLOS ORIGINARIOS Hombres
+     */
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '1' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres1 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres1);
+    $pueblosTotalesHombres1= mysqli_fetch_array($totalesPueblosHombres1);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '2' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres2 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres2);
+    $pueblosTotalesHombres2= mysqli_fetch_array($totalesPueblosHombres2);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '3' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres3 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres3);
+    $pueblosTotalesHombres3= mysqli_fetch_array($totalesPueblosHombres3);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '4' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres4 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres4);
+    $pueblosTotalesHombres4= mysqli_fetch_array($totalesPueblosHombres4);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '5' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres5 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres5);
+    $pueblosTotalesHombres5= mysqli_fetch_array($totalesPueblosHombres5);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '6' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres6 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres6);
+    $pueblosTotalesHombres6= mysqli_fetch_array($totalesPueblosHombres6);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '7' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres7 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres7);
+    $pueblosTotalesHombres7= mysqli_fetch_array($totalesPueblosHombres7);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '8' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres8 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres8);
+    $pueblosTotalesHombres8= mysqli_fetch_array($totalesPueblosHombres8);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '9' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres9 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres9);
+    $pueblosTotalesHombres9= mysqli_fetch_array($totalesPueblosHombres9);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '10' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres10 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres10);
+    $pueblosTotalesHombres10= mysqli_fetch_array($totalesPueblosHombres10);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '11' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres11 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres11);
+    $pueblosTotalesHombres11= mysqli_fetch_array($totalesPueblosHombres11);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '12' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres12 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres12);
+    $pueblosTotalesHombres12= mysqli_fetch_array($totalesPueblosHombres12);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '13' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres13 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres13);
+    $pueblosTotalesHombres13= mysqli_fetch_array($totalesPueblosHombres13);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '14' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres14 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres14);
+    $pueblosTotalesHombres14= mysqli_fetch_array($totalesPueblosHombres14);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '15' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres15 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres15);
+    $pueblosTotalesHombres15= mysqli_fetch_array($totalesPueblosHombres15);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '16' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres16 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres16);
+    $pueblosTotalesHombres16= mysqli_fetch_array($totalesPueblosHombres16);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '17' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres17 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres17);
+    $pueblosTotalesHombres17= mysqli_fetch_array($totalesPueblosHombres17);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '18' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres18 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres18);
+    $pueblosTotalesHombres18= mysqli_fetch_array($totalesPueblosHombres18);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '19' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres19 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres19);
+    $pueblosTotalesHombres19= mysqli_fetch_array($totalesPueblosHombres19);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '20' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres20 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres20);
+    $pueblosTotalesHombres20= mysqli_fetch_array($totalesPueblosHombres20);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '21' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres21 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres21);
+    $pueblosTotalesHombres21= mysqli_fetch_array($totalesPueblosHombres21);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '22' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres22 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres22);
+    $pueblosTotalesHombres22= mysqli_fetch_array($totalesPueblosHombres22);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '23' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres23 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres23);
+    $pueblosTotalesHombres23= mysqli_fetch_array($totalesPueblosHombres23);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '24' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres24 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres24);
+    $pueblosTotalesHombres24= mysqli_fetch_array($totalesPueblosHombres24);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '25' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres25 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres25);
+    $pueblosTotalesHombres25= mysqli_fetch_array($totalesPueblosHombres25);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '26' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres26 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres26);
+    $pueblosTotalesHombres26= mysqli_fetch_array($totalesPueblosHombres26);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '27' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres27 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres27);
+    $pueblosTotalesHombres27= mysqli_fetch_array($totalesPueblosHombres27);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '28' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres28 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres28);
+    $pueblosTotalesHombres28= mysqli_fetch_array($totalesPueblosHombres28);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '29' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres29 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres29);
+    $pueblosTotalesHombres29= mysqli_fetch_array($totalesPueblosHombres29);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '30' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres30 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres30);
+    $pueblosTotalesHombres30= mysqli_fetch_array($totalesPueblosHombres30);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '31' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres31 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres31);
+    $pueblosTotalesHombres31= mysqli_fetch_array($totalesPueblosHombres31);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '32' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres32 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres32);
+    $pueblosTotalesHombres32= mysqli_fetch_array($totalesPueblosHombres32);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '33' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres33 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres33);
+    $pueblosTotalesHombres33= mysqli_fetch_array($totalesPueblosHombres33);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '34' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres34 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres34);
+    $pueblosTotalesHombres34= mysqli_fetch_array($totalesPueblosHombres34);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '35' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres35 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres35);
+    $pueblosTotalesHombres35= mysqli_fetch_array($totalesPueblosHombres35);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '36' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres36 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres36);
+    $pueblosTotalesHombres36= mysqli_fetch_array($totalesPueblosHombres36);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '37' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres37 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres37);
+    $pueblosTotalesHombres37= mysqli_fetch_array($totalesPueblosHombres37);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '38' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres38 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres38);
+    $pueblosTotalesHombres38= mysqli_fetch_array($totalesPueblosHombres38);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '39' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres39 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres39);
+    $pueblosTotalesHombres39= mysqli_fetch_array($totalesPueblosHombres39);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '40' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres40 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres40);
+    $pueblosTotalesHombres40= mysqli_fetch_array($totalesPueblosHombres40);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '41' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres41 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres41);
+    $pueblosTotalesHombres41= mysqli_fetch_array($totalesPueblosHombres41);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '42' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres42 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres42);
+    $pueblosTotalesHombres42= mysqli_fetch_array($totalesPueblosHombres42);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '43' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres43 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres43);
+    $pueblosTotalesHombres43= mysqli_fetch_array($totalesPueblosHombres43);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '44' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres44 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres44);
+    $pueblosTotalesHombres44= mysqli_fetch_array($totalesPueblosHombres44);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '45' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres45 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres45);
+    $pueblosTotalesHombres45= mysqli_fetch_array($totalesPueblosHombres45);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '46' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres46 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres46);
+    $pueblosTotalesHombres46= mysqli_fetch_array($totalesPueblosHombres46);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '47' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres47 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres47);
+    $pueblosTotalesHombres47= mysqli_fetch_array($totalesPueblosHombres47);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '48' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres48 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres48);
+    $pueblosTotalesHombres48= mysqli_fetch_array($totalesPueblosHombres48);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '49' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres49 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres49);
+    $pueblosTotalesHombres49= mysqli_fetch_array($totalesPueblosHombres49);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '50' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres50 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres50);
+    $pueblosTotalesHombres50= mysqli_fetch_array($totalesPueblosHombres50);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '51' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres51 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres51);
+    $pueblosTotalesHombres51= mysqli_fetch_array($totalesPueblosHombres51);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '52' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres52 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres52);
+    $pueblosTotalesHombres52= mysqli_fetch_array($totalesPueblosHombres52);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '53' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres53 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres53);
+    $pueblosTotalesHombres53= mysqli_fetch_array($totalesPueblosHombres53);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '54' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres54 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres54);
+    $pueblosTotalesHombres54= mysqli_fetch_array($totalesPueblosHombres54);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '55' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres55 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres55);
+    $pueblosTotalesHombres55= mysqli_fetch_array($totalesPueblosHombres55);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '56' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres56 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres56);
+    $pueblosTotalesHombres56= mysqli_fetch_array($totalesPueblosHombres56);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '57' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres57 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres57);
+    $pueblosTotalesHombres57= mysqli_fetch_array($totalesPueblosHombres57);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '58' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres58 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres58);
+    $pueblosTotalesHombres58= mysqli_fetch_array($totalesPueblosHombres58);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '59' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres59 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres59);
+    $pueblosTotalesHombres59= mysqli_fetch_array($totalesPueblosHombres59);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '60' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres60 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres60);
+    $pueblosTotalesHombres60= mysqli_fetch_array($totalesPueblosHombres60);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '61' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres61 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres61);
+    $pueblosTotalesHombres61= mysqli_fetch_array($totalesPueblosHombres61);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '62' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres62 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres62);
+    $pueblosTotalesHombres62= mysqli_fetch_array($totalesPueblosHombres62);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '63' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres63 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres63);
+    $pueblosTotalesHombres63= mysqli_fetch_array($totalesPueblosHombres63);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '64' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres64 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres64);
+    $pueblosTotalesHombres64= mysqli_fetch_array($totalesPueblosHombres64);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '65' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres65 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres65);
+    $pueblosTotalesHombres65= mysqli_fetch_array($totalesPueblosHombres65);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '66' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres66 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres66);
+    $pueblosTotalesHombres66= mysqli_fetch_array($totalesPueblosHombres66);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '67' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres67 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres67);
+    $pueblosTotalesHombres67= mysqli_fetch_array($totalesPueblosHombres67);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '68' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres68 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres68);
+    $pueblosTotalesHombres68= mysqli_fetch_array($totalesPueblosHombres68);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '69' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres69 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres69);
+    $pueblosTotalesHombres69= mysqli_fetch_array($totalesPueblosHombres69);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '70' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres70 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres70);
+    $pueblosTotalesHombres70= mysqli_fetch_array($totalesPueblosHombres70);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '71' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres71 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres71);
+    $pueblosTotalesHombres71= mysqli_fetch_array($totalesPueblosHombres71);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '72' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres72 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres72);
+    $pueblosTotalesHombres72= mysqli_fetch_array($totalesPueblosHombres72);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '73' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres73 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres73);
+    $pueblosTotalesHombres73= mysqli_fetch_array($totalesPueblosHombres73);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '74' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres74 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres74);
+    $pueblosTotalesHombres74= mysqli_fetch_array($totalesPueblosHombres74);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '75' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres75 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres75);
+    $pueblosTotalesHombres75= mysqli_fetch_array($totalesPueblosHombres75);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '76' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres76 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres76);
+    $pueblosTotalesHombres76= mysqli_fetch_array($totalesPueblosHombres76);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '77' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres77 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres77);
+    $pueblosTotalesHombres77= mysqli_fetch_array($totalesPueblosHombres77);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '78' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres78 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres78);
+    $pueblosTotalesHombres78= mysqli_fetch_array($totalesPueblosHombres78);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '79' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres79 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres79);
+    $pueblosTotalesHombres79= mysqli_fetch_array($totalesPueblosHombres79);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '80' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres80 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres80);
+    $pueblosTotalesHombres80= mysqli_fetch_array($totalesPueblosHombres80);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '81' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres81 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres81);
+    $pueblosTotalesHombres81= mysqli_fetch_array($totalesPueblosHombres81);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '82' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres82 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres82);
+    $pueblosTotalesHombres82= mysqli_fetch_array($totalesPueblosHombres82);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '83' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres83 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres83);
+    $pueblosTotalesHombres83= mysqli_fetch_array($totalesPueblosHombres83);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '84' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres84 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres84);
+    $pueblosTotalesHombres84= mysqli_fetch_array($totalesPueblosHombres84);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '85' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres85 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres85);
+    $pueblosTotalesHombres85= mysqli_fetch_array($totalesPueblosHombres85);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '86' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres86 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres86);
+    $pueblosTotalesHombres86= mysqli_fetch_array($totalesPueblosHombres86);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '87' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres87 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres87);
+    $pueblosTotalesHombres87= mysqli_fetch_array($totalesPueblosHombres87);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '88' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres88 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres88);
+    $pueblosTotalesHombres88= mysqli_fetch_array($totalesPueblosHombres88);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '89' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres89 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres89);
+    $pueblosTotalesHombres89= mysqli_fetch_array($totalesPueblosHombres89);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '90' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres90 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres90);
+    $pueblosTotalesHombres90= mysqli_fetch_array($totalesPueblosHombres90);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '91' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres91 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres91);
+    $pueblosTotalesHombres91= mysqli_fetch_array($totalesPueblosHombres91);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '92' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres92 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres92);
+    $pueblosTotalesHombres92= mysqli_fetch_array($totalesPueblosHombres92);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '93' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres93 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres93);
+    $pueblosTotalesHombres93= mysqli_fetch_array($totalesPueblosHombres93);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '94' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres94 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres94);
+    $pueblosTotalesHombres94= mysqli_fetch_array($totalesPueblosHombres94);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '95' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres95 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres95);
+    $pueblosTotalesHombres95= mysqli_fetch_array($totalesPueblosHombres95);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '96' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres96 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres96);
+    $pueblosTotalesHombres96= mysqli_fetch_array($totalesPueblosHombres96);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '97' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres97 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres97);
+    $pueblosTotalesHombres97= mysqli_fetch_array($totalesPueblosHombres97);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '98' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres98 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres98);
+    $pueblosTotalesHombres98= mysqli_fetch_array($totalesPueblosHombres98);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '99' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres99 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres99);
+    $pueblosTotalesHombres99= mysqli_fetch_array($totalesPueblosHombres99);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '100' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres100 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres100);
+    $pueblosTotalesHombres100= mysqli_fetch_array($totalesPueblosHombres100);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '101' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres101 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres101);
+    $pueblosTotalesHombres101= mysqli_fetch_array($totalesPueblosHombres101);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '102' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres102 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres102);
+    $pueblosTotalesHombres102= mysqli_fetch_array($totalesPueblosHombres102);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '103' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres103 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres103);
+    $pueblosTotalesHombres103= mysqli_fetch_array($totalesPueblosHombres103);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '104' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres104 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres104);
+    $pueblosTotalesHombres104= mysqli_fetch_array($totalesPueblosHombres104);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '105' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres105 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres105);
+    $pueblosTotalesHombres105= mysqli_fetch_array($totalesPueblosHombres105);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '106' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres106 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres106);
+    $pueblosTotalesHombres106= mysqli_fetch_array($totalesPueblosHombres106);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '107' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres107 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres107);
+    $pueblosTotalesHombres107= mysqli_fetch_array($totalesPueblosHombres107);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '108' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres108 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres108);
+    $pueblosTotalesHombres108= mysqli_fetch_array($totalesPueblosHombres108);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '109' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres109 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres109);
+    $pueblosTotalesHombres109= mysqli_fetch_array($totalesPueblosHombres109);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '110' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres110 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres110);
+    $pueblosTotalesHombres110= mysqli_fetch_array($totalesPueblosHombres110);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '111' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres111 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres111);
+    $pueblosTotalesHombres111= mysqli_fetch_array($totalesPueblosHombres111);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '112' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres112 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres112);
+    $pueblosTotalesHombres112= mysqli_fetch_array($totalesPueblosHombres112);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '113' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres113 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres113);
+    $pueblosTotalesHombres113= mysqli_fetch_array($totalesPueblosHombres113);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '114' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres114 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres114);
+    $pueblosTotalesHombres114= mysqli_fetch_array($totalesPueblosHombres114);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '115' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres115 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres115);
+    $pueblosTotalesHombres115= mysqli_fetch_array($totalesPueblosHombres115);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '116' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres116 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres116);
+    $pueblosTotalesHombres116= mysqli_fetch_array($totalesPueblosHombres116);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '117' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres117 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres117);
+    $pueblosTotalesHombres117= mysqli_fetch_array($totalesPueblosHombres117);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '118' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres118 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres118);
+    $pueblosTotalesHombres118= mysqli_fetch_array($totalesPueblosHombres118);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '119' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres119 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres119);
+    $pueblosTotalesHombres119= mysqli_fetch_array($totalesPueblosHombres119);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '120' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres120 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres120);
+    $pueblosTotalesHombres120= mysqli_fetch_array($totalesPueblosHombres120);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '121' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres121 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres121);
+    $pueblosTotalesHombres121= mysqli_fetch_array($totalesPueblosHombres121);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '122' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres122 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres122);
+    $pueblosTotalesHombres122= mysqli_fetch_array($totalesPueblosHombres122);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '123' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres123 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres123);
+    $pueblosTotalesHombres123= mysqli_fetch_array($totalesPueblosHombres123);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '124' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres124 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres124);
+    $pueblosTotalesHombres124= mysqli_fetch_array($totalesPueblosHombres124);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '125' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres125 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres125);
+    $pueblosTotalesHombres125= mysqli_fetch_array($totalesPueblosHombres125);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '126' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres126 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres126);
+    $pueblosTotalesHombres126= mysqli_fetch_array($totalesPueblosHombres126);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '127' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres127 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres127);
+    $pueblosTotalesHombres127= mysqli_fetch_array($totalesPueblosHombres127);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '130' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres130 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres130);
+    $pueblosTotalesHombres130= mysqli_fetch_array($totalesPueblosHombres130);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '131' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres131 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres131);
+    $pueblosTotalesHombres131= mysqli_fetch_array($totalesPueblosHombres131);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '132' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres132 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres132);
+    $pueblosTotalesHombres132= mysqli_fetch_array($totalesPueblosHombres132);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '133' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres133 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres133);
+    $pueblosTotalesHombres133= mysqli_fetch_array($totalesPueblosHombres133);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '134' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres134 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres134);
+    $pueblosTotalesHombres134= mysqli_fetch_array($totalesPueblosHombres134);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '135' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres135 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres135);
+    $pueblosTotalesHombres135= mysqli_fetch_array($totalesPueblosHombres135);
+
+    $sql="SELECT count(*) AS userPorPueblo FROM Usuario WHERE puebloOriginarioCDMX = '0' AND sexo LIKE '%H%'";
+    $totalesPueblosHombres0 = mysqli_query($con, $sql);
+    //var_dump($totalesPueblosHombres0);
+    $pueblosTotalesHombres0= mysqli_fetch_array($totalesPueblosHombres0);  
     /**
   * Usuarios totales por Grado de EStudios Mujeres
 */
@@ -10674,539 +11346,539 @@
                       <tbody class="bg-light">
                       <tr>
                           <th scope="row">AXOTLA</th>
-                          <td><?=$pueblosTotales1['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres1['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHIMALISTAC</th>
-                          <td><?=$pueblosTotales2['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres2['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN BARTOLO AMEYALCO</th>
-                          <td><?=$pueblosTotales3['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres3['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA FÉ DE VASCO DE QUIROGA</th>
-                          <td><?=$pueblosTotales4['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres4['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA LUCÍA XANTEPEC</th>
-                          <td><?=$pueblosTotales5['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres5['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARÍA NONOALCO</th>
-                          <td><?=$pueblosTotales6['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres6['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA ROSA XOCHIAC</th>
-                          <td><?=$pueblosTotales7['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres7['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TETELPAN</th>
-                          <td><?=$pueblosTotales8['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres8['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TIZAPAN</th>
-                          <td><?=$pueblosTotales9['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres9['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TLACOPAC</th>
-                          <td><?=$pueblosTotales10['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres10['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">COLTONGO</th>
-                          <td><?=$pueblosTotales11['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres11['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANDRES DE LAS SALINAS</th>
-                          <td><?=$pueblosTotales12['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres12['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANDRÉS TETLANMAN</th>
-                          <td><?=$pueblosTotales13['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres13['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN BARTOLO CAHUALTONGO</th>
-                          <td><?=$pueblosTotales14['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres14['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN FRANCISCO TETECALA</th>
-                          <td><?=$pueblosTotales15['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres15['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN JUAN TLILHUACA</th>
-                          <td><?=$pueblosTotales16['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres16['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LUCAS ATENCO</th>
-                          <td><?=$pueblosTotales17['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres17['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MARTIN XOCHINÁHUAC</th>
-                          <td><?=$pueblosTotales18['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres18['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MATEO XALTELOLCO</th>
-                          <td><?=$pueblosTotales19['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres19['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MIGUEL AMANTLA</th>
-                          <td><?=$pueblosTotales20['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres20['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PEDRO DE LAS SALINAS CALHUACATZINGO</th>
-                          <td><?=$pueblosTotales21['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres21['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PEDRO XALPA</th>
-                          <td><?=$pueblosTotales22['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres22['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SALVADOR NEXTENGO</th>
-                          <td><?=$pueblosTotales23['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres23['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SALVADOR XOCHIMANCA</th>
-                          <td><?=$pueblosTotales24['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres24['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SEBASTIÁN ATENCO</th>
-                          <td><?=$pueblosTotales25['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres25['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SIMÓN POCHTLAN</th>
-                          <td><?=$pueblosTotales26['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres26['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA APOLONIA TEZCOLCO</th>
-                          <td><?=$pueblosTotales27['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres27['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA BÁRBARA TETLANMAN, YOPICO</th>
-                          <td><?=$pueblosTotales28['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres28['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CATARINA ATZACUALCO</th>
-                          <td><?=$pueblosTotales29['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres29['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA LUCIA TOMATLAN</th>
-                          <td><?=$pueblosTotales30['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres30['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARÍA MALINALCO</th>
-                          <td><?=$pueblosTotales31['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres31['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTIAGO AHUIZOTLA</th>
-                          <td><?=$pueblosTotales32['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres32['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTO DOMINGO HUEXOTITLÁN</th>
-                          <td><?=$pueblosTotales33['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres33['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTO TOMÁS TLAMATZINGO</th>
-                          <td><?=$pueblosTotales34['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres34['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">ACTIPAN</th>
-                          <td><?=$pueblosTotales35['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres35['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">LA PIEDAD</th>
-                          <td><?=$pueblosTotales36['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres36['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MIXCOAC</th>
-                          <td><?=$pueblosTotales37['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres37['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN JUAN MALINALTONGO</th>
-                          <td><?=$pueblosTotales38['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres38['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SEBASTIÁN XOCO</th>
-                          <td><?=$pueblosTotales39['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres39['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SIMÓN TICUMAC</th>
-                          <td><?=$pueblosTotales40['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres40['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CRUZ ATOYAC</th>
-                          <td><?=$pueblosTotales41['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres41['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CRUZ TLACOQUEMECATL</th>
-                          <td><?=$pueblosTotales42['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres42['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARÍA NATIVITAS TEPETLALTZINCO</th>
-                          <td><?=$pueblosTotales43['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres43['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHURUBUSCO</th>
-                          <td><?=$pueblosTotales44['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres44['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">COPILCO</th>
-                          <td><?=$pueblosTotales45['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres45['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">LA CANDELARIA</th>
-                          <td><?=$pueblosTotales46['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres46['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">LOS REYES HUEYTILAC</th>
-                          <td><?=$pueblosTotales47['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres47['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">PUEBLO DE SAN FRANCISCO CULHUACÁN</th>
-                          <td><?=$pueblosTotales48['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres48['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PABLO TEPETLAPA</th>
-                          <td><?=$pueblosTotales49['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres49['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA ÚRSULA COAPA</th>
-                          <td><?=$pueblosTotales50['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres50['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CONTADERO</th>
-                          <td><?=$pueblosTotales51['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres51['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LORENZO ACOPILCO</th>
-                          <td><?=$pueblosTotales52['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres52['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MATEO TLALTENANGO</th>
-                          <td><?=$pueblosTotales53['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres53['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PABLO CHIMALPA</th>
-                          <td><?=$pueblosTotales54['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres54['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PEDRO CUAJIMALPA</th>
-                          <td><?=$pueblosTotales55['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres55['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SIMÓN TOLNAHUAC</th>
-                          <td><?=$pueblosTotales56['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres56['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TLATELOLCO</th>
-                          <td><?=$pueblosTotales57['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres57['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CALPULTITLAN</th>
-                          <td><?=$pueblosTotales58['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres58['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CUAUHTEPEC</th>
-                          <td><?=$pueblosTotales59['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres59['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MAGDALENA DE LAS SALINAS</th>
-                          <td><?=$pueblosTotales60['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres60['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN BARTOLO ATEPEHUACAN</th>
-                          <td><?=$pueblosTotales61['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres61['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PEDRO ZACATENCO</th>
-                          <td><?=$pueblosTotales62['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres62['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA ISABEL TOLA</th>
-                          <td><?=$pueblosTotales63['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres63['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTIAGO ATEPETLAC</th>
-                          <td><?=$pueblosTotales64['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres64['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTIAGO ATZACOALCO</th>
-                          <td><?=$pueblosTotales65['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres65['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA ANITA ZACATLALMANCO </th>
-                          <td><?=$pueblosTotales66['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres66['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">ACULCO</th>
-                          <td><?=$pueblosTotales67['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres67['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CULHUACAN</th>
-                          <td><?=$pueblosTotales68['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres68['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">LA MAGDALENA ATLAZOLPA</th>
-                          <td><?=$pueblosTotales69['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres69['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">LOS REYES CULHUACAN</th>
-                          <td><?=$pueblosTotales70['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres70['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MEXICALTZINGO</th>
-                          <td><?=$pueblosTotales71['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres71['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANDRÉS TETEPILCO</th>
-                          <td><?=$pueblosTotales72['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres72['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANDRÉS TOMATLAN</th>
-                          <td><?=$pueblosTotales73['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres73['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN JUANICO NEXTIPAC</th>
-                          <td><?=$pueblosTotales74['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres74['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LORENZO TEZONCO</th>
-                          <td><?=$pueblosTotales75['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres75['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CRUZ MEYEHUALCO</th>
-                          <td><?=$pueblosTotales76['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres76['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARÍA AZTAHUACAN</th>
-                          <td><?=$pueblosTotales77['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres77['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARÍA TOMATLAN</th>
-                          <td><?=$pueblosTotales78['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres78['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARTHA ACATITLA</th>
-                          <td><?=$pueblosTotales79['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres79['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MAGDALENA CONTRERAS ATLICTIC</th>
-                          <td><?=$pueblosTotales80['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres80['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN BERNABÉ OCOTEPEC</th>
-                          <td><?=$pueblosTotales81['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres81['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN JERÓNIMO ACULCO-LIDICE</th>
-                          <td><?=$pueblosTotales82['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres82['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN NICOLÁS TOTOLAPAN</th>
-                          <td><?=$pueblosTotales83['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres83['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">POPOTLA</th>
-                          <td><?=$pueblosTotales84['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres84['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN DIEGO OCOYOACAC</th>
-                          <td><?=$pueblosTotales85['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres85['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LORENZO TLALTENANGO</th>
-                          <td><?=$pueblosTotales86['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres86['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TACUBA</th>
-                          <td><?=$pueblosTotales87['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres87['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">TACUBAYA</th>
-                          <td><?=$pueblosTotales88['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres88['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN AGUSTÍN OHTENCO</th>
-                          <td><?=$pueblosTotales89['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres89['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANTONIO TECOMITL</th>
-                          <td><?=$pueblosTotales90['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres90['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN BARTOLOMÉ XICOMULCO</th>
-                          <td><?=$pueblosTotales91['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres91['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN FRANCISCO TECOXPA</th>
-                          <td><?=$pueblosTotales92['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres92['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN JERÓNIMO MIACATLAN</th>
-                          <td><?=$pueblosTotales93['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres93['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN JUAN TEPENAHUAC</th>
-                          <td><?=$pueblosTotales94['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres94['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LORENZO TLACOYUCAN</th>
-                          <td><?=$pueblosTotales95['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres95['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PABLO OZTOTEPEC</th>
-                          <td><?=$pueblosTotales96['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres96['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PEDRO ATOCPAN</th>
-                          <td><?=$pueblosTotales97['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres97['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN SALVADOR CUAUHTENCO</th>
-                          <td><?=$pueblosTotales98['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres98['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA ANA TLACOTENCO</th>
-                          <td><?=$pueblosTotales99['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres99['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANDRÉS MIXQUIC</th>
-                          <td><?=$pueblosTotales100['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres100['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN FRANCISCO TLALTENCO</th>
-                          <td><?=$pueblosTotales101['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres101['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN JUAN IXTAYOPAN</th>
-                          <td><?=$pueblosTotales102['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres102['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN NICOLÁS TETELCO</th>
-                          <td><?=$pueblosTotales103['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres103['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PEDRO TLAHUAC</th>
-                          <td><?=$pueblosTotales104['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres104['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CATARINA YECAHUIZOTL</th>
-                          <td><?=$pueblosTotales105['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres105['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTIAGO ZAPOTITLÁN</th>
-                          <td><?=$pueblosTotales106['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres106['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">CHIMALCOYOC (LA ASUNCIÓN)</th>
-                          <td><?=$pueblosTotales107['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres107['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MAGDALENA PETLACALCO</th>
-                          <td><?=$pueblosTotales108['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres108['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">PARRES EL GUARDA</th>
-                          <td><?=$pueblosTotales109['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres109['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANDRÉS TOTOLTEPEC</th>
-                          <td><?=$pueblosTotales110['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres110['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LORENZO HUIPULCO</th>
-                          <td><?=$pueblosTotales111['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres111['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MIGUEL AJUSCO</th>
-                          <td><?=$pueblosTotales112['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres112['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MIGUEL TOPILEJO</th>
-                          <td><?=$pueblosTotales113['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres113['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MIGUEL XICALCO</th>
-                          <td><?=$pueblosTotales114['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres114['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN PEDRO MÁRTIR</th>
-                          <td><?=$pueblosTotales115['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres115['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA URSULA XITLA</th>
-                          <td><?=$pueblosTotales116['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres116['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTO TOMÁS AJUSCO</th>
-                          <td><?=$pueblosTotales117['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres117['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">EL PEÑÓN DE LOS BAÑOS</th>
-                          <td><?=$pueblosTotales118['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres118['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">MAGDALENA MIXHIUCA</th>
-                          <td><?=$pueblosTotales119['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres119['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN ANDRÉS AHUAYUCAN</th>
-                          <td><?=$pueblosTotales120['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres120['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN FRANCISCO TLALNEPANTLA</th>
-                          <td><?=$pueblosTotales121['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres121['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN GREGORIO ATLAPULCO</th>
-                          <td><?=$pueblosTotales122['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres122['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LORENZO ATEMOAYA</th>
-                          <td><?=$pueblosTotales123['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres123['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LUCAS XOCHIMANCA</th>
-                          <td><?=$pueblosTotales124['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres124['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN LUIS TLAXIALTEMALCO</th>
-                          <td><?=$pueblosTotales125['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres125['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SAN MATEO XALPA</th>
-                          <td><?=$pueblosTotales126['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres126['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CECILIA TEPETLAPA</th>
-                          <td><?=$pueblosTotales127['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres127['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CRUZ ACALPIXCA</th>
-                          <td><?=$pueblosTotales130['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres130['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA CRUZ XOCHITEPEC</th>
-                          <td><?=$pueblosTotales131['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres131['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARÍA NATIVITAS</th>
-                          <td><?=$pueblosTotales132['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres132['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTA MARÍA TEPEPAN</th>
-                          <td><?=$pueblosTotales133['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres133['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTIAGO TEPALCATLALPAN</th>
-                          <td><?=$pueblosTotales134['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres134['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">SANTIAGO TULYEHUALCO</th>
-                          <td><?=$pueblosTotales135['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres135['userPorPueblo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">NINGUNO</th>
-                          <td><?=$pueblosTotales0['userPorPueblo']?></td>
+                          <td><?=$pueblosTotalesHombres0['userPorPueblo']?></td>
                         </tr>
                       </tbody>
                     </table>
