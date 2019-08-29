@@ -7148,29 +7148,64 @@
     $totalesCultura = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $culturaTotales = mysqli_fetch_array($totalesCultura);
-
+    /**Cultura Mujeres */
     $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_TiposActividades_idTiposActividades = '1'";
     $totalesCulturaMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCulturaMujeres);
     $culturaTotalesMujeres = mysqli_fetch_array($totalesCulturaMujeres);
+    /**Cultura Hombres */
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_TiposActividades_idTiposActividades = '1'";
+    $totalesCulturaHombres = mysqli_query($con, $sql);
+    //var_dump($totalesCulturaHombres);
+    $culturaTotalesHombres = mysqli_fetch_array($totalesCulturaHombres);
 
     // // $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '4' and U1.Pilares_idPilares = '$idPilarLCP'";
     $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4'";
     $totalesCiberEscuelas = mysqli_query($con, $sql);
     // //var_dump($totalesCultura);
     $ciberEscuelaTotales = mysqli_fetch_array($totalesCiberEscuelas);
+    /**CIBERESCUELA  Mujeres */
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_TiposActividades_idTiposActividades = '4'";
+    $totalesCiberEscuelasMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCiberEscuelasMujeres);
+    $ciberEscuelaTotalesMujeres = mysqli_fetch_array($totalesCiberEscuelasMujeres);
+    /**CIBERESCUELA  Hombres */
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_TiposActividades_idTiposActividades = '4'";
+    $totalesCiberEscuelasHombres = mysqli_query($con, $sql);
+    //var_dump($totalesCiberEscuelasHombres);
+    $ciberEscuelaTotalesHombres = mysqli_fetch_array($totalesCiberEscuelasHombres);
 
     // $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '2' and U1.Pilares_idPilares = '$idPilarLCP'";
     $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '2'";
     $totalesDeporte = mysqli_query($con, $sql);
     // //var_dump($totalesCultura);
     $deporteTotales = mysqli_fetch_array($totalesDeporte);
+    /**Deporte Mujeres */
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_TiposActividades_idTiposActividades = '2'";
+    $totalesDeporteMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesDeporteMujeres);
+    $deporteTotalesMujeres = mysqli_fetch_array($totalesDeporteMujeres);
+    /**Deporte Hombres */
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_TiposActividades_idTiposActividades = '2'";
+    $totalesDeporteHombres = mysqli_query($con, $sql);
+    //var_dump($totalesDeporteHombres);
+    $deporteTotalesHombres = mysqli_fetch_array($totalesDeporteHombres);
 
     // $sql="SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '3' and U1.Pilares_idPilares = '$idPilarLCP'";
     $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3'";
     $totalesAutonomia = mysqli_query($con, $sql);
     // //var_dump($totalesCultura);
     $autonomiaTotales = mysqli_fetch_array($totalesAutonomia);
+    /**autonomia Mujeres */
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_TiposActividades_idTiposActividades = '3'";
+    $totalesautonomiaMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesautonomiaMujeres);
+    $autonomiaTotalesMujeres = mysqli_fetch_array($totalesautonomiaMujeres);
+    /**autonomia Hombres */
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND A1.Actividades_TiposActividades_idTiposActividades = '3'";
+    $totalesautonomiaHombres = mysqli_query($con, $sql);
+    //var_dump($totalesautonomiaHombres);
+    $autonomiaTotalesHombres = mysqli_fetch_array($totalesautonomiaHombres);
     /**
     * FIN - Totales por tipo de actividad
     */
@@ -16072,7 +16107,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios inscritos en Cultura hombres<span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Cultura hombres<span class="float-right"> Total <?=$culturaTotalesHombres['userPorActividad']?></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCulturaHombres">
                   <span class="float-left">Ver detalle</span>
@@ -16408,7 +16443,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios inscritos en Ciberescuela mujeres <span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Ciberescuela mujeres <span class="float-right">Total <?=$ciberEscuelaTotalesMujeres['userPorActividad']?></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelasMujeres">
                   <span class="float-left">Ver detalle</span>
@@ -16553,7 +16588,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios inscritos en Ciberescuela hombres<span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Ciberescuela hombres<span class="float-right">Total <?=$ciberEscuelaTotalesHombres['userPorActividad']?></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelasHombres">
                   <span class="float-left">Ver detalle</span>
@@ -16777,7 +16812,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios inscritos en Deporte mujeres <span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Deporte mujeres <span class="float-right">Total <?=$deporteTotalesMujeres['userPorActividad']?></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseDeporteMujeres">
                   <span class="float-left">Ver detalle</span>
@@ -16850,7 +16885,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios inscritos en Deporte hombres<span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Deporte hombres<span class="float-right">Total <?=$deporteTotalesHombres['userPorActividad']?></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseDeporteHombres">
                   <span class="float-left">Ver detalle</span>
@@ -17110,7 +17145,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica mujeres <span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica mujeres <span class="float-right">Total <?=$autonomiaTotalesMujeres['userPorActividad']?></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseAutonomiaMujeres">
                   <span class="float-left">Ver detalle</span>
@@ -17291,7 +17326,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica hombres<span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica hombres<span class="float-right">Total <?=$autonomiaTotalesHombres['userPorActividad']?></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseAutonomiaHombres">
                   <span class="float-left">Ver detalle</span>
