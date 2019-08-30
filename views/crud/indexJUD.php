@@ -13407,6 +13407,219 @@
           </div>
         </div>
 
+         <!-- Usuarios inscritos por Ocupacion segmento mayores de 15 años-->
+         <div class="row">
+          <div class="col-xl-6 col-sm-6 mb-3">
+            <div class="card text-white bg-secondary o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                  <i class="fas fa-user-md"></i>
+                  </div>
+                  
+                  <div class="mr-5"><b>Usuarios totales por Ocupación<span class="float-right"></span></b></div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorOcupacion15mas">
+                  <span class="float-left">Ver detalle</span>
+                  <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span>
+                </a>
+                <div class="collapse" id="collapsePorOcupacion15mas">
+                  <div class="card card-body">
+                    <table class="table table-striped ">
+                      <tbody class="bg-secondary">
+                        <tr>
+                          <th scope="row">Estudiantes</th>
+                          <td><?=$totalesOcupacion1['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas en actividades sin ingresos económicos</th>
+                          <td><?=$totalesOcupacion2['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas profesionistas y técnicas</th>
+                          <td><?=$totalesOcupacion3['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas comerciantes, empleadas en ventas y agentes de ventas</th>
+                          <td><?=$totalesOcupacion4['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas trabajadoras artesanales, en la construcción y otros oficios</th>
+                          <td><?=$totalesOcupacion5['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas operadoras de maquinaria industrial, ensambladoras, choferes y conductoras de transporte</th>
+                          <td><?=$totalesOcupacion6['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas trabajadoras en actividades agrícolas, ganaderas, forestales, caza y pesca</th>
+                          <td><?=$totalesOcupacion7['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas trabajadoras en servicios personales y de vigilancia</th>
+                          <td><?=$totalesOcupacion8['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas trabajadoras auxiliares en actividades administrativas</th>
+                          <td><?=$totalesOcupacion9['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas funcionarias, directoras y jefas</th>
+                          <td><?=$totalesOcupacion10['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Otras actividades no especificadas</th>
+                          <td><?=$totalesOcupacion11['userPorOcupacion']?></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-secondary o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                  <i class="fas fa-transgender-alt"></i>
+                  </div>
+                  
+                  <div class="mr-5"><b>Usuarios totales por Ocupación mujeres <span class="float-right"></span></b></div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorOcupacionMujeres15mas">
+                  <span class="float-left">Ver detalle</span>
+                  <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span>
+                </a>
+                <div class="collapse" id="collapsePorOcupacionMujeres15mas">
+                  <div class="card card-body">
+                    <table class="table table-striped ">
+                      <tbody class="bg-secondary">
+                      <tr>
+                          <th scope="row">Estudiantes</th>
+                          <td><?=$totalesOcupacionMujeres1['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas en actividades sin ingresos económicos</th>
+                          <td><?=$totalesOcupacionMujeres2['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas profesionistas y técnicas</th>
+                          <td><?=$totalesOcupacionMujeres3['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas comerciantes, empleadas en ventas y agentes de ventas</th>
+                          <td><?=$totalesOcupacionMujeres4['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas trabajadoras artesanales, en la construcción y otros oficios</th>
+                          <td><?=$totalesOcupacionMujeres5['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas operadoras de maquinaria industrial, ensambladoras, choferes y conductoras de transporte</th>
+                          <td><?=$totalesOcupacionMujeres6['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas trabajadoras en actividades agrícolas, ganaderas, forestales, caza y pesca</th>
+                          <td><?=$totalesOcupacionMujeres7['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas trabajadoras en servicios personales y de vigilancia</th>
+                          <td><?=$totalesOcupacionMujeres8['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas trabajadoras auxiliares en actividades administrativas</th>
+                          <td><?=$totalesOcupacionMujeres9['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas funcionarias, directoras y jefas</th>
+                          <td><?=$totalesOcupacionMujeres10['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Otras actividades no especificadas</th>
+                          <td><?=$totalesOcupacionMujeres11['userPorOcupacion']?></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-secondary o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                  <i class="fas fa-transgender-alt"></i>
+                  </div>
+                  
+                  <div class="mr-5"><b>Usuarios totales por Ocupación hombres<span class="float-right"></span></b></div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorOcupacionHombres15mas">
+                  <span class="float-left">Ver detalle</span>
+                  <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span>
+                </a>
+                <div class="collapse" id="collapsePorOcupacionHombres15mas">
+                  <div class="card card-body">
+                    <table class="table table-striped ">
+                      <tbody class="bg-secondary">
+                      <tr>
+                          <th scope="row">Estudiantes</th>
+                          <td><?=$totalesOcupacionHombres1['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas en actividades sin ingresos económicos</th>
+                          <td><?=$totalesOcupacionHombres2['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas profesionistas y técnicas</th>
+                          <td><?=$totalesOcupacionHombres3['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas comerciantes, empleadas en ventas y agentes de ventas</th>
+                          <td><?=$totalesOcupacionHombres4['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas trabajadoras artesanales, en la construcción y otros oficios</th>
+                          <td><?=$totalesOcupacionHombres5['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas operadoras de maquinaria industrial, ensambladoras, choferes y conductoras de transporte</th>
+                          <td><?=$totalesOcupacionHombres6['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas trabajadoras en actividades agrícolas, ganaderas, forestales, caza y pesca</th>
+                          <td><?=$totalesOcupacionHombres7['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas trabajadoras en servicios personales y de vigilancia</th>
+                          <td><?=$totalesOcupacionHombres8['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas trabajadoras auxiliares en actividades administrativas</th>
+                          <td><?=$totalesOcupacionHombres9['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personas funcionarias, directoras y jefas</th>
+                          <td><?=$totalesOcupacionHombres10['userPorOcupacion']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Otras actividades no especificadas</th>
+                          <td><?=$totalesOcupacionHombres11['userPorOcupacion']?></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
           <!-- Usuarios totales por  Gruado Estudios-->
           <div class="row">
           <div class="col-xl-6 col-sm-6 mb-3">
