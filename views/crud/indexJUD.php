@@ -1519,6 +1519,63 @@
     $ocupacionHombres11 = mysqli_query($con, $sql);
     //var_dump($ocupacionHombres11);
     $totalesOcupacionHombres11= mysqli_fetch_array($ocupacionHombres11);
+     /**
+     * Usuarios por Ocupación mayores de 15 años
+    */
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '1' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'"; 
+    $ocupacionTotales15mas1 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15mas1);
+    $totalesOcupacion15mas1= mysqli_fetch_array($ocupacionTotales15mas1);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '21' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $ocupacionTotales15mas2 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15mas2);
+    $totalesOcupacion15mas2= mysqli_fetch_array($ocupacionTotales15mas2);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '22' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $ocupacionTotales15mas3 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15mas3);
+    $totalesOcupacion15mas3= mysqli_fetch_array($ocupacionTotales15mas3);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '15' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $ocupacionTotales15mas4 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15mas4);
+    $totalesOcupacion15mas4= mysqli_fetch_array($ocupacionTotales15mas4);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '24' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $ocupacionTotales15mas5 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15mas5);
+    $totalesOcupacion15mas5= mysqli_fetch_array($ocupacionTotales15mas5);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '23' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $ocupacionTotales15mas6 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15mas6);
+    $totalesOcupacion15mas6= mysqli_fetch_array($ocupacionTotales15mas6);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '7' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $ocupacionTotales15mas7 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15mas7);
+    $totalesOcupacion15mas7= mysqli_fetch_array($ocupacionTotales15mas7);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '19' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $ocupacionTotales15mas8 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15mas8);
+    $totalesOcupacion15mas8= mysqli_fetch_array($ocupacionTotales15mas8);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '14' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $ocupacionTotales15mas9 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15mas9);
+    $totalesOcupacion15mas9= mysqli_fetch_array($ocupacionTotales15mas9);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '6' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $ocupacionTotales15mas10 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15mas10);
+    $totalesOcupacion15mas10= mysqli_fetch_array($ocupacionTotales15mas10);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '20' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31'";
+    $ocupacionTotales15mas11 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15mas11);
+    $totalesOcupacion15mas11= mysqli_fetch_array($ocupacionTotales15mas11);
 /**
   * Usuarios totales por Grado de EStudios
 */
@@ -13416,7 +13473,7 @@
                   <i class="fas fa-user-md"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por Ocupación<span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios  por Ocupación mayores de 15 años<span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorOcupacion15mas">
                   <span class="float-left">Ver detalle</span>
@@ -13430,47 +13487,47 @@
                       <tbody class="bg-secondary">
                         <tr>
                           <th scope="row">Estudiantes</th>
-                          <td><?=$totalesOcupacion1['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15mas1['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas en actividades sin ingresos económicos</th>
-                          <td><?=$totalesOcupacion2['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15mas2['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas profesionistas y técnicas</th>
-                          <td><?=$totalesOcupacion3['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15mas3['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas comerciantes, empleadas en ventas y agentes de ventas</th>
-                          <td><?=$totalesOcupacion4['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15mas4['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas trabajadoras artesanales, en la construcción y otros oficios</th>
-                          <td><?=$totalesOcupacion5['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15mas5['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas operadoras de maquinaria industrial, ensambladoras, choferes y conductoras de transporte</th>
-                          <td><?=$totalesOcupacion6['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15mas6['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas trabajadoras en actividades agrícolas, ganaderas, forestales, caza y pesca</th>
-                          <td><?=$totalesOcupacion7['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15mas7['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas trabajadoras en servicios personales y de vigilancia</th>
-                          <td><?=$totalesOcupacion8['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15mas8['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas trabajadoras auxiliares en actividades administrativas</th>
-                          <td><?=$totalesOcupacion9['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15mas9['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas funcionarias, directoras y jefas</th>
-                          <td><?=$totalesOcupacion10['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15mas10['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Otras actividades no especificadas</th>
-                          <td><?=$totalesOcupacion11['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15mas11['userPorOcupacion']?></td>
                         </tr>
                       </tbody>
                     </table>
@@ -13486,7 +13543,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por Ocupación mujeres <span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios por Ocupación mayores de 15 años mujeres <span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorOcupacionMujeres15mas">
                   <span class="float-left">Ver detalle</span>
@@ -13556,7 +13613,7 @@
                   <i class="fas fa-transgender-alt"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por Ocupación hombres<span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios por Ocupación mayores de 15 años hombres<span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorOcupacionHombres15mas">
                   <span class="float-left">Ver detalle</span>
