@@ -1633,6 +1633,63 @@
     $ocupacionTotales15masMujeres11 = mysqli_query($con, $sql);
     //var_dump($ocupacionTotales15masMujeres11);
     $totalesOcupacion15masMujeres11= mysqli_fetch_array($ocupacionTotales15masMujeres11);
+      /**
+     * Usuarios por Ocupación mayores de 15 años Hombres
+    */
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '1' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31' AND sexo LIKE '%H%'"; 
+    $ocupacionTotales15masHombres1 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15masHombres1);
+    $totalesOcupacion15masHombres1= mysqli_fetch_array($ocupacionTotales15masHombres1);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '21' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31' AND sexo LIKE '%H%'";
+    $ocupacionTotales15masHombres2 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15masHombres2);
+    $totalesOcupacion15masHombres2= mysqli_fetch_array($ocupacionTotales15masHombres2);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '22' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31' AND sexo LIKE '%H%'";
+    $ocupacionTotales15masHombres3 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15masHombres3);
+    $totalesOcupacion15masHombres3= mysqli_fetch_array($ocupacionTotales15masHombres3);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '15' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31' AND sexo LIKE '%H%'";
+    $ocupacionTotales15masHombres4 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15masHombres4);
+    $totalesOcupacion15masHombres4= mysqli_fetch_array($ocupacionTotales15masHombres4);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '24' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31' AND sexo LIKE '%H%'";
+    $ocupacionTotales15masHombres5 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15masHombres5);
+    $totalesOcupacion15masHombres5= mysqli_fetch_array($ocupacionTotales15masHombres5);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '23' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31' AND sexo LIKE '%H%'";
+    $ocupacionTotales15masHombres6 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15masHombres6);
+    $totalesOcupacion15masHombres6= mysqli_fetch_array($ocupacionTotales15masHombres6);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '7' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31' AND sexo LIKE '%H%'";
+    $ocupacionTotales15masHombres7 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15masHombres7);
+    $totalesOcupacion15masHombres7= mysqli_fetch_array($ocupacionTotales15masHombres7);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '19' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31' AND sexo LIKE '%H%'";
+    $ocupacionTotales15masHombres8 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15masHombres8);
+    $totalesOcupacion15masHombres8= mysqli_fetch_array($ocupacionTotales15masHombres8);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '14' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31' AND sexo LIKE '%H%'";
+    $ocupacionTotales15masHombres9 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15masHombres9);
+    $totalesOcupacion15masHombres9= mysqli_fetch_array($ocupacionTotales15masHombres9);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '6' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31' AND sexo LIKE '%H%'";
+    $ocupacionTotales15masHombres10 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15masHombres10);
+    $totalesOcupacion15masHombres10= mysqli_fetch_array($ocupacionTotales15masHombres10);
+
+    $sql="SELECT count(*) AS userPorOcupacion FROM Usuario WHERE ocupacionActual = '20' AND fechaNacimiento BETWEEN '1900-01-01' AND '2003-12-31' AND sexo LIKE '%H%'";
+    $ocupacionTotales15masHombres11 = mysqli_query($con, $sql);
+    //var_dump($ocupacionTotales15masHombres11);
+    $totalesOcupacion15masHombres11= mysqli_fetch_array($ocupacionTotales15masHombres11);
 /**
   * Usuarios totales por Grado de EStudios
 */
@@ -13684,47 +13741,47 @@
                       <tbody class="bg-secondary">
                       <tr>
                           <th scope="row">Estudiantes</th>
-                          <td><?=$totalesOcupacionHombres1['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15masHombres1['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas en actividades sin ingresos económicos</th>
-                          <td><?=$totalesOcupacionHombres2['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15masHombres2['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas profesionistas y técnicas</th>
-                          <td><?=$totalesOcupacionHombres3['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15masHombres3['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas comerciantes, empleadas en ventas y agentes de ventas</th>
-                          <td><?=$totalesOcupacionHombres4['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15masHombres4['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas trabajadoras artesanales, en la construcción y otros oficios</th>
-                          <td><?=$totalesOcupacionHombres5['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15masHombres5['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas operadoras de maquinaria industrial, ensambladoras, choferes y conductoras de transporte</th>
-                          <td><?=$totalesOcupacionHombres6['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15masHombres6['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas trabajadoras en actividades agrícolas, ganaderas, forestales, caza y pesca</th>
-                          <td><?=$totalesOcupacionHombres7['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15masHombres7['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas trabajadoras en servicios personales y de vigilancia</th>
-                          <td><?=$totalesOcupacionHombres8['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15masHombres8['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas trabajadoras auxiliares en actividades administrativas</th>
-                          <td><?=$totalesOcupacionHombres9['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15masHombres9['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Personas funcionarias, directoras y jefas</th>
-                          <td><?=$totalesOcupacionHombres10['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15masHombres10['userPorOcupacion']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Otras actividades no especificadas</th>
-                          <td><?=$totalesOcupacionHombres11['userPorOcupacion']?></td>
+                          <td><?=$totalesOcupacion15masHombres11['userPorOcupacion']?></td>
                         </tr>
                       </tbody>
                     </table>
