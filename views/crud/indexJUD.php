@@ -7394,10 +7394,10 @@
     /**
     * Totales por tactividad Cultura
     */
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '1'";
-    $totalesTeatro = mysqli_query($con, $sql);
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '3'";
+    $totalesBallet = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $teatro = mysqli_fetch_array($totalesTeatro);
+    $ballet = mysqli_fetch_array($totalesBallet);
 
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '2'";
     $totalesDanza = mysqli_query($con, $sql);
@@ -7593,6 +7593,11 @@
     $totalesGrabado = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $grabado = mysqli_fetch_array($totalesGrabado);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '136'";
+    $totalesClown = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $clown = mysqli_fetch_array($totalesClown);
     /**
     * FIN -Totales por tactividad Cultura
     */
@@ -16144,8 +16149,8 @@
                         <td><b><?=$culturaTotales['userPorActividad']?></b></td>
                       </tr> -->
                       <tr>
-                        <th scope="row">Teatro</th>
-                        <td><?=$teatro['userPorActividad']?></td>
+                        <th scope="row">Ballet</th>
+                        <td><?=$ballet['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Danza</th>
@@ -16303,7 +16308,10 @@
                         <th scope="row">Dibujo y grabado</th>
                         <td><?=$grabado['userPorActividad']?></td>
                       </tr>
-
+                      <tr>
+                        <th scope="row">Clown</th>
+                        <td><?=$clown['userPorActividad']?></td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
