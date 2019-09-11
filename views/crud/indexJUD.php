@@ -8591,6 +8591,11 @@
     //var_dump($totalesCultura);
     $ajedrez = mysqli_fetch_array($totalesAjedrez);
 
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '152'";
+    $totalesEdicionYdiseno = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $edicionYdiseno = mysqli_fetch_array($totalesEdicionYdiseno);
+
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '24'";
     $totalesClubCiencia = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
@@ -8640,6 +8645,41 @@
     $totalesInteliEmo = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $inteliEmo = mysqli_fetch_array($totalesInteliEmo);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '177'";
+    $totalesRecuperandoMiLibertad = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $recuperandoMiLibertad = mysqli_fetch_array($totalesRecuperandoMiLibertad);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '178'";
+    $totalesComprendiendoAdolescencia = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $comprendiendoAdolescencia = mysqli_fetch_array($totalesComprendiendoAdolescencia);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '185'";
+    $totalesComprendiendoNinez = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $comprendiendoNinez = mysqli_fetch_array($totalesComprendiendoNinez);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '179'";
+    $totalesConocerme = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $conocerme = mysqli_fetch_array($totalesConocerme);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '180'";
+    $totalesConversatorios = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $conversatorios = mysqli_fetch_array($totalesConversatorios);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '181'";
+    $totalesAutosanarme = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $autosanarme = mysqli_fetch_array($totalesAutosanarme);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '182'";
+    $totalesDanzanteMente = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $danzanteMente = mysqli_fetch_array($totalesDanzanteMente);
 
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '36'";
     $totalesArteEmo = mysqli_query($con, $sql);
@@ -8735,6 +8775,15 @@
     $totalesBaileCuero= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $baileCuerpo= mysqli_fetch_array($totalesBaileCuero);
+
+
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '122'";
+    $totalesBaileCuero= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $baileCuerpo= mysqli_fetch_array($totalesBaileCuero);
+
+
     /**
     * FIN - Totales por tactividad  Ciberescuelas
     */
@@ -17370,6 +17419,10 @@
                         <td><?=$ajedrez['userPorActividad']?></td>
                       </tr>
                       <tr>
+                        <th scope="row">Edición y Diseño</th>
+                        <td><?=$edicionYdiseno['userPorActividad']?></td>
+                      </tr>
+                      <tr>
                         <th scope="row">Club de Ciencias</th>
                         <td><?=$clubCiencia['userPorActividad']?></td>
                       </tr>
@@ -17378,7 +17431,7 @@
                         <td><?=$robo['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Club de Codigo</th>
+                        <th scope="row">Club de código (para niñas y niños)</th>
                         <td><?=$clubCodigo['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -17398,19 +17451,47 @@
                         <td><?=$proyecto['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Autoestima</th>
+                        <th scope="row">Sembrando autoestima</th>
                         <td><?=$autoestima['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Tanatología o manej</th>
+                        <th scope="row">Los duelos duelen ... tanatología y manejo del duelo</th>
                         <td><?=$tanato['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Inteligencia emocio</th>
+                        <th scope="row">Inteligencia emocional y habilidades para la vida</th>
                         <td><?=$inteliEmo['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Arte y Emociones</th>
+                        <th scope="row">Recuperando mí libertad</th>
+                        <td><?=$recuperandoMiLibertad['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Comprendiendo la adolescencia</th>
+                        <td><?=$comprendiendoAdolescencia['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Comprendiendo la niñez</th>
+                        <td><?=$comprendiendoNinez['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Es un placer conocerme</th>
+                        <td><?=$conocerme['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Conversatorios</th>
+                        <td><?=$conversatorios['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Autosanarte</th>
+                        <td><?=$autosanarme['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Danzante mente</th>
+                        <td><?=$danzanteMente['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Artística-mente</th>
                         <td><?=$arteEmo['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -17422,7 +17503,7 @@
                         <td><?=$talleresCom['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Emociones mágicas</th>
+                        <th scope="row">Emociones lúdicas</th>
                         <td><?=$emoMagic['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -17523,7 +17604,7 @@
                         <td><?=$roboMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Club de Codigo</th>
+                        <th scope="row">Club de código (para niñas y niños)</th>
                         <td><?=$clubCodigoMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -17594,10 +17675,10 @@
                         <th scope="row">Prepa en línea SEP</th>
                         <td><?=$prepaSepMujeres['userPorActividad']?></td>
                       </tr>
-                      <tr>
+                      <!-- <tr>
                         <th scope="row">B@UNAM</th>
                         <td><?=$bunamMujeres['userPorActividad']?></td>
-                      </tr>
+                      </tr> -->
                       <tr>
                         <th scope="row">UnADM</th>
                         <td><?=$unadmMujeres['userPorActividad']?></td>
