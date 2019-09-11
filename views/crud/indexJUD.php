@@ -7899,10 +7899,10 @@
     //var_dump($totalesCultura);
     $arteCreatividad = mysqli_fetch_array($totalesArteCreatividad);
 
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '128'";
-    $totalesArteCiencia = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $arteCiencia = mysqli_fetch_array($totalesArteCiencia);
+    // $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '128'";
+    // $totalesArteCiencia = mysqli_query($con, $sql);
+    // //var_dump($totalesCultura);
+    // $arteCiencia = mysqli_fetch_array($totalesArteCiencia);
 
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '137'";
     $totalesArteCiencia = mysqli_query($con, $sql);
@@ -16780,6 +16780,47 @@
                       <tr>
                         <th scope="row">Clown</th>
                         <td><?=$clown['userPorActividad']?></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">Modelado con plastilina</th>
+                        <td><?=$modeladoPlastilina['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Libro Club</th>
+                        <td><?=$libroClub['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Literatura</th>
+                        <td><?=$literatura['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Salsa Cubana</th>
+                        <td><?=$salsaCubana['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Encuardernación</th>
+                        <td><?=$encuadernacion['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Arte y creatividad</th>
+                        <td><?=$arteCreatividad['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Arte y Ciencia</th>
+                        <td><?=$arteCiencia['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Transformaciones colaborativas</th>
+                        <td><?=$transformaciones['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Meditación creativa</th>
+                        <td><?=$meditacion['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Vitrales</th>
+                        <td><?=$vitrales['userPorActividad']?></td>
                       </tr>
                     </tbody>
                   </table>
