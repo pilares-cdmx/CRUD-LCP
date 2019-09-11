@@ -8794,11 +8794,39 @@
     $computacionAsistida= mysqli_fetch_array($totalesComputacionAsistida);
 
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '126'";
-    $totalesSeñas= mysqli_query($con, $sql);
+    $totalesSenas= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $señas= mysqli_fetch_array($totalesSeñas);
+    $senas= mysqli_fetch_array($totalesSenas);
 
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '155'";
+    $totalesEstenografia= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $estenografia= mysqli_fetch_array($totalesEstenografia);
 
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '156'";
+    $totalesClubSensorial= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $clubSensorial= mysqli_fetch_array($totalesClubSensorial);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '157'";
+    $totalesCulturaSorda= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $culturaSorda= mysqli_fetch_array($totalesCulturaSorda);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '158'";
+    $totalesExpresionCorporal= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $expresionCorporal= mysqli_fetch_array($totalesExpresionCorporal);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '161'";
+    $totalesDiversidadSexual= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $diversidadSexual= mysqli_fetch_array($totalesDiversidadSexual);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '160'";
+    $totalesArteInclusivo= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $arteInclusivo= mysqli_fetch_array($totalesArteInclusivo); 
     /**
     * FIN - Totales por tactividad  Ciberescuelas
     */
@@ -17577,7 +17605,7 @@
                       </tr>
                       <tr>
                         <th scope="row">Club de lengua de señas mexicana</th>
-                        <td><?=$señas['userPorActividad']?></td>
+                        <td><?=$senas['userPorActividad']?></td>
                       </tr>
                     </tbody>
                   </table>
@@ -18629,8 +18657,28 @@
                         <td><?=$computacionAsistidaHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Introducción al lenguaje de señas</th>
-                        <td><?=$señasHombres['userPorActividad']?></td>
+                        <th scope="row">Clase de estenografía</th>
+                        <td><?=$estenografia['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Club de Inclusión y sensibilización sensorial</th>
+                        <td><?=$clubSensorial['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cultura sorda</th>
+                        <td><?=$culturaSorda['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Expresión corporal y danza inclusiva</th>
+                        <td><?=$expresionCorporal['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Charlando sobre la diversidad sexual</th>
+                        <td><?=$diversidadSexual['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Arte inclusivo</th>
+                        <td><?=$arteInclusivo['userPorActividad']?></td>
                       </tr>
                       </tbody>
                     </table>
