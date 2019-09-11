@@ -17414,7 +17414,7 @@
                         <td><?=$arteEmo['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Redacción y comprensión de lectura</th>
+                        <th scope="row">Club de letras y expresión</th>
                         <td><?=$redaccion['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -17547,11 +17547,11 @@
                         <td><?=$autoestimaMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Tanatología o manej</th>
+                        <th scope="row">Tanatología o manejo del duelo</th>
                         <td><?=$tanatoMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Inteligencia emocio</th>
+                        <th scope="row">Inteligencia emocional</th>
                         <td><?=$inteliEmoMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -17559,7 +17559,7 @@
                         <td><?=$arteEmoMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Redacción y comprensión de lectura</th>
+                        <th scope="row">Club de letras y expresión</th>
                         <td><?=$redaccionMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -17704,7 +17704,7 @@
                         <td><?=$arteEmoHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Redacción y comprensión de lectura</th>
+                        <th scope="row">Club de letras y expresión</th>
                         <td><?=$redaccionHombres['userPorActividad']?></td>
                       </tr>
                       <tr>
