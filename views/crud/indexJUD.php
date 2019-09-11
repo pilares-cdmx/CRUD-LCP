@@ -8777,11 +8777,26 @@
     $baileCuerpo= mysqli_fetch_array($totalesBaileCuero);
 
 
-
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '122'";
     $totalesBaileCuero= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $baileCuerpo= mysqli_fetch_array($totalesBaileCuero);
+
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '124'";
+    $totalesElectronicaBraile = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $braile = mysqli_fetch_array($totalesElectronicaBraile);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '125'";
+    $totalesComputacionAsistida= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $computacionAsistida= mysqli_fetch_array($totalesComputacionAsistida);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '126'";
+    $totalesSeñas= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $señas= mysqli_fetch_array($totalesSeñas);
 
 
     /**
@@ -9285,20 +9300,6 @@
     //var_dump($totalesCultura);
     $desarrollo= mysqli_fetch_array($totalesDesarrollo);
 
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '124'";
-    $totalesElectronicaBraile = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $braile = mysqli_fetch_array($totalesElectronicaBraile);
-
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '125'";
-    $totalesComputacionAsistida= mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $computacionAsistida= mysqli_fetch_array($totalesComputacionAsistida);
-
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '126'";
-    $totalesSeñas= mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $señas= mysqli_fetch_array($totalesSeñas);
     /**
     * Totales por actividad Autonomía Mujeres
     */
@@ -17530,10 +17531,10 @@
                         <th scope="row">Prepa en línea SEP</th>
                         <td><?=$prepaSep['userPorActividad']?></td>
                       </tr>
-                      <tr>
+                      <!-- <tr>
                         <th scope="row">B@UNAM</th>
                         <td><?=$bunam['userPorActividad']?></td>
-                      </tr>
+                      </tr> -->
                       <tr>
                         <th scope="row">UnADM</th>
                         <td><?=$unadm['userPorActividad']?></td>
@@ -17565,6 +17566,18 @@
                       <tr>
                         <th scope="row">Baile, cuerpo y emociones</th>
                         <td><?=$baileCuerpo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Club de Braile</th>
+                        <td><?=$braile['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Computación con tecnologías de asistencia para personas ciegas</th>
+                        <td><?=$computacionAsistida['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Club de lengua de señas mexicana</th>
+                        <td><?=$señas['userPorActividad']?></td>
                       </tr>
                     </tbody>
                   </table>
@@ -18256,18 +18269,7 @@
                         <th scope="row">Desarrollo web</th>
                         <td><?=$desarrollo['userPorActividad']?></td>
                       </tr>
-                      <tr>
-                        <th scope="row">Braile</th>
-                        <td><?=$braile['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Computación asistida</th>
-                        <td><?=$computacionAsistida['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Introducción al lenguaje de señas</th>
-                        <td><?=$señas['userPorActividad']?></td>
-                      </tr>
+                     
                       </tbody>
                   </table>
                </div>
