@@ -9086,12 +9086,12 @@
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '118'";
     $totalesAsePrimMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $asePrimariaMujeres = mysqli_fetch_array($MujerestotalesAsePrim);
+    $asePrimariaMujeres = mysqli_fetch_array($totalesAsePrimMujeres);
 
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '119'";
     $totalesAseSecMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $aseSecundariaMujeres = mysqli_fetch_array($MujerestotalesAseSec);
+    $aseSecundariaMujeres = mysqli_fetch_array($totalesAseSecMujeres);
 
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '120'";
     $totalesAsePrepaMujeres = mysqli_query($con, $sql);
