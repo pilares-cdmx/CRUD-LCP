@@ -8826,7 +8826,87 @@
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '160'";
     $totalesArteInclusivo= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $arteInclusivo= mysqli_fetch_array($totalesArteInclusivo); 
+    $arteInclusivo = mysqli_fetch_array($totalesArteInclusivo); 
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '162'";
+    $totalesTalleresNahuatl= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $talleresNahuatl = mysqli_fetch_array($totalesTalleresNahuatl); 
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '163'";
+    $totalesIdentidadOriginaria= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $identidadOriginaria = mysqli_fetch_array($totalesIdentidadOriginaria); 
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '164'";
+    $totalesTalleresInterculturalidad = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $talleresInterculturalidad = mysqli_fetch_array($totalesTalleresInterculturalidad);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '165'";
+    $totalesRevitalizacionLenguas = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $revitalizacionLenguas = mysqli_fetch_array($totalesRevitalizacionLenguas);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '166'";
+    $totalesSaberesComunidad = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $saberesComunidad = mysqli_fetch_array($totalesSaberesComunidad);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '168'";
+    $totalesBiodiversidad = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $biodiversidad = mysqli_fetch_array($totalesBiodiversidad);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '169'";
+    $totalesDerechoshumanos = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $derechoshumanos = mysqli_fetch_array($totalesDerechoshumanos);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '183'";
+    $totalesDerechosIndigenas = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $derechosIndigenas = mysqli_fetch_array($totalesDerechosIndigenas);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '167'";
+    $totalesFeminismoComunitario = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $feminismoComunitario = mysqli_fetch_array($totalesFeminismoComunitario);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '170'";
+    $totalesAlfabetizacionIndigena = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $alfabetizacionIndigena = mysqli_fetch_array($totalesAlfabetizacionIndigena);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '171'";
+    $totalesAsesoriasIndigena = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $asesoriasIndigena = mysqli_fetch_array($totalesAsesoriasIndigena);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '172'";
+    $totalesSeguimientoIndigena = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $seguimientoIndigena = mysqli_fetch_array($totalesSeguimientoIndigena);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '173'";
+    $totalesMigrantes = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $migrantes = mysqli_fetch_array($totalesMigrantes);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '174'";
+    $totalesAlfabetizacionMigrantes = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $alfabetizacionmigrantes = mysqli_fetch_array($totalesAlfabetizacionMigrantes);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '175'";
+    $totalesAsesoriasMigrantes = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $asesoriasmigrantes = mysqli_fetch_array($totalesAsesoriasMigrantes);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '176'";
+    $totalesSeguimientoMigrantes = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $seguimientomigrantes = mysqli_fetch_array($totalesSeguimientoMigrantes);
     /**
     * FIN - Totales por tactividad  Ciberescuelas
     */
@@ -18679,6 +18759,66 @@
                       <tr>
                         <th scope="row">Arte inclusivo</th>
                         <td><?=$arteInclusivo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cursos para el aprendizaje de la lengua náhuatl</th>
+                        <td><?=$talleresNahuatl['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Identidad y cultura de los pueblos indígenas y originarios</th>
+                        <td><?=$identidadOriginaria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Talleres de interculturalidad</th>
+                        <td><?=$talleresInterculturalidad['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Revitalización de lenguas originarias</th>
+                        <td><?=$revitalizacionLenguas['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Conocimientos y saberes de mi comunidad</th>
+                        <td><?=$saberesComunidad['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Biodiversidad y territorio</th>
+                        <td><?=$biodiversidad['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Derechos humanos</th>
+                        <td><?=$derechoshumanos['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Derechos de los pueblos indígenas</th>
+                        <td><?=$derechosIndigenas['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Feminismo comunitario</th>
+                        <td><?=$feminismoComunitario['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Alfabetización a población indígena</th>
+                        <td><?=$alfabetizacionIndigena['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gestión, canalización y seguimiento a población indígena</th>
+                        <td><?=$seguimientoIndigena['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Migrantes y refugiados</th>
+                        <td><?=$migrantes['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Alfabetización a población migrante</th>
+                        <td><?=$alfabetizacionmigrantes['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Asesorías educativas a población migrante</th>
+                        <td><?=$asesoriasmigrantes['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gestión, canalización y seguimiento a población migrante</th>
+                        <td><?=$seguimientomigrantes['userPorActividad']?></td>
                       </tr>
                       </tbody>
                     </table>
