@@ -8913,155 +8913,330 @@
     /**
     * Totales por actividad Ciberescuelas Mujeres
     */
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '21'";
+    // $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '21'";
+    // $totalesAjedrezMujeres = mysqli_query($con, $sql);
+    // //var_dump($totalesCulturaMujeres);
+    // $ajedrezMujeres = mysqli_fetch_array($totalesAjedrezMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '21'";
     $totalesAjedrezMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $ajedrezMujeres = mysqli_fetch_array($totalesAjedrezMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '24'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '152'";
+    $totalesEdicionYdisenoMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $edicionYdisenoMujeres = mysqli_fetch_array($totalesEdicionYdisenoMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '24'";
     $totalesClubCienciaMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $clubCienciaMujeres = mysqli_fetch_array($totalesClubCienciaMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '25'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '25'";
     $totalesRoboticaApliMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $roboMujeres = mysqli_fetch_array($totalesRoboticaApliMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '28'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '28'";
     $totalesClubCodigoMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $clubCodigoMujeres = mysqli_fetch_array($totalesClubCodigoMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '29'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '29'";
     $totalesAmorMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $amorMujeres = mysqli_fetch_array($totalesAmorMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '30'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '30'";
     $totalesPrevenAdicMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $prevenAdicMujeres = mysqli_fetch_array($totalesPrevenAdicMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '31'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '31'";
     $totalesHabilidadesMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $habilidadesMujeres = mysqli_fetch_array($totalesHabilidadesMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '32'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '32'";
     $totalesProyectoMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $proyectoMujeres = mysqli_fetch_array($totalesProyectoMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '33'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '33'";
     $totalesAutoestimaMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $autoestimaMujeres = mysqli_fetch_array($totalesAutoestimaMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '34'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '34'";
     $totalesTanatoMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $tanatoMujeres = mysqli_fetch_array($totalesTanatoMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '35'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '35'";
     $totalesInteliEmoMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $inteliEmoMujeres = mysqli_fetch_array($totalesInteliEmoMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '36'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '177'";
+    $totalesRecuperandoMiLibertadMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $recuperandoMiLibertadMujeres = mysqli_fetch_array($totalesRecuperandoMiLibertadMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '178'";
+    $totalesComprendiendoAdolescenciaMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $comprendiendoAdolescenciaMujeres = mysqli_fetch_array($totalesComprendiendoAdolescenciaMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '185'";
+    $totalesComprendiendoNinezMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $comprendiendoNinezMujeres = mysqli_fetch_array($totalesComprendiendoNinezMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '179'";
+    $totalesConocermeMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $conocermeMujeres = mysqli_fetch_array($totalesConocermeMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '180'";
+    $totalesConversatoriosMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $conversatoriosMujeres = mysqli_fetch_array($totalesConversatoriosMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '181'";
+    $totalesAutosanarmeMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $autosanarmeMujeres = mysqli_fetch_array($totalesAutosanarmeMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '182'";
+    $totalesDanzanteMenteMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $danzanteMenteMujeres = mysqli_fetch_array($totalesDanzanteMenteMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '36'";
     $totalesArteEmoMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $arteEmoMujeres = mysqli_fetch_array($totalesArteEmoMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '102'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '102'";
     $totalesREdaccionMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $redaccionMujeres = mysqli_fetch_array($totalesREdaccionMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '103'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '103'";
     $totalesTalleCompMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
-    $talleresComMujeres = mysqli_fetch_array($totalesTalleCompMujeres);
+    //var_dump($totalesCultura);
+    $talleresComMujeres = mysqli_fetch_array($MujerestotalesTalleComp);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '104'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '104'";
     $totalesEmoMagicMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $emoMagicMujeres = mysqli_fetch_array($totalesEmoMagicMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '105'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '105'";
     $totalesPintEmoMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $pintEmoMujeres = mysqli_fetch_array($totalesPintEmoMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '106'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '106'";
     $totalesAlfabetMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $alfabetMujeres = mysqli_fetch_array($totalesAlfabetMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '107'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '107'";
     $totalesPrimaRIAMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $primariaMujeres = mysqli_fetch_array($totalesPrimaRIAMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '108'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '108'";
     $totalesSecMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
-    $secundariaMujeres = mysqli_fetch_array($totalesSecMujeres);
+    //var_dump($totalesCultura);
+    $secundariaMujeres = mysqli_fetch_array($MujerestotalesSec);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '109'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '109'";
     $totalesBadiMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $badiMujeres = mysqli_fetch_array($totalesBadiMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '110'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '110'";
     $totalesPrepaSepMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $prepaSepMujeres = mysqli_fetch_array($totalesPrepaSepMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '114'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '114'";
     $totalesBunamMujeres= mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $bunamMujeres = mysqli_fetch_array($totalesBunamMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '115'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '115'";
     $totalesUnadmMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $unadmMujeres = mysqli_fetch_array($totalesUnadmMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '116'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '116'";
     $totalesLicLineaMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $liclineaMujeres = mysqli_fetch_array($totalesLicLineaMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '117'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '117'";
     $totalesLicCdmxMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $licCdmxMujeres = mysqli_fetch_array($totalesLicCdmxMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '118'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '118'";
     $totalesAsePrimMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
-    $asePrimariaMujeres = mysqli_fetch_array($totalesAsePrimMujeres);
+    //var_dump($totalesCultura);
+    $asePrimariaMujeres = mysqli_fetch_array($MujerestotalesAsePrim);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '119'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '119'";
     $totalesAseSecMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
-    $aseSecundariaMujeres = mysqli_fetch_array($totalesAseSecMujeres);
+    //var_dump($totalesCultura);
+    $aseSecundariaMujeres = mysqli_fetch_array($MujerestotalesAseSec);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '120'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '120'";
     $totalesAsePrepaMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
+    //var_dump($totalesCultura);
     $asePrepMujeres = mysqli_fetch_array($totalesAsePrepaMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '121'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '121'";
     $totalesAseLicMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
-    $aseLicMujeres = mysqli_fetch_array($totalesAseLicMujeres);
+    //var_dump($totalesCultura);
+    $aseLicMujeres= mysqli_fetch_array($totalesAseLicMujeres);
 
-    $sql="SELECT COUNT(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '122'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '122'";
     $totalesBaileCueroMujeres= mysqli_query($con, $sql);
-    //var_dump($totalesCulturaMujeres);
-    $baileCuerpoMujeres = mysqli_fetch_array($totalesBaileCueroMujeres);
+    //var_dump($totalesCultura);
+    $baileCuerpoMujeres= mysqli_fetch_array($totalesBaileCueroMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '122'";
+    $totalesBaileCueroMujeres= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $baileCuerpoMujeres= mysqli_fetch_array($totalesBaileCueroMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '124'";
+    $totalesElectronicaBraileMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $braileMujeres = mysqli_fetch_array($totalesElectronicaBraileMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '125'";
+    $totalesComputacionAsistidaMujeres= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $computacionAsistidaMujeres= mysqli_fetch_array($totalesComputacionAsistidaMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '126'";
+    $totalesSenasMujeres= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $senasMujeres= mysqli_fetch_array($totalesSenasMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '155'";
+    $totalesEstenografiaMujeres= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $estenografiaMujeres= mysqli_fetch_array($totalesEstenografiaMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '156'";
+    $totalesClubSensorialMujeres= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $clubSensorialMujeres= mysqli_fetch_array($totalesClubSensorialMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '157'";
+    $totalesCulturaSordaMujeres= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $culturaSordaMujeres= mysqli_fetch_array($totalesCulturaSordaMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '158'";
+    $totalesExpresionCorporalMujeres= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $expresionCorporalMujeres= mysqli_fetch_array($totalesExpresionCorporalMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '161'";
+    $totalesDiversidadSexualMujeres= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $diversidadSexualMujeres= mysqli_fetch_array($totalesDiversidadSexualMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '160'";
+    $totalesArteInclusivoMujeres= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $arteInclusivoMujeres = mysqli_fetch_array($totalesArteInclusivoMujeres); 
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '162'";
+    $totalesTalleresNahuatlMujeres= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $talleresNahuatlMujeres = mysqli_fetch_array($totalesTalleresNahuatlMujeres); 
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '163'";
+    $totalesIdentidadOriginariaMujeres= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $identidadOriginariaMujeres = mysqli_fetch_array($totalesIdentidadOriginariaMujeres); 
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '164'";
+    $totalesTalleresInterculturalidadMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $talleresInterculturalidadMujeres = mysqli_fetch_array($totalesTalleresInterculturalidadMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '165'";
+    $totalesRevitalizacionLenguasMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $revitalizacionLenguasMujeres = mysqli_fetch_array($totalesRevitalizacionLenguasMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '166'";
+    $totalesSaberesComunidadMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $saberesComunidadMujeres = mysqli_fetch_array($totalesSaberesComunidadMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '168'";
+    $totalesBiodiversidadMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $biodiversidadMujeres = mysqli_fetch_array($totalesBiodiversidadMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '169'";
+    $totalesDerechoshumanosMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $derechoshumanosMujeres = mysqli_fetch_array($totalesDerechoshumanosMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '183'";
+    $totalesDerechosIndigenasMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $derechosIndigenasMujeres = mysqli_fetch_array($totalesDerechosIndigenasMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '167'";
+    $totalesFeminismoComunitarioMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $feminismoComunitarioMujeres = mysqli_fetch_array($totalesFeminismoComunitarioMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '170'";
+    $totalesAlfabetizacionIndigenaMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $alfabetizacionIndigenaMujeres = mysqli_fetch_array($totalesAlfabetizacionIndigenaMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '171'";
+    $totalesAsesoriasIndigenaMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $asesoriasIndigenaMujeres = mysqli_fetch_array($totalesAsesoriasIndigenaMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '172'";
+    $totalesSeguimientoIndigenaMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $seguimientoIndigenaMujeres = mysqli_fetch_array($totalesSeguimientoIndigenaMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '173'";
+    $totalesMigrantesMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $migrantesMujeres = mysqli_fetch_array($totalesMigrantesMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '174'";
+    $totalesAlfabetizacionMigrantesMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $alfabetizacionmigrantesMujeres = mysqli_fetch_array($totalesAlfabetizacionMigrantesMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '175'";
+    $totalesAsesoriasMigrantesMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $asesoriasmigrantesMujeres = mysqli_fetch_array($totalesAsesoriasMigrantesMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND A1.Actividades_idActividades = '176'";
+    $totalesSeguimientoMigrantesMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $seguimientomigrantesMujeres = mysqli_fetch_array($totalesSeguimientoMigrantesMujeres);
     /**
     * FIN - Totales por tactividad  Ciberescuelas Mujeres
     */
@@ -17801,6 +17976,10 @@
                         <td><?=$ajedrezMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
+                        <th scope="row">Edición y Diseño</th>
+                        <td><?=$edicionYdisenoMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
                         <th scope="row">Club de Ciencias</th>
                         <td><?=$clubCienciaMujeres['userPorActividad']?></td>
                       </tr>
@@ -17829,19 +18008,47 @@
                         <td><?=$proyectoMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Autoestima</th>
+                        <th scope="row">Sembrando autoestima</th>
                         <td><?=$autoestimaMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Tanatología o manejo del duelo</th>
+                        <th scope="row">Los duelos duelen ... tanatología y manejo del duelo</th>
                         <td><?=$tanatoMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Inteligencia emocional</th>
+                        <th scope="row">Inteligencia emocional y habilidades para la vida</th>
                         <td><?=$inteliEmoMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Arte y Emociones</th>
+                        <th scope="row">Recuperando mí libertad</th>
+                        <td><?=$recuperandoMiLibertadMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Comprendiendo la adolescencia</th>
+                        <td><?=$comprendiendoAdolescenciaMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Comprendiendo la niñez</th>
+                        <td><?=$comprendiendoNinezMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Es un placer conocerme</th>
+                        <td><?=$conocermeMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Conversatorios</th>
+                        <td><?=$conversatoriosMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Autosanarte</th>
+                        <td><?=$autosanarmeMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Danzante mente</th>
+                        <td><?=$danzanteMenteMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Artística-mente</th>
                         <td><?=$arteEmoMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -17853,7 +18060,7 @@
                         <td><?=$talleresComMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Emociones mágicas</th>
+                        <th scope="row">Emociones lúdicas</th>
                         <td><?=$emoMagicMujeres['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -17915,6 +18122,102 @@
                       <tr>
                         <th scope="row">Baile, cuerpo y emociones</th>
                         <td><?=$baileCuerpoMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Club de Braile</th>
+                        <td><?=$braileMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Computación con tecnologías de asistencia para personas ciegas</th>
+                        <td><?=$computacionAsistidaMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Club de lengua de señas mexicana</th>
+                        <td><?=$senasMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Clase de estenografía</th>
+                        <td><?=$estenografiaMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Club de Inclusión y sensibilización sensorial</th>
+                        <td><?=$clubSensorialMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cultura sorda</th>
+                        <td><?=$culturaSordaMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Expresión corporal y danza inclusiva</th>
+                        <td><?=$expresionCorporalMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Charlando sobre la diversidad sexual</th>
+                        <td><?=$diversidadSexualMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Arte inclusivo</th>
+                        <td><?=$arteInclusivoMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cursos para el aprendizaje de la lengua náhuatl</th>
+                        <td><?=$talleresNahuatlMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Identidad y cultura de los pueblos indígenas y originarios</th>
+                        <td><?=$identidadOriginariaMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Talleres de interculturalidad</th>
+                        <td><?=$talleresInterculturalidadMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Revitalización de lenguas originarias</th>
+                        <td><?=$revitalizacionLenguasMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Conocimientos y saberes de mi comunidad</th>
+                        <td><?=$saberesComunidadMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Biodiversidad y territorio</th>
+                        <td><?=$biodiversidadMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Derechos humanos</th>
+                        <td><?=$derechoshumanosMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Derechos de los pueblos indígenas</th>
+                        <td><?=$derechosIndigenasMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Feminismo comunitario</th>
+                        <td><?=$feminismoComunitarioMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Alfabetización a población indígena</th>
+                        <td><?=$alfabetizacionIndigenaMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gestión, canalización y seguimiento a población indígena</th>
+                        <td><?=$seguimientoIndigenaMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Migrantes y refugiados</th>
+                        <td><?=$migrantesMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Alfabetización a población migrante</th>
+                        <td><?=$alfabetizacionmigrantesMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Asesorías educativas a población migrante</th>
+                        <td><?=$asesoriasmigrantesMujeres['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gestión, canalización y seguimiento a población migrante</th>
+                        <td><?=$seguimientomigrantesMujeres['userPorActividad']?></td>
                       </tr>
                       </tbody>
                     </table>
