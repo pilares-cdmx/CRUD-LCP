@@ -17687,6 +17687,90 @@
                         <th scope="row">Club de lengua de señas mexicana</th>
                         <td><?=$senas['userPorActividad']?></td>
                       </tr>
+                      <tr>
+                        <th scope="row">Clase de estenografía</th>
+                        <td><?=$estenografia['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Club de Inclusión y sensibilización sensorial</th>
+                        <td><?=$clubSensorial['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cultura sorda</th>
+                        <td><?=$culturaSorda['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Expresión corporal y danza inclusiva</th>
+                        <td><?=$expresionCorporal['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Charlando sobre la diversidad sexual</th>
+                        <td><?=$diversidadSexual['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Arte inclusivo</th>
+                        <td><?=$arteInclusivo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cursos para el aprendizaje de la lengua náhuatl</th>
+                        <td><?=$talleresNahuatl['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Identidad y cultura de los pueblos indígenas y originarios</th>
+                        <td><?=$identidadOriginaria['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Talleres de interculturalidad</th>
+                        <td><?=$talleresInterculturalidad['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Revitalización de lenguas originarias</th>
+                        <td><?=$revitalizacionLenguas['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Conocimientos y saberes de mi comunidad</th>
+                        <td><?=$saberesComunidad['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Biodiversidad y territorio</th>
+                        <td><?=$biodiversidad['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Derechos humanos</th>
+                        <td><?=$derechoshumanos['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Derechos de los pueblos indígenas</th>
+                        <td><?=$derechosIndigenas['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Feminismo comunitario</th>
+                        <td><?=$feminismoComunitario['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Alfabetización a población indígena</th>
+                        <td><?=$alfabetizacionIndigena['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gestión, canalización y seguimiento a población indígena</th>
+                        <td><?=$seguimientoIndigena['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Migrantes y refugiados</th>
+                        <td><?=$migrantes['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Alfabetización a población migrante</th>
+                        <td><?=$alfabetizacionmigrantes['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Asesorías educativas a población migrante</th>
+                        <td><?=$asesoriasmigrantes['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gestión, canalización y seguimiento a población migrante</th>
+                        <td><?=$seguimientomigrantes['userPorActividad']?></td>
+                      </tr>
                     </tbody>
                   </table>
                </div>
@@ -18736,90 +18820,7 @@
                         <th scope="row">Computación asistida</th>
                         <td><?=$computacionAsistidaHombres['userPorActividad']?></td>
                       </tr>
-                      <tr>
-                        <th scope="row">Clase de estenografía</th>
-                        <td><?=$estenografia['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Club de Inclusión y sensibilización sensorial</th>
-                        <td><?=$clubSensorial['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Cultura sorda</th>
-                        <td><?=$culturaSorda['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Expresión corporal y danza inclusiva</th>
-                        <td><?=$expresionCorporal['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Charlando sobre la diversidad sexual</th>
-                        <td><?=$diversidadSexual['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Arte inclusivo</th>
-                        <td><?=$arteInclusivo['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Cursos para el aprendizaje de la lengua náhuatl</th>
-                        <td><?=$talleresNahuatl['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Identidad y cultura de los pueblos indígenas y originarios</th>
-                        <td><?=$identidadOriginaria['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Talleres de interculturalidad</th>
-                        <td><?=$talleresInterculturalidad['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Revitalización de lenguas originarias</th>
-                        <td><?=$revitalizacionLenguas['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Conocimientos y saberes de mi comunidad</th>
-                        <td><?=$saberesComunidad['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Biodiversidad y territorio</th>
-                        <td><?=$biodiversidad['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Derechos humanos</th>
-                        <td><?=$derechoshumanos['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Derechos de los pueblos indígenas</th>
-                        <td><?=$derechosIndigenas['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Feminismo comunitario</th>
-                        <td><?=$feminismoComunitario['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Alfabetización a población indígena</th>
-                        <td><?=$alfabetizacionIndigena['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Gestión, canalización y seguimiento a población indígena</th>
-                        <td><?=$seguimientoIndigena['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Migrantes y refugiados</th>
-                        <td><?=$migrantes['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Alfabetización a población migrante</th>
-                        <td><?=$alfabetizacionmigrantes['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Asesorías educativas a población migrante</th>
-                        <td><?=$asesoriasmigrantes['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Gestión, canalización y seguimiento a población migrante</th>
-                        <td><?=$seguimientomigrantes['userPorActividad']?></td>
-                      </tr>
+                     
                       </tbody>
                     </table>
                   </div>
