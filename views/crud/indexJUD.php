@@ -8461,7 +8461,7 @@
     //var_dump($totalesCultura);
     $taekwondo = mysqli_fetch_array($totalesTaekwondo);
 
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '130'";
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '203'";
     $totalesCapoeira = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $capoeira = mysqli_fetch_array($totalesCapoeira);
