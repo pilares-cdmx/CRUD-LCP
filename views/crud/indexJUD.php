@@ -19005,7 +19005,7 @@
                         <td><strong><?=$autonomiaTotales['userPorActividad']?></strong></td>
                       </tr> -->
                       <tr>
-                        <th scope="row">Encuadernación</th>
+                        <th scope="row"></th>
                         <td><?=$encuadernacion['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -19013,15 +19013,15 @@
                         <td><?=$reciclaje['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Taller de huerto</th>
+                        <th scope="row"></th>
                         <td><?=$huerto['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Cerámica</th>
+                        <th scope="row"></th>
                         <td><?=$ceramica['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Programación y Apli</th>
+                        <th scope="row"></th>
                         <td><?=$programacion['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -19037,35 +19037,35 @@
                         <td><?=$plomeria['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Herrería y Aluminer</th>
+                        <th scope="row">Herrería</th>
                         <td><?=$herreria['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Electricidad y dispositivos fotovoltaicos</th>
+                        <th scope="row">Electricidad</th>
                         <td><?=$electricidad['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Gastronomía, panadería y catering</th>
+                        <th scope="row">Gastronomía, panadería y banquetes</th>
                         <td><?=$gastronomia['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Panadería</th>
+                        <th scope="row"></th>
                         <td><?=$panaderia['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Joyería y accesorio </th>
+                        <th scope="row">Joyería y accesorios </th>
                         <td><?=$joyeria['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Agricultura urbana</th>
+                        <th scope="row">Huertos urbanos</th>
                         <td><?=$agricultura['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Bicimaquinas</th>
+                        <th scope="row"></th>
                         <td><?=$bicimaquinas['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Estilismo</th>
+                        <th scope="row"></th>
                         <td><?=$estilismo['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -19081,11 +19081,11 @@
                         <td><?=$electronica['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Cosecha de agua de</th>
+                        <th scope="row"></th>
                         <td><?=$cosechaAgua['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Instalación y repar</th>
+                        <th scope="row"></th>
                         <td><?=$instalacion['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -19093,31 +19093,31 @@
                         <td><?=$textileDiseño['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Banquetes</th>
+                        <th scope="row"></th>
                         <td><?=$banquetes['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Fotografia de produ</th>
+                        <th scope="row">Fotografia de producto</th>
                         <td><?=$fotoProducto['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Logos e identidad d</th>
+                        <th scope="row">Logos e identidad de marca</th>
                         <td><?=$logos['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Calidad en el servi</th>
+                        <th scope="row">Calidad en el servicio</th>
                         <td><?=$calidad['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Creación de coopera</th>
+                        <th scope="row">Creación de cooperativas</th>
                         <td><?=$cooperativas['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Emprendedurismo</th>
+                        <th scope="row">Emprendimiento</th>
                         <td><?=$emprende['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Creación de micro-n</th>
+                        <th scope="row">Creación de micro-negocios</th>
                         <td><?=$microN['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -19125,7 +19125,7 @@
                         <td><?=$comercioDigital['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Estrategias de vent</th>
+                        <th scope="row">Estrategias de venta</th>
                         <td><?=$estrategias['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -19133,11 +19133,11 @@
                         <td><?=$comercioJusto['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Hospedaje</th>
+                        <th scope="row"></th>
                         <td><?=$hospedaje['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Electrónica digital</th>
+                        <th scope="row"> </th>
                         <td><?=$electroDigital['userPorActividad']?></td>
                       </tr>
                       <tr>
@@ -19145,10 +19145,24 @@
                         <td><?=$distribucion['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row">Desarrollo web</th>
+                        <th scope="row"></th>
                         <td><?=$desarrollo['userPorActividad']?></td>
                       </tr>
                      
+
+
+                      <tr>
+                        <th scope="row">Serigrafía</th>
+                        <td><?=$desarrollo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Empaque y embalaje</th>
+                        <td><?=$desarrollo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Sistema de distribución</th>
+                        <td><?=$desarrollo['userPorActividad']?></td>
+                      </tr>
                       </tbody>
                   </table>
                </div>
