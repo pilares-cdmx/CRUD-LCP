@@ -8431,6 +8431,11 @@
     //var_dump($totalesCultura);
     $taiChi = mysqli_fetch_array($totalesTai);
 
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '129'";
+    $totalesRitmosLatinos = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $ritmosLatinos = mysqli_fetch_array($totalesRitmosLatinos);
+
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '98'";
     $totalesBoxeo = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
@@ -8450,6 +8455,16 @@
     $totalesKung = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $kung = mysqli_fetch_array($totalesKung);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '130'";
+    $totalesTaekwondo = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $taekwondo = mysqli_fetch_array($totalesTaekwondo);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '130'";
+    $totalesCapoeira = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $capoeira = mysqli_fetch_array($totalesCapoeira);
     /**
     * FIN - Totales por tactividad Deporte
     */
@@ -18726,6 +18741,10 @@
                         <td><?=$taiChi['userPorActividad']?></td>
                       </tr>
                       <tr>
+                        <th scope="row">Ritmos Latinos</th>
+                        <td><?=$ritmosLatinos['userPorActividad']?></td>
+                      </tr>
+                      <tr>
                         <th scope="row">Boxeo</th>
                         <td><?=$boxeo['userPorActividad']?></td>
                       </tr>
@@ -18740,6 +18759,14 @@
                       <tr>
                         <th scope="row">Kung fu</th>
                         <td><?=$kung['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Taekwondo</th>
+                        <td><?=$taekwondo['userPorActividad']?></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Capoeira</th>
+                        <td><?=$capoeira['userPorActividad']?></td>
                       </tr>
                     </tbody>
                   </table>
