@@ -7234,6 +7234,41 @@
     $totalesPilaresCiberescuelas52 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresCiberescuelas52);
     $pilaresTotalesCiberescuelas52= mysqli_fetch_array($totalesPilaresCiberescuelas52);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U2.Pilares_idPilares = '57'";
+    $totalesPilaresCiberescuela53 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescuela53);
+    $pilaresTotalesCiberescuelas53= mysqli_fetch_array($totalesPilaresCiberescuela53);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U2.Pilares_idPilares = '58'";
+    $totalesPilaresCiberescuela54 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescuela54);
+    $pilaresTotalesCiberescuelas54= mysqli_fetch_array($totalesPilaresCiberescuela54);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U2.Pilares_idPilares = '59'";
+    $totalesPilaresCiberescuela55 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescuela55);
+    $pilaresTotalesCiberescuelas55= mysqli_fetch_array($totalesPilaresCiberescuela55);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U2.Pilares_idPilares = '60'";
+    $totalesPilaresCiberescuela56 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescuela56);
+    $pilaresTotalesCiberescuelas56= mysqli_fetch_array($totalesPilaresCiberescuela56);
+    
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U2.Pilares_idPilares = '61'";
+    $totalesPilaresCiberescuelas57 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescuelas57);
+    $pilaresTotalesCiberescuelas57= mysqli_fetch_array($totalesPilaresCiberescuelas57);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U2.Pilares_idPilares = '62'";
+    $totalesPilaresCiberescuelas58 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescuelas58);
+    $pilaresTotalesCiberescuelas58= mysqli_fetch_array($totalesPilaresCiberescuelas58);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U2.Pilares_idPilares = '63'";
+    $totalesPilaresCiberescuelas59 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescuelas59);
+    $pilaresTotalesCiberescuelas59= mysqli_fetch_array($totalesPilaresCiberescuelas59);
 /**
  * Usuarios totales por PILARES Ciberescuelas Mujeres 
  */
@@ -16917,6 +16952,34 @@
                         <tr>
                           <th scope="row">Teotongo</th>
                           <td><?=$pilaresTotalesCiberescuelas52['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Insurgentes</th>
+                          <td><?=$pilaresTotalesCiberescuelas53['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">La Fortaleza</th>
+                          <td><?=$pilaresTotalesCiberescuelas54['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Rojo Gómez</th>
+                          <td><?=$pilaresTotalesCiberescuelas55['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Municipio Libre</th>
+                          <td><?=$pilaresTotalesCiberescuelas56['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">San Pedro Actopan</th>
+                          <td><?=$pilaresTotalesCiberescuelas57['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">San Bartolomé Xicomulco</th>
+                          <td><?=$pilaresTotalesCiberescuelas58['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Centenario</th>
+                          <td><?=$pilaresTotalesCiberescuelas59['userPorPilaresCiberescuelas']?></td>
                         </tr>
                       </tbody>
                     </table>
