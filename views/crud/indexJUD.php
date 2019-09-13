@@ -7828,6 +7828,41 @@
     $totalesPilaresCiberescuelasHombres52 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresCiberescuelasHombres52);
     $pilaresTotalesCiberescelasHombres52= mysqli_fetch_array($totalesPilaresCiberescuelasHombres52);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '57'";
+    $totalesPilaresCiberescelasHombres53 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescelasHombres53);
+    $pilaresTotalesCiberescelasHombres53= mysqli_fetch_array($totalesPilaresCiberescelasHombres53);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '58'";
+    $totalesPilaresCiberescelasHombres54 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescelasHombres54);
+    $pilaresTotalesCiberescelasHombres54= mysqli_fetch_array($totalesPilaresCiberescelasHombres54);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '59'";
+    $totalesPilaresCiberescelasHombres55 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescelasHombres55);
+    $pilaresTotalesCiberescelasHombres55= mysqli_fetch_array($totalesPilaresCiberescelasHombres55);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '60'";
+    $totalesPilaresCiberescelasHombres56 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescelasHombres56);
+    $pilaresTotalesCiberescelasHombres56= mysqli_fetch_array($totalesPilaresCiberescelasHombres56);
+    
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '61'";
+    $totalesPilaresCiberescuelasHombres57 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescuelasHombres57);
+    $pilaresTotalesCiberescelasHombres57= mysqli_fetch_array($totalesPilaresCiberescuelasHombres57);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '62'";
+    $totalesPilaresCiberescuelasHombres58 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescuelasHombres58);
+    $pilaresTotalesCiberescelasHombres58= mysqli_fetch_array($totalesPilaresCiberescuelasHombres58);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '63'";
+    $totalesPilaresCiberescuelasHombres59 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescuelasHombres59);
+    $pilaresTotalesCiberescelasHombres59= mysqli_fetch_array($totalesPilaresCiberescuelasHombres59);
     /**
     * Totales por tipo de actividad
     * SELECT COUNT(*) AS userPorActividad FROM ActividadesPorUsuario A1, UsuariosPorPilar U1 WHERE A1.Usuario_idUsuarios = U1.Usuario_idUsuarios and A1.Actividades_TiposActividades_idTiposActividades = '1' and U1.Pilares_idPilares = '$lcpPilarId'";
@@ -17503,6 +17538,34 @@
                         <tr>
                           <th scope="row">Teotongo</th>
                           <td><?=$pilaresTotalesCiberescelasHombres52['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Insurgentes</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres53['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">La Fortaleza</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres54['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Rojo Gómez</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres55['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Municipio Libre</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres56['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">San Pedro Actopan</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres57['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">San Bartolomé Xicomulco</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres58['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Centenario</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres59['userPorPilaresCiberescuelas']?></td>
                         </tr>
                       </tbody>
                     </table>
