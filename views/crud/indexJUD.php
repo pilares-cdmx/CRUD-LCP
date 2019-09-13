@@ -16073,31 +16073,31 @@
                         </tr>
                         <tr>
                           <th scope="row">Insurgentes</th>
-                          <td><?=$pilaresTotalesAutnomia53['userPorPilares']?></td>
+                          <td><?=$pilaresTotalesAutnomia53['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
                           <th scope="row">La Fortaleza</th>
-                          <td><?=$pilaresTotalesAutnomia54['userPorPilares']?></td>
+                          <td><?=$pilaresTotalesAutnomia54['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Rojo Gómez</th>
-                          <td><?=$pilaresTotalesAutnomia55['userPorPilares']?></td>
+                          <td><?=$pilaresTotalesAutnomia55['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Municipio Libre</th>
-                          <td><?=$pilaresTotalesAutnomia56['userPorPilares']?></td>
+                          <td><?=$pilaresTotalesAutnomia56['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
                           <th scope="row">San Pedro Actopan</th>
-                          <td><?=$pilaresTotalesAutnomia57['userPorPilares']?></td>
+                          <td><?=$pilaresTotalesAutnomia57['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
                           <th scope="row">San Bartolomé Xicomulco</th>
-                          <td><?=$pilaresTotalesAutnomia58['userPorPilares']?></td>
+                          <td><?=$pilaresTotalesAutnomia58['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Centenario</th>
-                          <td><?=$pilaresTotalesAutnomia59['userPorPilares']?></td>
+                          <td><?=$pilaresTotalesAutnomia59['userPorPilaresAutonomia']?></td>
                         </tr>
                       </tbody>
                     </table>
