@@ -6671,7 +6671,7 @@
     //var_dump($totalesPilaresAutnomiaMujeres58);
     $pilaresTotalesAutnomiaMujeres58= mysqli_fetch_array($totalesPilaresAutnomiaMujeres58);
 
-    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U1.sexo LIKE '%M%' AND U2.Pilares_idPilares = '54'";
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U1.sexo LIKE '%M%' AND U2.Pilares_idPilares = '63'";
     $totalesPilaresAutnomiaMujeres59 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAutnomiaMujeres59);
     $pilaresTotalesAutnomiaMujeres59= mysqli_fetch_array($totalesPilaresAutnomiaMujeres59);
