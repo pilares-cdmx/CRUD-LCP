@@ -9618,30 +9618,25 @@
     /**
     * Totales por actividad Autonomía
     */
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '6'";
-    $totalesEnucadernacion = mysqli_query($con, $sql);
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '153'";
+    $totalesSerigrafia = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $encuadernacion = mysqli_fetch_array($totalesEnucadernacion);
+    $serigrafia = mysqli_fetch_array($totalesSerigrafia);
 
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '7'";
     $totalesReciclaje = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $reciclaje = mysqli_fetch_array($totalesReciclaje);
 
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '13'";
-    $totalesHuerto = mysqli_query($con, $sql);
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '186'";
+    $totalesempaqueEmbalaje = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $huerto = mysqli_fetch_array($totalesHuerto);
+    $empaqueEmbalaje = mysqli_fetch_array($totalesempaqueEmbalaje);
 
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '14'";
-    $totalesCeramica = mysqli_query($con, $sql);
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '65'";
+    $totalesSistemaDistribucion = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $ceramica = mysqli_fetch_array($totalesCeramica);
-
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '23'";
-    $totalesProgramacion = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $programacion = mysqli_fetch_array($totalesProgramacion);
+    $sistemaDistribucion = mysqli_fetch_array($totalesSistemaDistribucion);
 
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '27'";
     $totalesEdicionDiseño = mysqli_query($con, $sql);
@@ -9678,11 +9673,6 @@
     //var_dump($totalesCultura);
     $gastronomia = mysqli_fetch_array($totalesGastronomia);
 
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '42'";
-    $totalesPanaderia = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $panaderia = mysqli_fetch_array($totalesPanaderia);
-
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '43'";
     $totalesJoyeria= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
@@ -9692,16 +9682,6 @@
     $totalesAgricultura = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $agricultura = mysqli_fetch_array($totalesAgricultura);
-
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '45'";
-    $totalesBicimaquinas = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $bicimaquinas = mysqli_fetch_array($totalesBicimaquinas);
-
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '46'";
-    $totalesEstilismo = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $estilismo = mysqli_fetch_array($totalesEstilismo);
 
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '47'";
     $totalesDiseñoImagen = mysqli_query($con, $sql);
@@ -9718,25 +9698,10 @@
     //var_dump($totalesCultura);
     $electronica = mysqli_fetch_array($totalesElectronica);
 
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '50'";
-    $totalesCosechaAgua = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $cosechaAgua = mysqli_fetch_array($totalesCosechaAgua);
-
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '51'";
-    $totalesInstalacion = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $instalacion = mysqli_fetch_array($totalesInstalacion);
-
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '52'";
     $totalesTExtiles = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $textileDiseño = mysqli_fetch_array($totalesTExtiles);
-
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '53'";
-    $totalesBanquetes = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $banquetes = mysqli_fetch_array($totalesBanquetes);
 
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '54'";
     $totalesFotoProducto = mysqli_query($con, $sql);
@@ -9782,26 +9747,6 @@
     $totalesComercioJusto = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $comercioJusto = mysqli_fetch_array($totalesComercioJusto);
-
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '63'";
-    $totalesHospedaje = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $hospedaje = mysqli_fetch_array($totalesHospedaje);
-
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '64'";
-    $totalesElectronicaDigital = mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $electroDigital = mysqli_fetch_array($totalesElectronicaDigital);
-
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '65'";
-    $totalesDistribucion= mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $distribucion= mysqli_fetch_array($totalesDistribucion);
-
-    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '66'";
-    $totalesDesarrollo= mysqli_query($con, $sql);
-    //var_dump($totalesCultura);
-    $desarrollo= mysqli_fetch_array($totalesDesarrollo);
 
     /**
     * Totales por actividad Autonomía Mujeres
@@ -19005,24 +18950,20 @@
                         <td><strong><?=$autonomiaTotales['userPorActividad']?></strong></td>
                       </tr> -->
                       <tr>
-                        <th scope="row"></th>
-                        <td><?=$encuadernacion['userPorActividad']?></td>
+                        <th scope="row">Serigrafía</th>
+                        <td><?=$serigrafia['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Reciclaje</th>
                         <td><?=$reciclaje['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row"></th>
-                        <td><?=$huerto['userPorActividad']?></td>
+                        <th scope="row">Empaque y embalaje</th>
+                        <td><?=$empaqueEmbalaje['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row"></th>
-                        <td><?=$ceramica['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"></th>
-                        <td><?=$programacion['userPorActividad']?></td>
+                        <th scope="row">Sistema de distribución</th>
+                        <td><?=$sistemaDistribucion['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Edición y Diseño </th>
@@ -19049,24 +18990,12 @@
                         <td><?=$gastronomia['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row"></th>
-                        <td><?=$panaderia['userPorActividad']?></td>
-                      </tr>
-                      <tr>
                         <th scope="row">Joyería y accesorios </th>
                         <td><?=$joyeria['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Huertos urbanos</th>
                         <td><?=$agricultura['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"></th>
-                        <td><?=$bicimaquinas['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"></th>
-                        <td><?=$estilismo['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Diseño de imagen y Cosmetología orgánica</th>
@@ -19081,20 +19010,8 @@
                         <td><?=$electronica['userPorActividad']?></td>
                       </tr>
                       <tr>
-                        <th scope="row"></th>
-                        <td><?=$cosechaAgua['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"></th>
-                        <td><?=$instalacion['userPorActividad']?></td>
-                      </tr>
-                      <tr>
                         <th scope="row">Textiles y diseño</th>
                         <td><?=$textileDiseño['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"></th>
-                        <td><?=$banquetes['userPorActividad']?></td>
                       </tr>
                       <tr>
                         <th scope="row">Fotografia de producto</th>
@@ -19131,37 +19048,6 @@
                       <tr>
                         <th scope="row">Comercio justo</th>
                         <td><?=$comercioJusto['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"></th>
-                        <td><?=$hospedaje['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"> </th>
-                        <td><?=$electroDigital['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Distribución</th>
-                        <td><?=$distribucion['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"></th>
-                        <td><?=$desarrollo['userPorActividad']?></td>
-                      </tr>
-                     
-
-
-                      <tr>
-                        <th scope="row">Serigrafía</th>
-                        <td><?=$desarrollo['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Empaque y embalaje</th>
-                        <td><?=$desarrollo['userPorActividad']?></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Sistema de distribución</th>
-                        <td><?=$desarrollo['userPorActividad']?></td>
                       </tr>
                       </tbody>
                   </table>
