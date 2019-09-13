@@ -6343,6 +6343,41 @@
     $totalesPilaresAutnomia52 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAutnomia52);
     $pilaresTotalesAutnomia52= mysqli_fetch_array($totalesPilaresAutnomia52);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '57'";
+    $totalesPilaresAutnomia53 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresAutnomia53);
+    $pilaresTotalesAutnomia53= mysqli_fetch_array($totalesPilaresAutnomia53);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '58'";
+    $totalesPilaresAutnomia54 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresAutnomia54);
+    $pilaresTotalesAutnomia54= mysqli_fetch_array($totalesPilaresAutnomia54);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '59'";
+    $totalesPilaresAutnomia55 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresAutnomia55);
+    $pilaresTotalesAutnomia55= mysqli_fetch_array($totalesPilaresAutnomia55);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '60'";
+    $totalesPilaresAutnomia56 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresAutnomia56);
+    $pilaresTotalesAutnomia56= mysqli_fetch_array($totalesPilaresAutnomia56);  
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '61'";
+    $totalesPilaresAutnomia57 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresAutnomia57);
+    $pilaresTotalesAutnomia57= mysqli_fetch_array($totalesPilaresAutnomia57);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '62'";
+    $totalesPilaresAutnomia58 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresAutnomia58);
+    $pilaresTotalesAutnomia58= mysqli_fetch_array($totalesPilaresAutnomia58);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '63'";
+    $totalesPilaresAutnomia59 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresAutnomia59);
+    $pilaresTotalesAutnomia59= mysqli_fetch_array($totalesPilaresAutnomia59);
  /**
  * Usuarios totales por PILARES Autnomia Economica Mujeres  select count(DISTINCT U1.idUsuarios) from Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 where U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '1';
  */
@@ -16035,6 +16070,34 @@
                         <tr>
                           <th scope="row">Teotongo</th>
                           <td><?=$pilaresTotalesAutnomia52['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Insurgentes</th>
+                          <td><?=$pilaresTotalesAutnomia53['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">La Fortaleza</th>
+                          <td><?=$pilaresTotalesAutnomia54['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Rojo Gómez</th>
+                          <td><?=$pilaresTotalesAutnomia55['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Municipio Libre</th>
+                          <td><?=$pilaresTotalesAutnomia56['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">San Pedro Actopan</th>
+                          <td><?=$pilaresTotalesAutnomia57['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">San Bartolomé Xicomulco</th>
+                          <td><?=$pilaresTotalesAutnomia58['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Centenario</th>
+                          <td><?=$pilaresTotalesAutnomia59['userPorPilares']?></td>
                         </tr>
                       </tbody>
                     </table>
