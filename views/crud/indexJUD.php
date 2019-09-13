@@ -17248,31 +17248,31 @@
                         </tr>
                         <tr>
                           <th scope="row">Insurgentes</th>
-                          <td><?=$pilaresTotalesCiberescuelasMujeres53['userPorPilaresCiberescuelas']?></td>
+                          <td><?=$pilaresTotalesCiberescelasMujeres53['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
                           <th scope="row">La Fortaleza</th>
-                          <td><?=$pilaresTotalesCiberescuelasMujeres54['userPorPilaresCiberescuelas']?></td>
+                          <td><?=$pilaresTotalesCiberescelasMujeres54['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Rojo Gómez</th>
-                          <td><?=$pilaresTotalesCiberescuelasMujeres55['userPorPilaresCiberescuelas']?></td>
+                          <td><?=$pilaresTotalesCiberescelasMujeres55['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Municipio Libre</th>
-                          <td><?=$pilaresTotalesCiberescuelasMujeres56['userPorPilaresCiberescuelas']?></td>
+                          <td><?=$pilaresTotalesCiberescelasMujeres56['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
                           <th scope="row">San Pedro Actopan</th>
-                          <td><?=$pilaresTotalesCiberescuelasMujeres57['userPorPilaresCiberescuelas']?></td>
+                          <td><?=$pilaresTotalesCiberescelasMujeres57['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
                           <th scope="row">San Bartolomé Xicomulco</th>
-                          <td><?=$pilaresTotalesCiberescuelasMujeres58['userPorPilaresCiberescuelas']?></td>
+                          <td><?=$pilaresTotalesCiberescelasMujeres58['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Centenario</th>
-                          <td><?=$pilaresTotalesCiberescuelasMujeres59['userPorPilaresCiberescuelas']?></td>
+                          <td><?=$pilaresTotalesCiberescelasMujeres59['userPorPilaresCiberescuelas']?></td>
                         </tr>
                       </tbody>
                     </table>
