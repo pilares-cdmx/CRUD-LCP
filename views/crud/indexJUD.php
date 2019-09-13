@@ -5482,9 +5482,9 @@
     $pilaresTotales58= mysqli_fetch_array($totalesPilares58);
 
     $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '63'";
-    $totalesPilares60 = mysqli_query($con, $sql);
-    //var_dump($totalesPilares60);
-    $pilaresTotales60= mysqli_fetch_array($totalesPilares60);
+    $totalesPilares59 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares59);
+    $pilaresTotales59= mysqli_fetch_array($totalesPilares59);
 
     
 /**
@@ -15188,6 +15188,34 @@
                         <tr>
                           <th scope="row">Teotongo</th>
                           <td><?=$pilaresTotales52['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Insurgentes</th>
+                          <td><?=$pilaresTotales53['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">La Fortaleza</th>
+                          <td><?=$pilaresTotales54['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Rojo Gómez</th>
+                          <td><?=$pilaresTotales55['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Municipio Libre</th>
+                          <td><?=$pilaresTotales56['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">San Pedro Actopan</th>
+                          <td><?=$pilaresTotales57['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">San Bartolomé Xicomulco</th>
+                          <td><?=$pilaresTotales58['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Centenario</th>
+                          <td><?=$pilaresTotales59['userPorPilares']?></td>
                         </tr>
                       </tbody>
                     </table>
