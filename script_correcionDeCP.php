@@ -22,6 +22,6 @@ $con = mysqli_connect('localhost', 'francisco', 'tu_contrasena', 'pilaresDB');
     //var_dump($totalesCPBecas);
     $cpSucio = mysqli_fetch_array($totalesCPBecas);
 
-    print_r($cpSucio);
+  echo($cpSucio);
 
 ?>
