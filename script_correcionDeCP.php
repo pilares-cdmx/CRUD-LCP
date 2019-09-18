@@ -16,6 +16,6 @@ $con = mysqli_connect('localhost', 'francisco', 'tu_contrasena', 'pilaresDB');
     //var_dump($totalesCultura);
     $culturaTotales = mysqli_fetch_array($totalesCultura);
 
-    echo $culturaTotales;
+    print_r($culturaTotales);
 
 ?>
