@@ -24,10 +24,10 @@
     /**
      * Atenciones totales 
      */
-    $sql="SELECT count(*) AS asistenciasTotal FROM Asistencias";
-    $totalAsistencias = mysqli_query($con, $sql);
-    //var_dump($totalAsistencias);
-    $atencionesTotales = mysqli_fetch_array($totalAsistencias);
+    $sql="SELECT count(*) AS atencionesTotal FROM Asistencias";
+    $totalAtenciones = mysqli_query($con, $sql);
+    //var_dump($totalAtenciones);
+    $atencionesTotales = mysqli_fetch_array($totalAtenciones);
     /**
      * Usuarios totales inscritos por genero
      */
@@ -3234,6 +3234,7 @@
       <div class="breadcrumb-item active">
         <!-- <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li> -->
         <li><b>Información general de Atenciones</b></li>
+        <li>Total de atenciones: <b><?=$atencionesTotales['atencionesTotal']?></b></li>
         <!-- <li><b>JUD estadística y prospección</b></li> -->
       </div>
     <?php endif; ?>
