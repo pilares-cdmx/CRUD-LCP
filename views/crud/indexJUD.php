@@ -10356,7 +10356,7 @@
               <!-- <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li> -->
               <li><b>Información general</b></li>
               <li><b>JUD estadística y prospección</b></li>
-              <li>Total de inscritos <b><?=$totales['totalesInscritos']?></b></li>
+              <li>Total de inscritos: <b><?=$totales['totalesInscritos']?></b></li>
             </div>
           <?php endif; ?>
         </ol>
