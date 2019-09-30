@@ -551,7 +551,7 @@
     </div>
 
     <div class="col-xl-3 col-sm-6 mb-3">
-      <div class="card text-white bg-secondary o-hidden h-100">
+      <div class="card text-info bg-light o-hidden h-100">
           <div class="card-body">
             <div class="card-body-icon">
             <i class="fas fa-transgender-alt"></i>
@@ -559,7 +559,7 @@
             
             <div class="mr-5"><b>Usuarios totales por PILARES mujeres <span class="float-right"></span></b></div>
           </div>
-          <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresMujeres">
+          <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresMujeres">
             <span class="float-left">Ver detalle</span>
             <span class="float-right">
               <i class="fas fa-angle-right"></i>
@@ -568,7 +568,7 @@
           <div class="collapse" id="collapsePorPilaresMujeres">
             <div class="card card-body">
               <table class="table table-striped ">
-                <tbody class="bg-secondary">
+                <tbody class="bg-light">
                 <tr>
                     <th scope="row">La Araña </th>
                     <td><?=$pilaresTotalesMujeres1['userPorPilares']?></td>
@@ -809,7 +809,7 @@
     </div>
 
     <div class="col-xl-3 col-sm-6 mb-3">
-      <div class="card text-white bg-secondary o-hidden h-100">
+      <div class="card text-info bg-light o-hidden h-100">
           <div class="card-body">
             <div class="card-body-icon">
             <i class="fas fa-transgender-alt"></i>
@@ -817,7 +817,7 @@
             
             <div class="mr-5"><b>Usuarios totales por PILARES hombres<span class="float-right"></span></b></div>
           </div>
-          <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresHombres">
+          <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresHombres">
             <span class="float-left">Ver detalle</span>
             <span class="float-right">
               <i class="fas fa-angle-right"></i>
@@ -826,7 +826,7 @@
           <div class="collapse" id="collapsePorPilaresHombres">
             <div class="card card-body">
               <table class="table table-striped ">
-                <tbody class="bg-secondary">
+                <tbody class="bg-light">
                 <tr>
                     <th scope="row">La Araña </th>
                     <td><?=$pilaresTotalesHombres1['userPorPilares']?></td>
