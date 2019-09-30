@@ -3231,13 +3231,19 @@
         </div>
     </div>
   </div>
-  <?php if(isset($_SESSION['identity'])): ?>
+  <!-- Breadcrumbs-->
+  <ol class="breadcrumb">
+  <!--
+    <li class="breadcrumb-item active">Vista General</li>
+  -->
+    <?php if(isset($_SESSION['identity'])): ?>
       <div class="breadcrumb-item active">
         <!-- <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li> -->
         <li><b>Información general de Atenciones</b></li>
         <!-- <li><b>JUD estadística y prospección</b></li> -->
       </div>
     <?php endif; ?>
+  </ol>
 </div>
 <!-- /.container-fluid -->
 
