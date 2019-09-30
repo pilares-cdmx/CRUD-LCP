@@ -178,7 +178,7 @@
   </div>
 
    <!-- Usuarios totales por intervalo de edad -->
-   <!-- <div class="row">
+   <div class="row">
     <div class="col-xl-6 col-sm-6 mb-3">
       <div class="card text-white bg-secondary o-hidden h-100">
           <div class="card-body">
@@ -186,7 +186,7 @@
             <i class="fas fa-birthday-cake"></i>
             </div>
             
-            <div class="mr-5"><b>Usuarios totales por intervalo de edad <span class="float-right"></span></b></div>
+            <div class="mr-5"><b>Asistencias por intervalo de edad <span class="float-right"></span></b></div>
           </div>
           <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorIntervalo">
             <span class="float-left">Ver detalle</span>
@@ -224,7 +224,7 @@
           </div>
         </div>
     </div>
-
+ <!--
     <div class="col-xl-3 col-sm-6 mb-3">  
       <div class="card text-white bg-secondary o-hidden h-100">
           <div class="card-body">
@@ -315,8 +315,8 @@
             </div>
           </div>
         </div>
-    </div>
-  </div> -->
+    </div>-->
+  </div> 
 
    <!-- Usuarios inscritos por PILARES-->
    <!-- <div class="row">
