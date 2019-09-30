@@ -14,22 +14,22 @@
 
     mysqli_select_db($con, "pilaresDB");
     mysqli_query($con, "SET NAMES 'utf8mb4'");
-    /**
-     * Asistencias totales 
+    /** 
+     * Asistencias totales     asistenciasTotal
      */
-    $sql="SELECT count(DISTINCT Usuario_idusuarios) AS asistenciasTotal FROM Asistencias";
+    $sql="SELECT count(DISTINCT A1.fecha) AS asistenciasTotal FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias";
     $totalAsistencias = mysqli_query($con, $sql);
     //var_dump($totalAsistencias);
     $asistenciasTotales = mysqli_fetch_array($totalAsistencias);
      /**
-     * Asistencias totales inscritos por genero
+     * Asistencias totales inscritos por genero      asistenciasPorGenero
      */
-    $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS asistenciasPorGenero FROM Asistencias A1, Usuario U1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%'";
+    $sql="SELECT count(DISTINCT A1.fecha) AS asistenciasPorGenero FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND U1.sexo LIKE '%M%'";
     $asistenciasMujeres = mysqli_query($con, $sql);
     //var_dump($asistenciasMujeres);
     $mujeresAsistencias = mysqli_fetch_array($asistenciasMujeres);
 
-    $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS asistenciasPorGenero FROM Asistencias A1, Usuario U1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%'";
+    $sql="SELECT count(DISTINCT A1.fecha) AS asistenciasPorGenero FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND U1.sexo LIKE '%H%'";
     $asistenciasHombres = mysqli_query($con, $sql);
     //var_dump($asistenciasHombres);
     $hombresAsistencias = mysqli_fetch_array($asistenciasHombres);
