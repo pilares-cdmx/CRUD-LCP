@@ -22,7 +22,7 @@
     //var_dump($totalAsistencias);
     $asistenciasTotales = mysqli_fetch_array($totalAsistencias);
      /**
-     * UsuaAsistenciasrios totales inscritos por genero
+     * Asistencias totales inscritos por genero
      */
     $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS asistenciasPorGenero FROM Asistencias A1, Usuario U1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%'";
     $asistenciasMujeres = mysqli_query($con, $sql);
@@ -40,6 +40,18 @@
     $totalAtenciones = mysqli_query($con, $sql);
     //var_dump($totalAtenciones);
     $atencionesTotales = mysqli_fetch_array($totalAtenciones);
+     /**
+     * Atenciones totales inscritos por genero
+     */
+    $sql="SELECT count(*) AS atencionesPorGenero FROM Atenciones A1, Usuario U1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%'";
+    $atencionesMujeres = mysqli_query($con, $sql);
+    //var_dump($atencionesMujeres);
+    $mujeresAtenciones = mysqli_fetch_array($atencionesMujeres);
+
+    $sql="SELECT count(*) AS atencionesPorGenero FROM Atenciones A1, Usuario U1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%'";
+    $atencionesHombres = mysqli_query($con, $sql);
+    //var_dump($atencionesHombres);
+    $hombresAtenciones = mysqli_fetch_array($atencionesHombres);
    
 ?>
 <div id="content-wrapper">
@@ -117,11 +129,11 @@
                 <tbody class="bg-light">
                   <tr>
                     <th scope="row">Mujeres</th>
-                    <td><?=$mujeresAutonomia['userPorGeneroAutonomia']?></td>
+                    <td><?=$mujeresAtenciones['atencionesPorGenero']?></td>
                   </tr>
                   <tr>
                     <th scope="row">Hombres</th>
-                    <td><?=$hombresAutonomia['userPorGeneroAutonomia']?></td>
+                    <td><?=$mujeresAtenciones['atencionesPorGenero']?></td>
                   </tr>
                 </tbody>
               </table>
@@ -3263,11 +3275,11 @@
                 <tbody class="bg-light">
                   <tr>
                     <th scope="row">Mujeres</th>
-                    <td><?=$mujeresTotales['userPorGenero']?></td>
+                    <td><?=$mujeresAtenciones['atencionesPorGenero']?></td>
                   </tr>
                   <tr>
                     <th scope="row">Hombres</th>
-                    <td><?=$hombresTotales['userPorGenero']?></td>
+                    <td><?=$hombresAtenciones['atencionesPorGenero']?></td>
                   </tr>
                 </tbody>
               </table>
