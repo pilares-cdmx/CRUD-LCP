@@ -117,7 +117,7 @@
       </li> -->
       <li class="nav-item">
         <a class="nav-link" href="<?php echo constant('URL')?>Crud/asistenciasJUD">
-          <i class="fas fa-fw fa-chart-area"></i>
+          <!-- <i class="fas fa-fw fa-chart-area"></i> -->
           <span>Asistencias - Atenciones</span></a>
       </li> 
       <!--

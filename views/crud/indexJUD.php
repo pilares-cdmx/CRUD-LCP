@@ -10878,7 +10878,7 @@
                 </div>
               </div>
           </div>
-        </div>
+         </div>
 
         <!-- Usuarios totales por  Grupo étnico -->
         <div class="row">
