@@ -115,11 +115,12 @@
           <a class="dropdown-item" href="<?php echo constant('URL')?>views/crud/blank.html">Blank Page</a>
         </div>
       </li> -->
-      <!-- <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="<?php echo constant('URL')?>Crud/chartsJUD">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Estadísticas</span></a>
+          <span>Asistencias - Atenciones</span></a>
       </li> 
+      <!--
       <li class="nav-item">
         <a class="nav-link" href="<?php echo constant('URL')?>Crud/usersJUD">
           <i class="fas fa-fw fa-table"></i>
