@@ -15,6 +15,13 @@
     mysqli_select_db($con, "pilaresDB");
     mysqli_query($con, "SET NAMES 'utf8mb4'");
     /**
+     * Asistencias totales 
+     */
+    $sql="SELECT count(*) AS asistenciasTotal FROM Asistencias";
+    $totalAsistencias = mysqli_query($con, $sql);
+    //var_dump($totalAsistencias);
+    $asistenciasTotales = mysqli_fetch_array($totalAsistencias);
+    /**
      * Usuarios totales inscritos por genero
      */
     $sql="SELECT count(*) AS userPorGenero FROM Usuario WHERE sexo LIKE '%M%'";
@@ -40,6 +47,7 @@
       <div class="breadcrumb-item active">
         <!-- <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li> -->
         <li><b>Información general de Asistencias</b></li>
+        <li>Total de asistencias: <b><?=$asistenciasTotales?></b></li>
         <!-- <li><b>JUD estadística y prospección</b></li> -->
       </div>
     <?php endif; ?>
@@ -1088,10 +1096,7 @@
           <div class="card card-body">
             <table class="table table-striped ">
               <tbody class="bg-primary">
-                <!-- <tr>
-                  <th scope="row">Usuarios totales</th>
-                  <td><b><?=$culturaTotales['userPorActividad']?></b></td>
-                </tr> -->
+            
                 <tr>
                   <th scope="row">Ballet</th>
                   <td><?=$ballet['userPorActividad']?></td>
@@ -1784,10 +1789,7 @@
           <div class="card card-body">
             <table class="table table-striped ">
               <tbody class="bg-warning">
-                <!-- <tr>
-                  <th scope="row">Usuarios totales</th>
-                  <td><b><?=$ciberEscuelaTotales['userPorActividad']?></b></td>
-                </tr> -->
+              
                 <tr>
                   <th scope="row">Ajedrez</th>
                   <td><?=$ajedrez['userPorActividad']?></td>
@@ -1904,10 +1906,7 @@
                   <th scope="row">Prepa en línea SEP</th>
                   <td><?=$prepaSep['userPorActividad']?></td>
                 </tr>
-                <!-- <tr>
-                  <th scope="row">B@UNAM</th>
-                  <td><?=$bunam['userPorActividad']?></td>
-                </tr> -->
+               
                 <tr>
                   <th scope="row">UnADM</th>
                   <td><?=$unadm['userPorActividad']?></td>
@@ -2177,10 +2176,7 @@
                   <th scope="row">Prepa en línea SEP</th>
                   <td><?=$prepaSepMujeres['userPorActividad']?></td>
                 </tr>
-                <!-- <tr>
-                  <th scope="row">B@UNAM</th>
-                  <td><?=$bunamMujeres['userPorActividad']?></td>
-                </tr> -->
+               
                 <tr>
                   <th scope="row">UnADM</th>
                   <td><?=$unadmMujeres['userPorActividad']?></td>
@@ -2609,10 +2605,7 @@
           <div class="card card-body">
             <table class="table table-striped ">
               <tbody class="bg-success">
-                <!-- <tr>
-                  <th scope="row">Usuarios totales</th>
-                  <td><b><?=$deporteTotales['userPorActividad']?></b></td>
-                </tr> -->
+                
                 <tr>
                   <th scope="row">Fútbol</th>
                   <td><?=$futbol['userPorActividad']?></td>
@@ -2870,10 +2863,7 @@
           <div class="card card-body">
             <table class="table table-striped ">
               <tbody class="bg-danger">
-                <!-- <tr>
-                  <th scope="row">Usuarios totales</th>
-                  <td><strong><?=$autonomiaTotales['userPorActividad']?></strong></td>
-                </tr> -->
+               
                 <tr>
                   <th scope="row">Serigrafía</th>
                   <td><?=$serigrafia['userPorActividad']?></td>
@@ -3230,7 +3220,7 @@
           </div>
         </div>
     </div>
-  </div>
+  </div> 
   <!-- Breadcrumbs-->
   <ol class="breadcrumb">
   <!--
