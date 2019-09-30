@@ -1,4 +1,32 @@
 <?php require 'views/layout/headerCRUD-jud.php'; ?>
+<?php
+  if (isset($_SESSION['pilarAsignado'])) {
+    $nombrePilar = $_SESSION['pilarAsignado'];
+    $separador = "-";
+    $idPilarLCP = $_SESSION['identity']->Pilares_idPilares;
+  }
+
+    $con = mysqli_connect('localhost', 'francisco', 'tu_contrasena', 'pilaresDB');
+    // $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
+        if (!$con) {
+            die('Could not connect: ' . mysqli_error($con));
+        }
+
+    mysqli_select_db($con, "pilaresDB");
+    mysqli_query($con, "SET NAMES 'utf8mb4'");
+    /**
+     * Usuarios totales inscritos por genero
+     */
+    $sql="SELECT count(*) AS userPorGenero FROM Usuario WHERE sexo LIKE '%M%'";
+    $totalesMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesMujeres);
+    $mujeresTotales = mysqli_fetch_array($totalesMujeres);
+
+    $sql="SELECT count(*) AS userPorGenero FROM Usuario WHERE sexo LIKE '%H%'";
+    $totalesHombres = mysqli_query($con, $sql);
+    //var_dump($totalesHombres);
+    $hombresTotales = mysqli_fetch_array($totalesHombres);
+?>
 <div id="content-wrapper">
 
 <div class="container-fluid">
@@ -11,7 +39,7 @@
     <?php if(isset($_SESSION['identity'])): ?>
       <div class="breadcrumb-item active">
         <!-- <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li> -->
-        <li><b>Información general</b></li>
+        <li><b>Información general de Asistencias y  Atenciones</b></li>
         <li><b>JUD estadística y prospección</b></li>
       </div>
     <?php endif; ?>

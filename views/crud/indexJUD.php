@@ -15,6 +15,13 @@
     mysqli_select_db($con, "pilaresDB");
     mysqli_query($con, "SET NAMES 'utf8mb4'");
     /**
+     * Usuarios totales inscritos p
+     */
+    $sql="SELECT count(*) AS totalesInscritos FROM Usuario";
+    $totalesInscritos = mysqli_query($con, $sql);
+    //var_dump($totalesInscritos);
+    $totales = mysqli_fetch_array($totalesInscritos);
+    /**
      * Usuarios totales inscritos por genero
      */
     $sql="SELECT count(*) AS userPorGenero FROM Usuario WHERE sexo LIKE '%M%'";
@@ -10349,6 +10356,7 @@
               <!-- <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li> -->
               <li><b>Información general</b></li>
               <li><b>JUD estadística y prospección</b></li>
+              <li>Total de inscritos <b><?=$totales['totalesInscritos']?></b></li>
             </div>
           <?php endif; ?>
         </ol>
