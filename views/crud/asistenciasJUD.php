@@ -3231,16 +3231,16 @@
         </div>
     </div>
   </div>
-
-</div>
-<!-- /.container-fluid -->
-<?php if(isset($_SESSION['identity'])): ?>
+  <?php if(isset($_SESSION['identity'])): ?>
       <div class="breadcrumb-item active">
         <!-- <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li> -->
         <li><b>Información general de Atenciones</b></li>
         <!-- <li><b>JUD estadística y prospección</b></li> -->
       </div>
     <?php endif; ?>
+</div>
+<!-- /.container-fluid -->
+
 <!-- Sticky Footer -->
 <?php require 'views/layout/footerCRUD.php'; ?>
 
