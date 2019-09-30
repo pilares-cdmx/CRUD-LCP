@@ -43,12 +43,12 @@
      /**
      * Atenciones totales inscritos por genero
      */
-    $sql="SELECT count(*) AS atencionesPorGenero FROM Atenciones A1, Usuario U1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%'";
+    $sql="SELECT count(*) AS atencionesPorGenero FROM Asistencias A1, Usuario U1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%'";
     $atencionesMujeres = mysqli_query($con, $sql);
     //var_dump($atencionesMujeres);
     $mujeresAtenciones = mysqli_fetch_array($atencionesMujeres);
 
-    $sql="SELECT count(*) AS atencionesPorGenero FROM Atenciones A1, Usuario U1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%'";
+    $sql="SELECT count(*) AS atencionesPorGenero FROM Asistencias A1, Usuario U1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%'";
     $atencionesHombres = mysqli_query($con, $sql);
     //var_dump($atencionesHombres);
     $hombresAtenciones = mysqli_fetch_array($atencionesHombres);
