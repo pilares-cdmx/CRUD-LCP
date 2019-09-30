@@ -17,7 +17,7 @@
     /**
      * Asistencias totales 
      */
-    $sql="SELECT count(DISCTINCT Usuario_idUsuarios) AS asistenciasTotal FROM Asistencias";
+    $sql="SELECT count(DISTINCT Usuario_idUsuarios) AS asistenciasTotal FROM Asistencias";
     $totalAsistencias = mysqli_query($con, $sql);
     //var_dump($totalAsistencias);
     $asistenciasTotales = mysqli_fetch_array($totalAsistencias);
