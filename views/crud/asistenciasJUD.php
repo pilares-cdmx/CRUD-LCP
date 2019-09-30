@@ -165,7 +165,7 @@
   </div>
 
    <!-- Usuarios totales por intervalo de edad -->
-   <div class="row">
+   <!-- <div class="row">
     <div class="col-xl-6 col-sm-6 mb-3">
       <div class="card text-white bg-secondary o-hidden h-100">
           <div class="card-body">
@@ -303,10 +303,10 @@
           </div>
         </div>
     </div>
-  </div>
+  </div> -->
 
    <!-- Usuarios inscritos por PILARES-->
-   <div class="row">
+   <!-- <div class="row">
     <div class="col-xl-6 col-sm-6 mb-3">
       <div class="card text-info bg-light o-hidden h-100">
           <div class="card-body">
@@ -1080,7 +1080,7 @@
           </div>
         </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Usuarios por Actividades Cards-->
   <!--<div class="row">
