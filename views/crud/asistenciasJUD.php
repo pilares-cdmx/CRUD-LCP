@@ -27,7 +27,7 @@
     $sql="SELECT count(*) AS asistenciasTotal FROM Asistencias";
     $totalAsistencias = mysqli_query($con, $sql);
     //var_dump($totalAsistencias);
-    $asistenciasTotales = mysqli_fetch_array($totalAsistencias);
+    $atencionesTotales = mysqli_fetch_array($totalAsistencias);
     /**
      * Usuarios totales inscritos por genero
      */
