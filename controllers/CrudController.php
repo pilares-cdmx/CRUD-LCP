@@ -35,6 +35,10 @@ class CrudController{
     public function chartsJUD(){
       require_once 'views/crud/charts-jud.php';
     }
+
+    public function asistenciasJUD(){
+      require_once 'views/crud/asistenciasJUD.php';
+    }
     
     public function users(){
         require_once 'views/crud/tables.php';
