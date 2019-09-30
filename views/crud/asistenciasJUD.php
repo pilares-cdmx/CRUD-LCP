@@ -47,7 +47,7 @@
       <div class="breadcrumb-item active">
         <!-- <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li> -->
         <li><b>Información general de Asistencias</b></li>
-        <li>Total de asistencias: <b><?=$asistenciasTotales?></b></li>
+        <li>Total de asistencias: <b><?=$asistenciasTotales['asistenciasTotal']?></b></li>
         <!-- <li><b>JUD estadística y prospección</b></li> -->
       </div>
     <?php endif; ?>
@@ -1076,7 +1076,7 @@
   </div>
 
   <!-- Usuarios por Actividades Cards-->
-  <div class="row">
+  <!--<div class="row">
     <div class="col-xl-6 col-sm-6 mb-3">
       <div class="card text-white bg-primary o-hidden h-100">
         <div class="card-body">
@@ -2446,10 +2446,7 @@
                   <th scope="row">Prepa en línea SEP</th>
                   <td><?=$prepaSepHombres['userPorActividad']?></td>
                 </tr>
-                <!-- <tr>
-                  <th scope="row">B@UNAM</th>
-                  <td><?=$bunamHombres['userPorActividad']?></td>
-                </tr> -->
+              
                 <tr>
                   <th scope="row">UnADM</th>
                   <td><?=$unadmHombres['userPorActividad']?></td>
@@ -2842,7 +2839,7 @@
           </div>
         </div>
     </div>
-  </div>
+  </div> 
 
   <div class="row">
     <div class="col-xl-6 col-sm-6 mb-3">
@@ -3220,7 +3217,7 @@
           </div>
         </div>
     </div>
-  </div> 
+  </div>  -->
   <!-- Breadcrumbs-->
   <ol class="breadcrumb">
   <!--
