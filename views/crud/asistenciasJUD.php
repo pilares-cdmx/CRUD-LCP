@@ -39,7 +39,7 @@
     <?php if(isset($_SESSION['identity'])): ?>
       <div class="breadcrumb-item active">
         <!-- <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li> -->
-        <li><b>Información general de Asistencias y  Atenciones</b></li>
+        <li><b>Información general de Asistencias</b></li>
         <!-- <li><b>JUD estadística y prospección</b></li> -->
       </div>
     <?php endif; ?>
@@ -3234,7 +3234,13 @@
 
 </div>
 <!-- /.container-fluid -->
-
+<?php if(isset($_SESSION['identity'])): ?>
+      <div class="breadcrumb-item active">
+        <!-- <li><?= $_SESSION['identity']->nombre?> <?=$_SESSION['identity']->apellidoPaterno?> <?=$_SESSION['identity']->apellidoMaterno?></li> -->
+        <li><b>Información general de Atenciones</b></li>
+        <!-- <li><b>JUD estadística y prospección</b></li> -->
+      </div>
+    <?php endif; ?>
 <!-- Sticky Footer -->
 <?php require 'views/layout/footerCRUD.php'; ?>
 
