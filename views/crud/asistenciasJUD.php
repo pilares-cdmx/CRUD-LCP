@@ -21,6 +21,18 @@
     $totalAsistencias = mysqli_query($con, $sql);
     //var_dump($totalAsistencias);
     $asistenciasTotales = mysqli_fetch_array($totalAsistencias);
+     /**
+     * UsuaAsistenciasrios totales inscritos por genero
+     */
+    $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS asistenciasPorGenero FROM Asistencias A1, Usuario U1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%'";
+    $asistenciasMujeres = mysqli_query($con, $sql);
+    //var_dump($asistenciasMujeres);
+    $mujeresAsistencias = mysqli_fetch_array($asistenciasMujeres);
+
+    $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS asistenciasPorGenero FROM Asistencias A1, Usuario U1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%'";
+    $asistenciasHombres = mysqli_query($con, $sql);
+    //var_dump($asistenciasHombres);
+    $hombresAsistencias = mysqli_fetch_array($asistenciasHombres);
     /**
      * Atenciones totales 
      */
@@ -28,18 +40,7 @@
     $totalAtenciones = mysqli_query($con, $sql);
     //var_dump($totalAtenciones);
     $atencionesTotales = mysqli_fetch_array($totalAtenciones);
-    /**
-     * Usuarios totales inscritos por genero
-     */
-    $sql="SELECT count(*) AS userPorGenero FROM Usuario WHERE sexo LIKE '%M%'";
-    $totalesMujeres = mysqli_query($con, $sql);
-    //var_dump($totalesMujeres);
-    $mujeresTotales = mysqli_fetch_array($totalesMujeres);
-
-    $sql="SELECT count(*) AS userPorGenero FROM Usuario WHERE sexo LIKE '%H%'";
-    $totalesHombres = mysqli_query($con, $sql);
-    //var_dump($totalesHombres);
-    $hombresTotales = mysqli_fetch_array($totalesHombres);
+   
 ?>
 <div id="content-wrapper">
 
@@ -70,23 +71,23 @@
             
             <div class="mr-5"><b>Asistencias por Genero <span class="float-right"></span></b></div>
           </div>
-          <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorGenero">
+          <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapseAsistenciasPorGenero">
             <span class="float-left">Ver detalle</span>
             <span class="float-right">
               <i class="fas fa-angle-right"></i>
             </span>
           </a>
-          <div class="collapse" id="collapsePorGenero">
+          <div class="collapse" id="collapseAsistenciasPorGenero">
             <div class="card card-body">
               <table class="table table-striped ">
                 <tbody class="bg-light">
                   <tr>
                     <th scope="row">Mujeres</th>
-                    <td><?=$mujeresTotales['userPorGenero']?></td>
+                    <td><?=$mujeresAsistencias['asistenciasPorGenero']?></td>
                   </tr>
                   <tr>
                     <th scope="row">Hombres</th>
-                    <td><?=$hombresTotales['userPorGenero']?></td>
+                    <td><?=$hombresAsistencias['asistenciasPorGenero']?></td>
                   </tr>
                 </tbody>
               </table>
@@ -3250,13 +3251,13 @@
             
             <div class="mr-5"><b>Atenciones por Genero <span class="float-right"></span></b></div>
           </div>
-          <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorGenero">
+          <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapseAtencionesPorGenero">
             <span class="float-left">Ver detalle</span>
             <span class="float-right">
               <i class="fas fa-angle-right"></i>
             </span>
           </a>
-          <div class="collapse" id="collapsePorGenero">
+          <div class="collapse" id="collapseAtencionesPorGenero">
             <div class="card card-body">
               <table class="table table-striped ">
                 <tbody class="bg-light">
