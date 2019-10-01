@@ -2482,7 +2482,7 @@ $actividadAtenciones79 = mysqli_fetch_array($userPorActividad79);
           <div class="card-body-icon">
             <i class="fas fa-fw fa-hand-holding-usd"></i>
           </div>
-          <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica <span class="float-right">Total <?=$autonomiaTotales['userPorActividad']?></span></b></div>
+          <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica </b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseAutonomia">
           <span class="float-left">Ver detalle</span>
