@@ -3072,7 +3072,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
   </div> 
 
   <!-- Atenciones por Actividad -->
-  <!-- Usuarios por Actividad -->
+  <!-- -->
   
   <div class="row">
     <div class="col-xl-6 col-sm-6 mb-3">
@@ -3084,13 +3084,13 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           
           <div class="mr-5"><b>Usuarios con beca en Cultura </b></div>
         </div>
-        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCultura">
+        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCulturaAtenciones">
           <span class="float-left">Ver detalle</span>
           <span class="float-right">
             <i class="fas fa-angle-right"></i>
           </span>
         </a>
-        <div class="collapse" id="collapseCultura">
+        <div class="collapse" id="collapseCulturaAtenciones">
           <div class="card card-body">
             <table class="table table-striped ">
               <tbody class="bg-primary">
@@ -3317,13 +3317,13 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           </div>
           <div class="mr-5"><b>Usuarios inscritos en Ciberescuelas</b></div>
         </div>
-        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelas">
+        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelasAtenciones">
           <span class="float-left">Ver detalle</span>
           <span class="float-right">
             <i class="fas fa-angle-right"></i>
           </span>
         </a>
-        <div class="collapse" id="collapseCiberescuelas">
+        <div class="collapse" id="collapseCiberescuelasAtenciones">
           <div class="card card-body">
             <table class="table table-striped ">
               <tbody class="bg-warning">     
@@ -3588,13 +3588,13 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           </div>
           <div class="mr-5"><b>Usuarios inscritos en Deporte </b></div>
         </div>
-        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseDeporte">
+        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseDeporteAtenciones">
           <span class="float-left">Ver detalle</span>
           <span class="float-right">
             <i class="fas fa-angle-right"></i>
           </span>
         </a>
-        <div class="collapse" id="collapseDeporte">
+        <div class="collapse" id="collapseDeporteAtenciones">
           <div class="card card-body">
             <table class="table table-striped ">
               <tbody class="bg-success">
@@ -3676,13 +3676,13 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           </div>
           <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica </b></div>
         </div>
-        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseAutonomia">
+        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseAutonomiaAtenciones">
           <span class="float-left">Ver detalle</span>
           <span class="float-right">
             <i class="fas fa-angle-right"></i>
           </span>
         </a>
-       <div class="collapse" id="collapseAutonomia">
+       <div class="collapse" id="collapseAutonomiaAtenciones">
           <div class="card card-body">
             <table class="table table-striped ">
               <tbody class="bg-danger">
