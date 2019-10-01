@@ -1008,7 +1008,7 @@ $actividadAtenciones79 = mysqli_fetch_array($userPorActividad79);
   </div> 
 
   <!-- Usuarios por Actividad -->
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-xl-6 col-sm-6 mb-3">
       <div class="card text-info bg-light o-hidden h-100">
         <div class="card-body">
@@ -1205,10 +1205,10 @@ $actividadAtenciones79 = mysqli_fetch_array($userPorActividad79);
                   <th scope="row">Talleres de cómputo</th>
                   <td><?=$actividad45['userPorActividad']?></td>
                 </tr>
-                <!-- <tr>
+                 <tr>
                   <th scope="row">Primaria</th>
                   <td><?=$actividad46['userPorActividad']?></td>
-                </tr> -->
+                </tr> 
                 <tr>
                   <th scope="row">BADI</th>
                   <td><?=$actividad47['userPorActividad']?></td>
@@ -1347,7 +1347,7 @@ $actividadAtenciones79 = mysqli_fetch_array($userPorActividad79);
        </div>
        </div>
     </div>
-  </div>
+  </div> -->
   <div class="row">
     <div class="col-xl-6 col-sm-6 mb-3">
       <div class="card text-white bg-primary o-hidden h-100">
