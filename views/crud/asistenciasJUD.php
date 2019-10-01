@@ -1912,7 +1912,7 @@ $actividadAtenciones79 = mysqli_fetch_array($userPorActividad79);
           <div class="card-body-icon">
             <i class="fas fa-fw fa-list"></i>
           </div>
-          <div class="mr-5"><b>Usuarios inscritos en Ciberescuelas <span class="float-right">Total <?=$ciberEscuelaTotales['userPorActividad']?></span></b></div>
+          <div class="mr-5"><b>Usuarios inscritos en Ciberescuelas</b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelas">
           <span class="float-left">Ver detalle</span>
