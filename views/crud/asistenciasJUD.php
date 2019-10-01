@@ -514,12 +514,12 @@
      /**
      * Atenciones totales inscritos por genero  atencionesPorGenero
      */
-    $sql="SELECT count(*) AS atencionesTotal FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND U1.sexo LIKE '%M%'";
+    $sql="SELECT count(*) AS atencionesPorGenero FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND U1.sexo LIKE '%M%'";
     $atencionesMujeres = mysqli_query($con, $sql);
     //var_dump($atencionesMujeres);
     $mujeresAtenciones = mysqli_fetch_array($atencionesMujeres);
 
-    $sql="SELECT count(*) AS atencionesTotal FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND U1.sexo LIKE '%H%'";
+    $sql="SELECT count(*) AS atencionesPorGenero FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND U1.sexo LIKE '%H%'";
     $atencionesHombres = mysqli_query($con, $sql);
     //var_dump($atencionesHombres);
     $hombresAtenciones = mysqli_fetch_array($atencionesHombres);
