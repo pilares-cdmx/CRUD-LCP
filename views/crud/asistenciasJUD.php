@@ -39,77 +39,77 @@
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '15'"; 
     $intervaloTotales1 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales1);
-    $totalesIntervalo1 = mysqli_fetch_array($intervaloTotales1);
+    $usuarioIntervalo1 = mysqli_fetch_array($intervaloTotales1);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '16'";
     $intervaloTotales2 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales2);
-    $totalesIntervalo2 = mysqli_fetch_array($intervaloTotales2);
+    $usuarioIntervalo2 = mysqli_fetch_array($intervaloTotales2);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '17'";
     $intervaloTotales3 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales3);
-    $totalesIntervalo3 = mysqli_fetch_array($intervaloTotales3);
+    $usuarioIntervalo3 = mysqli_fetch_array($intervaloTotales3);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '18'";
     $intervaloTotales4 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales4);
-    $totalesIntervalo4 = mysqli_fetch_array($intervaloTotales4);
+    $usuarioIntervalo4 = mysqli_fetch_array($intervaloTotales4);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '19'";
     $intervaloTotales5 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales5);
-    $totalesIntervalo5 = mysqli_fetch_array($intervaloTotales5);
+    $usuarioIntervalo5 = mysqli_fetch_array($intervaloTotales5);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '20'"; 
     $intervaloTotales6 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales6);
-    $totalesIntervalo6 = mysqli_fetch_array($intervaloTotales6);
+    $usuarioIntervalo6 = mysqli_fetch_array($intervaloTotales6);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '21'";
     $intervaloTotales7 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales7);
-    $totalesIntervalo7 = mysqli_fetch_array($intervaloTotales7);
+    $usuarioIntervalo7 = mysqli_fetch_array($intervaloTotales7);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '22'";
     $intervaloTotales8 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales8);
-    $totalesIntervalo8 = mysqli_fetch_array($intervaloTotales8);
+    $usuarioIntervalo8 = mysqli_fetch_array($intervaloTotales8);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '23'";
     $intervaloTotales9 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales9);
-    $totalesIntervalo9 = mysqli_fetch_array($intervaloTotales9);
+    $usuarioIntervalo9 = mysqli_fetch_array($intervaloTotales9);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '24'";
     $intervaloTotales10 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales10);
-    $totalesIntervalo10 = mysqli_fetch_array($intervaloTotales10);
+    $usuarioIntervalo10 = mysqli_fetch_array($intervaloTotales10);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '25'"; 
     $intervaloTotales11 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales11);
-    $totalesIntervalo11 = mysqli_fetch_array($intervaloTotales11);
+    $usuarioIntervalo11 = mysqli_fetch_array($intervaloTotales11);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '26'";
     $intervaloTotales12 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales12);
-    $totalesIntervalo12 = mysqli_fetch_array($intervaloTotales12);
+    $usuarioIntervalo12 = mysqli_fetch_array($intervaloTotales12);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '27'";
     $intervaloTotales13 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales13);
-    $totalesIntervalo13 = mysqli_fetch_array($intervaloTotales13);
+    $usuarioIntervalo13 = mysqli_fetch_array($intervaloTotales13);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '28'";
     $intervaloTotales14 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales14);
-    $totalesIntervalo14 = mysqli_fetch_array($intervaloTotales14);
+    $usuarioIntervalo14 = mysqli_fetch_array($intervaloTotales14);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS asistenciasPorIntervalo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND B1.edadUsuario = '29'";
     $intervaloTotales15 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales15);
-    $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
+    $usuarioIntervalo15 = mysqli_fetch_array($intervaloTotales15);
 /**
  * Usuarios con beca porActividad
  */
@@ -1142,63 +1142,63 @@ $actividadAtenciones79 = mysqli_fetch_array($userPorActividad79);
                 <tbody class="bg-secondary">
                   <tr>
                     <th scope="row">15 años</th>
-                    <td><?=$totalesIntervalo1['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo1['asistenciasPorIntervalo']?></td>
                   </tr>
                   <tr>
                     <th scope="row">16 años</th>
-                    <td><?=$totalesIntervalo2['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo2['asistenciasPorIntervalo']?></td>
                   </tr>
                   <tr>
                     <th scope="row">17 años</th>
-                    <td><?=$totalesIntervalo3['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo3['asistenciasPorIntervalo']?></td>
                   </tr>
                   <tr>
                     <th scope="row">18 años</th>
-                    <td><?=$totalesIntervalo4['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo4['asistenciasPorIntervalo']?></td>
                   </tr>
                   <tr>
                     <th scope="row">19 años</th>
-                    <td><?=$totalesIntervalo5['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo5['asistenciasPorIntervalo']?></td>
                   </tr>
                   <tr>
                     <th scope="row">20 años</th>
-                    <td><?=$totalesIntervalo6['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo6['asistenciasPorIntervalo']?></td>
                   </tr>
                   <tr>
                     <th scope="row">21 años</th>
-                    <td><?=$totalesIntervalo7['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo7['asistenciasPorIntervalo']?></td>
                   </tr>
                   <tr>
                     <th scope="row">22 años</th>
-                    <td><?=$totalesIntervalo8['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo8['asistenciasPorIntervalo']?></td>
                   </tr>
                   <tr>
                     <th scope="row">23 años</th>
-                    <td><?=$totalesIntervalo9['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo9['asistenciasPorIntervalo']?></td>
                   </tr>
                   <tr>
                     <th scope="row">24 años</th>
-                    <td><?=$totalesIntervalo10['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo10['asistenciasPorIntervalo']?></td>
                   </tr>
                   <tr>
                     <th scope="row">25 años</th>
-                    <td><?=$totalesIntervalo11['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo11['asistenciasPorIntervalo']?></td>
                   </tr>
                   <tr>
                     <th scope="row">26 años</th>
-                    <td><?=$totalesIntervalo12['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo12['asistenciasPorIntervalo']?></td>
                   </tr>
                   <tr>
                     <th scope="row">27 años</th>
-                    <td><?=$totalesIntervalo13['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo13['asistenciasPorIntervalo']?></td>
                   </tr>
                   <tr>
                     <th scope="row">28 años</th>
-                    <td><?=$totalesIntervalo14['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo14['asistenciasPorIntervalo']?></td>
                   </tr>
                   <tr>
                     <th scope="row">29 años</th>
-                    <td><?=$totalesIntervalo15['asistenciasPorIntervalo']?></td>
+                    <td><?=$usuarioIntervalo15['asistenciasPorIntervalo']?></td>
                   </tr>
                 </tbody>
               </table>
