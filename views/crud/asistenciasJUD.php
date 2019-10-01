@@ -149,7 +149,7 @@
       </div>
     <?php endif; ?>
   </ol>
-  <!-- Asistenciaspor Genero -->
+  <!-- Usuarios por Genero -->
   <div class="row">
     <div class="col-xl-6 col-sm-6 mb-3">
       <div class="card text-info bg-light o-hidden h-100">
@@ -158,7 +158,7 @@
             <i class="fas fa-transgender-alt"></i>
             </div>
             
-            <div class="mr-5"><b>Asistencias por Genero <span class="float-right"></span></b></div>
+            <div class="mr-5"><b>Usuarios con beca por Genero <span class="float-right"></span></b></div>
           </div>
           <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapseAsistenciasPorGenero">
             <span class="float-left">Ver detalle</span>
@@ -263,7 +263,7 @@
             <i class="fas fa-birthday-cake"></i>
             </div>
             
-            <div class="mr-5"><b>Asistencias por intervalo de edad <span class="float-right"></span></b></div>
+            <div class="mr-5"><b>Usuarios con beca por edad <span class="float-right"></span></b></div>
           </div>
           <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorIntervalo">
             <span class="float-left">Ver detalle</span>
@@ -344,6 +344,44 @@
  
   </div> 
 
+  <!-- Usuarios por Actividad -->
+  <div class="row">
+    <div class="col-xl-6 col-sm-6 mb-3">
+      <div class="card text-info bg-light o-hidden h-100">
+          <div class="card-body">
+            <div class="card-body-icon">
+            <i class="fas fa-transgender-alt"></i>
+            </div>
+            
+            <div class="mr-5"><b>Usuarios con beca por Actividad <span class="float-right"></span></b></div>
+          </div>
+          <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapseAsistenciasPorGenero">
+            <span class="float-left">Ver detalle</span>
+            <span class="float-right">
+              <i class="fas fa-angle-right"></i>
+            </span>
+          </a>
+          <div class="collapse" id="collapseAsistenciasPorGenero">
+            <div class="card card-body">
+              <table class="table table-striped ">
+                <tbody class="bg-light">
+                  <tr>
+                    <th scope="row">Mujeres</th>
+                    <td><?=$mujeresAsistencias['asistenciasPorGenero']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Hombres</th>
+                    <td><?=$hombresAsistencias['asistenciasPorGenero']?></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  
+  </div>
    <!-- Usuarios inscritos por PILARES-->
    <!-- <div class="row">
     <div class="col-xl-6 col-sm-6 mb-3">
