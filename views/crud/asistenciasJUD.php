@@ -1491,7 +1491,7 @@ $actividadAtenciones79 = mysqli_fetch_array($userPorActividad79);
             <i class="fas fa-fw fa-music"></i>
           </div>
           
-          <div class="mr-5"><b>Usuarios inscritos en Cultura </b></div>
+          <div class="mr-5"><b>Usuarios con beca en Cultura </b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCultura">
           <span class="float-left">Ver detalle</span>
