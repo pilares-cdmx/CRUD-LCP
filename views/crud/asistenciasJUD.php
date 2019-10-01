@@ -770,6 +770,139 @@
     //var_dump($totalesCultura);
     $capoeira = mysqli_fetch_array($totalesCapoeira);
 
+    /**
+ * Totales por actividad Autonomía
+*/
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '153'";
+    $totalesSerigrafia = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $serigrafia = mysqli_fetch_array($totalesSerigrafia);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '7'";
+    $totalesReciclaje = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $reciclaje = mysqli_fetch_array($totalesReciclaje);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '186'";
+    $totalesempaqueEmbalaje = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $empaqueEmbalaje = mysqli_fetch_array($totalesempaqueEmbalaje);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '65'";
+    $totalesSistemaDistribucion = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $sistemaDistribucion = mysqli_fetch_array($totalesSistemaDistribucion);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '27'";
+    $totalesEdicionDiseño = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $edicionDiseño = mysqli_fetch_array($totalesEdicionDiseño);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '37'";
+    $totalesCarpinteria = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $carpinteria = mysqli_fetch_array($totalesCarpinteria);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '38'";
+    $totalesPlomeria = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $plomeria = mysqli_fetch_array($totalesPlomeria);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '33'";
+    $totalesAutoestima = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $autoestima = mysqli_fetch_array($totalesAutoestima);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '39'";
+    $totalesHerreria = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $herreria = mysqli_fetch_array($totalesHerreria);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '40'";
+    $totalesElectricidad = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $electricidad= mysqli_fetch_array($totalesElectricidad);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '41'";
+    $totalesGastronomia = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $gastronomia = mysqli_fetch_array($totalesGastronomia);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '43'";
+    $totalesJoyeria= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $joyeria = mysqli_fetch_array($totalesJoyeria);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '44'";
+    $totalesAgricultura = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $agricultura = mysqli_fetch_array($totalesAgricultura);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '47'";
+    $totalesDiseñoImagen = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $diseñoImagen = mysqli_fetch_array($totalesDiseñoImagen);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '48'";
+    $totalesCodMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $codMujeres = mysqli_fetch_array($totalesCodMujeres);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '49'";
+    $totalesElectronica = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $electronica = mysqli_fetch_array($totalesElectronica);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '52'";
+    $totalesTExtiles = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $textileDiseño = mysqli_fetch_array($totalesTExtiles);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '54'";
+    $totalesFotoProducto = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $fotoProducto = mysqli_fetch_array($totalesFotoProducto);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '55'";
+    $totalesLogos = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $logos = mysqli_fetch_array($totalesLogos);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '56'";
+    $totalesCalidad = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $calidad = mysqli_fetch_array($totalesCalidad);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '57'";
+    $totalesCooperativas = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $cooperativas = mysqli_fetch_array($totalesCooperativas);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '58'";
+    $totalesEmprende= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $emprende= mysqli_fetch_array($totalesEmprende);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '59'";
+    $totalesMicroN= mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $microN= mysqli_fetch_array($totalesMicroN);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '60'";
+    $totalesComercioDigital = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $comercioDigital = mysqli_fetch_array($totalesComercioDigital);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '61'";
+    $totalesEstrategias = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $estrategias = mysqli_fetch_array($totalesEstrategias);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '62'";
+    $totalesComercioJusto = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $comercioJusto = mysqli_fetch_array($totalesComercioJusto);
+
     
     /**
      * Atenciones totales atencionesTotal
@@ -2341,6 +2474,134 @@ $actividadAtenciones79 = mysqli_fetch_array($userPorActividad79);
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-xl-6 col-sm-6 mb-3">
+      <div class="card text-white bg-danger o-hidden h-100">
+        <div class="card-body">
+          <div class="card-body-icon">
+            <i class="fas fa-fw fa-hand-holding-usd"></i>
+          </div>
+          <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica <span class="float-right">Total <?=$autonomiaTotales['userPorActividad']?></span></b></div>
+        </div>
+        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseAutonomia">
+          <span class="float-left">Ver detalle</span>
+          <span class="float-right">
+            <i class="fas fa-angle-right"></i>
+          </span>
+        </a>
+       <div class="collapse" id="collapseAutonomia">
+          <div class="card card-body">
+            <table class="table table-striped ">
+              <tbody class="bg-danger">
+               
+                <tr>
+                  <th scope="row">Serigrafía</th>
+                  <td><?=$serigrafia['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Reciclaje</th>
+                  <td><?=$reciclaje['userPorActividad']?></td>
+                </tr> -->
+                <!-- <tr>
+                  <th scope="row">Empaque y embalaje</th>
+                  <td><?=$empaqueEmbalaje['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Sistema de distribución</th>
+                  <td><?=$sistemaDistribucion['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Edición y Diseño </th>
+                  <td><?=$edicionDiseño['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Carpintería</th>
+                  <td><?=$carpinteria['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Plomería</th>
+                  <td><?=$plomeria['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Herrería</th>
+                  <td><?=$herreria['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Electricidad</th>
+                  <td><?=$electricidad['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Gastronomía, panadería y banquetes</th>
+                  <td><?=$gastronomia['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Joyería y accesorios </th>
+                  <td><?=$joyeria['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Huertos urbanos</th>
+                  <td><?=$agricultura['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Diseño de imagen y Cosmetología orgánica</th>
+                  <td><?=$diseñoImagen['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Codigo para mujeres</th>
+                  <td><?=$codMujeres['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Electrónica y robótica</th>
+                  <td><?=$electronica['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Textiles y diseño</th>
+                  <td><?=$textileDiseño['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Fotografia de producto</th>
+                  <td><?=$fotoProducto['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Logos e identidad de marca</th>
+                  <td><?=$logos['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Calidad en el servicio</th>
+                  <td><?=$calidad['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Creación de cooperativas</th>
+                  <td><?=$cooperativas['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Emprendimiento</th>
+                  <td><?=$emprende['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Creación de micro-negocios</th>
+                  <td><?=$microN['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Comercio digital</th>
+                  <td><?=$comercioDigital['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Estrategias de venta</th>
+                  <td><?=$estrategias['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Comercio justo</th>
+                  <td><?=$comercioJusto['userPorActividad']?></td>
+                </tr> -->
+                </tbody>
+            </table>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div> 
   
 <!-- Usuarios inscritos por PILARES-->
    <!-- <div class="row">
