@@ -367,9 +367,9 @@
     $totalesVitrales = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $vitrales = mysqli_fetch_array($totalesVitrales);
- /**
-    * uSUARIOS por actividad Ciberescuelas
-    */
+/**
+* USUARIOS por actividad Ciberescuelas
+*/
     $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '21'";
     $totalesAjedrez = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
@@ -691,6 +691,84 @@
     $totalesSeguimientoMigrantes = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $seguimientomigrantes = mysqli_fetch_array($totalesSeguimientoMigrantes);
+
+/**
+* Totales por actividad Deporte
+*/
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '17'";
+    $totalesFutbol = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $futbol = mysqli_fetch_array($totalesFutbol);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '18'";
+    $totalesBasquet = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $basquet = mysqli_fetch_array($totalesBasquet);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '19'";
+    $totaleVoley = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $voley = mysqli_fetch_array($totaleVoley);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '20'";
+    $totalesAcondicionamiento = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $acondicionamiento = mysqli_fetch_array($totalesAcondicionamiento);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '94'";
+    $totalesZumba = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $zumba = mysqli_fetch_array($totalesZumba);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '95'";
+    $totalesTae = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $tae = mysqli_fetch_array($totalesTae);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '96'";
+    $totalesYoga = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $yoga = mysqli_fetch_array($totalesYoga);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '97'";
+    $totalesTai = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $taiChi = mysqli_fetch_array($totalesTai);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '129'";
+    $totalesRitmosLatinos = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $ritmosLatinos = mysqli_fetch_array($totalesRitmosLatinos);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '98'";
+    $totalesBoxeo = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $boxeo = mysqli_fetch_array($totalesBoxeo);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '99'";
+    $totalesAtletismo = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $atletismo = mysqli_fetch_array($totalesAtletismo);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '100'";
+    $totalesKarate = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $karate = mysqli_fetch_array($totalesKarate);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '101'";
+    $totalesKung = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $kung = mysqli_fetch_array($totalesKung);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '130'";
+    $totalesTaekwondo = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $taekwondo = mysqli_fetch_array($totalesTaekwondo);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '203'";
+    $totalesCapoeira = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $capoeira = mysqli_fetch_array($totalesCapoeira);
 
     
     /**
@@ -2175,6 +2253,95 @@ $actividadAtenciones79 = mysqli_fetch_array($userPorActividad79);
        </div>
     </div> 
   </div>
+
+  <div class="row">
+    <div class="col-xl-6 col-sm-6 mb-3">
+      <div class="card text-white bg-success o-hidden h-100">
+        <div class="card-body">
+          <div class="card-body-icon">
+            <i class="fas fa-fw fa-running"></i>
+          </div>
+          <div class="mr-5"><b>Usuarios inscritos en Deporte </b></div>
+        </div>
+        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseDeporte">
+          <span class="float-left">Ver detalle</span>
+          <span class="float-right">
+            <i class="fas fa-angle-right"></i>
+          </span>
+        </a>
+        <div class="collapse" id="collapseDeporte">
+          <div class="card card-body">
+            <table class="table table-striped ">
+              <tbody class="bg-success">
+                
+                <tr>
+                  <th scope="row">Fútbol</th>
+                  <td><?=$futbol['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Basquetbol</th>
+                  <td><?=$basquet['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Voleibol</th>
+                  <td><?=$voley['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Acondicionamiento físico</th>
+                  <td><?=$acondicionamiento['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Zumba</th>
+                  <td><?=$zumba['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Tae bo</th>
+                  <td><?=$tae['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Yoga</th>
+                  <td><?=$yoga['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Tai chi</th>
+                  <td><?=$taiChi['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Ritmos Latinos</th>
+                  <td><?=$ritmosLatinos['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Boxeo</th>
+                  <td><?=$boxeo['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Atletismo</th>
+                  <td><?=$atletismo['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Karate do</th>
+                  <td><?=$karate['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Kung fu</th>
+                  <td><?=$kung['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Taekwondo</th>
+                  <td><?=$taekwondo['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Capoeira</th>
+                  <td><?=$capoeira['userPorActividad']?></td>
+                </tr>
+              </tbody>
+            </table>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
+  
 <!-- Usuarios inscritos por PILARES-->
    <!-- <div class="row">
     <div class="col-xl-6 col-sm-6 mb-3">
