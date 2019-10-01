@@ -347,40 +347,275 @@
   <!-- Usuarios por Actividad -->
   <div class="row">
     <div class="col-xl-6 col-sm-6 mb-3">
-      <div class="card text-info bg-light o-hidden h-100">
-          <div class="card-body">
-            <div class="card-body-icon">
-            <i class="fas fa-transgender-alt"></i>
-            </div>
-            
-            <div class="mr-5"><b>Usuarios con beca por Actividad <span class="float-right"></span></b></div>
+      <div class="card text-white bg-warning o-hidden h-100">
+        <div class="card-body">
+          <div class="card-body-icon">
+            <i class="fas fa-fw fa-list"></i>
           </div>
-          <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapseAsistenciasPorGenero">
-            <span class="float-left">Ver detalle</span>
-            <span class="float-right">
-              <i class="fas fa-angle-right"></i>
-            </span>
-          </a>
-          <div class="collapse" id="collapseAsistenciasPorGenero">
-            <div class="card card-body">
-              <table class="table table-striped ">
-                <tbody class="bg-light">
-                  <tr>
-                    <th scope="row">Mujeres</th>
-                    <td><?=$mujeresAsistencias['asistenciasPorGenero']?></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Hombres</th>
-                    <td><?=$hombresAsistencias['asistenciasPorGenero']?></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+          <div class="mr-5"><b>Usuarios inscritos en Ciberescuelas <span class="float-right">Total <?=$ciberEscuelaTotales['userPorActividad']?></span></b></div>
         </div>
+        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelas">
+          <span class="float-left">Ver detalle</span>
+          <span class="float-right">
+            <i class="fas fa-angle-right"></i>
+          </span>
+        </a>
+        <div class="collapse" id="collapseCiberescuelas">
+          <div class="card card-body">
+            <table class="table table-striped ">
+              <tbody class="bg-warning">
+              
+                <tr>
+                  <th scope="row">Ajedrez</th>
+                  <td><?=$ajedrez['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Edición y Diseño</th>
+                  <td><?=$edicionYdiseno['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Club de Ciencias</th>
+                  <td><?=$clubCiencia['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Robótica aplicada</th>
+                  <td><?=$robo['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Club de código (para niñas y niños)</th>
+                  <td><?=$clubCodigo['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Amor y sexualidad</th>
+                  <td><?=$amor['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Prevención de adicc</th>
+                  <td><?=$prevenAdic['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Habilidades para la</th>
+                  <td><?=$habilidades['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Proyecto de vida</th>
+                  <td><?=$proyecto['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Sembrando autoestima</th>
+                  <td><?=$autoestima['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Los duelos duelen ... tanatología y manejo del duelo</th>
+                  <td><?=$tanato['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Inteligencia emocional y habilidades para la vida</th>
+                  <td><?=$inteliEmo['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Recuperando mí libertad</th>
+                  <td><?=$recuperandoMiLibertad['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Comprendiendo la adolescencia</th>
+                  <td><?=$comprendiendoAdolescencia['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Comprendiendo la niñez</th>
+                  <td><?=$comprendiendoNinez['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Es un placer conocerme</th>
+                  <td><?=$conocerme['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Conversatorios</th>
+                  <td><?=$conversatorios['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Autosanarte</th>
+                  <td><?=$autosanarme['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Danzante mente</th>
+                  <td><?=$danzanteMente['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Artística-mente</th>
+                  <td><?=$arteEmo['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Club de letras y expresión</th>
+                  <td><?=$redaccion['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Talleres de cómputo</th>
+                  <td><?=$talleresCom['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Emociones lúdicas</th>
+                  <td><?=$emoMagic['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Pintando emociones</th>
+                  <td><?=$pintEmo['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Alfabetización</th>
+                  <td><?=$alfabet['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Primaria</th>
+                  <td><?=$primaria['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Secundaria</th>
+                  <td><?=$secundaria['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">BADI</th>
+                  <td><?=$badi['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Prepa en línea SEP</th>
+                  <td><?=$prepaSep['userPorActividad']?></td>
+                </tr>
+               
+                <tr>
+                  <th scope="row">UnADM</th>
+                  <td><?=$unadm['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Licenciatura en linea</th>
+                  <td><?=$liclinea['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Licenciaturas CDMX</th>
+                  <td><?=$licCdmx['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Asesorias primaria</th>
+                  <td><?=$asePrimaria['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Asesorias secundaria</th>
+                  <td><?=$aseSecundaria['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Asesorias bachillerato</th>
+                  <td><?=$asePrep['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Asesorias licenciatura</th>
+                  <td><?=$aseLic['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Baile, cuerpo y emociones</th>
+                  <td><?=$baileCuerpo['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Club de Braile</th>
+                  <td><?=$braile['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Computación con tecnologías de asistencia para personas ciegas</th>
+                  <td><?=$computacionAsistida['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Club de lengua de señas mexicana</th>
+                  <td><?=$senas['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Clase de estenografía</th>
+                  <td><?=$estenografia['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Club de Inclusión y sensibilización sensorial</th>
+                  <td><?=$clubSensorial['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Cultura sorda</th>
+                  <td><?=$culturaSorda['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Expresión corporal y danza inclusiva</th>
+                  <td><?=$expresionCorporal['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Charlando sobre la diversidad sexual</th>
+                  <td><?=$diversidadSexual['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Arte inclusivo</th>
+                  <td><?=$arteInclusivo['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Cursos para el aprendizaje de la lengua náhuatl</th>
+                  <td><?=$talleresNahuatl['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Identidad y cultura de los pueblos indígenas y originarios</th>
+                  <td><?=$identidadOriginaria['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Talleres de interculturalidad</th>
+                  <td><?=$talleresInterculturalidad['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Revitalización de lenguas originarias</th>
+                  <td><?=$revitalizacionLenguas['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Conocimientos y saberes de mi comunidad</th>
+                  <td><?=$saberesComunidad['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Biodiversidad y territorio</th>
+                  <td><?=$biodiversidad['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Derechos humanos</th>
+                  <td><?=$derechoshumanos['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Derechos de los pueblos indígenas</th>
+                  <td><?=$derechosIndigenas['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Feminismo comunitario</th>
+                  <td><?=$feminismoComunitario['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Alfabetización a población indígena</th>
+                  <td><?=$alfabetizacionIndigena['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Gestión, canalización y seguimiento a población indígena</th>
+                  <td><?=$seguimientoIndigena['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Migrantes y refugiados</th>
+                  <td><?=$migrantes['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Alfabetización a población migrante</th>
+                  <td><?=$alfabetizacionmigrantes['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Asesorías educativas a población migrante</th>
+                  <td><?=$asesoriasmigrantes['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Gestión, canalización y seguimiento a población migrante</th>
+                  <td><?=$seguimientomigrantes['userPorActividad']?></td>
+                </tr>
+              </tbody>
+            </table>
+         </div>
+       </div>
+       </div>
     </div>
-
-  
   </div>
    <!-- Usuarios inscritos por PILARES-->
    <!-- <div class="row">
