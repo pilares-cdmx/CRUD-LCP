@@ -16534,6 +16534,30 @@
                           <th scope="row">Centenario</th>
                           <td><?=$pilaresTotalesAutnomia59['userPorPilaresAutonomia']?></td>
                         </tr>
+                        <tr>
+                          <th scope="row">16 de Septiembre</th>
+                          <td><?=$pilaresTotalesAutnomia60['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">La Naranja</th>
+                          <td><?=$pilaresTotalesAutnomia61['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Xochinahuac</th>
+                          <td><?=$pilaresTotalesAutnomia62['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Renovación</th>
+                          <td><?=$pilaresTotalesAutnomia63['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Mixquic</th>
+                          <td><?=$pilaresTotalesAutnomia64['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Presidentes</th>
+                          <td><?=$pilaresTotalesAutnomia65['userPorPilaresAutonomia']?></td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -16792,6 +16816,30 @@
                           <th scope="row">Centenario</th>
                           <td><?=$pilaresTotalesAutnomiaMujeres59['userPorPilaresAutonomia']?></td>
                         </tr>
+                        <tr>
+                          <th scope="row">16 de Septiembre</th>
+                          <td><?=$pilaresTotalesAutnomiaMujeres60['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">La Naranja</th>
+                          <td><?=$pilaresTotalesAutnomiaMujeres61['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Xochinahuac</th>
+                          <td><?=$pilaresTotalesAutnomiaMujeres62['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Renovación</th>
+                          <td><?=$pilaresTotalesAutnomiaMujeres63['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Mixquic</th>
+                          <td><?=$pilaresTotalesAutnomiaMujeres64['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Presidentes</th>
+                          <td><?=$pilaresTotalesAutnomiaMujeres65['userPorPilaresAutonomia']?></td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -17049,6 +17097,30 @@
                         <tr>
                           <th scope="row">Centenario</th>
                           <td><?=$pilaresTotalesAutnomiaHombres59['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">16 de Septiembre</th>
+                          <td><?=$pilaresTotalesAutnomiaHombres60['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">La Naranja</th>
+                          <td><?=$pilaresTotalesAutnomiaHombres61['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Xochinahuac</th>
+                          <td><?=$pilaresTotalesAutnomiaHombres62['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Renovación</th>
+                          <td><?=$pilaresTotalesAutnomiaHombres63['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Mixquic</th>
+                          <td><?=$pilaresTotalesAutnomiaHombres64['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Presidentes</th>
+                          <td><?=$pilaresTotalesAutnomiaHombres65['userPorPilaresAutonomia']?></td>
                         </tr>
                       </tbody>
                     </table>
