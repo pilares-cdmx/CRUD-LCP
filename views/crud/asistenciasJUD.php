@@ -2531,6 +2531,131 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                   <th scope="row">Prepa en línea SEP</th>
                   <td><?=$clubCiencia['userPorActividad']?></td>
                 </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Propedéutico</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Tecnología de la información y comunicación</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>De la información al conocimiento</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>El lenguaje en la relación del hombre con el mundo</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>De la información al conocimiento</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>El lenguaje en la relación del hombre con el mundo</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Textos y visiones del mundo</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Argumentación</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Mi mundo en otra lengua</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Mi vida en otras lenguas</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Ser social y sociedad</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Sociedad mexicana contemporáneo</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Representación simbólicas y algoritmos</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Matemáticas y representaciones del sistema natural</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Variación en procesos sociales</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Universo natural</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Hacia un desarrollo sustentable</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Evolución y sus repercusiones sociales</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Estadística en fenómenos naturales y procesos sociales</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Cálculo en fenómenos naturales y procesos sociales</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Dinámica en la naturaleza: el movimiento</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Optimización en sistemas naturales y sociales</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Impacto de la ciencia y la tecnología</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Tecnologías emergentes en la resolución de problemas</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Tecnologías emergentes para la administración y gestión</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
                 <tr>
                   <th scope="row">COLBACH (EXACER)</th>
                   <td><?=$robo['userPorActividad']?></td>
