@@ -2496,7 +2496,9 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
             <table class="table table-striped ">
               <tbody class="bg-warning">     
                 <tr>
-                  <th scope="row">Bachillerato Digital (SECTEI)</th>    
+                  <th scope="row">Bachillerato Digital (SECTEI)</th> 
+                  <td></td>
+                  <td></td>   
                 </tr>
                 <tr>
                   <th scope="row"></th>    
