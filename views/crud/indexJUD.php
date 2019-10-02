@@ -5493,6 +5493,38 @@
     //var_dump($totalesPilares59);
     $pilaresTotales59= mysqli_fetch_array($totalesPilares59);
 
+
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '64'";
+    $totalesPilares60 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares60);
+    $pilaresTotales60= mysqli_fetch_array($totalesPilares60);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '65'";
+    $totalesPilares61 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares61);
+    $pilaresTotales61= mysqli_fetch_array($totalesPilares61);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '66'";
+    $totalesPilares62 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares62);
+    $pilaresTotales62= mysqli_fetch_array($totalesPilares62);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '67'";
+    $totalesPilares63 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares63);
+    $pilaresTotales63= mysqli_fetch_array($totalesPilares63);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '68'";
+    $totalesPilares64 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares64);
+    $pilaresTotales64= mysqli_fetch_array($totalesPilares64);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '70'";
+    $totalesPilares65 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares65);
+    $pilaresTotales65= mysqli_fetch_array($totalesPilares65);
+
     
 /**
  * Usuarios totales por PILARES Mujeres  select count(*) from Usuario U1, UsuariosPorPilar U2 where U1.idusuarios = U2.Usuario_idusuarios AND U1.sexo LIKE '%m%' AND U2.Pilares_idPilares = '45';
@@ -15504,6 +15536,30 @@
                         <tr>
                           <th scope="row">Centenario</th>
                           <td><?=$pilaresTotales59['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">16 de Septiembre</th>
+                          <td><?=$pilaresTotales60['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">La Naranja</th>
+                          <td><?=$pilaresTotales61['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Xochinahuac</th>
+                          <td><?=$pilaresTotales62['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Renovación</th>
+                          <td><?=$pilaresTotales63['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Mixquic</th>
+                          <td><?=$pilaresTotales64['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Presidentes</th>
+                          <td><?=$pilaresTotales65['userPorPilares']?></td>
                         </tr>
                       </tbody>
                     </table>
