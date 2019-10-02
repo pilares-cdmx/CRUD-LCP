@@ -2477,7 +2477,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
        </div>
        </div>
     </div> 
-    <div class="col-xl-3 col-sm-6 mb-3">
+    <div class="col-xl-6 col-sm-6 mb-3">
       <div class="card text-white bg-warning o-hidden h-100">
         <div class="card-body">
           <div class="card-body-icon">
@@ -2661,12 +2661,47 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                     </tr>
                 <tr>
                   <th scope="row">COLBACH (EXACER)</th>
-                  <td><?=$robo['userPorActividad']?></td>
+                  <td></td>
                 </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Asesorías. Áreas de conocimiento</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Asesorías. Capacitación para el trabajo</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
                  <tr>
                   <th scope="row">Preparatoria abierta (SEP)</th>
-                  <td><?=$clubCodigo['userPorActividad']?></td>
+                  <td></td>
                 </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 1. Bases</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 2. Instrumentos</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 3. Métodos y contextos</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 4. Relacionesy cambios</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 5. Efectos y propuestas</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
               
               </tbody>
             </table>
