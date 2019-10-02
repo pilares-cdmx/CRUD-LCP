@@ -2498,9 +2498,11 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                 <tr>
                   <th scope="row">Ajedrez</th>
                   <td><?=$ajedrez['userPorActividad']?></td>
-                  <td><?=$ajedrez['userPorActividad']?></td>
-                  <td><?=$ajedrez['userPorActividad']?></td>
-                  <td><?=$ajedrez['userPorActividad']?></td>
+                    <tr>
+                    <td><?=$ajedrez['userPorActividad']?></td>
+                    <td><?=$ajedrez['userPorActividad']?></td>
+                    <td><?=$ajedrez['userPorActividad']?></td>
+                    </tr>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Edición y Diseño</th>
