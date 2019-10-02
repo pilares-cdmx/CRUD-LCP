@@ -1015,576 +1015,576 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '3'";
     $totalesBallet = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $ballet = mysqli_fetch_array($totalesBallet);
+    $balletAtenciones = mysqli_fetch_array($totalesBallet);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '2'";
     $totalesDanza = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $danza = mysqli_fetch_array($totalesDanza);
+    $danzaAtenciones = mysqli_fetch_array($totalesDanza);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '9'";
     $totalesFoto = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $fotografia = mysqli_fetch_array($totalesFoto);
+    $fotografiaAtenciones = mysqli_fetch_array($totalesFoto);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '67'";
     $totalesBaileSocial = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $baileSocial = mysqli_fetch_array($totalesBaileSocial);
+    $baileSocialAtenciones = mysqli_fetch_array($totalesBaileSocial);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '68'";
     $totalesDanzaNiños = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $danzaNiños = mysqli_fetch_array($totalesDanzaNiños);
+    $danzaNiñosAtenciones = mysqli_fetch_array($totalesDanzaNiños);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '69'";
     $totalesDanzaAdultos = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $danzaAdultos = mysqli_fetch_array($totalesDanzaAdultos);
+    $danzaAdultosAtenciones = mysqli_fetch_array($totalesDanzaAdultos);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '70'";
     $totalesFolklorica = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $folklorica = mysqli_fetch_array($totalesFolklorica);
+    $folkloricaAtenciones = mysqli_fetch_array($totalesFolklorica);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '71'";
     $totalesActuacion = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $actuacion = mysqli_fetch_array($totalesActuacion);
+    $actuacionAtenciones = mysqli_fetch_array($totalesActuacion);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '72'";
     $totalesTeatroCalle = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $teatroCalle = mysqli_fetch_array($totalesTeatroCalle);
+    $teatroCalleAtenciones = mysqli_fetch_array($totalesTeatroCalle);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '73'";
     $totalesDanzaContemporanea = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $contemporanea = mysqli_fetch_array($totalesDanzaContemporanea);
+    $contemporaneaAtenciones = mysqli_fetch_array($totalesDanzaContemporanea);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '74'";
     $totalesPolinesia = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $polinesia = mysqli_fetch_array($totalesPolinesia);
+    $polinesiaAtenciones = mysqli_fetch_array($totalesPolinesia);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '75'";
     $totalesTeatroMascaras = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $mascaras = mysqli_fetch_array($totalesTeatroMascaras);
+    $mascarasAtenciones = mysqli_fetch_array($totalesTeatroMascaras);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '76'";
     $totalesExpresio = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $expresion = mysqli_fetch_array($totalesExpresio);
+    $expresionAtenciones = mysqli_fetch_array($totalesExpresio);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '77'";
     $totalesTelar = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $telar = mysqli_fetch_array($totalesTelar);
+    $telarAtenciones = mysqli_fetch_array($totalesTelar);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '78'";
     $totalesCArtoneria = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $cartoneria = mysqli_fetch_array($totalesCArtoneria);
+    $cartoneriaAtenciones = mysqli_fetch_array($totalesCArtoneria);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '79'";
     $totalesBordado = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $bordado = mysqli_fetch_array($totalesBordado);
+    $bordadoAtenciones = mysqli_fetch_array($totalesBordado);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '80'";
     $totalesConstruccion = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $construccion = mysqli_fetch_array($totalesConstruccion);
+    $construccionAtenciones = mysqli_fetch_array($totalesConstruccion);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '81'";
     $totalesDiseñoJuguetes = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $diseñoJuguetes = mysqli_fetch_array($totalesDiseñoJuguetes);
+    $diseñoJuguetesAtenciones = mysqli_fetch_array($totalesDiseñoJuguetes);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '82'";
     $totalesReciclajeAmb = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $reciclajeAmb = mysqli_fetch_array($totalesReciclajeAmb);
+    $reciclajeAmbAtenciones = mysqli_fetch_array($totalesReciclajeAmb);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '83'";
     $totalesEscritura = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $escritura = mysqli_fetch_array($totalesEscritura);
+    $escrituraAtenciones = mysqli_fetch_array($totalesEscritura);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '84'";
     $totalesPinturaArt = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $pinturaArt = mysqli_fetch_array($totalesPinturaArt);
+    $pinturaArtAtenciones = mysqli_fetch_array($totalesPinturaArt);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '85'";
     $totalesAudioVisual = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $audioVisual = mysqli_fetch_array($totalesAudioVisual);
+    $audioVisualAtenciones = mysqli_fetch_array($totalesAudioVisual);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '86'";
     $totalesCine = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $cine = mysqli_fetch_array($totalesCine);
+    $cineAtenciones = mysqli_fetch_array($totalesCine);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '87'";
     $totalesAnimacionNiños = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $animacionNiños = mysqli_fetch_array($totalesAnimacionNiños);
+    $animacionNiñosAtenciones = mysqli_fetch_array($totalesAnimacionNiños);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '88'";
     $totalesVideoComunitario = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $videoComunitario = mysqli_fetch_array($totalesVideoComunitario);
+    $videoComunitarioAtenciones = mysqli_fetch_array($totalesVideoComunitario);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '89'";
     $totalesGuitarra = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $guitarra = mysqli_fetch_array($totalesGuitarra);
+    $guitarraAtenciones = mysqli_fetch_array($totalesGuitarra);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '90'";
     $totalesRap = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $rap = mysqli_fetch_array($totalesRap);
+    $rapAtenciones = mysqli_fetch_array($totalesRap);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '91'";
     $totalesPercusiones = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $percusiones = mysqli_fetch_array($totalesPercusiones);
+    $percusionesAtenciones = mysqli_fetch_array($totalesPercusiones);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '92'";
     $totalesIniciacion = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $iniciacion = mysqli_fetch_array($totalesIniciacion);
+    $iniciacionAtenciones = mysqli_fetch_array($totalesIniciacion);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '93'";
     $totalesSonHuasteco = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $sonHuasteco = mysqli_fetch_array($totalesSonHuasteco);
+    $sonHuastecoAtenciones = mysqli_fetch_array($totalesSonHuasteco);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '123'";
     $totalesGrabado = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $grabado = mysqli_fetch_array($totalesGrabado);
+    $grabadoAtenciones = mysqli_fetch_array($totalesGrabado);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '136'";
     $totalesClown = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $clown = mysqli_fetch_array($totalesClown);
+    $clownAtenciones = mysqli_fetch_array($totalesClown);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '143'";
     $totalesDanzaJazz = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $danzaJazz = mysqli_fetch_array($totalesDanzaJazz);
+    $danzaJazzAtenciones = mysqli_fetch_array($totalesDanzaJazz);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '144'";
     $totalesIniciacionCanto = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $iniciacionCanto = mysqli_fetch_array($totalesIniciacionCanto);
+    $iniciacionCantoAtenciones = mysqli_fetch_array($totalesIniciacionCanto);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '146'";
     $totalesBellyDance = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $bellyDance = mysqli_fetch_array($totalesBellyDance);
+    $bellyDanceAtenciones = mysqli_fetch_array($totalesBellyDance);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '149'";
     $totalesAcercamientoAlCirco = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $acercamientoAlCirco = mysqli_fetch_array($totalesAcercamientoAlCirco);
+    $acercamientoAlCircoAtenciones = mysqli_fetch_array($totalesAcercamientoAlCirco);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '148'";
     $totalesMedioAmbiente = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $medioAmbiente = mysqli_fetch_array($totalesMedioAmbiente);
+    $medioAmbienteAtenciones = mysqli_fetch_array($totalesMedioAmbiente);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '135'";
     $totalesFotografiaDigital = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $fotografiaDigital = mysqli_fetch_array($totalesFotografiaDigital);
+    $fotografiaDigitalAtenciones = mysqli_fetch_array($totalesFotografiaDigital);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '142'";
     $totalesExperimentacionGrafica = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $experimentacionGrafica = mysqli_fetch_array($totalesExperimentacionGrafica);
+    $experimentacionGraficaAtenciones = mysqli_fetch_array($totalesExperimentacionGrafica);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '139'";
     $totalesCinemaPilares = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $cinemaPilares = mysqli_fetch_array($totalesCinemaPilares);
+    $cinemaPilaresAtenciones = mysqli_fetch_array($totalesCinemaPilares);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '132'";
     $totalesModeladoPlastilina = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $modeladoPlastilina = mysqli_fetch_array($totalesModeladoPlastilina);
+    $modeladoPlastilinaAtenciones = mysqli_fetch_array($totalesModeladoPlastilina);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '138'";
     $totalesLibroClub = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $libroClub = mysqli_fetch_array($totalesLibroClub);
+    $libroClubAtenciones = mysqli_fetch_array($totalesLibroClub);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '147'";
     $totalesLiteratura = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $literatura = mysqli_fetch_array($totalesLiteratura);
+    $literaturaAtenciones = mysqli_fetch_array($totalesLiteratura);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '131'";
     $totalesSalsaCubana = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $salsaCubana = mysqli_fetch_array($totalesSalsaCubana);
+    $salsaCubanaAtenciones = mysqli_fetch_array($totalesSalsaCubana);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '150'";
     $totalesEncuadernacion = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $encuadernacion = mysqli_fetch_array($totalesEncuadernacion);
+    $encuadernacionAtenciones = mysqli_fetch_array($totalesEncuadernacion);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '128'";
     $totalesArteCreatividad = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $arteCreatividad = mysqli_fetch_array($totalesArteCreatividad);
+    $arteCreatividadAtenciones = mysqli_fetch_array($totalesArteCreatividad);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '137'";
     $totalesArteCiencia = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $arteCiencia = mysqli_fetch_array($totalesArteCiencia);
+    $arteCienciaAtenciones = mysqli_fetch_array($totalesArteCiencia);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '140'";
     $totalesTransformaciones = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $transformaciones = mysqli_fetch_array($totalesTransformaciones);
+    $transformacionesAtenciones = mysqli_fetch_array($totalesTransformaciones);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '141'";
     $totalesMeditacion = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $meditacion = mysqli_fetch_array($totalesMeditacion);
+    $meditacionAtenciones = mysqli_fetch_array($totalesMeditacion);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '145'";
     $totalesVitrales = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $vitrales = mysqli_fetch_array($totalesVitrales);
+    $vitralesAtenciones = mysqli_fetch_array($totalesVitrales);
 /**
 * USUARIOS por actividad Ciberescuelas
 */
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '21'";
     $totalesAjedrez = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $ajedrez = mysqli_fetch_array($totalesAjedrez);
+    $ajedrezAtenciones = mysqli_fetch_array($totalesAjedrez);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '152'";
     $totalesEdicionYdiseno = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $edicionYdiseno = mysqli_fetch_array($totalesEdicionYdiseno);
+    $edicionYdisenoAtenciones = mysqli_fetch_array($totalesEdicionYdiseno);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '24'";
     $totalesClubCiencia = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $clubCiencia = mysqli_fetch_array($totalesClubCiencia);
+    $clubCienciaAtenciones = mysqli_fetch_array($totalesClubCiencia);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '25'";
     $totalesRoboticaApli = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $robo = mysqli_fetch_array($totalesRoboticaApli);
+    $roboAtenciones = mysqli_fetch_array($totalesRoboticaApli);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '28'";
     $totalesClubCodigo = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $clubCodigo = mysqli_fetch_array($totalesClubCodigo);
+    $clubCodigoAtenciones = mysqli_fetch_array($totalesClubCodigo);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '29'";
     $totalesAmor = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $amor = mysqli_fetch_array($totalesAmor);
+    $amorAtenciones = mysqli_fetch_array($totalesAmor);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '30'";
     $totalesPrevenAdic = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prevenAdic = mysqli_fetch_array($totalesPrevenAdic);
+    $prevenAdicAtenciones = mysqli_fetch_array($totalesPrevenAdic);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '31'";
     $totalesHabilidades = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $habilidades = mysqli_fetch_array($totalesHabilidades);
+    $habilidadesAtenciones = mysqli_fetch_array($totalesHabilidades);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '32'";
     $totalesProyecto = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $proyecto = mysqli_fetch_array($totalesProyecto);
+    $proyectoAtenciones = mysqli_fetch_array($totalesProyecto);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '33'";
     $totalesAutoestima = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $autoestima = mysqli_fetch_array($totalesAutoestima);
+    $autoestimaAtenciones = mysqli_fetch_array($totalesAutoestima);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '34'";
     $totalesTanato = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $tanato = mysqli_fetch_array($totalesTanato);
+    $tanatoAtenciones = mysqli_fetch_array($totalesTanato);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '35'";
     $totalesInteliEmo = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $inteliEmo = mysqli_fetch_array($totalesInteliEmo);
+    $inteliEmoAtenciones = mysqli_fetch_array($totalesInteliEmo);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '177'";
     $totalesRecuperandoMiLibertad = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $recuperandoMiLibertad = mysqli_fetch_array($totalesRecuperandoMiLibertad);
+    $recuperandoMiLibertadAtenciones = mysqli_fetch_array($totalesRecuperandoMiLibertad);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '178'";
     $totalesComprendiendoAdolescencia = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $comprendiendoAdolescencia = mysqli_fetch_array($totalesComprendiendoAdolescencia);
+    $comprendiendoAdolescenciaAtenciones = mysqli_fetch_array($totalesComprendiendoAdolescencia);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '185'";
     $totalesComprendiendoNinez = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $comprendiendoNinez = mysqli_fetch_array($totalesComprendiendoNinez);
+    $comprendiendoNinezAtenciones = mysqli_fetch_array($totalesComprendiendoNinez);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '179'";
     $totalesConocerme = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $conocerme = mysqli_fetch_array($totalesConocerme);
+    $conocermeAtenciones = mysqli_fetch_array($totalesConocerme);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '180'";
     $totalesConversatorios = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $conversatorios = mysqli_fetch_array($totalesConversatorios);
+    $conversatoriosAtenciones = mysqli_fetch_array($totalesConversatorios);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '181'";
     $totalesAutosanarme = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $autosanarme = mysqli_fetch_array($totalesAutosanarme);
+    $autosanarmeAtenciones = mysqli_fetch_array($totalesAutosanarme);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '182'";
     $totalesDanzanteMente = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $danzanteMente = mysqli_fetch_array($totalesDanzanteMente);
+    $danzanteMenteAtenciones = mysqli_fetch_array($totalesDanzanteMente);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '36'";
     $totalesArteEmo = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $arteEmo = mysqli_fetch_array($totalesArteEmo);
+    $arteEmoAtenciones = mysqli_fetch_array($totalesArteEmo);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '102'";
     $totalesREdaccion = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $redaccion = mysqli_fetch_array($totalesREdaccion);
+    $redaccionAtenciones = mysqli_fetch_array($totalesREdaccion);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '103'";
     $totalesTalleComp = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $talleresCom = mysqli_fetch_array($totalesTalleComp);
+    $talleresComAtenciones = mysqli_fetch_array($totalesTalleComp);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '104'";
     $totalesEmoMagic = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $emoMagic = mysqli_fetch_array($totalesEmoMagic);
+    $emoMagicAtenciones = mysqli_fetch_array($totalesEmoMagic);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '105'";
     $totalesPintEmo = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $pintEmo = mysqli_fetch_array($totalesPintEmo);
+    $pintEmoAtenciones = mysqli_fetch_array($totalesPintEmo);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '106'";
     $totalesAlfabet = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $alfabet = mysqli_fetch_array($totalesAlfabet);
+    $alfabetAtenciones = mysqli_fetch_array($totalesAlfabet);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '107'";
     $totalesPrimaRIA = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $primaria = mysqli_fetch_array($totalesPrimaRIA);
+    $primariaAtenciones = mysqli_fetch_array($totalesPrimaRIA);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '108'";
     $totalesSec = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $secundaria = mysqli_fetch_array($totalesSec);
+    $secundariaAtenciones = mysqli_fetch_array($totalesSec);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109'";
     $totalesBadi = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $badi = mysqli_fetch_array($totalesBadi);
+    $badiAtenciones = mysqli_fetch_array($totalesBadi);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110'";
     $totalesPrepaSep = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaSep = mysqli_fetch_array($totalesPrepaSep);
+    $prepaSepAtenciones = mysqli_fetch_array($totalesPrepaSep);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '114'";
     $totalesBunam= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $bunam = mysqli_fetch_array($totalesBunam);
+    $bunamAtenciones = mysqli_fetch_array($totalesBunam);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '115'";
     $totalesUnadm = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $unadm = mysqli_fetch_array($totalesUnadm);
+    $unadmAtenciones = mysqli_fetch_array($totalesUnadm);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '116'";
     $totalesLicLinea = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $liclinea = mysqli_fetch_array($totalesLicLinea);
+    $liclineaAtenciones = mysqli_fetch_array($totalesLicLinea);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '117'";
     $totalesLicCdmx = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $licCdmx = mysqli_fetch_array($totalesLicCdmx);
+    $licCdmxAtenciones = mysqli_fetch_array($totalesLicCdmx);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '118'";
     $totalesAsePrim = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $asePrimaria = mysqli_fetch_array($totalesAsePrim);
+    $asePrimariaAtenciones = mysqli_fetch_array($totalesAsePrim);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '119'";
     $totalesAseSec = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $aseSecundaria = mysqli_fetch_array($totalesAseSec);
+    $aseSecundariaAtenciones = mysqli_fetch_array($totalesAseSec);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '120'";
     $totalesAsePrepa = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $asePrep = mysqli_fetch_array($totalesAsePrepa);
+    $asePrepAtenciones = mysqli_fetch_array($totalesAsePrepa);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '121'";
     $totalesAseLic = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $aseLic= mysqli_fetch_array($totalesAseLic);
+    $aseLicAtenciones= mysqli_fetch_array($totalesAseLic);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '122'";
     $totalesBaileCuero= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $baileCuerpo= mysqli_fetch_array($totalesBaileCuero);
+    $baileCuerpoAtenciones= mysqli_fetch_array($totalesBaileCuero);
 
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '122'";
     $totalesBaileCuero= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $baileCuerpo= mysqli_fetch_array($totalesBaileCuero);
+    $baileCuerpoAtenciones= mysqli_fetch_array($totalesBaileCuero);
 
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '124'";
     $totalesElectronicaBraile = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $braile = mysqli_fetch_array($totalesElectronicaBraile);
+    $braileAtenciones = mysqli_fetch_array($totalesElectronicaBraile);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '125'";
     $totalesComputacionAsistida= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $computacionAsistida= mysqli_fetch_array($totalesComputacionAsistida);
+    $computacionAsistidaAtenciones= mysqli_fetch_array($totalesComputacionAsistida);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '126'";
     $totalesSenas= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $senas= mysqli_fetch_array($totalesSenas);
+    $senasAtenciones= mysqli_fetch_array($totalesSenas);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '155'";
     $totalesEstenografia= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $estenografia= mysqli_fetch_array($totalesEstenografia);
+    $estenografiaAtenciones= mysqli_fetch_array($totalesEstenografia);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '156'";
     $totalesClubSensorial= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $clubSensorial= mysqli_fetch_array($totalesClubSensorial);
+    $clubSensorialAtenciones= mysqli_fetch_array($totalesClubSensorial);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '157'";
     $totalesCulturaSorda= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $culturaSorda= mysqli_fetch_array($totalesCulturaSorda);
+    $culturaSordaAtenciones= mysqli_fetch_array($totalesCulturaSorda);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '158'";
     $totalesExpresionCorporal= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $expresionCorporal= mysqli_fetch_array($totalesExpresionCorporal);
+    $expresionCorporalAtenciones= mysqli_fetch_array($totalesExpresionCorporal);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '161'";
     $totalesDiversidadSexual= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $diversidadSexual= mysqli_fetch_array($totalesDiversidadSexual);
+    $diversidadSexualAtenciones= mysqli_fetch_array($totalesDiversidadSexual);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '160'";
     $totalesArteInclusivo= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $arteInclusivo = mysqli_fetch_array($totalesArteInclusivo); 
+    $arteInclusivoAtenciones = mysqli_fetch_array($totalesArteInclusivo); 
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '162'";
     $totalesTalleresNahuatl= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $talleresNahuatl = mysqli_fetch_array($totalesTalleresNahuatl); 
+    $talleresNahuatlAtenciones = mysqli_fetch_array($totalesTalleresNahuatl); 
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '163'";
     $totalesIdentidadOriginaria= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $identidadOriginaria = mysqli_fetch_array($totalesIdentidadOriginaria); 
+    $identidadOriginariaAtenciones = mysqli_fetch_array($totalesIdentidadOriginaria); 
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '164'";
     $totalesTalleresInterculturalidad = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $talleresInterculturalidad = mysqli_fetch_array($totalesTalleresInterculturalidad);
+    $talleresInterculturalidadAtenciones = mysqli_fetch_array($totalesTalleresInterculturalidad);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '165'";
     $totalesRevitalizacionLenguas = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $revitalizacionLenguas = mysqli_fetch_array($totalesRevitalizacionLenguas);
+    $revitalizacionLenguasAtenciones = mysqli_fetch_array($totalesRevitalizacionLenguas);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '166'";
     $totalesSaberesComunidad = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $saberesComunidad = mysqli_fetch_array($totalesSaberesComunidad);
+    $saberesComunidadAtenciones = mysqli_fetch_array($totalesSaberesComunidad);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '168'";
     $totalesBiodiversidad = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $biodiversidad = mysqli_fetch_array($totalesBiodiversidad);
+    $biodiversidadAtenciones = mysqli_fetch_array($totalesBiodiversidad);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '169'";
     $totalesDerechoshumanos = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $derechoshumanos = mysqli_fetch_array($totalesDerechoshumanos);
+    $derechoshumanosAtenciones = mysqli_fetch_array($totalesDerechoshumanos);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '183'";
     $totalesDerechosIndigenas = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $derechosIndigenas = mysqli_fetch_array($totalesDerechosIndigenas);
+    $derechosIndigenasAtenciones = mysqli_fetch_array($totalesDerechosIndigenas);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '167'";
     $totalesFeminismoComunitario = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $feminismoComunitario = mysqli_fetch_array($totalesFeminismoComunitario);
+    $feminismoComunitarioAtenciones = mysqli_fetch_array($totalesFeminismoComunitario);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '170'";
     $totalesAlfabetizacionIndigena = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $alfabetizacionIndigena = mysqli_fetch_array($totalesAlfabetizacionIndigena);
+    $alfabetizacionIndigenaAtenciones = mysqli_fetch_array($totalesAlfabetizacionIndigena);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '171'";
     $totalesAsesoriasIndigena = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $asesoriasIndigena = mysqli_fetch_array($totalesAsesoriasIndigena);
+    $asesoriasIndigenaAtenciones = mysqli_fetch_array($totalesAsesoriasIndigena);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '172'";
     $totalesSeguimientoIndigena = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $seguimientoIndigena = mysqli_fetch_array($totalesSeguimientoIndigena);
+    $seguimientoIndigenaAtenciones = mysqli_fetch_array($totalesSeguimientoIndigena);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '173'";
     $totalesMigrantes = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $migrantes = mysqli_fetch_array($totalesMigrantes);
+    $migrantesAtenciones = mysqli_fetch_array($totalesMigrantes);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '174'";
     $totalesAlfabetizacionMigrantes = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $alfabetizacionmigrantes = mysqli_fetch_array($totalesAlfabetizacionMigrantes);
+    $alfabetizacionmigrantesAtenciones = mysqli_fetch_array($totalesAlfabetizacionMigrantes);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '175'";
     $totalesAsesoriasMigrantes = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $asesoriasmigrantes = mysqli_fetch_array($totalesAsesoriasMigrantes);
+    $asesoriasmigrantesAtenciones = mysqli_fetch_array($totalesAsesoriasMigrantes);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '176'";
     $totalesSeguimientoMigrantes = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $seguimientomigrantes = mysqli_fetch_array($totalesSeguimientoMigrantes);
+    $seguimientomigrantesAtenciones = mysqli_fetch_array($totalesSeguimientoMigrantes);
 
 /**
 * Totales por actividad Deporte
@@ -1592,77 +1592,77 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '17'";
     $totalesFutbol = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $futbol = mysqli_fetch_array($totalesFutbol);
+    $futbolAtenciones = mysqli_fetch_array($totalesFutbol);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '18'";
     $totalesBasquet = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $basquet = mysqli_fetch_array($totalesBasquet);
+    $basquetAtenciones = mysqli_fetch_array($totalesBasquet);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '19'";
     $totaleVoley = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $voley = mysqli_fetch_array($totaleVoley);
+    $voleyAtenciones = mysqli_fetch_array($totaleVoley);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '20'";
     $totalesAcondicionamiento = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $acondicionamiento = mysqli_fetch_array($totalesAcondicionamiento);
+    $acondicionamientoAtenciones = mysqli_fetch_array($totalesAcondicionamiento);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '94'";
     $totalesZumba = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $zumba = mysqli_fetch_array($totalesZumba);
+    $zumbaAtenciones = mysqli_fetch_array($totalesZumba);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '95'";
     $totalesTae = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $tae = mysqli_fetch_array($totalesTae);
+    $taeAtenciones = mysqli_fetch_array($totalesTae);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '96'";
     $totalesYoga = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $yoga = mysqli_fetch_array($totalesYoga);
+    $yogaAtenciones = mysqli_fetch_array($totalesYoga);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '97'";
     $totalesTai = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $taiChi = mysqli_fetch_array($totalesTai);
+    $taiChiAtenciones = mysqli_fetch_array($totalesTai);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '129'";
     $totalesRitmosLatinos = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $ritmosLatinos = mysqli_fetch_array($totalesRitmosLatinos);
+    $ritmosLatinosAtenciones = mysqli_fetch_array($totalesRitmosLatinos);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '98'";
     $totalesBoxeo = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $boxeo = mysqli_fetch_array($totalesBoxeo);
+    $boxeoAtenciones = mysqli_fetch_array($totalesBoxeo);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '99'";
     $totalesAtletismo = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $atletismo = mysqli_fetch_array($totalesAtletismo);
+    $atletismoAtenciones = mysqli_fetch_array($totalesAtletismo);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '100'";
     $totalesKarate = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $karate = mysqli_fetch_array($totalesKarate);
+    $karateAtenciones = mysqli_fetch_array($totalesKarate);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '101'";
     $totalesKung = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $kung = mysqli_fetch_array($totalesKung);
+    $kungAtenciones = mysqli_fetch_array($totalesKung);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '130'";
     $totalesTaekwondo = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $taekwondo = mysqli_fetch_array($totalesTaekwondo);
+    $taekwondoAtenciones = mysqli_fetch_array($totalesTaekwondo);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '203'";
     $totalesCapoeira = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $capoeira = mysqli_fetch_array($totalesCapoeira);
+    $capoeiraAtenciones = mysqli_fetch_array($totalesCapoeira);
 
     /**
  * Totales por actividad Autonomía
@@ -1670,132 +1670,132 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '153'";
     $totalesSerigrafia = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $serigrafia = mysqli_fetch_array($totalesSerigrafia);
+    $serigrafiaAtenciones = mysqli_fetch_array($totalesSerigrafia);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '7'";
     $totalesReciclaje = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $reciclaje = mysqli_fetch_array($totalesReciclaje);
+    $reciclajeAtenciones = mysqli_fetch_array($totalesReciclaje);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '186'";
     $totalesempaqueEmbalaje = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $empaqueEmbalaje = mysqli_fetch_array($totalesempaqueEmbalaje);
+    $empaqueEmbalajeAtenciones = mysqli_fetch_array($totalesempaqueEmbalaje);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '65'";
     $totalesSistemaDistribucion = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $sistemaDistribucion = mysqli_fetch_array($totalesSistemaDistribucion);
+    $sistemaDistribucionAtenciones = mysqli_fetch_array($totalesSistemaDistribucion);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '27'";
     $totalesEdicionDiseño = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $edicionDiseño = mysqli_fetch_array($totalesEdicionDiseño);
+    $edicionDiseñoAtenciones = mysqli_fetch_array($totalesEdicionDiseño);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '37'";
     $totalesCarpinteria = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $carpinteria = mysqli_fetch_array($totalesCarpinteria);
+    $carpinteriaAtenciones = mysqli_fetch_array($totalesCarpinteria);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '38'";
     $totalesPlomeria = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $plomeria = mysqli_fetch_array($totalesPlomeria);
+    $plomeriaAtenciones = mysqli_fetch_array($totalesPlomeria);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '33'";
     $totalesAutoestima = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $autoestima = mysqli_fetch_array($totalesAutoestima);
+    $autoestimaAtenciones = mysqli_fetch_array($totalesAutoestima);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '39'";
     $totalesHerreria = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $herreria = mysqli_fetch_array($totalesHerreria);
+    $herreriaAtenciones = mysqli_fetch_array($totalesHerreria);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '40'";
     $totalesElectricidad = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $electricidad= mysqli_fetch_array($totalesElectricidad);
+    $electricidadAtenciones= mysqli_fetch_array($totalesElectricidad);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '41'";
     $totalesGastronomia = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $gastronomia = mysqli_fetch_array($totalesGastronomia);
+    $gastronomiaAtenciones = mysqli_fetch_array($totalesGastronomia);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '43'";
     $totalesJoyeria= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $joyeria = mysqli_fetch_array($totalesJoyeria);
+    $joyeriaAtenciones = mysqli_fetch_array($totalesJoyeria);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '44'";
     $totalesAgricultura = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $agricultura = mysqli_fetch_array($totalesAgricultura);
+    $agriculturaAtenciones = mysqli_fetch_array($totalesAgricultura);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '47'";
     $totalesDiseñoImagen = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $diseñoImagen = mysqli_fetch_array($totalesDiseñoImagen);
+    $diseñoImagenAtenciones = mysqli_fetch_array($totalesDiseñoImagen);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '48'";
     $totalesCodMujeres = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $codMujeres = mysqli_fetch_array($totalesCodMujeres);
+    $codMujeresAtenciones = mysqli_fetch_array($totalesCodMujeres);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '49'";
     $totalesElectronica = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $electronica = mysqli_fetch_array($totalesElectronica);
+    $electronicaAtenciones = mysqli_fetch_array($totalesElectronica);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '52'";
     $totalesTExtiles = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $textileDiseño = mysqli_fetch_array($totalesTExtiles);
+    $textileDiseñoAtenciones = mysqli_fetch_array($totalesTExtiles);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '54'";
     $totalesFotoProducto = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $fotoProducto = mysqli_fetch_array($totalesFotoProducto);
+    $fotoProductoAtenciones = mysqli_fetch_array($totalesFotoProducto);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '55'";
     $totalesLogos = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $logos = mysqli_fetch_array($totalesLogos);
+    $logosAtenciones = mysqli_fetch_array($totalesLogos);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '56'";
     $totalesCalidad = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $calidad = mysqli_fetch_array($totalesCalidad);
+    $calidadAtenciones = mysqli_fetch_array($totalesCalidad);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '57'";
     $totalesCooperativas = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $cooperativas = mysqli_fetch_array($totalesCooperativas);
+    $cooperativasAtenciones = mysqli_fetch_array($totalesCooperativas);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '58'";
     $totalesEmprende= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $emprende= mysqli_fetch_array($totalesEmprende);
+    $emprendeAtenciones= mysqli_fetch_array($totalesEmprende);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '59'";
     $totalesMicroN= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $microN= mysqli_fetch_array($totalesMicroN);
+    $microNAtenciones= mysqli_fetch_array($totalesMicroN);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '60'";
     $totalesComercioDigital = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $comercioDigital = mysqli_fetch_array($totalesComercioDigital);
+    $comercioDigitalAtenciones = mysqli_fetch_array($totalesComercioDigital);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '61'";
     $totalesEstrategias = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $estrategias = mysqli_fetch_array($totalesEstrategias);
+    $estrategiasAtenciones = mysqli_fetch_array($totalesEstrategias);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '62'";
     $totalesComercioJusto = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $comercioJusto = mysqli_fetch_array($totalesComercioJusto);
+    $comercioJustoAtenciones = mysqli_fetch_array($totalesComercioJusto);
 
    
 ?>
@@ -2187,7 +2187,275 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           <div class="card-body-icon">
             <i class="fas fa-fw fa-list"></i>
           </div>
-          <div class="mr-5"><b>Usuarios inscritos en Ciberescuelas</b></div>
+          <div class="mr-5"><b>Usuarios con beca en Ciberescuelas</b></div>
+        </div>
+        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelas">
+          <span class="float-left">Ver detalle</span>
+          <span class="float-right">
+            <i class="fas fa-angle-right"></i>
+          </span>
+        </a>
+        <div class="collapse" id="collapseCiberescuelas">
+          <div class="card card-body">
+            <table class="table table-striped ">
+              <tbody class="bg-warning">     
+                <tr>
+                  <th scope="row">Ajedrez</th>
+                  <td><?=$ajedrez['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Edición y Diseño</th>
+                  <td><?=$edicionYdiseno['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Club de Ciencias</th>
+                  <td><?=$clubCiencia['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Robótica aplicada</th>
+                  <td><?=$robo['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Club de código (para niñas y niños)</th>
+                  <td><?=$clubCodigo['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Amor y sexualidad</th>
+                  <td><?=$amor['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Prevención de adicc</th>
+                  <td><?=$prevenAdic['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Habilidades para la</th>
+                  <td><?=$habilidades['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Proyecto de vida</th>
+                  <td><?=$proyecto['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Sembrando autoestima</th>
+                  <td><?=$autoestima['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Los duelos duelen ... tanatología y manejo del duelo</th>
+                  <td><?=$tanato['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Inteligencia emocional y habilidades para la vida</th>
+                  <td><?=$inteliEmo['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Recuperando mí libertad</th>
+                  <td><?=$recuperandoMiLibertad['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Comprendiendo la adolescencia</th>
+                  <td><?=$comprendiendoAdolescencia['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Comprendiendo la niñez</th>
+                  <td><?=$comprendiendoNinez['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Es un placer conocerme</th>
+                  <td><?=$conocerme['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Conversatorios</th>
+                  <td><?=$conversatorios['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Autosanarte</th>
+                  <td><?=$autosanarme['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Danzante mente</th>
+                  <td><?=$danzanteMente['userPorActividad']?></td>
+                </tr>-->
+                <tr>
+                  <th scope="row">Artística-mente</th>
+                  <td><?=$arteEmo['userPorActividad']?></td>
+                </tr> 
+                <tr>
+                  <th scope="row">Club de letras y expresión</th>
+                  <td><?=$redaccion['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Talleres de cómputo</th>
+                  <td><?=$talleresCom['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <!-- <th scope="row">Emociones lúdicas</th>
+                  <td><?=$emoMagic['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Pintando emociones</th>
+                  <td><?=$pintEmo['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Alfabetización</th>
+                  <td><?=$alfabet['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Primaria</th>
+                  <td><?=$primaria['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Secundaria</th>
+                  <td><?=$secundaria['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">BADI</th>
+                  <td><?=$badi['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Prepa en línea SEP</th>
+                  <td><?=$prepaSep['userPorActividad']?></td>
+                </tr>           
+                <!-- <tr>
+                  <th scope="row">UnADM</th>
+                  <td><?=$unadm['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Licenciatura en linea</th>
+                  <td><?=$liclinea['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Licenciaturas CDMX</th>
+                  <td><?=$licCdmx['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Asesorias primaria</th>
+                  <td><?=$asePrimaria['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Asesorias secundaria</th>
+                  <td><?=$aseSecundaria['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Asesorias bachillerato</th>
+                  <td><?=$asePrep['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Asesorias licenciatura</th>
+                  <td><?=$aseLic['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Baile, cuerpo y emociones</th>
+                  <td><?=$baileCuerpo['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Club de Braile</th>
+                  <td><?=$braile['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Computación con tecnologías de asistencia para personas ciegas</th>
+                  <td><?=$computacionAsistida['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Club de lengua de señas mexicana</th>
+                  <td><?=$senas['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Clase de estenografía</th>
+                  <td><?=$estenografia['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Club de Inclusión y sensibilización sensorial</th>
+                  <td><?=$clubSensorial['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Cultura sorda</th>
+                  <td><?=$culturaSorda['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Expresión corporal y danza inclusiva</th>
+                  <td><?=$expresionCorporal['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Charlando sobre la diversidad sexual</th>
+                  <td><?=$diversidadSexual['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Arte inclusivo</th>
+                  <td><?=$arteInclusivo['userPorActividad']?></td>
+                </tr> -->
+                <tr>
+                  <th scope="row">Cursos para el aprendizaje de la lengua náhuatl</th>
+                  <td><?=$talleresNahuatl['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Identidad y cultura de los pueblos indígenas y originarios</th>
+                  <td><?=$identidadOriginaria['userPorActividad']?></td>
+                </tr>
+                <!-- <tr>
+                  <th scope="row">Talleres de interculturalidad</th>
+                  <td><?=$talleresInterculturalidad['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Revitalización de lenguas originarias</th>
+                  <td><?=$revitalizacionLenguas['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Conocimientos y saberes de mi comunidad</th>
+                  <td><?=$saberesComunidad['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Biodiversidad y territorio</th>
+                  <td><?=$biodiversidad['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Derechos humanos</th>
+                  <td><?=$derechoshumanos['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Derechos de los pueblos indígenas</th>
+                  <td><?=$derechosIndigenas['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Feminismo comunitario</th>
+                  <td><?=$feminismoComunitario['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Alfabetización a población indígena</th>
+                  <td><?=$alfabetizacionIndigena['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Gestión, canalización y seguimiento a población indígena</th>
+                  <td><?=$seguimientoIndigena['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Migrantes y refugiados</th>
+                  <td><?=$migrantes['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Alfabetización a población migrante</th>
+                  <td><?=$alfabetizacionmigrantes['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Asesorías educativas a población migrante</th>
+                  <td><?=$asesoriasmigrantes['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Gestión, canalización y seguimiento a población migrante</th>
+                  <td><?=$seguimientomigrantes['userPorActividad']?></td>
+                </tr> -->
+              </tbody>
+            </table>
+         </div>
+       </div>
+       </div>
+    </div> 
+    <div class="col-xl-3 col-sm-6 mb-3">
+      <div class="card text-white bg-warning o-hidden h-100">
+        <div class="card-body">
+          <div class="card-body-icon">
+            <i class="fas fa-fw fa-list"></i>
+          </div>
+          <div class="mr-5"><b>Usuarios con beca en Ciberescuelas Por modulo</b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelas">
           <span class="float-left">Ver detalle</span>
@@ -3097,208 +3365,208 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
             
                 <tr>
                   <th scope="row">Ballet</th>
-                  <td><?=$ballet['atencionesPorActividad']?></td>
+                  <td><?=$balletAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Danza</th>
-                  <td><?=$danza['atencionesPorActividad']?></td>
+                  <td><?=$danzaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Danza Jazz</th>
-                  <td><?=$danzaJazz['atencionesPorActividad']?></td>
+                  <td><?=$danzaJazzAtenciones['atencionesPorActividad']?></td>
                 </tr> 
                 <tr>
                   <th scope="row">Iniciación al canto</th>
-                  <td><?=$iniciacionCanto['atencionesPorActividad']?></td>
+                  <td><?=$iniciacionCantoAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Belly Dance</th>
-                  <td><?=$bellyDance['atencionesPorActividad']?></td>
+                  <td><?=$bellyDanceAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Fotografía</th>
-                  <td><?=$fotografia['atencionesPorActividad']?></td>
+                  <td><?=$fotografiaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Acercamiento al Circo</th>
-                  <td><?=$acercamientoAlCirco['atencionesPorActividad']?></td>
+                  <td><?=$acercamientoAlCircoAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Medio ambiente</th>
-                  <td><?=$medioAmbiente['atencionesPorActividad']?></td>
+                  <td><?=$medioAmbienteAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Fotografía Digital</th>
-                  <td><?=$fotografiaDigital['atencionesPorActividad']?></td>
+                  <td><?=$fotografiaDigitalAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Libroclub</th>
-                  <td><?=$libroClub['atencionesPorActividad']?></td>
+                  <td><?=$libroClubAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Experimentación Gráfica</th>
-                  <td><?=$experimentacionGrafica['atencionesPorActividad']?></td>
+                  <td><?=$experimentacionGraficaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Cinema PILARES</th>
-                  <td><?=$cinemaPilares['atencionesPorActividad']?></td>
+                  <td><?=$cinemaPilaresAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Baile Social</th>
-                  <td><?=$baileSocial['atencionesPorActividad']?></td>
+                  <td><?=$baileSocialAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Danza para niños</th>
-                  <td><?=$danzaNiños['atencionesPorActividad']?></td>
+                  <td><?=$danzaNiñosAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Danza para adultos</th>
-                  <td><?=$danzaAdultos['atencionesPorActividad']?></td>
+                  <td><?=$danzaAdultosAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Danza folklórica</th>
-                  <td><?=$folklorica['atencionesPorActividad']?></td>
+                  <td><?=$folkloricaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Actuación</th>
-                  <td><?=$actuacion['atencionesPorActividad']?></td>
+                  <td><?=$actuacionAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Teatro de calle</th>
-                  <td><?=$teatroCalle['atencionesPorActividad']?></td>
+                  <td><?=$teatroCalleAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Danza contemporánea</th>
-                  <td><?=$contemporanea['atencionesPorActividad']?></td>
+                  <td><?=$contemporaneaAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Danza polinesia</th>
-                  <td><?=$polinesia['atencionesPorActividad']?></td>
+                  <td><?=$polinesiaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Teatro de máscaras</th>
-                  <td><?=$mascaras['atencionesPorActividad']?></td>
+                  <td><?=$mascarasAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Expresión corporal y teatro</th>
-                  <td><?=$expresion['atencionesPorActividad']?></td>
+                  <td><?=$expresionAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Telar de cintura</th>
-                  <td><?=$telar['atencionesPorActividad']?></td>
+                  <td><?=$telarAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Cartonería</th>
-                  <td><?=$cartoneria['atencionesPorActividad']?></td>
+                  <td><?=$cartoneriaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Bordado para la vida</th>
-                  <td><?=$bordado['atencionesPorActividad']?></td>
+                  <td><?=$bordadoAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Construcción artesanal de instrumentos</th>
-                  <td><?=$construccion['atencionesPorActividad']?></td>
+                  <td><?=$construccionAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Diseño de juguetes de madera y materiales de</th>
-                  <td><?=$diseñoJuguetes['atencionesPorActividad']?></td>
+                  <td><?=$diseñoJuguetesAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Reciclaje y medio ambiente</th>
-                  <td><?=$reciclajeAmb['atencionesPorActividad']?></td>
+                  <td><?=$reciclajeAmbAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Escritura creativa</th>
-                  <td><?=$escritura['atencionesPorActividad']?></td>
+                  <td><?=$escrituraAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Pintura artística</th>
-                  <td><?=$pinturaArt['atencionesPorActividad']?></td>
+                  <td><?=$pinturaArtAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Medios Audiovisuales </th>
-                  <td><?=$audioVisual['atencionesPorActividad']?></td>
+                  <td><?=$audioVisualAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Cine</th>
-                  <td><?=$cine['atencionesPorActividad']?></td>
+                  <td><?=$cineAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Animación para niños</th>
-                  <td><?=$animacionNiños['atencionesPorActividad']?></td>
+                  <td><?=$animacionNiñosAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Vídeo comunitario</th>
-                  <td><?=$videoComunitario['atencionesPorActividad']?></td>
+                  <td><?=$videoComunitarioAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Guitarra clásica</th>
-                  <td><?=$guitarra['atencionesPorActividad']?></td>
+                  <td><?=$guitarraAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Música Rap</th>
-                  <td><?=$rap['atencionesPorActividad']?></td>
+                  <td><?=$rapAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Percusiones</th>
-                  <td><?=$percusiones['atencionesPorActividad']?></td>
+                  <td><?=$percusionesAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Iniciación a la música</th>
-                  <td><?=$iniciacion['atencionesPorActividad']?></td>
+                  <td><?=$iniciacionAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Son Huasteco</th>
-                  <td><?=$sonHuasteco['atencionesPorActividad']?></td>
+                  <td><?=$sonHuastecoAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Dibujo y grabado</th>
-                  <td><?=$grabado['atencionesPorActividad']?></td>
+                  <td><?=$grabadoAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Clown</th>
-                  <td><?=$clown['atencionesPorActividad']?></td>
+                  <td><?=$clownAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
 
                 <tr>
                   <th scope="row">Modelado con plastilina</th>
-                  <td><?=$modeladoPlastilina['atencionesPorActividad']?></td>
+                  <td><?=$modeladoPlastilinaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Libro Club</th>
-                  <td><?=$libroClub['atencionesPorActividad']?></td>
+                  <td><?=$libroClubAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Literatura</th>
-                  <td><?=$literatura['atencionesPorActividad']?></td>
+                  <td><?=$literaturaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Salsa Cubana</th>
-                  <td><?=$salsaCubana['atencionesPorActividad']?></td>
+                  <td><?=$salsaCubanaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Encuardernación</th>
-                  <td><?=$encuadernacion['atencionesPorActividad']?></td>
+                  <td><?=$encuadernacionAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Arte y creatividad</th>
-                  <td><?=$arteCreatividad['atencionesPorActividad']?></td>
+                  <td><?=$arteCreatividadAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Arte y Ciencia</th>
-                  <td><?=$arteCiencia['atencionesPorActividad']?></td>
+                  <td><?=$arteCienciaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Transformaciones colaborativas</th>
-                  <td><?=$transformaciones['atencionesPorActividad']?></td>
+                  <td><?=$transformacionesAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Meditación creativa</th>
-                  <td><?=$meditacion['atencionesPorActividad']?></td>
+                  <td><?=$meditacionAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Vitrales</th>
-                  <td><?=$vitrales['atencionesPorActividad']?></td>
+                  <td><?=$vitralesAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
               </tbody>
             </table>
@@ -3329,247 +3597,247 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
               <tbody class="bg-warning">     
                 <tr>
                   <th scope="row">Ajedrez</th>
-                  <td><?=$ajedrez['atencionesPorActividad']?></td>
+                  <td><?=$ajedrezAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Edición y Diseño</th>
-                  <td><?=$edicionYdiseno['atencionesPorActividad']?></td>
+                  <td><?=$edicionYdisenoAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Club de Ciencias</th>
-                  <td><?=$clubCiencia['atencionesPorActividad']?></td>
+                  <td><?=$clubCienciaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Robótica aplicada</th>
-                  <td><?=$robo['atencionesPorActividad']?></td>
+                  <td><?=$roboAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Club de código (para niñas y niños)</th>
-                  <td><?=$clubCodigo['atencionesPorActividad']?></td>
+                  <td><?=$clubCodigoAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Amor y sexualidad</th>
-                  <td><?=$amor['atencionesPorActividad']?></td>
+                  <td><?=$amorAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Prevención de adicc</th>
-                  <td><?=$prevenAdic['atencionesPorActividad']?></td>
+                  <td><?=$prevenAdicAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Habilidades para la</th>
-                  <td><?=$habilidades['atencionesPorActividad']?></td>
+                  <td><?=$habilidadesAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Proyecto de vida</th>
-                  <td><?=$proyecto['atencionesPorActividad']?></td>
+                  <td><?=$proyectoAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Sembrando autoestima</th>
-                  <td><?=$autoestima['atencionesPorActividad']?></td>
+                  <td><?=$autoestimaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Los duelos duelen ... tanatología y manejo del duelo</th>
-                  <td><?=$tanato['atencionesPorActividad']?></td>
+                  <td><?=$tanatoAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Inteligencia emocional y habilidades para la vida</th>
-                  <td><?=$inteliEmo['atencionesPorActividad']?></td>
+                  <td><?=$inteliEmoAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Recuperando mí libertad</th>
-                  <td><?=$recuperandoMiLibertad['atencionesPorActividad']?></td>
+                  <td><?=$recuperandoMiLibertadAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Comprendiendo la adolescencia</th>
-                  <td><?=$comprendiendoAdolescencia['atencionesPorActividad']?></td>
+                  <td><?=$comprendiendoAdolescenciaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Comprendiendo la niñez</th>
-                  <td><?=$comprendiendoNinez['atencionesPorActividad']?></td>
+                  <td><?=$comprendiendoNinezAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Es un placer conocerme</th>
-                  <td><?=$conocerme['atencionesPorActividad']?></td>
+                  <td><?=$conocermeAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Conversatorios</th>
-                  <td><?=$conversatorios['atencionesPorActividad']?></td>
+                  <td><?=$conversatoriosAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Autosanarte</th>
-                  <td><?=$autosanarme['atencionesPorActividad']?></td>
+                  <td><?=$autosanarmeAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Danzante mente</th>
-                  <td><?=$danzanteMente['atencionesPorActividad']?></td>
+                  <td><?=$danzanteMenteAtenciones['atencionesPorActividad']?></td>
                 </tr>-->
                 <tr>
                   <th scope="row">Artística-mente</th>
-                  <td><?=$arteEmo['atencionesPorActividad']?></td>
+                  <td><?=$arteEmoAtenciones['atencionesPorActividad']?></td>
                 </tr> 
                 <tr>
                   <th scope="row">Club de letras y expresión</th>
-                  <td><?=$redaccion['atencionesPorActividad']?></td>
+                  <td><?=$redaccionAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Talleres de cómputo</th>
-                  <td><?=$talleresCom['atencionesPorActividad']?></td>
+                  <td><?=$talleresComAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <!-- <th scope="row">Emociones lúdicas</th>
-                  <td><?=$emoMagic['atencionesPorActividad']?></td>
+                  <td><?=$emoMagicAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Pintando emociones</th>
-                  <td><?=$pintEmo['atencionesPorActividad']?></td>
+                  <td><?=$pintEmoAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Alfabetización</th>
-                  <td><?=$alfabet['atencionesPorActividad']?></td>
+                  <td><?=$alfabetAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Primaria</th>
-                  <td><?=$primaria['atencionesPorActividad']?></td>
+                  <td><?=$primariaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Secundaria</th>
-                  <td><?=$secundaria['atencionesPorActividad']?></td>
+                  <td><?=$secundariaAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">BADI</th>
-                  <td><?=$badi['atencionesPorActividad']?></td>
+                  <td><?=$badiAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Prepa en línea SEP</th>
-                  <td><?=$prepaSep['atencionesPorActividad']?></td>
+                  <td><?=$prepaSepAtenciones['atencionesPorActividad']?></td>
                 </tr>           
                 <!-- <tr>
                   <th scope="row">UnADM</th>
-                  <td><?=$unadm['atencionesPorActividad']?></td>
+                  <td><?=$unadmAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Licenciatura en linea</th>
-                  <td><?=$liclinea['atencionesPorActividad']?></td>
+                  <td><?=$liclineaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Licenciaturas CDMX</th>
-                  <td><?=$licCdmx['atencionesPorActividad']?></td>
+                  <td><?=$licCdmxAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Asesorias primaria</th>
-                  <td><?=$asePrimaria['atencionesPorActividad']?></td>
+                  <td><?=$asePrimariaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Asesorias secundaria</th>
-                  <td><?=$aseSecundaria['atencionesPorActividad']?></td>
+                  <td><?=$aseSecundariaAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Asesorias bachillerato</th>
-                  <td><?=$asePrep['atencionesPorActividad']?></td>
+                  <td><?=$asePrepAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Asesorias licenciatura</th>
-                  <td><?=$aseLic['atencionesPorActividad']?></td>
+                  <td><?=$aseLicAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Baile, cuerpo y emociones</th>
-                  <td><?=$baileCuerpo['atencionesPorActividad']?></td>
+                  <td><?=$baileCuerpoAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Club de Braile</th>
-                  <td><?=$braile['atencionesPorActividad']?></td>
+                  <td><?=$braileAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Computación con tecnologías de asistencia para personas ciegas</th>
-                  <td><?=$computacionAsistida['atencionesPorActividad']?></td>
+                  <td><?=$computacionAsistidaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Club de lengua de señas mexicana</th>
-                  <td><?=$senas['atencionesPorActividad']?></td>
+                  <td><?=$senasAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Clase de estenografía</th>
-                  <td><?=$estenografia['atencionesPorActividad']?></td>
+                  <td><?=$estenografiaAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Club de Inclusión y sensibilización sensorial</th>
-                  <td><?=$clubSensorial['atencionesPorActividad']?></td>
+                  <td><?=$clubSensorialAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Cultura sorda</th>
-                  <td><?=$culturaSorda['atencionesPorActividad']?></td>
+                  <td><?=$culturaSordaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Expresión corporal y danza inclusiva</th>
-                  <td><?=$expresionCorporal['atencionesPorActividad']?></td>
+                  <td><?=$expresionCorporalAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Charlando sobre la diversidad sexual</th>
-                  <td><?=$diversidadSexual['atencionesPorActividad']?></td>
+                  <td><?=$diversidadSexualAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Arte inclusivo</th>
-                  <td><?=$arteInclusivo['atencionesPorActividad']?></td>
+                  <td><?=$arteInclusivoAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Cursos para el aprendizaje de la lengua náhuatl</th>
-                  <td><?=$talleresNahuatl['atencionesPorActividad']?></td>
+                  <td><?=$talleresNahuatlAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Identidad y cultura de los pueblos indígenas y originarios</th>
-                  <td><?=$identidadOriginaria['atencionesPorActividad']?></td>
+                  <td><?=$identidadOriginariaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Talleres de interculturalidad</th>
-                  <td><?=$talleresInterculturalidad['atencionesPorActividad']?></td>
+                  <td><?=$talleresInterculturalidadAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Revitalización de lenguas originarias</th>
-                  <td><?=$revitalizacionLenguas['atencionesPorActividad']?></td>
+                  <td><?=$revitalizacionLenguasAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Conocimientos y saberes de mi comunidad</th>
-                  <td><?=$saberesComunidad['atencionesPorActividad']?></td>
+                  <td><?=$saberesComunidadAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Biodiversidad y territorio</th>
-                  <td><?=$biodiversidad['atencionesPorActividad']?></td>
+                  <td><?=$biodiversidadAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Derechos humanos</th>
-                  <td><?=$derechoshumanos['atencionesPorActividad']?></td>
+                  <td><?=$derechoshumanosAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Derechos de los pueblos indígenas</th>
-                  <td><?=$derechosIndigenas['atencionesPorActividad']?></td>
+                  <td><?=$derechosIndigenasAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Feminismo comunitario</th>
-                  <td><?=$feminismoComunitario['atencionesPorActividad']?></td>
+                  <td><?=$feminismoComunitarioAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Alfabetización a población indígena</th>
-                  <td><?=$alfabetizacionIndigena['atencionesPorActividad']?></td>
+                  <td><?=$alfabetizacionIndigenaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Gestión, canalización y seguimiento a población indígena</th>
-                  <td><?=$seguimientoIndigena['atencionesPorActividad']?></td>
+                  <td><?=$seguimientoIndigenaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Migrantes y refugiados</th>
-                  <td><?=$migrantes['atencionesPorActividad']?></td>
+                  <td><?=$migrantesAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Alfabetización a población migrante</th>
-                  <td><?=$alfabetizacionmigrantes['atencionesPorActividad']?></td>
+                  <td><?=$alfabetizacionmigrantesAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Asesorías educativas a población migrante</th>
-                  <td><?=$asesoriasmigrantes['atencionesPorActividad']?></td>
+                  <td><?=$asesoriasmigrantesAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Gestión, canalización y seguimiento a población migrante</th>
-                  <td><?=$seguimientomigrantes['atencionesPorActividad']?></td>
+                  <td><?=$seguimientomigrantesAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
               </tbody>
             </table>
@@ -3601,63 +3869,63 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                 
                 <tr>
                   <th scope="row">Fútbol</th>
-                  <td><?=$futbol['atencionesPorActividad']?></td>
+                  <td><?=$futbolAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Basquetbol</th>
-                  <td><?=$basquet['atencionesPorActividad']?></td>
+                  <td><?=$basquetAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Voleibol</th>
-                  <td><?=$voley['atencionesPorActividad']?></td>
+                  <td><?=$voleyAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Acondicionamiento físico</th>
-                  <td><?=$acondicionamiento['atencionesPorActividad']?></td>
+                  <td><?=$acondicionamientoAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Zumba</th>
-                  <td><?=$zumba['atencionesPorActividad']?></td>
+                  <td><?=$zumbaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Tae bo</th>
-                  <td><?=$tae['atencionesPorActividad']?></td>
+                  <td><?=$taeAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Yoga</th>
-                  <td><?=$yoga['atencionesPorActividad']?></td>
+                  <td><?=$yogaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Tai chi</th>
-                  <td><?=$taiChi['atencionesPorActividad']?></td>
+                  <td><?=$taiChiAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Ritmos Latinos</th>
-                  <td><?=$ritmosLatinos['atencionesPorActividad']?></td>
+                  <td><?=$ritmosLatinosAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Boxeo</th>
-                  <td><?=$boxeo['atencionesPorActividad']?></td>
+                  <td><?=$boxeoAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Atletismo</th>
-                  <td><?=$atletismo['atencionesPorActividad']?></td>
+                  <td><?=$atletismoAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Karate do</th>
-                  <td><?=$karate['atencionesPorActividad']?></td>
+                  <td><?=$karateAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Kung fu</th>
-                  <td><?=$kung['atencionesPorActividad']?></td>
+                  <td><?=$kungAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Taekwondo</th>
-                  <td><?=$taekwondo['atencionesPorActividad']?></td>
+                  <td><?=$taekwondoAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Capoeira</th>
-                  <td><?=$capoeira['atencionesPorActividad']?></td>
+                  <td><?=$capoeiraAtenciones['atencionesPorActividad']?></td>
                 </tr>
               </tbody>
             </table>
@@ -3689,103 +3957,103 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                
                 <tr>
                   <th scope="row">Serigrafía</th>
-                  <td><?=$serigrafia['atencionesPorActividad']?></td>
+                  <td><?=$serigrafiaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Reciclaje</th>
-                  <td><?=$reciclaje['atencionesPorActividad']?></td>
+                  <td><?=$reciclajeAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <!-- <tr>
                   <th scope="row">Empaque y embalaje</th>
-                  <td><?=$empaqueEmbalaje['atencionesPorActividad']?></td>
+                  <td><?=$empaqueEmbalajeAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Sistema de distribución</th>
-                  <td><?=$sistemaDistribucion['atencionesPorActividad']?></td>
+                  <td><?=$sistemaDistribucionAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Edición y Diseño </th>
-                  <td><?=$edicionDiseño['atencionesPorActividad']?></td>
+                  <td><?=$edicionDiseñoAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Carpintería</th>
-                  <td><?=$carpinteria['atencionesPorActividad']?></td>
+                  <td><?=$carpinteriaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Plomería</th>
-                  <td><?=$plomeria['atencionesPorActividad']?></td>
+                  <td><?=$plomeriaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Herrería</th>
-                  <td><?=$herreria['atencionesPorActividad']?></td>
+                  <td><?=$herreriaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Electricidad</th>
-                  <td><?=$electricidad['atencionesPorActividad']?></td>
+                  <td><?=$electricidadAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Gastronomía, panadería y banquetes</th>
-                  <td><?=$gastronomia['atencionesPorActividad']?></td>
+                  <td><?=$gastronomiaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Joyería y accesorios </th>
-                  <td><?=$joyeria['atencionesPorActividad']?></td>
+                  <td><?=$joyeriaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Huertos urbanos</th>
-                  <td><?=$agricultura['atencionesPorActividad']?></td>
+                  <td><?=$agriculturaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Diseño de imagen y Cosmetología orgánica</th>
-                  <td><?=$diseñoImagen['atencionesPorActividad']?></td>
+                  <td><?=$diseñoImagenAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Codigo para mujeres</th>
-                  <td><?=$codMujeres['atencionesPorActividad']?></td>
+                  <td><?=$codMujeresAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Electrónica y robótica</th>
-                  <td><?=$electronica['atencionesPorActividad']?></td>
+                  <td><?=$electronicaAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Textiles y diseño</th>
-                  <td><?=$textileDiseño['atencionesPorActividad']?></td>
+                  <td><?=$textileDiseñoAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Fotografia de producto</th>
-                  <td><?=$fotoProducto['atencionesPorActividad']?></td>
+                  <td><?=$fotoProductoAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Logos e identidad de marca</th>
-                  <td><?=$logos['atencionesPorActividad']?></td>
+                  <td><?=$logosAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Calidad en el servicio</th>
-                  <td><?=$calidad['atencionesPorActividad']?></td>
+                  <td><?=$calidadAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Creación de cooperativas</th>
-                  <td><?=$cooperativas['atencionesPorActividad']?></td>
+                  <td><?=$cooperativasAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 <tr>
                   <th scope="row">Emprendimiento</th>
-                  <td><?=$emprende['atencionesPorActividad']?></td>
+                  <td><?=$emprendeAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Creación de micro-negocios</th>
-                  <td><?=$microN['atencionesPorActividad']?></td>
+                  <td><?=$microNAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Comercio digital</th>
-                  <td><?=$comercioDigital['atencionesPorActividad']?></td>
+                  <td><?=$comercioDigitalAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Estrategias de venta</th>
-                  <td><?=$estrategias['atencionesPorActividad']?></td>
+                  <td><?=$estrategiasAtenciones['atencionesPorActividad']?></td>
                 </tr>
                 <tr>
                   <th scope="row">Comercio justo</th>
-                  <td><?=$comercioJusto['atencionesPorActividad']?></td>
+                  <td><?=$comercioJustoAtenciones['atencionesPorActividad']?></td>
                 </tr> -->
                 </tbody>
             </table>
