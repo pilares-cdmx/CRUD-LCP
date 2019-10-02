@@ -2497,8 +2497,11 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
               <tbody class="bg-warning">     
                 <tr>
                   <th scope="row">Bachillerato Digital (SECTEI)</th>    
+                </tr>
+                <tr>
+                  <th scope="row"></th>    
                       <td>Semestre 1</td>
-                      <td><?= $edicionYdiseno['userPorActividad']?></td>
+                      <td><?=$edicionYdiseno['userPorActividad'] ?></td>
                 </tr>
                 <tr>
                   <th scope="row"></th>    
