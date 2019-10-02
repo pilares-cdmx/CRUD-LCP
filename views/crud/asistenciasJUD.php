@@ -2726,7 +2726,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           <div class="card-body-icon">
             <i class="fas fa-fw fa-running"></i>
           </div>
-          <div class="mr-5"><b>Usuarios inscritos en Deporte </b></div>
+          <div class="mr-5"><b>Usuarios con beca en Deporte </b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseDeporte">
           <span class="float-left">Ver detalle</span>
@@ -2814,7 +2814,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           <div class="card-body-icon">
             <i class="fas fa-fw fa-hand-holding-usd"></i>
           </div>
-          <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica </b></div>
+          <div class="mr-5"><b>Usuarios con beca en Autonomía Económica </b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseAutonomia">
           <span class="float-left">Ver detalle</span>
@@ -3350,7 +3350,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
             <i class="fas fa-fw fa-music"></i>
           </div>
           
-          <div class="mr-5"><b>Usuarios con beca en Cultura </b></div>
+          <div class="mr-5"><b>Atenciones de usuarios con beca en Cultura </b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCulturaAtenciones">
           <span class="float-left">Ver detalle</span>
@@ -3583,7 +3583,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           <div class="card-body-icon">
             <i class="fas fa-fw fa-list"></i>
           </div>
-          <div class="mr-5"><b>Usuarios inscritos en Ciberescuelas</b></div>
+          <div class="mr-5"><b>Atenciones de usuarios inscritos en Ciberescuelas</b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelasAtenciones">
           <span class="float-left">Ver detalle</span>
@@ -3854,7 +3854,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           <div class="card-body-icon">
             <i class="fas fa-fw fa-running"></i>
           </div>
-          <div class="mr-5"><b>Usuarios inscritos en Deporte </b></div>
+          <div class="mr-5"><b>Atenciones de usuarios con beca en Deporte </b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseDeporteAtenciones">
           <span class="float-left">Ver detalle</span>
@@ -3942,7 +3942,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           <div class="card-body-icon">
             <i class="fas fa-fw fa-hand-holding-usd"></i>
           </div>
-          <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica </b></div>
+          <div class="mr-5"><b>Atenciones de usuarios con beca en Autonomía Económica </b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseAutonomiaAtenciones">
           <span class="float-left">Ver detalle</span>
