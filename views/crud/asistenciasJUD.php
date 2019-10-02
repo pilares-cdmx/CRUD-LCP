@@ -2500,26 +2500,21 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                       <td>Semestre 1</td>
                       <td><?= $edicionYdiseno['userPorActividad']?></td>
                 </tr>
-                    <tr>
-                      <th scope="row"></th>    
-                          <td>Semestre 2</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
-                    </tr>
-                    <tr>
-                      <th scope="row"></th>    
-                          <td>Semestre 3</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
-                    </tr>
-                    <tr>
-                      <th scope="row"></th>    
-                          <td>Semestre 4</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
-                    </tr>
-                    <tr>
-                      <th scope="row"></th>    
-                          <td>Asignaturas Optativas</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
-                    </tr>
+                <tr>
+                  <th scope="row"></th>    
+                      <td>Semestre 2</td>
+                      <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>    
+                      <td>Semestre </td>
+                      <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>    
+                      <td>Semestre 2</td>
+                      <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                </tr>
                 <!-- <tr>
                   <th scope="row">Edición y Diseño</th>
                   <td><?=$edicionYdiseno['userPorActividad']?></td>
