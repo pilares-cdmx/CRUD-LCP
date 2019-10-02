@@ -2531,7 +2531,8 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                 </tr> -->
                 <tr>
                   <th scope="row">Prepa en línea SEP</th>
-                  <td><?=$clubCiencia['userPorActividad']?></td>
+                  <td></td>
+                  <td></td>
                 </tr>
                     <tr>
                       <th scope="row"></th>    
