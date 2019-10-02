@@ -515,6 +515,16 @@
     //var_dump($totalesCultura);
     $prepaSep = mysqli_fetch_array($totalesPrepaSep);
 
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112'";
+    $totalesColbach = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $colbach = mysqli_fetch_array($totalesColbach);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113'";
+    $totalesPrepaAbierta = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaAbierta = mysqli_fetch_array($totalesPrepaAbierta);
+
     $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '114'";
     $totalesBunam= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
@@ -1408,6 +1418,16 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
     $totalesPrepaSep = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $prepaSepAtenciones = mysqli_fetch_array($totalesPrepaSep);
+
+    $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112'";
+    $totalesColbach = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $colbachAtenciones = mysqli_fetch_array($totalesColbach);
+
+    $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113'";
+    $totalesPrepaAbierta = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaAbiertaAtenciones = mysqli_fetch_array($totalesPrepaAbierta);
 
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '114'";
     $totalesBunam= mysqli_query($con, $sql);
@@ -2314,7 +2334,15 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                 <tr>
                   <th scope="row">Prepa en línea SEP</th>
                   <td><?=$prepaSep['userPorActividad']?></td>
-                </tr>           
+                </tr> 
+                <tr>
+                  <th scope="row">COLBACH (EXACER)</th>
+                  <td><?=$colbach['userPorActividad']?></td>
+                </tr>  
+                <tr>
+                  <th scope="row">Prepa abierta SEP</th>
+                  <td><?=$prepaAbierta['userPorActividad']?></td>
+                </tr>            
                 <!-- <tr>
                   <th scope="row">UnADM</th>
                   <td><?=$unadm['userPorActividad']?></td>
@@ -2582,7 +2610,15 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                 <tr>
                   <th scope="row">Prepa en línea SEP</th>
                   <td><?=$prepaSep['userPorActividad']?></td>
-                </tr>           
+                </tr> 
+                <tr>
+                  <th scope="row">COLBACH (EXACER)</th>
+                  <td><?=$colbach['userPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Preparatoria abierta (SEP)</th>
+                  <td><?=$prepaAbierta['userPorActividad']?></td>
+                </tr>                  
                 <!-- <tr>
                   <th scope="row">UnADM</th>
                   <td><?=$unadm['userPorActividad']?></td>
@@ -3710,7 +3746,15 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                 <tr>
                   <th scope="row">Prepa en línea SEP</th>
                   <td><?=$prepaSepAtenciones['atencionesPorActividad']?></td>
-                </tr>           
+                </tr>   
+                <tr>
+                  <th scope="row">COLBACH (EXACER)</th>
+                  <td><?=$colbachAtenciones['atencionesPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Preparatoria abierta (SEP)</th>
+                  <td><?=$prepaAbiertaAtenciones['atencionesPorActividad']?></td>
+                </tr>        
                 <!-- <tr>
                   <th scope="row">UnADM</th>
                   <td><?=$unadmAtenciones['atencionesPorActividad']?></td>
