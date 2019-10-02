@@ -701,7 +701,13 @@
     $totalesSeguimientoMigrantes = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $seguimientomigrantes = mysqli_fetch_array($totalesSeguimientoMigrantes);
-
+/**
+* Usuarios con beca en Ciberescuelas Por modulo
+*/
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.ActividadesModulo_idModulo = '58'";
+    $totalesBadiModulo1 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $badiModulo1 = mysqli_fetch_array($totalesBadiModulo1);   
 /**
 * Totales por actividad Deporte
 */
@@ -1607,6 +1613,11 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
     $seguimientomigrantesAtenciones = mysqli_fetch_array($totalesSeguimientoMigrantes);
 
 /**
+* Usuarios con beca en Ciberescuelas Por modulo
+*/
+
+
+/**
 * Totales por actividad Deporte
 */
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '17'";
@@ -2503,7 +2514,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                 <tr>
                   <th scope="row"></th>    
                       <td>Semestre 1</td>
-                      <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                      <td><?=$badiModulo1['userPorModulo'] ?></td>
                 </tr>
                 <tr>
                   <th scope="row"></th>    
@@ -2662,6 +2673,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                 <tr>
                   <th scope="row">COLBACH (EXACER)</th>
                   <td></td>
+                  <td></td>
                 </tr>
                     <tr>
                       <th scope="row"></th>    
@@ -2675,6 +2687,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                     </tr>
                  <tr>
                   <th scope="row">Preparatoria abierta (SEP)</th>
+                  <td></td>
                   <td></td>
                 </tr>
                     <tr>
@@ -2701,8 +2714,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                       <th scope="row"></th>    
                           <td>Nivel 5. Efectos y propuestas</td>
                           <td><?=$edicionYdiseno['userPorActividad'] ?></td>
-                    </tr>
-              
+                    </tr>       
               </tbody>
             </table>
          </div>
