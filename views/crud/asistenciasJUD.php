@@ -2530,11 +2530,13 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                   <th scope="row">Bachillerato Digital (SECTEI)</th> 
                   <td></td>
                   <td></td>   
+                  <td></td>  
                 </tr>
                 <tr>
                   <th scope="row"></th>    
                       <td>Semestre 1</td>
                       <td><?=$badiModulo1['userPorModulo'] ?></td>
+                      <td></td>  
                 </tr>
                     <tr>
                       <th scope="row"></th> 
@@ -2546,21 +2548,25 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                   <th scope="row"></th>    
                       <td>Semestre 2</td>
                       <td><?=$badiModulo2['userPorModulo'] ?></td>
+                      <td></td>  
                 </tr>
                 <tr>
                   <th scope="row"></th>    
                       <td>Semestre 3</td>
                       <td><?=$badiModulo3['userPorModulo'] ?></td>
+                      <td></td>  
                 </tr>
                 <tr>
                   <th scope="row"></th>    
                       <td>Semestre 4</td>
                       <td><?=$badiModulo4['userPorModulo'] ?></td>
+                      <td></td>  
                 </tr>
                 <tr>
                   <th scope="row"></th>    
                       <td>Asignaturas Optativas</td>
                       <td><?=$badiModulo5['userPorModulo'] ?></td>
+                      <td></td>  
                 </tr>
                 <!-- <tr>
                   <th scope="row">Edición y Diseño</th>
