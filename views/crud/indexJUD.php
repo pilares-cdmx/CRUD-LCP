@@ -10706,23 +10706,23 @@
                       <tbody class="bg-secondary">
                       <tr>
                           <th scope="row">Discapacidad motriz (brazos, piernas u otra parte del cuerpo)</th>
-                          <td><?=$totalesIntervalo1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad visual (debilidad visual y ceguera)</th>
-                          <td><?=$totalesIntervalo1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad auditiva (baja audición y sordera)</th>
-                          <td><?=$totalesIntervalo1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad intelectual o cognitiva</th>
-                          <td><?=$totalesIntervalo1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Ninguna</th>
-                          <td><?=$totalesIntervalo1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                       </tbody>
                     </table>
