@@ -10689,19 +10689,19 @@
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad visual (debilidad visual y ceguera)</th>
-                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales2['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad auditiva (baja audición y sordera)</th>
-                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales3['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad intelectual o cognitiva</th>
-                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales4['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Ninguna</th>
-                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales5['totalesDificultad']?></td>
                         </tr>
                       </tbody>
                     </table>
@@ -10735,19 +10735,19 @@
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad visual (debilidad visual y ceguera)</th>
-                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales2['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad auditiva (baja audición y sordera)</th>
-                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales3['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad intelectual o cognitiva</th>
-                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales4['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Ninguna</th>
-                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales5['totalesDificultad']?></td>
                         </tr>
                       </tbody>
                     </table>
@@ -10781,19 +10781,19 @@
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad visual (debilidad visual y ceguera)</th>
-                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales2['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad auditiva (baja audición y sordera)</th>
-                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales3['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad intelectual o cognitiva</th>
-                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales4['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Ninguna</th>
-                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales5['totalesDificultad']?></td>
                         </tr>
                       </tbody>
                     </table>
