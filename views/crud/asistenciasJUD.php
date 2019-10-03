@@ -2544,6 +2544,42 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                           <td>Reconociendo mis habilidades para el estudio</td>
                           <td></td>
                     </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Leo, analizo, comento y uso internet</td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Habilidades operativas</td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Viajando por las estrellas</td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Las matemáticas en mi vida I</td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Mi entorno social y cultural</td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Argumento, dialogo y decido</td>
+                          <td></td>
+                    </tr>
                 <tr>
                   <th scope="row"></th>    
                       <td>Semestre 2</td>
