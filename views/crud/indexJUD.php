@@ -10660,7 +10660,7 @@
                       <tbody class="bg-secondary">
                         <tr>
                           <th scope="row">Discapacidad motriz (brazos, piernas u otra parte del cuerpo)</th>
-                          <td><?=$dificultadTotales1['userPorIntervalo']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad visual (debilidad visual y ceguera)</th>
