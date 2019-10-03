@@ -2539,22 +2539,22 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                 <tr>
                   <th scope="row"></th>    
                       <td>Semestre 2</td>
-                      <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                      <td><?=$badiModulo2['userPorModulo'] ?></td>
                 </tr>
                 <tr>
                   <th scope="row"></th>    
                       <td>Semestre 3</td>
-                      <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                      <td><?=$badiModulo3['userPorModulo'] ?></td>
                 </tr>
                 <tr>
                   <th scope="row"></th>    
                       <td>Semestre 4</td>
-                      <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                      <td><?=$badiModulo4['userPorModulo'] ?></td>
                 </tr>
                 <tr>
                   <th scope="row"></th>    
                       <td>Asignaturas Optativas</td>
-                      <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                      <td><?=$badiModulo5['userPorModulo'] ?></td>
                 </tr>
                 <!-- <tr>
                   <th scope="row">Edición y Diseño</th>
