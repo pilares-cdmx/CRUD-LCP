@@ -10636,18 +10636,18 @@
             <div class="card text-white bg-secondary o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                  <i class="fas fa-birthday-cake"></i>
+                  <i class="fas fa-blind"></i>
                   </div>
                   
                   <div class="mr-5"><b>Usuarios totales por dificultad física <span class="float-right"></span></b></div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorIntervalo">
+                <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorDificultad">
                   <span class="float-left">Ver detalle</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
                   </span>
                 </a>
-                <div class="collapse" id="collapsePorIntervalo">
+                <div class="collapse" id="collapsePorDificultad">
                   <div class="card card-body">
                     <table class="table table-striped ">
                       <tbody class="bg-secondary">
@@ -10682,18 +10682,18 @@
             <div class="card text-white bg-secondary o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                  <i class="fas fa-transgender-alt"></i>
+                  <i class="fas fa-blind"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por intervalo de edad mujeres  <span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios totales por dificultad física mujeres  <span class="float-right"></span></b></div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorIntervaloMujeres">
+                <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorDificultadMujeres">
                   <span class="float-left">Ver detalle</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
                   </span>
                 </a>
-                <div class="collapse" id="collapsePorIntervaloMujeres">
+                <div class="collapse" id="collapsePorDificultadMujeres">
                   <div class="card card-body">
                     <table class="table table-striped ">
                       <tbody class="bg-secondary">
@@ -10728,18 +10728,18 @@
             <div class="card text-white bg-secondary o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                  <i class="fas fa-transgender-alt"></i>
+                  <i class="fas fa-blind"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por intervalo de edad hombres<span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios totales por dificultad física hombres<span class="float-right"></span></b></div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorIntervaloHombres">
+                <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorDificultadHombres">
                   <span class="float-left">Ver detalle</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
                   </span>
                 </a>
-                <div class="collapse" id="collapsePorIntervaloHombres">
+                <div class="collapse" id="collapsePorDificultadHombres">
                   <div class="card card-body">
                     <table class="table table-striped ">
                       <tbody class="bg-secondary">
