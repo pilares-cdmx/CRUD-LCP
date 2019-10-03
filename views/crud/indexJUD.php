@@ -10701,7 +10701,7 @@
                         </tr>
                         <tr>
                           <th scope="row">Ninguna</th>
-                          <td><?=$dificultadTotales5['totalesDificultad']?></td>
+                          <td><?=$dificultadTotales5['totalesDificultad'] + $dificultadTotales0['totalesDificultad']?></td>
                         </tr>
                       </tbody>
                     </table>
