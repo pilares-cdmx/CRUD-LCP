@@ -708,6 +708,11 @@
     $totalesBadiModulo1 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $badiModulo1 = mysqli_fetch_array($totalesBadiModulo1);
+
+        sql="SELECT count(DISTINCT B1.idUsuario) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '10' AND A2.	ActividadesSubModulo_idSubModulo = '145'";
+        $totalesBadiSubModulo1 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badiSubModulo1 = mysqli_fetch_array($totalesBadiSubModulo1);
     
     $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '11'";
     $totalesBadiModulo2 = mysqli_query($con, $sql);
@@ -2542,43 +2547,43 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                       <th scope="row"></th> 
                           <td></td>   
                           <td>Reconociendo mis habilidades para el estudio</td>
-                          <td></td>
+                          <td><?=$badiSubModulo1['userPorSubModulo']?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th> 
                           <td></td>   
                           <td>Leo, analizo, comento y uso internet</td>
-                          <td></td>
+                          <td><?=$badiSubModulo1['userPorSubModulo']?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th> 
                           <td></td>   
                           <td>Habilidades operativas</td>
-                          <td></td>
+                          <td><?=$badiSubModulo1['userPorSubModulo']?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th> 
                           <td></td>   
                           <td>Viajando por las estrellas</td>
-                          <td></td>
+                          <td><?=$badiSubModulo1['userPorSubModulo']?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th> 
                           <td></td>   
                           <td>Las matemáticas en mi vida I</td>
-                          <td></td>
+                          <td><?=$badiSubModulo1['userPorSubModulo']?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th> 
                           <td></td>   
                           <td>Mi entorno social y cultural</td>
-                          <td></td>
+                          <td><?=$badiSubModulo1['userPorSubModulo']?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th> 
                           <td></td>   
                           <td>Argumento, dialogo y decido</td>
-                          <td></td>
+                          <td><?=$badiSubModulo1['userPorSubModulo']?></td>
                     </tr>
                 <tr>
                   <th scope="row"></th>    
