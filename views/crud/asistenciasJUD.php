@@ -2536,6 +2536,12 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                       <td>Semestre 1</td>
                       <td><?=$badiModulo1['userPorModulo'] ?></td>
                 </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Reconociendo mis habilidades para el estudio</td>
+                          <td></td>
+                    </tr>
                 <tr>
                   <th scope="row"></th>    
                       <td>Semestre 2</td>
