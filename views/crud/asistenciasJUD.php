@@ -505,7 +505,7 @@
     //var_dump($totalesCultura);
     $secundaria = mysqli_fetch_array($totalesSec);
 
-    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109'";
+    $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A2.Actividades_idActividades = '109'";
     $totalesBadi = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $badi = mysqli_fetch_array($totalesBadi);
@@ -514,6 +514,16 @@
     $totalesPrepaSep = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $prepaSep = mysqli_fetch_array($totalesPrepaSep);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112'";
+    $totalesColbach = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $colbach = mysqli_fetch_array($totalesColbach);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113'";
+    $totalesPrepaAbierta = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaAbierta = mysqli_fetch_array($totalesPrepaAbierta);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '114'";
     $totalesBunam= mysqli_query($con, $sql);
@@ -691,7 +701,68 @@
     $totalesSeguimientoMigrantes = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $seguimientomigrantes = mysqli_fetch_array($totalesSeguimientoMigrantes);
+/**
+* Usuarios con beca en Ciberescuelas Por modulo
+*/
+    $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '10'";
+    $totalesBadiModulo1 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $badiModulo1 = mysqli_fetch_array($totalesBadiModulo1);
 
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '10' AND A2.ActividadesSubModulo_idSubModulo = '145'";
+        $totalesBadiSubModulo1 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badiSubModulo1 = mysqli_fetch_array($totalesBadiSubModulo1);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '10' AND A2.ActividadesSubModulo_idSubModulo = '146'";
+        $totalesBadiSubModulo2 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badiSubModulo2 = mysqli_fetch_array($totalesBadiSubModulo2);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '10' AND A2.ActividadesSubModulo_idSubModulo = '147'";
+        $totalesBadiSubModulo3 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badiSubModulo3 = mysqli_fetch_array($totalesBadiSubModulo3);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '10' AND A2.ActividadesSubModulo_idSubModulo = '148'";
+        $totalesBadiSubModulo4 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badiSubModulo4 = mysqli_fetch_array($totalesBadiSubModulo4);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '10' AND A2.ActividadesSubModulo_idSubModulo = '149'";
+        $totalesBadiSubModulo5 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badiSubModulo5 = mysqli_fetch_array($totalesBadiSubModulo5);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '10' AND A2.ActividadesSubModulo_idSubModulo = '150'";
+        $totalesBadiSubModulo6 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badiSubModulo6 = mysqli_fetch_array($totalesBadiSubModulo6);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '10' AND A2.ActividadesSubModulo_idSubModulo = '151'";
+        $totalesBadiSubModulo7 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badiSubModulo7 = mysqli_fetch_array($totalesBadiSubModulo7);
+    
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '11'";
+    $totalesBadiModulo2 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $badiModulo2 = mysqli_fetch_array($totalesBadiModulo2);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '12'";
+    $totalesBadiModulo3 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $badiModulo3 = mysqli_fetch_array($totalesBadiModulo3);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '13'";
+    $totalesBadiModulo4 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $badiModulo4 = mysqli_fetch_array($totalesBadiModulo4);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '14'";
+    $totalesBadiModulo5 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $badiModulo5 = mysqli_fetch_array($totalesBadiModulo5);
 /**
 * Totales por actividad Deporte
 */
@@ -1409,6 +1480,16 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
     //var_dump($totalesCultura);
     $prepaSepAtenciones = mysqli_fetch_array($totalesPrepaSep);
 
+    $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112'";
+    $totalesColbach = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $colbachAtenciones = mysqli_fetch_array($totalesColbach);
+
+    $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113'";
+    $totalesPrepaAbierta = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaAbiertaAtenciones = mysqli_fetch_array($totalesPrepaAbierta);
+
     $sql="SELECT count(*) AS atencionesPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '114'";
     $totalesBunam= mysqli_query($con, $sql);
     //var_dump($totalesCultura);
@@ -1585,6 +1666,11 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
     $totalesSeguimientoMigrantes = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $seguimientomigrantesAtenciones = mysqli_fetch_array($totalesSeguimientoMigrantes);
+
+/**
+* Usuarios con beca en Ciberescuelas Por modulo
+*/
+
 
 /**
 * Totales por actividad Deporte
@@ -2314,7 +2400,15 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                 <tr>
                   <th scope="row">Prepa en línea SEP</th>
                   <td><?=$prepaSep['userPorActividad']?></td>
-                </tr>           
+                </tr> 
+                <tr>
+                  <th scope="row">COLBACH (EXACER)</th>
+                  <td><?=$colbach['userPorActividad']?></td>
+                </tr>  
+                <tr>
+                  <th scope="row">Prepa abierta SEP</th>
+                  <td><?=$prepaAbierta['userPorActividad']?></td>
+                </tr>            
                 <!-- <tr>
                   <th scope="row">UnADM</th>
                   <td><?=$unadm['userPorActividad']?></td>
@@ -2449,7 +2543,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
        </div>
        </div>
     </div> 
-    <div class="col-xl-3 col-sm-6 mb-3">
+    <div class="col-xl-6 col-sm-6 mb-3">
       <div class="card text-white bg-warning o-hidden h-100">
         <div class="card-body">
           <div class="card-body-icon">
@@ -2468,249 +2562,262 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
             <table class="table table-striped ">
               <tbody class="bg-warning">     
                 <tr>
-                  <th scope="row">Ajedrez</th>
-                  <td><?=$ajedrez['userPorActividad']?></td>
+                  <th scope="row">Bachillerato Digital (SECTEI)</th> 
+                  <td></td>
+                  <td></td>   
+                  <td></td>  
+                </tr>
+                <tr>
+                  <th scope="row"></th>    
+                      <td>Semestre 1</td>
+                      <td><?=$badiModulo1['userPorModulo'] ?></td>
+                      <td></td>  
+                </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Reconociendo mis habilidades para el estudio</td>
+                          <td><?=$badiSubModulo1['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Leo, analizo, comento y uso internet</td>
+                          <td><?=$badiSubModulo2['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Habilidades operativas</td>
+                          <td><?=$badiSubModulo3['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Viajando por las estrellas</td>
+                          <td><?=$badiSubModulo4['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Las matemáticas en mi vida I</td>
+                          <td><?=$badiSubModulo5['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Mi entorno social y cultural</td>
+                          <td><?=$badiSubModulo6['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Argumento, dialogo y decido</td>
+                          <td><?=$badiSubModulo7['userPorSubModulo']?></td>
+                    </tr>
+                <tr>
+                  <th scope="row"></th>    
+                      <td>Semestre 2</td>
+                      <td><?=$badiModulo2['userPorModulo'] ?></td>
+                      <td></td>  
+                </tr>
+                <tr>
+                  <th scope="row"></th>    
+                      <td>Semestre 3</td>
+                      <td><?=$badiModulo3['userPorModulo'] ?></td>
+                      <td></td>  
+                </tr>
+                <tr>
+                  <th scope="row"></th>    
+                      <td>Semestre 4</td>
+                      <td><?=$badiModulo4['userPorModulo'] ?></td>
+                      <td></td>  
+                </tr>
+                <tr>
+                  <th scope="row"></th>    
+                      <td>Asignaturas Optativas</td>
+                      <td><?=$badiModulo5['userPorModulo'] ?></td>
+                      <td></td>  
                 </tr>
                 <!-- <tr>
                   <th scope="row">Edición y Diseño</th>
                   <td><?=$edicionYdiseno['userPorActividad']?></td>
                 </tr> -->
                 <tr>
-                  <th scope="row">Club de Ciencias</th>
-                  <td><?=$clubCiencia['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Robótica aplicada</th>
-                  <td><?=$robo['userPorActividad']?></td>
-                </tr>
-                <!-- <tr>
-                  <th scope="row">Club de código (para niñas y niños)</th>
-                  <td><?=$clubCodigo['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Amor y sexualidad</th>
-                  <td><?=$amor['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Prevención de adicc</th>
-                  <td><?=$prevenAdic['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Habilidades para la</th>
-                  <td><?=$habilidades['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Proyecto de vida</th>
-                  <td><?=$proyecto['userPorActividad']?></td>
-                </tr> -->
-                <tr>
-                  <th scope="row">Sembrando autoestima</th>
-                  <td><?=$autoestima['userPorActividad']?></td>
-                </tr>
-                <!-- <tr>
-                  <th scope="row">Los duelos duelen ... tanatología y manejo del duelo</th>
-                  <td><?=$tanato['userPorActividad']?></td>
-                </tr> -->
-                <tr>
-                  <th scope="row">Inteligencia emocional y habilidades para la vida</th>
-                  <td><?=$inteliEmo['userPorActividad']?></td>
-                </tr>
-                <!-- <tr>
-                  <th scope="row">Recuperando mí libertad</th>
-                  <td><?=$recuperandoMiLibertad['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Comprendiendo la adolescencia</th>
-                  <td><?=$comprendiendoAdolescencia['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Comprendiendo la niñez</th>
-                  <td><?=$comprendiendoNinez['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Es un placer conocerme</th>
-                  <td><?=$conocerme['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Conversatorios</th>
-                  <td><?=$conversatorios['userPorActividad']?></td>
-                </tr> -->
-                <tr>
-                  <th scope="row">Autosanarte</th>
-                  <td><?=$autosanarme['userPorActividad']?></td>
-                </tr>
-                <!-- <tr>
-                  <th scope="row">Danzante mente</th>
-                  <td><?=$danzanteMente['userPorActividad']?></td>
-                </tr>-->
-                <tr>
-                  <th scope="row">Artística-mente</th>
-                  <td><?=$arteEmo['userPorActividad']?></td>
-                </tr> 
-                <tr>
-                  <th scope="row">Club de letras y expresión</th>
-                  <td><?=$redaccion['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Talleres de cómputo</th>
-                  <td><?=$talleresCom['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <!-- <th scope="row">Emociones lúdicas</th>
-                  <td><?=$emoMagic['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Pintando emociones</th>
-                  <td><?=$pintEmo['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Alfabetización</th>
-                  <td><?=$alfabet['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Primaria</th>
-                  <td><?=$primaria['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Secundaria</th>
-                  <td><?=$secundaria['userPorActividad']?></td>
-                </tr> -->
-                <tr>
-                  <th scope="row">BADI</th>
-                  <td><?=$badi['userPorActividad']?></td>
-                </tr>
-                <tr>
                   <th scope="row">Prepa en línea SEP</th>
-                  <td><?=$prepaSep['userPorActividad']?></td>
-                </tr>           
-                <!-- <tr>
-                  <th scope="row">UnADM</th>
-                  <td><?=$unadm['userPorActividad']?></td>
-                </tr> -->
-                <tr>
-                  <th scope="row">Licenciatura en linea</th>
-                  <td><?=$liclinea['userPorActividad']?></td>
+                  <td></td>
+                  <td></td>
                 </tr>
-                <!-- <tr>
-                  <th scope="row">Licenciaturas CDMX</th>
-                  <td><?=$licCdmx['userPorActividad']?></td>
-                </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Propedéutico</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Tecnología de la información y comunicación</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>De la información al conocimiento</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>El lenguaje en la relación del hombre con el mundo</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>De la información al conocimiento</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>El lenguaje en la relación del hombre con el mundo</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Textos y visiones del mundo</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Argumentación</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Mi mundo en otra lengua</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Mi vida en otras lenguas</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Ser social y sociedad</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Sociedad mexicana contemporáneo</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Representación simbólicas y algoritmos</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Matemáticas y representaciones del sistema natural</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Variación en procesos sociales</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Universo natural</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Hacia un desarrollo sustentable</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Evolución y sus repercusiones sociales</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Estadística en fenómenos naturales y procesos sociales</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Cálculo en fenómenos naturales y procesos sociales</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Dinámica en la naturaleza: el movimiento</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Optimización en sistemas naturales y sociales</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Impacto de la ciencia y la tecnología</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Tecnologías emergentes en la resolución de problemas</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Tecnologías emergentes para la administración y gestión</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
                 <tr>
-                  <th scope="row">Asesorias primaria</th>
-                  <td><?=$asePrimaria['userPorActividad']?></td>
+                  <th scope="row">COLBACH (EXACER)</th>
+                  <td></td>
+                  <td></td>
                 </tr>
-                <tr>
-                  <th scope="row">Asesorias secundaria</th>
-                  <td><?=$aseSecundaria['userPorActividad']?></td>
-                </tr> -->
-                <tr>
-                  <th scope="row">Asesorias bachillerato</th>
-                  <td><?=$asePrep['userPorActividad']?></td>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Asesorías. Áreas de conocimiento</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Asesorías. Capacitación para el trabajo</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                 <tr>
+                  <th scope="row">Preparatoria abierta (SEP)</th>
+                  <td></td>
+                  <td></td>
                 </tr>
-                <tr>
-                  <th scope="row">Asesorias licenciatura</th>
-                  <td><?=$aseLic['userPorActividad']?></td>
-                </tr>
-                <!-- <tr>
-                  <th scope="row">Baile, cuerpo y emociones</th>
-                  <td><?=$baileCuerpo['userPorActividad']?></td>
-                </tr> -->
-                <tr>
-                  <th scope="row">Club de Braile</th>
-                  <td><?=$braile['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Computación con tecnologías de asistencia para personas ciegas</th>
-                  <td><?=$computacionAsistida['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Club de lengua de señas mexicana</th>
-                  <td><?=$senas['userPorActividad']?></td>
-                </tr>
-                <!-- <tr>
-                  <th scope="row">Clase de estenografía</th>
-                  <td><?=$estenografia['userPorActividad']?></td>
-                </tr> -->
-                <tr>
-                  <th scope="row">Club de Inclusión y sensibilización sensorial</th>
-                  <td><?=$clubSensorial['userPorActividad']?></td>
-                </tr>
-                <!-- <tr>
-                  <th scope="row">Cultura sorda</th>
-                  <td><?=$culturaSorda['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Expresión corporal y danza inclusiva</th>
-                  <td><?=$expresionCorporal['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Charlando sobre la diversidad sexual</th>
-                  <td><?=$diversidadSexual['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Arte inclusivo</th>
-                  <td><?=$arteInclusivo['userPorActividad']?></td>
-                </tr> -->
-                <tr>
-                  <th scope="row">Cursos para el aprendizaje de la lengua náhuatl</th>
-                  <td><?=$talleresNahuatl['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Identidad y cultura de los pueblos indígenas y originarios</th>
-                  <td><?=$identidadOriginaria['userPorActividad']?></td>
-                </tr>
-                <!-- <tr>
-                  <th scope="row">Talleres de interculturalidad</th>
-                  <td><?=$talleresInterculturalidad['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Revitalización de lenguas originarias</th>
-                  <td><?=$revitalizacionLenguas['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Conocimientos y saberes de mi comunidad</th>
-                  <td><?=$saberesComunidad['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Biodiversidad y territorio</th>
-                  <td><?=$biodiversidad['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Derechos humanos</th>
-                  <td><?=$derechoshumanos['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Derechos de los pueblos indígenas</th>
-                  <td><?=$derechosIndigenas['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Feminismo comunitario</th>
-                  <td><?=$feminismoComunitario['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Alfabetización a población indígena</th>
-                  <td><?=$alfabetizacionIndigena['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Gestión, canalización y seguimiento a población indígena</th>
-                  <td><?=$seguimientoIndigena['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Migrantes y refugiados</th>
-                  <td><?=$migrantes['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Alfabetización a población migrante</th>
-                  <td><?=$alfabetizacionmigrantes['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Asesorías educativas a población migrante</th>
-                  <td><?=$asesoriasmigrantes['userPorActividad']?></td>
-                </tr>
-                <tr>
-                  <th scope="row">Gestión, canalización y seguimiento a población migrante</th>
-                  <td><?=$seguimientomigrantes['userPorActividad']?></td>
-                </tr> -->
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 1. Bases</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 2. Instrumentos</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 3. Métodos y contextos</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 4. Relacionesy cambios</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 5. Efectos y propuestas</td>
+                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr>       
               </tbody>
             </table>
          </div>
@@ -2726,7 +2833,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           <div class="card-body-icon">
             <i class="fas fa-fw fa-running"></i>
           </div>
-          <div class="mr-5"><b>Usuarios inscritos en Deporte </b></div>
+          <div class="mr-5"><b>Usuarios con beca en Deporte </b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseDeporte">
           <span class="float-left">Ver detalle</span>
@@ -2814,7 +2921,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           <div class="card-body-icon">
             <i class="fas fa-fw fa-hand-holding-usd"></i>
           </div>
-          <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica </b></div>
+          <div class="mr-5"><b>Usuarios con beca en Autonomía Económica </b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseAutonomia">
           <span class="float-left">Ver detalle</span>
@@ -3221,7 +3328,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
             <i class="fas fa-transgender-alt"></i>
             </div>
             
-            <div class="mr-5"><b>Atenciones por Genero <span class="float-right"></span></b></div>
+            <div class="mr-5"><b>Atenciones de usuarios por Genero <span class="float-right"></span></b></div>
           </div>
           <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapseAtencionesPorGenero">
             <span class="float-left">Ver detalle</span>
@@ -3350,7 +3457,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
             <i class="fas fa-fw fa-music"></i>
           </div>
           
-          <div class="mr-5"><b>Usuarios con beca en Cultura </b></div>
+          <div class="mr-5"><b>Atenciones de usuarios con beca en Cultura </b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCulturaAtenciones">
           <span class="float-left">Ver detalle</span>
@@ -3583,7 +3690,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           <div class="card-body-icon">
             <i class="fas fa-fw fa-list"></i>
           </div>
-          <div class="mr-5"><b>Usuarios inscritos en Ciberescuelas</b></div>
+          <div class="mr-5"><b>Atenciones de usuarios con beca en Ciberescuelas</b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelasAtenciones">
           <span class="float-left">Ver detalle</span>
@@ -3710,7 +3817,15 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                 <tr>
                   <th scope="row">Prepa en línea SEP</th>
                   <td><?=$prepaSepAtenciones['atencionesPorActividad']?></td>
-                </tr>           
+                </tr>   
+                <tr>
+                  <th scope="row">COLBACH (EXACER)</th>
+                  <td><?=$colbachAtenciones['atencionesPorActividad']?></td>
+                </tr>
+                <tr>
+                  <th scope="row">Preparatoria abierta (SEP)</th>
+                  <td><?=$prepaAbiertaAtenciones['atencionesPorActividad']?></td>
+                </tr>        
                 <!-- <tr>
                   <th scope="row">UnADM</th>
                   <td><?=$unadmAtenciones['atencionesPorActividad']?></td>
@@ -3854,7 +3969,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           <div class="card-body-icon">
             <i class="fas fa-fw fa-running"></i>
           </div>
-          <div class="mr-5"><b>Usuarios inscritos en Deporte </b></div>
+          <div class="mr-5"><b>Atenciones de usuarios con beca en Deporte </b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseDeporteAtenciones">
           <span class="float-left">Ver detalle</span>
@@ -3942,7 +4057,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           <div class="card-body-icon">
             <i class="fas fa-fw fa-hand-holding-usd"></i>
           </div>
-          <div class="mr-5"><b>Usuarios inscritos en Autonomía Económica </b></div>
+          <div class="mr-5"><b>Atenciones de usuarios con beca en Autonomía Económica </b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseAutonomiaAtenciones">
           <span class="float-left">Ver detalle</span>
