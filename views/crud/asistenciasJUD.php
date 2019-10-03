@@ -709,7 +709,7 @@
     //var_dump($totalesCultura);
     $badiModulo1 = mysqli_fetch_array($totalesBadiModulo1);
 
-        sql="SELECT count(DISTINCT B1.idUsuario) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '10' AND A2.	ActividadesSubModulo_idSubModulo = '145'";
+        sql="SELECT count(DISTINCT B1.idUsuario) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '10' AND A2.ActividadesSubModulo_idSubModulo = '145'";
         $totalesBadiSubModulo1 = mysqli_query($con, $sql);
         //var_dump($totalesCultura);
         $badiSubModulo1 = mysqli_fetch_array($totalesBadiSubModulo1);
