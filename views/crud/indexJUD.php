@@ -21,6 +21,31 @@
     $totalesDificultad = mysqli_query($con, $sql);
     //var_dump($totalesDificultad);
     $dificultadTotales1 = mysqli_fetch_array($totalesDificultad);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE dificultadFisica = '2'";
+    $totalesDificultad2 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultad2);
+    $dificultadTotales2 = mysqli_fetch_array($totalesDificultad2);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE dificultadFisica = '3'";
+    $totalesDificultad3 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultad3);
+    $dificultadTotales3 = mysqli_fetch_array($totalesDificultad3);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE dificultadFisica = '4'";
+    $totalesDificultad4 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultad4);
+    $dificultadTotales4 = mysqli_fetch_array($totalesDificultad4);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE dificultadFisica = '5'";
+    $totalesDificultad5 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultad5);
+    $dificultadTotales5 = mysqli_fetch_array($totalesDificultad5);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE dificultadFisica = '0'";
+    $totalesDificultad0 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultad0);
+    $dificultadTotales0 = mysqli_fetch_array($totalesDificultad0);
     /**
      * Usuarios totales inscritos 
      */
@@ -10658,25 +10683,25 @@
                   <div class="card card-body">
                     <table class="table table-striped ">
                       <tbody class="bg-secondary">
-                        <tr>
+                      <tr>
                           <th scope="row">Discapacidad motriz (brazos, piernas u otra parte del cuerpo)</th>
                           <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad visual (debilidad visual y ceguera)</th>
-                          <td><?=$totalesIntervalo2['userPorIntervalo']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad auditiva (baja audición y sordera)</th>
-                          <td><?=$totalesIntervalo3['userPorIntervalo']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad intelectual o cognitiva</th>
-                          <td><?=$totalesIntervalo4['userPorIntervalo']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Ninguna</th>
-                          <td><?=$totalesIntervalo5['userPorIntervalo']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                       </tbody>
                     </table>
@@ -10752,23 +10777,23 @@
                       <tbody class="bg-secondary">
                       <tr>
                           <th scope="row">Discapacidad motriz (brazos, piernas u otra parte del cuerpo)</th>
-                          <td><?=$totalesIntervalo1['userPorIntervalo']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad visual (debilidad visual y ceguera)</th>
-                          <td><?=$totalesIntervalo2['userPorIntervalo']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad auditiva (baja audición y sordera)</th>
-                          <td><?=$totalesIntervalo3['userPorIntervalo']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad intelectual o cognitiva</th>
-                          <td><?=$totalesIntervalo4['userPorIntervalo']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Ninguna</th>
-                          <td><?=$totalesIntervalo5['userPorIntervalo']?></td>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
                         </tr>
                       </tbody>
                     </table>
