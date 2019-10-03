@@ -15,7 +15,14 @@
     mysqli_select_db($con, "pilaresDB");
     mysqli_query($con, "SET NAMES 'utf8mb4'");
     /**
-     * Usuarios totales inscritos p
+     * Usuarios totales Por dificultad física 
+     */
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE dificultadFisica = '1'";
+    $totalesDificultad = mysqli_query($con, $sql);
+    //var_dump($totalesDificultad);
+    $dificultadTotales1 = mysqli_fetch_array($totalesDificultad);
+    /**
+     * Usuarios totales inscritos 
      */
     $sql="SELECT count(*) AS totalesInscritos FROM Usuario";
     $totalesInscritos = mysqli_query($con, $sql);
@@ -10653,7 +10660,7 @@
                       <tbody class="bg-secondary">
                         <tr>
                           <th scope="row">Discapacidad motriz (brazos, piernas u otra parte del cuerpo)</th>
-                          <td><?=$totalesIntervalo1['userPorIntervalo']?></td>
+                          <td><?=$dificultadTotales1['userPorIntervalo']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad visual (debilidad visual y ceguera)</th>
@@ -10682,7 +10689,7 @@
             <div class="card text-white bg-secondary o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                  <i class="fas fa-blind"></i>
+                  <i class="fas fa-transgender-alt"></i>
                   </div>
                   
                   <div class="mr-5"><b>Usuarios totales por dificultad física mujeres  <span class="float-right"></span></b></div>
@@ -10699,23 +10706,23 @@
                       <tbody class="bg-secondary">
                       <tr>
                           <th scope="row">Discapacidad motriz (brazos, piernas u otra parte del cuerpo)</th>
-                          <td><?=$totalesIntervalo1['userPorIntervalo']?></td>
+                          <td><?=$totalesIntervalo1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad visual (debilidad visual y ceguera)</th>
-                          <td><?=$totalesIntervalo2['userPorIntervalo']?></td>
+                          <td><?=$totalesIntervalo1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad auditiva (baja audición y sordera)</th>
-                          <td><?=$totalesIntervalo3['userPorIntervalo']?></td>
+                          <td><?=$totalesIntervalo1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad intelectual o cognitiva</th>
-                          <td><?=$totalesIntervalo4['userPorIntervalo']?></td>
+                          <td><?=$totalesIntervalo1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Ninguna</th>
-                          <td><?=$totalesIntervalo5['userPorIntervalo']?></td>
+                          <td><?=$totalesIntervalo1['totalesDificultad']?></td>
                         </tr>
                       </tbody>
                     </table>
@@ -10728,7 +10735,7 @@
             <div class="card text-white bg-secondary o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                  <i class="fas fa-blind"></i>
+                  <i class="fas fa-transgender-alt"></i>
                   </div>
                   
                   <div class="mr-5"><b>Usuarios totales por dificultad física hombres<span class="float-right"></span></b></div>
