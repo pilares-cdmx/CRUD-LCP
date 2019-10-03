@@ -46,6 +46,71 @@
     $totalesDificultad0 = mysqli_query($con, $sql);
     //var_dump($totalesDificultad0);
     $dificultadTotales0 = mysqli_fetch_array($totalesDificultad0);
+
+    /**
+     * Usuarios totales Por dificultad física mujeres
+     */
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%M%' AND dificultadFisica = '1'";
+    $totalesDificultadMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadMujeres);
+    $dificultadTotalesMujeres1 = mysqli_fetch_array($totalesDificultadMujeres);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%M%' AND  dificultadFisica = '2'";
+    $totalesDificultadMujeres2 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadMujeres2);
+    $dificultadTotalesMujeres2 = mysqli_fetch_array($totalesDificultadMujeres2);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%M%' AND  dificultadFisica = '3'";
+    $totalesDificultadMujeres3 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadMujeres3);
+    $dificultadTotalesMujeres3 = mysqli_fetch_array($totalesDificultadMujeres3);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%M%' AND  dificultadFisica = '4'";
+    $totalesDificultadMujeres4 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadMujeres4);
+    $dificultadTotalesMujeres4 = mysqli_fetch_array($totalesDificultadMujeres4);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%M%' AND  dificultadFisica = '5'";
+    $totalesDificultadMujeres5 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadMujeres5);
+    $dificultadTotalesMujeres5 = mysqli_fetch_array($totalesDificultadMujeres5);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%M%' AND  dificultadFisica = '0'";
+    $totalesDificultadMujeres0 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadMujeres0);
+    $dificultadTotalesMujeres0 = mysqli_fetch_array($totalesDificultadMujeres0);
+    /**
+     * Usuarios totales Por dificultad física mujeres
+     */
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%H%' AND dificultadFisica = '1'";
+    $totalesDificultadHombres = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadHombres);
+    $dificultadTotalesHombres1 = mysqli_fetch_array($totalesDificultadHombres);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%H%' AND  dificultadFisica = '2'";
+    $totalesDificultadHombres2 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadHombres2);
+    $dificultadTotalesHombres2 = mysqli_fetch_array($totalesDificultadHombres2);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%H%' AND  dificultadFisica = '3'";
+    $totalesDificultadHombres3 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadHombres3);
+    $dificultadTotalesHombres3 = mysqli_fetch_array($totalesDificultadHombres3);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%H%' AND  dificultadFisica = '4'";
+    $totalesDificultadHombres4 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadHombres4);
+    $dificultadTotalesHombres4 = mysqli_fetch_array($totalesDificultadHombres4);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%H%' AND  dificultadFisica = '5'";
+    $totalesDificultadHombres5 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadHombres5);
+    $dificultadTotalesHombres5 = mysqli_fetch_array($totalesDificultadHombres5);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%H%' AND  dificultadFisica = '0'";
+    $totalesDificultadHombres0 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadHombres0);
+    $dificultadTotalesHombres0 = mysqli_fetch_array($totalesDificultadHombres0);
     /**
      * Usuarios totales inscritos 
      */
@@ -10731,23 +10796,23 @@
                       <tbody class="bg-secondary">
                       <tr>
                           <th scope="row">Discapacidad motriz (brazos, piernas u otra parte del cuerpo)</th>
-                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotalesMujeres1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad visual (debilidad visual y ceguera)</th>
-                          <td><?=$dificultadTotales2['totalesDificultad']?></td>
+                          <td><?=$dificultadTotalesMujeres2['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad auditiva (baja audición y sordera)</th>
-                          <td><?=$dificultadTotales3['totalesDificultad']?></td>
+                          <td><?=$dificultadTotalesMujeres3['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad intelectual o cognitiva</th>
-                          <td><?=$dificultadTotales4['totalesDificultad']?></td>
+                          <td><?=$dificultadTotalesMujeres4['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Ninguna</th>
-                          <td><?=$dificultadTotales5['totalesDificultad']?></td>
+                          <td><?=$dificultadTotalesMujeres5['totalesDificultad'] + $dificultadTotalesMujeres0['totalesDificultad']?></td>
                         </tr>
                       </tbody>
                     </table>
@@ -10777,23 +10842,23 @@
                       <tbody class="bg-secondary">
                       <tr>
                           <th scope="row">Discapacidad motriz (brazos, piernas u otra parte del cuerpo)</th>
-                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                          <td><?=$dificultadTotalesHombres1['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad visual (debilidad visual y ceguera)</th>
-                          <td><?=$dificultadTotales2['totalesDificultad']?></td>
+                          <td><?=$dificultadTotalesHombres2['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad auditiva (baja audición y sordera)</th>
-                          <td><?=$dificultadTotales3['totalesDificultad']?></td>
+                          <td><?=$dificultadTotalesHombres3['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Discapacidad intelectual o cognitiva</th>
-                          <td><?=$dificultadTotales4['totalesDificultad']?></td>
+                          <td><?=$dificultadTotalesHombres4['totalesDificultad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Ninguna</th>
-                          <td><?=$dificultadTotales5['totalesDificultad']?></td>
+                          <td><?=$dificultadTotalesHombres5['totalesDificultad'] + $dificultadTotalesHombres0['totalesDificultad']?></td>
                         </tr>
                       </tbody>
                     </table>
