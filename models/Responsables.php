@@ -282,7 +282,8 @@ class Responsables {
     $result6 = $this->db->query($mesSeptiembre);
 
     // $dia7="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-07%'";
-    // $result7 = $this->db->query($dia7);
+    $mesOctubre="SELECT count(*) AS fecha FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U2.Pilares_idPilares = '$lcpPilarId' AND U1.fechaDeregistro like '%Oct% %2019%'";
+    $result7 = $this->db->query($mesOctubre);
 
     // $dia8="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-08%'";
     // $result8 = $this->db->query($dia8);
@@ -354,9 +355,9 @@ class Responsables {
     foreach ($result6 as $row) {
     array_push($data, $row);
     }
-    // foreach ($result7 as $row) {
-    // array_push($data, $row);
-    // }
+    foreach ($result7 as $row) {
+    array_push($data, $row);
+    }
     // foreach ($result8 as $row) {
     // array_push($data, $row);
     // }
