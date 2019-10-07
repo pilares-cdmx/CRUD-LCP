@@ -3228,18 +3228,73 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                   <th scope="row">COLBACH (EXACER)</th>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Asesorías. Áreas de conocimiento</td>
                           <td><?=$edicionYdiseno['userPorActividad'] ?></td>
                     </tr>
+                         <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Matemáticas</td>
+                              <td><?=$badi5SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Ciencias Naturales</td>
+                              <td><?=$badi5SubModulo2['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Ciencias Histórico Sociales</td>
+                              <td><?=$badi5SubModulo3['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Ciencias Naturales</td>
+                              <td><?=$badi5SubModulo4['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Lenguaje y Comunicación</td>
+                              <td><?=$badi5SubModulo5['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Metodología y Filosofía</td>
+                              <td><?=$badi5SubModulo6['userPorSubModulo']?></td>
+                        </tr>
                     <tr>
                       <th scope="row"></th>    
-                          <td>Asesorías. Capacitación para el trabajo</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
-                    </tr>
-                 <tr>
+                         <td>Asesorías. Capacitación para el trabajo</td>
+                        <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                    </tr> 
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Administración de Recursos Humanos</td>
+                              <td><?=$badi5SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Informática</td>
+                              <td><?=$badi5SubModulo2['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Contabilidad</td>
+                              <td><?=$badi5SubModulo3['userPorSubModulo']?></td>
+                        </tr>    
+                <tr>
                   <th scope="row">Preparatoria abierta (SEP)</th>
                   <td></td>
                   <td></td>
