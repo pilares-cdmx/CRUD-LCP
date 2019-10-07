@@ -863,6 +863,51 @@
     $totalesBadiModulo5 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $badiModulo5 = mysqli_fetch_array($totalesBadiModulo5);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '14' AND A2.ActividadesSubModulo_idSubModulo = '172'";
+        $totalesBadi4SubModulo1 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badi4SubModulo1 = mysqli_fetch_array($totalesBadi4SubModulo1);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '14' AND A2.ActividadesSubModulo_idSubModulo = '173'";
+        $totalesBadi4SubModulo2 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badi4SubModulo2 = mysqli_fetch_array($totalesBadi4SubModulo2);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '14' AND A2.ActividadesSubModulo_idSubModulo = '174'";
+        $totalesBadi4SubModulo3 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badi4SubModulo3 = mysqli_fetch_array($totalesBadi4SubModulo3);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '14' AND A2.ActividadesSubModulo_idSubModulo = '175'";
+        $totalesBadi4SubModulo4 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badi4SubModulo4 = mysqli_fetch_array($totalesBadi4SubModulo4);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '14' AND A2.ActividadesSubModulo_idSubModulo = '176'";
+        $totalesBadi4SubModulo5 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badi4SubModulo5 = mysqli_fetch_array($totalesBadi4SubModulo5);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '14' AND A2.ActividadesSubModulo_idSubModulo = '177'";
+        $totalesBadi4SubModulo6 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badi4SubModulo6 = mysqli_fetch_array($totalesBadi4SubModulo6);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '14' AND A2.ActividadesSubModulo_idSubModulo = '178'";
+        $totalesBadi4SubModulo7 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badi4SubModulo7 = mysqli_fetch_array($totalesBadi4SubModulo7);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '14' AND A2.ActividadesSubModulo_idSubModulo = '179'";
+        $totalesBadi4SubModulo8 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badi4SubModulo8 = mysqli_fetch_array($totalesBadi4SubModulo8);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '14' AND A2.ActividadesSubModulo_idSubModulo = '180'";
+        $totalesBadi4SubModulo9 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $badi4SubModulo9 = mysqli_fetch_array($totalesBadi4SubModulo9);
 /**
 * Totales por actividad Deporte
 */
@@ -2859,10 +2904,60 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                       <td><?=$badiModulo5['userPorModulo'] ?></td>
                       <td></td>  
                 </tr>
-                <!-- <tr>
-                  <th scope="row">Edición y Diseño</th>
-                  <td><?=$edicionYdiseno['userPorActividad']?></td>
-                </tr> -->
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>El cálculo en mi vida diaria</td>
+                          <td><?=$badi4SubModulo1['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Una mirada a la optimización económica</td>
+                          <td><?=$badi4SubModulo2['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Politicas públicas, medio ambiente y desarrollo sustentable</td>
+                          <td><?=$badi4SubModulo3['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Depredador y presa en mi entorno ¿cómo cambiar?</td>
+                          <td><?=$badi4SubModulo4['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Déjame que te cuente…</td>
+                          <td><?=$badi4SubModulo5['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Desarrollo sustentable</td>
+                          <td><?=$badi4SubModulo6['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Plantas medicinales</td>
+                          <td><?=$badi4SubModulo7['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Aprendiendo a cuidarme</td>
+                          <td><?=$badi4SubModulo8['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Construyendo mi proyecto de vida</td>
+                          <td><?=$badi4SubModulo9['userPorSubModulo']?></td>
+                    </tr>
                 <tr>
                   <th scope="row">Prepa en línea SEP</th>
                   <td></td>
