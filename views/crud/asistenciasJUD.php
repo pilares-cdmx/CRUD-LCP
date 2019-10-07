@@ -3083,144 +3083,145 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                   <th scope="row">Prepa en línea SEP</th>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Propedéutico</td>
-                          <td><?=$prepaLineaModulo1['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo1['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Tecnología de la información y comunicación</td>
-                          <td><?=$prepaLineaModulo2['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo2['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>De la información al conocimiento</td>
-                          <td><?=$prepaLineaModulo3['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo3['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>El lenguaje en la relación del hombre con el mundo</td>
-                          <td><?=$prepaLineaModulo4['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo4['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Textos y visiones del mundo</td>
-                          <td><?=$prepaLineaModulo5['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo5['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Argumentación</td>
-                          <td><?=$prepaLineaModulo6['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo6['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Mi mundo en otra lengua</td>
-                          <td><?=$prepaLineaModulo7['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo7['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Mi vida en otras lenguas</td>
-                          <td><?=$prepaLineaModulo8['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo8['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Ser social y sociedad</td>
-                          <td><?=$prepaLineaModulo9['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo9['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Sociedad mexicana contemporáneo</td>
-                          <td><?=$prepaLineaModulo10['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo10['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Representación simbólicas y algoritmos</td>
-                          <td><?=$prepaLineaModulo11['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo11['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Matemáticas y representaciones del sistema natural</td>
-                          <td><?=$prepaLineaModulo12['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo12['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Variación en procesos sociales</td>
-                          <td><?=$prepaLineaModulo13['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo13['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Universo natural</td>
-                          <td><?=$prepaLineaModulo14['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo14['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Hacia un desarrollo sustentable</td>
-                          <td><?=$prepaLineaModulo15['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo15['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Evolución y sus repercusiones sociales</td>
-                          <td><?=$prepaLineaModulo16['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo16['userPorModulo'] ?></td>
                           <td></td>
 
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Estadística en fenómenos naturales y procesos sociales</td>
-                          <td><?=$prepaLineaModulo17['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo17['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Cálculo en fenómenos naturales y procesos sociales</td>
-                          <td><?=$prepaLineaModulo18['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo18['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Dinámica en la naturaleza: el movimiento</td>
-                          <td><?=$prepaLineaModulo19['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo19['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Optimización en sistemas naturales y sociales</td>
-                          <td><?=$prepaLineaModulo20['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo20['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Impacto de la ciencia y la tecnología</td>
-                          <td><?=$prepaLineaModulo21['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo21['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Tecnologías emergentes en la resolución de problemas</td>
-                          <td><?=$prepaLineaModulo22['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo22['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Tecnologías emergentes para la administración y gestión</td>
-                          <td><?=$prepaLineaModulo23['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo23['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                 <tr>
