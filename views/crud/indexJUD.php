@@ -15,7 +15,104 @@
     mysqli_select_db($con, "pilaresDB");
     mysqli_query($con, "SET NAMES 'utf8mb4'");
     /**
-     * Usuarios totales inscritos p
+     * Usuarios totales Por dificultad física 
+     */
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE dificultadFisica = '1'";
+    $totalesDificultad = mysqli_query($con, $sql);
+    //var_dump($totalesDificultad);
+    $dificultadTotales1 = mysqli_fetch_array($totalesDificultad);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE dificultadFisica = '2'";
+    $totalesDificultad2 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultad2);
+    $dificultadTotales2 = mysqli_fetch_array($totalesDificultad2);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE dificultadFisica = '3'";
+    $totalesDificultad3 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultad3);
+    $dificultadTotales3 = mysqli_fetch_array($totalesDificultad3);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE dificultadFisica = '4'";
+    $totalesDificultad4 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultad4);
+    $dificultadTotales4 = mysqli_fetch_array($totalesDificultad4);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE dificultadFisica = '5'";
+    $totalesDificultad5 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultad5);
+    $dificultadTotales5 = mysqli_fetch_array($totalesDificultad5);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE dificultadFisica = '0'";
+    $totalesDificultad0 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultad0);
+    $dificultadTotales0 = mysqli_fetch_array($totalesDificultad0);
+
+    /**
+     * Usuarios totales Por dificultad física mujeres
+     */
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%M%' AND dificultadFisica = '1'";
+    $totalesDificultadMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadMujeres);
+    $dificultadTotalesMujeres1 = mysqli_fetch_array($totalesDificultadMujeres);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%M%' AND  dificultadFisica = '2'";
+    $totalesDificultadMujeres2 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadMujeres2);
+    $dificultadTotalesMujeres2 = mysqli_fetch_array($totalesDificultadMujeres2);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%M%' AND  dificultadFisica = '3'";
+    $totalesDificultadMujeres3 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadMujeres3);
+    $dificultadTotalesMujeres3 = mysqli_fetch_array($totalesDificultadMujeres3);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%M%' AND  dificultadFisica = '4'";
+    $totalesDificultadMujeres4 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadMujeres4);
+    $dificultadTotalesMujeres4 = mysqli_fetch_array($totalesDificultadMujeres4);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%M%' AND  dificultadFisica = '5'";
+    $totalesDificultadMujeres5 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadMujeres5);
+    $dificultadTotalesMujeres5 = mysqli_fetch_array($totalesDificultadMujeres5);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%M%' AND  dificultadFisica = '0'";
+    $totalesDificultadMujeres0 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadMujeres0);
+    $dificultadTotalesMujeres0 = mysqli_fetch_array($totalesDificultadMujeres0);
+    /**
+     * Usuarios totales Por dificultad física mujeres
+     */
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%H%' AND dificultadFisica = '1'";
+    $totalesDificultadHombres = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadHombres);
+    $dificultadTotalesHombres1 = mysqli_fetch_array($totalesDificultadHombres);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%H%' AND  dificultadFisica = '2'";
+    $totalesDificultadHombres2 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadHombres2);
+    $dificultadTotalesHombres2 = mysqli_fetch_array($totalesDificultadHombres2);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%H%' AND  dificultadFisica = '3'";
+    $totalesDificultadHombres3 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadHombres3);
+    $dificultadTotalesHombres3 = mysqli_fetch_array($totalesDificultadHombres3);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%H%' AND  dificultadFisica = '4'";
+    $totalesDificultadHombres4 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadHombres4);
+    $dificultadTotalesHombres4 = mysqli_fetch_array($totalesDificultadHombres4);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%H%' AND  dificultadFisica = '5'";
+    $totalesDificultadHombres5 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadHombres5);
+    $dificultadTotalesHombres5 = mysqli_fetch_array($totalesDificultadHombres5);
+
+    $sql="SELECT count(*) AS totalesDificultad FROM Usuario WHERE sexo LIKE '%H%' AND  dificultadFisica = '0'";
+    $totalesDificultadHombres0 = mysqli_query($con, $sql);
+    //var_dump($totalesDificultadHombres0);
+    $dificultadTotalesHombres0 = mysqli_fetch_array($totalesDificultadHombres0);
+    /**
+     * Usuarios totales inscritos 
      */
     $sql="SELECT count(*) AS totalesInscritos FROM Usuario";
     $totalesInscritos = mysqli_query($con, $sql);
@@ -75,12 +172,12 @@
     //var_dump($intervaloTotales3);
     $totalesIntervalo3 = mysqli_fetch_array($intervaloTotales3);
 
-    $sql="SELECT count(*) AS userPorIntervalo FROM Usuario  WHERE fechaNacimiento BETWEEN '1988-12-31' AND '2003-12-31'";
+    $sql="SELECT count(*) AS userPorIntervalo FROM Usuario  WHERE fechaNacimiento BETWEEN '1988-12-31' AND '2004-12-31'";
     $intervaloTotales4 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales4);
     $totalesIntervalo4 = mysqli_fetch_array($intervaloTotales4);
 
-    $sql="SELECT count(*) AS userPorIntervalo FROM Usuario  WHERE fechaNacimiento BETWEEN '2003-12-31' AND '2016-12-31'";
+    $sql="SELECT count(*) AS userPorIntervalo FROM Usuario  WHERE fechaNacimiento BETWEEN '2005-01-01' AND '2016-12-31'";
     $intervaloTotales5 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales5);
     $totalesIntervalo5 = mysqli_fetch_array($intervaloTotales5);
@@ -10630,6 +10727,146 @@
             </div>
           <?php endif; ?>
         </ol>
+        <!-- Usuarios totales por díficultad física -->
+        <div class="row">
+          <div class="col-xl-6 col-sm-6 mb-3">
+            <div class="card text-white bg-secondary o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                  <i class="fas fa-blind"></i>
+                  </div>
+                  
+                  <div class="mr-5"><b>Usuarios totales por dificultad física <span class="float-right"></span></b></div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorDificultad">
+                  <span class="float-left">Ver detalle</span>
+                  <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span>
+                </a>
+                <div class="collapse" id="collapsePorDificultad">
+                  <div class="card card-body">
+                    <table class="table table-striped ">
+                      <tbody class="bg-secondary">
+                      <tr>
+                          <th scope="row">Discapacidad motriz (brazos, piernas u otra parte del cuerpo)</th>
+                          <td><?=$dificultadTotales1['totalesDificultad']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Discapacidad visual (debilidad visual y ceguera)</th>
+                          <td><?=$dificultadTotales2['totalesDificultad']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Discapacidad auditiva (baja audición y sordera)</th>
+                          <td><?=$dificultadTotales3['totalesDificultad']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Discapacidad intelectual o cognitiva</th>
+                          <td><?=$dificultadTotales4['totalesDificultad']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Ninguna</th>
+                          <td><?=$dificultadTotales5['totalesDificultad'] + $dificultadTotales0['totalesDificultad']?></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xl-3 col-sm-6 mb-3">  
+            <div class="card text-white bg-secondary o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                  <i class="fas fa-transgender-alt"></i>
+                  </div>
+                  
+                  <div class="mr-5"><b>Usuarios totales por dificultad física mujeres  <span class="float-right"></span></b></div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorDificultadMujeres">
+                  <span class="float-left">Ver detalle</span>
+                  <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span>
+                </a>
+                <div class="collapse" id="collapsePorDificultadMujeres">
+                  <div class="card card-body">
+                    <table class="table table-striped ">
+                      <tbody class="bg-secondary">
+                      <tr>
+                          <th scope="row">Discapacidad motriz (brazos, piernas u otra parte del cuerpo)</th>
+                          <td><?=$dificultadTotalesMujeres1['totalesDificultad']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Discapacidad visual (debilidad visual y ceguera)</th>
+                          <td><?=$dificultadTotalesMujeres2['totalesDificultad']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Discapacidad auditiva (baja audición y sordera)</th>
+                          <td><?=$dificultadTotalesMujeres3['totalesDificultad']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Discapacidad intelectual o cognitiva</th>
+                          <td><?=$dificultadTotalesMujeres4['totalesDificultad']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Ninguna</th>
+                          <td><?=$dificultadTotalesMujeres5['totalesDificultad'] + $dificultadTotalesMujeres0['totalesDificultad']?></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-secondary o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                  <i class="fas fa-transgender-alt"></i>
+                  </div>
+                  
+                  <div class="mr-5"><b>Usuarios totales por dificultad física hombres<span class="float-right"></span></b></div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapsePorDificultadHombres">
+                  <span class="float-left">Ver detalle</span>
+                  <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span>
+                </a>
+                <div class="collapse" id="collapsePorDificultadHombres">
+                  <div class="card card-body">
+                    <table class="table table-striped ">
+                      <tbody class="bg-secondary">
+                      <tr>
+                          <th scope="row">Discapacidad motriz (brazos, piernas u otra parte del cuerpo)</th>
+                          <td><?=$dificultadTotalesHombres1['totalesDificultad']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Discapacidad visual (debilidad visual y ceguera)</th>
+                          <td><?=$dificultadTotalesHombres2['totalesDificultad']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Discapacidad auditiva (baja audición y sordera)</th>
+                          <td><?=$dificultadTotalesHombres3['totalesDificultad']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Discapacidad intelectual o cognitiva</th>
+                          <td><?=$dificultadTotalesHombres4['totalesDificultad']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Ninguna</th>
+                          <td><?=$dificultadTotalesHombres5['totalesDificultad'] + $dificultadTotalesHombres0['totalesDificultad']?></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
         <!-- Usuarios totales por Genero -->
         <div class="row">
           <div class="col-xl-6 col-sm-6 mb-3">
