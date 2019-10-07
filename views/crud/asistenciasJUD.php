@@ -2655,31 +2655,31 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                       <th scope="row"></th> 
                           <td></td>   
                           <td>Investigar y reportar hallazgos</td>
-                          <td><?=$badiSubModulo1['userPorSubModulo']?></td>
+                          <td><?=$badi2SubModulo1['userPorSubModulo']?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th> 
                           <td></td>   
                           <td>Herramientas de ofimática</td>
-                          <td><?=$badiSubModulo2['userPorSubModulo']?></td>
+                          <td><?=$badi2SubModulo2['userPorSubModulo']?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th> 
                           <td></td>   
                           <td>La máquina del tiempo</td>
-                          <td><?=$badiSubModulo3['userPorSubModulo']?></td>
+                          <td><?=$badi2SubModulo3['userPorSubModulo']?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th> 
                           <td></td>   
                           <td>Las matemáticas en mi vida II</td>
-                          <td><?=$badiSubModulo4['userPorSubModulo']?></td>
+                          <td><?=$badi2SubModulo4['userPorSubModulo']?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th> 
                           <td></td>   
                           <td>Desarrollando mi pensamiento lógico</td>
-                          <td><?=$badiSubModulo5['userPorSubModulo']?></td>
+                          <td><?=$badi2SubModulo5['userPorSubModulo']?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th> 
