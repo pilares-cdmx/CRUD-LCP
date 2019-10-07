@@ -1069,6 +1069,21 @@
     //var_dump($totalesCultura);
     $colbachModulo2 = mysqli_fetch_array($totalesColbachModulo2);
 
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '187'";
+        $totalesColbach2SubModulo1 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $colbach2SubModulo1 = mysqli_fetch_array($totalesColbach2SubModulo1);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '188'";
+        $totalesColbach2SubModulo2 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $colbach2SubModulo2 = mysqli_fetch_array($totalesColbach2SubModulo2);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '189'";
+        $totalesColbach2SubModulo3 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $colbach2SubModulo3 = mysqli_fetch_array($totalesColbach2SubModulo3);
+
 /**
 * FIN - Usuarios con beca en Ciberescuelas Por modulo
 */
