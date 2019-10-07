@@ -3246,7 +3246,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                     <tr>
                       <th scope="row"></th>    
                           <td>Asesorías. Áreas de conocimiento</td>
-                          <td><?=$colbachModulo1['userPorActividad'] ?></td>
+                          <td><?=$colbachModulo1['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
                          <tr>
@@ -3288,7 +3288,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                     <tr>
                       <th scope="row"></th>    
                          <td>Asesorías. Capacitación para el trabajo</td>
-                        <td><?=$colbachModulo2['userPorActividad'] ?></td>
+                        <td><?=$colbachModulo2['userPorModulo'] ?></td>
                         <td></td>
                     </tr> 
                         <tr>
