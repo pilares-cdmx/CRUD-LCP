@@ -1027,12 +1027,42 @@
     $prepaLineaModulo23 = mysqli_fetch_array($totalesPrepaLineaModulo23);
 
 /**
-* Prepa en linea Usuarios por Modulo
+* COLBACHUsuarios por Modulo
 */        
     $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '50'";
     $totalesColbachModulo1 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $colbachModulo1 = mysqli_fetch_array($totalesColbachModulo1);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '181'";
+        $totalesColbach1SubModulo1 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $colbach1SubModulo1 = mysqli_fetch_array($totalesColbach1SubModulo1);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '182'";
+        $totalesColbach1SubModulo2 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $colbach1SubModulo2 = mysqli_fetch_array($totalesColbach1SubModulo2);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '183'";
+        $totalesColbach1SubModulo3 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $colbach1SubModulo3 = mysqli_fetch_array($totalesColbach1SubModulo3);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '184'";
+        $totalesColbach1SubModulo4 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $colbach1SubModulo4 = mysqli_fetch_array($totalesColbach1SubModulo4);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '185'";
+        $totalesColbach1SubModulo5 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $colbach1SubModulo5 = mysqli_fetch_array($totalesColbach1SubModulo5);
+
+        $sql="SELECT count(DISTINCT A1.Usuario_idUsuarios) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '109' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '186'";
+        $totalesColbach1SubModulo6 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $colbach1SubModulo6 = mysqli_fetch_array($totalesColbach1SubModulo6);
 
     $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '51'";
     $totalesColbachModulo2 = mysqli_query($con, $sql);
@@ -3253,37 +3283,37 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Matemáticas</td>
-                              <td><?=$badi5SubModulo1['userPorSubModulo']?></td>
+                              <td><?=$colbach1SubModulo1['userPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Ciencias Naturales</td>
-                              <td><?=$badi5SubModulo2['userPorSubModulo']?></td>
+                              <td><?=$colbach1SubModulo2['userPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Ciencias Histórico Sociales</td>
-                              <td><?=$badi5SubModulo3['userPorSubModulo']?></td>
+                              <td><?=$colbach1SubModulo3['userPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Ciencias Naturales</td>
-                              <td><?=$badi5SubModulo4['userPorSubModulo']?></td>
+                              <td><?=$colbach1SubModulo4['userPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Lenguaje y Comunicación</td>
-                              <td><?=$badi5SubModulo5['userPorSubModulo']?></td>
+                              <td><?=$colbach1SubModulo5['userPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Metodología y Filosofía</td>
-                              <td><?=$badi5SubModulo6['userPorSubModulo']?></td>
+                              <td><?=$colbach1SubModulo6['userPorSubModulo']?></td>
                         </tr>
                     <tr>
                       <th scope="row"></th>    
@@ -3295,19 +3325,19 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Administración de Recursos Humanos</td>
-                              <td><?=$badi5SubModulo1['userPorSubModulo']?></td>
+                              <td><?=$colbach2SubModulo1['userPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Informática</td>
-                              <td><?=$badi5SubModulo2['userPorSubModulo']?></td>
+                              <td><?=$colbach2SubModulo2['userPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Contabilidad</td>
-                              <td><?=$badi5SubModulo3['userPorSubModulo']?></td>
+                              <td><?=$colbach2SubModulo3['userPorSubModulo']?></td>
                         </tr>    
                 <tr>
                   <th scope="row">Preparatoria abierta (SEP)</th>
