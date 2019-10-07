@@ -1027,6 +1027,19 @@
     $prepaLineaModulo23 = mysqli_fetch_array($totalesPrepaLineaModulo23);
 
 /**
+* Prepa en linea Usuarios por Modulo
+*/        
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '50'";
+    $totalesColbachModulo1 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $colbachModulo1 = mysqli_fetch_array($totalesColbachModulo1);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '51'";
+    $totalesColbachModulo2 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $colbachModulo2 = mysqli_fetch_array($totalesColbachModulo2);
+
+/**
 * FIN - Usuarios con beca en Ciberescuelas Por modulo
 */
 /**
@@ -3233,7 +3246,8 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                     <tr>
                       <th scope="row"></th>    
                           <td>Asesorías. Áreas de conocimiento</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$colbachModulo1['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                          <tr>
                           <th scope="row"></th> 
@@ -3274,7 +3288,8 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                     <tr>
                       <th scope="row"></th>    
                          <td>Asesorías. Capacitación para el trabajo</td>
-                        <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                        <td><?=$colbachModulo2['userPorActividad'] ?></td>
+                        <td></td>
                     </tr> 
                         <tr>
                           <th scope="row"></th> 
