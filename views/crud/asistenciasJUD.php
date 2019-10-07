@@ -909,6 +909,127 @@
         //var_dump($totalesCultura);
         $badi5SubModulo9 = mysqli_fetch_array($totalesBadi5SubModulo9);
 /**
+* Prepa en linea Usuarios por Modulo
+*/        
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '58'";
+    $totalesPrepaLineaModulo1 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo1 = mysqli_fetch_array($totalesPrepaLineaModulo1);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '15'";
+    $totalesPrepaLineaModulo2 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo2 = mysqli_fetch_array($totalesPrepaLineaModulo2);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '16'";
+    $totalesPrepaLineaModulo3 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo3 = mysqli_fetch_array($totalesPrepaLineaModulo3);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '17'";
+    $totalesPrepaLineaModulo4 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo4 = mysqli_fetch_array($totalesPrepaLineaModulo4);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '18'";
+    $totalesPrepaLineaModulo5 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo5 = mysqli_fetch_array($totalesPrepaLineaModulo5);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '19'";
+    $totalesPrepaLineaModulo6 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo6 = mysqli_fetch_array($totalesPrepaLineaModulo6);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '20'";
+    $totalesPrepaLineaModulo7 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo7 = mysqli_fetch_array($totalesPrepaLineaModulo7);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '21'";
+    $totalesPrepaLineaModulo8 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo8 = mysqli_fetch_array($totalesPrepaLineaModulo8);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '22'";
+    $totalesPrepaLineaModulo9 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo9 = mysqli_fetch_array($totalesPrepaLineaModulo9);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '23'";
+    $totalesPrepaLineaModulo10 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo10 = mysqli_fetch_array($totalesPrepaLineaModulo10);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '24'";
+    $totalesPrepaLineaModulo11 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo11 = mysqli_fetch_array($totalesPrepaLineaModulo11);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '25'";
+    $totalesPrepaLineaModulo12 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo12 = mysqli_fetch_array($totalesPrepaLineaModulo12);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '26'";
+    $totalesPrepaLineaModulo13 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo13 = mysqli_fetch_array($totalesPrepaLineaModulo13);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '27'";
+    $totalesPrepaLineaModulo14 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo14 = mysqli_fetch_array($totalesPrepaLineaModulo14);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '28'";
+    $totalesPrepaLineaModulo15 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo15 = mysqli_fetch_array($totalesPrepaLineaModulo15);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '29'";
+    $totalesPrepaLineaModulo16 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo16 = mysqli_fetch_array($totalesPrepaLineaModulo16);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '30'";
+    $totalesPrepaLineaModulo17 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo17 = mysqli_fetch_array($totalesPrepaLineaModulo17);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '31'";
+    $totalesPrepaLineaModulo18 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo18 = mysqli_fetch_array($totalesPrepaLineaModulo18);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '32'";
+    $totalesPrepaLineaModulo19 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo19 = mysqli_fetch_array($totalesPrepaLineaModulo19);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '33'";
+    $totalesPrepaLineaModulo20 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo20 = mysqli_fetch_array($totalesPrepaLineaModulo20);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '34'";
+    $totalesPrepaLineaModulo21 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo21 = mysqli_fetch_array($totalesPrepaLineaModulo21);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '35'";
+    $totalesPrepaLineaModulo22 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo22 = mysqli_fetch_array($totalesPrepaLineaModulo22);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '36'";
+    $totalesPrepaLineaModulo23 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaLineaModulo23 = mysqli_fetch_array($totalesPrepaLineaModulo23);
+
+/**
+* FIN - Usuarios con beca en Ciberescuelas Por modulo
+*/
+/**
 * Totales por actividad Deporte
 */
     $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorActividad FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '17'";
@@ -2966,127 +3087,141 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                     <tr>
                       <th scope="row"></th>    
                           <td>Propedéutico</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo1['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Tecnología de la información y comunicación</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo2['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>De la información al conocimiento</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo3['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>El lenguaje en la relación del hombre con el mundo</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
-                    </tr>
-                    <tr>
-                      <th scope="row"></th>    
-                          <td>De la información al conocimiento</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
-                    </tr>
-                    <tr>
-                      <th scope="row"></th>    
-                          <td>El lenguaje en la relación del hombre con el mundo</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo4['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Textos y visiones del mundo</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo5['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Argumentación</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo6['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Mi mundo en otra lengua</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo7['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Mi vida en otras lenguas</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo8['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Ser social y sociedad</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo9['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Sociedad mexicana contemporáneo</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo10['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Representación simbólicas y algoritmos</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo11['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Matemáticas y representaciones del sistema natural</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo12['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Variación en procesos sociales</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo13['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Universo natural</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo14['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Hacia un desarrollo sustentable</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo15['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Evolución y sus repercusiones sociales</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo16['userPorActividad'] ?></td>
+                          <td></td>
+
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Estadística en fenómenos naturales y procesos sociales</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo17['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Cálculo en fenómenos naturales y procesos sociales</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo18['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Dinámica en la naturaleza: el movimiento</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo19['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Optimización en sistemas naturales y sociales</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo20['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Impacto de la ciencia y la tecnología</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo21['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Tecnologías emergentes en la resolución de problemas</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo22['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Tecnologías emergentes para la administración y gestión</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaLineaModulo23['userPorActividad'] ?></td>
+                          <td></td>
                     </tr>
                 <tr>
                   <th scope="row">COLBACH (EXACER)</th>
