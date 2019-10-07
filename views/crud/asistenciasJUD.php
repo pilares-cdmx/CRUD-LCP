@@ -1027,7 +1027,7 @@
     $prepaLineaModulo23 = mysqli_fetch_array($totalesPrepaLineaModulo23);
 
 /**
-* COLBACHUsuarios por Modulo
+* COLBACH Usuarios por Modulo
 */        
     $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '50'";
     $totalesColbachModulo1 = mysqli_query($con, $sql);
@@ -1083,6 +1083,33 @@
         $totalesColbach2SubModulo3 = mysqli_query($con, $sql);
         //var_dump($totalesCultura);
         $colbach2SubModulo3 = mysqli_fetch_array($totalesColbach2SubModulo3);
+/**
+* Prepa Abierta Usuarios por Modulo
+*/  
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '53'";
+    $totalesPrepaAbiertaModulo1 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaAbiertaModulo1 = mysqli_fetch_array($totalesPrepaAbiertaModulo1);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '54'";
+    $totalesPrepaAbiertaModulo2 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaAbiertaModulo2 = mysqli_fetch_array($totalesPrepaAbiertaModulo2);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '55'";
+    $totalesPrepaAbiertaModulo3 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaAbiertaModulo3 = mysqli_fetch_array($totalesPrepaAbiertaModulo3);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '56'";
+    $totalesPrepaAbiertaModulo4 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaAbiertaModulo4 = mysqli_fetch_array($totalesPrepaAbiertaModulo4);
+
+    $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '57'";
+    $totalesPrepaAbiertaModulo5 = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $prepaAbiertaModulo5 = mysqli_fetch_array($totalesPrepaAbiertaModulo5);
 
 /**
 * FIN - Usuarios con beca en Ciberescuelas Por modulo
@@ -3362,27 +3389,27 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 1. Bases</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaAbiertaModulo1['userPorModulo'] ?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 2. Instrumentos</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaAbiertaModulo2['userPorModulo'] ?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 3. Métodos y contextos</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaAbiertaModulo3['userPorModulo'] ?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 4. Relacionesy cambios</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaAbiertaModulo4['userPorModulo'] ?></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 5. Efectos y propuestas</td>
-                          <td><?=$edicionYdiseno['userPorActividad'] ?></td>
+                          <td><?=$prepaAbiertaModulo5['userPorModulo'] ?></td>
                     </tr>       
               </tbody>
             </table>
