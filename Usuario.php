@@ -3501,24 +3501,16 @@ $Usuario = array('96CR010',
 // var_dump(count($Usuario));die;
 $curpBecarios;
 
-// for ($i=0; $i < count($Usuario); $i++) { 
-//     $sql="SELECT curp FROM Usuario WHERE folio = '$Usuario[$i]'";
-//     $curpCorrectoBecas = mysqli_query($con, $sql); 
-//     //   array_push($curpBecarios, $curpCorrectoBecas);
-//     var_dump($curpCorrectoBecas);die;
-    // }
+for ($i=0; $i < count($Usuario); $i++) { 
+
+    print_r($Usuario[$i]);
+    // $sql="SELECT curp FROM Usuario WHERE folio = '$Usuario[$i]'";
+    // $curpCorrectoBecas = mysqli_query($con, $sql); 
+    // //   array_push($curpBecarios, $curpCorrectoBecas);
+    // var_dump($curpCorrectoBecas);die;
+    }
     // var_dump($curpBecarios);die;
     // echo($curpBecarios);
-foreach ($Usuario as $key => $value) {
 
-    var_dump($value);die;
-    $sql="SELECT curp FROM Usuario WHERE folio = '$value'";
-    $curpCorrectoBecas = mysqli_query($con, $sql); 
-    if($curpCorrectoBecas){
-
-    }
-    array_push($curpBecarios, $curpCorrectoBecas->num_rows);
-}
-    echo($curpBecarios);
 
 ?>
