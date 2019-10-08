@@ -3512,7 +3512,7 @@ for ($i=0; $i < count($Usuario); $i++) {
     // var_dump($curpMatch);die;
     array_push($curpBeneficiarios, $curpMatch['curp']);
  }
-    var_dump($curpBeneficiarios);die;
+    echo($curpBeneficiarios);
     // echo($curpBecarios);
 
 
