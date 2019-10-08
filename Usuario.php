@@ -3499,7 +3499,7 @@ $Usuario = array('96CR010',
     '189MS09'
 );
 // var_dump(count($Usuario));die;
-$curpBeneficiarios;
+$curpBeneficiarios = array();
 // for ($i=0; $i < count($Usuario); $i++) { 
 
     // print_r($Usuario[$i]);
