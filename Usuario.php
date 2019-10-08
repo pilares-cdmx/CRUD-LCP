@@ -3510,7 +3510,7 @@ $curpBeneficiarios;
     //   array_push($curpBecarios, $curpCorrectoBecas);
     $curpMatch = mysqli_fetch_array($curpCorrectoBecas);
     // var_dump($curpMatch);die;
-    array_push($curpBeneficiarios, $curpMatch->curp);
+    array_push($curpBeneficiarios, $curpMatch['curp']);
     // }
     var_dump($curpBeneficiarios);die;
     // echo($curpBecarios);
