@@ -3512,7 +3512,8 @@ $curpBecarios;
 foreach ($Usuario as $key => $value) {
     $sql="SELECT curp FROM Usuario WHERE folio = '$value'";
     $curpCorrectoBecas = mysqli_query($con, $sql); 
-    var_dump($curpCorrectoBecas);die;
+    // var_dump($curpCorrectoBecas);die;
+    print_r($curpCorrectoBecas);
 }
 
 
