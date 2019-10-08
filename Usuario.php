@@ -3498,7 +3498,7 @@ $Usuario = array('96CR010',
     '2111NL07',
     '189MS09'
 );
-
+var_dump($Usuario);
 $curpBecarios;
 
 for ($i=0; $i < count($Usuario); $i++) { 
