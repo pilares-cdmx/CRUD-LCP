@@ -3503,7 +3503,7 @@ $curpBecarios;
 
 for ($i=0; $i < count($Usuario); $i++) { 
 
-    print_r($Usuario[$i]);
+    print_r($Usuario[3480]);
     // $sql="SELECT curp FROM Usuario WHERE folio = '$Usuario[$i]'";
     // $curpCorrectoBecas = mysqli_query($con, $sql); 
     // //   array_push($curpBecarios, $curpCorrectoBecas);
