@@ -3390,26 +3390,31 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                       <th scope="row"></th>    
                           <td>Nivel 1. Bases</td>
                           <td><?=$prepaAbiertaModulo1['userPorModulo'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 2. Instrumentos</td>
                           <td><?=$prepaAbiertaModulo2['userPorModulo'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 3. Métodos y contextos</td>
                           <td><?=$prepaAbiertaModulo3['userPorModulo'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 4. Relacionesy cambios</td>
                           <td><?=$prepaAbiertaModulo4['userPorModulo'] ?></td>
+                          <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 5. Efectos y propuestas</td>
                           <td><?=$prepaAbiertaModulo5['userPorModulo'] ?></td>
+                          <td></td>
                     </tr>       
               </tbody>
             </table>
