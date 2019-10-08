@@ -1,4 +1,7 @@
 <?php
+ ini_set('display_startup_errors', 1);
+ ini_set('display_errors', 1);
+ error_reporting(-1);
       $con = mysqli_connect('localhost', 'francisco', 'tu_contrasena', 'pilaresDB');
     // $con = mysqli_connect('localhost', 'root', '', 'pilaresDB');
         if (!$con) {
