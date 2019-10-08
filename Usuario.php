@@ -3510,10 +3510,13 @@ $curpBecarios;
     // var_dump($curpBecarios);die;
     // echo($curpBecarios);
 foreach ($Usuario as $key => $value) {
+
+    var_dump($value);die;
     $sql="SELECT curp FROM Usuario WHERE folio = '$value'";
     $curpCorrectoBecas = mysqli_query($con, $sql); 
-    // var_dump($curpCorrectoBecas);die;
-    // print_r($curpCorrectoBecas);
+    if($curpCorrectoBecas){
+
+    }
     array_push($curpBecarios, $curpCorrectoBecas->num_rows);
 }
     echo($curpBecarios);
