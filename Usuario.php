@@ -3500,6 +3500,7 @@ $Usuario = array('96CR010',
 );
 // var_dump(count($Usuario));die;
 $curpBeneficiarios = array();
+
 for ($i=0; $i < count($Usuario); $i++) { 
 
     // print_r($Usuario[$i]);
@@ -3512,7 +3513,12 @@ for ($i=0; $i < count($Usuario); $i++) {
     // var_dump($curpMatch);die;
     array_push($curpBeneficiarios, $curpMatch['curp']);
  }
-    echo($curpBeneficiarios);
+
+ for ($i=0; $i < count($Usuario); $i++) { 
+    print_r($curpBeneficiarios[$i]);
+    echo('<br>');
+  }
+    // echo($curpBeneficiarios);
     // echo($curpBecarios);
 
 
