@@ -1432,119 +1432,119 @@ $badiAtencionesModulo5 = mysqli_fetch_array($totalesBadiAtencionesModulo5);
 * Atenciones Prepa en linea Usuarios por Modulo
 */        
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '58'";
-$totalesPrepaLineaModulo1 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo1 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo1 = mysqli_fetch_array($totalesPrepaLineaModulo1);
+$prepaLineaAtencionesModulo1 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo1);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '15'";
-$totalesPrepaLineaModulo2 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo2 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo2 = mysqli_fetch_array($totalesPrepaLineaModulo2);
+$prepaLineaAtencionesModulo2 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo2);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '16'";
-$totalesPrepaLineaModulo3 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo3 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo3 = mysqli_fetch_array($totalesPrepaLineaModulo3);
+$prepaLineaAtencionesModulo3 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo3);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '17'";
-$totalesPrepaLineaModulo4 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo4 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo4 = mysqli_fetch_array($totalesPrepaLineaModulo4);
+$prepaLineaAtencionesModulo4 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo4);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '18'";
-$totalesPrepaLineaModulo5 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo5 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo5 = mysqli_fetch_array($totalesPrepaLineaModulo5);
+$prepaLineaAtencionesModulo5 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo5);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '19'";
-$totalesPrepaLineaModulo6 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo6 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo6 = mysqli_fetch_array($totalesPrepaLineaModulo6);
+$prepaLineaAtencionesModulo6 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo6);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '20'";
-$totalesPrepaLineaModulo7 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo7 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo7 = mysqli_fetch_array($totalesPrepaLineaModulo7);
+$prepaLineaAtencionesModulo7 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo7);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '21'";
-$totalesPrepaLineaModulo8 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo8 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo8 = mysqli_fetch_array($totalesPrepaLineaModulo8);
+$prepaLineaAtencionesModulo8 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo8);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '22'";
-$totalesPrepaLineaModulo9 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo9 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo9 = mysqli_fetch_array($totalesPrepaLineaModulo9);
+$prepaLineaAtencionesModulo9 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo9);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '23'";
-$totalesPrepaLineaModulo10 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo10 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo10 = mysqli_fetch_array($totalesPrepaLineaModulo10);
+$prepaLineaAtencionesModulo10 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo10);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '24'";
-$totalesPrepaLineaModulo11 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo11 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo11 = mysqli_fetch_array($totalesPrepaLineaModulo11);
+$prepaLineaAtencionesModulo11 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo11);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '25'";
-$totalesPrepaLineaModulo12 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo12 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo12 = mysqli_fetch_array($totalesPrepaLineaModulo12);
+$prepaLineaAtencionesModulo12 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo12);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '26'";
-$totalesPrepaLineaModulo13 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo13 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo13 = mysqli_fetch_array($totalesPrepaLineaModulo13);
+$prepaLineaAtencionesModulo13 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo13);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '27'";
-$totalesPrepaLineaModulo14 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo14 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo14 = mysqli_fetch_array($totalesPrepaLineaModulo14);
+$prepaLineaAtencionesModulo14 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo14);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '28'";
-$totalesPrepaLineaModulo15 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo15 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo15 = mysqli_fetch_array($totalesPrepaLineaModulo15);
+$prepaLineaAtencionesModulo15 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo15);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '29'";
-$totalesPrepaLineaModulo16 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo16 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo16 = mysqli_fetch_array($totalesPrepaLineaModulo16);
+$prepaLineaAtencionesModulo16 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo16);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '30'";
-$totalesPrepaLineaModulo17 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo17 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo17 = mysqli_fetch_array($totalesPrepaLineaModulo17);
+$prepaLineaAtencionesModulo17 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo17);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '31'";
-$totalesPrepaLineaModulo18 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo18 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo18 = mysqli_fetch_array($totalesPrepaLineaModulo18);
+$prepaLineaAtencionesModulo18 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo18);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '32'";
-$totalesPrepaLineaModulo19 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo19 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo19 = mysqli_fetch_array($totalesPrepaLineaModulo19);
+$prepaLineaAtencionesModulo19 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo19);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '33'";
-$totalesPrepaLineaModulo20 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo20 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo20 = mysqli_fetch_array($totalesPrepaLineaModulo20);
+$prepaLineaAtencionesModulo20 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo20);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '34'";
-$totalesPrepaLineaModulo21 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo21 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo21 = mysqli_fetch_array($totalesPrepaLineaModulo21);
+$prepaLineaAtencionesModulo21 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo21);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '35'";
-$totalesPrepaLineaModulo22 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo22 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo22 = mysqli_fetch_array($totalesPrepaLineaModulo22);
+$prepaLineaAtencionesModulo22 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo22);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '110' AND A2.ActividadesModulo_idModulo = '36'";
-$totalesPrepaLineaModulo23 = mysqli_query($con, $sql);
+$totalesPrepaLineaAtencionesModulo23 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaLineaModulo23 = mysqli_fetch_array($totalesPrepaLineaModulo23);
+$prepaLineaAtencionesModulo23 = mysqli_fetch_array($totalesPrepaLineaAtencionesModulo23);
 
 /**
 * Atenciones COLBACH Usuarios por Modulo
@@ -5591,140 +5591,140 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                     <tr>
                       <th scope="row"></th>    
                           <td>Propedéutico</td>
-                          <td><?=$prepaLineaModulo1['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo1['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Tecnología de la información y comunicación</td>
-                          <td><?=$prepaLineaModulo2['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo2['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>De la información al conocimiento</td>
-                          <td><?=$prepaLineaModulo3['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo3['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>El lenguaje en la relación del hombre con el mundo</td>
-                          <td><?=$prepaLineaModulo4['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo4['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Textos y visiones del mundo</td>
-                          <td><?=$prepaLineaModulo5['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo5['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Argumentación</td>
-                          <td><?=$prepaLineaModulo6['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo6['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Mi mundo en otra lengua</td>
-                          <td><?=$prepaLineaModulo7['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo7['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Mi vida en otras lenguas</td>
-                          <td><?=$prepaLineaModulo8['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo8['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Ser social y sociedad</td>
-                          <td><?=$prepaLineaModulo9['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo9['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Sociedad mexicana contemporáneo</td>
-                          <td><?=$prepaLineaModulo10['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo10['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Representación simbólicas y algoritmos</td>
-                          <td><?=$prepaLineaModulo11['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo11['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Matemáticas y representaciones del sistema natural</td>
-                          <td><?=$prepaLineaModulo12['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo12['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Variación en procesos sociales</td>
-                          <td><?=$prepaLineaModulo13['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo13['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Universo natural</td>
-                          <td><?=$prepaLineaModulo14['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo14['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Hacia un desarrollo sustentable</td>
-                          <td><?=$prepaLineaModulo15['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo15['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Evolución y sus repercusiones sociales</td>
-                          <td><?=$prepaLineaModulo16['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo16['atencionesPorActividadModulo'] ?></td>
                           <td></td>
 
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Estadística en fenómenos naturales y procesos sociales</td>
-                          <td><?=$prepaLineaModulo17['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo17['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Cálculo en fenómenos naturales y procesos sociales</td>
-                          <td><?=$prepaLineaModulo18['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo18['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Dinámica en la naturaleza: el movimiento</td>
-                          <td><?=$prepaLineaModulo19['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo19['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Optimización en sistemas naturales y sociales</td>
-                          <td><?=$prepaLineaModulo20['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo20['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Impacto de la ciencia y la tecnología</td>
-                          <td><?=$prepaLineaModulo21['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo21['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Tecnologías emergentes en la resolución de problemas</td>
-                          <td><?=$prepaLineaModulo22['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo22['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Tecnologías emergentes para la administración y gestión</td>
-                          <td><?=$prepaLineaModulo23['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaLineaAtencionesModulo23['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                 <tr>
@@ -5736,68 +5736,68 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                     <tr>
                       <th scope="row"></th>    
                           <td>Asesorías. Áreas de conocimiento</td>
-                          <td><?=$colbachModulo1['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$colbachAtencionesModulo1['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                          <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Matemáticas</td>
-                              <td><?=$colbach1SubModulo1['atencionesPorSubModulo']?></td>
+                              <td><?=$colbachAtenciones1SubModulo1['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Ciencias Naturales</td>
-                              <td><?=$colbach1SubModulo2['atencionesPorSubModulo']?></td>
+                              <td><?=$colbachAtenciones1SubModulo2['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Ciencias Histórico Sociales</td>
-                              <td><?=$colbach1SubModulo3['atencionesPorSubModulo']?></td>
+                              <td><?=$colbachAtenciones1SubModulo3['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Ciencias Naturales</td>
-                              <td><?=$colbach1SubModulo4['atencionesPorSubModulo']?></td>
+                              <td><?=$colbachAtenciones1SubModulo4['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Lenguaje y Comunicación</td>
-                              <td><?=$colbach1SubModulo5['atencionesPorSubModulo']?></td>
+                              <td><?=$colbachAtenciones1SubModulo5['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Metodología y Filosofía</td>
-                              <td><?=$colbach1SubModulo6['atencionesPorSubModulo']?></td>
+                              <td><?=$colbachAtenciones1SubModulo6['atencionesPorSubModulo']?></td>
                         </tr>
                     <tr>
                       <th scope="row"></th>    
                          <td>Asesorías. Capacitación para el trabajo</td>
-                        <td><?=$colbachModulo2['atencionesPorActividadModulo'] ?></td>
+                        <td><?=$colbachAtencionesModulo2['atencionesPorActividadModulo'] ?></td>
                         <td></td>
                     </tr> 
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Administración de Recursos Humanos</td>
-                              <td><?=$colbach2SubModulo1['atencionesPorSubModulo']?></td>
+                              <td><?=$colbachAtenciones2SubModulo1['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Informática</td>
-                              <td><?=$colbach2SubModulo2['atencionesPorSubModulo']?></td>
+                              <td><?=$colbachAtenciones2SubModulo2['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Contabilidad</td>
-                              <td><?=$colbach2SubModulo3['atencionesPorSubModulo']?></td>
+                              <td><?=$colbachAtenciones2SubModulo3['atencionesPorSubModulo']?></td>
                         </tr>    
                 <tr>
                   <th scope="row">Preparatoria abierta (SEP)</th>
@@ -5808,158 +5808,158 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 1. Bases</td>
-                          <td><?=$prepaAbiertaModulo1['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaAbiertaAtencionesModulo1['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>De la información al conocimiento</td>
-                              <td><?=$prepaAbierta1SubModulo1['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones1SubModulo1['atencionesPorSubModulo']?></td>
                         </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 2. Instrumentos</td>
-                          <td><?=$prepaAbiertaModulo2['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaAbiertaAtencionesModulo2['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>El lenguaje en la relación del hombre con el mundo</td>
-                              <td><?=$prepaAbierta2SubModulo1['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones2SubModulo1['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Representaciones simbólicas y algoritmos</td>
-                              <td><?=$prepaAbierta2SubModulo2['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones2SubModulo2['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Ser social y sociedad</td>
-                              <td><?=$prepaAbierta2SubModulo3['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones2SubModulo3['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Mi mundo en otra lengua</td>
-                              <td><?=$prepaAbierta2SubModulo4['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones2SubModulo4['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Tecnología de información y comunicación</td>
-                              <td><?=$prepaAbierta2SubModulo5['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones2SubModulo5['atencionesPorSubModulo']?></td>
                         </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 3. Métodos y contextos</td>
-                          <td><?=$prepaAbiertaModulo3['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaAbiertaAtencionesModulo3['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                        <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Textos y visiones del mundo</td>
-                              <td><?=$prepaAbierta3SubModulo1['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones3SubModulo1['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Matemáticas y representaciones del sistema natural</td>
-                              <td><?=$prepaAbierta3SubModulo2['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones3SubModulo2['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Universo natural</td>
-                              <td><?=$prepaAbierta3SubModulo3['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones3SubModulo3['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Sociedad mexicana contemporánea</td>
-                              <td><?=$prepaAbierta3SubModulo4['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones3SubModulo4['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Transformaciones en el mundo contemporáneo</td>
-                              <td><?=$prepaAbierta3SubModulo5['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones3SubModulo5['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Mi vida en otra lengua</td>
-                              <td><?=$prepaAbierta3SubModulo6['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones3SubModulo6['atencionesPorSubModulo']?></td>
                         </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 4. Relacionesy cambios</td>
-                          <td><?=$prepaAbiertaModulo4['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaAbiertaAtencionesModulo4['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>
                        <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Argumentación</td>
-                              <td><?=$prepaAbierta4SubModulo1['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones4SubModulo1['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Variación en procesos sociales</td>
-                              <td><?=$prepaAbierta4SubModulo2['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones4SubModulo2['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Cálculo en fenómenos naturales y procesos sociales</td>
-                              <td><?=$prepaAbierta4SubModulo3['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones4SubModulo3['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Hacia un desarrollo sustentable</td>
-                              <td><?=$prepaAbierta4SubModulo4['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones4SubModulo4['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Evolución y sus repercusiones sociales</td>
-                              <td><?=$prepaAbierta4SubModulo5['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones4SubModulo5['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Estadística en fenómenos naturales y procesos sociales</td>
-                              <td><?=$prepaAbierta4SubModulo6['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones4SubModulo6['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Dinámica en la naturaleza: El movimiento</td>
-                              <td><?=$prepaAbierta4SubModulo7['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones4SubModulo7['atencionesPorSubModulo']?></td>
                         </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 5. Efectos y propuestas</td>
-                          <td><?=$prepaAbiertaModulo5['atencionesPorActividadModulo'] ?></td>
+                          <td><?=$prepaAbiertaAtencionesModulo5['atencionesPorActividadModulo'] ?></td>
                           <td></td>
                     </tr>       
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Optimización en sistemas naturales y sociales</td>
-                              <td><?=$prepaAbierta5SubModulo1['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones5SubModulo1['atencionesPorSubModulo']?></td>
                         </tr>
                         <tr>
                           <th scope="row"></th> 
                               <td></td>   
                               <td>Impacto de la ciencia y la tecnología</td>
-                              <td><?=$prepaAbierta5SubModulo2['atencionesPorSubModulo']?></td>
+                              <td><?=$prepaAbiertaAtenciones5SubModulo2['atencionesPorSubModulo']?></td>
                         </tr>
               </tbody>
             </table>
