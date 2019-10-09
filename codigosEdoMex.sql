@@ -1,5 +1,5 @@
 INSERT INTO `pilaresDB`.`CodigosPostales` VALUES 
-(NULL, '50000'),
+(NULL, 50000),
 (NULL, 50010),
 (NULL, 50010),
 (NULL, 50010),
