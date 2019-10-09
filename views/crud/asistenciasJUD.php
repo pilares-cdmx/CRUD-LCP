@@ -4791,6 +4791,663 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
        </div>
        </div>
     </div> 
+    
+    <div class="col-xl-6 col-sm-6 mb-3">
+      <div class="card text-white bg-warning o-hidden h-100">
+        <div class="card-body">
+          <div class="card-body-icon">
+            <i class="fas fa-fw fa-list"></i>
+          </div>
+          <div class="mr-5"><b>Usuarios con beca en Ciberescuelas por modulo</b></div>
+        </div>
+        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelasModulo">
+          <span class="float-left">Ver detalle</span>
+          <span class="float-right">
+            <i class="fas fa-angle-right"></i>
+          </span>
+        </a>
+        <div class="collapse" id="collapseCiberescuelasModulo">
+          <div class="card card-body">
+            <table class="table table-striped ">
+              <tbody class="bg-warning">     
+                <tr>
+                  <th scope="row">Bachillerato Digital (SECTEI)</th> 
+                  <td></td>
+                  <td></td>   
+                  <td></td>  
+                </tr>
+                <tr>
+                  <th scope="row"></th>    
+                      <td>Semestre 1</td>
+                      <td><?=$badiModulo1['userPorModulo'] ?></td>
+                      <td></td>  
+                </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Reconociendo mis habilidades para el estudio</td>
+                          <td><?=$badiSubModulo1['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Leo, analizo, comento y uso internet</td>
+                          <td><?=$badiSubModulo2['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Habilidades operativas</td>
+                          <td><?=$badiSubModulo3['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Viajando por las estrellas</td>
+                          <td><?=$badiSubModulo4['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Las matemáticas en mi vida I</td>
+                          <td><?=$badiSubModulo5['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Mi entorno social y cultural</td>
+                          <td><?=$badiSubModulo6['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Argumento, dialogo y decido</td>
+                          <td><?=$badiSubModulo7['userPorSubModulo']?></td>
+                    </tr>
+                <tr>
+                  <th scope="row"></th>    
+                      <td>Semestre 2</td>
+                      <td><?=$badiModulo2['userPorModulo'] ?></td>
+                      <td></td>  
+                </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Investigar y reportar hallazgos</td>
+                          <td><?=$badi2SubModulo1['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Herramientas de ofimática</td>
+                          <td><?=$badi2SubModulo2['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>La máquina del tiempo</td>
+                          <td><?=$badi2SubModulo3['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Las matemáticas en mi vida II</td>
+                          <td><?=$badi2SubModulo4['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Desarrollando mi pensamiento lógico</td>
+                          <td><?=$badi2SubModulo5['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Las ideas y las prácticas democráticas</td>
+                          <td><?=$badi2SubModulo6['userPorSubModulo']?></td>
+                    </tr>
+                <tr>
+                  <th scope="row"></th>    
+                      <td>Semestre 3</td>
+                      <td><?=$badiModulo3['userPorModulo'] ?></td>
+                      <td></td>  
+                </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>El arte: diario oculto del mundo</td>
+                          <td><?=$badi3SubModulo1['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Calidad en el servicio</td>
+                          <td><?=$badi3SubModulo2['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Formando cónicas</td>
+                          <td><?=$badi3SubModulo3['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Entendiendo al mundo I</td>
+                          <td><?=$badi3SubModulo4['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Ética ciudadana</td>
+                          <td><?=$badi3SubModulo5['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>México: acontecer y cotidianidad</td>
+                          <td><?=$badi3SubModulo6['userPorSubModulo']?></td>
+                    </tr>
+                <tr>
+                  <th scope="row"></th>    
+                      <td>Semestre 4</td>
+                      <td><?=$badiModulo4['userPorModulo'] ?></td>
+                      <td></td>  
+                </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Cuidando mi casa</td>
+                          <td><?=$badi4SubModulo1['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Ser un ciudadano del mundo</td>
+                          <td><?=$badi4SubModulo2['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Administración de negocios, PyMES</td>
+                          <td><?=$badi4SubModulo3['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Entendiendo al mundo II</td>
+                          <td><?=$badi4SubModulo4['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Amantes del conocimiento</td>
+                          <td><?=$badi4SubModulo5['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Estadística y probabilidad</td>
+                          <td><?=$badi4SubModulo6['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Optativa I</td>
+                          <td><?=$badi4SubModulo7['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Optativa II</td>
+                          <td><?=$badi4SubModulo8['userPorSubModulo']?></td>
+                    </tr>
+                <tr>
+                  <th scope="row"></th>    
+                      <td>Asignaturas Optativas</td>
+                      <td><?=$badiModulo5['userPorModulo'] ?></td>
+                      <td></td>  
+                </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>El cálculo en mi vida diaria</td>
+                          <td><?=$badi5SubModulo1['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Una mirada a la optimización económica</td>
+                          <td><?=$badi5SubModulo2['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Politicas públicas, medio ambiente y desarrollo sustentable</td>
+                          <td><?=$badi5SubModulo3['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Depredador y presa en mi entorno ¿cómo cambiar?</td>
+                          <td><?=$badi5SubModulo4['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Déjame que te cuente…</td>
+                          <td><?=$badi5SubModulo5['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Desarrollo sustentable</td>
+                          <td><?=$badi5SubModulo6['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Plantas medicinales</td>
+                          <td><?=$badi5SubModulo7['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Aprendiendo a cuidarme</td>
+                          <td><?=$badi5SubModulo8['userPorSubModulo']?></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th> 
+                          <td></td>   
+                          <td>Construyendo mi proyecto de vida</td>
+                          <td><?=$badi5SubModulo9['userPorSubModulo']?></td>
+                    </tr>
+                <tr>
+                  <th scope="row">Prepa en línea SEP</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Propedéutico</td>
+                          <td><?=$prepaLineaModulo1['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Tecnología de la información y comunicación</td>
+                          <td><?=$prepaLineaModulo2['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>De la información al conocimiento</td>
+                          <td><?=$prepaLineaModulo3['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>El lenguaje en la relación del hombre con el mundo</td>
+                          <td><?=$prepaLineaModulo4['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Textos y visiones del mundo</td>
+                          <td><?=$prepaLineaModulo5['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Argumentación</td>
+                          <td><?=$prepaLineaModulo6['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Mi mundo en otra lengua</td>
+                          <td><?=$prepaLineaModulo7['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Mi vida en otras lenguas</td>
+                          <td><?=$prepaLineaModulo8['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Ser social y sociedad</td>
+                          <td><?=$prepaLineaModulo9['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Sociedad mexicana contemporáneo</td>
+                          <td><?=$prepaLineaModulo10['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Representación simbólicas y algoritmos</td>
+                          <td><?=$prepaLineaModulo11['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Matemáticas y representaciones del sistema natural</td>
+                          <td><?=$prepaLineaModulo12['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Variación en procesos sociales</td>
+                          <td><?=$prepaLineaModulo13['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Universo natural</td>
+                          <td><?=$prepaLineaModulo14['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Hacia un desarrollo sustentable</td>
+                          <td><?=$prepaLineaModulo15['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Evolución y sus repercusiones sociales</td>
+                          <td><?=$prepaLineaModulo16['userPorModulo'] ?></td>
+                          <td></td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Estadística en fenómenos naturales y procesos sociales</td>
+                          <td><?=$prepaLineaModulo17['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Cálculo en fenómenos naturales y procesos sociales</td>
+                          <td><?=$prepaLineaModulo18['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Dinámica en la naturaleza: el movimiento</td>
+                          <td><?=$prepaLineaModulo19['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Optimización en sistemas naturales y sociales</td>
+                          <td><?=$prepaLineaModulo20['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Impacto de la ciencia y la tecnología</td>
+                          <td><?=$prepaLineaModulo21['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Tecnologías emergentes en la resolución de problemas</td>
+                          <td><?=$prepaLineaModulo22['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Tecnologías emergentes para la administración y gestión</td>
+                          <td><?=$prepaLineaModulo23['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                <tr>
+                  <th scope="row">COLBACH (EXACER)</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Asesorías. Áreas de conocimiento</td>
+                          <td><?=$colbachModulo1['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                         <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Matemáticas</td>
+                              <td><?=$colbach1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Ciencias Naturales</td>
+                              <td><?=$colbach1SubModulo2['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Ciencias Histórico Sociales</td>
+                              <td><?=$colbach1SubModulo3['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Ciencias Naturales</td>
+                              <td><?=$colbach1SubModulo4['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Lenguaje y Comunicación</td>
+                              <td><?=$colbach1SubModulo5['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Metodología y Filosofía</td>
+                              <td><?=$colbach1SubModulo6['userPorSubModulo']?></td>
+                        </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                         <td>Asesorías. Capacitación para el trabajo</td>
+                        <td><?=$colbachModulo2['userPorModulo'] ?></td>
+                        <td></td>
+                    </tr> 
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Administración de Recursos Humanos</td>
+                              <td><?=$colbach2SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Informática</td>
+                              <td><?=$colbach2SubModulo2['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Contabilidad</td>
+                              <td><?=$colbach2SubModulo3['userPorSubModulo']?></td>
+                        </tr>    
+                <tr>
+                  <th scope="row">Preparatoria abierta (SEP)</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 1. Bases</td>
+                          <td><?=$prepaAbiertaModulo1['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>De la información al conocimiento</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 2. Instrumentos</td>
+                          <td><?=$prepaAbiertaModulo2['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>El lenguaje en la relación del hombre con el mundo</td>
+                              <td><?=$prepaAbierta2SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Representaciones simbólicas y algoritmos</td>
+                              <td><?=$prepaAbierta2SubModulo2['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Ser social y sociedad</td>
+                              <td><?=$prepaAbierta2SubModulo3['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Mi mundo en otra lengua</td>
+                              <td><?=$prepaAbierta2SubModulo4['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Tecnología de información y comunicación</td>
+                              <td><?=$prepaAbierta2SubModulo5['userPorSubModulo']?></td>
+                        </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 3. Métodos y contextos</td>
+                          <td><?=$prepaAbiertaModulo3['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                       <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Textos y visiones del mundo</td>
+                              <td><?=$prepaAbierta3SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Matemáticas y representaciones del sistema natural</td>
+                              <td><?=$prepaAbierta3SubModulo2['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Universo natural</td>
+                              <td><?=$prepaAbierta3SubModulo3['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Sociedad mexicana contemporánea</td>
+                              <td><?=$prepaAbierta3SubModulo4['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Transformaciones en el mundo contemporáneo</td>
+                              <td><?=$prepaAbierta3SubModulo5['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Mi vida en otra lengua</td>
+                              <td><?=$prepaAbierta3SubModulo6['userPorSubModulo']?></td>
+                        </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 4. Relacionesy cambios</td>
+                          <td><?=$prepaAbiertaModulo4['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>
+                       <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Argumentación</td>
+                              <td><?=$prepaAbierta4SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Variación en procesos sociales</td>
+                              <td><?=$prepaAbierta4SubModulo2['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Cálculo en fenómenos naturales y procesos sociales</td>
+                              <td><?=$prepaAbierta4SubModulo3['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Hacia un desarrollo sustentable</td>
+                              <td><?=$prepaAbierta4SubModulo4['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Evolución y sus repercusiones sociales</td>
+                              <td><?=$prepaAbierta4SubModulo5['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Estadística en fenómenos naturales y procesos sociales</td>
+                              <td><?=$prepaAbierta4SubModulo6['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Dinámica en la naturaleza: El movimiento</td>
+                              <td><?=$prepaAbierta4SubModulo7['userPorSubModulo']?></td>
+                        </tr>
+                    <tr>
+                      <th scope="row"></th>    
+                          <td>Nivel 5. Efectos y propuestas</td>
+                          <td><?=$prepaAbiertaModulo5['userPorModulo'] ?></td>
+                          <td></td>
+                    </tr>       
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Optimización en sistemas naturales y sociales</td>
+                              <td><?=$prepaAbierta5SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Impacto de la ciencia y la tecnología</td>
+                              <td><?=$prepaAbierta5SubModulo2['userPorSubModulo']?></td>
+                        </tr>
+              </tbody>
+            </table>
+         </div>
+       </div>
+       </div>
+    </div>
+    
   </div>
 
   <div class="row">
