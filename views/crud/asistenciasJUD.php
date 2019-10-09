@@ -1550,192 +1550,192 @@ $prepaLineaAtencionesModulo23 = mysqli_fetch_array($totalesPrepaLineaAtencionesM
 * Atenciones COLBACH Usuarios por Modulo
 */        
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '50'";
-$totalesColbachModulo1 = mysqli_query($con, $sql);
+$totalesColbachAtencionesModulo1 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$colbachModulo1 = mysqli_fetch_array($totalesColbachModulo1);
+$colbachAtencionesModulo1 = mysqli_fetch_array($totalesColbachAtencionesModulo1);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '181'";
-    $totalesColbach1SubModulo1 = mysqli_query($con, $sql);
+    $totalesColbachAtenciones1SubModulo1 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $colbach1SubModulo1 = mysqli_fetch_array($totalesColbach1SubModulo1);
+    $colbachAtenciones1SubModulo1 = mysqli_fetch_array($totalesColbachAtenciones1SubModulo1);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '182'";
-    $totalesColbach1SubModulo2 = mysqli_query($con, $sql);
+    $totalesColbachAtenciones1SubModulo2 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $colbach1SubModulo2 = mysqli_fetch_array($totalesColbach1SubModulo2);
+    $colbachAtenciones1SubModulo2 = mysqli_fetch_array($totalesColbachAtenciones1SubModulo2);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '183'";
-    $totalesColbach1SubModulo3 = mysqli_query($con, $sql);
+    $totalesColbachAtenciones1SubModulo3 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $colbach1SubModulo3 = mysqli_fetch_array($totalesColbach1SubModulo3);
+    $colbachAtenciones1SubModulo3 = mysqli_fetch_array($totalesColbachAtenciones1SubModulo3);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '184'";
-    $totalesColbach1SubModulo4 = mysqli_query($con, $sql);
+    $totalesColbachAtenciones1SubModulo4 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $colbach1SubModulo4 = mysqli_fetch_array($totalesColbach1SubModulo4);
+    $colbachAtenciones1SubModulo4 = mysqli_fetch_array($totalesColbachAtenciones1SubModulo4);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '185'";
-    $totalesColbach1SubModulo5 = mysqli_query($con, $sql);
+    $totalesColbachAtenciones1SubModulo5 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $colbach1SubModulo5 = mysqli_fetch_array($totalesColbach1SubModulo5);
+    $colbachAtenciones1SubModulo5 = mysqli_fetch_array($totalesColbachAtenciones1SubModulo5);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '50' AND A2.ActividadesSubModulo_idSubModulo = '186'";
-    $totalesColbach1SubModulo6 = mysqli_query($con, $sql);
+    $totalesColbachAtenciones1SubModulo6 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $colbach1SubModulo6 = mysqli_fetch_array($totalesColbach1SubModulo6);
+    $colbachAtenciones1SubModulo6 = mysqli_fetch_array($totalesColbachAtenciones1SubModulo6);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '51'";
-$totalesColbachModulo2 = mysqli_query($con, $sql);
+$totalesColbachAtencionesModulo2 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$colbachModulo2 = mysqli_fetch_array($totalesColbachModulo2);
+$colbachAtencionesModulo2 = mysqli_fetch_array($totalesColbachAtencionesModulo2);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '51' AND A2.ActividadesSubModulo_idSubModulo = '187'";
-    $totalesColbach2SubModulo1 = mysqli_query($con, $sql);
+    $totalesColbachAtenciones2SubModulo1 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $colbach2SubModulo1 = mysqli_fetch_array($totalesColbach2SubModulo1);
+    $colbachAtenciones2SubModulo1 = mysqli_fetch_array($totalesColbachAtenciones2SubModulo1);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '51' AND A2.ActividadesSubModulo_idSubModulo = '188'";
-    $totalesColbach2SubModulo2 = mysqli_query($con, $sql);
+    $totalesColbachAtenciones2SubModulo2 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $colbach2SubModulo2 = mysqli_fetch_array($totalesColbach2SubModulo2);
+    $colbachAtenciones2SubModulo2 = mysqli_fetch_array($totalesColbachAtenciones2SubModulo2);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '112' AND A2.ActividadesModulo_idModulo = '51' AND A2.ActividadesSubModulo_idSubModulo = '189'";
-    $totalesColbach2SubModulo3 = mysqli_query($con, $sql);
+    $totalesColbachAtenciones2SubModulo3 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $colbach2SubModulo3 = mysqli_fetch_array($totalesColbach2SubModulo3);
+    $colbachAtenciones2SubModulo3 = mysqli_fetch_array($totalesColbachAtenciones2SubModulo3);
 /**
 * Atenciones Prepa Abierta Usuarios por Modulo
 */  
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '53'";
-$totalesPrepaAbiertaModulo1 = mysqli_query($con, $sql);
+$totalesPrepaAbiertaAtencionesModulo1 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaAbiertaModulo1 = mysqli_fetch_array($totalesPrepaAbiertaModulo1);
+$prepaAbiertaAtencionesModulo1 = mysqli_fetch_array($totalesPrepaAbiertaAtencionesModulo1);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '53' AND A2.ActividadesSubModulo_idSubModulo = '220'";
-    $totalesPrepaAbierta1SubModulo1 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones1SubModulo1 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta1SubModulo1 = mysqli_fetch_array($totalesPrepaAbierta1SubModulo1);
+    $prepaAbiertaAtenciones1SubModulo1 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones1SubModulo1);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '54'";
-$totalesPrepaAbiertaModulo2 = mysqli_query($con, $sql);
+$totalesPrepaAbiertaAtencionesModulo2 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaAbiertaModulo2 = mysqli_fetch_array($totalesPrepaAbiertaModulo2);
+$prepaAbiertaAtencionesModulo2 = mysqli_fetch_array($totalesPrepaAbiertaAtencionesModulo2);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '54' AND A2.ActividadesSubModulo_idSubModulo = '221'";
-    $totalesPrepaAbierta2SubModulo1 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones2SubModulo1 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta2SubModulo1 = mysqli_fetch_array($totalesPrepaAbierta2SubModulo1);
+    $prepaAbiertaAtenciones2SubModulo1 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones2SubModulo1);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '54' AND A2.ActividadesSubModulo_idSubModulo = '222'";
-    $totalesPrepaAbierta2SubModulo2 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones2SubModulo2 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta2SubModulo2 = mysqli_fetch_array($totalesPrepaAbierta2SubModulo2);
+    $prepaAbiertaAtenciones2SubModulo2 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones2SubModulo2);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '54' AND A2.ActividadesSubModulo_idSubModulo = '223'";
-    $totalesPrepaAbierta2SubModulo3 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones2SubModulo3 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta2SubModulo3 = mysqli_fetch_array($totalesPrepaAbierta2SubModulo3);
+    $prepaAbiertaAtenciones2SubModulo3 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones2SubModulo3);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '54' AND A2.ActividadesSubModulo_idSubModulo = '224'";
-    $totalesPrepaAbierta2SubModulo4 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones2SubModulo4 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta2SubModulo4 = mysqli_fetch_array($totalesPrepaAbierta2SubModulo4);
+    $prepaAbiertaAtenciones2SubModulo4 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones2SubModulo4);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '54' AND A2.ActividadesSubModulo_idSubModulo = '225'";
-    $totalesPrepaAbierta2SubModulo5 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones2SubModulo5 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta2SubModulo5 = mysqli_fetch_array($totalesPrepaAbierta2SubModulo5);
+    $prepaAbiertaAtenciones2SubModulo5 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones2SubModulo5);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '55'";
-$totalesPrepaAbiertaModulo3 = mysqli_query($con, $sql);
+$totalesPrepaAbiertaAtencionesModulo3 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaAbiertaModulo3 = mysqli_fetch_array($totalesPrepaAbiertaModulo3);
+$prepaAbiertaAtencionesModulo3 = mysqli_fetch_array($totalesPrepaAbiertaAtencionesModulo3);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '55' AND A2.ActividadesSubModulo_idSubModulo = '226'";
-    $totalesPrepaAbierta3SubModulo1 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones3SubModulo1 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta3SubModulo1 = mysqli_fetch_array($totalesPrepaAbierta3SubModulo1);
+    $prepaAbiertaAtenciones3SubModulo1 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones3SubModulo1);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '55' AND A2.ActividadesSubModulo_idSubModulo = '227'";
-    $totalesPrepaAbierta3SubModulo2 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones3SubModulo2 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta3SubModulo2 = mysqli_fetch_array($totalesPrepaAbierta3SubModulo2);
+    $prepaAbiertaAtenciones3SubModulo2 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones3SubModulo2);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '55' AND A2.ActividadesSubModulo_idSubModulo = '228'";
-    $totalesPrepaAbierta3SubModulo3 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones3SubModulo3 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta3SubModulo3 = mysqli_fetch_array($totalesPrepaAbierta3SubModulo3);
+    $prepaAbiertaAtenciones3SubModulo3 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones3SubModulo3);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '55' AND A2.ActividadesSubModulo_idSubModulo = '229'";
-    $totalesPrepaAbierta3SubModulo4 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones3SubModulo4 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta3SubModulo4 = mysqli_fetch_array($totalesPrepaAbierta3SubModulo4);
+    $prepaAbiertaAtenciones3SubModulo4 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones3SubModulo4);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '55' AND A2.ActividadesSubModulo_idSubModulo = '230'";
-    $totalesPrepaAbierta3SubModulo5 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones3SubModulo5 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta3SubModulo5 = mysqli_fetch_array($totalesPrepaAbierta3SubModulo5);
+    $prepaAbiertaAtenciones3SubModulo5 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones3SubModulo5);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '55' AND A2.ActividadesSubModulo_idSubModulo = '231'";
-    $totalesPrepaAbierta3SubModulo6 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones3SubModulo6 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta3SubModulo6 = mysqli_fetch_array($totalesPrepaAbierta3SubModulo6);
+    $prepaAbiertaAtenciones3SubModulo6 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones3SubModulo6);
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '56'";
-$totalesPrepaAbiertaModulo4 = mysqli_query($con, $sql);
+$totalesPrepaAbiertaAtencionesModulo4 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaAbiertaModulo4 = mysqli_fetch_array($totalesPrepaAbiertaModulo4);
+$prepaAbiertaAtencionesModulo4 = mysqli_fetch_array($totalesPrepaAbiertaAtencionesModulo4);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '56' AND A2.ActividadesSubModulo_idSubModulo = '232'";
-    $totalesPrepaAbierta4SubModulo1 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones4SubModulo1 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta4SubModulo1 = mysqli_fetch_array($totalesPrepaAbierta4SubModulo1);
+    $prepaAbiertaAtenciones4SubModulo1 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones4SubModulo1);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '56' AND A2.ActividadesSubModulo_idSubModulo = '233'";
-    $totalesPrepaAbierta4SubModulo2 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones4SubModulo2 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta4SubModulo2 = mysqli_fetch_array($totalesPrepaAbierta4SubModulo2);
+    $prepaAbiertaAtenciones4SubModulo2 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones4SubModulo2);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '56' AND A2.ActividadesSubModulo_idSubModulo = '234'";
-    $totalesPrepaAbierta4SubModulo3 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones4SubModulo3 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta4SubModulo3 = mysqli_fetch_array($totalesPrepaAbierta4SubModulo3);
+    $prepaAbiertaAtenciones4SubModulo3 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones4SubModulo3);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '56' AND A2.ActividadesSubModulo_idSubModulo = '235'";
-    $totalesPrepaAbierta4SubModulo4 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones4SubModulo4 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta4SubModulo4 = mysqli_fetch_array($totalesPrepaAbierta4SubModulo4);
+    $prepaAbiertaAtenciones4SubModulo4 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones4SubModulo4);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '56' AND A2.ActividadesSubModulo_idSubModulo = '236'";
-    $totalesPrepaAbierta4SubModulo5 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones4SubModulo5 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta4SubModulo5 = mysqli_fetch_array($totalesPrepaAbierta4SubModulo5);
+    $prepaAbiertaAtenciones4SubModulo5 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones4SubModulo5);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '56' AND A2.ActividadesSubModulo_idSubModulo = '237'";
-    $totalesPrepaAbierta4SubModulo6 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones4SubModulo6 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta4SubModulo6 = mysqli_fetch_array($totalesPrepaAbierta4SubModulo6);
+    $prepaAbiertaAtenciones4SubModulo6 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones4SubModulo6);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '56' AND A2.ActividadesSubModulo_idSubModulo = '238'";
-    $totalesPrepaAbierta4SubModulo7 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones4SubModulo7 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta4SubModulo7 = mysqli_fetch_array($totalesPrepaAbierta4SubModulo7);
+    $prepaAbiertaAtenciones4SubModulo7 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones4SubModulo7);
 
 
 $sql="SELECT count(*) AS atencionesPorActividadModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '57'";
-$totalesPrepaAbiertaModulo5 = mysqli_query($con, $sql);
+$totalesPrepaAbiertaAtencionesModulo5 = mysqli_query($con, $sql);
 //var_dump($totalesCultura);
-$prepaAbiertaModulo5 = mysqli_fetch_array($totalesPrepaAbiertaModulo5);
+$prepaAbiertaAtencionesModulo5 = mysqli_fetch_array($totalesPrepaAbiertaAtencionesModulo5);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '57' AND A2.ActividadesSubModulo_idSubModulo = '239'";
-    $totalesPrepaAbierta5SubModulo1 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones5SubModulo1 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta5SubModulo1 = mysqli_fetch_array($totalesPrepaAbierta5SubModulo1);
+    $prepaAbiertaAtenciones5SubModulo1 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones5SubModulo1);
 
     $sql="SELECT count(*) AS atencionesPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '57' AND A2.ActividadesSubModulo_idSubModulo = '240'";
-    $totalesPrepaAbierta5SubModulo2 = mysqli_query($con, $sql);
+    $totalesPrepaAbiertaAtenciones5SubModulo2 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $prepaAbierta5SubModulo2 = mysqli_fetch_array($totalesPrepaAbierta5SubModulo2);
+    $prepaAbiertaAtenciones5SubModulo2 = mysqli_fetch_array($totalesPrepaAbiertaAtenciones5SubModulo2);
 
 /**
 * FIN - Atenciones de ususarios con beca en Ciberescuelas Por modulo
