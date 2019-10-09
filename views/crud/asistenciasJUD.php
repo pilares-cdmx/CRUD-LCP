@@ -4800,13 +4800,13 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           </div>
           <div class="mr-5"><b>Atenciones de usuarios con beca en Ciberescuelas por modulo</b></div>
         </div>
-        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelasModulo">
+        <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelasAtencionesModulos">
           <span class="float-left">Ver detalle</span>
           <span class="float-right">
             <i class="fas fa-angle-right"></i>
           </span>
         </a>
-        <div class="collapse" id="collapseCiberescuelasModulo">
+        <div class="collapse" id="collapseCiberescuelasAtencionesModulos">
           <div class="card card-body">
             <table class="table table-striped ">
               <tbody class="bg-warning">     
