@@ -1091,6 +1091,11 @@
     //var_dump($totalesCultura);
     $prepaAbiertaModulo1 = mysqli_fetch_array($totalesPrepaAbiertaModulo1);
 
+        $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorSubModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '53' AND A2.ActividadesSubModulo_idSubModulo = '220'";
+        $totalesPrepaAbierta1SubModulo1 = mysqli_query($con, $sql);
+        //var_dump($totalesCultura);
+        $prepaAbierta1SubModulo1 = mysqli_fetch_array($totalesPrepaAbierta1SubModulo1);
+
     $sql="SELECT count(DISTINCT B1.idUsuario) AS userPorModulo FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, Becas_produccion B1, Actividades A3 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.idActividades = A2.Actividades_idActividades AND A2.Actividades_idActividades = '113' AND A2.ActividadesModulo_idModulo = '54'";
     $totalesPrepaAbiertaModulo2 = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
@@ -3385,6 +3390,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                   <th scope="row">Preparatoria abierta (SEP)</th>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>
                     <tr>
                       <th scope="row"></th>    
@@ -3392,30 +3398,156 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                           <td><?=$prepaAbiertaModulo1['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>De la información al conocimiento</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 2. Instrumentos</td>
                           <td><?=$prepaAbiertaModulo2['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>El lenguaje en la relación del hombre con el mundo</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Representaciones simbólicas y algoritmos</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Ser social y sociedad</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Mi mundo en otra lengua</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Tecnología de información y comunicación</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 3. Métodos y contextos</td>
                           <td><?=$prepaAbiertaModulo3['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
+                       <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Textos y visiones del mundo</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Matemáticas y representaciones del sistema natural</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Universo natural</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Sociedad mexicana contemporánea</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Transformaciones en el mundo contemporáneo</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Mi vida en otra lengua</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 4. Relacionesy cambios</td>
                           <td><?=$prepaAbiertaModulo4['userPorModulo'] ?></td>
                           <td></td>
                     </tr>
+                       <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Argumentación</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Variación en procesos sociales</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Cálculo en fenómenos naturales y procesos sociales</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Hacia un desarrollo sustentable</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Evolución y sus repercusiones sociales</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Estadística en fenómenos naturales y procesos sociales</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Dinámica en la naturaleza: El movimiento</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
                     <tr>
                       <th scope="row"></th>    
                           <td>Nivel 5. Efectos y propuestas</td>
                           <td><?=$prepaAbiertaModulo5['userPorModulo'] ?></td>
                           <td></td>
                     </tr>       
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Optimización en sistemas naturales y sociales</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"></th> 
+                              <td></td>   
+                              <td>Impacto de la ciencia y la tecnología</td>
+                              <td><?=$prepaAbierta1SubModulo1['userPorSubModulo']?></td>
+                        </tr>
               </tbody>
             </table>
          </div>
