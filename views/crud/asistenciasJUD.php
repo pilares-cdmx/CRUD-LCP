@@ -4798,7 +4798,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
           <div class="card-body-icon">
             <i class="fas fa-fw fa-list"></i>
           </div>
-          <div class="mr-5"><b>Usuarios con beca en Ciberescuelas por modulo</b></div>
+          <div class="mr-5"><b>Atenciones de usuarios con beca en Ciberescuelas por modulo</b></div>
         </div>
         <a class="card-footer text-white clearfix small z-1" data-toggle="collapse" href="#collapseCiberescuelasModulo">
           <span class="float-left">Ver detalle</span>
