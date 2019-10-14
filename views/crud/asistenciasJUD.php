@@ -4402,7 +4402,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
             <i class="fas fa-landmark"></i>
             </div>
             
-            <div class="mr-5"><b>Usuarios totales por PILARES<span class="float-right"></span></b></div>
+            <div class="mr-5"><b>Usuarios con beca por PILARES<span class="float-right"></span></b></div>
           </div>
           <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilares">
             <span class="float-left">Ver detalle</span>
@@ -4646,6 +4646,38 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                     <th scope="row">Centenario</th>
                     <td><?=$pilaresTotales59['userPorPilares']?></td>
                   </tr>
+                  <tr>
+                      <th scope="row">16 de Septiembre</th>
+                          <td><?=$pilaresTotales60['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">La Naranja</th>
+                      <td><?=$pilaresTotales61['userPorPilares']?></td>
+                  </tr>
+                        <tr>
+                          <th scope="row">Xochinahuac</th>
+                          <td><?=$pilaresTotales62['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Renovación</th>
+                          <td><?=$pilaresTotales63['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Mixquic</th>
+                          <td><?=$pilaresTotales64['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Presidentes</th>
+                          <td><?=$pilaresTotales65['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Santa Lucía</th>
+                          <td><?=$pilaresTotales66['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Tetecón</th>
+                          <td><?=$pilaresTotales67['userPorPilares']?></td>
+                        </tr>    
                 </tbody>
               </table>
             </div>
