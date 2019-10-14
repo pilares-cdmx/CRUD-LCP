@@ -20639,7 +20639,8 @@
             <div class="card text-info bg-light o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                  <i class="fas fa-fw fa-hand-holding-usd"></i>
+                  <!-- <i class="fas fa-fw fa-hand-holding-usd"></i> -->
+                  <i class="fas fa-dove"></i>
                   </div>
                   
                   <div class="mr-5"><b>Usuarios inscritos en Cultura de Paz.   <br> Identificación y desnormalización de violencias:<span class="float-right"></span></b></div>
