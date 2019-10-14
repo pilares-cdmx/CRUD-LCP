@@ -10801,7 +10801,7 @@
     $comercioJustoHombres = mysqli_fetch_array($totalesComercioJustoHombres);
 
  /**
-  * Totales por actividad Ciberescuelas
+  * Totales por actividad cultura de paz
   **/
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '192'";
     $totalesGenero = mysqli_query($con, $sql);
@@ -10821,7 +10821,7 @@
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '195'";
     $totalesFamilias = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $familiar = mysqli_fetch_array($totalesFamilias);
+    $familias = mysqli_fetch_array($totalesFamilias);
 
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '196'";
     $totalesEntrePares = mysqli_query($con, $sql);
@@ -10857,6 +10857,63 @@
     $totalesVulnerables = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
     $vulnerables = mysqli_fetch_array($totalesVulnerables);
+/**
+  * Totales por actividad cultura de paz  Mujeres   SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' 
+  **/
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND Actividades_idActividades = '192'";
+    $totalesGeneroMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $generoMujeres = mysqli_fetch_array($totalesGeneroMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND Actividades_idActividades = '193'";
+    $totalesContraMujeresMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $contraMujeresMujeres = mysqli_fetch_array($totalesContraMujeresMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND Actividades_idActividades = '194'";
+    $totalesNinosMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $ninosMujeres = mysqli_fetch_array($totalesNinos);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND Actividades_idActividades = '195'";
+    $totalesFamiliasMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $familiasMujeres = mysqli_fetch_array($totalesFamiliasMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND Actividades_idActividades = '196'";
+    $totalesEntreParesMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $entreParesMujeres = mysqli_fetch_array($totalesEntreParesMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND Actividades_idActividades = '197'";
+    $totalesHaciaAdultosMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $haciaAdultosMujeres = mysqli_fetch_array($totalesHaciaAdultosMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND Actividades_idActividades = '198'";
+    $totalesComunidadMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $comunidadMujeres = mysqli_fetch_array($totalesComunidadMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND Actividades_idActividades = '199'";
+    $totalesContraAnimalesMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $contraAnimalesMujeres = mysqli_fetch_array($totalesContraAnimalesMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND Actividades_idActividades = '200'";
+    $totalesAcosoEscolarMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $acosoEscolarMujeres = mysqli_fetch_array($totalesAcosoEscolarMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND Actividades_idActividades = '201'";
+    $totalesAdiccionesMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $adiccionesMujeres = mysqli_fetch_array($totalesAdiccionesMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%M%' AND Actividades_idActividades = '202'";
+    $totalesVulnerablesMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $vulnerablesMujeres = mysqli_fetch_array($totalesVulnerablesMujeres);
  ?>
     <div id="content-wrapper">
 
@@ -20717,7 +20774,7 @@
                         </tr>
                         <tr>
                           <th scope="row">Contra mujeres</th>
-                          <td><?=$mujeres['userPorActividad']?></td>
+                          <td><?=$contraMujeres['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra niños y jóvenes </th>
@@ -20782,49 +20839,49 @@
                     <table class="table table-striped ">
                       <tbody class="bg-light">
                       <tr>
-                          <!-- <th scope="row">De género</th>
-                          <td><?=$pilaresTotalesAutnomia1['userPorActividad']?></td>
+                          <th scope="row">De género</th>
+                          <td><?=$generoMujeres['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra mujeres</th>
-                          <td><?=$pilaresTotalesAutnomia2['userPorActividad']?></td>
+                          <td><?=$contraMujeresMujeres['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra niños y jóvenes </th>
-                          <td><?=$pilaresTotalesAutnomia3['userPorActividad']?></td>
+                          <td><?=$ninosMujeres['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Familiar</th>
-                          <td><?=$pilaresTotalesAutnomia4['userPorActividad']?></td>
+                          <td><?=$familiasMujeres['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Entre pares</th>
-                          <td><?=$pilaresTotalesAutnomia5['userPorActividad']?></td>
+                          <td><?=$entreParesMujeres['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Hacia adultos mayores</th>
-                          <td><?=$pilaresTotalesAutnomia6['userPorActividad']?></td>
+                          <td><?=$haciaAdultosMujeres['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">En la comunidad/espacios públicos</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorActividad']?></td>
+                          <td><?=$comunidadMujeres['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra animales</th>
-                          <td><?=$pilaresTotalesAutnomia8['userPorActividad']?></td>
+                          <td><?=$contraAnimalesMujeres['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Acoso escolar</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorActividad']?></td>
+                          <td><?=$acosoEscolarMujeres['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Adicciones</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorActividad']?></td>
+                          <td><?=$adiccionesMujeres['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra grupos étnicos, migrantes y los que forman parte de la diversidad sexual y funcional</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorActividad']?></td>
-                        </tr> -->
+                          <td><?=$vulnerablesMujeres['userPorActividad']?></td>
+                        </tr>
                        </tbody>
                     </table>
                   </div>
