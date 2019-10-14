@@ -20635,7 +20635,7 @@
           </div>
         </div>
         <div class="row">
-        <div class="col-xl-6 col-sm-6 mb-3">
+          <div class="col-xl-6 col-sm-6 mb-3">
             <div class="card text-info bg-light o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
@@ -20644,6 +20644,146 @@
                   </div>
                   
                   <div class="mr-5"><b>Usuarios inscritos en Cultura de Paz.   <br> Identificación y desnormalización de violencias:<span class="float-right"></span></b></div>
+                </div>
+                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresCulturaDePaz">
+                  <span class="float-left">Ver detalle</span>
+                  <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span>
+                </a>
+                <div class="collapse" id="collapsePorPilaresCulturaDePaz">
+                  <div class="card card-body">
+                    <table class="table table-striped ">
+                      <tbody class="bg-light">
+                      <tr>
+                          <!-- <th scope="row">De género</th>
+                          <td><?=$pilaresTotalesAutnomia1['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Contra mujeres</th>
+                          <td><?=$pilaresTotalesAutnomia2['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Contra niños y jóvenes </th>
+                          <td><?=$pilaresTotalesAutnomia3['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Familiar</th>
+                          <td><?=$pilaresTotalesAutnomia4['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Entre pares</th>
+                          <td><?=$pilaresTotalesAutnomia5['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Hacia adultos mayores</th>
+                          <td><?=$pilaresTotalesAutnomia6['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">En la comunidad/espacios públicos</th>
+                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Contra animales</th>
+                          <td><?=$pilaresTotalesAutnomia8['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Acoso escolar</th>
+                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Adicciones</th>
+                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Contra grupos étnicos, migrantes y los que forman parte de la diversidad sexual y funcional</th>
+                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                        </tr> -->
+                       </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-xl-6 col-sm-6 mb-3">
+            <div class="card text-info bg-light o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                  <!-- <i class="fas fa-fw fa-hand-holding-usd"></i> -->
+                  <i class="fas fa-dove"></i>
+                  </div>
+                  
+                  <div class="mr-5"><b>Usuarios inscritos en Cultura de Paz.  Mujeres <br> Identificación y desnormalización de violencias:<span class="float-right"></span></b></div>
+                </div>
+                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresCulturaDePaz">
+                  <span class="float-left">Ver detalle</span>
+                  <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span>
+                </a>
+                <div class="collapse" id="collapsePorPilaresCulturaDePaz">
+                  <div class="card card-body">
+                    <table class="table table-striped ">
+                      <tbody class="bg-light">
+                      <tr>
+                          <!-- <th scope="row">De género</th>
+                          <td><?=$pilaresTotalesAutnomia1['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Contra mujeres</th>
+                          <td><?=$pilaresTotalesAutnomia2['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Contra niños y jóvenes </th>
+                          <td><?=$pilaresTotalesAutnomia3['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Familiar</th>
+                          <td><?=$pilaresTotalesAutnomia4['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Entre pares</th>
+                          <td><?=$pilaresTotalesAutnomia5['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Hacia adultos mayores</th>
+                          <td><?=$pilaresTotalesAutnomia6['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">En la comunidad/espacios públicos</th>
+                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Contra animales</th>
+                          <td><?=$pilaresTotalesAutnomia8['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Acoso escolar</th>
+                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Adicciones</th>
+                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Contra grupos étnicos, migrantes y los que forman parte de la diversidad sexual y funcional</th>
+                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                        </tr> -->
+                       </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-xl-6 col-sm-6 mb-3">
+            <div class="card text-info bg-light o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                  <!-- <i class="fas fa-fw fa-hand-holding-usd"></i> -->
+                  <i class="fas fa-dove"></i>
+                  </div>
+                  
+                  <div class="mr-5"><b>Usuarios inscritos en Cultura de Paz.   Hombres<br> Identificación y desnormalización de violencias:<span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresCulturaDePaz">
                   <span class="float-left">Ver detalle</span>
