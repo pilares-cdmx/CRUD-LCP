@@ -20774,7 +20774,7 @@
                         </tr>
                         <tr>
                           <th scope="row">Contra mujeres</th>
-                          <td><?=$contraMujeres['userPorActividad']?></td>
+                          <td><?=$mujeres['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra niños y jóvenes </th>
@@ -20782,7 +20782,7 @@
                         </tr>
                         <tr>
                           <th scope="row">Familiar</th>
-                          <td><?=$familiar['userPorActividad']?></td>
+                          <td><?=$familias['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Entre pares</th>
