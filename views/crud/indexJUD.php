@@ -20655,7 +20655,7 @@
                     <table class="table table-striped ">
                       <tbody class="bg-light">
                       <tr>
-                          <th scope="row">De género</th>
+                          <!-- <th scope="row">De género</th>
                           <td><?=$pilaresTotalesAutnomia1['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
@@ -20697,7 +20697,7 @@
                         <tr>
                           <th scope="row">Contra grupos étnicos, migrantes y los que forman parte de la diversidad sexual y funcional</th>
                           <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
-                        </tr>
+                        </tr> -->
                        </tbody>
                     </table>
                   </div>
