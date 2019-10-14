@@ -20705,7 +20705,7 @@
                 </div>
               </div>
           </div>
-          <div class="col-xl-6 col-sm-3 mb-3">
+          <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-info bg-light o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
@@ -20775,7 +20775,7 @@
                 </div>
               </div>
           </div>
-          <div class="col-xl-6 col-sm-3 mb-3">
+          <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-info bg-light o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
