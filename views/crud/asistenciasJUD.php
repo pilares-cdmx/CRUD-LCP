@@ -4394,7 +4394,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
   </div> 
   
 <!-- Usuarios inscritos por PILARES-->
-   <!-- <div class="row">
+  <div class="row">
     <div class="col-xl-6 col-sm-6 mb-3">
       <div class="card text-info bg-light o-hidden h-100">
           <div class="card-body">
@@ -4653,7 +4653,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
         </div>
     </div>
 
-  </div> -->
+  </div>
 
 
   <!-- Breadcrumbs-->
