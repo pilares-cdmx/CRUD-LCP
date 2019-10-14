@@ -20642,7 +20642,7 @@
                   <i class="fas fa-fw fa-hand-holding-usd"></i>
                   </div>
                   
-                  <div class="mr-5"><b>Usuarios totales por PILARES en Autonomía Económica <span class="float-right"></span></b></div>
+                  <div class="mr-5"><b>Usuarios inscritos en Cultura de Paz.   <br> Identificación y desnormalización de violencias:<span class="float-right"></span></b></div>
                 </div>
                 <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresAutonomia">
                   <span class="float-left">Ver detalle</span>
@@ -20655,270 +20655,50 @@
                     <table class="table table-striped ">
                       <tbody class="bg-light">
                       <tr>
-                          <th scope="row">La Araña </th>
+                          <th scope="row">De género</th>
                           <td><?=$pilaresTotalesAutnomia1['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">El Capulín</th>
+                          <th scope="row">Contra mujeres</th>
                           <td><?=$pilaresTotalesAutnomia2['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Jalalpa </th>
+                          <th scope="row">Contra niños y jóvenes </th>
                           <td><?=$pilaresTotalesAutnomia3['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Xalli</th>
+                          <th scope="row">Familiar</th>
                           <td><?=$pilaresTotalesAutnomia4['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Cantera</th>
+                          <th scope="row">Entre pares</th>
                           <td><?=$pilaresTotalesAutnomia5['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Emiliano Zapata</th>
+                          <th scope="row">Hacia adultos mayores</th>
                           <td><?=$pilaresTotalesAutnomia6['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Chimalpa</th>
+                          <th scope="row">En la comunidad/espacios públicos</th>
                           <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">San Simón Tolnáhuac </th>
+                          <th scope="row">Contra animales</th>
                           <td><?=$pilaresTotalesAutnomia8['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Frida Kahlo </th>
-                          <td><?=$pilaresTotalesAutnomia9['userPorPilaresAutonomia']?></td>
+                          <th scope="row">Acoso escolar</th>
+                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Atlampa</th>
-                          <td><?=$pilaresTotalesAutnomia10['userPorPilaresAutonomia']?></td>
+                          <th scope="row">Adicciones</th>
+                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Richard Wagner </th>
-                          <td><?=$pilaresTotalesAutnomia11['userPorPilaresAutonomia']?></td>
+                          <th scope="row">Contra grupos étnicos, migrantes y los que forman parte de la diversidad sexual y funcional</th>
+                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
                         </tr>
-                        <tr>
-                          <th scope="row">Benita Galeana </th>
-                          <td><?=$pilaresTotalesAutnomia12['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tlalpexco</th>
-                          <td><?=$pilaresTotalesAutnomia13['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">José Martí </th>
-                          <td><?=$pilaresTotalesAutnomia14['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Agrícola Pantitlán </th>
-                          <td><?=$pilaresTotalesAutnomia15['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Central de Abasto</th>
-                          <td><?=$pilaresTotalesAutnomia16['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cooperemos Pueblo </th>
-                          <td><?=$pilaresTotalesAutnomia17['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Acahualtepec</th>
-                          <td><?=$pilaresTotalesAutnomia18['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Gabriela Mistral </th>
-                          <td><?=$pilaresTotalesAutnomia19['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Huayatla</th>
-                          <td><?=$pilaresTotalesAutnomia20['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Caneguín</th>
-                          <td><?=$pilaresTotalesAutnomia47['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Salvador Cuauhtenco</th>
-                          <td><?=$pilaresTotalesAutnomia21['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zapotitla</th>
-                          <td><?=$pilaresTotalesAutnomia22['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Rosario Castellanos</th>
-                          <td><?=$pilaresTotalesAutnomia23['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tulyehualco</th>
-                          <td><?=$pilaresTotalesAutnomia24['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Francisco </th>
-                          <td><?=$pilaresTotalesAutnomia25['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Belén de las flores</th>
-                          <td><?=$pilaresTotalesAutnomia26['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Margarita Maza de Juárez </th>
-                          <td><?=$pilaresTotalesAutnomia27['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Atlapulco </th>
-                          <td><?=$pilaresTotalesAutnomia28['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Cecilia </th>
-                          <td><?=$pilaresTotalesAutnomia29['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tepalcatlalpan</th>
-                          <td><?=$pilaresTotalesAutnomia30['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Cerro de la estrella </th>
-                          <td><?=$pilaresTotalesAutnomia31['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Facundo Cabral</th>
-                          <td><?=$pilaresTotalesAutnomia32['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San lucas xochimanca </th>
-                          <td><?=$pilaresTotalesAutnomia33['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zapata Vela </th>
-                          <td><?=$pilaresTotalesAutnomia34['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Insurgentes</th>
-                          <td><?=$pilaresTotalesAutnomia35['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Amantla</th>
-                          <td><?=$pilaresTotalesAutnomia36['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Cuesta </th>
-                          <td><?=$pilaresTotalesAutnomia37['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tizimín</th>
-                          <td><?=$pilaresTotalesAutnomia38['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Ecoguardas</th>
-                          <td><?=$pilaresTotalesAutnomia39['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Árbol del conocimiento</th>
-                          <td><?=$pilaresTotalesAutnomia40['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Fe</th>
-                          <td><?=$pilaresTotalesAutnomia41['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Era</th>
-                          <td><?=$pilaresTotalesAutnomia42['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Isidro Fabela</th>
-                          <td><?=$pilaresTotalesAutnomia43['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Villa Panamericana</th>
-                          <td><?=$pilaresTotalesAutnomia44['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Úrsula</th>
-                          <td><?=$pilaresTotalesAutnomia45['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Paulo Freire</th>
-                          <td><?=$pilaresTotalesAutnomia46['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Pedro Xalpa</th>
-                          <td><?=$pilaresTotalesAutnomia48['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Xaltipac</th>
-                          <td><?=$pilaresTotalesAutnomia50['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Palmitas</th>
-                          <td><?=$pilaresTotalesAutnomia51['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Teotongo</th>
-                          <td><?=$pilaresTotalesAutnomia52['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Insurgentes</th>
-                          <td><?=$pilaresTotalesAutnomia53['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Fortaleza</th>
-                          <td><?=$pilaresTotalesAutnomia54['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Rojo Gómez</th>
-                          <td><?=$pilaresTotalesAutnomia55['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Municipio Libre</th>
-                          <td><?=$pilaresTotalesAutnomia56['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Pedro Actopan</th>
-                          <td><?=$pilaresTotalesAutnomia57['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">San Bartolomé Xicomulco</th>
-                          <td><?=$pilaresTotalesAutnomia58['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Centenario</th>
-                          <td><?=$pilaresTotalesAutnomia59['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">16 de Septiembre</th>
-                          <td><?=$pilaresTotalesAutnomia60['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">La Naranja</th>
-                          <td><?=$pilaresTotalesAutnomia61['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Xochinahuac</th>
-                          <td><?=$pilaresTotalesAutnomia62['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Renovación</th>
-                          <td><?=$pilaresTotalesAutnomia63['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Mixquic</th>
-                          <td><?=$pilaresTotalesAutnomia64['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Presidentes</th>
-                          <td><?=$pilaresTotalesAutnomia65['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Santa Lucía</th>
-                          <td><?=$pilaresTotalesAutnomia66['userPorPilaresAutonomia']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Tetecón</th>
-                          <td><?=$pilaresTotalesAutnomia67['userPorPilaresAutonomia']?></td>
-                        </tr>
-                      </tbody>
+                       </tbody>
                     </table>
                   </div>
                 </div>
