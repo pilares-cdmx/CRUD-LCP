@@ -2860,6 +2860,344 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
     //var_dump($totalesCultura);
     $comercioJustoAtenciones = mysqli_fetch_array($totalesComercioJusto);
 
+/**
+ * Usuarios totales por PILARES   select count(*) from Usuario U1, UsuariosPorPilar U2 where U1.idusuarios = U2.Usuario_idusuarios AND U1.sexo LIKE '%m%' AND U2.Pilares_idPilares = '45';
+ */
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '1'";
+    $totalesPilares1 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares1);
+    $pilaresTotales1= mysqli_fetch_array($totalesPilares1);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '2'";
+    $totalesPilares2 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares2);
+    $pilaresTotales2= mysqli_fetch_array($totalesPilares2);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '3'";
+    $totalesPilares3 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares3);
+    $pilaresTotales3= mysqli_fetch_array($totalesPilares3);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '4'";
+    $totalesPilares4 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares4);
+    $pilaresTotales4= mysqli_fetch_array($totalesPilares4);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '5'";
+    $totalesPilares5 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares5);
+    $pilaresTotales5= mysqli_fetch_array($totalesPilares5);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '6'";
+    $totalesPilares6 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares6);
+    $pilaresTotales6= mysqli_fetch_array($totalesPilares6);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '7'";
+    $totalesPilares7 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares7);
+    $pilaresTotales7= mysqli_fetch_array($totalesPilares7);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '8'";
+    $totalesPilares8 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares8);
+    $pilaresTotales8= mysqli_fetch_array($totalesPilares8);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '9'";
+    $totalesPilares9 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares9);
+    $pilaresTotales9= mysqli_fetch_array($totalesPilares9);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '10'";
+    $totalesPilares10 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares10);
+    $pilaresTotales10= mysqli_fetch_array($totalesPilares10);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '11'";
+    $totalesPilares11 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares11);
+    $pilaresTotales11= mysqli_fetch_array($totalesPilares11);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '12'";
+    $totalesPilares12 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares12);
+    $pilaresTotales12= mysqli_fetch_array($totalesPilares12);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '13'";
+    $totalesPilares13 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares13);
+    $pilaresTotales13= mysqli_fetch_array($totalesPilares13);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '14'";
+    $totalesPilares14 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares14);
+    $pilaresTotales14= mysqli_fetch_array($totalesPilares14);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '15'";
+    $totalesPilares15 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares15);
+    $pilaresTotales15= mysqli_fetch_array($totalesPilares15);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '16'";
+    $totalesPilares16 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares16);
+    $pilaresTotales16= mysqli_fetch_array($totalesPilares16);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '17'";
+    $totalesPilares17 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares17);
+    $pilaresTotales17= mysqli_fetch_array($totalesPilares17);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '18'";
+    $totalesPilares18 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares18);
+    $pilaresTotales18= mysqli_fetch_array($totalesPilares18);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '19'";
+    $totalesPilares19 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares19);
+    $pilaresTotales19= mysqli_fetch_array($totalesPilares19);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '20'";
+    $totalesPilares20 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares20);
+    $pilaresTotales20= mysqli_fetch_array($totalesPilares20);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '21'";
+    $totalesPilares47 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares21);
+    $pilaresTotales47= mysqli_fetch_array($totalesPilares47);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '22'";
+    $totalesPilares21 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares21);
+    $pilaresTotales21= mysqli_fetch_array($totalesPilares21);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '23'";
+    $totalesPilares22 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares22);
+    $pilaresTotales22= mysqli_fetch_array($totalesPilares22);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '24'";
+    $totalesPilares23 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares23);
+    $pilaresTotales23= mysqli_fetch_array($totalesPilares23);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '26'";
+    $totalesPilares24 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares24);
+    $pilaresTotales24= mysqli_fetch_array($totalesPilares24);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '27'";
+    $totalesPilares25 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares25);
+    $pilaresTotales25= mysqli_fetch_array($totalesPilares25);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '31'";
+    $totalesPilares26 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares26);
+    $pilaresTotales26= mysqli_fetch_array($totalesPilares26);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '32'";
+    $totalesPilares27 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares27);
+    $pilaresTotales27= mysqli_fetch_array($totalesPilares27);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '33'";
+    $totalesPilares28 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares28);
+    $pilaresTotales28= mysqli_fetch_array($totalesPilares28);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '34'";
+    $totalesPilares29 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares29);
+    $pilaresTotales29= mysqli_fetch_array($totalesPilares29);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '35'";
+    $totalesPilares30 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares30);
+    $pilaresTotales30= mysqli_fetch_array($totalesPilares30);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '36'";
+    $totalesPilares31 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares31);
+    $pilaresTotales31= mysqli_fetch_array($totalesPilares31);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '37'";
+    $totalesPilares32 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares32);
+    $pilaresTotales32= mysqli_fetch_array($totalesPilares32);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '38'";
+    $totalesPilares33 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares33);
+    $pilaresTotales33= mysqli_fetch_array($totalesPilares33);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '39'";
+    $totalesPilares34 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares34);
+    $pilaresTotales34= mysqli_fetch_array($totalesPilares34);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '40'";
+    $totalesPilares35 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares35);
+    $pilaresTotales35= mysqli_fetch_array($totalesPilares35);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '41'";
+    $totalesPilares36 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares36);
+    $pilaresTotales36= mysqli_fetch_array($totalesPilares36);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '42'";
+    $totalesPilares37 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares37);
+    $pilaresTotales37= mysqli_fetch_array($totalesPilares37);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '43'";
+    $totalesPilares38 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares38);
+    $pilaresTotales38= mysqli_fetch_array($totalesPilares38);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '44'";
+    $totalesPilares39 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares39);
+    $pilaresTotales39= mysqli_fetch_array($totalesPilares39);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '45'";
+    $totalesPilares40 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares40);
+    $pilaresTotales40= mysqli_fetch_array($totalesPilares40);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '46'";
+    $totalesPilares41 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares41);
+    $pilaresTotales41= mysqli_fetch_array($totalesPilares41);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '47'";
+    $totalesPilares42 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares42);
+    $pilaresTotales42= mysqli_fetch_array($totalesPilares42);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '48'";
+    $totalesPilares43 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares43);
+    $pilaresTotales43= mysqli_fetch_array($totalesPilares43);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '49'";
+    $totalesPilares44 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares44);
+    $pilaresTotales44= mysqli_fetch_array($totalesPilares44);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '50'";
+    $totalesPilares45 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares45);
+    $pilaresTotales45= mysqli_fetch_array($totalesPilares45);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '51'";
+    $totalesPilares46 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares46);
+    $pilaresTotales46= mysqli_fetch_array($totalesPilares46);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '52'";
+    $totalesPilares48 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares48);
+    $pilaresTotales48= mysqli_fetch_array($totalesPilares48);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '53'";
+    $totalesPilares49 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares49);
+    $pilaresTotales49= mysqli_fetch_array($totalesPilares49);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '54'";
+    $totalesPilares50 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares50);
+    $pilaresTotales50= mysqli_fetch_array($totalesPilares50);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '55'";
+    $totalesPilares51 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares51);
+    $pilaresTotales51= mysqli_fetch_array($totalesPilares51);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '56'";
+    $totalesPilares52 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares52);
+    $pilaresTotales52= mysqli_fetch_array($totalesPilares52);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '57'";
+    $totalesPilares53 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares53);
+    $pilaresTotales53= mysqli_fetch_array($totalesPilares53);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '58'";
+    $totalesPilares54 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares54);
+    $pilaresTotales54= mysqli_fetch_array($totalesPilares54);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '59'";
+    $totalesPilares55 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares55);
+    $pilaresTotales55= mysqli_fetch_array($totalesPilares55);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '60'";
+    $totalesPilares56 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares56);
+    $pilaresTotales56= mysqli_fetch_array($totalesPilares56);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '61'";
+    $totalesPilares57 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares57);
+    $pilaresTotales57= mysqli_fetch_array($totalesPilares57);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '62'";
+    $totalesPilares58 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares58);
+    $pilaresTotales58= mysqli_fetch_array($totalesPilares58);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '63'";
+    $totalesPilares59 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares59);
+    $pilaresTotales59= mysqli_fetch_array($totalesPilares59);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '64'";
+    $totalesPilares60 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares60);
+    $pilaresTotales60= mysqli_fetch_array($totalesPilares60);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '65'";
+    $totalesPilares61 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares61);
+    $pilaresTotales61= mysqli_fetch_array($totalesPilares61);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '66'";
+    $totalesPilares62 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares62);
+    $pilaresTotales62= mysqli_fetch_array($totalesPilares62);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '67'";
+    $totalesPilares63 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares63);
+    $pilaresTotales63= mysqli_fetch_array($totalesPilares63);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '68'";
+    $totalesPilares64 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares64);
+    $pilaresTotales64= mysqli_fetch_array($totalesPilares64);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '70'";
+    $totalesPilares65 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares65);
+    $pilaresTotales65= mysqli_fetch_array($totalesPilares65);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '71'";
+    $totalesPilares66 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares66);
+    $pilaresTotales66= mysqli_fetch_array($totalesPilares66);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '72'";
+    $totalesPilares67 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares67);
+    $pilaresTotales67= mysqli_fetch_array($totalesPilares67);
+
    
 ?>
 <div id="content-wrapper">
