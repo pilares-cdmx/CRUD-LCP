@@ -20644,13 +20644,13 @@
                   
                   <div class="mr-5"><b>Usuarios inscritos en Cultura de Paz.   <br> Identificación y desnormalización de violencias:<span class="float-right"></span></b></div>
                 </div>
-                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresAutonomia">
+                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresCulturaDePaz">
                   <span class="float-left">Ver detalle</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
                   </span>
                 </a>
-                <div class="collapse" id="collapsePorPilaresAutonomia">
+                <div class="collapse" id="collapsePorPilaresCulturaDePaz">
                   <div class="card card-body">
                     <table class="table table-striped ">
                       <tbody class="bg-light">
