@@ -10800,7 +10800,63 @@
     //var_dump($totalesCultura);
     $comercioJustoHombres = mysqli_fetch_array($totalesComercioJustoHombres);
 
-    
+ /**
+  * Totales por actividad Ciberescuelas
+  **/
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '192'";
+    $totalesGenero = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $genero = mysqli_fetch_array($totalesGenero);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '193'";
+    $totalesMujeres = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $mujeres = mysqli_fetch_array($totalesMujeres);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '194'";
+    $totalesNinos = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $ninos = mysqli_fetch_array($totalesNinos);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '195'";
+    $totalesFamilias = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $familiar = mysqli_fetch_array($totalesFamilias);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '196'";
+    $totalesEntrePares = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $entrePares = mysqli_fetch_array($totalesEntrePares);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '197'";
+    $totalesHaciaAdultos = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $haciaAdultos = mysqli_fetch_array($totalesHaciaAdultos);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '198'";
+    $totalesComunidad = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $comunidad = mysqli_fetch_array($totalesComunidad);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '199'";
+    $totalesContraAnimales = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $contraAnimales = mysqli_fetch_array($totalesContraAnimales);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '200'";
+    $totalesAcosoEscolar = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $acosoEscolar = mysqli_fetch_array($totalesAcosoEscolar);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '201'";
+    $totalesAdicciones = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $adicciones = mysqli_fetch_array($totalesAdicciones);
+
+    $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM ActividadesPorUsuario WHERE Actividades_idActividades = '202'";
+    $totalesVulnerables = mysqli_query($con, $sql);
+    //var_dump($totalesCultura);
+    $vulnerables = mysqli_fetch_array($totalesVulnerables);
  ?>
     <div id="content-wrapper">
 
@@ -20656,49 +20712,49 @@
                     <table class="table table-striped ">
                       <tbody class="bg-light">
                       <tr>
-                          <!-- <th scope="row">De género</th>
-                          <td><?=$pilaresTotalesAutnomia1['userPorPilaresAutonomia']?></td>
+                          <th scope="row">De género</th>
+                          <td><?=$genero['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra mujeres</th>
-                          <td><?=$pilaresTotalesAutnomia2['userPorPilaresAutonomia']?></td>
+                          <td><?=$mujeres['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra niños y jóvenes </th>
-                          <td><?=$pilaresTotalesAutnomia3['userPorPilaresAutonomia']?></td>
+                          <td><?=$ninos['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Familiar</th>
-                          <td><?=$pilaresTotalesAutnomia4['userPorPilaresAutonomia']?></td>
+                          <td><?=$familiar['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Entre pares</th>
-                          <td><?=$pilaresTotalesAutnomia5['userPorPilaresAutonomia']?></td>
+                          <td><?=$entrePares['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Hacia adultos mayores</th>
-                          <td><?=$pilaresTotalesAutnomia6['userPorPilaresAutonomia']?></td>
+                          <td><?=$haciaAdultos['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">En la comunidad/espacios públicos</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                          <td><?=$comunidad['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra animales</th>
-                          <td><?=$pilaresTotalesAutnomia8['userPorPilaresAutonomia']?></td>
+                          <td><?=$contraAnimales['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Acoso escolar</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                          <td><?=$acosoEscolar['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Adicciones</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                          <td><?=$adicciones['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra grupos étnicos, migrantes y los que forman parte de la diversidad sexual y funcional</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
-                        </tr> -->
+                          <td><?=$vulnerables['userPorActividad']?></td>
+                        </tr>
                        </tbody>
                     </table>
                   </div>
@@ -20715,59 +20771,59 @@
                   
                   <div class="mr-5"><b>Usuarios inscritos en Cultura de Paz.  Mujeres <br> Identificación y desnormalización de violencias:<span class="float-right"></span></b></div>
                 </div>
-                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresCulturaDePaz">
+                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresCulturaDePazMujeres">
                   <span class="float-left">Ver detalle</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
                   </span>
                 </a>
-                <div class="collapse" id="collapsePorPilaresCulturaDePaz">
+                <div class="collapse" id="collapsePorPilaresCulturaDePazMujeres">
                   <div class="card card-body">
                     <table class="table table-striped ">
                       <tbody class="bg-light">
                       <tr>
                           <!-- <th scope="row">De género</th>
-                          <td><?=$pilaresTotalesAutnomia1['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia1['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra mujeres</th>
-                          <td><?=$pilaresTotalesAutnomia2['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia2['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra niños y jóvenes </th>
-                          <td><?=$pilaresTotalesAutnomia3['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia3['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Familiar</th>
-                          <td><?=$pilaresTotalesAutnomia4['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia4['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Entre pares</th>
-                          <td><?=$pilaresTotalesAutnomia5['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia5['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Hacia adultos mayores</th>
-                          <td><?=$pilaresTotalesAutnomia6['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia6['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">En la comunidad/espacios públicos</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia7['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra animales</th>
-                          <td><?=$pilaresTotalesAutnomia8['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia8['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Acoso escolar</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia7['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Adicciones</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia7['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra grupos étnicos, migrantes y los que forman parte de la diversidad sexual y funcional</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia7['userPorActividad']?></td>
                         </tr> -->
                        </tbody>
                     </table>
@@ -20785,59 +20841,59 @@
                   
                   <div class="mr-5"><b>Usuarios inscritos en Cultura de Paz.   Hombres<br> Identificación y desnormalización de violencias:<span class="float-right"></span></b></div>
                 </div>
-                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresCulturaDePaz">
+                <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresCulturaDePazHombres">
                   <span class="float-left">Ver detalle</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
                   </span>
                 </a>
-                <div class="collapse" id="collapsePorPilaresCulturaDePaz">
+                <div class="collapse" id="collapsePorPilaresCulturaDePazHombres">
                   <div class="card card-body">
                     <table class="table table-striped ">
                       <tbody class="bg-light">
                       <tr>
                           <!-- <th scope="row">De género</th>
-                          <td><?=$pilaresTotalesAutnomia1['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia1['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra mujeres</th>
-                          <td><?=$pilaresTotalesAutnomia2['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia2['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra niños y jóvenes </th>
-                          <td><?=$pilaresTotalesAutnomia3['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia3['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Familiar</th>
-                          <td><?=$pilaresTotalesAutnomia4['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia4['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Entre pares</th>
-                          <td><?=$pilaresTotalesAutnomia5['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia5['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Hacia adultos mayores</th>
-                          <td><?=$pilaresTotalesAutnomia6['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia6['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">En la comunidad/espacios públicos</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia7['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra animales</th>
-                          <td><?=$pilaresTotalesAutnomia8['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia8['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Acoso escolar</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia7['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Adicciones</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia7['userPorActividad']?></td>
                         </tr>
                         <tr>
                           <th scope="row">Contra grupos étnicos, migrantes y los que forman parte de la diversidad sexual y funcional</th>
-                          <td><?=$pilaresTotalesAutnomia7['userPorPilaresAutonomia']?></td>
+                          <td><?=$pilaresTotalesAutnomia7['userPorActividad']?></td>
                         </tr> -->
                        </tbody>
                     </table>
