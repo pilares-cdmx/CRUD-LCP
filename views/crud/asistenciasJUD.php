@@ -4731,7 +4731,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
     </div>
   </div> 
   
-<!-- Usuarios inscritos por PILARES-->
+<!-- Usuarios con beca por PILARES-->
   <div class="row">
     <div class="col-xl-6 col-sm-6 mb-3">
       <div class="card text-info bg-light o-hidden h-100">
@@ -6555,6 +6555,300 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
       </div>
     </div>
   </div> 
+
+  <!-- Usuarios con beca por PILARES-->
+  <div class="row">
+    <div class="col-xl-6 col-sm-6 mb-3">
+      <div class="card text-info bg-light o-hidden h-100">
+          <div class="card-body">
+            <div class="card-body-icon">
+            <i class="fas fa-landmark"></i>
+            </div>
+            
+            <div class="mr-5"><b>Usuarios con beca por PILARES<span class="float-right"></span></b></div>
+          </div>
+          <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilares">
+            <span class="float-left">Ver detalle</span>
+            <span class="float-right">
+              <i class="fas fa-angle-right"></i>
+            </span>
+          </a>
+          <div class="collapse" id="collapsePorPilares">
+            <div class="card card-body">
+              <table class="table table-striped ">
+                <tbody class="bg-light">
+                  <tr>
+                    <th scope="row">La Araña </th>
+                    <td><?=$pilaresTotales1['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">El Capulín</th>
+                    <td><?=$pilaresTotales2['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Jalalpa </th>
+                    <td><?=$pilaresTotales3['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Xalli</th>
+                    <td><?=$pilaresTotales4['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cantera</th>
+                    <td><?=$pilaresTotales5['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Emiliano Zapata</th>
+                    <td><?=$pilaresTotales6['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Chimalpa</th>
+                    <td><?=$pilaresTotales7['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">San Simón Tolnáhuac </th>
+                    <td><?=$pilaresTotales8['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Frida Kahlo </th>
+                    <td><?=$pilaresTotales9['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Atlampa</th>
+                    <td><?=$pilaresTotales10['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Richard Wagner </th>
+                    <td><?=$pilaresTotales11['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Benita Galeana </th>
+                    <td><?=$pilaresTotales12['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tlalpexco</th>
+                    <td><?=$pilaresTotales13['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">José Martí </th>
+                    <td><?=$pilaresTotales14['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Agrícola Pantitlán </th>
+                    <td><?=$pilaresTotales15['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Central de Abasto</th>
+                    <td><?=$pilaresTotales16['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cooperemos Pueblo </th>
+                    <td><?=$pilaresTotales17['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Acahualtepec</th>
+                    <td><?=$pilaresTotales18['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Gabriela Mistral </th>
+                    <td><?=$pilaresTotales19['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Huayatla</th>
+                    <td><?=$pilaresTotales20['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Caneguín</th>
+                    <td><?=$pilaresTotales47['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">San Salvador Cuauhtenco</th>
+                    <td><?=$pilaresTotales21['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Zapotitla</th>
+                    <td><?=$pilaresTotales22['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Rosario Castellanos</th>
+                    <td><?=$pilaresTotales23['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tulyehualco</th>
+                    <td><?=$pilaresTotales24['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">San Francisco </th>
+                    <td><?=$pilaresTotales25['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Belén de las flores</th>
+                    <td><?=$pilaresTotales26['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Margarita Maza de Juárez </th>
+                    <td><?=$pilaresTotales27['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Atlapulco </th>
+                    <td><?=$pilaresTotales28['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Santa Cecilia </th>
+                    <td><?=$pilaresTotales29['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tepalcatlalpan</th>
+                    <td><?=$pilaresTotales30['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cerro de la estrella </th>
+                    <td><?=$pilaresTotales31['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Facundo Cabral</th>
+                    <td><?=$pilaresTotales32['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">San lucas xochimanca </th>
+                    <td><?=$pilaresTotales33['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Zapata Vela </th>
+                    <td><?=$pilaresTotales34['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Insurgentes</th>
+                    <td><?=$pilaresTotales35['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Amantla</th>
+                    <td><?=$pilaresTotales36['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">La Cuesta </th>
+                    <td><?=$pilaresTotales37['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tizimín</th>
+                    <td><?=$pilaresTotales38['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ecoguardas</th>
+                    <td><?=$pilaresTotales39['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Árbol del conocimiento</th>
+                    <td><?=$pilaresTotales40['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Santa Fe</th>
+                    <td><?=$pilaresTotales41['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">La Era</th>
+                    <td><?=$pilaresTotales42['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Isidro Fabela</th>
+                    <td><?=$pilaresTotales43['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Villa Panamericana</th>
+                    <td><?=$pilaresTotales44['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Santa Úrsula</th>
+                    <td><?=$pilaresTotales45['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Paulo Freire</th>
+                    <td><?=$pilaresTotales46['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">San Pedro Xalpa</th>
+                    <td><?=$pilaresTotales48['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Xaltipac</th>
+                    <td><?=$pilaresTotales50['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Palmitas</th>
+                    <td><?=$pilaresTotales51['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Teotongo</th>
+                    <td><?=$pilaresTotales52['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Insurgentes</th>
+                    <td><?=$pilaresTotales53['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">La Fortaleza</th>
+                    <td><?=$pilaresTotales54['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Rojo Gómez</th>
+                    <td><?=$pilaresTotales55['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Municipio Libre</th>
+                    <td><?=$pilaresTotales56['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">San Pedro Actopan</th>
+                    <td><?=$pilaresTotales57['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">San Bartolomé Xicomulco</th>
+                    <td><?=$pilaresTotales58['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Centenario</th>
+                    <td><?=$pilaresTotales59['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">16 de Septiembre</th>
+                          <td><?=$pilaresTotales60['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">La Naranja</th>
+                      <td><?=$pilaresTotales61['userPorPilares']?></td>
+                  </tr>
+                        <tr>
+                          <th scope="row">Xochinahuac</th>
+                          <td><?=$pilaresTotales62['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Renovación</th>
+                          <td><?=$pilaresTotales63['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Mixquic</th>
+                          <td><?=$pilaresTotales64['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Presidentes</th>
+                          <td><?=$pilaresTotales65['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Santa Lucía</th>
+                          <td><?=$pilaresTotales66['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Tetecón</th>
+                          <td><?=$pilaresTotales67['userPorPilares']?></td>
+                        </tr>    
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </div>
 <!-- /.container-fluid -->
 
 <!-- Sticky Footer -->
