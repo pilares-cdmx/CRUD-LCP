@@ -172,12 +172,12 @@
     //var_dump($intervaloTotales3);
     $totalesIntervalo3 = mysqli_fetch_array($intervaloTotales3);
 
-    $sql="SELECT count(*) AS userPorIntervalo FROM Usuario  WHERE fechaNacimiento BETWEEN '1988-12-31' AND '2005-01-01'";
+    $sql="SELECT count(*) AS userPorIntervalo FROM Usuario  WHERE fechaNacimiento BETWEEN '1988-12-31' AND '2004-01-01'";
     $intervaloTotales4 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales4);
     $totalesIntervalo4 = mysqli_fetch_array($intervaloTotales4);
 
-    $sql="SELECT count(*) AS userPorIntervalo FROM Usuario  WHERE fechaNacimiento BETWEEN '2005-01-01' AND '2016-12-31'";
+    $sql="SELECT count(*) AS userPorIntervalo FROM Usuario  WHERE fechaNacimiento BETWEEN '2003-12-31' AND '2016-12-31'";
     $intervaloTotales5 = mysqli_query($con, $sql);
     //var_dump($intervaloTotales5);
     $totalesIntervalo5 = mysqli_fetch_array($intervaloTotales5);
