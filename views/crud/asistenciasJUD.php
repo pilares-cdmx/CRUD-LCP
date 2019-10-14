@@ -3200,337 +3200,337 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
 /**
  *Atenciones de Usuarios con beca por PILARES   SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.PiUares_idPilares = '1'
  */
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idUsuario = A1.Asistencias_Usuario_idUsuarios AND A1.Pilares_idPilares = '1'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '1'";
     $totalesPilaresAtenciones1 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones1);
     $pilaresTotalesAtenciones1= mysqli_fetch_array($totalesPilaresAtenciones1);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '2'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '2'";
     $totalesPilaresAtenciones2 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones2);
     $pilaresTotalesAtenciones2= mysqli_fetch_array($totalesPilaresAtenciones2);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '3'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '3'";
     $totalesPilaresAtenciones3 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones3);
     $pilaresTotalesAtenciones3= mysqli_fetch_array($totalesPilaresAtenciones3);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '4'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '4'";
     $totalesPilaresAtenciones4 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones4);
     $pilaresTotalesAtenciones4= mysqli_fetch_array($totalesPilaresAtenciones4);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '5'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '5'";
     $totalesPilaresAtenciones5 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones5);
     $pilaresTotalesAtenciones5= mysqli_fetch_array($totalesPilaresAtenciones5);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '6'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '6'";
     $totalesPilaresAtenciones6 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones6);
     $pilaresTotalesAtenciones6= mysqli_fetch_array($totalesPilaresAtenciones6);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '7'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '7'";
     $totalesPilaresAtenciones7 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones7);
     $pilaresTotalesAtenciones7= mysqli_fetch_array($totalesPilaresAtenciones7);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '8'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '8'";
     $totalesPilaresAtenciones8 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones8);
     $pilaresTotalesAtenciones8= mysqli_fetch_array($totalesPilaresAtenciones8);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '9'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '9'";
     $totalesPilaresAtenciones9 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones9);
     $pilaresTotalesAtenciones9= mysqli_fetch_array($totalesPilaresAtenciones9);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '10'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '10'";
     $totalesPilaresAtenciones10 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones10);
     $pilaresTotalesAtenciones10= mysqli_fetch_array($totalesPilaresAtenciones10);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '11'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '11'";
     $totalesPilaresAtenciones11 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones11);
     $pilaresTotalesAtenciones11= mysqli_fetch_array($totalesPilaresAtenciones11);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '12'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '12'";
     $totalesPilaresAtenciones12 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones12);
     $pilaresTotalesAtenciones12= mysqli_fetch_array($totalesPilaresAtenciones12);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '13'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '13'";
     $totalesPilaresAtenciones13 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones13);
     $pilaresTotalesAtenciones13= mysqli_fetch_array($totalesPilaresAtenciones13);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '14'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '14'";
     $totalesPilaresAtenciones14 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones14);
     $pilaresTotalesAtenciones14= mysqli_fetch_array($totalesPilaresAtenciones14);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '15'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '15'";
     $totalesPilaresAtenciones15 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones15);
     $pilaresTotalesAtenciones15= mysqli_fetch_array($totalesPilaresAtenciones15);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '16'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '16'";
     $totalesPilaresAtenciones16 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones16);
     $pilaresTotalesAtenciones16= mysqli_fetch_array($totalesPilaresAtenciones16);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '17'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '17'";
     $totalesPilaresAtenciones17 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones17);
     $pilaresTotalesAtenciones17= mysqli_fetch_array($totalesPilaresAtenciones17);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '18'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '18'";
     $totalesPilaresAtenciones18 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones18);
     $pilaresTotalesAtenciones18= mysqli_fetch_array($totalesPilaresAtenciones18);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '19'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '19'";
     $totalesPilaresAtenciones19 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones19);
     $pilaresTotalesAtenciones19= mysqli_fetch_array($totalesPilaresAtenciones19);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '20'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '20'";
     $totalesPilaresAtenciones20 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones20);
     $pilaresTotalesAtenciones20= mysqli_fetch_array($totalesPilaresAtenciones20);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '21'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '21'";
     $totalesPilaresAtenciones47 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones21);
     $pilaresTotalesAtenciones47= mysqli_fetch_array($totalesPilaresAtenciones47);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '22'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '22'";
     $totalesPilaresAtenciones21 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones21);
     $pilaresTotalesAtenciones21= mysqli_fetch_array($totalesPilaresAtenciones21);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '23'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '23'";
     $totalesPilaresAtenciones22 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones22);
     $pilaresTotalesAtenciones22= mysqli_fetch_array($totalesPilaresAtenciones22);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '24'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '24'";
     $totalesPilaresAtenciones23 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones23);
     $pilaresTotalesAtenciones23= mysqli_fetch_array($totalesPilaresAtenciones23);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '26'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '26'";
     $totalesPilaresAtenciones24 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones24);
     $pilaresTotalesAtenciones24= mysqli_fetch_array($totalesPilaresAtenciones24);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '27'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '27'";
     $totalesPilaresAtenciones25 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones25);
     $pilaresTotalesAtenciones25= mysqli_fetch_array($totalesPilaresAtenciones25);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '31'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '31'";
     $totalesPilaresAtenciones26 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones26);
     $pilaresTotalesAtenciones26= mysqli_fetch_array($totalesPilaresAtenciones26);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '32'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '32'";
     $totalesPilaresAtenciones27 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones27);
     $pilaresTotalesAtenciones27= mysqli_fetch_array($totalesPilaresAtenciones27);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '33'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '33'";
     $totalesPilaresAtenciones28 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones28);
     $pilaresTotalesAtenciones28= mysqli_fetch_array($totalesPilaresAtenciones28);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '34'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '34'";
     $totalesPilaresAtenciones29 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones29);
     $pilaresTotalesAtenciones29= mysqli_fetch_array($totalesPilaresAtenciones29);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '35'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '35'";
     $totalesPilaresAtenciones30 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones30);
     $pilaresTotalesAtenciones30= mysqli_fetch_array($totalesPilaresAtenciones30);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '36'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '36'";
     $totalesPilaresAtenciones31 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones31);
     $pilaresTotalesAtenciones31= mysqli_fetch_array($totalesPilaresAtenciones31);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '37'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '37'";
     $totalesPilaresAtenciones32 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones32);
     $pilaresTotalesAtenciones32= mysqli_fetch_array($totalesPilaresAtenciones32);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '38'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '38'";
     $totalesPilaresAtenciones33 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones33);
     $pilaresTotalesAtenciones33= mysqli_fetch_array($totalesPilaresAtenciones33);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '39'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '39'";
     $totalesPilaresAtenciones34 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones34);
     $pilaresTotalesAtenciones34= mysqli_fetch_array($totalesPilaresAtenciones34);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '40'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '40'";
     $totalesPilaresAtenciones35 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones35);
     $pilaresTotalesAtenciones35= mysqli_fetch_array($totalesPilaresAtenciones35);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '41'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '41'";
     $totalesPilaresAtenciones36 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones36);
     $pilaresTotalesAtenciones36= mysqli_fetch_array($totalesPilaresAtenciones36);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '42'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '42'";
     $totalesPilaresAtenciones37 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones37);
     $pilaresTotalesAtenciones37= mysqli_fetch_array($totalesPilaresAtenciones37);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '43'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '43'";
     $totalesPilaresAtenciones38 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones38);
     $pilaresTotalesAtenciones38= mysqli_fetch_array($totalesPilaresAtenciones38);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '44'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '44'";
     $totalesPilaresAtenciones39 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones39);
     $pilaresTotalesAtenciones39= mysqli_fetch_array($totalesPilaresAtenciones39);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '45'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '45'";
     $totalesPilaresAtenciones40 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones40);
     $pilaresTotalesAtenciones40= mysqli_fetch_array($totalesPilaresAtenciones40);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '46'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '46'";
     $totalesPilaresAtenciones41 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones41);
     $pilaresTotalesAtenciones41= mysqli_fetch_array($totalesPilaresAtenciones41);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '47'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '47'";
     $totalesPilaresAtenciones42 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones42);
     $pilaresTotalesAtenciones42= mysqli_fetch_array($totalesPilaresAtenciones42);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '48'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '48'";
     $totalesPilaresAtenciones43 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones43);
     $pilaresTotalesAtenciones43= mysqli_fetch_array($totalesPilaresAtenciones43);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '49'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '49'";
     $totalesPilaresAtenciones44 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones44);
     $pilaresTotalesAtenciones44= mysqli_fetch_array($totalesPilaresAtenciones44);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '50'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '50'";
     $totalesPilaresAtenciones45 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones45);
     $pilaresTotalesAtenciones45= mysqli_fetch_array($totalesPilaresAtenciones45);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '51'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '51'";
     $totalesPilaresAtenciones46 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones46);
     $pilaresTotalesAtenciones46= mysqli_fetch_array($totalesPilaresAtenciones46);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '52'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '52'";
     $totalesPilaresAtenciones48 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones48);
     $pilaresTotalesAtenciones48= mysqli_fetch_array($totalesPilaresAtenciones48);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '53'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '53'";
     $totalesPilaresAtenciones49 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones49);
     $pilaresTotalesAtenciones49= mysqli_fetch_array($totalesPilaresAtenciones49);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '54'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '54'";
     $totalesPilaresAtenciones50 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones50);
     $pilaresTotalesAtenciones50= mysqli_fetch_array($totalesPilaresAtenciones50);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '55'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '55'";
     $totalesPilaresAtenciones51 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones51);
     $pilaresTotalesAtenciones51= mysqli_fetch_array($totalesPilaresAtenciones51);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '56'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '56'";
     $totalesPilaresAtenciones52 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones52);
     $pilaresTotalesAtenciones52= mysqli_fetch_array($totalesPilaresAtenciones52);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '57'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '57'";
     $totalesPilaresAtenciones53 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones53);
     $pilaresTotalesAtenciones53= mysqli_fetch_array($totalesPilaresAtenciones53);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '58'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '58'";
     $totalesPilaresAtenciones54 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones54);
     $pilaresTotalesAtenciones54= mysqli_fetch_array($totalesPilaresAtenciones54);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '59'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '59'";
     $totalesPilaresAtenciones55 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones55);
     $pilaresTotalesAtenciones55= mysqli_fetch_array($totalesPilaresAtenciones55);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '60'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '60'";
     $totalesPilaresAtenciones56 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones56);
     $pilaresTotalesAtenciones56= mysqli_fetch_array($totalesPilaresAtenciones56);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '61'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '61'";
     $totalesPilaresAtenciones57 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones57);
     $pilaresTotalesAtenciones57= mysqli_fetch_array($totalesPilaresAtenciones57);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '62'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '62'";
     $totalesPilaresAtenciones58 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones58);
     $pilaresTotalesAtenciones58= mysqli_fetch_array($totalesPilaresAtenciones58);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '63'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '63'";
     $totalesPilaresAtenciones59 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones59);
     $pilaresTotalesAtenciones59= mysqli_fetch_array($totalesPilaresAtenciones59);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '64'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '64'";
     $totalesPilaresAtenciones60 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones60);
     $pilaresTotalesAtenciones60= mysqli_fetch_array($totalesPilaresAtenciones60);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '65'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '65'";
     $totalesPilaresAtenciones61 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones61);
     $pilaresTotalesAtenciones61= mysqli_fetch_array($totalesPilaresAtenciones61);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '66'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '66'";
     $totalesPilaresAtenciones62 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones62);
     $pilaresTotalesAtenciones62= mysqli_fetch_array($totalesPilaresAtenciones62);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '67'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '67'";
     $totalesPilaresAtenciones63 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones63);
     $pilaresTotalesAtenciones63= mysqli_fetch_array($totalesPilaresAtenciones63);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '68'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '68'";
     $totalesPilaresAtenciones64 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones64);
     $pilaresTotalesAtenciones64= mysqli_fetch_array($totalesPilaresAtenciones64);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '70'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '70'";
     $totalesPilaresAtenciones65 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones65);
     $pilaresTotalesAtenciones65= mysqli_fetch_array($totalesPilaresAtenciones65);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '71'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '71'";
     $totalesPilaresAtenciones66 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones66);
     $pilaresTotalesAtenciones66= mysqli_fetch_array($totalesPilaresAtenciones66);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1, AsistenciasPorPilar A1 WHERE U1.idUsuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND B1.idusuario = A1.Asistencias_Usuario_idUsuarios AND U2.Pilares_idPilares = '72'";
+    $sql="SELECT count(*) AS userPorPilares FROM Asistencias A1, Usuario U1, AsistenciasPorActividad A2, AsistenciasPorPilar A3, Becas_produccion B1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.idUsuarios = A2.Asistencias_Usuario_idUsuarios AND U1.idUsuarios = A3.Asistencias_Usuario_idUsuarios AND A1.idAsistencias = A2.Asistencias_idAsistencias AND A1.idAsistencias = A3.Asistencias_idAsistencias AND B1.idUsuario = U1.idUsuarios AND A3.Pilares_idPilares = '72'";
     $totalesPilaresAtenciones67 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAtenciones67);
     $pilaresTotalesAtenciones67= mysqli_fetch_array($totalesPilaresAtenciones67);
