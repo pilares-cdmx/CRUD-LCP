@@ -10923,9 +10923,9 @@
     $generoHombres = mysqli_fetch_array($totalesGeneroHombres);
 
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND Actividades_idActividades = '193'";
-    $totalesContraHombresHombres = mysqli_query($con, $sql);
+    $totalesContraMujeresHombres = mysqli_query($con, $sql);
     //var_dump($totalesCultura);
-    $contraHombresHombres = mysqli_fetch_array($totalesContraHombresHombres);
+    $contraMujeresHombres = mysqli_fetch_array($totalesContraMujeresHombres);
 
     $sql="SELECT COUNT(DISTINCT Usuario_idUsuarios) AS userPorActividad FROM Usuario U1, ActividadesPorUsuario A1 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND U1.sexo LIKE '%H%' AND Actividades_idActividades = '194'";
     $totalesNinosHombres = mysqli_query($con, $sql);
