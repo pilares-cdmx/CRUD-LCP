@@ -3197,6 +3197,344 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
     $totalesPilares67 = mysqli_query($con, $sql);
     //var_dump($totalesPilares67);
     $pilaresTotales67= mysqli_fetch_array($totalesPilares67);
+
+/**
+ * Usuarios. Registro  por PILARES  de procedencia   SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '1'
+ */
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '1'";
+    $totalesPilares1 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares1);
+    $pilaresProcedenciaTotales1= mysqli_fetch_array($totalesPilares1);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '2'";
+    $totalesPilares2 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares2);
+    $pilaresProcedenciaTotales2= mysqli_fetch_array($totalesPilares2);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '3'";
+    $totalesPilares3 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares3);
+    $pilaresProcedenciaTotales3= mysqli_fetch_array($totalesPilares3);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '4'";
+    $totalesPilares4 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares4);
+    $pilaresProcedenciaTotales4= mysqli_fetch_array($totalesPilares4);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '5'";
+    $totalesPilares5 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares5);
+    $pilaresProcedenciaTotales5= mysqli_fetch_array($totalesPilares5);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '6'";
+    $totalesPilares6 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares6);
+    $pilaresProcedenciaTotales6= mysqli_fetch_array($totalesPilares6);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '7'";
+    $totalesPilares7 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares7);
+    $pilaresProcedenciaTotales7= mysqli_fetch_array($totalesPilares7);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '8'";
+    $totalesPilares8 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares8);
+    $pilaresProcedenciaTotales8= mysqli_fetch_array($totalesPilares8);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '9'";
+    $totalesPilares9 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares9);
+    $pilaresProcedenciaTotales9= mysqli_fetch_array($totalesPilares9);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '10'";
+    $totalesPilares10 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares10);
+    $pilaresProcedenciaTotales10= mysqli_fetch_array($totalesPilares10);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '11'";
+    $totalesPilares11 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares11);
+    $pilaresProcedenciaTotales11= mysqli_fetch_array($totalesPilares11);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '12'";
+    $totalesPilares12 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares12);
+    $pilaresProcedenciaTotales12= mysqli_fetch_array($totalesPilares12);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '13'";
+    $totalesPilares13 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares13);
+    $pilaresProcedenciaTotales13= mysqli_fetch_array($totalesPilares13);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '14'";
+    $totalesPilares14 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares14);
+    $pilaresProcedenciaTotales14= mysqli_fetch_array($totalesPilares14);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '15'";
+    $totalesPilares15 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares15);
+    $pilaresProcedenciaTotales15= mysqli_fetch_array($totalesPilares15);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '16'";
+    $totalesPilares16 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares16);
+    $pilaresProcedenciaTotales16= mysqli_fetch_array($totalesPilares16);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '17'";
+    $totalesPilares17 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares17);
+    $pilaresProcedenciaTotales17= mysqli_fetch_array($totalesPilares17);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '18'";
+    $totalesPilares18 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares18);
+    $pilaresProcedenciaTotales18= mysqli_fetch_array($totalesPilares18);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '19'";
+    $totalesPilares19 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares19);
+    $pilaresProcedenciaTotales19= mysqli_fetch_array($totalesPilares19);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '20'";
+    $totalesPilares20 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares20);
+    $pilaresProcedenciaTotales20= mysqli_fetch_array($totalesPilares20);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '21'";
+    $totalesPilares47 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares21);
+    $pilaresProcedenciaTotales47= mysqli_fetch_array($totalesPilares47);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '22'";
+    $totalesPilares21 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares21);
+    $pilaresProcedenciaTotales21= mysqli_fetch_array($totalesPilares21);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '23'";
+    $totalesPilares22 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares22);
+    $pilaresProcedenciaTotales22= mysqli_fetch_array($totalesPilares22);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '24'";
+    $totalesPilares23 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares23);
+    $pilaresProcedenciaTotales23= mysqli_fetch_array($totalesPilares23);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '26'";
+    $totalesPilares24 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares24);
+    $pilaresProcedenciaTotales24= mysqli_fetch_array($totalesPilares24);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '27'";
+    $totalesPilares25 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares25);
+    $pilaresProcedenciaTotales25= mysqli_fetch_array($totalesPilares25);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '31'";
+    $totalesPilares26 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares26);
+    $pilaresProcedenciaTotales26= mysqli_fetch_array($totalesPilares26);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '32'";
+    $totalesPilares27 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares27);
+    $pilaresProcedenciaTotales27= mysqli_fetch_array($totalesPilares27);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '33'";
+    $totalesPilares28 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares28);
+    $pilaresProcedenciaTotales28= mysqli_fetch_array($totalesPilares28);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '34'";
+    $totalesPilares29 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares29);
+    $pilaresProcedenciaTotales29= mysqli_fetch_array($totalesPilares29);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '35'";
+    $totalesPilares30 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares30);
+    $pilaresProcedenciaTotales30= mysqli_fetch_array($totalesPilares30);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '36'";
+    $totalesPilares31 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares31);
+    $pilaresProcedenciaTotales31= mysqli_fetch_array($totalesPilares31);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '37'";
+    $totalesPilares32 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares32);
+    $pilaresProcedenciaTotales32= mysqli_fetch_array($totalesPilares32);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '38'";
+    $totalesPilares33 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares33);
+    $pilaresProcedenciaTotales33= mysqli_fetch_array($totalesPilares33);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '39'";
+    $totalesPilares34 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares34);
+    $pilaresProcedenciaTotales34= mysqli_fetch_array($totalesPilares34);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '40'";
+    $totalesPilares35 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares35);
+    $pilaresProcedenciaTotales35= mysqli_fetch_array($totalesPilares35);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '41'";
+    $totalesPilares36 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares36);
+    $pilaresProcedenciaTotales36= mysqli_fetch_array($totalesPilares36);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '42'";
+    $totalesPilares37 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares37);
+    $pilaresProcedenciaTotales37= mysqli_fetch_array($totalesPilares37);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '43'";
+    $totalesPilares38 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares38);
+    $pilaresProcedenciaTotales38= mysqli_fetch_array($totalesPilares38);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '44'";
+    $totalesPilares39 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares39);
+    $pilaresProcedenciaTotales39= mysqli_fetch_array($totalesPilares39);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '45'";
+    $totalesPilares40 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares40);
+    $pilaresProcedenciaTotales40= mysqli_fetch_array($totalesPilares40);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '46'";
+    $totalesPilares41 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares41);
+    $pilaresProcedenciaTotales41= mysqli_fetch_array($totalesPilares41);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '47'";
+    $totalesPilares42 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares42);
+    $pilaresProcedenciaTotales42= mysqli_fetch_array($totalesPilares42);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '48'";
+    $totalesPilares43 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares43);
+    $pilaresProcedenciaTotales43= mysqli_fetch_array($totalesPilares43);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '49'";
+    $totalesPilares44 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares44);
+    $pilaresProcedenciaTotales44= mysqli_fetch_array($totalesPilares44);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '50'";
+    $totalesPilares45 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares45);
+    $pilaresProcedenciaTotales45= mysqli_fetch_array($totalesPilares45);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '51'";
+    $totalesPilares46 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares46);
+    $pilaresProcedenciaTotales46= mysqli_fetch_array($totalesPilares46);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '52'";
+    $totalesPilares48 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares48);
+    $pilaresProcedenciaTotales48= mysqli_fetch_array($totalesPilares48);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '53'";
+    $totalesPilares49 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares49);
+    $pilaresProcedenciaTotales49= mysqli_fetch_array($totalesPilares49);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '54'";
+    $totalesPilares50 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares50);
+    $pilaresProcedenciaTotales50= mysqli_fetch_array($totalesPilares50);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '55'";
+    $totalesPilares51 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares51);
+    $pilaresProcedenciaTotales51= mysqli_fetch_array($totalesPilares51);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '56'";
+    $totalesPilares52 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares52);
+    $pilaresProcedenciaTotales52= mysqli_fetch_array($totalesPilares52);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '57'";
+    $totalesPilares53 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares53);
+    $pilaresProcedenciaTotales53= mysqli_fetch_array($totalesPilares53);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '58'";
+    $totalesPilares54 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares54);
+    $pilaresProcedenciaTotales54= mysqli_fetch_array($totalesPilares54);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '59'";
+    $totalesPilares55 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares55);
+    $pilaresProcedenciaTotales55= mysqli_fetch_array($totalesPilares55);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '60'";
+    $totalesPilares56 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares56);
+    $pilaresProcedenciaTotales56= mysqli_fetch_array($totalesPilares56);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '61'";
+    $totalesPilares57 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares57);
+    $pilaresProcedenciaTotales57= mysqli_fetch_array($totalesPilares57);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '62'";
+    $totalesPilares58 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares58);
+    $pilaresProcedenciaTotales58= mysqli_fetch_array($totalesPilares58);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '63'";
+    $totalesPilares59 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares59);
+    $pilaresProcedenciaTotales59= mysqli_fetch_array($totalesPilares59);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '64'";
+    $totalesPilares60 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares60);
+    $pilaresProcedenciaTotales60= mysqli_fetch_array($totalesPilares60);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '65'";
+    $totalesPilares61 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares61);
+    $pilaresProcedenciaTotales61= mysqli_fetch_array($totalesPilares61);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '66'";
+    $totalesPilares62 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares62);
+    $pilaresProcedenciaTotales62= mysqli_fetch_array($totalesPilares62);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '67'";
+    $totalesPilares63 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares63);
+    $pilaresProcedenciaTotales63= mysqli_fetch_array($totalesPilares63);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '68'";
+    $totalesPilares64 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares64);
+    $pilaresProcedenciaTotales64= mysqli_fetch_array($totalesPilares64);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '70'";
+    $totalesPilares65 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares65);
+    $pilaresProcedenciaTotales65= mysqli_fetch_array($totalesPilares65);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '71'";
+    $totalesPilares66 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares66);
+    $pilaresProcedenciaTotales66= mysqli_fetch_array($totalesPilares66);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '72'";
+    $totalesPilares67 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares67);
+    $pilaresProcedenciaTotales67= mysqli_fetch_array($totalesPilares67);
 /**
  *Atenciones de Usuarios con beca por PILARES   SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.PiUares_idPilares = '1'
  */
@@ -5353,6 +5691,296 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                           <th scope="row">Tetecón</th>
                           <td><?=$pilaresTotales67['userPorPilares']?></td>
                         </tr>    
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6 col-sm-6 mb-3">
+      <div class="card text-info bg-light o-hidden h-100">
+          <div class="card-body">
+            <div class="card-body-icon">
+            <i class="fas fa-landmark"></i>
+            </div>
+            
+            <div class="mr-5"><b>Usuarios con beca por PILARES de procedencia<span class="float-right"></span></b></div>
+          </div>
+          <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilares">
+            <span class="float-left">Ver detalle</span>
+            <span class="float-right">
+              <i class="fas fa-angle-right"></i>
+            </span>
+          </a>
+          <div class="collapse" id="collapsePorPilares">
+            <div class="card card-body">
+              <table class="table table-striped ">
+                <tbody class="bg-light">
+                  <tr>
+                    <th scope="row">La Araña </th>
+                    <td><?=$pilaresProcedenciaTotales1['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">El Capulín</th>
+                    <td><?=$pilaresProcedenciaTotales2['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Jalalpa </th>
+                    <td><?=$pilaresProcedenciaTotales3['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Xalli</th>
+                    <td><?=$pilaresProcedenciaTotales4['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cantera</th>
+                    <td><?=$pilaresProcedenciaTotales5['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Emiliano Zapata</th>
+                    <td><?=$pilaresProcedenciaTotales6['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Chimalpa</th>
+                    <td><?=$pilaresProcedenciaTotales7['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">San Simón Tolnáhuac </th>
+                    <td><?=$pilaresProcedenciaTotales8['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Frida Kahlo </th>
+                    <td><?=$pilaresProcedenciaTotales9['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Atlampa</th>
+                    <td><?=$pilaresProcedenciaTotales10['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Richard Wagner </th>
+                    <td><?=$pilaresProcedenciaTotales11['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Benita Galeana </th>
+                    <td><?=$pilaresProcedenciaTotales12['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tlalpexco</th>
+                    <td><?=$pilaresProcedenciaTotales13['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">José Martí </th>
+                    <td><?=$pilaresProcedenciaTotales14['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Agrícola Pantitlán </th>
+                    <td><?=$pilaresProcedenciaTotales15['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Central de Abasto</th>
+                    <td><?=$pilaresProcedenciaTotales16['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cooperemos Pueblo </th>
+                    <td><?=$pilaresProcedenciaTotales17['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Acahualtepec</th>
+                    <td><?=$pilaresProcedenciaTotales18['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Gabriela Mistral </th>
+                    <td><?=$pilaresProcedenciaTotales19['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Huayatla</th>
+                    <td><?=$pilaresProcedenciaTotales20['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Caneguín</th>
+                    <td><?=$pilaresProcedenciaTotales47['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">San Salvador Cuauhtenco</th>
+                    <td><?=$pilaresProcedenciaTotales21['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Zapotitla</th>
+                    <td><?=$pilaresProcedenciaTotales22['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Rosario Castellanos</th>
+                    <td><?=$pilaresProcedenciaTotales23['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tulyehualco</th>
+                    <td><?=$pilaresProcedenciaTotales24['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">San Francisco </th>
+                    <td><?=$pilaresProcedenciaTotales25['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Belén de las flores</th>
+                    <td><?=$pilaresProcedenciaTotales26['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Margarita Maza de Juárez </th>
+                    <td><?=$pilaresProcedenciaTotales27['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Atlapulco </th>
+                    <td><?=$pilaresProcedenciaTotales28['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Santa Cecilia </th>
+                    <td><?=$pilaresProcedenciaTotales29['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tepalcatlalpan</th>
+                    <td><?=$pilaresProcedenciaTotales30['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cerro de la estrella </th>
+                    <td><?=$pilaresProcedenciaTotales31['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Facundo Cabral</th>
+                    <td><?=$pilaresProcedenciaTotales32['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">San lucas xochimanca </th>
+                    <td><?=$pilaresProcedenciaTotales33['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Zapata Vela </th>
+                    <td><?=$pilaresProcedenciaTotales34['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Insurgentes</th>
+                    <td><?=$pilaresProcedenciaTotales35['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Amantla</th>
+                    <td><?=$pilaresProcedenciaTotales36['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">La Cuesta </th>
+                    <td><?=$pilaresProcedenciaTotales37['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tizimín</th>
+                    <td><?=$pilaresProcedenciaTotales38['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ecoguardas</th>
+                    <td><?=$pilaresProcedenciaTotales39['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Árbol del conocimiento</th>
+                    <td><?=$pilaresProcedenciaTotales40['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Santa Fe</th>
+                    <td><?=$pilaresProcedenciaTotales41['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">La Era</th>
+                    <td><?=$pilaresProcedenciaTotales42['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Isidro Fabela</th>
+                    <td><?=$pilaresProcedenciaTotales43['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Villa Panamericana</th>
+                    <td><?=$pilaresProcedenciaTotales44['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Santa Úrsula</th>
+                    <td><?=$pilaresProcedenciaTotales45['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Paulo Freire</th>
+                    <td><?=$pilaresProcedenciaTotales46['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">San Pedro Xalpa</th>
+                    <td><?=$pilaresProcedenciaTotales48['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Xaltipac</th>
+                    <td><?=$pilaresProcedenciaTotales50['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Palmitas</th>
+                    <td><?=$pilaresProcedenciaTotales51['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Teotongo</th>
+                    <td><?=$pilaresProcedenciaTotales52['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Insurgentes</th>
+                    <td><?=$pilaresProcedenciaTotales53['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">La Fortaleza</th>
+                    <td><?=$pilaresProcedenciaTotales54['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Rojo Gómez</th>
+                    <td><?=$pilaresProcedenciaTotales55['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Municipio Libre</th>
+                    <td><?=$pilaresProcedenciaTotales56['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">San Pedro Actopan</th>
+                    <td><?=$pilaresProcedenciaTotales57['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">San Bartolomé Xicomulco</th>
+                    <td><?=$pilaresProcedenciaTotales58['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Centenario</th>
+                    <td><?=$pilaresProcedenciaTotales59['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">16 de Septiembre</th>
+                       <td><?=$pilaresProcedenciaTotales60['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">La Naranja</th>
+                      <td><?=$pilaresProcedenciaTotales61['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Xochinahuac</th>
+                      <td><?=$pilaresProcedenciaTotales62['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                       <th scope="row">Renovación</th>
+                      <td><?=$pilaresProcedenciaTotales63['userPorPilares']?></td>
+                   </tr>
+                  <tr>
+                      <th scope="row">Mixquic</th>
+                      <td><?=$pilaresProcedenciaTotales64['userPorPilares']?></td>
+                   </tr>
+                   <tr>
+                       <th scope="row">Presidentes</th>
+                       <td><?=$pilaresProcedenciaTotales65['userPorPilares']?></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Santa Lucía</th>
+                       <td><?=$pilaresProcedenciaTotales66['userPorPilares']?></td>
+                   </tr>
+                   <tr>
+                       <th scope="row">Tetecón</th>
+                       <td><?=$pilaresProcedenciaTotales67['userPorPilares']?></td>
+                  </tr>    
                 </tbody>
               </table>
             </div>
