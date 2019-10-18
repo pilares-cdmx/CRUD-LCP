@@ -5707,13 +5707,13 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
             
             <div class="mr-5"><b>Usuarios con beca por PILARES de procedencia<span class="float-right"></span></b></div>
           </div>
-          <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilares">
+          <a class="card-footer text-info clearfix small z-1" data-toggle="collapse" href="#collapsePorPilaresProcedencia">
             <span class="float-left">Ver detalle</span>
             <span class="float-right">
               <i class="fas fa-angle-right"></i>
             </span>
           </a>
-          <div class="collapse" id="collapsePorPilares">
+          <div class="collapse" id="collapsePorPilaresProcedencia">
             <div class="card card-body">
               <table class="table table-striped ">
                 <tbody class="bg-light">
