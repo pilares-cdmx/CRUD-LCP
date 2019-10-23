@@ -5660,6 +5660,10 @@
     //var_dump($totalesPilares73);
     $pilaresTotales73= mysqli_fetch_array($totalesPilares73);
 
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '79'";
+    $totalesPilares74 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares74);
+    $pilaresTotales73= mysqli_fetch_array($totalesPilares74);
     
 /**
  * Usuarios totales por PILARES Mujeres  select count(*) from Usuario U1, UsuariosPorPilar U2 where U1.idusuarios = U2.Usuario_idusuarios AND U1.sexo LIKE '%m%' AND U2.Pilares_idPilares = '45';
@@ -6028,6 +6032,12 @@
     $totalesPilaresMujeres73 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresMujeres73);
     $pilaresTotalesMujeres73= mysqli_fetch_array($totalesPilaresMujeres73);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.sexo LIKE '%M%' AND U2.Pilares_idPilares = '79'";
+    $totalesPilaresMujeres74 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresMujeres74);
+    $pilaresTotalesMujeres74= mysqli_fetch_array($totalesPilaresMujeres74);
+
  /**
  * Usuarios totales por PILARES Hombres  select count(*) from Usuario U1, UsuariosPorPilar U2 where U1.idusuarios = U2.Usuario_idusuarios AND U1.sexo LIKE '%m%' AND U2.Pilares_idPilares = '45';
  */
@@ -6395,6 +6405,13 @@
     $totalesPilaresHombres73 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresHombres73);
     $pilaresTotalesHombres73= mysqli_fetch_array($totalesPilaresHombres73);
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '79'";
+    $totalesPilaresHombres74 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresHombres74);
+    $pilaresTotalesHombres74= mysqli_fetch_array($totalesPilaresHombres74);
+
+
   /**
  * Usuarios totales por PILARES Autnomia Economica   select count(DISTINCT U1.idUsuarios) from Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 where U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '1';
  */
@@ -6762,6 +6779,13 @@
     $totalesPilaresAutonomia73 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAutonomia73);
     $pilaresTotalesAutnomia73= mysqli_fetch_array($totalesPilaresAutonomia73);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '79'";
+    $totalesPilaresAutonomia74 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresAutonomia74);
+    $pilaresTotalesAutnomia74= mysqli_fetch_array($totalesPilaresAutonomia74);
+
+
  /**
  * Usuarios totales por PILARES Autnomia Economica Mujeres  select count(DISTINCT U1.idUsuarios) from Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 where U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '1';
  */
@@ -7129,7 +7153,13 @@
     $totalesPilaresAutnomiaMujeres73 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAutnomiaMujeres73);
     $pilaresTotalesAutnomiaMujeres73= mysqli_fetch_array($totalesPilaresAutnomiaMujeres73);
-/**
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U1.sexo LIKE '%M%' AND U2.Pilares_idPilares = '79'";
+    $totalesPilaresAutnomiaMujeres74 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresAutnomiaMujeres74);
+    $pilaresTotalesAutnomiaMujeres74= mysqli_fetch_array($totalesPilaresAutnomiaMujeres74);
+
+    /**
  * Usuarios totales por PILARES Autnomia Economica Hombres  select count(DISTINCT U1.idUsuarios) from Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 where U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '1';
  */
     $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '1'";
@@ -7496,6 +7526,11 @@
     $totalesPilaresAutnomiaHombres73 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresAutnomiaHombres73);
     $pilaresTotalesAutnomiaHombres73= mysqli_fetch_array($totalesPilaresAutnomiaHombres73);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresAutonomia FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U1.sexo LIKE '%H%' AND U2.Pilares_idPilares = '79'";
+    $totalesPilaresAutnomiaHombres74 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresAutnomiaHombres74);
+    $pilaresTotalesAutnomiaHombres74= mysqli_fetch_array($totalesPilaresAutnomiaHombres74);
 /**
  * Usuarios totales por PILARES A Ciberescuelas  select count(DISTINCT U1.idUsuarios) from Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 where U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '3' AND U2.Pilares_idPilares = '1';
  */
@@ -7864,7 +7899,12 @@
     //var_dump($totalesPilaresCiberescuelas73);
     $pilaresTotalesCiberescuelas73= mysqli_fetch_array($totalesPilaresCiberescuelas73);
 
-/**
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U2.Pilares_idPilares = '79'";
+    $totalesPilaresCiberescuelas74 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescuelas74);
+    $pilaresTotalesCiberescuelas74= mysqli_fetch_array($totalesPilaresCiberescuelas74);
+
+    /**
  * Usuarios totales por PILARES Ciberescuelas Mujeres 
  */
     $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.sexo LIKE '%M%' AND U2.Pilares_idPilares = '1'";
@@ -8236,6 +8276,12 @@
     $totalesPilaresCiberescuelasMujeres73 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresCiberescuelasMujeres73);
     $pilaresTotalesCiberescelasMujeres73= mysqli_fetch_array($totalesPilaresCiberescuelasMujeres73);
+
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U2.Pilares_idPilares = '79'";
+    $totalesPilaresCiberescuelasMujeres74 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescuelasMujeres74);
+    $pilaresTotalesCiberescelasMujeres74= mysqli_fetch_array($totalesPilaresCiberescuelasMujeres74);
+
 /**
  * Usuarios totales por PILARES Ciberescuelas Hombres 
  */
@@ -8608,7 +8654,12 @@
     $totalesPilaresCiberescuelasHombres73 = mysqli_query($con, $sql);
     //var_dump($totalesPilaresCiberescuelasHombres73);
     $pilaresTotalesCiberescelasHombres73= mysqli_fetch_array($totalesPilaresCiberescuelasHombres73);
-    
+   
+    $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilaresCiberescuelas FROM Usuario U1, ActividadesPorUsuario A1, UsuariosPorPilar U2 WHERE U1.idUsuarios = A1.Usuario_idUsuarios AND A1.Usuario_idusuarios = U2.Usuario_idusuarios AND A1.Actividades_TiposActividades_idTiposActividades = '4' AND U1.sexo LIKE '%H%'  AND U2.Pilares_idPilares = '79'";
+    $totalesPilaresCiberescuelasHombres74 = mysqli_query($con, $sql);
+    //var_dump($totalesPilaresCiberescuelasHombres73);
+    $pilaresTotalesCiberescelasHombres74= mysqli_fetch_array($totalesPilaresCiberescuelasHombres74);
+   
 
     /**
     * Totales por tipo de actividad
