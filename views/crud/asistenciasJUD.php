@@ -5722,7 +5722,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
                     <td><?=$pilaresProcedenciaTotales1['userPorPilares']?></td>
                   </tr>
                   <tr>
-                    <th scope="row">El Capulín</th>
+                    <th scope="row">El Capulín</th> 
                     <td><?=$pilaresProcedenciaTotales2['userPorPilares']?></td>
                   </tr>
                   <tr>
