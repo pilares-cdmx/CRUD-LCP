@@ -16659,7 +16659,7 @@
                           <td><?=$pilaresTotales72['userPorPilares']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <th scope="row">Santa Cruz Meyehualco</th>
                           <td><?=$pilaresTotales73['userPorPilares']?></td>
                         </tr>
                         <tr>
