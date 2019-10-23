@@ -5660,6 +5660,7 @@
     //var_dump($totalesPilares73);
     $pilaresTotales73= mysqli_fetch_array($totalesPilares73);
 
+
     
 /**
  * Usuarios totales por PILARES Mujeres  select count(*) from Usuario U1, UsuariosPorPilar U2 where U1.idusuarios = U2.Usuario_idusuarios AND U1.sexo LIKE '%m%' AND U2.Pilares_idPilares = '45';
@@ -16612,8 +16613,8 @@
                           <td><?=$pilaresTotales73['userPorPilares']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Adolfo Lopéz Mateos</th>
-                          <td><?=$pilaresTotales73['userPorPilares']?></td>
+                          <th scope="row">Cerro azul</th>
+                          <td><?=$pilaresTotales74['userPorPilares']?></td>
                         </tr>
                       </tbody>
                     </table>
@@ -16909,6 +16910,30 @@
                           <th scope="row">Villa Cid</th>
                           <td><?=$pilaresTotalesMujeres68['userPorPilares']?></td>
                         </tr>
+                        <tr>
+                          <th scope="row">Progreso Sur</th>
+                          <td><?=$pilaresTotalesMujeres69['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Nogal</th>
+                          <td><?=$pilaresTotalesMujeres70['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Purísima</th>
+                          <td><?=$pilaresTotalesMujeres71['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Escuadrón 201</th>
+                          <td><?=$pilaresTotalesMujeres72['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <td><?=$pilaresTotalesMujeres73['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Cerro azul</th>
+                          <td><?=$pilaresTotalesMujeres74['userPorPilares']?></td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -17202,6 +17227,30 @@
                         <tr>
                           <th scope="row">Villa Cid</th>
                           <td><?=$pilaresTotalesHombres68['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Progreso Sur</th>
+                          <td><?=$pilaresTotalesHombres69['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Nogal</th>
+                          <td><?=$pilaresTotalesHombres70['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Purísima</th>
+                          <td><?=$pilaresTotalesHombres71['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Escuadrón 201</th>
+                          <td><?=$pilaresTotalesHombres72['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <td><?=$pilaresTotalesHombres73['userPorPilares']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Cerro azul</th>
+                          <td><?=$pilaresTotalesHombres74['userPorPilares']?></td>
                         </tr>
                       </tbody>
                     </table>
@@ -17500,6 +17549,30 @@
                           <th scope="row">Villa Cid</th>
                           <td><?=$pilaresTotalesAutnomia68['userPorPilaresAutonomia']?></td>
                         </tr>
+                        <tr>
+                          <th scope="row">Progreso Sur</th>
+                          <td><?=$pilaresTotalesAutnomia69['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Nogal</th>
+                          <td><?=$pilaresTotalesAutnomia70['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Purísima</th>
+                          <td><?=$pilaresTotalesAutnomia71['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Escuadrón 201</th>
+                          <td><?=$pilaresTotalesAutnomia72['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <td><?=$pilaresTotalesAutnomia73['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Cerro azul</th>
+                          <td><?=$pilaresTotalesAutnomia74['userPorPilaresAutonomia']?></td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -17794,6 +17867,30 @@
                           <th scope="row">Villa Cid</th>
                           <td><?=$pilaresTotalesAutnomiaMujeres68['userPorPilaresAutonomia']?></td>
                         </tr>
+                        <tr>
+                          <th scope="row">Progreso Sur</th>
+                          <td><?=$pilaresTotalesAutnomiaMujeres69['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Nogal</th>
+                          <td><?=$pilaresTotalesAutnomiaMujeres70['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Purísima</th>
+                          <td><?=$pilaresTotalesAutnomiaMujeres71['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Escuadrón 201</th>
+                          <td><?=$pilaresTotalesAutnomiaMujeres72['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <td><?=$pilaresTotalesAutnomiaMujeres73['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Cerro azul</th>
+                          <td><?=$pilaresTotalesAutnomiaMujeres74['userPorPilaresAutonomia']?></td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -18087,6 +18184,30 @@
                         <tr>
                           <th scope="row">Villa Cid</th>
                           <td><?=$pilaresTotalesAutnomiaHombres68['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Progreso Sur</th>
+                          <td><?=$pilaresTotalesAutnomiaHombres69['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Nogal</th>
+                          <td><?=$pilaresTotalesAutnomiaHombres70['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Purísima</th>
+                          <td><?=$pilaresTotalesAutnomiaHombres71['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Escuadrón 201</th>
+                          <td><?=$pilaresTotalesAutnomiaHombres72['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <td><?=$pilaresTotalesAutnomiaHombres73['userPorPilaresAutonomia']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Cerro azul</th>
+                          <td><?=$pilaresTotalesAutnomiaHombres74['userPorPilaresAutonomia']?></td>
                         </tr>
                       </tbody>
                     </table>
@@ -18385,6 +18506,30 @@
                           <th scope="row">Villa Cid</th>
                           <td><?=$pilaresTotalesCiberescuelas68['userPorPilaresCiberescuelas']?></td>
                         </tr>
+                        <tr>
+                          <th scope="row">Progreso Sur</th>
+                          <td><?=$pilaresTotalesCiberescuelas69['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Nogal</th>
+                          <td><?=$pilaresTotalesCiberescuelas70['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Purísima</th>
+                          <td><?=$pilaresTotalesCiberescuelas71['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Escuadrón 201</th>
+                          <td><?=$pilaresTotalesCiberescuelas72['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <td><?=$pilaresTotalesCiberescuelas73['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Cerro azul</th>
+                          <td><?=$pilaresTotalesCiberescuelas74['userPorPilaresCiberescuelas']?></td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -18679,6 +18824,30 @@
                           <th scope="row">Villa Cid</th>
                           <td><?=$pilaresTotalesCiberescelasMujeres68['userPorPilaresCiberescuelas']?></td>
                         </tr>
+                        <tr>
+                          <th scope="row">Progreso Sur</th>
+                          <td><?=$pilaresTotalesCiberescelasMujeres69['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Nogal</th>
+                          <td><?=$pilaresTotalesCiberescelasMujeres70['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Purísima</th>
+                          <td><?=$pilaresTotalesCiberescelasMujeres71['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Escuadrón 201</th>
+                          <td><?=$pilaresTotalesCiberescelasMujeres72['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <td><?=$pilaresTotalesCiberescelasMujeres73['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Cerro azul</th>
+                          <td><?=$pilaresTotalesCiberescelasMujeres74['userPorPilaresCiberescuelas']?></td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -18972,6 +19141,30 @@
                         <tr>
                           <th scope="row">Villa Cid</th>
                           <td><?=$pilaresTotalesCiberescelasHombres68['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Progreso Sur</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres69['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Nogal</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres70['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Purísima</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres71['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Escuadrón 201</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres72['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres73['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Cerro azul</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres74['userPorPilaresCiberescuelas']?></td>
                         </tr>
                       </tbody>
                     </table>
