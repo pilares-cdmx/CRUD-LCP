@@ -5663,7 +5663,7 @@
     $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '79'";
     $totalesPilares74 = mysqli_query($con, $sql);
     //var_dump($totalesPilares74);
-    $pilaresTotales73= mysqli_fetch_array($totalesPilares74);
+    $pilaresTotales74= mysqli_fetch_array($totalesPilares74);
     
 /**
  * Usuarios totales por PILARES Mujeres  select count(*) from Usuario U1, UsuariosPorPilar U2 where U1.idusuarios = U2.Usuario_idusuarios AND U1.sexo LIKE '%m%' AND U2.Pilares_idPilares = '45';
@@ -16659,7 +16659,7 @@
                           <td><?=$pilaresTotales72['userPorPilares']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <th scope="row">Santa Cruz Meyehualco</th>
                           <td><?=$pilaresTotales73['userPorPilares']?></td>
                         </tr>
                         <tr>
@@ -16977,7 +16977,7 @@
                           <td><?=$pilaresTotalesMujeres72['userPorPilares']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <th scope="row">Santa Cruz Meyehualco</th>
                           <td><?=$pilaresTotalesMujeres73['userPorPilares']?></td>
                         </tr>
                         <tr>
@@ -17295,7 +17295,7 @@
                           <td><?=$pilaresTotalesHombres72['userPorPilares']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <th scope="row">Santa Cruz Meyehualco</th>
                           <td><?=$pilaresTotalesHombres73['userPorPilares']?></td>
                         </tr>
                         <tr>
@@ -17616,7 +17616,7 @@
                           <td><?=$pilaresTotalesAutnomia72['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <th scope="row">Santa Cruz Meyehualco</th>
                           <td><?=$pilaresTotalesAutnomia73['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
@@ -17934,7 +17934,7 @@
                           <td><?=$pilaresTotalesAutnomiaMujeres72['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <th scope="row">Santa Cruz Meyehualco</th>
                           <td><?=$pilaresTotalesAutnomiaMujeres73['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
@@ -18252,7 +18252,7 @@
                           <td><?=$pilaresTotalesAutnomiaHombres72['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <th scope="row">Santa Cruz Meyehualco</th>
                           <td><?=$pilaresTotalesAutnomiaHombres73['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
@@ -18573,7 +18573,7 @@
                           <td><?=$pilaresTotalesCiberescuelas72['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <th scope="row">Santa Cruz Meyehualco</th>
                           <td><?=$pilaresTotalesCiberescuelas73['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
@@ -18891,7 +18891,7 @@
                           <td><?=$pilaresTotalesCiberescelasMujeres72['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <th scope="row">Santa Cruz Meyehualco</th>
                           <td><?=$pilaresTotalesCiberescelasMujeres73['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
@@ -19209,7 +19209,7 @@
                           <td><?=$pilaresTotalesCiberescelasHombres72['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Adolfo Lopéz Mateos</th>
+                          <th scope="row">Santa Cruz Meyehualco</th>
                           <td><?=$pilaresTotalesCiberescelasHombres73['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
