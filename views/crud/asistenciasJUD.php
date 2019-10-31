@@ -3199,7 +3199,7 @@ $totalesIntervalo15 = mysqli_fetch_array($intervaloTotales15);
     $pilaresTotales67= mysqli_fetch_array($totalesPilares67);
 
 /**
- * Usuarios. Registro  por PILARES  de procedencia   SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '1'
+ * Usuarios por PILARES  de procedencia   SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '1'
  */
     $sql="SELECT count(DISTINCT U1.idUsuarios) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2, Becas_produccion B1 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U1.idUsuarios = B1.idUsuario AND U2.Pilares_idPilares = '1'";
     $totalesPilares1 = mysqli_query($con, $sql);
