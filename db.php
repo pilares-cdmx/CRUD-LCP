@@ -4,8 +4,8 @@
 
     $conn = mysqli_connect(
         'localhost',
-        'francisco',
-        'tu_contrasena',
+        'produccion',
+        '%C2R2B1N2d32MBR0S10%',
         'pilaresDB'
     );
     // $conn = mysqli_connect(
