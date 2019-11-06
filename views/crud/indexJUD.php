@@ -5664,7 +5664,16 @@
     $totalesPilares74 = mysqli_query($con, $sql);
     //var_dump($totalesPilares74);
     $pilaresTotales74= mysqli_fetch_array($totalesPilares74);
-    
+
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusu
+arios AND U2.Pilares_idPilares = '81'";
+    $totalesPilares76 = mysqli_query($con, $sql);
+    //var_dump($totalesPilares74);
+    $pilaresTotales76= mysqli_fetch_array($totalesPilares76);
+
+
+
+ 
 /**
  * Usuarios totales por PILARES Mujeres  select count(*) from Usuario U1, UsuariosPorPilar U2 where U1.idusuarios = U2.Usuario_idusuarios AND U1.sexo LIKE '%m%' AND U2.Pilares_idPilares = '45';
  */
@@ -16515,7 +16524,7 @@
                           <td><?=$pilaresTotales34['userPorPilares']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Insurgentes</th>
+                          <th scope="row">Zona Rosa</th>
                           <td><?=$pilaresTotales35['userPorPilares']?></td>
                         </tr>
                         <tr>
@@ -16833,7 +16842,7 @@
                           <td><?=$pilaresTotalesMujeres34['userPorPilares']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Insurgentes</th>
+                          <th scope="row">Zona Rosa</th>
                           <td><?=$pilaresTotalesMujeres35['userPorPilares']?></td>
                         </tr>
                         <tr>
@@ -17151,7 +17160,7 @@
                           <td><?=$pilaresTotalesHombres34['userPorPilares']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Insurgentes</th>
+                          <th scope="row">Zona Rosa</th>
                           <td><?=$pilaresTotalesHombres35['userPorPilares']?></td>
                         </tr>
                         <tr>
@@ -17472,7 +17481,7 @@
                           <td><?=$pilaresTotalesAutnomia34['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Insurgentes</th>
+                          <th scope="row">Zona Rosa</th>
                           <td><?=$pilaresTotalesAutnomia35['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
@@ -17790,7 +17799,7 @@
                           <td><?=$pilaresTotalesAutnomiaMujeres34['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Insurgentes</th>
+                          <th scope="row">Zona Rosa</th>
                           <td><?=$pilaresTotalesAutnomiaMujeres35['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
@@ -18108,7 +18117,7 @@
                           <td><?=$pilaresTotalesAutnomiaHombres34['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Insurgentes</th>
+                          <th scope="row">Zona Rosa</th>
                           <td><?=$pilaresTotalesAutnomiaHombres35['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
@@ -18429,7 +18438,7 @@
                           <td><?=$pilaresTotalesCiberescuelas34['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Insurgentes</th>
+                          <th scope="row">Zona Rosa</th>
                           <td><?=$pilaresTotalesCiberescuelas35['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
@@ -18747,7 +18756,7 @@
                           <td><?=$pilaresTotalesCiberescelasMujeres34['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Insurgentes</th>
+                          <th scope="row">Zona Rosa</th>
                           <td><?=$pilaresTotalesCiberescelasMujeres35['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
@@ -19065,7 +19074,7 @@
                           <td><?=$pilaresTotalesCiberescelasHombres34['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Insurgentes</th>
+                          <th scope="row">Zona Rosa</th>
                           <td><?=$pilaresTotalesCiberescelasHombres35['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
