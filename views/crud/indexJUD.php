@@ -5665,8 +5665,7 @@
     //var_dump($totalesPilares74);
     $pilaresTotales74= mysqli_fetch_array($totalesPilares74);
 
-    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusu
-arios AND U2.Pilares_idPilares = '81'";
+    $sql="SELECT count(*) AS userPorPilares FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idusuarios = U2.Usuario_idusuarios AND U2.Pilares_idPilares = '81'";
     $totalesPilares76 = mysqli_query($con, $sql);
     //var_dump($totalesPilares74);
     $pilaresTotales76= mysqli_fetch_array($totalesPilares76);
