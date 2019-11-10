@@ -19851,27 +19851,27 @@ $pilaresTotalesAutnomiaHombres82= mysqli_fetch_array($totalesPilaresAutnomiaHomb
                         </tr>
                         <tr>
                           <th scope="row">Nueva Atzacoalco</th>
-                          <td><?=$pilaresTotalesCiberescelasHombres76['userPorPilaresCiberescuelas']?></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Benito Júarez</th>
                           <td><?=$pilaresTotalesCiberescelasHombres77['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Río Tíber</th>
+                          <th scope="row">Benito Júarez</th>
                           <td><?=$pilaresTotalesCiberescelasHombres78['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Fray Servando</th>
+                          <th scope="row">Río Tíber</th>
                           <td><?=$pilaresTotalesCiberescelasHombres79['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Cuchilla de Padierna</th>
+                          <th scope="row">Fray Servando</th>
                           <td><?=$pilaresTotalesCiberescelasHombres80['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Santa Ana</th>
+                          <th scope="row">Cuchilla de Padierna</th>
                           <td><?=$pilaresTotalesCiberescelasHombres81['userPorPilaresCiberescuelas']?></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Santa Ana</th>
+                          <td><?=$pilaresTotalesCiberescelasHombres82['userPorPilaresCiberescuelas']?></td>
                         </tr>
 
                       </tbody>
