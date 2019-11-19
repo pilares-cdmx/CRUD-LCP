@@ -16471,7 +16471,7 @@
                           <td><?=$pilaresTotales21['userPorPilares']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Zapotitla</th>
+                          <th scope="row">García Lorca</th>
                           <td><?=$pilaresTotales22['userPorPilares']?></td>
                         </tr>
                         <tr>
@@ -16789,7 +16789,7 @@
                           <td><?=$pilaresTotalesMujeres21['userPorPilares']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Zapotitla</th>
+                          <th scope="row">García Lorca</th>
                           <td><?=$pilaresTotalesMujeres22['userPorPilares']?></td>
                         </tr>
                         <tr>
@@ -17107,7 +17107,7 @@
                           <td><?=$pilaresTotalesHombres21['userPorPilares']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Zapotitla</th>
+                          <th scope="row">García Lorca</th>
                           <td><?=$pilaresTotalesHombres22['userPorPilares']?></td>
                         </tr>
                         <tr>
@@ -17428,7 +17428,7 @@
                           <td><?=$pilaresTotalesAutnomia21['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Zapotitla</th>
+                          <th scope="row">García Lorca</th>
                           <td><?=$pilaresTotalesAutnomia22['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
@@ -17746,7 +17746,7 @@
                           <td><?=$pilaresTotalesAutnomiaMujeres21['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Zapotitla</th>
+                          <th scope="row">García Lorca</th>
                           <td><?=$pilaresTotalesAutnomiaMujeres22['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
@@ -18064,7 +18064,7 @@
                           <td><?=$pilaresTotalesAutnomiaHombres21['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Zapotitla</th>
+                          <th scope="row">García Lorca</th>
                           <td><?=$pilaresTotalesAutnomiaHombres22['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
@@ -18385,7 +18385,7 @@
                           <td><?=$pilaresTotalesCiberescuelas21['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Zapotitla</th>
+                          <th scope="row">García Lorca</th>
                           <td><?=$pilaresTotalesCiberescuelas22['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
@@ -18703,7 +18703,7 @@
                           <td><?=$pilaresTotalesCiberescelasMujeres21['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Zapotitla</th>
+                          <th scope="row">García Lorca</th>
                           <td><?=$pilaresTotalesCiberescelasMujeres22['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
@@ -19021,7 +19021,7 @@
                           <td><?=$pilaresTotalesCiberescelasHombres21['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Zapotitla</th>
+                          <th scope="row">García Lorca</th>
                           <td><?=$pilaresTotalesCiberescelasHombres22['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
