@@ -17587,7 +17587,7 @@ $pilaresTotalesAutnomiaHombres94= mysqli_fetch_array($totalesPilaresAutnomiaHomb
                           <td><?=$pilaresTotales77['userPorPilares']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Benito Júarez</th>
+                          <th scope="row">Benemérito de las Américas</th>
                           <td><?=$pilaresTotales78['userPorPilares']?></td>
                         </tr>
                         <tr>
@@ -17988,7 +17988,7 @@ $pilaresTotalesAutnomiaHombres94= mysqli_fetch_array($totalesPilaresAutnomiaHomb
                           <td><?=$pilaresTotalesMujeres77['userPorPilares']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Benito Júarez</th>
+                          <th scope="row">Benemérito de las Américas</th>
                           <td><?=$pilaresTotalesMujeres78['userPorPilares']?></td>
                         </tr>
                         <tr>
@@ -18389,7 +18389,7 @@ $pilaresTotalesAutnomiaHombres94= mysqli_fetch_array($totalesPilaresAutnomiaHomb
                           <td><?=$pilaresTotalesHombres77['userPorPilares']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Benito Júarez</th>
+                          <th scope="row">Benemérito de las Américas</th>
                           <td><?=$pilaresTotalesHombres78['userPorPilares']?></td>
                         </tr>
                         <tr>
@@ -18793,7 +18793,7 @@ $pilaresTotalesAutnomiaHombres94= mysqli_fetch_array($totalesPilaresAutnomiaHomb
                           <td><?=$pilaresTotalesAutnomia77['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Benito Júarez</th>
+                          <th scope="row">Benemérito de las Américas</th>
                           <td><?=$pilaresTotalesAutnomia78['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
@@ -19194,7 +19194,7 @@ $pilaresTotalesAutnomiaHombres94= mysqli_fetch_array($totalesPilaresAutnomiaHomb
                           <td><?=$pilaresTotalesAutnomiaMujeres77['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Benito Júarez</th>
+                          <th scope="row">Benemérito de las Américas</th>
                           <td><?=$pilaresTotalesAutnomiaMujeres78['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
@@ -19595,7 +19595,7 @@ $pilaresTotalesAutnomiaHombres94= mysqli_fetch_array($totalesPilaresAutnomiaHomb
                           <td><?=$pilaresTotalesAutnomiaHombres77['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Benito Júarez</th>
+                          <th scope="row">Benemérito de las Américas</th>
                           <td><?=$pilaresTotalesAutnomiaHombres78['userPorPilaresAutonomia']?></td>
                         </tr>
                         <tr>
@@ -19999,7 +19999,7 @@ $pilaresTotalesAutnomiaHombres94= mysqli_fetch_array($totalesPilaresAutnomiaHomb
                           <td><?=$pilaresTotalesCiberescuelas77['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Benito Júarez</th>
+                          <th scope="row">Benemérito de las Américas</th>
                           <td><?=$pilaresTotalesCiberescuelas78['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
@@ -20400,7 +20400,7 @@ $pilaresTotalesAutnomiaHombres94= mysqli_fetch_array($totalesPilaresAutnomiaHomb
                           <td><?=$pilaresTotalesCiberescelasMujeres77['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Benito Júarez</th>
+                          <th scope="row">Benemérito de las Américas</th>
                           <td><?=$pilaresTotalesCiberescelasMujeres78['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
@@ -20801,7 +20801,7 @@ $pilaresTotalesAutnomiaHombres94= mysqli_fetch_array($totalesPilaresAutnomiaHomb
                           <td><?=$pilaresTotalesCiberescelasHombres77['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
-                          <th scope="row">Benito Júarez</th>
+                          <th scope="row">Benemérito de las Américas</th>
                           <td><?=$pilaresTotalesCiberescelasHombres78['userPorPilaresCiberescuelas']?></td>
                         </tr>
                         <tr>
