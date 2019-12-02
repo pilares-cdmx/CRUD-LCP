@@ -286,10 +286,12 @@ class Responsables {
     $result7 = $this->db->query($mesOctubre);
 
     // $dia8="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-08%'";
-    // $result8 = $this->db->query($dia8);
+    $mesNovembre="SELECT count(*) AS fecha FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U2.Pilares_idPilares = '$lcpPilarId' AND U1.fechaDeregistro like '%Nov% %2019%'";
+    $result8 = $this->db->query($mesNovembre);
 
     // $dia9="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-09%'";
-    // $result9 = $this->db->query($dia9);
+    $mesDiciembre="SELECT count(*) AS fecha FROM Usuario U1, UsuariosPorPilar U2 WHERE U1.idUsuarios = U2.Usuario_idUsuarios AND U2.Pilares_idPilares = '$lcpPilarId' AND U1.fechaDeregistro like '%Dec% %2019%'";
+    $result9 = $this->db->query($mesDiciembre);
 
     // $dia10="SELECT count(*) AS fecha FROM Usuario WHERE fechaDeRegistro LIKE '%2019-04-10%'";
     // $result10 = $this->db->query($dia10);
@@ -358,12 +360,12 @@ class Responsables {
     foreach ($result7 as $row) {
     array_push($data, $row);
     }
-    // foreach ($result8 as $row) {
-    // array_push($data, $row);
-    // }
-    // foreach ($result9 as $row) {
-    // array_push($data, $row);
-    // }
+    foreach ($result8 as $row) {
+    array_push($data, $row);
+    }
+    foreach ($result9 as $row) {
+    array_push($data, $row);
+    }
     // foreach ($result10 as $row) {
     // array_push($data, $row);
     // }
